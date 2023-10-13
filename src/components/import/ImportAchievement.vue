@@ -68,6 +68,59 @@ const inputFile = (e) => {
     }
     readFile(e.target.files)
 }
+const checkLiyin = (jsonData) => {
+    if (!jsonData?.list || typeof jsonData.list !== 'object' || Array.isArray(jsonData.list)) {
+        importNum.value = 0
+        importAchievementList.value = []
+        return
+    }
+
+    const jsonAchievementList = jsonData.list
+    const AchievementIDs = []
+    importAchievementList.value = []
+    importNum.value = 0
+    achievements.value.forEach(achievement => AchievementIDs.push(achievement.AchievementID))
+
+    for(const id in jsonAchievementList){
+        if(AchievementIDs.includes(jsonAchievementList[id]?.id) && statusList.includes(jsonAchievementList[id]?.status)){
+            importNum.value++
+            importAchievementList.value.push(jsonAchievementList[id])
+        }
+    }
+}
+const checkCocogoat = (jsonData) => {
+    if (!jsonData?.list || !Array.isArray(jsonData.list)) {
+        importNum.value = 0
+        importAchievementList.value = []
+        return
+    }
+
+    const jsonAchievementList = jsonData.list
+    const AchievementIDs = []
+    importAchievementList.value = []
+    importNum.value = 0
+    achievements.value.forEach(achievement => AchievementIDs.push(achievement.AchievementID))
+
+    for(const achievement of jsonAchievementList){
+        if(AchievementIDs.includes(achievement?.id) && statusList.includes(achievement?.status)){
+            importNum.value++
+            importAchievementList.value.push(achievement)
+        }
+    }
+}
+const checkAchievements = (jsonData) => { 
+    if ( jsonData?.info){
+        if (jsonData.info.export_app === "liyin"){
+            checkLiyin(jsonData)
+            return
+        }
+        else if (jsonData.info.export_app === "cocogoat"){
+            checkCocogoat(jsonData)
+            return
+        }
+    }
+    checkLiyin(jsonData)
+}
 const readFile = (files) => {
     const fileName = files[0].name;  // 获取文件路径
 
@@ -89,23 +142,7 @@ const readFile = (files) => {
 
         const jsonData = JSON.parse(fileContent); // 将 JSON 字符串解析为 JSON 对象
 
-        if (!jsonData?.list || typeof jsonData.list !== 'object' || Array.isArray(jsonData.list)) {
-            importNum.value = 0
-            return
-        }
-
-        const jsonAchievementList = jsonData.list
-        const AchievementIDs = []
-        importAchievementList.value = []
-        importNum.value = 0
-        achievements.value.forEach(achievement => AchievementIDs.push(achievement.AchievementID))
-    
-        for(const id in jsonAchievementList){
-            if(AchievementIDs.includes(jsonAchievementList[id]?.id) && statusList.includes(jsonAchievementList[id]?.status)){
-                importNum.value++
-                importAchievementList.value.push(jsonAchievementList[id])
-            }
-        }
+        checkAchievements(jsonData)
     };
     reader.readAsText(files[0]); // 读取文件内容
 }
@@ -152,7 +189,8 @@ const handleCloseImportDialog = () => {
                 <p>导入的成就会覆盖现在所选账号原有的所有成就信息，请谨慎导入</p><br/>
                 <p>目前仅支持的导入 json 文件</p><br/>
                 <p>支持导入的项目如下：</p>
-                <p>-&nbsp;&nbsp;liyin&nbsp;&nbsp;&nbsp;JSON</p><br/><br/>
+                <p>-&nbsp;&nbsp;liyin&nbsp;&nbsp;&nbsp;JSON</p>
+                <p>-&nbsp;&nbsp;椰羊&nbsp;&nbsp;&nbsp;JSON</p><br/><br/>
             </div>
             <div class="dialog-import-showFileName">
                 <div class="dialog-import-showFileName-title">识别文件：</div>

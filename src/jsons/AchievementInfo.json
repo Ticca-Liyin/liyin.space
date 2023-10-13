@@ -625,6 +625,17 @@
     "ShowType": "HiddenDesc",
     "Version": "1.3"
   },
+  "4032701": {
+    "AchievementID": 4032701,
+    "SeriesID": 3,
+    "AchievementTitle": "晴天收伞，雨天借伞",
+    "AchievementDesc": "（再次）帮助雅利洛-Ⅵ和贝洛伯格解决巨大的危机<br><div style=\"color:#8790abff;\">※完成开拓续闻「未来市场」</div>",
+    "ParamList": [],
+    "Priority": 84,
+    "Rarity": "Mid",
+    "ShowType": "HiddenDesc",
+    "Version": "1.4"
+  },
   "4040101": {
     "AchievementID": 4040101,
     "SeriesID": 4,
@@ -2337,6 +2348,321 @@
     "Rarity": "Low",
     "ShowType": "ShowAfterFinish",
     "Version": "1.3"
+  },
+  "4052701": {
+    "AchievementID": 4052701,
+    "SeriesID": 5,
+    "AchievementTitle": "登入名人堂",
+    "AchievementDesc": "在「以太战线•星际决胜庆典」中获得「冠军首席」称号",
+    "ParamList": [],
+    "Priority": 50,
+    "Rarity": "Mid",
+    "Version": "1.4"
+  },
+  "4052702": {
+    "AchievementID": 4052702,
+    "SeriesID": 5,
+    "AchievementTitle": "雪山之巅的王者",
+    "AchievementDesc": "在「以太战线」中，于永冬岭结束宿命的对决",
+    "ParamList": [],
+    "Priority": 49,
+    "Rarity": "Low",
+    "Version": "1.4"
+  },
+  "4052703": {
+    "AchievementID": 4052703,
+    "SeriesID": 5,
+    "AchievementTitle": "剑折铸复良",
+    "AchievementDesc": "完成同行任务「云无留迹」",
+    "ParamList": [],
+    "Priority": 48,
+    "Rarity": "Low",
+    "Version": "1.4"
+  },
+  "4052704": {
+    "AchievementID": 4052704,
+    "SeriesID": 5,
+    "AchievementTitle": "收服以太灵了！",
+    "AchievementDesc": "在「以太战线」中，获得所有以太灵",
+    "ParamList": [],
+    "Priority": 47,
+    "Rarity": "Low",
+    "Version": "1.4"
+  },
+  "4052705": {
+    "AchievementID": 4052705,
+    "SeriesID": 5,
+    "AchievementTitle": "以太战线大师",
+    "AchievementDesc": "在「以太战线」中，「决胜者评级」达到最高级",
+    "ParamList": [],
+    "Priority": 46,
+    "Rarity": "Low",
+    "Version": "1.4"
+  },
+  "4052706": {
+    "AchievementID": 4052706,
+    "SeriesID": 5,
+    "AchievementTitle": "超链接路人王",
+    "AchievementDesc": "在「以太战线•超链接对决」中击败所有对手",
+    "ParamList": [],
+    "Priority": 45,
+    "Rarity": "Low",
+    "Version": "1.4"
+  },
+  "4052707": {
+    "AchievementID": 4052707,
+    "SeriesID": 5,
+    "AchievementTitle": "凛风徽章",
+    "AchievementDesc": "在「以太战线」中，完成残响回廊的决胜乐园的所有考验",
+    "ParamList": [],
+    "Priority": 44,
+    "Rarity": "Low",
+    "Version": "1.4"
+  },
+  "4052708": {
+    "AchievementID": 4052708,
+    "SeriesID": 5,
+    "AchievementTitle": "镕金徽章",
+    "AchievementDesc": "在「以太战线」中，完成流云渡的决胜乐园的所有考验",
+    "ParamList": [],
+    "Priority": 43,
+    "Rarity": "Low",
+    "Version": "1.4"
+  },
+  "4052709": {
+    "AchievementID": 4052709,
+    "SeriesID": 5,
+    "AchievementTitle": "智才徽章",
+    "AchievementDesc": "在「以太战线」中，完成空间站「黑塔」的决胜乐园的所有考验",
+    "ParamList": [],
+    "Priority": 42,
+    "Rarity": "Low",
+    "Version": "1.4"
+  },
+  "4052710": {
+    "AchievementID": 4052710,
+    "SeriesID": 5,
+    "AchievementTitle": "假面徽章",
+    "AchievementDesc": "在「以太战线」中，完成大矿区的决胜乐园的所有考验",
+    "ParamList": [],
+    "Priority": 41,
+    "Rarity": "Low",
+    "Version": "1.4"
+  },
+  "4052711": {
+    "AchievementID": 4052711,
+    "SeriesID": 5,
+    "AchievementTitle": "我们是冠军？",
+    "AchievementDesc": "在「以太战线」中，获得一场「表演赛」的胜利",
+    "ParamList": [],
+    "Priority": 40,
+    "Rarity": "Low",
+    "Version": "1.4"
+  },
+  "4052712": {
+    "AchievementID": 4052712,
+    "SeriesID": 5,
+    "AchievementTitle": "铁齿铜牙",
+    "AchievementDesc": "聆听小小西衍的节目",
+    "ParamList": [],
+    "Priority": 39,
+    "Rarity": "Low",
+    "Version": "1.4"
+  },
+  "4052713": {
+    "AchievementID": 4052713,
+    "SeriesID": 5,
+    "AchievementTitle": "说学逗唱",
+    "AchievementDesc": "聆听小往小来的节目",
+    "ParamList": [],
+    "Priority": 38,
+    "Rarity": "Low",
+    "Version": "1.4"
+  },
+  "4052714": {
+    "AchievementID": 4052714,
+    "SeriesID": 5,
+    "AchievementTitle": "腿只是装饰而已",
+    "AchievementDesc": "为造物引擎制定一份离谱的策划案",
+    "ParamList": [],
+    "Priority": 37,
+    "Rarity": "Low",
+    "ShowType": "ShowAfterFinish",
+    "Version": "1.4"
+  },
+  "4052715": {
+    "AchievementID": 4052715,
+    "SeriesID": 5,
+    "AchievementTitle": "动起来啊…造物引擎！",
+    "AchievementDesc": "为造物引擎制定一份靠谱的策划案",
+    "ParamList": [],
+    "Priority": 36,
+    "Rarity": "Low",
+    "ShowType": "ShowAfterFinish",
+    "Version": "1.4"
+  },
+  "4052716": {
+    "AchievementID": 4052716,
+    "SeriesID": 5,
+    "AchievementTitle": "这游戏没有版本更新吗？",
+    "AchievementDesc": "获得所有「以太拓展芯片」",
+    "ParamList": [],
+    "Priority": 35,
+    "Rarity": "Low",
+    "Version": "1.4"
+  },
+  "4052717": {
+    "AchievementID": 4052717,
+    "SeriesID": 5,
+    "AchievementTitle": "北风造英雄",
+    "AchievementDesc": "在「冬兵进行曲」难度Ⅲ击败门后的杰帕德",
+    "ParamList": [],
+    "Priority": 34,
+    "Rarity": "Low",
+    "Version": "1.4"
+  },
+  "4052718": {
+    "AchievementID": 4052718,
+    "SeriesID": 5,
+    "AchievementTitle": "胜利，然后是再见",
+    "AchievementDesc": "在尘埃落定后归还{TEXTJOIN#54}",
+    "ParamList": [],
+    "Priority": 33,
+    "Rarity": "Low",
+    "ShowType": "ShowAfterFinish",
+    "Version": "1.4"
+  },
+  "4052719": {
+    "AchievementID": 4052719,
+    "SeriesID": 5,
+    "AchievementTitle": "结束，然后是开始",
+    "AchievementDesc": "在尘埃落定后留下{TEXTJOIN#54}",
+    "ParamList": [],
+    "Priority": 32,
+    "Rarity": "Low",
+    "ShowType": "ShowAfterFinish",
+    "Version": "1.4"
+  },
+  "4052720": {
+    "AchievementID": 4052720,
+    "SeriesID": 5,
+    "AchievementTitle": "未来的第一步",
+    "AchievementDesc": "关心贝洛伯格的发展动态<br><div style=\"color:#8790abff;\">※购买《矿工每周报第226期》</div>",
+    "ParamList": [],
+    "Priority": 31,
+    "Rarity": "Low",
+    "ShowType": "HiddenDesc",
+    "Version": "1.4"
+  },
+  "4052721": {
+    "AchievementID": 4052721,
+    "SeriesID": 5,
+    "AchievementTitle": "无机的智慧果",
+    "AchievementDesc": "获得阅读物《螺丝咕姆的留言》",
+    "ParamList": [],
+    "Priority": 30,
+    "Rarity": "Low",
+    "ShowType": "ShowAfterFinish",
+    "Version": "1.4"
+  },
+  "4052722": {
+    "AchievementID": 4052722,
+    "SeriesID": 5,
+    "AchievementTitle": "冰原熊之旅",
+    "AchievementDesc": "与冰原熊幼崽亲切互动",
+    "ParamList": [],
+    "Priority": 29,
+    "Rarity": "Low",
+    "ShowType": "ShowAfterFinish",
+    "Version": "1.4"
+  },
+  "4052723": {
+    "AchievementID": 4052723,
+    "SeriesID": 5,
+    "AchievementTitle": "谢谢你，佩拉",
+    "AchievementDesc": "帮助凡迪雅小姐完成赌注",
+    "ParamList": [],
+    "Priority": 28,
+    "Rarity": "Low",
+    "ShowType": "ShowAfterFinish",
+    "Version": "1.4"
+  },
+  "4052724": {
+    "AchievementID": 4052724,
+    "SeriesID": 5,
+    "AchievementTitle": "钢铁与玩具",
+    "AchievementDesc": "把造物工程的废料交给本杰明",
+    "ParamList": [],
+    "Priority": 27,
+    "Rarity": "Low",
+    "ShowType": "ShowAfterFinish",
+    "Version": "1.4"
+  },
+  "4052725": {
+    "AchievementID": 4052725,
+    "SeriesID": 5,
+    "AchievementTitle": "钢铁与路灯",
+    "AchievementDesc": "把造物工程的废料交给佩拉",
+    "ParamList": [],
+    "Priority": 26,
+    "Rarity": "Low",
+    "ShowType": "ShowAfterFinish",
+    "Version": "1.4"
+  },
+  "4052726": {
+    "AchievementID": 4052726,
+    "SeriesID": 5,
+    "AchievementTitle": "在巨像的见证下",
+    "AchievementDesc": "从冻结的栏杆上保住舌头",
+    "ParamList": [],
+    "Priority": 25,
+    "Rarity": "Low",
+    "ShowType": "ShowAfterFinish",
+    "Version": "1.4"
+  },
+  "4052727": {
+    "AchievementID": 4052727,
+    "SeriesID": 5,
+    "AchievementTitle": "危险动作，请勿模仿",
+    "AchievementDesc": "再次因打破容器受到教训",
+    "ParamList": [],
+    "Priority": 24,
+    "Rarity": "Low",
+    "ShowType": "ShowAfterFinish",
+    "Version": "1.4"
+  },
+  "4052728": {
+    "AchievementID": 4052728,
+    "SeriesID": 5,
+    "AchievementTitle": "首先，第一个",
+    "AchievementDesc": "拥有一个狂热粉丝",
+    "ParamList": [],
+    "Priority": 23,
+    "Rarity": "Low",
+    "ShowType": "ShowAfterFinish",
+    "Version": "1.4"
+  },
+  "4052729": {
+    "AchievementID": 4052729,
+    "SeriesID": 5,
+    "AchievementTitle": "假面的告白",
+    "AchievementDesc": "查看来历不明的忆泡",
+    "ParamList": [],
+    "Priority": 22,
+    "Rarity": "Low",
+    "ShowType": "ShowAfterFinish",
+    "Version": "1.4"
+  },
+  "4052730": {
+    "AchievementID": 4052730,
+    "SeriesID": 5,
+    "AchievementTitle": "冰圾淋",
+    "AchievementDesc": "从冰封垃圾桶中获得垃圾",
+    "ParamList": [],
+    "Priority": 21,
+    "Rarity": "Low",
+    "ShowType": "ShowAfterFinish",
+    "Version": "1.4"
   },
   "4060101": {
     "AchievementID": 4060101,
@@ -4350,6 +4676,49 @@
     "ShowType": "ShowAfterFinish",
     "Version": "1.3"
   },
+  "4072701": {
+    "AchievementID": 4072701,
+    "SeriesID": 7,
+    "AchievementTitle": "演武仪典：长枪试",
+    "AchievementDesc": "使用我方角色丹恒对战彦卿时完成制胜一击",
+    "ParamList": [],
+    "Priority": 65,
+    "Rarity": "Low",
+    "ShowType": "ShowAfterFinish",
+    "Version": "1.4"
+  },
+  "4072702": {
+    "AchievementID": 4072702,
+    "SeriesID": 7,
+    "AchievementTitle": "演武仪典…？",
+    "AchievementDesc": "使用我方角色彦卿对战彦卿时完成制胜一击",
+    "ParamList": [],
+    "Priority": 64,
+    "Rarity": "Low",
+    "ShowType": "ShowAfterFinish",
+    "Version": "1.4"
+  },
+  "4072703": {
+    "AchievementID": 4072703,
+    "SeriesID": 7,
+    "AchievementTitle": "演武仪典：心剑试",
+    "AchievementDesc": "使用我方角色镜流对战彦卿时完成制胜一击",
+    "ParamList": [],
+    "Priority": 63,
+    "Rarity": "Low",
+    "ShowType": "ShowAfterFinish",
+    "Version": "1.4"
+  },
+  "4072704": {
+    "AchievementID": 4072704,
+    "SeriesID": 7,
+    "AchievementTitle": "人有四名，代价…",
+    "AchievementDesc": "在单场战斗中使用我方角色镜流把任意队友生命值消耗至1",
+    "ParamList": [],
+    "Priority": 62,
+    "Rarity": "Low",
+    "Version": "1.4"
+  },
   "4080101": {
     "AchievementID": 4080101,
     "SeriesID": 8,
@@ -4862,6 +5231,110 @@
     "Rarity": "Low",
     "ShowType": "ShowAfterFinish",
     "Version": "1.3"
+  },
+  "4082701": {
+    "AchievementID": 4082701,
+    "SeriesID": 8,
+    "AchievementTitle": "好…好方",
+    "AchievementDesc": "大量投喂扑满<br><div style=\"color:#8790abff;\">※使用「{TEXTJOIN#54}」聊天对话框，发送大量文本内容</div>",
+    "ParamList": [],
+    "Priority": 44,
+    "Rarity": "Low",
+    "ShowType": "HiddenDesc",
+    "Version": "1.4"
+  },
+  "4082702": {
+    "AchievementID": 4082702,
+    "SeriesID": 8,
+    "AchievementTitle": "卧室里的战争",
+    "AchievementDesc": "使用我方账账击败一只扑满",
+    "ParamList": [],
+    "Priority": 43,
+    "Rarity": "Low",
+    "Version": "1.4"
+  },
+  "4082703": {
+    "AchievementID": 4082703,
+    "SeriesID": 8,
+    "AchievementTitle": "绝对零度",
+    "AchievementDesc": "使用镜流与定分枪互动",
+    "ParamList": [],
+    "Priority": 42,
+    "Rarity": "Low",
+    "ShowType": "ShowAfterFinish",
+    "Version": "1.4"
+  },
+  "4082704": {
+    "AchievementID": 4082704,
+    "SeriesID": 8,
+    "AchievementTitle": "过程大于结果",
+    "AchievementDesc": "从流云渡的茂贞手中购买1个逾期未取的邮包",
+    "ParamList": [
+      {
+        "Value": 1
+      }
+    ],
+    "Priority": 41,
+    "Rarity": "Low",
+    "ShowType": "ShowAfterFinish",
+    "Version": "1.4"
+  },
+  "4082705": {
+    "AchievementID": 4082705,
+    "SeriesID": 8,
+    "AchievementTitle": "大安事事昌",
+    "AchievementDesc": "在占卜店首次抽到吉签",
+    "ParamList": [],
+    "Priority": 40,
+    "Rarity": "Low",
+    "Version": "1.4"
+  },
+  "4082706": {
+    "AchievementID": 4082706,
+    "SeriesID": 8,
+    "AchievementTitle": "空亡事不长",
+    "AchievementDesc": "在占卜店首次抽到凶签",
+    "ParamList": [],
+    "Priority": 39,
+    "Rarity": "Low",
+    "Version": "1.4"
+  },
+  "4082707": {
+    "AchievementID": 4082707,
+    "SeriesID": 8,
+    "AchievementTitle": "速喜朱雀吉行方",
+    "AchievementDesc": "在占卜店首次抽到摸鱼签",
+    "ParamList": [],
+    "Priority": 38,
+    "Rarity": "Low",
+    "ShowType": "ShowAfterFinish",
+    "Version": "1.4"
+  },
+  "4082708": {
+    "AchievementID": 4082708,
+    "SeriesID": 8,
+    "AchievementTitle": "贵人路上好商量",
+    "AchievementDesc": "在占卜店首次抽到闭目签",
+    "ParamList": [],
+    "Priority": 37,
+    "Rarity": "Low",
+    "ShowType": "ShowAfterFinish",
+    "Version": "1.4"
+  },
+  "4082709": {
+    "AchievementID": 4082709,
+    "SeriesID": 8,
+    "AchievementTitle": "木人：星穹铁道",
+    "AchievementDesc": "使用「自动木人桩」代为完成3场战斗",
+    "ParamList": [
+      {
+        "Value": 3
+      }
+    ],
+    "Priority": 36,
+    "Rarity": "Low",
+    "ShowType": "ShowAfterFinish",
+    "Version": "1.4"
   },
   "4090201": {
     "AchievementID": 4090201,
