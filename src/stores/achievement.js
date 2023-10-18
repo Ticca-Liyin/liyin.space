@@ -290,7 +290,7 @@ export const useAchievementStore = defineStore('achievement', () => {
     const achievements = ref([])
     const achievementSeries = ref([])
 
-    const version = ['1.4.0', '1.0.0', '1.4.0', '1.4.0','1.4.0','1.4.0']
+    const version = ['1.4.0', '1.0.0', '1.4.0', '1.4.1','1.4.0','1.4.0']
     const initialAchievementsInfo = () => {
         Promise.all([
             fetch(`/src/jsons/AchievementInfo.json?v=${version[0]}`).then(response => response.json()),

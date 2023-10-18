@@ -5,7 +5,7 @@ import { storeToRefs } from 'pinia';
 
 const achievementStore = useAchievementStore()
 const { achievements } = storeToRefs(achievementStore)
-const { handleUserAchievementList } = achievementStore
+const { handleUserAchievementList, handleAchevementStatus } = achievementStore
 const showImportDialog = ref(false)
 const inputImportFile = ref(null)
 const identifyFileName = ref('')
@@ -84,7 +84,8 @@ const checkLiyin = (jsonData) => {
     for(const id in jsonAchievementList){
         if(AchievementIDs.includes(jsonAchievementList[id]?.id) && statusList.includes(jsonAchievementList[id]?.status)){
             importNum.value++
-            importAchievementList.value.push(jsonAchievementList[id])
+            if(jsonAchievementList[id]?.status === 3)
+                importAchievementList.value.push(jsonAchievementList[id])
         }
     }
 }
@@ -104,7 +105,8 @@ const checkCocogoat = (jsonData) => {
     for(const achievement of jsonAchievementList){
         if(AchievementIDs.includes(achievement?.id) && statusList.includes(achievement?.status)){
             importNum.value++
-            importAchievementList.value.push(achievement)
+            if(achievement?.status === 3)
+                importAchievementList.value.push(achievement)
         }
     }
 }
@@ -147,17 +149,33 @@ const readFile = (files) => {
     reader.readAsText(files[0]); // 读取文件内容
 }
 const importAchievements = () => {
-    for(const ach of achievements.value){
-        if (ach.isNotAvailable) continue
+    // 初始化所有成就状态为未完成
+    achievements.value.forEach(achievement => {
+        achievement.Status = 1
+        handleUserAchievementList(achievement.AchievementID, achievement.Status)
+    })
+    // 修改已完成状态, 同一多选已成就后识别的覆盖先识别到的
+    for(const ach of importAchievementList.value){
+        if (ach.status !== 3) continue
 
-        // 更新成就状态
-        const ach_ = importAchievementList.value.find(achievement => ach.AchievementID === achievement.id)
+        const ach_ = achievements.value.find(achievement => ach.id === achievement.AchievementID)
 
-        if (!ach_) ach.Status = 1
-        else ach.Status = ach_.status
-
-        handleUserAchievementList(ach.AchievementID, ach.Status)
+        if (!ach_) continue
+        ach_.Status = 1
+        handleAchevementStatus(ach_)
     }
+    // 旧版导入逻辑
+    // for(const ach of achievements.value){
+    //     if (ach.isNotAvailable) continue
+
+    //     // 更新成就状态
+    //     const ach_ = importAchievementList.value.find(achievement => ach.AchievementID === achievement.id)
+
+    //     if (!ach_) ach.Status = 1
+    //     else ach.Status = ach_.status
+
+    //     handleUserAchievementList(ach.AchievementID, ach.Status)
+    // }
     handleCloseImportDialog()
 }
 const handleCloseImportDialog = () => {
@@ -181,6 +199,7 @@ const handleCloseImportDialog = () => {
     :before-close="handleCloseImportDialog"
   >
         <div class="dialog-import-main"
+        @dragenter.prevent
         @dragover.prevent
         @drop="handleDrop"
         >
