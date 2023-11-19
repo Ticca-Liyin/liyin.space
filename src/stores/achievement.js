@@ -221,6 +221,22 @@ export const useAchievementStore = defineStore('achievement', () => {
             const userAch_ = userAchievementList[achievement.AchievementID]
             // console.log(userAch_)
             if(!userAch_) achievement.Status = 1
+            else if(userAch_.status === 2 && !achievement?.MultipleID){
+                achievement.Status = 1
+                handleUserAchievementList(achievement.AchievementID, achievement.Status)
+            }
+            else if(userAch_.status === 3 && achievement?.MultipleID) {
+                achievement.Status = userAch_.status
+                multipleChoice[achievement.MultipleID].forEach(AchievementID => {
+                    if(AchievementID !== achievement.AchievementID){
+                        const ach_ = achievements.value.find(ach => ach.AchievementID === AchievementID)
+                        if(ach_ && ach_.Status !== 2){
+                            ach_.Status = 2
+                            handleUserAchievementList(ach_.AchievementID, ach_.Status)
+                        } 
+                    }
+                })
+            }
             else achievement.Status = userAch_.status
         })
     }
@@ -243,7 +259,7 @@ export const useAchievementStore = defineStore('achievement', () => {
         for(const notAvailableAchievement of Object.values(notAvailable)){
             const ach_ = achievements.value.find(ach => ach.AchievementID === notAvailableAchievement.AchievementID)
             if(!ach_) continue
-            // 添加咱不可获得时间戳
+            // 添加暂不可获得时间戳
             ach_.timestamp = notAvailableAchievement.timestamp
             // console.log(ach_)
             if(!ach_.isNotAvailable) continue
@@ -290,7 +306,7 @@ export const useAchievementStore = defineStore('achievement', () => {
     const achievements = ref([])
     const achievementSeries = ref([])
 
-    const version = ['1.4.0', '1.0.0', '1.4.0', '1.4.1','1.4.0','1.4.0']
+    const version = ['1.5.1', '1.0.0', '1.5.2', '1.5.1','1.5.0','1.5.0']
     const initialAchievementsInfo = () => {
         Promise.all([
             fetch(`/src/jsons/AchievementInfo.json?v=${version[0]}`).then(response => response.json()),
@@ -314,9 +330,9 @@ export const useAchievementStore = defineStore('achievement', () => {
                 achievements.value.push(new Achievement(value))
             })
 
-            getUserAchievement()
-            initialAchievementsStatus()
+            getUserAchievement()            
             initialMultipleChoice()
+            initialAchievementsStatus()
             initialNotAvailable()
 
             achievements.value.sort((a, b) => {
