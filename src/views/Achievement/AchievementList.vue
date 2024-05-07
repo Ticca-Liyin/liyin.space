@@ -6,6 +6,12 @@ const achievementStore = useAchievementStore()
 defineProps({
     info: Object
 })
+
+const formatMultipleID = (MultipleID) => {
+    if (!MultipleID) return ''
+    const reserveDigits = 2
+    return (MultipleID- 50000).toString().padStart(reserveDigits, '0')
+}
 </script>
 
 <template>
@@ -42,6 +48,9 @@ defineProps({
                     </sup>
                     <sup class="achievement-showtype">
                         {{info.ShowType === "ShowAfterFinish" ? '隐藏' : ''}}
+                    </sup>
+                    <sup class="achievement-branch">
+                        {{info?.MultipleID ? '多选一' + formatMultipleID(info?.MultipleID) : ''}}
                     </sup>
                 </div>    
                 <div class="achievement-desc"  v-html="info.AchievementDesc"></div>
@@ -223,6 +232,12 @@ defineProps({
     margin-top: -3px;
     margin-left: 10px;
 }
+.achievement-branch{
+    color: #FF8D00;
+    font-size: 12px;
+    margin-top: -3px;
+    margin-left: 10px;
+}
 .achievement-desc{
     height: 40px;
     line-height: 20px;
@@ -257,6 +272,7 @@ defineProps({
     }
     .achievement-item{
         padding: 5px 10px;
+        flex-direction: row-reverse;
     }
     .achievement-select{
         width: 30px;
@@ -313,6 +329,9 @@ defineProps({
         font-size: 10px;
     }
     .achievement-showtype{
+        font-size: 10px;
+    }
+    .achievement-branch{
         font-size: 10px;
     }
     .achievement-desc{

@@ -12,6 +12,6 @@ export default function saveJson(data, fileName){
     // 模拟点击链接以下载文件
     link.click();
 
-    // 释放临时 URL 的资源
+    // // 释放临时 URL 的资源
     URL.revokeObjectURL(url);
 }
