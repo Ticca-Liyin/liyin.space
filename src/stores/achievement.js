@@ -46,6 +46,7 @@ export const useAchievementStore = defineStore('achievement', () => {
             this.SeriesID = achievementSeries.SeriesID
             this.SeriesTitle = achievementSeries.SeriesTitle
             this.imagePath = achievementSeries.imagePath
+            this.imageDarkPath = achievementSeries.imageDarkPath
             this.Priority = achievementSeries.Priority
             this.Achievements = achievements
         }
@@ -306,7 +307,7 @@ export const useAchievementStore = defineStore('achievement', () => {
     const achievements = ref([])
     const achievementSeries = ref([])
 
-    const version = ['2.1.0', '1.0.0', '2.1.1', '2.1.2','1.5.0','1.5.0']
+    const version = ['2.2.0', '2.2.0', '2.2.1', '2.2.1','1.5.0','1.5.0']
     const initialAchievementsInfo = () => {
         Promise.all([
             fetch(`/src/jsons/AchievementInfo.json?v=${version[0]}`).then(response => response.json()),
@@ -346,7 +347,8 @@ export const useAchievementStore = defineStore('achievement', () => {
             achievementSeries.value.push(new AchievementSeries({
                 SeriesID: 0,
                 SeriesTitle: "ALL",
-                imagePath: "/src/images/achievement.png",
+                imagePath: "/src/images/series/achievement.png",
+                imageDarkPath: "/src/images/series-dark/achievement.png",
                 Priority: 10
             }, achievements.value))
             handleSelectVersionList(0, achievements.value)
@@ -447,6 +449,38 @@ export const useAchievementStore = defineStore('achievement', () => {
         return temp_showAchievements
     })
 
+    //获取成就界面筛选设置缓存
+    const getAchievementFilterConfig = () => {
+        // 从缓存中读取名为 "AchievementFilterConfig" 的数据
+        const tempAchievementFilter = localStorage.getItem("AchievementFilterConfig")
+
+        // 检查是否存在名为 "AchievementFilterConfig" 的数据
+        if (tempAchievementFilter !== null) {
+            // 数据存在，将其从字符串转换为对象
+            const data = JSON.parse(tempAchievementFilter)
+
+            hiddenCompleted.value = data?.hiddenCompleted || false
+            hiddenNotAvailable.value = data?.hiddenNotAvailable || false
+            incompletePriority.value = data?.incompletePriority || false
+        } else {
+            // 数据不存在，执行相应的操作
+            hiddenCompleted.value = false
+            hiddenNotAvailable.value = false
+            incompletePriority.value = false
+        }
+    }
+    //保存成就界面筛选设置缓存
+    const saveAchievementFilterConfig = () => {
+        // 将对象转换为字符串，并将其存储在缓存中
+        localStorage.setItem("AchievementFilterConfig", JSON.stringify({
+            hiddenCompleted: hiddenCompleted.value,
+            hiddenNotAvailable: hiddenNotAvailable.value,
+            incompletePriority: incompletePriority.value
+        }))
+    }
+
+    watch([hiddenCompleted, hiddenNotAvailable, incompletePriority], saveAchievementFilterConfig)
+    
     // const showAchievements = computed(() => {
     //     const temp_series = achievementSeries.value.find(series => series.SeriesID === showSeriesId.value)
     //     //找不到对应系列返回全部
@@ -589,7 +623,7 @@ export const useAchievementStore = defineStore('achievement', () => {
         handleAchevementStatus,
         handleSelectAll,
         findUserAchievementList,
-        handleUserAchievementList
-        // defer
+        handleUserAchievementList,
+        getAchievementFilterConfig
     }
 })

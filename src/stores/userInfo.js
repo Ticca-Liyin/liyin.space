@@ -18,7 +18,7 @@ export const useUserInfoStore = defineStore('userInfo', () => {
             userInfoList.value.list = {
                 1:{
                     tokenID: 1,
-                    avatar: "",
+                    avatar: 1001,
                     uid: 100000000, 
                     name: "开拓者", 
                 }
@@ -40,7 +40,7 @@ export const useUserInfoStore = defineStore('userInfo', () => {
         saveUserInfo()
     }
 
-    const addUserInfo = (name, uid) => {
+    const addUserInfo = (name, uid, avatar) => {
         if(Object.values(userInfoList.value.list ?? {}).length >= 5){
             ElMessage({
                 showClose: true,
@@ -66,7 +66,7 @@ export const useUserInfoStore = defineStore('userInfo', () => {
         }
         userInfoList.value.list[maxTokenID + 1] = {
             tokenID: maxTokenID + 1,
-            avatar: "",
+            avatar,
             uid,
             name,
         }
@@ -74,7 +74,7 @@ export const useUserInfoStore = defineStore('userInfo', () => {
         saveUserInfo()
     }
 
-    const editUserInfo = (tokenid, name, uid) => {
+    const editUserInfo = (tokenid, name, uid, avatar) => {
         if(!userInfoList.value.list[tokenid]) {
             ElMessage({
                 showClose: true,
@@ -96,6 +96,7 @@ export const useUserInfoStore = defineStore('userInfo', () => {
         }
         userInfoList.value.list[tokenid].name = name
         userInfoList.value.list[tokenid].uid = uid
+        userInfoList.value.list[tokenid].avatar = avatar
         saveUserInfo()
     }
 
@@ -159,6 +160,7 @@ export const useUserInfoStore = defineStore('userInfo', () => {
             localStorage.setItem("userAchievement", JSON.stringify(userAchievement))
         } 
     }
+
     return {
         userInfoList,
         currentUserInfo,
