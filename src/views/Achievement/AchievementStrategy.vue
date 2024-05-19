@@ -5,7 +5,7 @@ import formatTimestamp from './formatTimestamp';
 
 const achievementStore = useAchievementStore()
 const { dialogVisible, dialogAchievement, dialogMultipleChoiceList, showStrategyList} = storeToRefs(achievementStore);
-// const isMobile = window.matchMedia('(max-width: 768px)').matches
+
 </script>
 
 <template>
@@ -63,14 +63,14 @@ const { dialogVisible, dialogAchievement, dialogMultipleChoiceList, showStrategy
                 <div v-if="showStrategyList.length > 0">
                     <div v-for="strategy in showStrategyList" :key="strategy.title" class="dialog-body-stratery-concent PC">
                         <div>
-                            <span style="color: #FF7A45;">【{{ strategy.author }}】</span><span>{{ strategy.title }}</span> ：
+                            <span class="dialog-body-stratery-author">【{{ strategy.author }}】</span><span>{{ strategy.title }}</span> ：
                         </div> 
                         <div>
                             <a :href="strategy.url" target="_blank" style="margin-left: 7px;"> {{ strategy.url }}</a>                            
                         </div>
                     </div>
                     <div v-for="strategy in showStrategyList" :key="strategy.title" class="dialog-body-stratery-concent Mobile">
-                        <span style="color: #FF7A45;">【{{ strategy.author }}】</span>
+                        <span class="dialog-body-stratery-author">【{{ strategy.author }}】</span>
                         <a :href="strategy.url" target="_blank"><span>{{ strategy.title }}</span> </a>
                     </div>
                 </div>
@@ -119,13 +119,13 @@ const { dialogVisible, dialogAchievement, dialogMultipleChoiceList, showStrategy
     white-space: nowrap; */
 }
 .dialog-header-version{
-    color: #00A8E8;
+    color: var(--liyin-ach-version-color);
     font-size: 14px;
     margin-top: -3px;
     margin-left: 5px;
 }
 .dialog-header-hiddenColor{
-    color: #FFC0CB;
+    color: var(--liyin-ach-showtype-color);
 }
 .dialog-body{
 
@@ -134,7 +134,7 @@ const { dialogVisible, dialogAchievement, dialogMultipleChoiceList, showStrategy
     margin: 0 0 10px 0;
 }
 .dialog-body-introduce{
-    color: #000;
+    color: var(--liyin-text-deep-color);
     line-height: 25px;
     font-size: 14px;
 }
@@ -142,7 +142,7 @@ const { dialogVisible, dialogAchievement, dialogMultipleChoiceList, showStrategy
     /* height: 40px; */
     line-height: 20px;
     font-size: 14px;
-    color: #767676;
+    color: var(--liyin-text-color);
     margin-bottom: 5px;
     /* display: -webkit-box;
     -webkit-box-orient: vertical;
@@ -152,7 +152,7 @@ const { dialogVisible, dialogAchievement, dialogMultipleChoiceList, showStrategy
     /* white-space: nowrap; */
 }
 .orange{
-    color: #FF7A45;
+    color: var(--liyin-orange-color);
 }
 .dialog-body-stratery-concent{
     line-height: 25px;
@@ -163,20 +163,23 @@ const { dialogVisible, dialogAchievement, dialogMultipleChoiceList, showStrategy
 .dialog-body-stratery-concent.Mobile{
     display: none;
 }
+.dialog-body-stratery-author{
+    color: var(--liyin-author-text-color);
+}
 .dialog-achievement a {
     text-decoration: none;
-    color: #42b983;
+    color: var(--liyin-url-text-color);
     word-wrap: break-word;
 }
 .dialog-achievement a:hover{
-    color: #2A9D8F;
+    color: var(--liyin-url-hover-text-color);
 }
 .dialog-footer {
   /* margin-right: 10px; */
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #767676;
+  color: var(--liyin-text-color);
   font-size: 12px;
   text-align: center;
 }

@@ -72,14 +72,14 @@ const formatMultipleID = (MultipleID) => {
     display: flex;
     align-items: center;
     border-radius: 5px;
-    background-color: #fff;
+    background-color: var(--liyin-ach-item-bg-color);
     padding: 10px 20px;
 }
 .achievement-select{
     width: 40px;
     height: 40px;
     /* border: 2px solid #00A8E8; */
-    border: 2px solid #D4E6F1;
+    border: 2px solid var(--liyin-ach-not-select-color);
     border-radius: 50%;
     /* background-color: #00A8E8; */
     display: flex;
@@ -89,48 +89,48 @@ const formatMultipleID = (MultipleID) => {
     user-select: none;
 }
 .achievement-select.selected{
-    border: 2px solid #00A8E8;
-    background-color: #00A8E8;
+    border: 2px solid var(--liyin-ach-selected-color);
+    background-color: var(--liyin-ach-selected-color);
 }
 .achievement-select:hover{
-    border: 2px solid #00A8E8;
+    border: 2px solid var(--liyin-ach-hover-color);
 }
 .achievement-select.selected:hover{
-    border: 2px solid #4A90E2;
-    background-color: #4A90E2;
+    border: 2px solid var(--liyin-ach-selected-hover-color);
+    background-color: var(--liyin-ach-selected-hover-color);
 }
 .achievement-select.selected-other{
-    border: 2px solid #A6A6A6;
-    background-color: #A6A6A6;
+    border: 2px solid var(--liyin-ach-not-available-color);
+    background-color: var(--liyin-ach-not-available-color);
     cursor:no-drop;
 }
 .achievement-select.not-available{
-    border: 2px solid #A6A6A6;
+    border: 2px solid var(--liyin-ach-not-available-color);
     cursor:no-drop;
 }
 .achievement-select.selected-other:hover,
 .achievement-select.not-available:hover{
-    border: 2px solid #A6A6A6;
+    border: 2px solid var(--liyin-ach-not-available-color);
 }
 .achievement-select-icon{
     width: 30px;
     height: 30px;
     /* color: #00A8E8; */
-    color: #D4E6F1;
+    color: var(--liyin-ach-not-select-color);
     /* color: #fff; */
 }
 .achievement-select:hover .achievement-select-icon{
-    color: #00A8E8;
+    color: var(--liyin-ach-hover-color);
 }
 .achievement-select.selected .achievement-select-icon,
 .achievement-select.selected:hover .achievement-select-icon,
 .achievement-select.selected-other .achievement-select-icon,
 .achievement-select.selected-other:hover .achievement-select-icon{
-    color: #fff;
+    color: var(--liyin-ach-icon-selected-color);
 }
 .achievement-select.not-available .achievement-select-icon,
-.achievement-select.not-available .achievement-select-icon:hover{
-    color: #A6A6A6;
+.achievement-select.not-available:hover .achievement-select-icon{
+    color: var(--liyin-ach-not-available-color);
 }
 .achievement-supplement{
     display: flex;
@@ -143,7 +143,7 @@ const formatMultipleID = (MultipleID) => {
     height: 45px;
     /* min-width: 45px; */
     /* border: 1px solid #00A8E8; */
-    background-color: #b78850;
+    background-color: var(--liyin-ach-stellar-bg-color);
     border-radius: 5px;
     display: flex;
     flex-direction: column;
@@ -159,7 +159,7 @@ const formatMultipleID = (MultipleID) => {
     font-size: 12px;
     /* font-weight: 800; */
     /* margin: 0 0 0 10px; */
-    color: #fff;
+    color: var(--liyin-ach-stellar-num-text-color);
     position: absolute;
     bottom: 0;
     z-index: 2;
@@ -168,7 +168,7 @@ const formatMultipleID = (MultipleID) => {
     content: '';
     width: 100%;
     height: 100%;
-    background-color: #6F6F6F;
+    background-color: var(--liyin-ach-stellar-num-bg-color);
     opacity: 0.6;
     position: absolute;
     bottom: 0;
@@ -188,7 +188,7 @@ const formatMultipleID = (MultipleID) => {
     align-items: center;
     margin: 0 10px 0 10px;
     font-size: 13px;
-    color: #00A8E8;
+    color: var(--liyin-ach-introduction-color);
     line-height: 20px;
     height: 20px;
     cursor: pointer;
@@ -219,21 +219,22 @@ const formatMultipleID = (MultipleID) => {
     overflow: hidden; 
     text-overflow: ellipsis; 
     white-space: nowrap;
+    color: var(--liyin-text-main-color);
 }
 .achievement-version{
-    color: #00A8E8;
+    color: var(--liyin-ach-version-color);
     font-size: 12px;
     margin-top: -3px;
     margin-left: 3px;
 }
 .achievement-showtype{
-    color: #FFC0CB;
+    color: var(--liyin-ach-showtype-color);
     font-size: 12px;
     margin-top: -3px;
     margin-left: 10px;
 }
 .achievement-branch{
-    color: #FF8D00;
+    color: var(--liyin-ach-branch-color);
     font-size: 12px;
     margin-top: -3px;
     margin-left: 10px;
@@ -242,7 +243,7 @@ const formatMultipleID = (MultipleID) => {
     height: 40px;
     line-height: 20px;
     font-size: 14px;
-    color: #767676;
+    color: var(--liyin-text-color);
     display: -webkit-box;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 2;
@@ -279,22 +280,22 @@ const formatMultipleID = (MultipleID) => {
         height: 30px;
     }
     .achievement-select:hover{
-        border: 2px solid #D4E6F1;
+        border: 2px solid var(--liyin-ach-not-select-color);
     }
     .achievement-select-icon{
         width: 20px;
         height: 20px;
     }
     .achievement-select:hover .achievement-select-icon{
-        color: #D4E6F1;
+        color: var(--liyin-ach-not-select-color);
     }
     .achievement-select.selected:hover{
-        border: 2px solid #00A8E8;
-        background-color: #00A8E8;
+        border: 2px solid var(--liyin-ach-selected-color);
+        background-color: var(--liyin-ach-selected-color);
     }
     .achievement-select.selected-other:hover,
     .achievement-select.not-available:hover{
-        border: 2px solid #A6A6A6;
+        border: 2px solid var(--liyin-ach-not-available-color);
     }
     .achievement-StellarJade{
         width: 35px;

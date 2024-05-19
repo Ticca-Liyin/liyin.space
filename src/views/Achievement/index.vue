@@ -14,6 +14,7 @@ const achievementStore = useAchievementStore()
 
 onMounted(() => {
    achievementStore.initialAchievementsInfo() 
+   achievementStore.getAchievementFilterConfig()
 })
 
 </script>
@@ -59,7 +60,7 @@ onMounted(() => {
 
 <style>
 .achievement{
-    background: #ededed;
+    background: var(--liyin-bg-color-1);
     display: flex;
     flex-direction: column;
     /* height: 400px; */
@@ -70,7 +71,7 @@ onMounted(() => {
 .achievement-header{
     height: 60px;
     /* width: 100%; */
-    background: #fff;
+    background: var(--liyin-bg-color-2);
     display: flex;
     align-items: center;
     position: fixed;
@@ -88,20 +89,20 @@ onMounted(() => {
     position: sticky;
     top: 0;
     z-index: 10;
-    background: #ededed;
+    background: var(--liyin-bg-color-1);
 }
-.achievement div::-webkit-scrollbar {
+.achievement .scroller::-webkit-scrollbar {
     width: 6px;
     height: 6px;
 }   
-.achievement div::-webkit-scrollbar-track {
+.achievement .scroller::-webkit-scrollbar-track {
     background-color: transparent;
 }
-.achievement div::-webkit-scrollbar-thumb {
+.achievement .scroller::-webkit-scrollbar-thumb {
     background-color: rgba(139, 139, 139, 0.4);
     border-radius: 10px;
 }
-.achievement div::-webkit-scrollbar-button {
+.achievement .scroller::-webkit-scrollbar-button {
     display: none;
 }
 .bottom {
@@ -119,14 +120,14 @@ onMounted(() => {
     left: 0;
     right: 0;
     height: 1px; 
-    background-color: #cccccc; 
+    background-color: var(--liyin-ach-bottom-text-color); 
     z-index: 1; 
 }
 .prompt-concent{
     position: relative;
-    color: #cccccc;
+    color: var(--liyin-ach-bottom-text-color);
     z-index: 2;
-    background-color: #ededed;;
+    background-color: var(--liyin-bg-color-1);
     padding: 0 20px;
 }
 @media (max-width: 768px){
@@ -143,7 +144,7 @@ onMounted(() => {
     .achievement-header{
         height: 50px;
         top: 0;
-        right: 130px;
+        right: 135px;
         z-index: 30;
     }
     .import-button {

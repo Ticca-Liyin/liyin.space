@@ -1,20 +1,49 @@
 <script setup>
 import { ArrowDown } from '@element-plus/icons-vue'
 import { useUserInfoStore } from '@/stores/userInfo'
+import { useCharacterStore } from '@/stores/character'
+import { useIsMobileStore } from '@/stores/isMobile'
+import { useThemeStore } from '@/stores/theme'
 import { onMounted } from 'vue'
 import { storeToRefs } from 'pinia'
 import { useRoute } from 'vue-router';
+import { getValidUerInfoAvatar, getValidUerInfoAvatarName} from '@/utils/getValidUerInfoAvatar'
 
 const route = useRoute()
 
 const userInfoStore = useUserInfoStore()
 const { userInfoList, currentUserInfo } = storeToRefs(userInfoStore)
 const { getUserInfo, handleCurrentTokenID } = userInfoStore
+
+const characterStore = useCharacterStore()
+const { initialCharactersInfo } = characterStore
+
+const isMobileStore = useIsMobileStore()
+const { isMobile } = storeToRefs(isMobileStore)
+
+const themeStore = useThemeStore()
+const { isDark } = storeToRefs(themeStore)
+
+const navList = [
+    {
+        name: '成就',
+        value: 'achievement',
+    },
+    {
+        name: '角色',
+        value: 'character',
+    },
+    {
+        name: '设置',
+        value: 'setting',
+    }
+]
+
 onMounted(() => {
     getUserInfo()
+    initialCharactersInfo()
 })
 
-const isMobile = window.matchMedia('(max-width: 768px)').matches
 </script>
 
 <template>
@@ -28,13 +57,14 @@ const isMobile = window.matchMedia('(max-width: 768px)').matches
             <el-dropdown class="dropdown-user" :trigger="isMobile ? 'click' : 'hover'">
                 <div class="user-info">
                     <div class="user-avatar">
-                        <img src="/src/images/三月七.png" alt="">
+                        <img :src='getValidUerInfoAvatar(currentUserInfo?.avatar)' 
+                            :alt="getValidUerInfoAvatarName(currentUserInfo?.avatar)">
                     </div>
                     <div class="user-content">
                         <div class="user-name"> {{ currentUserInfo?.name }} </div>
                         <div class="user-uid"> {{ currentUserInfo?.uid }}</div>
                     </div>
-                    <el-icon class="el-icon--right">
+                    <el-icon class="el-icon--right user-arrow">
                         <arrow-down />
                     </el-icon>
                 </div>
@@ -43,7 +73,8 @@ const isMobile = window.matchMedia('(max-width: 768px)').matches
                         <div class="user-info" v-for="userInfo in userInfoList.list" :key="userInfo.tokenID"
                         @click="handleCurrentTokenID(userInfo.tokenID)">
                             <div class="user-avatar">
-                                <img src="/src/images/三月七.png" alt="">
+                                <img :src='getValidUerInfoAvatar(userInfo?.avatar)' 
+                                    :alt="getValidUerInfoAvatarName(userInfo?.avatar)">
                             </div>
                             <div class="user-content">
                                 <div class="user-name"> {{ userInfo?.name }} </div>
@@ -62,22 +93,15 @@ const isMobile = window.matchMedia('(max-width: 768px)').matches
     </header>
 
     <aside class="ly-aside">
-        <RouterLink to="/achievement" :class="{'router-link-exact-active': route.path.split('/')[1] === 'achievement'}">
+        <RouterLink v-for="nav in navList" :to="`/${nav.value}`" :class="{'router-link-exact-active': route.path.split('/')[1] === nav.value}">
             <div class="nav-main">
                 <div class="nav-content">
-                    <img src="/src/images/achievementIcon.png" alt="">
+                    <img :src="`/src/images/icon/${nav.value}Icon.png`" alt="nav.name" v-if="route.path.split('/')[1] !== nav.value">
+                    <img :src="`/src/images/icon/${nav.value}DarkIcon.png`" :alt="nav.name" v-else-if="isDark">
+                    <img :src="`/src/images/icon/${nav.value}LightIcon.png`" :alt="nav.name" v-else-if="isMobile">
+                    <img :src="`/src/images/icon/${nav.value}Icon1.png`" :alt="nav.name" v-else>
                     <div class="nav-title">
-                        成就
-                    </div>
-                </div>
-            </div>
-        </RouterLink>
-        <RouterLink to="/setting" :class="{'router-link-exact-active': route.path.split('/')[1]  === 'setting'}">
-            <div class="nav-main">
-                <div class="nav-content">
-                    <img src="/src/images/settingIcon.png" alt="">
-                    <div class="nav-title">
-                        设置
+                        {{nav.name}}
                     </div>
                 </div>
             </div>
@@ -91,12 +115,12 @@ const isMobile = window.matchMedia('(max-width: 768px)').matches
 
 <style>
 a {
-    color: #767676;
+    color: var(--liyin-text-color);
 }
 .ly-header{
     width: 100%;
     height: 60px;
-    background-color: #fff;
+    background-color: var(--liyin-bg-color-2);
     display: flex;
     justify-content: space-between;
     box-shadow: 1px 5px 10px rgba(60, 60, 60, 0.3);
@@ -106,12 +130,12 @@ a {
     width: 150px;
     height: 60px;
     line-height: 60px;
-    color: #fff;
+    color: var(--liyin-text-light-color);
     font-size: 18px;
     font-weight: 700;
     text-align: center;
-    background-color: #4A90E2;
-    box-shadow: 5px 1px 10px rgba(60, 60, 60, 0.3);
+    background-color: var(--liyin-header-left-bg-color);
+    box-shadow: var(--liyin-header-left-box-shadow)
 }
 .ly-header-right{
     display: flex;
@@ -131,7 +155,7 @@ a {
     user-select: none;
 }
 .user-info:hover{
-    background-color: #ECF5FF;
+    background-color: var(--liyin-userinfo-hover-bg-color);
 }
 .user-avatar{
     width: 40px;
@@ -139,6 +163,8 @@ a {
     border-radius: 50%;
     overflow: hidden;
     margin-right: 5px;
+    border: 2px solid var(--liyin-char-avatar-border-color);
+    background-color: var(--liyin-char-avatar-bg-color);
 }
 .user-avatar img{
     width: 100%;
@@ -152,17 +178,24 @@ a {
 .user-name{
     font-size: 15px;
     font-weight: 700;
+    color: var(--liyin-text-main-color);
 }
 .user-info:hover .user-name{
-    color: #409EFF;
+    color: var(--el-color-primary);
 }
 .user-uid{
-    color: #767676;
+    color: var(--liyin-text-color);
     font-size: 12px;
 }
 .user-info:hover .user-uid{
-    color: #409EFF;
+    color: var(--el-color-primary);
     
+}
+/* .user-arrow{
+    color: var(--liyin-arrow-color)
+} */
+.user-info:hover .user-arrow{
+    color: var(--el-color-primary);
 }
 .dropdown-user .el-icon--right{
     margin-left: 0px;
@@ -170,7 +203,7 @@ a {
 .ly-aside{
     width: 150px;
     height: calc(100vh - 60px);
-    background-color: #00A8E8;
+    background-color: var(--liyin-aside-bg-color);
     box-shadow: 5px 1px 10px rgba(60, 60, 60, 0.3);
 }
 .nav-main{
@@ -179,8 +212,8 @@ a {
     user-select: none;
 }
 .ly-aside a.router-link-exact-active .nav-main{
-    background-color: #4A90E2AA;
-    color: #fff;
+    background-color: var(--liyin-aside-selected-bg-color);
+    color: var(--liyin-aside-selected-text-color)
 }
 .nav-content {
     display: flex;
@@ -192,17 +225,17 @@ a {
     margin: 10px;
 }
 .nav-title{
-    color: #C9D3E3;
+    color: var(--liyin-aside-text-color);
     font-size: 16px;
     font-weight: 700;
 }
 .nav-main:hover .nav-title{
-    color: #fff;
+    color: var(--liyin-aside-selected-text-color);
 }
 .ly-aside a.router-link-exact-active .nav-title{
-    color: #fff;
+    color: var(--liyin-aside-selected-text-color);
 }
-@media (min-width: 768px){
+@media (min-width: 769px){
     .ly-header{
         position: fixed;
         top: 0;
@@ -257,14 +290,14 @@ a {
         font-weight: 700;
     }
     .user-uid{
-        color: #767676;
+        color: var(--liyin-text-color);
         font-size: 12px;
     }
     .ly-aside{
         width: 100%;
         height: 50px;
         display: flex;
-        background-color: #fff;
+        background-color: var(--liyin-bg-color-2);
         flex-direction: row;
         justify-content: space-around;
         box-shadow: 1px -3px 10px rgba(60, 60, 60, 0.3);
@@ -278,8 +311,8 @@ a {
         padding: 5px 10%;
     }
     .ly-aside a.router-link-exact-active .nav-main{
-        background-color: #fff;
-        color: #00A8E8;
+        background-color: var(--liyin-bg-color-2);
+        color: var(--liyin-aside-selected-text-color-2);
     }
     .nav-content {
         display: flex;
@@ -297,7 +330,10 @@ a {
         font-weight: 700;
     }
     .ly-aside a.router-link-exact-active .nav-title{
-        color: #00A8E8;
+        color: var(--liyin-aside-selected-text-color-2);
+    }
+    .nav-main:hover .nav-title{
+        color: var(--liyin-aside-text-color);
     }
     .ly-main{
         padding: 50px 0 50px 0;
