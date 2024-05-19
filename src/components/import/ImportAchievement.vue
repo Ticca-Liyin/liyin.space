@@ -234,8 +234,8 @@ const handleCloseImportDialog = () => {
 .import-button {
     height: 15px;
     line-height: 15px;
-    color: #606266;
-    border: 1px solid #DCDFE6;
+    color: var(--el-text-color-regular);
+    border: 1px solid var(--liyin-button-border-color);
     font-size: 15px;
     padding: 11px 15px 11px 15px;
     border-radius: 5px;
@@ -243,8 +243,8 @@ const handleCloseImportDialog = () => {
     user-select: none;
 }
 .import-button:hover {
-    border: 1px solid #409EFF;
-    color: #409EFF;
+    border: 1px solid var(--el-color-primary);
+    color: var(--el-color-primary);
 }
 .dialog-import{
     width:40%;
@@ -260,7 +260,7 @@ const handleCloseImportDialog = () => {
 }
 .dialog-import-main{
     width:100%;
-    border:1px dashed #606266;
+    border:1px dashed var(--liyin-dashed-border-color);
     border-radius: 5px;
     position: relative;
 }
@@ -268,7 +268,7 @@ const handleCloseImportDialog = () => {
     height: 40px;
 } */
 .dialog-import-tip{
-    color: #767676;
+    color: var(--liyin-text-color);
     font-size: 15px;
     padding-left: 20px;
     padding-top: 10px;
@@ -280,7 +280,7 @@ const handleCloseImportDialog = () => {
     font-size: 16px;
 }
 .dialog-import-showFileName-input{
-    width: 400px;
+    width: calc(100% - 120px);
     height: 60px;
     padding-left: 20px;
     padding-top: 10px;
@@ -300,7 +300,7 @@ const handleCloseImportDialog = () => {
     justify-content: space-between;
 }
 .dialog-import-footer-tip{
-    color: #767676;
+    color: var(--liyin-text-color);
     font-size: 15px;
     padding-left: 10px;
 }

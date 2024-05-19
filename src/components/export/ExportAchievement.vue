@@ -1,10 +1,13 @@
 <script setup>
 import { ArrowDown } from '@element-plus/icons-vue'
 import { useAchievementStore } from '@/stores/achievement';
+import { useIsMobileStore } from '@/stores/isMobile'
 import { storeToRefs } from 'pinia';
 import saveJson from './saveJson';
 import { utils, writeFile } from 'xlsx';
 
+const isMobileStore = useIsMobileStore()
+const { isMobile } = storeToRefs(isMobileStore)
 
 const achievementStore = useAchievementStore()
 const { achievementSeries } = storeToRefs(achievementStore);
@@ -88,14 +91,14 @@ const formatDate = (date) => {
     return `${year}${month}${day}${hours}${minutes}${seconds}`;
 }
 
-const isMobile = window.matchMedia('(max-width: 768px)').matches
+// const isMobile = window.matchMedia('(max-width: 768px)').matches
 </script>
 
 <template>
     <el-dropdown class="el-dropdown-main"  :trigger="isMobile ? 'click' : 'hover'">
         <div class="export-button">
             导出
-            <el-icon class="el-icon--right">
+            <el-icon class="el-icon--right export-arrow">
                 <arrow-down />
             </el-icon>
         </div>
@@ -118,16 +121,19 @@ const isMobile = window.matchMedia('(max-width: 768px)').matches
     height: 15px;
     line-height: 15px;
     display: flex;
-    border: 1px solid #DCDFE6;
+    border: 1px solid var(--liyin-button-border-color);
     font-size: 15px;
     padding: 11px 10px 11px 15px;
     border-radius: 5px;
     cursor: pointer;
     user-select: none;
 }
+/* .export-arrow{
+    color: var(--liyin-arrow-color)
+} */
 .export-button:hover {
-    border: 1px solid #409EFF;
-    color: #409EFF;
+    border: 1px solid var(--el-color-primary);
+    color:  var(--el-color-primary);
 }
 @media (max-width: 768px){
     .export-button {
