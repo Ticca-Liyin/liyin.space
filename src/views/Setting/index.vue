@@ -15,7 +15,7 @@ import ThemeSetting from '@/views/Setting/ThemeSetting.vue'
         <div class="setting-title">- QQ: 1765931937 </div>
         <div class="video">
             教程视频：
-            <a href="https://www.bilibili.com/video/BV1Mm4y1G7MX" target="_blank" class="video-link">功能介绍</a>
+            <a href="https://space.bilibili.com/2079439802/channel/collectiondetail?sid=3040945" target="_blank" class="video-link">功能介绍合集</a>
         </div>
         <div class="afadian">
             赞助页面：
