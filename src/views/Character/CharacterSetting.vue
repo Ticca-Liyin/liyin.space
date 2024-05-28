@@ -9,8 +9,8 @@ const isMobileStore = useIsMobileStore()
 const { isMobile } = storeToRefs(isMobileStore)
 
 const characterSettingStore = useCharacterSettingStore()
-const { toWebsiteName, scale, useWheelEvent} = storeToRefs(characterSettingStore)
-const { WebsiteNameList, scaleMin, scaleMax} = characterSettingStore
+const { toWebsiteName, scale, useWheelEvent, showStarList, showWarpList} = storeToRefs(characterSettingStore)
+const { WebsiteNameList, scaleMin, scaleMax, selectStarList, selectWarpList} = characterSettingStore
 
 // 设置行相关折叠功能
 const hadFold = ref(false)
@@ -87,18 +87,14 @@ watch(hadFold, saveCharacterSettingFold)
                 <span class="demonstration">跳转网站</span>
                 <el-select
                 v-model="toWebsiteName"
-                collapse-tags
-                collapse-tags-tooltip
                 placeholder="请选择网站名称"
-                size = "small"
-                style="width: 150px; --el-color-primary: #DBC291;"
+                style="width: 160px;"
                 >
                     <el-option
                         v-for="item in Object.values(WebsiteNameList)"
                         :key="item.value"
                         :label="item.label"
                         :value="item.value"
-                        style="--el-color-primary: #DBC291;"
                     />
                 </el-select>
             </div>
@@ -110,7 +106,6 @@ watch(hadFold, saveCharacterSettingFold)
                     inline-prompt
                     active-text="开启"
                     inactive-text="关闭"
-                    style="--el-switch-on-color: #DBC291;"
                 />
             </div>
 
@@ -118,12 +113,48 @@ watch(hadFold, saveCharacterSettingFold)
                 <span class="demonstration">缩放比例</span>
                 <el-slider v-model="scale" :min="scaleMin" :max="scaleMax" :step="0.01" style="width: 150px;"/>
             </div>
-            <div class="character-setting-fold-up" v-if="!hadFold" @click="hadFold = true">
-                <el-icon class="el-icon--right" style="padding: 10px; margin: 0;">
-                    <arrow-up />
-                </el-icon>
+            <!-- <h1>角色列表设置（滚轮控制事件的缩放基础增量（可选实现，或者和开关合并提供 关闭、0.05、0.1、0.15、0.2 四个选项））</h1> -->
+
+            <div class="character-setting-selectbox">
+                <div class="character-setting-select-input">
+                    <el-select
+                    v-model="showStarList"
+                    multiple
+                    placeholder="显示所有稀有度角色"
+                    style="width: 232px;"
+                    >
+                        <el-option
+                            v-for="item in selectStarList"
+                            :key="item.value"
+                            :label="item.label"
+                            :value="item.value"
+                        />
+                    </el-select>
+                </div>
+
+                <div class="character-setting-select-input">
+                    <el-select
+                    v-model="showWarpList"
+                    multiple
+                    placeholder="显示所有跃迁角色"
+                    style="width: 232px;"
+                    >
+                        <el-option
+                            v-for="item in selectWarpList"
+                            :key="item.value"
+                            :label="item.label"
+                            :value="item.value"
+                        />
+                    </el-select>
+                </div>            
+                <div class="character-setting-fold-up" v-if="!hadFold" @click="hadFold = true">
+                    <el-icon class="el-icon--right" style="padding: 10px; margin: 0;">
+                        <arrow-up />
+                    </el-icon>
+                </div>
             </div>
-            <!-- <h1>角色列表设置（跳转主网站、滚轮控制事件的缩放基础增量（可选实现，或者和开关合并提供 关闭、0.05、0.1、0.15、0.2 四个选项））</h1> -->
+
+
         </div>
 
         <div class="character-setting-fold-down" v-if="hadFold" @click="hadFold = false">
@@ -139,6 +170,7 @@ watch(hadFold, saveCharacterSettingFold)
     display: flex;
     align-items: center;
     background-color: var(--liyin-char-bg-color);
+    padding: 5px 0;
 }
 
 .character-setting{
@@ -227,13 +259,12 @@ watch(hadFold, saveCharacterSettingFold)
     /* width: 270px; */
     display: flex;
     align-items: center;
-    margin: 0 10px;
+    margin: 0 20px 0 10px;
 }
 
 .slider-demo-block .el-slider {
   margin-top: 0;
   /* margin-left: 12px; */
-  --el-slider-main-bg-color: #DBC291;
 }
 
 .slider-demo-block .el-slider__button{
@@ -258,6 +289,25 @@ watch(hadFold, saveCharacterSettingFold)
 /* .slider-demo-block .demonstration + .el-slider {
   flex: 0 0 70%;
 } */
+.character-setting-selectbox {
+    display: flex; 
+    align-items: center; 
+    flex: 1 0 0;
+}
+.character-setting.warp .character-setting-selectbox {
+    flex-wrap: nowrap; 
+}
+.character-setting.nowarp .character-setting-selectbox {
+    flex-wrap: nowrap; 
+}
+
+.character-setting-select-input {
+    height: 40px;
+    display: flex;
+    align-items: center;
+    margin: 0 10px;
+}
+
 .character-setting-fold-up{
     display: flex; 
     justify-content: end; 
@@ -279,4 +329,9 @@ watch(hadFold, saveCharacterSettingFold)
     color: var(--liyin-arrow-color);
 }
 
+@media (max-width: 540px) {
+    .character-setting.warp .character-setting-selectbox {
+        flex-wrap: wrap; 
+    }
+}
 </style>

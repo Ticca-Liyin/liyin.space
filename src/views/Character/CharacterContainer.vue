@@ -3,7 +3,7 @@ import CharacterShowBox from './CharacterShowBox.vue';
 import { useCharacterStore } from '@/stores/character';
 import { useCharacterSettingStore } from '@/stores/characterSetting';
 import { useThemeStore } from '@/stores/theme'
-import { computed } from 'vue';
+import { computed, ref } from 'vue';
 import { storeToRefs } from 'pinia';
 
 const characterStore = useCharacterStore()
@@ -11,7 +11,7 @@ const { characters } = storeToRefs(characterStore)
 const { getPathAvatar, getDarkPathAvatar, getCombatTypeAvatar} = characterStore
 
 const characterSettingStore = useCharacterSettingStore()
-const { scale, useWheelEvent } = storeToRefs(characterSettingStore)
+const { scale, useWheelEvent, showStarList, showWarpList } = storeToRefs(characterSettingStore)
 const { scaleBaseIncrement, scaleMin, scaleMax} = characterSettingStore
 
 const themeStore = useThemeStore()
@@ -37,9 +37,26 @@ const characterList = computed(() => {
 
     // 遍历角色列表，将相同 path 和 combattype 的角色放入对应位置
     Object.values(characters.value).forEach(character => {
-        // console.log(character)
+        // 显示角色的星数
+        if(showStarList.value.length > 0)
+            if(!showStarList.value.includes(character.star))
+                return
+
+        // 显示角色的限定程度
+        if(showWarpList.value.length > 0)
+            if(!showWarpList.value.includes(character.warp))
+                return
+
+        // 显示角色的限定程度
+        // if(showWarpList.value.includes('limited')){
+        //     if(character.star <= 4) return
+        //     if(character.version === 1 && !['希儿', '景元'].includes(character.name)) return
+        //     if(character.name.startsWith('开拓者')) return
+        // }
+
         const row = combattypeList.indexOf(character.combattype);
         const col = pathsList.indexOf(character.path);
+        
         result[row][col].push(character);
     });
 
@@ -177,19 +194,24 @@ const handleCharacterTouchEnd = () => {
     <div class="character-container" id="character-container" @wheel="handleCharacterWheel" @mousedown="startCharacterDrag" @mousemove="handleCharacterDrag" 
         @mouseup="endCharacterDrag" @mouseleave="endCharacterDrag" @touchstart="handleCharacterTouchStart" @touchmove="handleCharacterTouchMove" @touchend="handleCharacterTouchEnd"> 
         <div class="character-grid" id="character-grid" :style="`transform: scale(${scale});`">
+
             <div class="grid-flex-center grid-grey-border"></div>
+
+            <!-- 添加 属性 列表头 -->
             <div v-for="(combattype, index) in combattypeList" :key="combattype" 
             :style="{ gridRow: index + 2, gridColumn: 1,}" 
             class="grid-flex-center grid-grey-border grid-combattype-padding">
                 <img class="combattype-avatar" draggable="false" :src="getCombatTypeAvatar(combattype)"  :alt="combattype">
             </div>
 
+            <!-- 添加 命途 行表头 -->
             <div v-for="(path, index) in pathsList" :key="path" 
             :style="{ gridRow: 1, gridColumn: index + 2,}" 
             class="grid-flex-center grid-grey-border grid-path-padding">
                 <img class="path-avatar" draggable="false" :src="isDark ? getPathAvatar(path) : getDarkPathAvatar(path)"  :alt="path">
             </div>
 
+            <!-- 添加 对应属性及命途的 角色信息 -->
             <template v-for="(row, rowIndex) in characterList">
                 <CharacterShowBox
                     v-for="(cell, columnIndex) in row" :key="rowIndex * characterList.length+ columnIndex" 
@@ -221,7 +243,7 @@ const handleCharacterTouchEnd = () => {
     left: 0;  */
     transform-origin: top left;
     transform: scale(1);
-    padding: 10px;
+    padding: 0 10px 10px 10px;
     /* width: 2000px; */
     /* grid-template-rows: repeat(8, 1fx);
     grid-template-columns: repeat(8, 1fx); */
@@ -243,11 +265,11 @@ const handleCharacterTouchEnd = () => {
 }
 
 .grid-combattype-padding{
-    padding: 0 20px;
+    padding: 20px;
 }
 
 .grid-path-padding{
-    padding: 20px 0;
+    padding: 20px;
 }
 
 .grid-character-padding{
@@ -277,5 +299,8 @@ const handleCharacterTouchEnd = () => {
 }
 .character-container::-webkit-scrollbar-button {
     display: none;
+}
+.character-container::-webkit-scrollbar-corner {
+    background-color: var(--liyin-char-bg-color); 
 }
 </style>

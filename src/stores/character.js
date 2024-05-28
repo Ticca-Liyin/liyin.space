@@ -90,9 +90,6 @@ export const useCharacterStore = defineStore('character', () => {
 
     const version = '2.2.0'
 
-    const img_url_prefix = 'https://wiki.hoyolab.com/_nuxt/img/'
-    const star_url_suffix = 'level_star.7cc9f11.png'
-
     const initialCharactersInfo = () => {
         fetch(`/src/jsons/CharacterInfo.json?v=${version}`).then(response => response.json())
         .then(characterInfo => {

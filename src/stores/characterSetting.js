@@ -135,6 +135,31 @@ export const useCharacterSettingStore = defineStore('characterSetting', () => {
 
     watch([toWebsiteName, scale, useWheelEvent], saveCharacterSettingConfig)
 
+    // 显示的 角色 相关设置
+    const showStarList = ref([])
+    const selectStarList = [
+        {
+            value: 4,
+            label: '四星'
+        },
+        {
+            value: 5,
+            label: '五星'
+        }
+    ]
+
+    const showWarpList = ref([])
+    const selectWarpList = [
+        {
+            value: 'limited',
+            label: '限定'
+        },
+        {
+            value: 'not-limited',
+            label: '非限定'
+        }
+    ]
+
     return {
         WebsiteNameList,
         toWebsiteName,
@@ -145,5 +170,9 @@ export const useCharacterSettingStore = defineStore('characterSetting', () => {
         scaleMax,
         scaleMin,
         getCharacterSettingConfig,
+        showStarList,
+        selectStarList,
+        showWarpList,
+        selectWarpList,
     }
 })

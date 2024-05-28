@@ -424,18 +424,22 @@ export const useAchievementStore = defineStore('achievement', () => {
             if(hiddenCompleted.value)
                 if(achievement.Status !== 1)
                     return false
+
             //隐藏暂不可获得成就
             if(hiddenNotAvailable.value)
                 if(achievement.isNotAvailable)
                     return false
+
             //版本筛选
             if(showVersionList.value.length > 0)
                 if(!showVersionList.value.includes(achievement.Version))
                     return false
+                
             //搜索框筛选
             if(!achievement.AchievementTitle.includes(searchContent.value) && 
             !achievement.AchievementDesc.replace(/<br>/g, '').replace(/<div style="color:#8790abff;">/g,'').replace(/<\/div>/g, '').includes(searchContent.value))
                 return false
+
             return true
         })
 

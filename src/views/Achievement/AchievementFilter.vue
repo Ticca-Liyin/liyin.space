@@ -79,12 +79,12 @@ const handleFilterScroll = (event) => {
 
 <template>
     <div class="achievement-filter-fold" :class="{'achievement-filter-fold-open': hadFold}">
-        <div class="achievement-filter" id="achievement-filter" :class="{'achievement-filter-fold-open': hadFold}"
+        <div class="achievement-filter" id="achievement-filter"
             @wheel="handleFilterScroll"
         > 
         <!-- @mousedown="startFilterDrag" @mousemove="handleFilterDrag" @mouseup="endFilterDrag" @mouseleave="endFilterDrag" -->
-            <div class="achievement-filter-left" :class="{'achievement-filter-fold-open': hadFold}">
-                <div class="achievement-filter-search-input"  :class="{'achievement-filter-flex': !hadFold}">
+            <div class="achievement-filter-left">
+                <div class="achievement-filter-search-input" :class="{'achievement-filter-flex': !hadFold}">
                     <el-input
                         v-model="achievementStore.searchContent"
                         class="achievement-filter-search-el-input"
@@ -92,7 +92,7 @@ const handleFilterScroll = (event) => {
                         placeholder="搜索成就名、成就描述"
                     />
                 </div>
-                <div class="achievement-filter-select-input"  :class="{'achievement-filter-flex': !hadFold}">
+                <div class="achievement-filter-select-input" :class="{'achievement-filter-flex achievement-filter-version': !hadFold}">
                     <el-select
                     v-model="achievementStore.showVersionList"
                     multiple
@@ -111,7 +111,7 @@ const handleFilterScroll = (event) => {
                     </el-select>
                 </div>
             </div>
-            <div class="achievement-filter-checkbox" :class="{'achievement-filter-fold-open': hadFold}">
+            <div class="achievement-filter-checkbox">
                 <div class="achievement-filter-checkbox-input" :class="{'achievement-filter-flex': !hadFold}">
                     <el-checkbox v-model="achievementStore.hiddenCompleted" label="隐藏已完成成就" :size= 'isMobile ? "default" : "large"' />   
                 </div>
@@ -160,7 +160,7 @@ const handleFilterScroll = (event) => {
 .achievement-filterr::-webkit-scrollbar {
     width: 0px;  /* 隐藏 Chrome 浏览器的滚动条 */
 }
-.achievement-filter.achievement-filter-fold-open{
+.achievement-filter-fold.achievement-filter-fold-open .achievement-filter{
     flex-direction: row;
     flex-wrap: nowrap;
     overflow-y: hidden;
@@ -173,7 +173,7 @@ const handleFilterScroll = (event) => {
     align-items: center;
     flex-wrap: nowrap;
 }
-.achievement-filter-left.achievement-filter-fold-open{
+.achievement-filter-fold.achievement-filter-fold-open .achievement-filter-left{
     flex-direction: row;
     flex-wrap: nowrap;
 }
@@ -196,7 +196,7 @@ const handleFilterScroll = (event) => {
     flex: 3 0 0;
     /* margin: 0 10px; */
 }
-.achievement-filter-checkbox.achievement-filter-fold-open{
+.achievement-filter-fold.achievement-filter-fold-open .achievement-filter-checkbox{
     flex-direction: row;
     flex-wrap: nowrap;
 }
@@ -227,7 +227,7 @@ const handleFilterScroll = (event) => {
 }
 @media (max-width: 1260px) {
     .achievement-filter-fold{
-        padding: 10px 0 5px 0;
+        padding: 14px 0 7px 0;
     }
     .achievement-filter-fold.achievement-filter-fold-open{
         padding: 10px 0;
@@ -235,10 +235,6 @@ const handleFilterScroll = (event) => {
     .achievement-filter {
         flex-direction: column;
         /* padding: 15px 0 0 0; */
-    }
-    .achievement-filter.achievement-filter-fold-open{
-        flex-direction: row;
-        flex-wrap: nowrap;
     }
     .achievement-filter-checkbox-input.achievement-filter-flex {
         flex: 1 0 0;
@@ -250,13 +246,6 @@ const handleFilterScroll = (event) => {
     }
 }
 @media (max-width: 768px){
-    .achievement-filter {
-        flex-direction: column;
-    }
-    .achievement-filter.achievement-filter-fold-open{
-        flex-direction: row;
-        flex-wrap: nowrap;
-    }
     .achievement-filter-checkbox-input.achievement-filter-flex {
         flex: 1 0 0;
     }
@@ -284,24 +273,23 @@ const handleFilterScroll = (event) => {
     .achievement-filter-left{
         flex-wrap: wrap;
     }
-    .achievement-filter-left.achievement-filter-fold-open{
+    .achievement-filter-fold.achievement-filter-fold-open .achievement-filter-left{
         flex-wrap: nowrap;
+    }
+}
+@media (max-width: 384px){
+    .achievement-filter-version{
+        padding-top: 5px;
     }
 }
 @media (max-width: 365px){
     .achievement-filter-checkbox-input.achievement-filter-flex:nth-child(n) {
         flex: 1 0 calc(60% - 14px);
     }
-    .achievement-filter-left{
-        flex-wrap: wrap;
-    }
-    .achievement-filter-left.achievement-filter-fold-open{
-        flex-wrap: nowrap;
-    }
 }
 @media (max-width: 768px){
     .achievement-filter-fold{
-        padding: 5px 0 0 0;
+        padding: 4px 0 1px 0;
     }
     .achievement-filter-fold.achievement-filter-fold-open{
         padding: 0;
