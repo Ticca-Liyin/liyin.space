@@ -618,7 +618,7 @@
     "path": "毁灭",
     "combattype": "物理",
     "star": 5,
-    "warp": "not-limited",
+    "warp": "not-warp",
     "version": 1
   },
   "8004": {
@@ -630,7 +630,7 @@
     "path": "存护",
     "combattype": "火",
     "star": 5,
-    "warp": "not-limited",
+    "warp": "not-warp",
     "version": 1
   },
   "8006": {
@@ -642,7 +642,7 @@
     "path": "同谐",
     "combattype": "虚数",
     "star": 5,
-    "warp": "not-limited",
+    "warp": "not-warp",
     "version": 2.2,
     "deploymentDate": 1715137200000
   }

@@ -1,0 +1,73 @@
+<script setup>
+import { useIsMobileStore } from '@/stores/isMobile'
+import { storeToRefs } from 'pinia'
+
+const isMobileStore = useIsMobileStore()
+const { isMobile } = storeToRefs(isMobileStore)
+
+const updateLogInfo = [
+    { 
+        version: '2.2.3', 
+        date: '2024-06-01', 
+        title: '新增更新日志，新增 祈鸢ya 的相关攻略，新增显示对应版本角色设置，修改成就攻略界面样式, 修改开拓者为非跃迁类别',
+        changes: '<ul style="padding-left: 10px;"><li>新增更新日志</li><li>新增 祈鸢ya 的相关攻略，一位非常优秀的原神及星铁攻略up主，大家可以关注一下<br>【注：目前只上传了 2.2 版本的成就攻略，其他攻略后面陆续补充】</li><li>新增角色界面显示对应版本角色设置</li><li>修改成就攻略界面部分样式，支持查看作者主页</li><li>修改开拓者为非跃迁类别</li></ul>' 
+    },
+    { 
+        version: '2.2.2', 
+        date: '2024-05-29', 
+        title: '新增角色界面显示角色相关设置，修改成就及角色界面部分样式',
+        changes: '<ul style="padding-left: 10px;"><li>新增角色界面显示角色相关设置</li><li>修改成就及角色界面部分样式</li></ul>' 
+    },
+    { 
+        version: '2.2.1', 
+        date: '2024-05-19', 
+        title: '新增主题颜色切换功能，新增修改账号头像的功能，新增角色界面，新增折叠功能，新增缓存机制，新增教程视跳转链接',
+        changes: '<ul style="padding-left: 10px;"><li>新增主题颜色切换功能</li><li>新增修改账号头像的功能</li><li>新增角色界面</li><li>新增折叠功能</li><li>新增缓存机制</li><li>新增教程视频跳转链接</li></ul>' 
+    },
+    { 
+        version: '2.2.0', 
+        date: '2024-05-08', 
+        title: '更新 2.2 版本成就相关数据',
+        changes: '<ul style="padding-left: 10px;"><li>更新 2.2 版本成就相关数据</li></ul>' 
+    },
+    { 
+        version: '更早', 
+        date: '更早', 
+        title: '无相关记录',
+        changes: '<ul style="padding-left: 10px;"><li>无相关记录</li></ul>' 
+    },
+]
+
+</script>
+
+<template>
+    <el-popover
+        :placement="isMobile ? 'bottom' : 'bottom-start'"
+        :width="isMobile ? '80%' : '50%'"
+        trigger="hover"
+    >
+        <template #reference>
+            <div class="update-log">
+                <el-alert :title="`${ updateLogInfo[0].date}： ${ updateLogInfo[0].title}`" type="warning" show-icon :closable="false"/>
+            </div>
+        </template>
+        <el-table :data="updateLogInfo" :max-height="300" border table-layout="auto" >
+            <el-table-column type="expand">
+                <template #default="props">
+                    <div class="update-log-changes" v-html="props.row.changes"></div>
+                </template>
+            </el-table-column>
+            <el-table-column property="version" sortable label="版本" />
+            <el-table-column property="date" sortable label="日期" />
+        </el-table>
+    </el-popover>
+</template>
+
+<style scoped>
+.update-log {
+    margin: 10px 10px 0 10px;
+}
+.update-log-changes {
+    margin: 5px 15px;
+}
+</style>

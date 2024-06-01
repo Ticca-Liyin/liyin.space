@@ -9,8 +9,8 @@ const isMobileStore = useIsMobileStore()
 const { isMobile } = storeToRefs(isMobileStore)
 
 const characterSettingStore = useCharacterSettingStore()
-const { toWebsiteName, scale, useWheelEvent, showStarList, showWarpList} = storeToRefs(characterSettingStore)
-const { WebsiteNameList, scaleMin, scaleMax, selectStarList, selectWarpList} = characterSettingStore
+const { toWebsiteName, scale, useWheelEvent, showStarList, showWarpList, showVersionList, selectVersionList} = storeToRefs(characterSettingStore)
+const { WebsiteNameList, scaleMin, scaleMax, selectStarList, selectWarpList } = characterSettingStore
 
 // 设置行相关折叠功能
 const hadFold = ref(false)
@@ -115,7 +115,7 @@ watch(hadFold, saveCharacterSettingFold)
             </div>
             <!-- <h1>角色列表设置（滚轮控制事件的缩放基础增量（可选实现，或者和开关合并提供 关闭、0.05、0.1、0.15、0.2 四个选项））</h1> -->
 
-            <div class="character-setting-selectbox">
+            <!-- <div class="character-setting-selectbox"> -->
                 <div class="character-setting-select-input">
                     <el-select
                     v-model="showStarList"
@@ -136,6 +136,8 @@ watch(hadFold, saveCharacterSettingFold)
                     <el-select
                     v-model="showWarpList"
                     multiple
+                    collapse-tags
+                    collapse-tags-tooltip
                     placeholder="显示所有跃迁角色"
                     style="width: 232px;"
                     >
@@ -147,12 +149,31 @@ watch(hadFold, saveCharacterSettingFold)
                         />
                     </el-select>
                 </div>            
+
+                <div class="character-setting-select-input">
+                    <el-select
+                    v-model="showVersionList"
+                    multiple
+                    collapse-tags
+                    collapse-tags-tooltip
+                    placeholder="显示所有版本角色"
+                    style="width: 232px;"
+                    >
+                        <el-option
+                            v-for="item in selectVersionList"
+                            :key="item.value"
+                            :label="item.label"
+                            :value="item.value"
+                        />
+                    </el-select>
+                </div> 
+
                 <div class="character-setting-fold-up" v-if="!hadFold" @click="hadFold = true">
                     <el-icon class="el-icon--right" style="padding: 10px; margin: 0;">
                         <arrow-up />
                     </el-icon>
                 </div>
-            </div>
+            <!-- </div> -->
 
 
         </div>
@@ -289,7 +310,7 @@ watch(hadFold, saveCharacterSettingFold)
 /* .slider-demo-block .demonstration + .el-slider {
   flex: 0 0 70%;
 } */
-.character-setting-selectbox {
+/* .character-setting-selectbox {
     display: flex; 
     align-items: center; 
     flex: 1 0 0;
@@ -299,7 +320,7 @@ watch(hadFold, saveCharacterSettingFold)
 }
 .character-setting.nowarp .character-setting-selectbox {
     flex-wrap: nowrap; 
-}
+} */
 
 .character-setting-select-input {
     height: 40px;
@@ -329,9 +350,32 @@ watch(hadFold, saveCharacterSettingFold)
     color: var(--liyin-arrow-color);
 }
 
-@media (max-width: 540px) {
+@media (min-width: 1450px) and (max-width: 1600px){
+    .character-setting.warp .slider-demo-block {
+        flex: 1 0 50%; 
+    }
+}
+
+@media (min-width: 1050px) and (max-width: 1450px){
+    .character-setting.warp .slider-demo-block {
+        flex: 1 0 40%; 
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1600px) {
+    .character-setting.warp .switch-demo-block{
+        width: 232px;
+    }
+}
+
+@media (min-width: 755px) and (max-width: 768px) {
+    .character-setting.warp .slider-demo-block {
+        flex: 1 0 40%; 
+    }
+}
+/* @media (max-width: 950px) {
     .character-setting.warp .character-setting-selectbox {
         flex-wrap: wrap; 
     }
-}
+} */
 </style>

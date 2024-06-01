@@ -44,8 +44,9 @@
     --liyin-ach-bottom-text-color: #cccccc;
     --liyin-orange-color: #FF8D00;
     --liyin-author-text-color: #FF7A45;
+    --liyin-author-hover-text-color: #fc6124;
 
-    --liyin-char-bg-color: #fff;
+    --liyin-char-bg-color: #eeeeee;
     --liyin-char-text-color: #606266;
     --liyin-char-name-text-color: #606266;
     --liyin-char-gird-border-color: #DADBDF;
@@ -55,7 +56,7 @@
     --liyin-char-avatar-bg-color: #8E8679;
     --liyin-char-avatar-border-color: #DBC291;
 
-    --liyin-setting-bg-color: #fff;
+    --liyin-setting-bg-color: #eeeeee;
     --liyin-setting-selected-bg-color: #ECF5FF;
     --liyin-setting-hover-bg-color: #F5F7FA;
 

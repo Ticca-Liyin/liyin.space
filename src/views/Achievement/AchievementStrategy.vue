@@ -1,10 +1,14 @@
 <script setup>
 import { useAchievementStore } from '@/stores/achievement';
+import { useAuthorStore } from '@/stores/author';
 import { storeToRefs } from 'pinia';
 import formatTimestamp from './formatTimestamp';
 
 const achievementStore = useAchievementStore()
 const { dialogVisible, dialogAchievement, dialogMultipleChoiceList, showStrategyList} = storeToRefs(achievementStore);
+
+const authorStore = useAuthorStore()
+const { authors } = storeToRefs(authorStore)
 
 </script>
 
@@ -60,20 +64,28 @@ const { dialogVisible, dialogAchievement, dialogMultipleChoiceList, showStrategy
                 <div class="dialog-body-introduce">
                     成就攻略：
                 </div>
-                <div v-if="showStrategyList.length > 0">
-                    <div v-for="strategy in showStrategyList" :key="strategy.title" class="dialog-body-stratery-concent PC">
-                        <div>
-                            <span class="dialog-body-stratery-author">【{{ strategy.author }}】</span><span>{{ strategy.title }}</span> ：
-                        </div> 
-                        <div>
-                            <a :href="strategy.url" target="_blank" style="margin-left: 7px;"> {{ strategy.url }}</a>                            
+                <template v-if="showStrategyList.length > 0">
+                    <template v-for="strategy in showStrategyList" :key="strategy.title">
+                        <template v-if="Object.keys(authors).includes(String(strategy.author))">
+                            <div class="dialog-body-stratery-concent PC">
+                                <div>
+                                    <a :href="authors[strategy.author].homepage" target="_blank" class="dialog-body-stratery-author">【{{ authors[strategy.author].name }}】</a>
+                                    <span>{{ strategy.title }}</span> ：
+                                </div> 
+                                <div>
+                                    <a class="dialog-body-stratery-href" :href="strategy.url" target="_blank" style="margin-left: 7px;"> {{ strategy.url }}</a>                            
+                                </div>
+                            </div>
+                            <div class="dialog-body-stratery-concent Mobile">
+                                <a :href="authors[strategy.author].homepage" target="_blank" class="dialog-body-stratery-author">【{{ authors[strategy.author].name }}】</a>
+                                <a class="dialog-body-stratery-href" :href="strategy.url" target="_blank"><span>{{ strategy.title }}</span> </a>
+                            </div>
+                        </template>
+                        <div v-else class="dialog-body-achievement">
+                            该攻略作者已注销
                         </div>
-                    </div>
-                    <div v-for="strategy in showStrategyList" :key="strategy.title" class="dialog-body-stratery-concent Mobile">
-                        <span class="dialog-body-stratery-author">【{{ strategy.author }}】</span>
-                        <a :href="strategy.url" target="_blank"><span>{{ strategy.title }}</span> </a>
-                    </div>
-                </div>
+                    </template>
+                </template>
                 <div v-else class="dialog-body-stratery-concent">
                     <div>暂无相关攻略</div>
                 </div>
@@ -81,7 +93,8 @@ const { dialogVisible, dialogAchievement, dialogMultipleChoiceList, showStrategy
         </div>
         <template #footer>
             <div class="dialog-footer">
-                <div>点击 绿字内容 跳转至对应攻略</div>
+                <div>点击 橙字内容 跳转至作者主页</div>
+                <div>点击 绿字内容 跳转至攻略页面</div>
             </div>
         </template>
     </el-dialog>
@@ -103,6 +116,22 @@ const { dialogVisible, dialogAchievement, dialogMultipleChoiceList, showStrategy
 .dialog-achievement .el-dialog__footer{
     padding: 0px 20px 15px 20px;
 }
+
+.dialog-achievement::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+}   
+.dialog-achievement::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+.dialog-achievement::-webkit-scrollbar-thumb {
+    background-color: rgba(139, 139, 139, 0.4);
+    border-radius: 10px;
+}
+.dialog-achievement::-webkit-scrollbar-button {
+    display: none;
+}
+
 .dialog-header{
     /* display: flex; */
     font-weight: 700;
@@ -163,20 +192,26 @@ const { dialogVisible, dialogAchievement, dialogMultipleChoiceList, showStrategy
 .dialog-body-stratery-concent.Mobile{
     display: none;
 }
-.dialog-body-stratery-author{
+a.dialog-body-stratery-author{
+    text-decoration: none;
     color: var(--liyin-author-text-color);
+    word-wrap: break-word;
 }
-.dialog-achievement a {
+a.dialog-body-stratery-author:hover{
+    color: var(--liyin-author-hover-text-color);
+}
+a.dialog-body-stratery-href {
     text-decoration: none;
     color: var(--liyin-url-text-color);
     word-wrap: break-word;
 }
-.dialog-achievement a:hover{
+a.dialog-body-stratery-href:hover{
     color: var(--liyin-url-hover-text-color);
 }
 .dialog-footer {
   /* margin-right: 10px; */
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   color: var(--liyin-text-color);

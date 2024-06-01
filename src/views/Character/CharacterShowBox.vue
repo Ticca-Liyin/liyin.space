@@ -51,7 +51,7 @@ const showCharacters = computed(() => {
                 <div v-if="char.deploymentDate > Date.now()" class="character-slanted-content"> 即将上线 </div>
 
                 <img class="character-avatar" :class="'d-img-level-' + char.star" draggable="false" :src="getCharacterAvatar(char.id)" :alt="char.name">
-                
+
                 <div class="character-star">
                     <img v-for="i in new Array(char.star)" class="character-star-avatar" draggable="false" 
                     :src="getStarAvatar()" alt="star">

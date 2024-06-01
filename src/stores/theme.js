@@ -3,7 +3,7 @@ import { defineStore } from 'pinia'
 
 export const useThemeStore = defineStore('theme', () => {
     const THEME_KEY = 'theme'
-    const theme  = ref(localStorage.getItem(THEME_KEY) || 'system')
+    const theme  = ref(localStorage.getItem(THEME_KEY) ?? 'system')
 
     const themeList = [
         {

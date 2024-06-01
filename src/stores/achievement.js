@@ -1,6 +1,13 @@
 import { nextTick, watch, computed, ref } from 'vue'
 import { defineStore, storeToRefs } from 'pinia'
+import { useAuthorStore } from '@/stores/author'
 import { useUserInfoStore } from '@/stores/userInfo'
+import { achievementInfoVersion, achievementSeriesVersion, multipleChoiceVersion,
+     notAvailableAchievementVersion, achievementStrategyVersion, strategyInfoVersion } 
+     from '@/utils/version.js'
+
+const authorStore = useAuthorStore()
+const { authors } = storeToRefs(authorStore)
 
 export const useAchievementStore = defineStore('achievement', () => {
     class Achievement {
@@ -299,23 +306,28 @@ export const useAchievementStore = defineStore('achievement', () => {
     const showStrategyList = computed(() => {
         const strategies = achievementStrategy[dialogAchievement?.value.AchievementID] ?? []
         const showStrategyList = []
-        for(const index in strategies)
-            showStrategyList.push(strategyInfo[strategies[index]]) 
+        for(const index in strategies){
+            const strategy = strategyInfo[strategies[index]]
+
+            if(!Object.keys(authors.value).includes(String(strategy.author))) continue
+
+            showStrategyList.push(strategy) 
+            
+        }
         return showStrategyList 
     })
 
     const achievements = ref([])
     const achievementSeries = ref([])
 
-    const version = ['2.2.0', '2.2.0', '2.2.1', '2.2.1','1.5.0','1.5.0']
     const initialAchievementsInfo = () => {
         Promise.all([
-            fetch(`/src/jsons/AchievementInfo.json?v=${version[0]}`).then(response => response.json()),
-            fetch(`/src/jsons/AchievementSeries.json?v=${version[1]}`).then(response => response.json()),
-            fetch(`/src/jsons/MultipleChoice.json?v=${version[2]}`).then(response => response.json()),
-            fetch(`/src/jsons/NotAvailableAchievement.json?v=${version[3]}`).then(response => response.json()),
-            fetch(`/src/jsons/AchievementStrategy.json?v=${version[4]}`).then(response => response.json()),
-            fetch(`/src/jsons/StrategyInfo.json?v=${version[5]}`).then(response => response.json()),
+            fetch(`/src/jsons/AchievementInfo.json?v=${achievementInfoVersion}`).then(response => response.json()),
+            fetch(`/src/jsons/AchievementSeries.json?v=${achievementSeriesVersion}`).then(response => response.json()),
+            fetch(`/src/jsons/MultipleChoice.json?v=${multipleChoiceVersion}`).then(response => response.json()),
+            fetch(`/src/jsons/NotAvailableAchievement.json?v=${notAvailableAchievementVersion}`).then(response => response.json()),
+            fetch(`/src/jsons/AchievementStrategy.json?v=${achievementStrategyVersion}`).then(response => response.json()),
+            fetch(`/src/jsons/StrategyInfo.json?v=${strategyInfoVersion}`).then(response => response.json()),
         ])
         .then(([achievementInfo, achievementseries, multiplechoice, notavailable, achievementsteategy, strategyinfo]) => {
             achievements.value = []
@@ -463,9 +475,9 @@ export const useAchievementStore = defineStore('achievement', () => {
             // 数据存在，将其从字符串转换为对象
             const data = JSON.parse(tempAchievementFilter)
 
-            hiddenCompleted.value = data?.hiddenCompleted || false
-            hiddenNotAvailable.value = data?.hiddenNotAvailable || false
-            incompletePriority.value = data?.incompletePriority || false
+            hiddenCompleted.value = data?.hiddenCompleted ?? false
+            hiddenNotAvailable.value = data?.hiddenNotAvailable ?? false
+            incompletePriority.value = data?.incompletePriority ?? false
         } else {
             // 数据不存在，执行相应的操作
             hiddenCompleted.value = false

@@ -1,6 +1,7 @@
 <script setup>
 import { ArrowDown } from '@element-plus/icons-vue'
 import { useUserInfoStore } from '@/stores/userInfo'
+import { useAuthorStore } from '@/stores/author'
 import { useCharacterStore } from '@/stores/character'
 import { useIsMobileStore } from '@/stores/isMobile'
 import { useThemeStore } from '@/stores/theme'
@@ -14,6 +15,9 @@ const route = useRoute()
 const userInfoStore = useUserInfoStore()
 const { userInfoList, currentUserInfo } = storeToRefs(userInfoStore)
 const { getUserInfo, handleCurrentTokenID } = userInfoStore
+
+const authorStore = useAuthorStore()
+const { initialAuthorsInfo } = authorStore
 
 const characterStore = useCharacterStore()
 const { initialCharactersInfo } = characterStore
@@ -41,6 +45,7 @@ const navList = [
 
 onMounted(() => {
     getUserInfo()
+    initialAuthorsInfo()
     initialCharactersInfo()
 })
 

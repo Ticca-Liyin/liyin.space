@@ -1,5 +1,6 @@
 import { ref, watch } from 'vue'
 import { defineStore } from 'pinia'
+import { characterInfoVersion } from '@/utils/version.js'
 
 export const useCharacterStore = defineStore('character', () => {
     const combattypes = {
@@ -88,13 +89,11 @@ export const useCharacterStore = defineStore('character', () => {
     
     const characters = ref({})
 
-    const version = '2.2.0'
-
     const initialCharactersInfo = () => {
-        fetch(`/src/jsons/CharacterInfo.json?v=${version}`).then(response => response.json())
+        fetch(`/src/jsons/CharacterInfo.json?v=${characterInfoVersion}`).then(response => response.json())
         .then(characterInfo => {
             characters.value = characterInfo
-            // console.log(characterInfo)
+            // console.log(characters.value)
         })
         .catch(error => console.error(error))
     }

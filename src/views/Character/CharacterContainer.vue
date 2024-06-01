@@ -11,7 +11,7 @@ const { characters } = storeToRefs(characterStore)
 const { getPathAvatar, getDarkPathAvatar, getCombatTypeAvatar} = characterStore
 
 const characterSettingStore = useCharacterSettingStore()
-const { scale, useWheelEvent, showStarList, showWarpList } = storeToRefs(characterSettingStore)
+const { scale, useWheelEvent, showStarList, showWarpList, showVersionList } = storeToRefs(characterSettingStore)
 const { scaleBaseIncrement, scaleMin, scaleMax} = characterSettingStore
 
 const themeStore = useThemeStore()
@@ -53,6 +53,11 @@ const characterList = computed(() => {
         //     if(character.version === 1 && !['希儿', '景元'].includes(character.name)) return
         //     if(character.name.startsWith('开拓者')) return
         // }
+
+        // 显示角色的版本
+        if(showVersionList.value.length > 0)
+            if(!showVersionList.value.includes(character.version))
+                return
 
         const row = combattypeList.indexOf(character.combattype);
         const col = pathsList.indexOf(character.path);

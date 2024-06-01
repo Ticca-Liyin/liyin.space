@@ -1,4 +1,5 @@
 <script setup>
+import UpdateLog from '@/views/Setting/UpdateLog.vue'
 import AccountManage from '@/views/Setting/AccountManage.vue'
 import ThemeSetting from '@/views/Setting/ThemeSetting.vue'
 
@@ -6,6 +7,8 @@ import ThemeSetting from '@/views/Setting/ThemeSetting.vue'
 
 <template>
     <div class="setting">
+        <UpdateLog></UpdateLog>
+
         <ThemeSetting></ThemeSetting>
 
         <AccountManage></AccountManage>
@@ -32,7 +35,7 @@ import ThemeSetting from '@/views/Setting/ThemeSetting.vue'
 .github, .afadian, .video {
     color: var(--liyin-text-color);
     font-size: 16px;
-    margin: 20px 10px 0 10px;
+    margin: 10px;
 }
 .github a, .afadian a, .video a {
     text-decoration: none;
@@ -44,6 +47,8 @@ import ThemeSetting from '@/views/Setting/ThemeSetting.vue'
 }
 .setting{
     height: 100%;
+    display: flex;;
+    flex-direction: column;
     overflow: hidden;
     overflow-y: auto;
     background-color: var(--liyin-setting-bg-color);

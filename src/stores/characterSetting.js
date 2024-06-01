@@ -1,4 +1,4 @@
-import { ref, watch } from 'vue'
+import { ref, watch, computed } from 'vue'
 import { defineStore } from 'pinia'
 import { useCharacterStore } from '@/stores/character';
 import { useIsMobileStore } from '@/stores/isMobile'
@@ -113,9 +113,9 @@ export const useCharacterSettingStore = defineStore('characterSetting', () => {
             // 数据存在，将其从字符串转换为对象
             const data = JSON.parse(tempCharacterViewSetting)
             
-            toWebsiteName.value = data?.toWebsiteName || Object.values(WebsiteNameList)[0].value
-            scale.value = data?.scale || defaultScale
-            useWheelEvent.value = data?.useWheelEvent || false
+            toWebsiteName.value = data?.toWebsiteName ?? Object.values(WebsiteNameList)[0].value
+            scale.value = data?.scale ?? defaultScale
+            useWheelEvent.value = data?.useWheelEvent ?? false
         } else {
             // 数据不存在，执行相应的操作
             toWebsiteName.value = Object.values(WebsiteNameList)[0].value
@@ -157,8 +157,29 @@ export const useCharacterSettingStore = defineStore('characterSetting', () => {
         {
             value: 'not-limited',
             label: '非限定'
+        },
+        {
+            value: 'not-warp',
+            label: '非跃迁'
         }
     ]
+
+    //显示版本列表
+    const showVersionList = ref([])
+    //可选择列表
+    const selectVersionList = computed(() => {
+        const VersionSet = new Set()
+
+        Object.values(characters.value).forEach(char => {
+            VersionSet.add(char.version)
+        })
+
+        const format = { value: '', label: '' };
+        const result = Array.from(VersionSet).map(value => ({ ...format, value, label: value.toFixed(1) }))
+        result.sort((a, b) => b.value - a.value)
+
+        return result
+    })
 
     return {
         WebsiteNameList,
@@ -174,5 +195,7 @@ export const useCharacterSettingStore = defineStore('characterSetting', () => {
         selectStarList,
         showWarpList,
         selectWarpList,
+        showVersionList,
+        selectVersionList,
     }
 })
