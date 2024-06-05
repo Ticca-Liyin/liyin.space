@@ -6,9 +6,9 @@ export const multipleChoiceVersion = '2.2.1'
 
 export const notAvailableAchievementVersion = '2.2.1'
 
-export const achievementStrategyVersion = '2.2.0'
+export const achievementStrategyVersion = '2.2.1'
 
-export const strategyInfoVersion = '2.2.0'
+export const strategyInfoVersion = '2.2.1'
 
 export const authorInfoVersion = '2.2.0'
 

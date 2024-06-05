@@ -3,7 +3,7 @@ import { storeToRefs } from 'pinia'
 
 const characterStore = useCharacterStore()
 const { characters } = storeToRefs(characterStore)
-const { getCharacterAvatar } = characterStore
+const { characterDefaultAvatar, characterDefaultName, getCharacterAvatar } = characterStore
 
 
 export const getValidUerInfoAvatar = (userInfoAvatar) => {
@@ -16,7 +16,7 @@ export const getValidUerInfoAvatar = (userInfoAvatar) => {
         return getCharacterAvatar(charactersKeys[0])
     }
     else{
-        return '/src/images/icon/characterIcon.png'
+        return characterDefaultAvatar
     }
 }
     
@@ -30,6 +30,6 @@ export const getValidUerInfoAvatarName = (userInfoAvatar) => {
         return characters.value[charactersKeys[0]].name
     }
     else{
-        return '角色'
+        return characterDefaultName
     }
 }

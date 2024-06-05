@@ -88,6 +88,8 @@ export const useCharacterStore = defineStore('character', () => {
     }
     
     const characters = ref({})
+    const characterDefaultAvatar = '/src/images/icon/characterIcon.png'
+    const characterDefaultName = '角色'
 
     const initialCharactersInfo = () => {
         fetch(`/src/jsons/CharacterInfo.json?v=${characterInfoVersion}`).then(response => response.json())
@@ -100,11 +102,16 @@ export const useCharacterStore = defineStore('character', () => {
 
     const getCharacterAvatar = (charID) => {
         if(!(charID in characters.value)){
-            return '/src/images/icon/characterIcon.png'
+            return characterDefaultAvatar
+        }
+
+        const char = characters.value[charID]
+
+        if (!char?.avatar) {
+            return characterDefaultAvatar
         }
 
         let prefix = ''
-        const char = characters.value[charID]
 
         if (char.version < 1.6 && char.name !== "藿藿") 
             prefix = 'https://upload-static.hoyoverse.com/'
@@ -146,6 +153,8 @@ export const useCharacterStore = defineStore('character', () => {
         combattypes,
         paths,
         characters,
+        characterDefaultAvatar,
+        characterDefaultName,
         initialCharactersInfo,
         getCharacterAvatar,
         getCombatTypeAvatar,

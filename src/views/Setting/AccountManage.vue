@@ -8,6 +8,7 @@ import { getValidUerInfoAvatar, getValidUerInfoAvatarName} from '@/utils/getVali
 
 const characterStore = useCharacterStore()
 const { characters } = storeToRefs(characterStore)
+const { characterDefaultAvatar, characterDefaultName } = characterStore
 
 const userInfoStore = useUserInfoStore()
 const { userInfoList, currentUserInfo } = storeToRefs(userInfoStore)
@@ -165,7 +166,7 @@ const handleCloseEditDialog = (done) => {
                         <div class="character-selected-avatar" >
                             <img :src='getValidUerInfoAvatar(avater)' 
                                 :alt="getValidUerInfoAvatarName(avater)" v-if="avater in characters">
-                            <img src="/src/images/icon/characterIcon.png" alt="角色" v-else>
+                            <img :src="characterDefaultAvatar" :alt="characterDefaultName" v-else>
                         </div>
                     </template>
                 </el-select>
@@ -212,7 +213,7 @@ const handleCloseEditDialog = (done) => {
                         <div class="character-selected-avatar" >
                             <img :src='getValidUerInfoAvatar(avater)' 
                                 :alt="getValidUerInfoAvatarName(avater)" v-if="avater in characters">
-                            <img src="/src/images/icon/characterIcon.png" alt="角色" v-else>
+                            <img :src="characterDefaultAvatar" :alt="characterDefaultName" v-else>
                         </div>
                     </template>
                 </el-select>

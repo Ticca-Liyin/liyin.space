@@ -12,15 +12,72 @@ export const useUserInfoStore = defineStore('userInfo', () => {
         if (tempUserInfo !== null) {
             // 数据存在，将其从字符串转换为对象
             userInfoList.value = JSON.parse(tempUserInfo)
+
+            // 检查数据是否合法
+            const valid = true
+
+            if(typeof userInfoList.value !== "object" || Array.isArray(userInfoList.value)) {
+                // 数据不合法，重置为默认值
+                userInfoList.value = {
+                    currentTokenID: 1,
+                    list: {
+                        1:{
+                            tokenID: 1,
+                            avatar: 1001,
+                            uid: 100000000, 
+                            name: "开拓者", 
+                        }
+                    }
+                }
+                saveUserInfo()
+                return
+            }
+
+            // 判断 list 是否存在且是否为对象且至少含有一个 tokenID
+            if(userInfoList.value.list === undefined || typeof userInfoList.value.list !== "object" || Array.isArray(userInfoList.value.list) || Object.keys(userInfoList.value.list ?? {}).length === 0){
+                // 数据不合法，重置为默认值
+                userInfoList.value.list = {
+                    1:{
+                        tokenID: 1,
+                        avatar: 1001,
+                        uid: 100000000, 
+                        name: "开拓者", 
+                    }
+                }
+                valid = false
+            }
+
+            // 判断 currentTokenID 是否存在且是否在 list 中
+            if(userInfoList.value.currentTokenID === undefined || userInfoList.value.list[userInfoList.value.currentTokenID] === undefined){
+                // currentTokenID 充值为 list 中的第一个 tokenID
+                userInfoList.value.currentTokenID = Object.keys(userInfoList.value.list)[0]
+                valid = false
+            }
+
+            if (valid === false){
+                saveUserInfo()
+            }
+
         } else {
             // 数据不存在，执行相应的操作
-            userInfoList.value.currentTokenID = 1
-            userInfoList.value.list = {
-                1:{
-                    tokenID: 1,
-                    avatar: 1001,
-                    uid: 100000000, 
-                    name: "开拓者", 
+            // userInfoList.value.currentTokenID = 1
+            // userInfoList.value.list = {
+            //     1:{
+            //         tokenID: 1,
+            //         avatar: 1001,
+            //         uid: 100000000, 
+            //         name: "开拓者", 
+            //     }
+            // }
+            userInfoList.value = {
+                currentTokenID: 1,
+                list: {
+                    1:{
+                        tokenID: 1,
+                        avatar: 1001,
+                        uid: 100000000, 
+                        name: "开拓者", 
+                    }
                 }
             }
             saveUserInfo()

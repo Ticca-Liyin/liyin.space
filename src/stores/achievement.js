@@ -119,11 +119,13 @@ export const useAchievementStore = defineStore('achievement', () => {
         }
         //系列成就完成进度
         get completedPercentage(){
+            if (this.AchievementsLength === 0) return 0 + '%'
             return Math.min(Math.round(this.completedAchievementsLength / this.AchievementsLength * 100), 100) + '%'
         }
 
         get completedStellarJadePercentage(){
-            return this.completedStellarJadeTotal / this.StellarJadeTotal * 100
+            if (this.StellarJadeTotal === 0) return 0
+            return Math.min(Math.round(this.completedStellarJadeTotal / this.StellarJadeTotal * 100), 100)
         }
 
         get completedStellarJadePercentageString(){
@@ -149,6 +151,10 @@ export const useAchievementStore = defineStore('achievement', () => {
                 selectedMultipleIDs.push(MultipleID)
             }
             return totalAchievements
+        }
+
+        updateAchievements(achievements) {
+            this.Achievements = achievements
         }
     }
 
@@ -465,6 +471,18 @@ export const useAchievementStore = defineStore('achievement', () => {
         return temp_showAchievements
     })
 
+    const showAchievementSeries = ref(
+        new AchievementSeries({
+            SeriesID: 99,
+            SeriesTitle: "本页成就",
+            imagePath: "/src/images/series/achievement.png",
+            imageDarkPath: "/src/images/series-dark/achievement.png",
+            Priority: -1
+        }, showAchievements.value)
+    )
+
+    watch(showAchievements, () => showAchievementSeries.value.updateAchievements(showAchievements.value))
+
     //获取成就界面筛选设置缓存
     const getAchievementFilterConfig = () => {
         // 从缓存中读取名为 "AchievementFilterConfig" 的数据
@@ -624,7 +642,8 @@ export const useAchievementStore = defineStore('achievement', () => {
         dialogAchievement,
         dialogMultipleChoiceList,
         showSeriesId, 
-        showAchievements, 
+        showAchievements,
+        showAchievementSeries, 
         showVersionList,
         selectVersionList,
         searchContent,

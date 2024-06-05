@@ -94,7 +94,7 @@ const showCharacters = computed(() => {
     margin: 10px;
     position: relative;
     overflow: hidden;
-    transition: transform 0.3s ease;
+    transition: transform 0.05s ease;
     cursor: pointer;
 }
 
@@ -177,7 +177,7 @@ const showCharacters = computed(() => {
 
 .character-name {
     color: var(--liyin-char-name-text-color); 
-    font-size: 12px; 
+    font-size: 14px; 
     white-space: nowrap;
 }
 

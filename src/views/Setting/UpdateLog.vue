@@ -7,6 +7,12 @@ const { isMobile } = storeToRefs(isMobileStore)
 
 const updateLogInfo = [
     { 
+        version: '2.2.4', 
+        date: '2024-06-05', 
+        title: '新增本页成就悬浮窗, 新增 祈鸢ya 的 1.0 ~ 2.1 相关攻略',
+        changes: '<ul style="padding-left: 10px;"><li>新增本页成就悬浮窗，方便各位了解筛选后的成就数据，也可以通过它了解各版本各系列成就新增的成就数据</li><li>新增 祈鸢ya 的 1.0 ~ 2.1 相关攻略，一位非常优秀的原神及星铁攻略up主，大家可以关注一下</li></ul>' 
+    },
+    { 
         version: '2.2.3', 
         date: '2024-06-01', 
         title: '新增更新日志，新增 祈鸢ya 的相关攻略，新增显示对应版本角色设置，修改成就攻略界面样式, 修改开拓者为非跃迁类别',

@@ -3,6 +3,7 @@ import AchievementSeries from './AchievementSeries.vue';
 import AchievementFilter from './AchievementFilter.vue';
 import AchievementList from './AchievementList.vue';
 import AchievementStrategy from './AchievementStrategy.vue';
+import CurrentPageAchievementFloatingWindow from './CurrentPageAchievementFloatingWindow.vue'
 import ExportAchievement from '@/components/export/ExportAchievement.vue';
 import ImportAchievement from '@/components/import/ImportAchievement.vue';
 import { DynamicScroller, DynamicScrollerItem } from 'vue-virtual-scroller'
@@ -27,6 +28,7 @@ onMounted(() => {
         </header>
 
         <AchievementSeries/>
+
         <DynamicScroller
             :items="achievementStore.showAchievements"
             :min-item-size="60"
@@ -54,7 +56,10 @@ onMounted(() => {
                 </div>
             </template>
         </DynamicScroller>
+
         <AchievementStrategy/>
+
+        <CurrentPageAchievementFloatingWindow/>
     </div>
 </template>
 
@@ -67,6 +72,7 @@ onMounted(() => {
     /* min-height: calc(100vh - 100px);
     height: 400px; */
     height: 100%;
+    position: relative;
 }
 .achievement-header{
     height: 60px;

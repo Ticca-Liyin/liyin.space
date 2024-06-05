@@ -62,9 +62,9 @@ const { authors } = storeToRefs(authorStore)
             </div>
             <div class="dialog-body-strategy">
                 <div class="dialog-body-introduce">
-                    成就攻略：
+                    成就攻略<span v-if="showStrategyList.length > 0">({{showStrategyList.length}})</span>：
                 </div>
-                <template v-if="showStrategyList.length > 0">
+                <el-scrollbar max-height="150px" v-if="showStrategyList.length > 0">
                     <template v-for="strategy in showStrategyList" :key="strategy.title">
                         <template v-if="Object.keys(authors).includes(String(strategy.author))">
                             <div class="dialog-body-stratery-concent PC">
@@ -85,7 +85,7 @@ const { authors } = storeToRefs(authorStore)
                             该攻略作者已注销
                         </div>
                     </template>
-                </template>
+                </el-scrollbar>
                 <div v-else class="dialog-body-stratery-concent">
                     <div>暂无相关攻略</div>
                 </div>
@@ -115,21 +115,6 @@ const { authors } = storeToRefs(authorStore)
 }
 .dialog-achievement .el-dialog__footer{
     padding: 0px 20px 15px 20px;
-}
-
-.dialog-achievement::-webkit-scrollbar {
-    width: 6px;
-    height: 6px;
-}   
-.dialog-achievement::-webkit-scrollbar-track {
-    background-color: transparent;
-}
-.dialog-achievement::-webkit-scrollbar-thumb {
-    background-color: rgba(139, 139, 139, 0.4);
-    border-radius: 10px;
-}
-.dialog-achievement::-webkit-scrollbar-button {
-    display: none;
 }
 
 .dialog-header{
