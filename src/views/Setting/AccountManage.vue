@@ -4,11 +4,10 @@ import { useUserInfoStore } from '@/stores/userInfo'
 import { ref } from 'vue'
 import { storeToRefs } from 'pinia'
 import { Edit, Delete, Plus } from '@element-plus/icons-vue'
-import { getValidUerInfoAvatar, getValidUerInfoAvatarName} from '@/utils/getValidUerInfoAvatar'
 
 const characterStore = useCharacterStore()
 const { characters } = storeToRefs(characterStore)
-const { characterDefaultAvatar, characterDefaultName } = characterStore
+const { characterDefaultAvatar, characterDefaultName, getCharacterAvatar, getCharacterAvatarName } = characterStore
 
 const userInfoStore = useUserInfoStore()
 const { userInfoList, currentUserInfo } = storeToRefs(userInfoStore)
@@ -23,7 +22,6 @@ const uid = ref('')
 const error = ref('')
 
 const checkValidity = (userInfo) => {
-    console.log(typeof avater.value)
     if(!avater.value){
         error.value = '请选择头像'
         return 0
@@ -115,8 +113,8 @@ const handleCloseEditDialog = (done) => {
         :class="{'selected': currentUserInfo.tokenID === userInfo.tokenID }" @click="handleCurrentTokenID(userInfo.tokenID)">
             <div class="setting-user-left">
                 <div class="setting-user-avatar">
-                    <img :src='getValidUerInfoAvatar(userInfo?.avatar)' 
-                        :alt="getValidUerInfoAvatarName(userInfo?.avatar)">
+                    <img :src='getCharacterAvatar(userInfo?.avatar)' 
+                        :alt="getCharacterAvatarName(userInfo?.avatar)">
                 </div>
                 <div class="setting-user-content">
                     <div class="setting-user-name"> {{ userInfo.name }} </div>
@@ -157,17 +155,20 @@ const handleCloseEditDialog = (done) => {
                     :value="item.id"
                     >
                         <div class="s-character-avatar">
-                            <img :src='getValidUerInfoAvatar(item?.id)' 
-                                :alt="getValidUerInfoAvatarName(item?.id)">
+                            <img :src='getCharacterAvatar(item?.id)' 
+                                :alt="getCharacterAvatarName(item?.id)">
                         </div>
                         <div class="s-character-name"> {{ item?.name }} </div>
                     </el-option>
                     <template #prefix>
                         <div class="character-selected-avatar" >
-                            <img :src='getValidUerInfoAvatar(avater)' 
-                                :alt="getValidUerInfoAvatarName(avater)" v-if="avater in characters">
+                            <img :src='getCharacterAvatar(avater)' 
+                                :alt="getCharacterAvatarName(avater)" v-if="avater in characters">
                             <img :src="characterDefaultAvatar" :alt="characterDefaultName" v-else>
                         </div>
+                    </template>
+                    <template #label>
+                        <div> {{ getCharacterAvatarName(avater) }} </div>
                     </template>
                 </el-select>
             </el-form-item>
@@ -204,17 +205,20 @@ const handleCloseEditDialog = (done) => {
                     :value="item.id"
                     >
                         <div class="s-character-avatar">
-                            <img :src='getValidUerInfoAvatar(item?.id)' 
-                                :alt="getValidUerInfoAvatarName(item?.id)">
+                            <img :src='getCharacterAvatar(item?.id)' 
+                                :alt="getCharacterAvatarName(item?.id)">
                         </div>
                         <div class="s-character-name"> {{ item?.name }} </div>
                     </el-option>
                     <template #prefix>
                         <div class="character-selected-avatar" >
-                            <img :src='getValidUerInfoAvatar(avater)' 
-                                :alt="getValidUerInfoAvatarName(avater)" v-if="avater in characters">
+                            <img :src='getCharacterAvatar(avater)' 
+                                :alt="getCharacterAvatarName(avater)" v-if="avater in characters">
                             <img :src="characterDefaultAvatar" :alt="characterDefaultName" v-else>
                         </div>
+                    </template>
+                    <template #label>
+                        <div> {{ getCharacterAvatarName(avater) }} </div>
                     </template>
                 </el-select>
             </el-form-item>

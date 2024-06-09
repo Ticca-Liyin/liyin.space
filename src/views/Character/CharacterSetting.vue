@@ -9,7 +9,7 @@ const isMobileStore = useIsMobileStore()
 const { isMobile } = storeToRefs(isMobileStore)
 
 const characterSettingStore = useCharacterSettingStore()
-const { toWebsiteName, scale, useWheelEvent, showStarList, showWarpList, showVersionList, selectVersionList} = storeToRefs(characterSettingStore)
+const { toWebsiteName, scale, useWheelEvent, showStarList, showWarpList, showVersionList, selectVersionList, showFactionList, selectFactionList} = storeToRefs(characterSettingStore)
 const { WebsiteNameList, scaleMin, scaleMax, selectStarList, selectWarpList } = characterSettingStore
 
 // 设置行相关折叠功能
@@ -88,7 +88,7 @@ watch(hadFold, saveCharacterSettingFold)
                 <el-select
                 v-model="toWebsiteName"
                 placeholder="请选择网站名称"
-                style="width: 160px;"
+                style="width: 130px;"
                 >
                     <el-option
                         v-for="item in Object.values(WebsiteNameList)"
@@ -111,7 +111,7 @@ watch(hadFold, saveCharacterSettingFold)
 
             <div class="slider-demo-block">
                 <span class="demonstration">缩放比例</span>
-                <el-slider v-model="scale" :min="scaleMin" :max="scaleMax" :step="0.01" style="width: 150px;"/>
+                <el-slider v-model="scale" :min="scaleMin" :max="scaleMax" :step="0.01" style="width: 120px;"/>
             </div>
             <!-- <h1>角色列表设置（滚轮控制事件的缩放基础增量（可选实现，或者和开关合并提供 关闭、0.05、0.1、0.15、0.2 四个选项））</h1> -->
 
@@ -121,7 +121,7 @@ watch(hadFold, saveCharacterSettingFold)
                     v-model="showStarList"
                     multiple
                     placeholder="显示所有稀有度角色"
-                    style="width: 232px;"
+                    style="width: 202px;"
                     >
                         <el-option
                             v-for="item in selectStarList"
@@ -139,7 +139,7 @@ watch(hadFold, saveCharacterSettingFold)
                     collapse-tags
                     collapse-tags-tooltip
                     placeholder="显示所有跃迁角色"
-                    style="width: 232px;"
+                    style="width: 202px;"
                     >
                         <el-option
                             v-for="item in selectWarpList"
@@ -157,10 +157,28 @@ watch(hadFold, saveCharacterSettingFold)
                     collapse-tags
                     collapse-tags-tooltip
                     placeholder="显示所有版本角色"
-                    style="width: 232px;"
+                    style="width: 202px;"
                     >
                         <el-option
                             v-for="item in selectVersionList"
+                            :key="item.value"
+                            :label="item.label"
+                            :value="item.value"
+                        />
+                    </el-select>
+                </div> 
+
+                <div class="character-setting-select-input">
+                    <el-select
+                    v-model="showFactionList"
+                    multiple
+                    collapse-tags
+                    collapse-tags-tooltip
+                    placeholder="显示所有阵营角色"
+                    style="width: 202px;"
+                    >
+                        <el-option
+                            v-for="item in selectFactionList"
                             :key="item.value"
                             :label="item.label"
                             :value="item.value"
@@ -350,29 +368,41 @@ watch(hadFold, saveCharacterSettingFold)
     color: var(--liyin-arrow-color);
 }
 
-@media (min-width: 1450px) and (max-width: 1600px){
+@media (min-width: 1350px) and (max-width: 1660px){
+    .character-setting.warp .slider-demo-block {
+        flex: 1 0 60%; 
+    }
+}
+
+@media (min-width: 1100px) and (max-width: 1350px){
     .character-setting.warp .slider-demo-block {
         flex: 1 0 50%; 
     }
 }
 
-@media (min-width: 1050px) and (max-width: 1450px){
+@media (min-width: 1000px) and (max-width: 1100px){
     .character-setting.warp .slider-demo-block {
         flex: 1 0 40%; 
     }
 }
 
-@media (min-width: 768px) and (max-width: 1600px) {
+@media (min-width: 769px) and (max-width: 815px){
+    .character-setting.warp .slider-demo-block {
+        flex: 1 0 100%; 
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1660px) {
     .character-setting.warp .switch-demo-block{
-        width: 232px;
+        width: 202px;
     }
 }
 
-@media (min-width: 755px) and (max-width: 768px) {
+/* @media (min-width: 755px) and (max-width: 768px) {
     .character-setting.warp .slider-demo-block {
         flex: 1 0 40%; 
     }
-}
+}  */
 /* @media (max-width: 950px) {
     .character-setting.warp .character-setting-selectbox {
         flex-wrap: wrap; 

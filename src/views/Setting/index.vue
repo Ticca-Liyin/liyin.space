@@ -7,11 +7,11 @@ import ThemeSetting from '@/views/Setting/ThemeSetting.vue'
 
 <template>
     <div class="setting">
-        <UpdateLog></UpdateLog>
+        <UpdateLog />
 
-        <ThemeSetting></ThemeSetting>
+        <ThemeSetting />
 
-        <AccountManage></AccountManage>
+        <AccountManage />
 
         <!-- <div class="setting-title">关于：</div> -->
         <div class="setting-title">如果你有什么好的想法和建议，或者是发现网页中的bug，可以通过以下方式联系我：</div>

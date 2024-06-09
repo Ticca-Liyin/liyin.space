@@ -8,7 +8,6 @@ import { useThemeStore } from '@/stores/theme'
 import { onMounted } from 'vue'
 import { storeToRefs } from 'pinia'
 import { useRoute } from 'vue-router';
-import { getValidUerInfoAvatar, getValidUerInfoAvatarName} from '@/utils/getValidUerInfoAvatar'
 
 const route = useRoute()
 
@@ -20,7 +19,7 @@ const authorStore = useAuthorStore()
 const { initialAuthorsInfo } = authorStore
 
 const characterStore = useCharacterStore()
-const { initialCharactersInfo } = characterStore
+const { initialCharactersInfo, getCharacterAvatar, getCharacterAvatarName } = characterStore
 
 const isMobileStore = useIsMobileStore()
 const { isMobile } = storeToRefs(isMobileStore)
@@ -62,8 +61,8 @@ onMounted(() => {
             <el-dropdown class="dropdown-user" :trigger="isMobile ? 'click' : 'hover'">
                 <div class="user-info">
                     <div class="user-avatar">
-                        <img :src='getValidUerInfoAvatar(currentUserInfo?.avatar)' 
-                            :alt="getValidUerInfoAvatarName(currentUserInfo?.avatar)">
+                        <img :src='getCharacterAvatar(currentUserInfo?.avatar)' 
+                            :alt="getCharacterAvatarName(currentUserInfo?.avatar)">
                     </div>
                     <div class="user-content">
                         <div class="user-name"> {{ currentUserInfo?.name }} </div>
@@ -78,8 +77,8 @@ onMounted(() => {
                         <div class="user-info" v-for="userInfo in userInfoList.list" :key="userInfo.tokenID"
                         @click="handleCurrentTokenID(userInfo.tokenID)">
                             <div class="user-avatar">
-                                <img :src='getValidUerInfoAvatar(userInfo?.avatar)' 
-                                    :alt="getValidUerInfoAvatarName(userInfo?.avatar)">
+                                <img :src='getCharacterAvatar(userInfo?.avatar)' 
+                                    :alt="getCharacterAvatarName(userInfo?.avatar)">
                             </div>
                             <div class="user-content">
                                 <div class="user-name"> {{ userInfo?.name }} </div>
@@ -330,7 +329,7 @@ a {
         margin: 0;
     }
     .nav-title{
-        color: #C9D3E3;
+        color: var(--liyin-aside-text-color);
         font-size: 13px;
         font-weight: 700;
     }

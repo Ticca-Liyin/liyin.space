@@ -100,6 +100,32 @@ export const useCharacterStore = defineStore('character', () => {
         .catch(error => console.error(error))
     }
 
+    const charactersUniqueTotal = (characters) => {
+        let count = 0
+        let seenTrailblazer = false;
+        let seenMarch7th = false;
+
+        for (const char of characters) {
+            if (char.name.includes("开拓者")) {
+                if (!seenTrailblazer) {
+                    seenTrailblazer = true;
+                    count++
+                }
+            }
+            else if (char.name.includes("三月七")) {
+                if (!seenMarch7th) {
+                    seenMarch7th = true;
+                    count++
+                }
+            }
+            else{
+                count++
+            }
+        }
+
+        return count
+    }
+
     const getCharacterAvatar = (charID) => {
         if(!(charID in characters.value)){
             return characterDefaultAvatar
@@ -123,6 +149,15 @@ export const useCharacterStore = defineStore('character', () => {
             prefix = 'https://act-upload.hoyoverse.com/'
 
         return prefix + char.avatar
+    }
+
+    const getCharacterAvatarName = (charID) => {
+        if(charID in characters.value){
+            return characters.value[charID].name
+        }
+        else{
+            return characterDefaultName
+        }
     }
 
     const getCombatTypeAvatar = (combatTypeName) => {
@@ -156,7 +191,9 @@ export const useCharacterStore = defineStore('character', () => {
         characterDefaultAvatar,
         characterDefaultName,
         initialCharactersInfo,
+        charactersUniqueTotal,
         getCharacterAvatar,
+        getCharacterAvatarName,
         getCombatTypeAvatar,
         getPathSmallAvatar,
         getDarkPathSmallAvatar,

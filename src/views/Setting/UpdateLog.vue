@@ -7,6 +7,12 @@ const { isMobile } = storeToRefs(isMobileStore)
 
 const updateLogInfo = [
     { 
+        version: '2.2.5', 
+        date: '2024-06-09', 
+        title: '新增角色总数悬浮窗, 新增显示对应阵营角色设置，新增 2.4 前置角色信息',
+        changes: '<ul style="padding-left: 10px;"><li>新增角色总数悬浮窗，方便各位了解筛选后的角色数据，其中去重是指切换角色只计入一次（如开拓者、三月七等）</li><li>新增角色界面显示对应阵营角色设置</li><li>新增 2.4 前置角色信息，具体角色为：云璃、椒丘、三月七-巡猎</li></ul>' 
+    },
+    { 
         version: '2.2.4', 
         date: '2024-06-05', 
         title: '新增本页成就悬浮窗, 新增 祈鸢ya 的 1.0 ~ 2.1 相关攻略',

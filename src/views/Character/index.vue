@@ -1,6 +1,7 @@
 <script setup>
 import CharacterSetting from './CharacterSetting.vue';
 import CharacterContainer from './CharacterContainer.vue';
+import ShowCharacterFloatingWindow from './ShowCharacterFloatingWindow.vue'
 import { useCharacterSettingStore } from '@/stores/characterSetting';
 import { onMounted} from 'vue';
 
@@ -15,9 +16,11 @@ onMounted(() => {
 
 <template>
     <div class="character">
-        <CharacterSetting></CharacterSetting>
+        <CharacterSetting />
 
-        <CharacterContainer class="character-container"></CharacterContainer>
+        <CharacterContainer class="character-container" />
+
+        <ShowCharacterFloatingWindow />
     </div>
 </template>
 
@@ -28,6 +31,7 @@ onMounted(() => {
     overflow: hidden;
     display: flex;
     flex-direction: column;
+    position: relative;
 }
 
 .character-container{

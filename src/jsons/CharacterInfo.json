@@ -9,7 +9,8 @@
     "combattype": "冰",
     "star": 4,
     "warp": "not-limited",
-    "version": 1
+    "version": 1,
+    "faction": ["星穹列车"]
   },
   "1002": {
     "id": 1002,
@@ -21,7 +22,8 @@
     "combattype": "风",
     "star": 4,
     "warp": "not-limited",
-    "version": 1
+    "version": 1,
+    "faction": ["星穹列车"]
   },
   "1003": {
     "id": 1003,
@@ -33,7 +35,8 @@
     "combattype": "火",
     "star": 5,
     "warp": "not-limited",
-    "version": 1
+    "version": 1,
+    "faction": ["星穹列车"]
   },
   "1004": {
     "id": 1004,
@@ -45,7 +48,8 @@
     "combattype": "虚数",
     "star": 5,
     "warp": "not-limited",
-    "version": 1
+    "version": 1,
+    "faction": ["星穹列车"]
   },
   "1005": {
     "id": 1005,
@@ -57,7 +61,8 @@
     "combattype": "雷",
     "star": 5,
     "warp": "limited",
-    "version": 1.2
+    "version": 1.2,
+    "faction": ["星核猎手"]
   },
   "1006": {
     "id": 1006,
@@ -69,7 +74,8 @@
     "combattype": "量子",
     "star": 5,
     "warp": "limited",
-    "version": 1.1
+    "version": 1.1,
+    "faction": ["星核猎手"]
   },
   "1008": {
     "id": 1008,
@@ -81,7 +87,8 @@
     "combattype": "雷",
     "star": 4,
     "warp": "not-limited",
-    "version": 1
+    "version": 1,
+    "faction": ["太空站「黑塔」"]
   },
   "1009": {
     "id": 1009,
@@ -93,7 +100,8 @@
     "combattype": "火",
     "star": 4,
     "warp": "not-limited",
-    "version": 1
+    "version": 1,
+    "faction": ["太空站「黑塔」"]
   },
   "1013": {
     "id": 1013,
@@ -105,7 +113,8 @@
     "combattype": "冰",
     "star": 4,
     "warp": "not-limited",
-    "version": 1
+    "version": 1,
+    "faction": ["太空站「黑塔」"]
   },
   "1101": {
     "id": 1101,
@@ -117,7 +126,8 @@
     "combattype": "风",
     "star": 5,
     "warp": "not-limited",
-    "version": 1
+    "version": 1,
+    "faction": ["雅利洛-Ⅵ"]
   },
   "1102": {
     "id": 1102,
@@ -129,7 +139,8 @@
     "combattype": "量子",
     "star": 5,
     "warp": "limited",
-    "version": 1
+    "version": 1,
+    "faction": ["雅利洛-Ⅵ"]
   },
   "1103": {
     "id": 1103,
@@ -141,7 +152,8 @@
     "combattype": "雷",
     "star": 4,
     "warp": "not-limited",
-    "version": 1
+    "version": 1,
+    "faction": ["雅利洛-Ⅵ"]
   },
   "1104": {
     "id": 1104,
@@ -153,7 +165,8 @@
     "combattype": "冰",
     "star": 5,
     "warp": "not-limited",
-    "version": 1
+    "version": 1,
+    "faction": ["雅利洛-Ⅵ"]
   },
   "1105": {
     "id": 1105,
@@ -165,7 +178,8 @@
     "combattype": "物理",
     "star": 4,
     "warp": "not-limited",
-    "version": 1
+    "version": 1,
+    "faction": ["雅利洛-Ⅵ"]
   },
   "1106": {
     "id": 1106,
@@ -177,7 +191,8 @@
     "combattype": "冰",
     "star": 4,
     "warp": "not-limited",
-    "version": 1
+    "version": 1,
+    "faction": ["雅利洛-Ⅵ"]
   },
   "1107": {
     "id": 1107,
@@ -189,7 +204,8 @@
     "combattype": "物理",
     "star": 5,
     "warp": "not-limited",
-    "version": 1
+    "version": 1,
+    "faction": ["雅利洛-Ⅵ"]
   },
   "1108": {
     "id": 1108,
@@ -201,7 +217,8 @@
     "combattype": "风",
     "star": 4,
     "warp": "not-limited",
-    "version": 1
+    "version": 1,
+    "faction": ["雅利洛-Ⅵ", "假面愚者"]
   },
   "1109": {
     "id": 1109,
@@ -213,7 +230,8 @@
     "combattype": "火",
     "star": 4,
     "warp": "not-limited",
-    "version": 1
+    "version": 1,
+    "faction": ["雅利洛-Ⅵ"]
   },
   "1110": {
     "id": 1110,
@@ -225,7 +243,8 @@
     "combattype": "量子",
     "star": 4,
     "warp": "not-limited",
-    "version": 1.3
+    "version": 1.3,
+    "faction": ["雅利洛-Ⅵ"]
   },
   "1111": {
     "id": 1111,
@@ -237,7 +256,8 @@
     "combattype": "物理",
     "star": 4,
     "warp": "not-limited",
-    "version": 1.2
+    "version": 1.2,
+    "faction": ["雅利洛-Ⅵ"]
   },
   "1112": {
     "id": 1112,
@@ -249,7 +269,8 @@
     "combattype": "火",
     "star": 5,
     "warp": "limited",
-    "version": 1.4
+    "version": 1.4,
+    "faction": ["星际和平公司"]
   },
   "1201": {
     "id": 1201,
@@ -261,7 +282,8 @@
     "combattype": "量子",
     "star": 4,
     "warp": "not-limited",
-    "version": 1
+    "version": 1,
+    "faction": ["仙舟「罗浮」"]
   },
   "1202": {
     "id": 1202,
@@ -273,7 +295,8 @@
     "combattype": "雷",
     "star": 4,
     "warp": "not-limited",
-    "version": 1
+    "version": 1,
+    "faction": ["仙舟「罗浮」"]
   },
   "1203": {
     "id": 1203,
@@ -285,7 +308,8 @@
     "combattype": "虚数",
     "star": 5,
     "warp": "limited",
-    "version": 1.1
+    "version": 1.1,
+    "faction": ["仙舟「罗浮」"]
   },
   "1204": {
     "id": 1204,
@@ -297,7 +321,8 @@
     "combattype": "雷",
     "star": 5,
     "warp": "limited",
-    "version": 1
+    "version": 1,
+    "faction": ["仙舟「罗浮」"]
   },
   "1205": {
     "id": 1205,
@@ -309,7 +334,8 @@
     "combattype": "风",
     "star": 5,
     "warp": "limited",
-    "version": 1.2
+    "version": 1.2,
+    "faction": ["星核猎手"]
   },
   "1206": {
     "id": 1206,
@@ -321,7 +347,8 @@
     "combattype": "物理",
     "star": 4,
     "warp": "not-limited",
-    "version": 1
+    "version": 1,
+    "faction": ["仙舟「罗浮」"]
   },
   "1207": {
     "id": 1207,
@@ -333,7 +360,8 @@
     "combattype": "虚数",
     "star": 4,
     "warp": "not-limited",
-    "version": 1.1
+    "version": 1.1,
+    "faction": ["仙舟「罗浮」"]
   },
   "1208": {
     "id": 1208,
@@ -345,7 +373,8 @@
     "combattype": "量子",
     "star": 5,
     "warp": "limited",
-    "version": 1.3
+    "version": 1.3,
+    "faction": ["仙舟「罗浮」"]
   },
   "1209": {
     "id": 1209,
@@ -357,7 +386,8 @@
     "combattype": "冰",
     "star": 5,
     "warp": "not-limited",
-    "version": 1
+    "version": 1,
+    "faction": ["仙舟「罗浮」"]
   },
   "1210": {
     "id": 1210,
@@ -369,7 +399,8 @@
     "combattype": "火",
     "star": 4,
     "warp": "not-limited",
-    "version": 1.4
+    "version": 1.4,
+    "faction": ["仙舟「罗浮」"]
   },
   "1211": {
     "id": 1211,
@@ -381,7 +412,8 @@
     "combattype": "雷",
     "star": 5,
     "warp": "not-limited",
-    "version": 1
+    "version": 1,
+    "faction": ["仙舟「罗浮」"]
   },
   "1212": {
     "id": 1212,
@@ -393,7 +425,8 @@
     "combattype": "冰",
     "star": 5,
     "warp": "limited",
-    "version": 1.4
+    "version": 1.4,
+    "faction": ["仙舟「罗浮」"]
   },
   "1213": {
     "id": 1213,
@@ -405,7 +438,8 @@
     "combattype": "虚数",
     "star": 5,
     "warp": "limited",
-    "version": 1.3
+    "version": 1.3,
+    "faction": ["仙舟「罗浮」"]
   },
   "1214": {
     "id": 1214,
@@ -417,7 +451,8 @@
     "combattype": "量子",
     "star": 4,
     "warp": "not-limited",
-    "version": 1.6
+    "version": 1.6,
+    "faction": ["仙舟「罗浮」"]
   },
   "1215": {
     "id": 1215,
@@ -429,7 +464,8 @@
     "combattype": "物理",
     "star": 4,
     "warp": "not-limited",
-    "version": 1.5
+    "version": 1.5,
+    "faction": ["仙舟「罗浮」"]
   },
   "1217": {
     "id": 1217,
@@ -441,7 +477,50 @@
     "combattype": "风",
     "star": 5,
     "warp": "limited",
-    "version": 1.5
+    "version": 1.5,
+    "faction": ["仙舟「罗浮」"]
+  },
+  "1220": {
+    "id": 1220,
+    "MiYoSheId": 3058,
+    "HoYoWikiId": 2643,
+    "name": "椒丘",
+    "avatar": "event-ugc-hoyowiki/2024/06/06/5308864/3d4d9bcbb505026ce10f02e3d9a9b1f0_2619734634209239186.png",
+    "path": "虚无",
+    "combattype": "火",
+    "star": 5,
+    "warp": "limited",
+    "version": 2.4,
+    "faction": ["仙舟「曜青」"],
+    "deploymentDate": 1724212800000
+  },
+  "1221": {
+    "id": 1221,
+    "MiYoSheId": 3056,
+    "HoYoWikiId": 2642,
+    "name": "云璃",
+    "avatar": "event-ugc-hoyowiki/2024/06/05/5308864/4d572b5c64390446b423b9239a2253a1_6512441596226328155.png",
+    "path": "毁灭",
+    "combattype": "物理",
+    "star": 5,
+    "warp": "limited",
+    "version": 2.4,
+    "faction": ["仙舟「朱明」"],
+    "deploymentDate": 1722391200000
+  },
+  "1224": {
+    "id": 1224,
+    "MiYoSheId": 48,
+    "HoYoWikiId": 2657,
+    "name": "三月七-巡猎",
+    "avatar": "event-ugc-hoyowiki/2024/06/08/15884296/1b66ca709edb772a36bb93f3d5615a88_6391195617442965923.png",
+    "path": "巡猎",
+    "combattype": "虚数",
+    "star": 4,
+    "warp": "not-limited",
+    "version": 2.4,
+    "faction": ["星穹列车"],
+    "deploymentDate": 1722391200000
   },
   "1301": {
     "id": 1301,
@@ -454,6 +533,7 @@
     "star": 4,
     "warp": "not-limited",
     "version": 2.1,
+    "faction": ["匹诺康尼"],
     "deploymentDate": 1711504800000
   },
   "1302": {
@@ -466,7 +546,8 @@
     "combattype": "物理",
     "star": 5,
     "warp": "limited",
-    "version": 1.5
+    "version": 1.5,
+    "faction": ["纯美骑士团"]
   },
   "1303": {
     "id": 1303,
@@ -478,7 +559,8 @@
     "combattype": "冰",
     "star": 5,
     "warp": "limited",
-    "version": 1.6
+    "version": 1.6,
+    "faction": ["太空站「黑塔」"]
   },
   "1304": {
     "id": 1304,
@@ -491,6 +573,7 @@
     "star": 5,
     "warp": "limited",
     "version": 2.1,
+    "faction": ["星际和平公司"],
     "deploymentDate": 1713326400000
   },
   "1305": {
@@ -503,7 +586,8 @@
     "combattype": "虚数",
     "star": 5,
     "warp": "limited",
-    "version": 1.6
+    "version": 1.6,
+    "faction": ["博识学会"]
   },
   "1306": {
     "id": 1306,
@@ -516,6 +600,7 @@
     "star": 5,
     "warp": "limited",
     "version": 2,
+    "faction": ["假面愚者"],
     "deploymentDate": 1709006400000
   },
   "1307": {
@@ -529,6 +614,7 @@
     "star": 5,
     "warp": "limited",
     "version": 2,
+    "faction": ["流光忆庭"],
     "deploymentDate": 1707271200000
   },
   "1308": {
@@ -542,6 +628,7 @@
     "star": 5,
     "warp": "limited",
     "version": 2.1,
+    "faction": ["自灭者"],
     "deploymentDate": 1711504800000
   },
   "1309": {
@@ -555,6 +642,7 @@
     "star": 5,
     "warp": "limited",
     "version": 2.2,
+    "faction": ["匹诺康尼"],
     "deploymentDate": 1715137200000
   },
   "1310": {
@@ -568,6 +656,7 @@
     "star": 5,
     "warp": "limited",
     "version": 2.3,
+    "faction": ["星核猎手"],
     "deploymentDate": 1718762400000
   },
   "1312": {
@@ -581,6 +670,7 @@
     "star": 4,
     "warp": "not-limited",
     "version": 2,
+    "faction": ["匹诺康尼"],
     "deploymentDate": 1707271200000
   },
   "1314": {
@@ -594,6 +684,7 @@
     "star": 5,
     "warp": "limited",
     "version": 2.3,
+    "faction": ["星际和平公司"],
     "deploymentDate": 1720584000000
   },
   "1315": {
@@ -607,6 +698,7 @@
     "star": 5,
     "warp": "limited",
     "version": 2.2,
+    "faction": ["巡海游侠"],
     "deploymentDate": 1716955200000
   },
   "8002": {
@@ -619,7 +711,8 @@
     "combattype": "物理",
     "star": 5,
     "warp": "not-warp",
-    "version": 1
+    "version": 1,
+    "faction": ["星穹列车"]
   },
   "8004": {
     "id": 8004,
@@ -631,7 +724,8 @@
     "combattype": "火",
     "star": 5,
     "warp": "not-warp",
-    "version": 1
+    "version": 1,
+    "faction": ["星穹列车"]
   },
   "8006": {
     "id": 8006,
@@ -644,6 +738,7 @@
     "star": 5,
     "warp": "not-warp",
     "version": 2.2,
+    "faction": ["星穹列车"],
     "deploymentDate": 1715137200000
   }
 }

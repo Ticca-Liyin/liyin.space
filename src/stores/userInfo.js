@@ -14,7 +14,7 @@ export const useUserInfoStore = defineStore('userInfo', () => {
             userInfoList.value = JSON.parse(tempUserInfo)
 
             // 检查数据是否合法
-            const valid = true
+            let valid = true
 
             if(typeof userInfoList.value !== "object" || Array.isArray(userInfoList.value)) {
                 // 数据不合法，重置为默认值

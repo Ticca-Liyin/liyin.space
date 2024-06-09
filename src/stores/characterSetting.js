@@ -6,6 +6,7 @@ import { storeToRefs } from 'pinia';
 
 const characterStore = useCharacterStore()
 const { characters } = storeToRefs(characterStore)
+const { charactersUniqueTotal} = characterStore
 
 const isMobileStore = useIsMobileStore()
 const { isMobile } = storeToRefs(isMobileStore)
@@ -36,7 +37,7 @@ export const useCharacterSettingStore = defineStore('characterSetting', () => {
         const id = characters.value[charId]?.HoYoWikiId
 
         if (id) {
-            window.open(`https://wiki.hoyolab.com/pc/hsr/entry/${id}`, '_blank')
+            window.open(`https://wiki.hoyolab.com/pc/hsr/entry/${id}?lang=zh-cn`, '_blank')
         }
         else{
             ElMessage({
@@ -54,7 +55,7 @@ export const useCharacterSettingStore = defineStore('characterSetting', () => {
     const toBiliWiki = (charId) => {
         let name = characters.value[charId].name
 
-        if(name.startsWith('开拓者')){
+        if(name.startsWith('开拓者') || name.startsWith('三月七')) {
             name = name.replace('-', '•')
         }
 
@@ -181,6 +182,84 @@ export const useCharacterSettingStore = defineStore('characterSetting', () => {
         return result
     })
 
+    //显示阵营列表
+    const showFactionList = ref([])
+    const factionSortList = [
+        "星穹列车", "太空站「黑塔」", "雅利洛-Ⅵ", "仙舟「罗浮」", "仙舟「曜青」", "仙舟「朱明」", "匹诺康尼",
+        "星核猎手", "星际和平公司", "纯美骑士团", "假面愚者", "流光忆庭", "巡海游侠", "自灭者", "博识学会"
+    ]
+    //可选择列表
+    const selectFactionList = computed(() => {
+        const FactionSet = new Set()
+
+        Object.values(characters.value).forEach(char => {
+            if(Array.isArray(char.faction)){
+                char.faction.forEach(faction => {
+                    if(faction){
+                        FactionSet.add(faction)
+                    }
+                })                
+            }
+        })
+
+        const format = { value: '', label: '' };
+        const result = Array.from(FactionSet).map(value => ({ ...format, value, label: value }))
+        result.sort((a, b) => {
+            const indexA = factionSortList.indexOf(a.value);
+            const indexB = factionSortList.indexOf(b.value);
+            
+            return (indexA !== -1 ? indexA : factionSortList.length) - (indexB !== -1 ? indexB : factionSortList.length);
+        })
+        
+        return result
+    })
+
+    const showCharacters = computed(() => {
+        return Object.values(characters.value).filter(character =>{
+            // 显示角色的星数
+            if(showStarList.value.length > 0)
+                if(!showStarList.value.includes(character.star))
+                    return false
+
+            // 显示角色的限定程度
+            if(showWarpList.value.length > 0)
+                if(!showWarpList.value.includes(character.warp))
+                    return false
+
+            // 显示角色的限定程度
+            // if(showWarpList.value.includes('limited')){
+            //     if(character.star <= 4) return false
+            //     if(character.version === 1 && !['希儿', '景元'].includes(character.name)) return false
+            //     if(character.name.startsWith('开拓者')) return false
+            // }
+
+            // 显示角色的版本
+            if(showVersionList.value.length > 0)
+                if(!showVersionList.value.includes(character.version))
+                    return false
+
+            // 显示角色的阵营
+            if(showFactionList.value.length > 0){
+                if(Array.isArray(character.faction)){
+                    if(character.faction.every(faction => !showFactionList.value.includes(faction)))
+                        return false
+                }else {
+                    return false
+                }
+            }
+
+            return true
+        })
+    })
+
+    const showCharactersTotal = computed(() => {
+        return showCharacters.value.length
+    })
+
+    const showCharactersUniqueTotal = computed(() => {
+        return charactersUniqueTotal(showCharacters.value)
+    })
+
     return {
         WebsiteNameList,
         toWebsiteName,
@@ -197,5 +276,10 @@ export const useCharacterSettingStore = defineStore('characterSetting', () => {
         selectWarpList,
         showVersionList,
         selectVersionList,
+        showFactionList,
+        selectFactionList,
+        showCharacters,
+        showCharactersTotal,
+        showCharactersUniqueTotal
     }
 })

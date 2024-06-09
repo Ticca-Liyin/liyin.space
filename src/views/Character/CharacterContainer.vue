@@ -7,11 +7,10 @@ import { computed, ref } from 'vue';
 import { storeToRefs } from 'pinia';
 
 const characterStore = useCharacterStore()
-const { characters } = storeToRefs(characterStore)
 const { getPathAvatar, getDarkPathAvatar, getCombatTypeAvatar} = characterStore
 
 const characterSettingStore = useCharacterSettingStore()
-const { scale, useWheelEvent, showStarList, showWarpList, showVersionList } = storeToRefs(characterSettingStore)
+const { scale, useWheelEvent, showCharacters } = storeToRefs(characterSettingStore)
 const { scaleBaseIncrement, scaleMin, scaleMax} = characterSettingStore
 
 const themeStore = useThemeStore()
@@ -35,30 +34,8 @@ const characterList = computed(() => {
         }
     }
 
-    // 遍历角色列表，将相同 path 和 combattype 的角色放入对应位置
-    Object.values(characters.value).forEach(character => {
-        // 显示角色的星数
-        if(showStarList.value.length > 0)
-            if(!showStarList.value.includes(character.star))
-                return
-
-        // 显示角色的限定程度
-        if(showWarpList.value.length > 0)
-            if(!showWarpList.value.includes(character.warp))
-                return
-
-        // 显示角色的限定程度
-        // if(showWarpList.value.includes('limited')){
-        //     if(character.star <= 4) return
-        //     if(character.version === 1 && !['希儿', '景元'].includes(character.name)) return
-        //     if(character.name.startsWith('开拓者')) return
-        // }
-
-        // 显示角色的版本
-        if(showVersionList.value.length > 0)
-            if(!showVersionList.value.includes(character.version))
-                return
-
+    // 遍历角色列表，将相同 path 和 combattype 的角色放入对应位
+    showCharacters.value.forEach(character => {
         const row = combattypeList.indexOf(character.combattype);
         const col = pathsList.indexOf(character.path);
         
