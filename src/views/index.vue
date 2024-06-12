@@ -54,7 +54,8 @@ onMounted(() => {
     <header class="ly-header">
         <div class="ly-header-left">
             <div class="left-title">
-                黎愔成就
+                <!-- 黎愔成就 -->
+                <img class='left-title-icon' src='@/images/icon.png'/>
             </div>
         </div>
         <div class="ly-header-right">
@@ -140,6 +141,12 @@ a {
     text-align: center;
     background-color: var(--liyin-header-left-bg-color);
     box-shadow: var(--liyin-header-left-box-shadow)
+}
+.left-title-icon{
+    width: 100%; 
+    height: 100%; 
+    object-fit: contain;
+    filter: drop-shadow(0 0 0 #DBC291);
 }
 .ly-header-right{
     display: flex;

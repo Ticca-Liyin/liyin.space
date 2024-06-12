@@ -2,7 +2,7 @@
 import UpdateLog from '@/views/Setting/UpdateLog.vue'
 import AccountManage from '@/views/Setting/AccountManage.vue'
 import ThemeSetting from '@/views/Setting/ThemeSetting.vue'
-
+import AchievementSelectAll from '@/views/Setting/AchievementSelectAllSecondConfirmation.vue'
 </script>
 
 <template>
@@ -10,6 +10,8 @@ import ThemeSetting from '@/views/Setting/ThemeSetting.vue'
         <UpdateLog />
 
         <ThemeSetting />
+
+        <AchievementSelectAll />
 
         <AccountManage />
 

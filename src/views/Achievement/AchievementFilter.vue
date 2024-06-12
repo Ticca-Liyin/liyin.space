@@ -1,7 +1,9 @@
 <script setup>
 import { ArrowDown, ArrowUp } from '@element-plus/icons-vue'
+import { ElMessageBox } from 'element-plus'
 import { useAchievementStore } from '@/stores/achievement';
 import { useIsMobileStore } from '@/stores/isMobile'
+import { useSettingStore } from '@/stores/setting'
 import { ref, onMounted, watch } from 'vue';
 import { storeToRefs } from 'pinia';
 
@@ -9,6 +11,39 @@ const achievementStore = useAchievementStore();
 
 const isMobileStore = useIsMobileStore()
 const { isMobile } = storeToRefs(isMobileStore)
+
+const settingStore = useSettingStore()
+const { achievementSelectAllSecondConfirmation } = storeToRefs(settingStore)
+
+const confirmSelectAll = (event) => {
+    // 阻止原生点击事件的默认行为
+    event.preventDefault();
+    event.stopPropagation();
+
+    if(achievementSelectAllSecondConfirmation.value) {
+        const operation = achievementStore.selectAll ? '取消全选' : '全选';
+
+        ElMessageBox.confirm(
+            `确认进行 <strong>${operation}</strong> 本页成就?`,
+            '确认操作',
+            {
+            confirmButtonText: '确认',
+            cancelButtonText: '取消',
+            dangerouslyUseHTMLString: true,
+            }
+        )
+        .then(() => {
+            achievementStore.handleSelectAll();
+        })
+        .catch(() => {
+
+        });
+    }
+
+    else {
+        achievementStore.handleSelectAll();
+    }
+}
 
 // 设置行相关折叠功能
 const hadFold = ref(false)
@@ -122,7 +157,7 @@ const handleFilterScroll = (event) => {
                     <el-checkbox v-model="achievementStore.incompletePriority" label="未完成成就优先" :size= 'isMobile ? "default" : "large"' />   
                 </div>
                 <div class="achievement-filter-checkbox-input" :class="{'achievement-filter-flex': !hadFold}">
-                    <el-checkbox v-model="achievementStore.selectAll" :label="achievementStore.showSeriesId === 5 ||  achievementStore.showSeriesId === 0 ? '全选本页(多选一成就除外)' : '全选本页'" :size= 'isMobile ? "default" : "large"'  @click="achievementStore.handleSelectAll($event)"/>
+                    <el-checkbox v-model="achievementStore.selectAll" :label="achievementStore.showSeriesId === 5 ||  achievementStore.showSeriesId === 0 ? '全选本页(多选一成就除外)' : '全选本页'" :size= 'isMobile ? "default" : "large"'  @click="confirmSelectAll"/>
                     <!-- <el-checkbox v-model="achievementStore.selectAll" v-if="achievementStore.showSeriesId === 5" label='全选本页(多选一成就除外)' :size= 'isMobile ? "default" : "large"'  @click="achievementStore.handleSelectAll($event)"/>       -->
                     <div class="achievement-filter-fold-up" v-if="!hadFold" @click="hadFold = true">
                         <el-icon class="el-icon--right">

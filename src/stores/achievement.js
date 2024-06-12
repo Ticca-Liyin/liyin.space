@@ -562,11 +562,7 @@ export const useAchievementStore = defineStore('achievement', () => {
             return achievement.Status !== 1
         })
     })
-    const handleSelectAll = (event) => {
-        // 阻止原生点击事件的默认行为
-        event.preventDefault();
-        event.stopPropagation();
-
+    const handleSelectAll = () => {
         if (selectAll.value) {
             showAchievements.value.forEach(achievement => {
                 if (achievement?.MultipleID) return

@@ -7,6 +7,12 @@ const { isMobile } = storeToRefs(isMobileStore)
 
 const updateLogInfo = [
     { 
+        version: '2.2.6', 
+        date: '2024-06-12', 
+        title: '新增成就全选本页二次确认功能',
+        changes: '<ul style="padding-left: 10px;"><li>新增成就全选本页二次确认功能<br>通过该功能可以避免误触导致成就数据丢失<br>你可以在设置界面选择开启或者关闭该功能</li></ul>' 
+    },
+    { 
         version: '2.2.5', 
         date: '2024-06-09', 
         title: '新增角色总数悬浮窗, 新增显示对应阵营角色设置，新增 2.4 前置角色信息',
@@ -75,11 +81,15 @@ const updateLogInfo = [
     </el-popover>
 </template>
 
-<style scoped>
+<style>
 .update-log {
     margin: 10px 10px 0 10px;
 }
 .update-log-changes {
     margin: 5px 15px;
+}
+
+.update-log-changes li {
+    margin: 5px 0;
 }
 </style>
