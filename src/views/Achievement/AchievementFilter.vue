@@ -157,7 +157,7 @@ const handleFilterScroll = (event) => {
                     <el-checkbox v-model="achievementStore.incompletePriority" label="未完成成就优先" :size= 'isMobile ? "default" : "large"' />   
                 </div>
                 <div class="achievement-filter-checkbox-input" :class="{'achievement-filter-flex': !hadFold}">
-                    <el-checkbox v-model="achievementStore.selectAll" :label="achievementStore.showSeriesId === 5 ||  achievementStore.showSeriesId === 0 ? '全选本页(多选一成就除外)' : '全选本页'" :size= 'isMobile ? "default" : "large"'  @click="confirmSelectAll"/>
+                    <el-checkbox v-model="achievementStore.selectAll" :label="[0, 3, 5].includes(achievementStore.showSeriesId) ? '全选本页(多选一成就除外)' : '全选本页'" :size= 'isMobile ? "default" : "large"'  @click="confirmSelectAll"/>
                     <!-- <el-checkbox v-model="achievementStore.selectAll" v-if="achievementStore.showSeriesId === 5" label='全选本页(多选一成就除外)' :size= 'isMobile ? "default" : "large"'  @click="achievementStore.handleSelectAll($event)"/>       -->
                     <div class="achievement-filter-fold-up" v-if="!hadFold" @click="hadFold = true">
                         <el-icon class="el-icon--right">

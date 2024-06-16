@@ -48,9 +48,11 @@ const showCharacters = computed(() => {
     <div class="character-show-box">
         <div class="character-show-row" v-for="(characters, rowIndex) in showCharacters" :key="rowIndex">
             <div v-for="char in characters" :key="char.name" class="character-info-box" @click="handleToWebsite(char.id)">
-                <div v-if="char.deploymentDate > Date.now()" class="character-slanted-content"> 前瞻 </div>
-
-                <img class="character-avatar" :class="'d-img-level-' + char.star" draggable="false" :src="getCharacterAvatar(char.id)" :alt="char.name">
+                
+                <div class="character-avatar-box">
+                    <img class="character-avatar" :class="'d-img-level-' + char.star" draggable="false" :src="getCharacterAvatar(char.id)" :alt="char.name">
+                    <div v-if="char.deploymentDate > Date.now()" class="character-slanted-content"> 前瞻 </div>
+                </div>
 
                 <div class="character-star">
                     <img v-for="i in new Array(char.star)" class="character-star-avatar" draggable="false" 
@@ -102,6 +104,20 @@ const showCharacters = computed(() => {
     transform: scale(1.05);
 }
 
+.character-avatar-box{
+    width: 63px;
+    height: 72px; 
+    position: relative; 
+    overflow: hidden;
+}
+
+.character-avatar {
+    width: 63px;
+    height: 72px;
+    object-fit: cover;
+    border-radius: 0 24px 0 0;
+}
+
 .character-slanted-content {
     position: absolute;
     top: 10px;
@@ -116,13 +132,6 @@ const showCharacters = computed(() => {
     /* transform-origin: center; */
     transform:rotate(45deg);
     z-index: 2;
-}
-
-.character-avatar {
-    width: 63px;
-    height: 72px;
-    object-fit: cover;
-    border-radius: 0 24px 0 0;
 }
 
 .character-star-avatar {

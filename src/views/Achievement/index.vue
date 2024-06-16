@@ -5,7 +5,7 @@ import AchievementList from './AchievementList.vue';
 import AchievementStrategy from './AchievementStrategy.vue';
 import CurrentPageAchievementFloatingWindow from './CurrentPageAchievementFloatingWindow.vue'
 import ExportAchievement from '@/components/export/ExportAchievement.vue';
-import ImportAchievement from '@/components/import/ImportAchievement.vue';
+import ImportAchievement from '@/components/import/importAchievement/index.vue';
 import { DynamicScroller, DynamicScrollerItem } from 'vue-virtual-scroller'
 import 'vue-virtual-scroller/dist/vue-virtual-scroller.css'
 import { onMounted } from 'vue';

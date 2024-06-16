@@ -7,6 +7,12 @@ const { isMobile } = storeToRefs(isMobileStore)
 
 const updateLogInfo = [
     { 
+        version: '2.2.7', 
+        date: '2024-06-16', 
+        title: '新增 Stardb-exporter 导入功能',
+        changes: '<ul style="padding-left: 10px;"><li>新增 Stardb-exporter 导入功能<br>通过该功能可以快捷导入星穹铁道游戏内的成就数据</li></ul>' 
+    },
+    { 
         version: '2.2.6', 
         date: '2024-06-12', 
         title: '新增成就全选本页二次确认功能',
