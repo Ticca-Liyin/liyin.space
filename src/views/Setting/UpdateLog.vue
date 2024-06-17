@@ -7,6 +7,12 @@ const { isMobile } = storeToRefs(isMobileStore)
 
 const updateLogInfo = [
     { 
+        version: '2.3.0', 
+        date: '2024-06-17', 
+        title: '更新 2.3 版本成就相关数据',
+        changes: '<ul style="padding-left: 10px;"><li>更新 2.3 版本成就相关数据</li></ul>' 
+    },
+    { 
         version: '2.2.7', 
         date: '2024-06-16', 
         title: '新增 Stardb-exporter 导入功能',
