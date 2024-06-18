@@ -480,8 +480,8 @@
     "version": 1.5,
     "faction": ["仙舟「罗浮」"]
   },
-  "1220": {
-    "id": 1220,
+  "1218": {
+    "id": 1218,
     "MiYoSheId": 3058,
     "HoYoWikiId": 2643,
     "name": "椒丘",
@@ -510,7 +510,7 @@
   },
   "1224": {
     "id": 1224,
-    "MiYoSheId": 48,
+    "MiYoSheId": 3121,
     "HoYoWikiId": 2657,
     "name": "三月七-巡猎",
     "avatar": "event-ugc-hoyowiki/2024/06/08/15884296/1b66ca709edb772a36bb93f3d5615a88_6391195617442965923.png",
@@ -703,7 +703,7 @@
   },
   "8002": {
     "id": 8002,
-    "MiYoSheId": 872,
+    "MiYoSheId": 3128,
     "HoYoWikiId": 6,
     "name": "开拓者-毁灭",
     "avatar": "hoyowiki/2023/02/21/a9edba85fe403f0d2b7d69e48540634d_4987547298490400207.gif",
@@ -716,7 +716,7 @@
   },
   "8004": {
     "id": 8004,
-    "MiYoSheId": 872,
+    "MiYoSheId": 3127,
     "HoYoWikiId": 23,
     "name": "开拓者-存护",
     "avatar": "hoyowiki/2023/02/21/9d99c7926e8519f151abeac02a1f7210_8780278128209122769.gif",
