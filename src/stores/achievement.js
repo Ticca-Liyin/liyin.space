@@ -194,7 +194,7 @@ export const useAchievementStore = defineStore('achievement', () => {
         // 查找用户成就列表
         return userAchievement[currentUserInfo?.value.tokenID]
     }  
-    const handleUserAchievementList = (achievementID, status) => {
+    const handleUserAchievementList = (achievementID, status, save = true) => {
         if(!achievementID || !status) throw new Error("数据不能为空")
         if(status !== 1 && status !== 2 && status !== 3) throw new Error("参数status不能为非1、2或3的值")
         // 修改用户成就列表
@@ -211,7 +211,7 @@ export const useAchievementStore = defineStore('achievement', () => {
                     }
                 }
             }
-            saveUserAchievement()
+            if(save) saveUserAchievement()
             return 
         }
         // 用户成就列表存在，修改成就状态
@@ -219,7 +219,7 @@ export const useAchievementStore = defineStore('achievement', () => {
             id: achievementID,
             status: status
         }
-        saveUserAchievement()
+        if(save) saveUserAchievement()
         return 
     }   
     const initialAchievementsStatus = () => {
@@ -570,7 +570,7 @@ export const useAchievementStore = defineStore('achievement', () => {
                 if (achievement.Status === 1) return
 
                 achievement.Status = 1
-                handleUserAchievementList(achievement.AchievementID, achievement.Status)
+                handleUserAchievementList(achievement.AchievementID, achievement.Status, false)
             })
         }
         else{
@@ -580,12 +580,14 @@ export const useAchievementStore = defineStore('achievement', () => {
                 if (achievement.Status === 3) return
 
                 achievement.Status = 3
-                handleUserAchievementList(achievement.AchievementID, achievement.Status)
+                handleUserAchievementList(achievement.AchievementID, achievement.Status, false)
             })
         }
+
+        saveUserAchievement()
     }
 
-    const handleAchevementStatus = (achievement) => {
+    const handleAchevementStatus = (achievement, save = true) => {
         if(!(achievement instanceof Achievement)){
             throw new Error("传入achievement不是Achievement类型")
         }
@@ -594,7 +596,7 @@ export const useAchievementStore = defineStore('achievement', () => {
         if (achievement.Status === 1) {
             // 修改成就状态为已完成
             achievement.Status = 3
-            handleUserAchievementList(achievement.AchievementID, achievement.Status)
+            handleUserAchievementList(achievement.AchievementID, achievement.Status, save)
             if(achievement?.MultipleID){
                 // 修改成就状态为无法完成
                 multipleChoice[achievement.MultipleID].forEach(AchievementID => {
@@ -602,7 +604,7 @@ export const useAchievementStore = defineStore('achievement', () => {
                         const ach_ = achievements.value.find(ach => ach.AchievementID === AchievementID)
                         if(ach_){
                             ach_.Status = 2
-                            handleUserAchievementList(ach_.AchievementID, ach_.Status)
+                            handleUserAchievementList(ach_.AchievementID, ach_.Status, save)
                         } 
                     }
                 })
@@ -612,7 +614,7 @@ export const useAchievementStore = defineStore('achievement', () => {
         else if (achievement.Status === 3) {
             // 修改成就状态为未完成
             achievement.Status = 1
-            handleUserAchievementList(achievement.AchievementID, achievement.Status)
+            handleUserAchievementList(achievement.AchievementID, achievement.Status, save)
             if(achievement?.MultipleID){
                 // 修改成就状态为未完成
                 multipleChoice[achievement.MultipleID].forEach(AchievementID => {
@@ -620,7 +622,7 @@ export const useAchievementStore = defineStore('achievement', () => {
                         const ach_ = achievements.value.find(ach => ach.AchievementID === AchievementID)
                         if(ach_){
                             ach_.Status = 1
-                            handleUserAchievementList(ach_.AchievementID, ach_.Status)
+                            handleUserAchievementList(ach_.AchievementID, ach_.Status, save)
                         } 
                     }
                 })
@@ -647,6 +649,7 @@ export const useAchievementStore = defineStore('achievement', () => {
         hiddenNotAvailable,
         incompletePriority,
         selectAll,
+        saveUserAchievement,
         changeShowSeriesID,
         showStrategyDialog,
         // isShowAchievement,

@@ -5,7 +5,7 @@ import { storeToRefs } from 'pinia';
 
 const achievementStore = useAchievementStore()
 const { achievements } = storeToRefs(achievementStore)
-const { handleUserAchievementList, handleAchevementStatus } = achievementStore
+const { handleUserAchievementList, handleAchevementStatus, saveUserAchievement } = achievementStore
 
 const importData = ref('')
 const errorStr = ref('')
@@ -44,7 +44,7 @@ const importAchievements = () => {
     // 初始化所有成就状态为未完成
     achievements.value.forEach(achievement => {
         achievement.Status = 1
-        handleUserAchievementList(achievement.AchievementID, achievement.Status)
+        handleUserAchievementList(achievement.AchievementID, achievement.Status, false)
     })
     // 修改已完成状态, 同一多选已成就后识别的覆盖先识别到的
     for(const id of importAchievementList.value){
@@ -52,8 +52,10 @@ const importAchievements = () => {
 
         if (!ach_) continue
         ach_.Status = 1
-        handleAchevementStatus(ach_)
+        handleAchevementStatus(ach_, false)
     }
+
+    saveUserAchievement()
 
     emit('import-achievements')
 }

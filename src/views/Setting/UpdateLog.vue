@@ -7,6 +7,12 @@ const { isMobile } = storeToRefs(isMobileStore)
 
 const updateLogInfo = [
     { 
+        version: '2.3.2', 
+        date: '2024-06-19', 
+        title: '修正“客随主便”、“主随客便”为多选一成就，优化成就导入功能性能问题',
+        changes: '<ul style="padding-left: 10px;"><li>修正“客随主便”、“主随客便”为多选一成就</li><li>优化成就导入功能性能问题</li></ul>' 
+    },
+    { 
         version: '2.3.1', 
         date: '2024-06-18', 
         title: '修正 2.4 前瞻角色相关数据',
