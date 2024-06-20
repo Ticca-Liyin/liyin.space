@@ -84,7 +84,7 @@ defineExpose({ reset })
             &nbsp; | &nbsp;
             <a class="stardb-import-link" href="https://github.com/Ticca-Liyin/stardb-exporter" target="_blank">github 汉化版</a>
             &nbsp; | &nbsp;
-            <a class="stardb-import-link" href="https://liyinresources.lanzout.com/iEDKf21xuz2j" target="_blank">蓝奏云下载</a>
+            <a class="stardb-import-link" href="https://liyinresources.lanzout.com/iFidB229jvih" target="_blank">蓝奏云下载</a>
             <br/><br/>
             <p>教程视频：<a class="stardb-import-link" href="https://www.bilibili.com/video/BV1rE421N7b5/" target="_blank">点这里</a></p><br/>
             
