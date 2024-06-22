@@ -1,19 +1,26 @@
 <script setup>
+import { ref } from 'vue';
 import AchievementSeries from './AchievementSeries.vue';
 import AchievementFilter from './AchievementFilter.vue';
 import AchievementList from './AchievementList.vue';
 import AchievementStrategy from './AchievementStrategy.vue';
 import CurrentPageAchievementFloatingWindow from './CurrentPageAchievementFloatingWindow.vue'
+import TextjoinSetting from './TextjoinSetting.vue'
 import ExportAchievement from '@/components/export/ExportAchievement.vue';
 import ImportAchievement from '@/components/import/importAchievement/index.vue';
 import { DynamicScroller, DynamicScrollerItem } from 'vue-virtual-scroller'
 import 'vue-virtual-scroller/dist/vue-virtual-scroller.css'
 import { onMounted } from 'vue';
 import { useAchievementStore } from '@/stores/achievement';
+import { useTextjoinStore } from '@/stores/textjoin.js'
 
 const achievementStore = useAchievementStore()
+const textjoinStore = useTextjoinStore();
+
+const TextjoinSettingRef = ref(null)
 
 onMounted(() => {
+   textjoinStore.getUserTextjoin()
    achievementStore.initialAchievementsInfo() 
    achievementStore.getAchievementFilterConfig()
 })
@@ -23,9 +30,14 @@ onMounted(() => {
 <template>
     <div class="achievement">
         <header class="achievement-header">
+            <div class="achievement-setting-button" @click="TextjoinSettingRef.handleOpen">
+                设置
+            </div>
             <ImportAchievement />
             <ExportAchievement />
         </header>
+
+        <TextjoinSetting ref="TextjoinSettingRef"/>
 
         <AchievementSeries/>
 
@@ -83,7 +95,23 @@ onMounted(() => {
     position: fixed;
     top: 0;
     right: 160px;
-    z-index: 30;
+    z-index: 600;
+}
+.achievement-setting-button {
+    height: 15px;
+    line-height: 15px;
+    color: var(--el-text-color-regular);
+    border: 1px solid var(--liyin-button-border-color);
+    font-size: 15px;
+    padding: 11px 15px 11px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    user-select: none;
+    margin-right: 10px;
+}
+.achievement-setting-button:hover {
+    border: 1px solid var(--el-color-primary);
+    color: var(--el-color-primary);
 }
 .scroller{
     flex: 1 0 0;
@@ -140,6 +168,10 @@ onMounted(() => {
     /* .scroller::-webkit-scrollbar {
         display: none;
     } */
+    .achievement-setting-button {
+        font-size: 14px;
+        padding: 8px 15px 8px 15px;
+    }
     .bottom {
         padding: 5px 0;
         margin: 0 10px;
@@ -151,11 +183,7 @@ onMounted(() => {
         height: 50px;
         top: 0;
         right: 135px;
-        z-index: 30;
-    }
-    .import-button {
-        font-size: 14px;
-        padding: 8px 15px 8px 15px;
+        z-index: 500;
     }
 }
 </style>

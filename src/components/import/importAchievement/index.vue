@@ -75,6 +75,10 @@ const handleCloseImportDialog = () => {
     padding: 0px 20px 15px 20px;
 }
 @media (max-width: 768px){
+    .import-button {
+        font-size: 14px;
+        padding: 8px 15px 8px 15px;
+    }
     .dialog-import{
         width: 80%;
     }

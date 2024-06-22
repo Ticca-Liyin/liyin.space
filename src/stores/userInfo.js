@@ -60,15 +60,6 @@ export const useUserInfoStore = defineStore('userInfo', () => {
 
         } else {
             // 数据不存在，执行相应的操作
-            // userInfoList.value.currentTokenID = 1
-            // userInfoList.value.list = {
-            //     1:{
-            //         tokenID: 1,
-            //         avatar: 1001,
-            //         uid: 100000000, 
-            //         name: "开拓者", 
-            //     }
-            // }
             userInfoList.value = {
                 currentTokenID: 1,
                 list: {
@@ -191,31 +182,57 @@ export const useUserInfoStore = defineStore('userInfo', () => {
                 userInfoList.value.currentTokenID = Object.values(userInfoList.value.list ?? {})[0].tokenID
     
             saveUserInfo()
-            updateUserAchievement()
+            updateKeyStorage()
         })
         .catch(() => {
             // console.log('取消删除')
         })
     }
 
-    //更新（删除） userAchievement 中不存在userInfo 的 tokenID 中的数据
-    const updateUserAchievement = () => {
-        // 从缓存中读取名为 "userAchievement" 的数据
-        let userAchievement = localStorage.getItem("userAchievement")
+    // //更新（删除） userAchievement 中不存在userInfo 的 tokenID 中的数据
+    // const updateUserAchievement = () => {
+    //     // 从缓存中读取名为 "userAchievement" 的数据
+    //     let userAchievement = localStorage.getItem("userAchievement")
 
-        // 检查是否存在名为 "userAchievement" 的数据
-        if (userAchievement !== null) {
-            // 数据存在，将其从字符串转换为对象
-            userAchievement = JSON.parse(userAchievement)
+    //     // 检查是否存在名为 "userAchievement" 的数据
+    //     if (userAchievement !== null) {
+    //         // 数据存在，将其从字符串转换为对象
+    //         userAchievement = JSON.parse(userAchievement)
 
-            const userTokenIDs = Object.keys(userInfoList.value.list)
+    //         const userTokenIDs = Object.keys(userInfoList.value.list)
 
-            for(const tokenID in userAchievement)
-                if(!userTokenIDs.includes(tokenID))
-                    delete userAchievement[tokenID]
+    //         for(const tokenID in userAchievement)
+    //             if(!userTokenIDs.includes(tokenID))
+    //                 delete userAchievement[tokenID]
             
-            localStorage.setItem("userAchievement", JSON.stringify(userAchievement))
-        } 
+    //         localStorage.setItem("userAchievement", JSON.stringify(userAchievement))
+    //     } 
+    // }
+
+    //更新（删除）STORAGE_KEY_LIST 中不存在userInfo 的 tokenID 中的数据
+    const STORAGE_KEY_LIST = ["userAchievement", "userTextjoin"]
+
+    const updateKeyStorage = () => {
+        for (const key of STORAGE_KEY_LIST) {
+            // 从缓存中读取名为 key 的数据
+            const storageItem = localStorage.getItem(key)
+
+            // 检查是否存在名为 key 的数据
+            if (storageItem !== null) {
+                // 数据存在，将其从字符串转换为对象
+                let storageJson = JSON.parse(storageItem)
+                console.log(storageJson)
+                const userTokenIDs = Object.keys(userInfoList.value.list)
+    
+                for(const tokenID in storageJson){
+                    if(!userTokenIDs.includes(tokenID)){
+                        delete storageJson[tokenID]
+                    }
+                }
+                localStorage.setItem(key, JSON.stringify(storageJson))
+                console.log(storageJson)
+            } 
+        }
     }
 
     return {

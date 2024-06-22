@@ -5530,7 +5530,7 @@
     "AchievementID": 4053319,
     "SeriesID": 5,
     "AchievementTitle": "自费周边",
-    "AchievementDesc": "获得开拓者的船长周边玩具",
+    "AchievementDesc": "获得{NICKNAME}的船长周边玩具",
     "ParamList": [],
     "Priority": 697,
     "Rarity": "Low",
@@ -5541,7 +5541,7 @@
     "AchievementID": 4053320,
     "SeriesID": 5,
     "AchievementTitle": "影子船长",
-    "AchievementDesc": "与开拓者船长的广告牌对话",
+    "AchievementDesc": "与{NICKNAME}船长的广告牌对话",
     "ParamList": [],
     "Priority": 696,
     "Rarity": "Low",
@@ -8201,7 +8201,7 @@
     "AchievementID": 4073209,
     "SeriesID": 7,
     "AchievementTitle": "舞力全开！",
-    "AchievementDesc": "战斗中，利用开拓者•同谐的终结技「喧嚣的舞灯巡游」的【伴舞】效果消灭一个精英敌人",
+    "AchievementDesc": "战斗中，利用{NICKNAME}•同谐的终结技「喧嚣的舞灯巡游」的【伴舞】效果消灭一个精英敌人",
     "ParamList": [],
     "Priority": 850,
     "Rarity": "Low",
@@ -8322,7 +8322,7 @@
     "AchievementID": 4073306,
     "SeriesID": 7,
     "AchievementTitle": "见过夏天",
-    "AchievementDesc": "使用同时包含流萤、开拓者的队伍获得1场战斗的胜利",
+    "AchievementDesc": "使用同时包含流萤、{NICKNAME}的队伍获得1场战斗的胜利",
     "ParamList": [
       {
         "Value": 1
@@ -8954,7 +8954,7 @@
     "AchievementID": 4082801,
     "SeriesID": 8,
     "AchievementTitle": "在世界中心呼唤我",
-    "AchievementDesc": "触发10句不同的队伍编成•开拓者语音",
+    "AchievementDesc": "触发10句不同的队伍编成•{NICKNAME}语音",
     "ParamList": [
       {
         "Value": 10
@@ -8969,7 +8969,7 @@
     "AchievementID": 4082802,
     "SeriesID": 8,
     "AchievementTitle": "银河枪骑队",
-    "AchievementDesc": "使用同时包含银枝、开拓者的队伍获得1场战斗的胜利",
+    "AchievementDesc": "使用同时包含银枝、{NICKNAME}的队伍获得1场战斗的胜利",
     "ParamList": [
       {
         "Value": 1
@@ -8995,7 +8995,7 @@
     "AchievementID": 4082804,
     "SeriesID": 8,
     "AchievementTitle": "捉鬼敢死队",
-    "AchievementDesc": "使用同时包含藿藿、素裳、桂乃芬、开拓者的队伍获得1场战斗的胜利",
+    "AchievementDesc": "使用同时包含藿藿、素裳、桂乃芬、{NICKNAME}的队伍获得1场战斗的胜利",
     "ParamList": [
       {
         "Value": 1

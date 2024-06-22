@@ -147,7 +147,7 @@ defineExpose({ reset })
 }
 
 .stardb-import-data{
-    width: calc(100%-40px);
+    width: calc(100% - 40px);
     padding: 0 20px;
     font-size: 16px;
 }

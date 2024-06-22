@@ -8,6 +8,11 @@
     --liyin-aside-selected-text-color: #fff;
     --liyin-aside-selected-text-color-2: #00A8E8;
 
+    --liyin-aside-box-shadow: 5px 1px 10px rgba(60, 60, 60, 0.3);
+    --liyin-aside-box-shadow-2: 1px -3px 10px rgba(60, 60, 60, 0.3);
+    --liyin-header-box-shadow: 1px 5px 10px rgba(60, 60, 60, 0.3);
+    --liyin-header-box-shadow-2: 3px 1px 10px rgba(60, 60, 60, 0.3);
+
     --liyin-header-left-bg-color: #4A90E2;
     --liyin-header-left-box-shadow: 5px 1px 10px rgba(60, 60, 60, 0.3);
 
@@ -49,6 +54,8 @@
     --liyin-ach-current-page-bg-color: #f5f5f5;
     --liyin-ach-current-page-text-color: #5e5e5e;
 
+    --liyin-textjion-text-color: #767676;
+
     --liyin-char-bg-color: #f5f5f5;
     --liyin-char-text-color: #606266;
     --liyin-char-name-text-color: #606266;
@@ -84,6 +91,11 @@ html.dark{
     --liyin-aside-text-color: #E1D8D8;
     --liyin-aside-selected-text-color: #DBC291;
     --liyin-aside-selected-text-color-2: #DBC291;
+
+    --liyin-aside-box-shadow: none;
+    --liyin-aside-box-shadow-2: none;
+    --liyin-header-box-shadow: none;
+    --liyin-header-box-shadow-2: none;
 
     --liyin-header-left-bg-color: #191919;
     --liyin-header-left-box-shadow: 5px 1px 10px rgba(35, 35, 35, 0.3);
@@ -123,6 +135,8 @@ html.dark{
 
     --liyin-ach-current-page-bg-color: #3b3b3b;
     --liyin-ach-current-page-text-color: #DBC291;
+
+    --liyin-textjion-text-color: #DBC291;
 
     --liyin-char-bg-color: #282828;
     --liyin-char-text-color: #DBC291;

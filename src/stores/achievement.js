@@ -2,6 +2,7 @@ import { nextTick, watch, computed, ref } from 'vue'
 import { defineStore, storeToRefs } from 'pinia'
 import { useAuthorStore } from '@/stores/author'
 import { useUserInfoStore } from '@/stores/userInfo'
+import { useTextjoinStore } from '@/stores/textjoin.js'
 import { achievementInfoVersion, achievementSeriesVersion, multipleChoiceVersion,
      notAvailableAchievementVersion, achievementStrategyVersion, strategyInfoVersion } 
      from '@/utils/version.js'
@@ -9,19 +10,39 @@ import { achievementInfoVersion, achievementSeriesVersion, multipleChoiceVersion
 const authorStore = useAuthorStore()
 const { authors } = storeToRefs(authorStore)
 
+const textjoinStore = useTextjoinStore();
+const { textjoinSelectList, getUserTextjoinValue } = textjoinStore;
+
+const userInfoStore = useUserInfoStore()
+const { currentUserInfo } = storeToRefs(userInfoStore)
+
+const pattern1 = /{NICKNAME}/g;
+const pattern2 = /{TEXTJOIN#(\d+)}/g;
+
 export const useAchievementStore = defineStore('achievement', () => {
     class Achievement {
         constructor(achievement) {
             this.AchievementID = achievement.AchievementID
             this.SeriesID = achievement.SeriesID
             this.AchievementTitle = achievement.AchievementTitle
-            this.AchievementDesc = achievement.AchievementDesc
+            this.AchievementSrcDesc = achievement.AchievementDesc
             this.ParamList = achievement.ParamList
             this.Priority = achievement.Priority
             this.Rarity = achievement.Rarity
             this.ShowType = achievement.ShowType
             this.Version = achievement.Version
             this.Status = 1
+        }
+
+        get AchievementDesc(){
+            let result = this.AchievementSrcDesc.replace(pattern1, currentUserInfo.value.name)
+            
+            result = result.replace(pattern2, (match, id) => {
+                const textjoinId = 'TEXTJOIN#' + id;
+                return getUserTextjoinValue(currentUserInfo.value.tokenID.toString(), textjoinId) ?? match;
+            })
+
+            return result
         }
 
         get StellarJadeNum(){
@@ -160,8 +181,7 @@ export const useAchievementStore = defineStore('achievement', () => {
 
     const StellarJadeImg= "https://webstatic.mihoyo.com/upload/event/2023/03/28/77cb5426637574ba524ac458fa963da0_8938800417123864478.png"
     // const userInfo = { uid: "100000000", name: "开拓者", tokenID: 1}
-    const userInfoStore = useUserInfoStore()
-    const { currentUserInfo } = storeToRefs(userInfoStore)
+
     watch(currentUserInfo, () => {
         initialAchievementsStatus()
         // 对 暂时无法获得但因特殊情况状态时已获得的进行修正 由于会重复赋值 已赋值的 timestamp 若出现性能问题可进行优化
@@ -345,9 +365,39 @@ export const useAchievementStore = defineStore('achievement', () => {
 
             // 打印转换后的数据
             // console.log(achievementInfo, achievementSeries)
+            const ALLTEXTJOIN = new Set()
+
             Object.values(achievementInfo).forEach(value => {
+                if (process.env.NODE_ENV === 'development') {
+                    const matches = value.AchievementDesc.match(pattern2)
+
+                    if(matches){
+                        matches.forEach(match => {
+                            ALLTEXTJOIN.add(match.substring(1, match.length - 1))
+                        })
+                    }
+                }
+    
                 achievements.value.push(new Achievement(value))
             })
+
+            if (process.env.NODE_ENV === 'development') {
+                console.log(ALLTEXTJOIN)
+                const textjoinIDs = Object.keys(textjoinSelectList)
+
+                function arraysHaveSameElements(arr1, arr2) {
+                    return new Set(arr1).size === new Set(arr2).size && [...arr1].every(element => new Set(arr2).has(element));
+                }
+
+                if(!arraysHaveSameElements(ALLTEXTJOIN, textjoinIDs)) {
+                    ElMessage({
+                        showClose: true,
+                        message: 'TEXTJOIN 数据存在异常，请及时检查',
+                        type: 'error',
+                    })
+                } 
+            }
+
 
             getUserAchievement()            
             initialMultipleChoice()

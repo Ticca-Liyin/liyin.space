@@ -217,7 +217,7 @@ onBeforeUnmount(() => {
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     border-radius: 5px;
     display: flex;
-    z-index: 999;
+    z-index: 100;
     user-select: none;
     min-height: 25px;
     min-width: 25px;

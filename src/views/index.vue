@@ -128,8 +128,10 @@ a {
     background-color: var(--liyin-bg-color-2);
     display: flex;
     justify-content: space-between;
-    box-shadow: 1px 5px 10px rgba(60, 60, 60, 0.3);
+    box-shadow: var(--liyin-header-box-shadow);
     /*margin-bottom: 1px; */
+    position: relative;
+    z-index: 999;
 }
 .left-title{
     width: 150px;
@@ -215,7 +217,7 @@ a {
     width: 150px;
     height: calc(100vh - 60px);
     background-color: var(--liyin-aside-bg-color);
-    box-shadow: 5px 1px 10px rgba(60, 60, 60, 0.3);
+    box-shadow: var(--liyin-header-box-shadow);
 }
 .nav-main{
     height: 40px;
@@ -251,13 +253,13 @@ a {
         position: fixed;
         top: 0;
         left: 0;
-        z-index: 20;
+        z-index: 500;
     }
     .ly-aside{
         position: fixed;
         top: 60px;
         left: 0;
-        z-index: 15;
+        z-index: 450;
     }
     .ly-main{
         /* width: 100%; */
@@ -273,8 +275,8 @@ a {
         position: fixed;
         top: 0;
         left: 0;
-        z-index: 20;
-        box-shadow: 3px 1px 10px rgba(60, 60, 60, 0.3);
+        z-index: 500;
+        box-shadow: var(--liyin-header-box-shadow-2);
     }
     .left-title{
         display: none;
@@ -311,11 +313,11 @@ a {
         background-color: var(--liyin-bg-color-2);
         flex-direction: row;
         justify-content: space-around;
-        box-shadow: 1px -3px 10px rgba(60, 60, 60, 0.3);
+        box-shadow: var(--liyin-aside-box-shadow-2);
         position: fixed;
         bottom: 0;
         left: 0;
-        z-index: 15;
+        z-index: 450;
     }
     .nav-main{
         width: 50px;

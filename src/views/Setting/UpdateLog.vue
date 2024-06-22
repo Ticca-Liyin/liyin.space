@@ -7,6 +7,12 @@ const { isMobile } = storeToRefs(isMobileStore)
 
 const updateLogInfo = [
     {
+        version: '2.3.4', 
+        date: '2024-06-22', 
+        title: '新增成就界面设置特殊文本内容功能',
+        changes: '<ul style="padding-left: 10px;"><li>新增成就界面设置特殊文本内容功能<br>如自定义以太硬币扑满的名称、晖长石号的名称等</ul>' 
+    },
+    {
         version: '2.3.3', 
         date: '2024-06-20', 
         title: '更新 stardb-exporter 程序蓝奏云下载链接，使用此导入功能的需要重新下载此文件',
