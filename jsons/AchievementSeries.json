@@ -1,0 +1,65 @@
+{
+  "1": {
+    "SeriesID": 1,
+    "SeriesTitle": "我，开拓者",
+    "imagePath": "/src/images/series/I,Trailblazer.png",
+    "imageDarkPath": "/src/images/series-dark/I,Trailblazer.png",
+    "Priority": 9
+  },
+  "2": {
+    "SeriesID": 2,
+    "SeriesTitle": "流光遗痕",
+    "imagePath": "/src/images/series/VestigeofLuminflux.png",
+    "imageDarkPath": "/src/images/series-dark/VestigeofLuminflux.png",
+    "Priority": 6
+  },
+  "3": {
+    "SeriesID": 3,
+    "SeriesTitle": "通往群星的轨道",
+    "imagePath": "/src/images/series/TheRailUntotheStars.png",
+    "imageDarkPath": "/src/images/series-dark/TheRailUntotheStars.png",
+    "Priority": 8
+  },
+  "4": {
+    "SeriesID": 4,
+    "SeriesTitle": "众秘探奇",
+    "imagePath": "/src/images/series/FathomtheUnfathomable.png",
+    "imageDarkPath": "/src/images/series-dark/FathomtheUnfathomable.png",
+    "Priority": 1
+  },
+  "5": {
+    "SeriesID": 5,
+    "SeriesTitle": "与你同行的回忆",
+    "imagePath": "/src/images/series/TheMemoriesWeShare.png",
+    "imageDarkPath": "/src/images/series-dark/TheMemoriesWeShare.png",
+    "Priority": 2
+  },
+  "6": {
+    "SeriesID": 6,
+    "SeriesTitle": "不屈者的荣光",
+    "imagePath": "/src/images/series/GloryoftheUnyielding.png",
+    "imageDarkPath": "/src/images/series-dark/GloryoftheUnyielding.png",
+    "Priority": 4
+  },
+  "7": {
+    "SeriesID": 7,
+    "SeriesTitle": "战意奔涌",
+    "imagePath": "/src/images/series/EagerforBattle.png",
+    "imageDarkPath": "/src/images/series-dark/EagerforBattle.png",
+    "Priority": 7
+  },
+  "8": {
+    "SeriesID": 8,
+    "SeriesTitle": "瞬息欢愉",
+    "imagePath": "/src/images/series/MomentofJoy.png",
+    "imageDarkPath": "/src/images/series-dark/MomentofJoy.png",
+    "Priority": 3
+  },
+  "9": {
+    "SeriesID": 9,
+    "SeriesTitle": "果壳中的宇宙",
+    "imagePath": "/src/images/series/UniverseinaNutshell.png",
+    "imageDarkPath": "/src/images/series-dark/UniverseinaNutshell.png",
+    "Priority": 5
+  }
+}

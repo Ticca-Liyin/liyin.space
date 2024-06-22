@@ -1,0 +1,165 @@
+:root {   
+    --liyin-bg-color-1: #ededed;
+    --liyin-bg-color-2: #fff;
+
+    --liyin-aside-bg-color: #00A8E8;
+    --liyin-aside-selected-bg-color: #4A90E2AA;
+    --liyin-aside-text-color: #E1D8D8;
+    --liyin-aside-selected-text-color: #fff;
+    --liyin-aside-selected-text-color-2: #00A8E8;
+
+    --liyin-aside-box-shadow: 5px 1px 10px rgba(60, 60, 60, 0.3);
+    --liyin-aside-box-shadow-2: 1px -3px 10px rgba(60, 60, 60, 0.3);
+    --liyin-header-box-shadow: 1px 5px 10px rgba(60, 60, 60, 0.3);
+    --liyin-header-box-shadow-2: 3px 1px 10px rgba(60, 60, 60, 0.3);
+
+    --liyin-header-left-bg-color: #4A90E2;
+    --liyin-header-left-box-shadow: 5px 1px 10px rgba(60, 60, 60, 0.3);
+
+    --liyin-text-color: #767676;
+    --liyin-text-main-color: #000;
+    --liyin-text-deep-color: #000;
+    --liyin-text-light-color: #fff;
+
+    --liyin-arrow-color: #A8A8B2;
+
+    --liyin-main-border-color: #DCDFE6;
+    --liyin-button-border-color: #DCDFE6;
+    --liyin-dashed-border-color: #606266;
+
+    --liyin-userinfo-hover-bg-color: #ECF5FF;
+
+    --liyin-ach-item-bg-color: #fff;
+    --liyin-ach-not-select-color: #D4E6F1;
+    --liyin-ach-selected-color: #00A8E8;
+    --liyin-ach-hover-color: #00A8E8;
+    --liyin-ach-selected-hover-color: #4A90E2;
+    --liyin-ach-not-available-color: #A6A6A6;
+    --liyin-ach-icon-selected-color: #fff;
+    --liyin-ach-stellar-bg-color: #b78850;
+    --liyin-ach-stellar-num-text-color: #fff;
+    --liyin-ach-stellar-num-bg-color: #6F6F6F;
+    --liyin-ach-introduction-color: #00A8E8;
+    --liyin-ach-version-color: #00A8E8;
+    --liyin-ach-showtype-color: #FFC0CB;
+    --liyin-ach-branch-color: #FF8D00;
+    --liyin-ach-series-bg-color: #f5f5f5;
+    --liyin-ach-series-text-color: #5e5e5e;
+    --liyin-ach-series-count-not-available-color: #008080;
+    --liyin-ach-bottom-text-color: #cccccc;
+    --liyin-orange-color: #FF8D00;
+    --liyin-author-text-color: #FF7A45;
+    --liyin-author-hover-text-color: #fc6124;
+
+    --liyin-ach-current-page-bg-color: #f5f5f5;
+    --liyin-ach-current-page-text-color: #5e5e5e;
+
+    --liyin-textjion-text-color: #767676;
+
+    --liyin-char-bg-color: #f5f5f5;
+    --liyin-char-text-color: #606266;
+    --liyin-char-name-text-color: #606266;
+    --liyin-char-gird-border-color: #DADBDF;
+    --liyin-char-button-bg-color: #fff;
+    --liyin-char-combattypt-bg-color: #E1E5EA;
+    --liyin-char-floating-total-text-color: #00A8E8;
+
+    --liyin-char-avatar-bg-color: #8E8679;
+    --liyin-char-avatar-border-color: #DBC291;
+
+    --liyin-setting-bg-color: #eeeeee;
+    --liyin-setting-selected-bg-color: #ECF5FF;
+    --liyin-setting-hover-bg-color: #F5F7FA;
+
+    --liyin-floating-window-bg-color: #ededed;
+    --liyin-char-floating-window-bg-color: #fafafa;
+
+    --liyin-url-text-color: #42b983;
+    --liyin-url-hover-text-color: #2A9D8F;
+}
+
+html:root {
+    --el-color-primary: #00A8E8;
+}
+
+html.dark{
+    --liyin-bg-color-1: #282828;
+    --liyin-bg-color-2: #1D1D1D;
+
+    --liyin-aside-bg-color: #1A1A1A;
+    --liyin-aside-selected-bg-color: #323232AA;
+    --liyin-aside-text-color: #E1D8D8;
+    --liyin-aside-selected-text-color: #DBC291;
+    --liyin-aside-selected-text-color-2: #DBC291;
+
+    --liyin-aside-box-shadow: none;
+    --liyin-aside-box-shadow-2: none;
+    --liyin-header-box-shadow: none;
+    --liyin-header-box-shadow-2: none;
+
+    --liyin-header-left-bg-color: #191919;
+    --liyin-header-left-box-shadow: 5px 1px 10px rgba(35, 35, 35, 0.3);
+
+    --liyin-text-main-color: #CFD3DC;
+    --liyin-text-deep-color: #CFD3DC;
+    --liyin-text-light-color: #DBC291;
+
+    --liyin-arrow-color: #CFD3DC;
+
+    --liyin-main-border-color: #4C4D4F;
+    --liyin-button-border-color: #4C4D4F;
+    --liyin-dashed-border-color: #4C4D4F;
+
+    --liyin-userinfo-hover-bg-color: #2e2a21;
+
+    --liyin-ach-item-bg-color: #323232;
+    --liyin-ach-not-select-color: #d4cdbf;
+    --liyin-ach-selected-color: #d6b471;
+    --liyin-ach-hover-color: #d6b471;
+    --liyin-ach-selected-hover-color: #cca25d;
+    --liyin-ach-not-available-color: #A6A6A6;
+    --liyin-ach-icon-selected-color: #ece8df; 
+    --liyin-ach-stellar-bg-color: #b78850;
+    --liyin-ach-stellar-num-text-color: #CFD3DC;
+    --liyin-ach-stellar-num-bg-color: #6F6F6F;
+    --liyin-ach-introduction-color: #DBC291;
+    --liyin-ach-version-color: #DBC291;
+    --liyin-ach-showtype-color: #FFC0CB;
+    --liyin-ach-branch-color: #FF8D00;
+    --liyin-ach-series-bg-color: #323232;
+    --liyin-ach-series-text-color: #CFD3DC;
+    --liyin-ach-series-count-not-available-color: #03c4c4;
+    --liyin-ach-bottom-text-color: #aaaaaa;
+    --liyin-orange-color: #FF8D00;
+    --liyin-author-text-color: #FF7A45;
+
+    --liyin-ach-current-page-bg-color: #3b3b3b;
+    --liyin-ach-current-page-text-color: #DBC291;
+
+    --liyin-textjion-text-color: #DBC291;
+
+    --liyin-char-bg-color: #282828;
+    --liyin-char-text-color: #DBC291;
+    --liyin-char-name-text-color: #DBC291;
+    --liyin-char-gird-border-color: #3E3E3E;
+    --liyin-char-button-bg-color: #7F8084;
+    --liyin-char-combattypt-bg-color: #000;
+    --liyin-char-floating-total-text-color: #03c4c4;
+
+    --liyin-setting-bg-color: #282828;
+    --liyin-setting-selected-bg-color: #4B4B4B;
+    --liyin-setting-hover-bg-color: #323232;
+
+    --liyin-floating-window-bg-color: #171718;
+    --liyin-char-floating-window-bg-color: #171718;
+}
+
+html:root.dark {
+    --el-color-primary: #DBC291;
+    --el-color-primary-light-3: #a18958;
+    --el-color-primary-light-5: #6b562c;
+    --el-color-primary-light-7: #554421;
+    --el-color-primary-light-8: #30250c;
+    --el-color-primary-light-9: #2e2a21;
+    --el-color-primary-dark-2: #c5b79b;
+}
