@@ -6,17 +6,23 @@ const isMobileStore = useIsMobileStore()
 const { isMobile } = storeToRefs(isMobileStore)
 
 const updateLogInfo = [
+{
+        version: '2.3.5', 
+        date: '2024-06-30', 
+        title: '新增 世末丶月光之下 的成就视频攻略，新增 祈鸢ya 的 2.3 相关攻略',
+        changes: '<ul style="padding-left: 10px;"><li>新增 世末丶月光之下 的成就视频攻略</li><li>新增  祈鸢ya 的 2.3 相关攻略</li></ul>' 
+    },
     {
         version: '2.3.4', 
         date: '2024-06-22', 
         title: '新增成就界面设置特殊文本内容功能',
-        changes: '<ul style="padding-left: 10px;"><li>新增成就界面设置特殊文本内容功能<br>如自定义以太硬币扑满的名称、晖长石号的名称等</ul>' 
+        changes: '<ul style="padding-left: 10px;"><li>新增成就界面设置特殊文本内容功能<br>如自定义以太硬币扑满的名称、晖长石号的名称等</li></ul>' 
     },
     {
         version: '2.3.3', 
         date: '2024-06-20', 
         title: '更新 stardb-exporter 程序蓝奏云下载链接，使用此导入功能的需要重新下载此文件',
-        changes: '<ul style="padding-left: 10px;"><li>更新 stardb-exporter 程序蓝奏云下载链接，使用此导入功能的需要重新下载此文件</ul>' 
+        changes: '<ul style="padding-left: 10px;"><li>更新 stardb-exporter 程序蓝奏云下载链接，使用此导入功能的需要重新下载此文件</li></ul>' 
     },
     { 
         version: '2.3.2', 
