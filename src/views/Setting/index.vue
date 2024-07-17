@@ -3,6 +3,7 @@ import UpdateLog from '@/views/Setting/UpdateLog.vue'
 import AccountManage from '@/views/Setting/AccountManage.vue'
 import ThemeSetting from '@/views/Setting/ThemeSetting.vue'
 import AchievementSelectAll from '@/views/Setting/AchievementSelectAllSecondConfirmation.vue'
+import AchievementFilterCache from '@/views/Setting/AchievementFelterCache.vue'
 </script>
 
 <template>
@@ -13,6 +14,8 @@ import AchievementSelectAll from '@/views/Setting/AchievementSelectAllSecondConf
 
         <AchievementSelectAll />
 
+        <AchievementFilterCache />
+        
         <AccountManage />
 
         <!-- <div class="setting-title">关于：</div> -->

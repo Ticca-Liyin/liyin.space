@@ -1,18 +1,22 @@
 <script setup>
 import FloatingWindow from '@/components/FloatingWindow.vue';
 import { useCharacterSettingStore } from '@/stores/characterSetting';
+import { useIsMobileStore } from '@/stores/isMobile'
 import { useThemeStore } from '@/stores/theme'
 import { storeToRefs } from 'pinia';
 
 const characterSettingStore = useCharacterSettingStore()
 const { showCharactersTotal, showCharactersUniqueTotal } = storeToRefs(characterSettingStore)
 
+const isMobileStore = useIsMobileStore()
+const { isMobile } = storeToRefs(isMobileStore)
+
 const themeStore = useThemeStore()
 const { isDark } = storeToRefs(themeStore)
 </script>
 
 <template>
-  <FloatingWindow class="character-floating-window">
+  <FloatingWindow class="character-floating-window" :displayPosition="isMobile ? 'left' : 'right'">
     <div class="character-grid">
         <div class="character-grid-item">
             <b>当前显示角色总个数：</b>

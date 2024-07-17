@@ -6,7 +6,13 @@ const isMobileStore = useIsMobileStore()
 const { isMobile } = storeToRefs(isMobileStore)
 
 const updateLogInfo = [
-{
+    {
+        version: '2.3.6', 
+        date: '2024-07-17', 
+        title: '优化手机端成就界面及角色界面的悬浮窗口位置为左边, 优化成就筛选功能',
+        changes: '<ul style="padding-left: 10px;"><li>优化手机端成就界面及角色界面的悬浮窗口位置为左边</li><li>优化成就筛选功能，新增更多的筛选类型，设置界面新增成就筛选配置缓存选项便于自行取舍是否保留筛选缓存</li></ul>' 
+    },
+    {
         version: '2.3.5', 
         date: '2024-06-30', 
         title: '新增 世末丶月光之下 的成就视频攻略，新增 祈鸢ya 的 2.3 相关攻略',

@@ -1,6 +1,14 @@
 <script setup>
 import { ArrowLeft, ArrowRight } from '@element-plus/icons-vue'
-import { ref, reactive, computed, onMounted, onBeforeUnmount } from 'vue';
+import { ref, reactive, computed, watch, onMounted, onBeforeUnmount } from 'vue';
+
+const props = defineProps({
+  displayPosition: {
+    type: String,
+    default: 'right', // 默认位置为右边
+    validator: (value) => ['left', 'right'].includes(value),
+  },
+});
 
 const windowRef = ref(null);
 const parentElement = ref(null);
@@ -24,10 +32,17 @@ const updateWindowPosition = () => {
     const windowRect = windowRef.value.getBoundingClientRect();    
 
     if(isVisible.value) {
-        position.x = Math.max(
-            Math.min(position.x, 0),
-            windowRect.width - parentRect.width
-        );
+        if(props.displayPosition === 'right'){
+            position.x = Math.max(
+                Math.min(position.x, 0),
+                windowRect.width - parentRect.width
+            );
+        } else {
+            position.x = Math.min(
+                Math.max(position.x, 0),
+                parentRect.width - windowRect.width
+            );
+        }
     }
 
     position.y = Math.min(
@@ -40,8 +55,8 @@ const onDragStart = (event) => {
     if (event.touches && event.touches.length !== 1) return; 
 
     isDragging = true;
-    startPosition.x = event.clientX || event.touches[0].clientX;
-    startPosition.y = event.clientY || event.touches[0].clientY;
+    startPosition.x = event.clientX ?? event.touches[0].clientX;
+    startPosition.y = event.clientY ?? event.touches[0].clientY;
     document.addEventListener('mousemove', onDragMove);
     document.addEventListener('mouseup', onDragEnd);
     document.addEventListener('touchmove', onDragMove, { passive: false });
@@ -60,24 +75,29 @@ const onDragMove = (event) => {
     const parentRect = parentElement.value.getBoundingClientRect();
     const windowRect = windowRef.value.getBoundingClientRect();
 
-    const clientX = event.clientX || event.touches[0].clientX;
-    const clientY = event.clientY || event.touches[0].clientY;
+    const clientX = event.clientX ?? event.touches[0].clientX;
+    const clientY = event.clientY ?? event.touches[0].clientY;
 
     if (isVisible.value) {
         const moveX = clientX - startPosition.x;
-        position.x += moveX;
 
-        position.x = -Math.min(
-            Math.max(-position.x, 0),
-            parentRect.width - windowRect.width
-        );
+        if(props.displayPosition === 'right'){
+            position.x = Math.max(
+                Math.min(position.x + moveX, 0),
+                windowRect.width - parentRect.width
+            );
+        } else {
+            position.x = Math.min(
+                Math.max(position.x + moveX, 0),
+                parentRect.width - windowRect.width
+            );
+        }
     }
 
     const moveY = clientY - startPosition.y;
-    position.y += moveY;
 
     position.y = Math.min(
-        Math.max(position.y, 0),
+        Math.max(position.y + moveY, 0),
         parentRect.height - windowRect.height
     );
 
@@ -98,9 +118,16 @@ const toggleVisibility = () => {
 
 const computedStyle = computed(() => ({
     transform: isVisible.value ? `translate(${position.x}px, ${position.y}px)` : `translate(0px, ${position.y}px)`,
-    right: 0,
+    [props.displayPosition]: 0,
     top: 0,
+    flexDirection: props.displayPosition === 'right' ? 'row' : 'row-reverse'
 }));
+
+watch(() => props.displayPosition, (newPosition, oldPosition) => {
+    if (newPosition !== oldPosition) {
+        position.x = 0
+    }
+});
 
 // 查找最近的 position 父元素
 const getPositionParent = (element) => {
@@ -201,8 +228,8 @@ onBeforeUnmount(() => {
       ref="windowRef"
     >
       <div class="controls" @click="toggleVisibility" :style="isVisible ? 'width: 25px;' : 'width: 100%;'">
-        <arrow-left v-if="!isVisible" class="arrow"/>
-        <arrow-right v-else class="arrow"/>
+        <component :is="displayPosition === 'right' ? ArrowLeft : ArrowRight" v-if="!isVisible" class="arrow"/>
+        <component :is="displayPosition === 'right' ? ArrowRight : ArrowLeft" v-else class="arrow"/>
       </div>
       <div v-if="isVisible" class="content">
         <slot></slot>
@@ -229,6 +256,7 @@ onBeforeUnmount(() => {
     background: var(--liyin-floating-window-bg-color);
     align-items: center;
     justify-content: center;
+    cursor: pointer;
 }
 
 .content {

@@ -1,5 +1,5 @@
 <script setup>
-import { ArrowDown, ArrowUp } from '@element-plus/icons-vue'
+import { ArrowDown, ArrowUp, Filter } from '@element-plus/icons-vue'
 import { ElMessageBox } from 'element-plus'
 import { useAchievementStore } from '@/stores/achievement';
 import { useIsMobileStore } from '@/stores/isMobile'
@@ -8,6 +8,8 @@ import { ref, onMounted, watch } from 'vue';
 import { storeToRefs } from 'pinia';
 
 const achievementStore = useAchievementStore();
+const { showHiddenType, showRewardType, showCompletedType, showAvailableType, hadFilter } = storeToRefs(achievementStore);
+const { selectHiddenList, selectRewardList, selectCompletedList, selectAvailableList } = achievementStore
 
 const isMobileStore = useIsMobileStore()
 const { isMobile } = storeToRefs(isMobileStore)
@@ -110,6 +112,9 @@ const handleFilterScroll = (event) => {
     container.scrollLeft += delta * 100; // 根据需要调整滚动速度
 }
 
+// 设置筛选按钮的点击状态
+const hadFilterClicked = ref(false)
+
 </script>
 
 <template>
@@ -119,6 +124,30 @@ const handleFilterScroll = (event) => {
         > 
         <!-- @mousedown="startFilterDrag" @mousemove="handleFilterDrag" @mouseup="endFilterDrag" @mouseleave="endFilterDrag" -->
             <div class="achievement-filter-left">
+                <el-popover placement="bottom-start" width="fit-content" trigger="click" popper-style="padding: 5px 12px;" @show="hadFilterClicked = true" @hide="hadFilterClicked = false">
+                    <template #reference>
+                        <el-icon class="achievement-filter-icon" :class="{'clicked': hadFilterClicked, 'filtered': hadFilter}">
+                            <Filter />
+                        </el-icon>
+                    </template>
+                    <div class="achievement-filter-segmented">
+                        <div>显示奖励类型：</div>
+                        <el-segmented v-model="showRewardType" :options="selectRewardList" black :size="isMobile ? 'small' : 'default'" :style="`font-size: ${isMobile ? 13 : 14}px;`">
+                        </el-segmented>
+                    </div>
+                    <div class="achievement-filter-segmented">
+                        <div>显示隐藏类型：</div>
+                        <el-segmented v-model="showHiddenType" :options="selectHiddenList" black :size="isMobile ? 'small' : 'default'" :style="`font-size: ${isMobile ? 13 : 14}px;`"></el-segmented>
+                    </div>
+                    <div class="achievement-filter-segmented">
+                        <div>显示完成类型：</div>
+                        <el-segmented v-model="showCompletedType" :options="selectCompletedList" black :size="isMobile ? 'small' : 'default'" :style="`font-size: ${isMobile ? 13 : 14}px;`"></el-segmented>
+                    </div>
+                    <div class="achievement-filter-segmented">
+                        <div>显示获取类型：</div>
+                        <el-segmented v-model="showAvailableType" :options="selectAvailableList" black :size="isMobile ? 'small' : 'default'" :style="`font-size: ${isMobile ? 13 : 14}px;`"></el-segmented>
+                    </div>
+                </el-popover>
                 <div class="achievement-filter-search-input" :class="{'achievement-filter-flex': !hadFold}">
                     <el-input
                         v-model="achievementStore.searchContent"
@@ -148,17 +177,11 @@ const handleFilterScroll = (event) => {
             </div>
             <div class="achievement-filter-checkbox">
                 <div class="achievement-filter-checkbox-input" :class="{'achievement-filter-flex': !hadFold}">
-                    <el-checkbox v-model="achievementStore.hiddenCompleted" label="隐藏已完成成就" :size= 'isMobile ? "default" : "large"' />   
-                </div>
-                <div class="achievement-filter-checkbox-input" :class="{'achievement-filter-flex': !hadFold}">
-                    <el-checkbox v-model="achievementStore.hiddenNotAvailable" label="隐藏暂不可获得成就" :size= 'isMobile ? "default" : "large"' />   
-                </div>
-                <div class="achievement-filter-checkbox-input" :class="{'achievement-filter-flex': !hadFold}">
                     <el-checkbox v-model="achievementStore.incompletePriority" label="未完成成就优先" :size= 'isMobile ? "default" : "large"' />   
                 </div>
                 <div class="achievement-filter-checkbox-input" :class="{'achievement-filter-flex': !hadFold}">
                     <el-checkbox v-model="achievementStore.selectAll" :label="[0, 3, 5].includes(achievementStore.showSeriesId) ? '全选本页(多选一成就除外)' : '全选本页'" :size= 'isMobile ? "default" : "large"'  @click="confirmSelectAll"/>
-                    <!-- <el-checkbox v-model="achievementStore.selectAll" v-if="achievementStore.showSeriesId === 5" label='全选本页(多选一成就除外)' :size= 'isMobile ? "default" : "large"'  @click="achievementStore.handleSelectAll($event)"/>       -->
+                    <div style="flex:1 0 0"></div>
                     <div class="achievement-filter-fold-up" v-if="!hadFold" @click="hadFold = true">
                         <el-icon class="el-icon--right">
                             <arrow-up />
@@ -204,7 +227,7 @@ const handleFilterScroll = (event) => {
 .achievement-filter-left{
     display: flex;
     margin: 0 4px 0 10px;
-    flex: 2 0 0;
+    /* flex: 2 0 0; */
     align-items: center;
     flex-wrap: nowrap;
 }
@@ -224,11 +247,38 @@ const handleFilterScroll = (event) => {
     background-repeat: no-repeat;
     background-size: 14px 14px;
 }
+.achievement-filter-icon{
+    width: 30px;
+    height: 30px;
+    border: 1px solid var(--liyin-button-border-color);
+    border-radius: 4px;
+    margin: 0 5px 0 0;
+    cursor: pointer;
+    text-align: center;
+    color: var(--el-text-color-placeholder);
+    background-color: var(--el-fill-color-blank)
+}
+.achievement-filter-icon:hover{
+    border: 1px solid var(--el-border-color-hover);
+}
+.achievement-filter-icon.filtered{
+    color: var(--el-color-primary);
+}
+.achievement-filter-icon.clicked{
+    border: 1px solid var(--el-color-primary);
+    color: var(--el-color-primary);
+}
+.achievement-filter-segmented{
+    display: flex;
+    align-items: center;
+    margin: 5px 0;
+    font-size: 14px;
+}
 .achievement-filter-checkbox{
     display: flex;
     align-items: center;
     flex-wrap: wrap; 
-    flex: 3 0 0;
+    flex: 1 0 0;
     /* margin: 0 10px; */
 }
 .achievement-filter-fold.achievement-filter-fold-open .achievement-filter-checkbox{
@@ -239,14 +289,13 @@ const handleFilterScroll = (event) => {
     display: flex;
     margin: 0 4px 0 10px;
 }
-.achievement-filter-checkbox-input:nth-child(4) {
+.achievement-filter-checkbox-input:nth-child(2) {
     flex: 1 0 0;
 }
 
 .achievement-filter-fold-up{
     display: flex; 
     justify-content: end; 
-    flex:1 0 0; 
     align-items: center; 
     cursor: pointer;
     color: var(--liyin-arrow-color);
@@ -260,7 +309,7 @@ const handleFilterScroll = (event) => {
     color: var(--liyin-arrow-color);
     margin-right: 4px;
 }
-@media (max-width: 1260px) {
+@media (max-width: 940px) {
     .achievement-filter-fold{
         padding: 14px 0 7px 0;
     }
@@ -269,42 +318,12 @@ const handleFilterScroll = (event) => {
     }
     .achievement-filter {
         flex-direction: column;
-        /* padding: 15px 0 0 0; */
     }
     .achievement-filter-checkbox-input.achievement-filter-flex {
         flex: 1 0 0;
     }
 }
-@media (max-width: 820px){
-    .achievement-filter-checkbox-input.achievement-filter-flex {
-        flex: 1 0 calc(50% - 14px);
-    }
-}
-@media (max-width: 768px){
-    .achievement-filter-checkbox-input.achievement-filter-flex {
-        flex: 1 0 0;
-    }
-}
-@media (max-width: 670px){
-    .achievement-filter-checkbox-input.achievement-filter-flex {
-        flex: 1 0 calc(50% - 14px);
-    }
-}
-@media (max-width: 500px){
-    .achievement-filter-checkbox-input.achievement-filter-flex:nth-child(2n) {
-        flex: 1 0 calc(60% - 14px);
-    }
-    .achievement-filter-checkbox-input.achievement-filter-flex:nth-child(2n+1) {
-        flex: 1 0 calc(40% - 14px);
-    }
-}
-@media (max-width: 400px){
-    .achievement-filter-checkbox-input.achievement-filter-flex:nth-child(2n) {
-        flex: 1 0 calc(60% - 14px);
-    }
-    .achievement-filter-checkbox-input.achievement-filter-flex:nth-child(2n+1) {
-        flex: 1 0 calc(30% - 14px);
-    }
+@media (max-width: 430px){
     .achievement-filter-left{
         flex-wrap: wrap;
     }
@@ -312,14 +331,9 @@ const handleFilterScroll = (event) => {
         flex-wrap: nowrap;
     }
 }
-@media (max-width: 384px){
+@media (max-width: 421px){
     .achievement-filter-version{
         padding-top: 5px;
-    }
-}
-@media (max-width: 365px){
-    .achievement-filter-checkbox-input.achievement-filter-flex:nth-child(n) {
-        flex: 1 0 calc(60% - 14px);
     }
 }
 @media (max-width: 768px){
@@ -328,6 +342,9 @@ const handleFilterScroll = (event) => {
     }
     .achievement-filter-fold.achievement-filter-fold-open{
         padding: 0;
+    }
+    .achievement-filter-segmented{
+        font-size: 13px;
     }
 }
 </style>
