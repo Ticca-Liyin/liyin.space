@@ -7,6 +7,12 @@ const { isMobile } = storeToRefs(isMobileStore)
 
 const updateLogInfo = [
     {
+        version: '2.4.0', 
+        date: '2024-07-29', 
+        title: '更新 2.4 版本成就相关数据',
+        changes: '<ul style="padding-left: 10px;"><li>更新 2.4 版本成就相关数据</li></ul>' 
+    },
+    {
         version: '2.3.6', 
         date: '2024-07-17', 
         title: '优化手机端成就界面及角色界面的悬浮窗口位置为左边, 优化成就筛选功能',

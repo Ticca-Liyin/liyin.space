@@ -932,6 +932,83 @@
     "ShowType": "HiddenDesc",
     "Version": "2.3"
   },
+  "4033401": {
+    "AchievementID": 4033401,
+    "SeriesID": 3,
+    "AchievementTitle": "以剑交心",
+    "AchievementDesc": "当两柄剑相遇…<br><div style=\"color:#8790abff;\">※见证彦卿与云璃试图分出高下的一战</div>",
+    "ParamList": [],
+    "Priority": 959,
+    "Rarity": "Mid",
+    "ShowType": "HiddenDesc",
+    "Version": "2.4"
+  },
+  "4033402": {
+    "AchievementID": 4033402,
+    "SeriesID": 3,
+    "AchievementTitle": "辩才无碍",
+    "AchievementDesc": "唇枪舌剑才是外交的真正底色…<br><div style=\"color:#8790abff;\">※凭自己的口才说服公司专员</div>",
+    "ParamList": [],
+    "Priority": 958,
+    "Rarity": "Mid",
+    "ShowType": "ShowAfterFinish",
+    "Version": "2.4"
+  },
+  "4033403": {
+    "AchievementID": 4033403,
+    "SeriesID": 3,
+    "AchievementTitle": "以「力」服人",
+    "AchievementDesc": "外交事务中偶尔你也得来些硬的…<br><div style=\"color:#8790abff;\">※凭物理手段「劝服」公司专员</div>",
+    "ParamList": [],
+    "Priority": 957,
+    "Rarity": "Mid",
+    "ShowType": "ShowAfterFinish",
+    "Version": "2.4"
+  },
+  "4033404": {
+    "AchievementID": 4033404,
+    "SeriesID": 3,
+    "AchievementTitle": "开棺定论",
+    "AchievementDesc": "开启货箱，犹如开启一尊棺木…<br><div style=\"color:#8790abff;\">※击败公司的危险货物「咆哮灵柩」</div>",
+    "ParamList": [],
+    "Priority": 956,
+    "Rarity": "Mid",
+    "ShowType": "HiddenDesc",
+    "Version": "2.4"
+  },
+  "4033405": {
+    "AchievementID": 4033405,
+    "SeriesID": 3,
+    "AchievementTitle": "剑花秋莲光出匣",
+    "AchievementDesc": "接下师父们的礼物与殷切期待<br><div style=\"color:#8790abff;\">※三月七视角下，开始学习仙舟剑术</div>",
+    "ParamList": [],
+    "Priority": 955,
+    "Rarity": "Mid",
+    "ShowType": "HiddenDesc",
+    "Version": "2.4"
+  },
+  "4033406": {
+    "AchievementID": 4033406,
+    "SeriesID": 3,
+    "AchievementTitle": "破狱深牢",
+    "AchievementDesc": "而今，最危险的囚犯挣脱了枷锁<br><div style=\"color:#8790abff;\">※椒丘视角下，完成对呼雷的探视</div>",
+    "ParamList": [],
+    "Priority": 954,
+    "Rarity": "Mid",
+    "ShowType": "HiddenDesc",
+    "Version": "2.4"
+  },
+  "4033407": {
+    "AchievementID": 4033407,
+    "SeriesID": 3,
+    "AchievementTitle": "狩猎的时间",
+    "AchievementDesc": "猎人与猎物的游戏尚未开始<br><div style=\"color:#8790abff;\">※将军们…行将出征</div>",
+    "ParamList": [],
+    "Priority": 953,
+    "Rarity": "Mid",
+    "ShowType": "HiddenDesc",
+    "Version": "2.4"
+  },
   "4040101": {
     "AchievementID": 4040101,
     "SeriesID": 4,
@@ -2150,6 +2227,37 @@
     "Priority": 892,
     "Rarity": "Low",
     "Version": "2.3"
+  },
+  "4043401": {
+    "AchievementID": 4043401,
+    "SeriesID": 4,
+    "AchievementTitle": "青鸟探看",
+    "AchievementDesc": "利用机巧鸟打开隐藏的地下通路",
+    "ParamList": [],
+    "Priority": 891,
+    "Rarity": "Low",
+    "Version": "2.4"
+  },
+  "4043402": {
+    "AchievementID": 4043402,
+    "SeriesID": 4,
+    "AchievementTitle": "隐秘的角落",
+    "AchievementDesc": "利用机巧鸟进入隐藏房间",
+    "ParamList": [],
+    "Priority": 890,
+    "Rarity": "Low",
+    "Version": "2.4"
+  },
+  "4043403": {
+    "AchievementID": 4043403,
+    "SeriesID": 8,
+    "AchievementTitle": "还是门比较硬",
+    "AchievementDesc": "被幽囚狱大门夹到脑袋",
+    "ParamList": [],
+    "Priority": 921,
+    "Rarity": "Low",
+    "ShowType": "ShowAfterFinish",
+    "Version": "2.4"
   },
   "4051001": {
     "AchievementID": 4051001,
@@ -5651,6 +5759,226 @@
     "ShowType": "ShowAfterFinish",
     "Version": "2.3"
   },
+  "4053401": {
+    "AchievementID": 4053401,
+    "SeriesID": 5,
+    "AchievementTitle": "石中剑，云中人",
+    "AchievementDesc": "完成同行任务「铸剑为犁」",
+    "ParamList": [],
+    "Priority": 686,
+    "Rarity": "Low",
+    "Version": "2.4"
+  },
+  "4053402": {
+    "AchievementID": 4053402,
+    "SeriesID": 5,
+    "AchievementTitle": "四时剑意",
+    "AchievementDesc": "在「初花习剑录」中，领悟任意「得心应手」以上的剑法",
+    "ParamList": [],
+    "Priority": 685,
+    "Rarity": "Low",
+    "Version": "2.4"
+  },
+  "4053403": {
+    "AchievementID": 4053403,
+    "SeriesID": 5,
+    "AchievementTitle": "三尺之水，可堪截云",
+    "AchievementDesc": "在「初花习剑录」中，剑术进境达到「剑心初成」",
+    "ParamList": [],
+    "Priority": 684,
+    "Rarity": "Low",
+    "Version": "2.4"
+  },
+  "4053404": {
+    "AchievementID": 4053404,
+    "SeriesID": 5,
+    "AchievementTitle": "奥卡姆剃刀没有出鞘",
+    "AchievementDesc": "在「初花习剑录」中，收集完所有的结局",
+    "ParamList": [],
+    "Priority": 683,
+    "Rarity": "Mid",
+    "Version": "2.4"
+  },
+  "4053405": {
+    "AchievementID": 4053405,
+    "SeriesID": 5,
+    "AchievementTitle": "明明超强却过分慎重",
+    "AchievementDesc": "在「初花习剑录」中，三月七的4项训练属性达到1000以上",
+    "ParamList": [
+      {
+        "Value": 4
+      },
+      {
+        "Value": 1000
+      }
+    ],
+    "Priority": 682,
+    "Rarity": "Low",
+    "Version": "2.4"
+  },
+  "4053407": {
+    "AchievementID": 4053407,
+    "SeriesID": 5,
+    "AchievementTitle": "飞越平台期",
+    "AchievementDesc": "在「初花习剑录」中，单回合内提升训练属性达到300点",
+    "ParamList": [
+      {
+        "Value": 300
+      }
+    ],
+    "Priority": 680,
+    "Rarity": "Low",
+    "Version": "2.4"
+  },
+  "4053408": {
+    "AchievementID": 4053408,
+    "SeriesID": 5,
+    "AchievementTitle": "初花旅游录",
+    "AchievementDesc": "在「初花习剑录」中，练剑日程只有游历没有训练",
+    "ParamList": [],
+    "Priority": 679,
+    "Rarity": "Low",
+    "Version": "2.4"
+  },
+  "4053409": {
+    "AchievementID": 4053409,
+    "SeriesID": 5,
+    "AchievementTitle": "只学习不玩耍，聪明三月也变傻",
+    "AchievementDesc": "在「初花习剑录」中，一直训练到三月七的心情为0",
+    "ParamList": [
+      {
+        "Value": 0
+      }
+    ],
+    "Priority": 678,
+    "Rarity": "Low",
+    "Version": "2.4"
+  },
+  "4053410": {
+    "AchievementID": 4053410,
+    "SeriesID": 5,
+    "AchievementTitle": "真假开拓王",
+    "AchievementDesc": "与变身成自己的「无相者」嘟嘟对峙，并证明自己才是{NICKNAME}",
+    "ParamList": [],
+    "Priority": 677,
+    "Rarity": "Low",
+    "ShowType": "ShowAfterFinish",
+    "Version": "2.4"
+  },
+  "4053411": {
+    "AchievementID": 4053411,
+    "SeriesID": 5,
+    "AchievementTitle": "绳网委托",
+    "AchievementDesc": "帮助白鸟穿过漆黑的集装箱找到正确的通路",
+    "ParamList": [],
+    "Priority": 676,
+    "Rarity": "Low",
+    "ShowType": "ShowAfterFinish",
+    "Version": "2.4"
+  },
+  "4053412": {
+    "AchievementID": 4053412,
+    "SeriesID": 5,
+    "AchievementTitle": "仙舟导游",
+    "AchievementDesc": "与皮皮西游客、智械游客在罗浮仙舟重逢",
+    "ParamList": [],
+    "Priority": 675,
+    "Rarity": "Low",
+    "ShowType": "ShowAfterFinish",
+    "Version": "2.4"
+  },
+  "4053413": {
+    "AchievementID": 4053413,
+    "SeriesID": 5,
+    "AchievementTitle": "人有五名，逃犯有三",
+    "AchievementDesc": "将藏身于幽囚狱中的逃犯找出，并见证司狱的审判",
+    "ParamList": [],
+    "Priority": 674,
+    "Rarity": "Low",
+    "ShowType": "ShowAfterFinish",
+    "Version": "2.4"
+  },
+  "4053414": {
+    "AchievementID": 4053414,
+    "SeriesID": 5,
+    "AchievementTitle": "魔阴身考在哪里",
+    "AchievementDesc": "找到失踪已久的《魔阴身考》，并尝试了解失踪的原因",
+    "ParamList": [],
+    "Priority": 673,
+    "Rarity": "Low",
+    "ShowType": "ShowAfterFinish",
+    "Version": "2.4"
+  },
+  "4053415": {
+    "AchievementID": 4053415,
+    "SeriesID": 5,
+    "AchievementTitle": "影卫信条",
+    "AchievementDesc": "初次在幽囚狱上层俯瞰幽囚狱时，选择凝视深渊",
+    "ParamList": [],
+    "Priority": 672,
+    "Rarity": "Low",
+    "ShowType": "ShowAfterFinish",
+    "Version": "2.4"
+  },
+  "4053416": {
+    "AchievementID": 4053416,
+    "SeriesID": 5,
+    "AchievementTitle": "影卫信条：叛变",
+    "AchievementDesc": "初次在幽囚狱上层俯瞰幽囚狱时，选择暂时撤退",
+    "ParamList": [],
+    "Priority": 671,
+    "Rarity": "Low",
+    "ShowType": "ShowAfterFinish",
+    "Version": "2.4"
+  },
+  "4053417": {
+    "AchievementID": 4053417,
+    "SeriesID": 5,
+    "AchievementTitle": "囚室巡访",
+    "AchievementDesc": "启动机巧鸟，并以访客身份调查3处高层的囚室",
+    "ParamList": [
+      {
+        "Value": 3
+      }
+    ],
+    "Priority": 670,
+    "Rarity": "Low",
+    "ShowType": "ShowAfterFinish",
+    "Version": "2.4"
+  },
+  "4053418": {
+    "AchievementID": 4053418,
+    "SeriesID": 5,
+    "AchievementTitle": "不存在的记忆",
+    "AchievementDesc": "调查特殊的石门，回想起「人有五名，代价有三个…」的情景",
+    "ParamList": [],
+    "Priority": 669,
+    "Rarity": "Low",
+    "ShowType": "ShowAfterFinish",
+    "Version": "2.4"
+  },
+  "4053420": {
+    "AchievementID": 4053420,
+    "SeriesID": 5,
+    "AchievementTitle": "陵园购",
+    "AchievementDesc": "在幽囚狱中与「阿合马铁窗集团」任意成员完成一次交易",
+    "ParamList": [],
+    "Priority": 667,
+    "Rarity": "Low",
+    "ShowType": "ShowAfterFinish",
+    "Version": "2.4"
+  },
+  "4053421": {
+    "AchievementID": 4053421,
+    "SeriesID": 5,
+    "AchievementTitle": "能和我转一辈子魔方吗",
+    "AchievementDesc": "完成幽囚狱中全部的「枘凿六合•Remake」谜题",
+    "ParamList": [],
+    "Priority": 666,
+    "Rarity": "Low",
+    "ShowType": "ShowAfterFinish",
+    "Version": "2.4"
+  },
   "4060101": {
     "AchievementID": 4060101,
     "SeriesID": 6,
@@ -8332,6 +8660,102 @@
     "Rarity": "Low",
     "ShowType": "ShowAfterFinish",
     "Version": "2.3"
+  },
+  "4073401": {
+    "AchievementID": 4073401,
+    "SeriesID": 7,
+    "AchievementTitle": "寻剑",
+    "AchievementDesc": "使用包含云璃的队伍获得1场对王下一桶的战斗的胜利",
+    "ParamList": [
+      {
+        "Value": 1
+      }
+    ],
+    "Priority": 840,
+    "Rarity": "Low",
+    "ShowType": "ShowAfterFinish",
+    "Version": "2.4"
+  },
+  "4073402": {
+    "AchievementID": 4073402,
+    "SeriesID": 7,
+    "AchievementTitle": "忽冷忽热",
+    "AchievementDesc": "在同一场战斗中用一倍速度触发停云「普攻」语音与椒丘「普攻」语音",
+    "ParamList": [],
+    "Priority": 839,
+    "Rarity": "Low",
+    "ShowType": "ShowAfterFinish",
+    "Version": "2.4"
+  },
+  "4073403": {
+    "AchievementID": 4073403,
+    "SeriesID": 7,
+    "AchievementTitle": "对月无言",
+    "AchievementDesc": "「月狂」倒计时结束前，场上所有敌人已提前解除「月狂」状态",
+    "ParamList": [],
+    "Priority": 838,
+    "Rarity": "Low",
+    "Version": "2.4"
+  },
+  "4073404": {
+    "AchievementID": 4073404,
+    "SeriesID": 7,
+    "AchievementTitle": "没什么好怕的",
+    "AchievementDesc": "单场战斗中，我方角色受到的所有来自咆哮灵柩的「恐惧萦绕」状态都被成功解除",
+    "ParamList": [],
+    "Priority": 837,
+    "Rarity": "Low",
+    "Version": "2.4"
+  },
+  "4073405": {
+    "AchievementID": 4073405,
+    "SeriesID": 7,
+    "AchievementTitle": "科学怪狗",
+    "AchievementDesc": "咆哮灵柩击败一名处于「恐惧」状态下的我方角色",
+    "ParamList": [],
+    "Priority": 836,
+    "Rarity": "Low",
+    "Version": "2.4"
+  },
+  "4073406": {
+    "AchievementID": 4073406,
+    "SeriesID": 7,
+    "AchievementTitle": "十万个冷知识",
+    "AchievementDesc": "使用三月七•巡猎对20个不同的角色施放战技「师父，请喝茶！」",
+    "ParamList": [
+      {
+        "Value": 20
+      }
+    ],
+    "Priority": 835,
+    "Rarity": "Low",
+    "ShowType": "ShowAfterFinish",
+    "Version": "2.4"
+  },
+  "4073407": {
+    "AchievementID": 4073407,
+    "SeriesID": 7,
+    "AchievementTitle": "就是地道！",
+    "AchievementDesc": "单场战斗中，使用三月七•巡猎施放战技「师父，请喝茶！」时，出现苏打豆汁儿",
+    "ParamList": [],
+    "Priority": 834,
+    "Rarity": "Low",
+    "Version": "2.4"
+  },
+  "4073408": {
+    "AchievementID": 4073408,
+    "SeriesID": 7,
+    "AchievementTitle": "蜜三刀",
+    "AchievementDesc": "单场战斗中，使用云璃触发3次「勘破·灭」",
+    "ParamList": [
+      {
+        "Value": 3
+      }
+    ],
+    "Priority": 833,
+    "Rarity": "Low",
+    "ShowType": "ShowAfterFinish",
+    "Version": "2.4"
   },
   "4080101": {
     "AchievementID": 4080101,

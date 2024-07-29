@@ -27,7 +27,7 @@ import AchievementFilterCache from '@/views/Setting/AchievementFelterCache.vue'
         </div>
         <div class="afadian">
             赞助页面：
-            <a href="https://afdian.net/a/ticca" target="_blank" class="afadian-link">爱发电</a>
+            <a href="https://afdian.com/a/ticca" target="_blank" class="afadian-link">爱发电</a>
         </div>
         <div class="github">
             开源地址：
