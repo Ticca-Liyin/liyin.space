@@ -494,6 +494,20 @@
     "faction": ["仙舟「曜青」"],
     "deploymentDate": 1724212800000
   },
+  "1220": {
+    "id": 1220,
+    "MiYoSheId": 3501,
+    "HoYoWikiId": 2947,
+    "name": "飞霄",
+    "avatar": "event-ugc-hoyowiki/2024/07/17/5308864/ef9d57b0b3fb700b092a7d73d68340d1_7691953933511506256.png",
+    "path": "巡猎",
+    "combattype": "风",
+    "star": 5,
+    "warp": "limited",
+    "version": 2.5,
+    "faction": ["仙舟「曜青」"],
+    "deploymentDate": 1725933600000
+  },
   "1221": {
     "id": 1221,
     "MiYoSheId": 3056,
@@ -508,6 +522,34 @@
     "faction": ["仙舟「朱明」"],
     "deploymentDate": 1722391200000
   },
+  "1222": {
+    "id": 1222,
+    "MiYoSheId": 3502,
+    "HoYoWikiId": 2948,
+    "name": "灵砂",
+    "avatar": "event-ugc-hoyowiki/2024/07/17/5308864/d071c88a4907024259ae714d4c8748d6_8015597347432840237.png",
+    "path": "丰饶",
+    "combattype": "火",
+    "star": 5,
+    "warp": "limited",
+    "version": 2.5,
+    "faction": ["仙舟「罗浮」"],
+    "deploymentDate": 1727841600000
+  },
+  "1223": {
+    "id": 1223,
+    "MiYoSheId": 3505,
+    "HoYoWikiId": 2949,
+    "name": "貊泽",
+    "avatar": "event-ugc-hoyowiki/2024/07/19/5308864/8e697a1a72891feca81c018f7b80447c_7112392391370753411.png",
+    "path": "巡猎",
+    "combattype": "雷",
+    "star": 4,
+    "warp": "not-limited",
+    "version": 2.5,
+    "faction": ["仙舟「曜青」"],
+    "deploymentDate": 1725933600000
+  },
   "1224": {
     "id": 1224,
     "MiYoSheId": 3121,
@@ -517,7 +559,7 @@
     "path": "巡猎",
     "combattype": "虚数",
     "star": 4,
-    "warp": "not-limited",
+    "warp": "not-warp",
     "version": 2.4,
     "faction": ["星穹列车"],
     "deploymentDate": 1722391200000
