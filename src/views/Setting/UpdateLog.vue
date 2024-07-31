@@ -7,6 +7,12 @@ const { isMobile } = storeToRefs(isMobileStore)
 
 const updateLogInfo = [
     {
+        version: '2.4.2', 
+        date: '2024-07-31', 
+        title: '修正成就 忽冷忽热 为可获得成就',
+        changes: '<ul style="padding-left: 10px;"><li>修正成就 忽冷忽热 为可获得成就</li></ul>' 
+    },
+    {
         version: '2.4.1', 
         date: '2024-07-30', 
         title: '更新 2.4 版本角色相关数据',
