@@ -7,6 +7,12 @@ const { isMobile } = storeToRefs(isMobileStore)
 
 const updateLogInfo = [
     {
+        version: '2.4.3', 
+        date: '2024-08-28', 
+        title: '新增自定义暂不可获得成就功能，将设置界面中与成就相关的选项移动至成就界面的设置窗口中',
+        changes: '<ul style="padding-left: 10px;"><li>新增自定义暂不可获得成就功能，长按对应成就的选择按钮即可弹出设置自定义暂不可获得窗口</li><li>将设置界面中与成就相关的选项移动至成就界面的设置窗口中</li></ul>' 
+    },
+    {
         version: '2.4.2', 
         date: '2024-07-31', 
         title: '修正成就 忽冷忽热 为可获得成就',

@@ -2,8 +2,6 @@
 import UpdateLog from '@/views/Setting/UpdateLog.vue'
 import AccountManage from '@/views/Setting/AccountManage.vue'
 import ThemeSetting from '@/views/Setting/ThemeSetting.vue'
-import AchievementSelectAll from '@/views/Setting/AchievementSelectAllSecondConfirmation.vue'
-import AchievementFilterCache from '@/views/Setting/AchievementFelterCache.vue'
 </script>
 
 <template>
@@ -11,10 +9,6 @@ import AchievementFilterCache from '@/views/Setting/AchievementFelterCache.vue'
         <UpdateLog />
 
         <ThemeSetting />
-
-        <AchievementSelectAll />
-
-        <AchievementFilterCache />
         
         <AccountManage />
 

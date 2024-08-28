@@ -3,7 +3,7 @@ import { ArrowDown, ArrowUp, Filter } from '@element-plus/icons-vue'
 import { ElMessageBox } from 'element-plus'
 import { useAchievementStore } from '@/stores/achievement';
 import { useIsMobileStore } from '@/stores/isMobile'
-import { useSettingStore } from '@/stores/setting'
+import { useSettingStore } from '@/stores/achievementSetting'
 import { ref, onMounted, watch } from 'vue';
 import { storeToRefs } from 'pinia';
 

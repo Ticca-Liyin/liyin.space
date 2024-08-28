@@ -5,7 +5,7 @@ import AchievementFilter from './AchievementFilter.vue';
 import AchievementList from './AchievementList.vue';
 import AchievementStrategy from './AchievementStrategy.vue';
 import CurrentPageAchievementFloatingWindow from './CurrentPageAchievementFloatingWindow.vue'
-import TextjoinSetting from './TextjoinSetting.vue'
+import AchievementSetting from './AchievementSetting/index.vue'
 import ExportAchievement from '@/components/export/ExportAchievement.vue';
 import ImportAchievement from '@/components/import/importAchievement/index.vue';
 import { DynamicScroller, DynamicScrollerItem } from 'vue-virtual-scroller'
@@ -17,7 +17,7 @@ import { useTextjoinStore } from '@/stores/textjoin.js'
 const achievementStore = useAchievementStore()
 const textjoinStore = useTextjoinStore();
 
-const TextjoinSettingRef = ref(null)
+const AchievementSettingRef = ref(null)
 
 onMounted(() => {
    textjoinStore.getUserTextjoin()
@@ -30,14 +30,14 @@ onMounted(() => {
 <template>
     <div class="achievement">
         <header class="achievement-header">
-            <div class="achievement-setting-button" @click="TextjoinSettingRef.handleOpen">
+            <div class="achievement-setting-button" @click="AchievementSettingRef.handleOpen">
                 设置
             </div>
             <ImportAchievement />
             <ExportAchievement />
         </header>
 
-        <TextjoinSetting ref="TextjoinSettingRef"/>
+        <AchievementSetting ref="AchievementSettingRef"/>
 
         <AchievementSeries/>
 

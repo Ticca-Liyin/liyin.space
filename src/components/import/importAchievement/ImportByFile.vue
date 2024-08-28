@@ -1,11 +1,15 @@
 <script setup>
-import { ref, defineEmits } from 'vue';
+import { ref } from 'vue';
 import { useAchievementStore } from '@/stores/achievement';
+import { useAchievementCustomNotAchievedStore } from '@/stores/achievementCustomNotAchieved'
 import { storeToRefs } from 'pinia';
 
 const achievementStore = useAchievementStore()
 const { achievements } = storeToRefs(achievementStore)
 const { handleUserAchievementList, handleAchevementStatus, saveUserAchievement } = achievementStore
+
+const achievementCustomNotAchievedStore = useAchievementCustomNotAchievedStore()
+const { initUserCustomNotAchievedList } = achievementCustomNotAchievedStore
 
 const inputImportFile = ref(null)
 const identifyFileName = ref('')
@@ -155,8 +159,10 @@ const importAchievements = () => {
     // 初始化所有成就状态为未完成
     achievements.value.forEach(achievement => {
         achievement.Status = 1
+        achievement.CustomNotAchieved = false
         handleUserAchievementList(achievement.AchievementID, achievement.Status, false)
-    })
+    })    
+    initUserCustomNotAchievedList()
     // 修改已完成状态, 同一多选已成就后识别的覆盖先识别到的
     for(const ach of importAchievementList.value){
         if (ach.status !== 3) continue

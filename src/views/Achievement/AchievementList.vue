@@ -1,4 +1,5 @@
 <script setup>
+import { Check, Close } from '@element-plus/icons-vue'
 import { useAchievementStore } from '@/stores/achievement'
 
 const achievementStore = useAchievementStore()
@@ -10,18 +11,91 @@ defineProps({
 const formatMultipleID = (MultipleID) => {
     if (!MultipleID) return ''
     const reserveDigits = 2
-    return (MultipleID- 50000).toString().padStart(reserveDigits, '0')
+    return (MultipleID - 50000).toString().padStart(reserveDigits, '0')
 }
+
+let longPressTimeout = undefined
+let startTime = 0
+const longPressTime = 500  // 长按时间阈值
+
+const handleAchevementStatusStart = (event, info) => {
+    if (event.type === 'mousedown' && event.button !== 0) return; // 只处理左键点击
+    startTime = Date.now()
+    longPressTimeout = setTimeout(() => {
+        const achievementTitles = achievementStore.getMultipleIDAchievemnetTitles(info)
+        ElMessageBox.confirm(
+            `确认将“${achievementTitles.join('”、“')}”设置为暂不可获得成就?`,
+            '确认操作',
+            {
+            confirmButtonText: '确认',
+            cancelButtonText: '取消',
+            dangerouslyUseHTMLString: true,
+            }
+        )
+        .then(() => {
+            // console.log('长按事件触发', event, info);
+            achievementStore.AchievementToCustomNotAchieved(info)
+        })
+        .catch(() => {
+            // console.log('取消长按事件触发');
+        });
+
+    }, longPressTime); // 500ms 作为长按的阈值
+}
+
+const handleAchevementStatusEnd = (event, info) => {  
+    if (event.type === 'mousedown' && event.button !== 0) return; // 只处理左键点击
+    const endTime = Date.now()
+    clearTimeout(longPressTimeout);
+    if (endTime - startTime < longPressTime) {
+        if (event.type === 'mouseup') {
+            // console.log('短按事件触发', event, info);
+            achievementStore.handleAchevementStatus(info);
+        }
+    }
+}
+
+const handleAchevementStatusLeave = () => {
+    clearTimeout(longPressTimeout);
+    // console.log('离开事件触发');
+}
+
+const ConfirmAchievementCancelCustomNotAchieved = (info) => {
+    const achievementTitles = achievementStore.getMultipleIDAchievemnetTitles(info)
+    ElMessageBox.confirm(
+        `确认将“${achievementTitles.join('”、“')}”设置为可获得成就?`,
+        '确认操作',
+        {
+        confirmButtonText: '确认',
+        cancelButtonText: '取消',
+        dangerouslyUseHTMLString: true,
+        }
+    )
+    .then(() => {
+        achievementStore.AchievementCancelCustomNotAchieved(info)
+    })
+    .catch(() => {
+
+    });
+}
+
 </script>
 
 <template>
     <section class="achievement-section">
         <div class="achievement-item">
             <div class="achievement-select" :class="{'selected': info.Status === 3, 'selected-other': info.Status === 2, 'not-available': info.isNotAvailable}" 
-            :style="{'pointer-events: none;': info.Status === 2 || info.isNotAvailable}" @click="achievementStore.handleAchevementStatus(info)">
-                <svg class="achievement-select-icon" viewBox="0 0 1024 1024">
+            :style="{'pointer-events: none;': info.Status === 2 || info.isNotAvailable}"
+             @mousedown="(e) => handleAchevementStatusStart(e, info)" @mouseup="(e) => handleAchevementStatusEnd(e, info)" @mouseleave="handleAchevementStatusLeave"
+             @touchstart="(e) => handleAchevementStatusStart(e, info)" @touchend="(e) => handleAchevementStatusEnd(e, info)"
+             v-if="!info.CustomNotAchieved">
+                <!-- <svg class="achievement-select-icon" viewBox="0 0 1024 1024">
                     <path fill="currentColor" d="M392.533333 806.4L85.333333 503.466667l59.733334-59.733334 247.466666 247.466667L866.133333 213.333333l59.733334 59.733334L392.533333 806.4z" p-id="4063"></path>
-                </svg>
+                </svg> -->
+                <Check class="achievement-select-icon"/>
+            </div>
+            <div class="achievement-select not-available" style="cursor:pointer;" v-else @click="ConfirmAchievementCancelCustomNotAchieved(info)">
+                <Close class="achievement-select-icon"/>
             </div>
             <div class="achievement-supplement">
                 <div class="achievement-StellarJade">
