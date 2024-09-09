@@ -12,6 +12,7 @@ const isMobileStore = useIsMobileStore()
 const { isMobile } = storeToRefs(isMobileStore)
 
 export const useCharacterSettingStore = defineStore('characterSetting', () => {
+    //#region 角色区域点击跳转事件相关
     //角色区域点击跳转事件相关
     const MiYoShe = '米游社'
     const HoYoWiki = 'HoYoWiki'
@@ -95,7 +96,9 @@ export const useCharacterSettingStore = defineStore('characterSetting', () => {
         else
             console.error(`网站名称为 ${toWebsiteName.value} 的跳转对象无跳转事件`)
     }
+    //#endregion
 
+    //#region 缓存相关设置
     // 缩放相关设置
     const scale = ref(1);
     const useWheelEvent = ref(false)
@@ -135,7 +138,9 @@ export const useCharacterSettingStore = defineStore('characterSetting', () => {
     }
 
     watch([toWebsiteName, scale, useWheelEvent], saveCharacterSettingConfig)
+    //#endregion
 
+    //#region 角色筛选相关设置
     // 显示的 角色 相关设置
     const showStarList = ref([])
     const selectStarList = [
@@ -251,7 +256,8 @@ export const useCharacterSettingStore = defineStore('characterSetting', () => {
             return true
         })
     })
-
+    //#endregion
+    
     const showCharactersTotal = computed(() => {
         return showCharacters.value.length
     })

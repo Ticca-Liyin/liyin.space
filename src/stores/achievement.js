@@ -28,6 +28,7 @@ const pattern1 = /{NICKNAME}/g;
 const pattern2 = /{TEXTJOIN#(\d+)}/g;
 
 export const useAchievementStore = defineStore('achievement', () => {
+    //#region 成就类定义
     class Achievement {
         constructor(achievement) {
             this.AchievementID = achievement.AchievementID
@@ -191,10 +192,12 @@ export const useAchievementStore = defineStore('achievement', () => {
             this.Achievements = achievements
         }
     }
+    //#endregion
 
     const StellarJadeImg= "https://webstatic.mihoyo.com/upload/event/2023/03/28/77cb5426637574ba524ac458fa963da0_8938800417123864478.png"
     // const userInfo = { uid: "100000000", name: "开拓者", tokenID: 1}
 
+    // 当前用户更改时，将对应数据切换至更改后的用户
     watch(currentUserInfo, () => {
         initialAchievementsStatus()
         // 对 暂时无法获得但因特殊情况状态时已获得的进行修正 由于会重复赋值 已赋值的 timestamp 若出现性能问题可进行优化
@@ -203,6 +206,7 @@ export const useAchievementStore = defineStore('achievement', () => {
         initialAchievementsCustomNotAchievedStatus()
     })
 
+    //#region 成就状态列表相关操作
     //用户成就状态列表
     let userAchievement = {}
     //获取缓存
@@ -288,6 +292,7 @@ export const useAchievementStore = defineStore('achievement', () => {
             else achievement.Status = userAch_.status
         })
     }
+    //#endregion
 
     //多选一成就列表
     let multipleChoice = {}
@@ -375,7 +380,7 @@ export const useAchievementStore = defineStore('achievement', () => {
         })
     }
 
-
+    //#region  成就攻略窗口
     const dialogVisible = ref(false)
     const dialogAchievement = ref(null)
     const dialogMultipleChoiceList = computed(() =>{
@@ -412,6 +417,7 @@ export const useAchievementStore = defineStore('achievement', () => {
         }
         return showStrategyList 
     })
+    //#endregion
 
     const achievements = ref([])
     const achievementSeries = ref([])
@@ -522,6 +528,7 @@ export const useAchievementStore = defineStore('achievement', () => {
         })
     }
 
+    //#region 成就筛选相关逻辑
     //显示版本列表
     const showVersionList = ref([])
     //可选择列表缓存
@@ -758,8 +765,9 @@ export const useAchievementStore = defineStore('achievement', () => {
     }
 
     watch([showHiddenType, showRewardType, showCompletedType, showAvailableType, incompletePriority, achievementFilterCacheConfig], saveAchievementFilterConfig)
+    //#endregion
 
-
+    //#region 成就选中相关逻辑
     //全选本页
     const selectAll = computed(() => {
         // return true
@@ -840,7 +848,9 @@ export const useAchievementStore = defineStore('achievement', () => {
             return
         }
     }
+    //#endregion
 
+    //#region 自定义暂不可获取成就相关逻辑
     const AchievementToCustomNotAchieved = (achievement) => {
         if (achievement.Status !== 1) {
             achievement.Status = 1
@@ -894,6 +904,7 @@ export const useAchievementStore = defineStore('achievement', () => {
             })
         }
     }
+    //#endregion
 
     const getMultipleIDAchievemnetTitles = (achievement) => {
         if(achievement?.MultipleID){

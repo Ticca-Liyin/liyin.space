@@ -743,6 +743,20 @@
     "faction": ["巡海游侠"],
     "deploymentDate": 1716955200000
   },
+  "1317": {
+    "id": 1317,
+    "MiYoSheId": 3732,
+    "HoYoWikiId": 3057,
+    "name": "乱破",
+    "avatar": "event-ugc-hoyowiki/2024/08/27/5308864/e0417148ff4428ef0d371efbb0c80e0b_2636027721220641078.png",
+    "path": "智识",
+    "combattype": "虚数",
+    "star": 5,
+    "warp": "limited",
+    "version": 2.6,
+    "faction": ["巡海游侠"],
+    "deploymentDate": 1729648800000
+  },
   "8002": {
     "id": 8002,
     "MiYoSheId": 3128,
