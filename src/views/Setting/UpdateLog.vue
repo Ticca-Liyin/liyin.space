@@ -7,6 +7,18 @@ const { isMobile } = storeToRefs(isMobileStore)
 
 const updateLogInfo = [
     {
+        version: '2.5.2', 
+        date: '2024-09-24', 
+        title: '修复设置为暂不可获取成就后，再次设置为可获取成就时，成就状态在全新加载界面后会自动恢复为未完成的问题',
+        changes: '<ul style="padding-left: 10px;"><li>修复设置为暂不可获取成就后，再次设置为可获取成就时，成就状态在全新加载界面后会自动恢复为未完成的问题</li></ul>' 
+    },
+    {
+        version: '2.5.1', 
+        date: '2024-09-10', 
+        title: '修正成就 棉花糖兔子 为可获得成就',
+        changes: '<ul style="padding-left: 10px;"><li>修正成就 棉花糖兔子 为可获得成就</li></ul>' 
+    },
+    {
         version: '2.5.0', 
         date: '2024-09-09', 
         title: '更新 2.5 版本成就相关数据，更新 2.5 版本角色相关数据',

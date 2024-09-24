@@ -334,8 +334,11 @@ export const useAchievementStore = defineStore('achievement', () => {
         achievements.value.forEach(achievement => {
             const userAch_ = userCustomNotAchievedList[achievement.AchievementID]
             // console.log(userAch_)
-            if(!userAch_) achievement.CustomNotAchieved = false
-            else if(isMultipleCustomNotAchievedList.includes(achievement.AchievementID)) return
+            if(isMultipleCustomNotAchievedList.includes(achievement.AchievementID)) return
+            else if(!userAch_) achievement.CustomNotAchieved = false
+            else if(userAch_.status === false) {
+                achievement.CustomNotAchieved = userAch_.status
+            }
             else if(userAch_.status === true && achievement?.MultipleID) {
                 achievement.CustomNotAchieved = userAch_.status
                 isMultipleCustomNotAchievedList.push(achievement.AchievementID)
