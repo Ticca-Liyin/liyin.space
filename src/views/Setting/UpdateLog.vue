@@ -7,6 +7,12 @@ const { isMobile } = storeToRefs(isMobileStore)
 
 const updateLogInfo = [
     {
+        version: '2.6.0', 
+        date: '2024-10-23', 
+        title: '更新 2.6 版本成就相关数据，更新 2.6 版本角色相关数据',
+        changes: '<ul style="padding-left: 10px;"><li>更新 2.6 版本成就相关数据 </li><li>更新 2.6 版本角色相关数据</li></ul>' 
+    },
+    {
         version: '2.5.2', 
         date: '2024-09-24', 
         title: '修复设置为暂不可获取成就后，再次设置为可获取成就时，成就状态在全新加载界面后会自动恢复为未完成的问题',

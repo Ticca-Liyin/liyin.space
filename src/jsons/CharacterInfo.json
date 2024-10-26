@@ -564,6 +564,20 @@
     "faction": ["星穹列车"],
     "deploymentDate": 1722391200000
   },
+  "1225": {
+    "id": 1225,
+    "MiYoSheId": 4175,
+    "HoYoWikiId": 3151,
+    "name": "忘归人",
+    "avatar": "event-ugc-hoyowiki/2024/10/12/130460543/c935f2e1a166d63358c021467c689737_6013826105973630197.png",
+    "path": "虚无",
+    "combattype": "火",
+    "star": 5,
+    "warp": "limited",
+    "version": 2.7,
+    "faction": ["仙舟「罗浮」"],
+    "deploymentDate": 1733277600000
+  },
   "1301": {
     "id": 1301,
     "MiYoSheId": 2304,
@@ -714,6 +728,20 @@
     "version": 2,
     "faction": ["匹诺康尼"],
     "deploymentDate": 1707271200000
+  },
+  "1313": {
+    "id": 1313,
+    "MiYoSheId": 4174,
+    "HoYoWikiId": 3150,
+    "name": "星期日",
+    "avatar": "event-ugc-hoyowiki/2024/10/08/130460543/20d74df8e863811c1741b606833d4a95_2031694361868055886.png",
+    "path": "同谐",
+    "combattype": "虚数",
+    "star": 5,
+    "warp": "limited",
+    "version": 2.7,
+    "faction": ["匹诺康尼"],
+    "deploymentDate": 1733277600000
   },
   "1314": {
     "id": 1314,
