@@ -117,6 +117,8 @@ defineExpose({ reset })
     width:99%;
     border:1px dashed var(--liyin-dashed-border-color);
     border-radius: 5px;
+    max-height: 350px;
+    overflow-y: auto;
 }
 .stardb-import-main::-webkit-scrollbar,
 .stardb-import-data-textarea ::-webkit-scrollbar {

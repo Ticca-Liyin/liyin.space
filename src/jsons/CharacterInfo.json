@@ -785,6 +785,34 @@
     "faction": ["巡海游侠"],
     "deploymentDate": 1729648800000
   },
+  "1401": {
+    "id": 1401,
+    "MiYoSheId": 4439,
+    "HoYoWikiId": 3285,
+    "name": "大黑塔",
+    "avatar": "event-ugc-hoyowiki/2024/11/25/417971351/26f213fa4ea0d56e005125e37ce20ae0_7851674632196464898.png",
+    "path": "智识",
+    "combattype": "冰",
+    "star": 5,
+    "warp": "limited",
+    "version": 3,
+    "faction": ["太空站「黑塔」"],
+    "deploymentDate": 1736906400000
+  },
+  "1402": {
+    "id": 1402,
+    "MiYoSheId": 4440,
+    "HoYoWikiId": 3286,
+    "name": "阿格莱亚",
+    "avatar": "event-ugc-hoyowiki/2024/11/25/417971351/144c190478664739c6805e8826dcadb4_8796210924507521695.png",
+    "path": "记忆",
+    "combattype": "雷",
+    "star": 5,
+    "warp": "limited",
+    "version": 3,
+    "faction": ["翁法罗斯"],
+    "deploymentDate": 1738728000000
+  },
   "8002": {
     "id": 8002,
     "MiYoSheId": 3128,
@@ -824,5 +852,19 @@
     "version": 2.2,
     "faction": ["星穹列车"],
     "deploymentDate": 1715137200000
+  },
+  "8008": {
+    "id": 8008,
+    "MiYoSheId": 4442,
+    "HoYoWikiId": 3287,
+    "name": "开拓者-记忆",
+    "avatar": "event-ugc-hoyowiki/2024/11/25/417971351/d9e87dcd3e261d3238460aac553d8cc1_6902828389953182091.gif",
+    "path": "记忆",
+    "combattype": "冰",
+    "star": 5,
+    "warp": "not-warp",
+    "version": 3,
+    "faction": ["星穹列车"],
+    "deploymentDate": 1736906400000
   }
 }

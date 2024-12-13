@@ -11,7 +11,7 @@ const { showAchievementSeries } = storeToRefs(achievementStore);
 const isMobileStore = useIsMobileStore()
 const { isMobile } = storeToRefs(isMobileStore)
 
-const themeStore = useThemeStore()
+const themeStore = useThemeStore()  
 const { isDark } = storeToRefs(themeStore)
 </script>
 

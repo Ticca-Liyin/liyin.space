@@ -234,7 +234,7 @@ const endSeriesDrag = () => {
     width: 100%;
     height: 100%;
     object-fit: contain;
-    opacity: 0.9;
+    opacity: 0.5;
 }
 .achievement-series-fold-down{
     height: 60px; 

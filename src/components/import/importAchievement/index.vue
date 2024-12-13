@@ -2,12 +2,14 @@
 import { ref } from 'vue';
 import ImportByFile from './ImportByFile.vue'
 import ImportByStardb from './ImportByStardb.vue'
+// import ImportByCookie from './ImportByCookie.vue'
 
 const showImportDialog = ref(false)
 const activeName = ref('importByFile')
 
 const importByFileRef = ref(null);
 const importByStardbRef = ref(null);
+// const importByCookieRef = ref(null);
 
 const handleCloseImportDialog = () => {
     showImportDialog.value = false
@@ -19,6 +21,10 @@ const handleCloseImportDialog = () => {
     if(importByStardbRef.value){
         importByStardbRef.value.reset()
     }
+
+    // if(importByCookieRef.value){
+    //     importByCookieRef.value.reset()
+    // }
 }
 
 </script>
@@ -41,6 +47,9 @@ const handleCloseImportDialog = () => {
             <el-tab-pane label="Stardb 导入" name="importByStardb">
                 <ImportByStardb ref='importByStardbRef' @import-achievements='handleCloseImportDialog'/>
             </el-tab-pane>
+            <!-- <el-tab-pane label="Cookie 导入" name="importByCookie">
+                <ImportByCookie ref='importByCookieRef' @import-achievements='handleCloseImportDialog'/>
+            </el-tab-pane> -->
         </el-tabs>
     </el-dialog>
 </template>
@@ -63,7 +72,7 @@ const handleCloseImportDialog = () => {
 }
 
 .dialog-import{
-    width:40%;
+    width:50%;
 }
 .dialog-import .el-dialog__header{
     margin: 0;

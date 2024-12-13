@@ -76,6 +76,9 @@
 
     --liyin-url-text-color: #42b983;
     --liyin-url-hover-text-color: #2A9D8F;
+
+    --liyin-pre-bg-color: #F6F6F7;
+    --liyin-pre-color: rgba(60, 60, 67, .78);
 }
 
 html:root {
@@ -152,6 +155,9 @@ html.dark{
 
     --liyin-floating-window-bg-color: #171718;
     --liyin-char-floating-window-bg-color: #171718;
+
+    --liyin-pre-bg-color: #1b1b1c;
+    --liyin-pre-color: rgba(235, 235, 245, .6);
 }
 
 html:root.dark {

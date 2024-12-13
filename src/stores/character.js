@@ -84,6 +84,10 @@ export const useCharacterStore = defineStore('character', () => {
             name: "丰饶",
             avatar: "abundance.dfed436",
             avatar2: "abundance.24d2186"
+        },
+        "记忆": {
+            ID: 8,
+            name: "记忆",
         }
     }
     

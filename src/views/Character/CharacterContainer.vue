@@ -17,18 +17,18 @@ const themeStore = useThemeStore()
 const { isDark } = storeToRefs(themeStore)
 
 const combattypeList = ["物理", "风", "雷", "火", "冰", "量子", "虚数"]
-const pathsList = ["存护", "毁灭", "巡猎", "智识", "虚无", "同谐", "丰饶"]
+const pathsList = ["毁灭", "巡猎", "智识", "同谐", "虚无", "存护", "丰饶", "记忆"]
 
 const characterList = computed(() => {
     const result = []
 
     // 外层循环控制行数
-    for (let i = 0; i < 7; i++) {
+    for (let i = 0; i < combattypeList.length; i++) {
         // 创建一个空数组用于存储每一行的元素
         result[i] = [];
         
         // 内层循环控制列数
-        for (let j = 0; j < 7; j++) {
+        for (let j = 0; j < pathsList.length; j++) {
             // 在每一行中添加元素
             result[i][j] = []
         }

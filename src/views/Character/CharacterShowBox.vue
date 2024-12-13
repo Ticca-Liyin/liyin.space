@@ -93,6 +93,10 @@ const showCharacters = computed(() => {
 }
 
 .character-info-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* 水平居中 */
+    align-items: center; /* 垂直居中 */
     margin: 10px;
     position: relative;
     overflow: hidden;
