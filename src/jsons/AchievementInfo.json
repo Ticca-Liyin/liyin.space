@@ -55,7 +55,11 @@
     "SeriesID": 1,
     "AchievementTitle": "命运之中（一）",
     "AchievementDesc": "拥有1枚等级达到40级的光锥",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 40
+      }
+    ],
     "Priority": 995,
     "Rarity": "Mid",
     "Version": "1.0"
@@ -65,7 +69,11 @@
     "SeriesID": 1,
     "AchievementTitle": "命运之中（二）",
     "AchievementDesc": "拥有1枚等级达到60级的光锥",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 60
+      }
+    ],
     "Priority": 994,
     "Rarity": "Mid",
     "Version": "1.0"
@@ -75,7 +83,11 @@
     "SeriesID": 1,
     "AchievementTitle": "命运之中（三）",
     "AchievementDesc": "拥有1枚等级达到80级的光锥",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 80
+      }
+    ],
     "Priority": 993,
     "Rarity": "High",
     "Version": "1.0"
@@ -85,7 +97,11 @@
     "SeriesID": 1,
     "AchievementTitle": "童年",
     "AchievementDesc": "任意角色等级达到40级",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 40
+      }
+    ],
     "Priority": 999,
     "Rarity": "Mid",
     "Version": "1.0"
@@ -95,7 +111,11 @@
     "SeriesID": 1,
     "AchievementTitle": "在人间",
     "AchievementDesc": "任意角色等级达到60级",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 60
+      }
+    ],
     "Priority": 998,
     "Rarity": "Mid",
     "Version": "1.0"
@@ -105,7 +125,11 @@
     "SeriesID": 1,
     "AchievementTitle": "我的大学",
     "AchievementDesc": "任意角色等级达到80级",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 80
+      }
+    ],
     "Priority": 997,
     "Rarity": "High",
     "Version": "1.0"
@@ -115,7 +139,11 @@
     "SeriesID": 1,
     "AchievementTitle": "全副武装",
     "AchievementDesc": "将4件遗器强化至15级",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 15
+      }
+    ],
     "Priority": 981,
     "Rarity": "High",
     "Version": "1.0"
@@ -125,7 +153,11 @@
     "SeriesID": 1,
     "AchievementTitle": "命途的行迹（一）",
     "AchievementDesc": "累计激活或提升角色行迹3次",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 3
+      }
+    ],
     "Priority": 988,
     "Rarity": "Low",
     "Version": "1.0"
@@ -135,7 +167,11 @@
     "SeriesID": 1,
     "AchievementTitle": "命途的行迹（二）",
     "AchievementDesc": "累计激活或提升角色行迹20次",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 20
+      }
+    ],
     "Priority": 987,
     "Rarity": "Low",
     "Version": "1.0"
@@ -145,7 +181,11 @@
     "SeriesID": 1,
     "AchievementTitle": "命途的行迹（三）",
     "AchievementDesc": "累计激活或提升角色行迹50次",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 50
+      }
+    ],
     "Priority": 986,
     "Rarity": "Mid",
     "Version": "1.0"
@@ -155,7 +195,11 @@
     "SeriesID": 1,
     "AchievementTitle": "命途的行迹（四）",
     "AchievementDesc": "累计激活或提升角色行迹100次",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 100
+      }
+    ],
     "Priority": 985,
     "Rarity": "High",
     "Version": "1.0"
@@ -203,12 +247,27 @@
     "ShowType": "ShowAfterFinish",
     "Version": "2.2"
   },
+  "4014001": {
+    "AchievementID": 4014001,
+    "SeriesID": 1,
+    "AchievementTitle": "与昨日再会",
+    "AchievementDesc": "开拓者踏上「记忆」命途",
+    "ParamList": [],
+    "Priority": 977,
+    "Rarity": "High",
+    "ShowType": "ShowAfterFinish",
+    "Version": "3.0"
+  },
   "4020201": {
     "AchievementID": 4020201,
     "SeriesID": 2,
     "AchievementTitle": "银河系搭车客指南",
     "AchievementDesc": "获得10名角色",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 10
+      }
+    ],
     "Priority": 1000,
     "Rarity": "Low",
     "Version": "1.0"
@@ -218,7 +277,11 @@
     "SeriesID": 2,
     "AchievementTitle": "列车乘员登记名册",
     "AchievementDesc": "获得20名角色",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 20
+      }
+    ],
     "Priority": 999,
     "Rarity": "Low",
     "Version": "1.0"
@@ -228,7 +291,11 @@
     "SeriesID": 2,
     "AchievementTitle": "星际大迁徙",
     "AchievementDesc": "获得50名角色",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 50
+      }
+    ],
     "Priority": 998,
     "Rarity": "Mid",
     "ShowType": "ShowAfterFinish",
@@ -239,7 +306,11 @@
     "SeriesID": 2,
     "AchievementTitle": "迪拉克海上的涟漪（一）",
     "AchievementDesc": "获得10种光锥",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 10
+      }
+    ],
     "Priority": 997,
     "Rarity": "Low",
     "Version": "1.0"
@@ -249,7 +320,11 @@
     "SeriesID": 2,
     "AchievementTitle": "迪拉克海上的涟漪（二）",
     "AchievementDesc": "获得20种光锥",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 20
+      }
+    ],
     "Priority": 996,
     "Rarity": "Low",
     "Version": "1.0"
@@ -259,7 +334,11 @@
     "SeriesID": 2,
     "AchievementTitle": "迪拉克海上的涟漪（三）",
     "AchievementDesc": "获得40种光锥",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 40
+      }
+    ],
     "Priority": 995,
     "Rarity": "Mid",
     "ShowType": "ShowAfterFinish",
@@ -280,7 +359,11 @@
     "SeriesID": 2,
     "AchievementTitle": "奇异赝品",
     "AchievementDesc": "通过「万能合成机」获得5件5星遗器",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 5
+      }
+    ],
     "Priority": 993,
     "Rarity": "Low",
     "Version": "1.0"
@@ -290,7 +373,11 @@
     "SeriesID": 2,
     "AchievementTitle": "星际和平钻石会员",
     "AchievementDesc": "累计获得1000000信用点",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 1000000
+      }
+    ],
     "Priority": 992,
     "Rarity": "Low",
     "ShowType": "ShowAfterFinish",
@@ -301,7 +388,11 @@
     "SeriesID": 2,
     "AchievementTitle": "星际和平黄钻会员",
     "AchievementDesc": "累计获得10000000信用点",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 10000000
+      }
+    ],
     "Priority": 991,
     "Rarity": "Mid",
     "ShowType": "ShowAfterFinish",
@@ -312,7 +403,11 @@
     "SeriesID": 2,
     "AchievementTitle": "扭曲光线的超级富豪",
     "AchievementDesc": "累计获得100000000信用点",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 100000000
+      }
+    ],
     "Priority": 990,
     "Rarity": "Mid",
     "ShowType": "ShowAfterFinish",
@@ -323,7 +418,11 @@
     "SeriesID": 2,
     "AchievementTitle": "畅聊之火",
     "AchievementDesc": "回复10条角色闲聊短信",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 10
+      }
+    ],
     "Priority": 989,
     "Rarity": "Low",
     "Version": "1.1"
@@ -333,7 +432,11 @@
     "SeriesID": 2,
     "AchievementTitle": "友谊之船",
     "AchievementDesc": "回复60条角色闲聊短信",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 60
+      }
+    ],
     "Priority": 988,
     "Rarity": "Low",
     "Version": "1.1"
@@ -343,7 +446,11 @@
     "SeriesID": 4,
     "AchievementTitle": "手不释卷",
     "AchievementDesc": "收集30本来自仙舟「罗浮」的阅读物",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 30
+      }
+    ],
     "Priority": 982,
     "Rarity": "Low",
     "Version": "1.0"
@@ -353,7 +460,11 @@
     "SeriesID": 4,
     "AchievementTitle": "腹笥深广",
     "AchievementDesc": "收集80本来自仙舟「罗浮」的阅读物",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 80
+      }
+    ],
     "Priority": 981,
     "Rarity": "Low",
     "Version": "1.0"
@@ -363,7 +474,11 @@
     "SeriesID": 2,
     "AchievementTitle": "伴我同行",
     "AchievementDesc": "获得1个随宠",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 1
+      }
+    ],
     "Priority": 987,
     "Rarity": "Mid",
     "Version": "2.5"
@@ -376,6 +491,7 @@
     "ParamList": [],
     "Priority": 1000,
     "Rarity": "High",
+    "ShowType": "HiddenDesc",
     "Version": "1.0"
   },
   "4030102": {
@@ -386,6 +502,7 @@
     "ParamList": [],
     "Priority": 999,
     "Rarity": "Mid",
+    "ShowType": "HiddenDesc",
     "Version": "1.0"
   },
   "4030103": {
@@ -396,6 +513,7 @@
     "ParamList": [],
     "Priority": 998,
     "Rarity": "Mid",
+    "ShowType": "HiddenDesc",
     "Version": "1.0"
   },
   "4030104": {
@@ -406,6 +524,7 @@
     "ParamList": [],
     "Priority": 997,
     "Rarity": "Mid",
+    "ShowType": "HiddenDesc",
     "Version": "1.0"
   },
   "4030105": {
@@ -416,6 +535,7 @@
     "ParamList": [],
     "Priority": 996,
     "Rarity": "High",
+    "ShowType": "HiddenDesc",
     "Version": "1.0"
   },
   "4030201": {
@@ -426,6 +546,7 @@
     "ParamList": [],
     "Priority": 995,
     "Rarity": "Mid",
+    "ShowType": "HiddenDesc",
     "Version": "1.0"
   },
   "4030202": {
@@ -436,6 +557,7 @@
     "ParamList": [],
     "Priority": 994,
     "Rarity": "Mid",
+    "ShowType": "HiddenDesc",
     "Version": "1.0"
   },
   "4032305": {
@@ -446,6 +568,7 @@
     "ParamList": [],
     "Priority": 993,
     "Rarity": "Mid",
+    "ShowType": "HiddenDesc",
     "Version": "1.0"
   },
   "4032306": {
@@ -467,6 +590,7 @@
     "ParamList": [],
     "Priority": 992,
     "Rarity": "Mid",
+    "ShowType": "HiddenDesc",
     "Version": "1.0"
   },
   "4032308": {
@@ -477,6 +601,7 @@
     "ParamList": [],
     "Priority": 991,
     "Rarity": "Mid",
+    "ShowType": "HiddenDesc",
     "Version": "1.0"
   },
   "4032309": {
@@ -495,9 +620,14 @@
     "SeriesID": 3,
     "AchievementTitle": "长生梦短",
     "AchievementDesc": "如果死而复生，就再杀一次…<br><div style=\"color:#8790abff;\">※击败「药王秘传」魁首</div>",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 1
+      }
+    ],
     "Priority": 989,
     "Rarity": "Mid",
+    "ShowType": "HiddenDesc",
     "Version": "1.2"
   },
   "4032502": {
@@ -505,9 +635,14 @@
     "SeriesID": 3,
     "AchievementTitle": "饮月君临",
     "AchievementDesc": "海若不隐珠，骊龙吐明月<br><div style=\"color:#8790abff;\">※目睹丹恒分开鳞渊境的海水</div>",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 1
+      }
+    ],
     "Priority": 988,
     "Rarity": "Mid",
+    "ShowType": "HiddenDesc",
     "Version": "1.2"
   },
   "4032503": {
@@ -515,9 +650,14 @@
     "SeriesID": 3,
     "AchievementTitle": "若木折枝",
     "AchievementDesc": "一切阴谋诡计必将覆灭<br><div style=\"color:#8790abff;\">※帮助景元击败幻胧</div>",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 1
+      }
+    ],
     "Priority": 987,
     "Rarity": "High",
+    "ShowType": "HiddenDesc",
     "Version": "1.2"
   },
   "4032601": {
@@ -528,6 +668,7 @@
     "ParamList": [],
     "Priority": 986,
     "Rarity": "Mid",
+    "ShowType": "HiddenDesc",
     "Version": "1.3"
   },
   "4032701": {
@@ -538,6 +679,7 @@
     "ParamList": [],
     "Priority": 985,
     "Rarity": "Mid",
+    "ShowType": "HiddenDesc",
     "Version": "1.4"
   },
   "4032801": {
@@ -548,6 +690,7 @@
     "ParamList": [],
     "Priority": 983,
     "Rarity": "Mid",
+    "ShowType": "HiddenDesc",
     "Version": "1.5"
   },
   "4032802": {
@@ -558,6 +701,7 @@
     "ParamList": [],
     "Priority": 984,
     "Rarity": "Mid",
+    "ShowType": "HiddenDesc",
     "Version": "1.5"
   },
   "4032901": {
@@ -568,6 +712,7 @@
     "ParamList": [],
     "Priority": 983,
     "Rarity": "Mid",
+    "ShowType": "HiddenDesc",
     "Version": "1.6"
   },
   "4033001": {
@@ -578,6 +723,7 @@
     "ParamList": [],
     "Priority": 982,
     "Rarity": "Mid",
+    "ShowType": "HiddenDesc",
     "Version": "2.0"
   },
   "4033002": {
@@ -588,6 +734,7 @@
     "ParamList": [],
     "Priority": 981,
     "Rarity": "Mid",
+    "ShowType": "HiddenDesc",
     "Version": "2.0"
   },
   "4033003": {
@@ -598,6 +745,7 @@
     "ParamList": [],
     "Priority": 980,
     "Rarity": "Mid",
+    "ShowType": "HiddenDesc",
     "Version": "2.0"
   },
   "4033004": {
@@ -608,6 +756,7 @@
     "ParamList": [],
     "Priority": 979,
     "Rarity": "Mid",
+    "ShowType": "HiddenDesc",
     "Version": "2.0"
   },
   "4033005": {
@@ -618,6 +767,7 @@
     "ParamList": [],
     "Priority": 978,
     "Rarity": "Mid",
+    "ShowType": "HiddenDesc",
     "Version": "2.0"
   },
   "4033006": {
@@ -628,6 +778,7 @@
     "ParamList": [],
     "Priority": 977,
     "Rarity": "Mid",
+    "ShowType": "HiddenDesc",
     "Version": "2.0"
   },
   "4033007": {
@@ -638,6 +789,7 @@
     "ParamList": [],
     "Priority": 976,
     "Rarity": "Mid",
+    "ShowType": "HiddenDesc",
     "Version": "2.1"
   },
   "4033009": {
@@ -648,6 +800,7 @@
     "ParamList": [],
     "Priority": 974,
     "Rarity": "Mid",
+    "ShowType": "HiddenDesc",
     "Version": "2.1"
   },
   "4033010": {
@@ -658,6 +811,7 @@
     "ParamList": [],
     "Priority": 973,
     "Rarity": "Mid",
+    "ShowType": "HiddenDesc",
     "Version": "2.1"
   },
   "4033011": {
@@ -668,6 +822,7 @@
     "ParamList": [],
     "Priority": 972,
     "Rarity": "Mid",
+    "ShowType": "HiddenDesc",
     "Version": "2.1"
   },
   "4033201": {
@@ -678,6 +833,7 @@
     "ParamList": [],
     "Priority": 971,
     "Rarity": "Mid",
+    "ShowType": "HiddenDesc",
     "Version": "2.2"
   },
   "4033202": {
@@ -688,6 +844,7 @@
     "ParamList": [],
     "Priority": 970,
     "Rarity": "Mid",
+    "ShowType": "HiddenDesc",
     "Version": "2.2"
   },
   "4033203": {
@@ -698,6 +855,7 @@
     "ParamList": [],
     "Priority": 969,
     "Rarity": "Mid",
+    "ShowType": "HiddenDesc",
     "Version": "2.2"
   },
   "4033204": {
@@ -708,6 +866,7 @@
     "ParamList": [],
     "Priority": 968,
     "Rarity": "High",
+    "ShowType": "HiddenDesc",
     "Version": "2.2"
   },
   "4033205": {
@@ -736,7 +895,7 @@
     "AchievementID": 4033301,
     "SeriesID": 3,
     "AchievementTitle": "繁花将尽",
-    "AchievementDesc": "为逝者干杯，敬苦涩的现实<br><div style=\"color:#8790abff;\">※ 调制特饮「长梦苦短」</div>",
+    "AchievementDesc": "为逝者干杯，敬苦涩的现实<br><div style=\"color:#8790abff;\">※调制特饮「长梦苦短」</div>",
     "ParamList": [],
     "Priority": 965,
     "Rarity": "Mid",
@@ -747,7 +906,7 @@
     "AchievementID": 4033302,
     "SeriesID": 3,
     "AchievementTitle": "生活多美好",
-    "AchievementDesc": "为逝者干杯，敬甜蜜的明天<br><div style=\"color:#8790abff;\">※ 调制特饮「溺甜」</div>",
+    "AchievementDesc": "为逝者干杯，敬甜蜜的明天<br><div style=\"color:#8790abff;\">※调制特饮「溺甜」</div>",
     "ParamList": [],
     "Priority": 964,
     "Rarity": "Mid",
@@ -758,7 +917,7 @@
     "AchievementID": 4033303,
     "SeriesID": 3,
     "AchievementTitle": "与我同行",
-    "AchievementDesc": "与星穹列车不期而遇<br><div style=\"color:#8790abff;\">※ 流萤视角下，在晖长石号上看到列车组</div>",
+    "AchievementDesc": "与星穹列车不期而遇<br><div style=\"color:#8790abff;\">※流萤视角下，在晖长石号上看到列车组</div>",
     "ParamList": [],
     "Priority": 963,
     "Rarity": "Mid",
@@ -769,7 +928,7 @@
     "AchievementID": 4033304,
     "SeriesID": 3,
     "AchievementTitle": "在路上",
-    "AchievementDesc": "与星穹列车擦肩而过<br><div style=\"color:#8790abff;\">※ 流萤视角下，在晖长石号上专注于寻找「慈玉典押」</div>",
+    "AchievementDesc": "与星穹列车擦肩而过<br><div style=\"color:#8790abff;\">※流萤视角下，在晖长石号上专注于寻找「慈玉典押」</div>",
     "ParamList": [],
     "Priority": 962,
     "Rarity": "Mid",
@@ -780,10 +939,11 @@
     "AchievementID": 4033305,
     "SeriesID": 3,
     "AchievementTitle": "愚人船",
-    "AchievementDesc": "为你我的命运添上新的注脚<br><div style=\"color:#8790abff;\">※ 成功解决「炸弹」危机，观赏盛大的烟火</div>",
+    "AchievementDesc": "为你我的命运添上新的注脚<br><div style=\"color:#8790abff;\">※成功解决「炸弹」危机，观赏盛大的烟火</div>",
     "ParamList": [],
     "Priority": 961,
     "Rarity": "Mid",
+    "ShowType": "HiddenDesc",
     "Version": "2.3"
   },
   "4033306": {
@@ -794,6 +954,7 @@
     "ParamList": [],
     "Priority": 960,
     "Rarity": "Mid",
+    "ShowType": "HiddenDesc",
     "Version": "2.3"
   },
   "4033401": {
@@ -804,6 +965,7 @@
     "ParamList": [],
     "Priority": 959,
     "Rarity": "Mid",
+    "ShowType": "HiddenDesc",
     "Version": "2.4"
   },
   "4033402": {
@@ -836,6 +998,7 @@
     "ParamList": [],
     "Priority": 956,
     "Rarity": "Mid",
+    "ShowType": "HiddenDesc",
     "Version": "2.4"
   },
   "4033405": {
@@ -846,6 +1009,7 @@
     "ParamList": [],
     "Priority": 955,
     "Rarity": "Mid",
+    "ShowType": "HiddenDesc",
     "Version": "2.4"
   },
   "4033406": {
@@ -856,6 +1020,7 @@
     "ParamList": [],
     "Priority": 954,
     "Rarity": "Mid",
+    "ShowType": "HiddenDesc",
     "Version": "2.4"
   },
   "4033407": {
@@ -866,66 +1031,73 @@
     "ParamList": [],
     "Priority": 953,
     "Rarity": "Mid",
+    "ShowType": "HiddenDesc",
     "Version": "2.4"
   },
   "4033501": {
     "AchievementID": 4033501,
     "SeriesID": 3,
     "AchievementTitle": "碧羽飞黄射天狼",
-    "AchievementDesc": "锋镝落定，狞兽敛爪，猎人收弓<br><div style=\"color:#8790abff;\">※ 平息「演武仪典」的风波</div>",
+    "AchievementDesc": "锋镝落定，狞兽敛爪，猎人收弓<br><div style=\"color:#8790abff;\">※平息「演武仪典」的风波</div>",
     "ParamList": [],
     "Priority": 952,
     "Rarity": "Mid",
+    "ShowType": "HiddenDesc",
     "Version": "2.5"
   },
   "4033502": {
     "AchievementID": 4033502,
     "SeriesID": 3,
     "AchievementTitle": "古海潮落",
-    "AchievementDesc": "逆潮而行，兴风作浪，逃不过被浪涛吞没的时刻来临…<br><div style=\"color:#8790abff;\">※ 令龙师伏法</div>",
+    "AchievementDesc": "逆潮而行，兴风作浪，逃不过被浪涛吞没的时刻来临…<br><div style=\"color:#8790abff;\">※令龙师伏法</div>",
     "ParamList": [],
     "Priority": 951,
     "Rarity": "Mid",
+    "ShowType": "HiddenDesc",
     "Version": "2.5"
   },
   "4033503": {
     "AchievementID": 4033503,
     "SeriesID": 3,
     "AchievementTitle": "猎人的归处",
-    "AchievementDesc": "我的敌人，永远只有我自己<br><div style=\"color:#8790abff;\">※ 唤醒坠入狂怒的飞霄</div>",
+    "AchievementDesc": "我的敌人，永远只有我自己<br><div style=\"color:#8790abff;\">※唤醒坠入狂怒的飞霄</div>",
     "ParamList": [],
     "Priority": 950,
     "Rarity": "Mid",
+    "ShowType": "HiddenDesc",
     "Version": "2.5"
   },
   "4033504": {
     "AchievementID": 4033504,
     "SeriesID": 3,
     "AchievementTitle": "久砺霜锋须一试",
-    "AchievementDesc": "七百年，能改变许多事情…<br><div style=\"color:#8790abff;\">※ 见证呼雷落败</div>",
+    "AchievementDesc": "七百年，能改变许多事情…<br><div style=\"color:#8790abff;\">※见证呼雷落败</div>",
     "ParamList": [],
     "Priority": 949,
     "Rarity": "Mid",
+    "ShowType": "HiddenDesc",
     "Version": "2.5"
   },
   "4033601": {
     "AchievementID": 4033601,
     "SeriesID": 3,
     "AchievementTitle": "壮绝•狩猎•终了",
-    "AchievementDesc": "灭却末法•劫火，完成壮绝•狩猎，此事在《银河忍法帖》中亦有记载<br><div style=\"color:#8790abff;\">※ 击败「奇想林中的蕉研组」</div>",
+    "AchievementDesc": "灭却末法•劫火，完成壮绝•狩猎，此事在《银河忍法帖》中亦有记载<br><div style=\"color:#8790abff;\">※击败「奇想林中的蕉研组」</div>",
     "ParamList": [],
     "Priority": 948,
     "Rarity": "Mid",
+    "ShowType": "HiddenDesc",
     "Version": "2.6"
   },
   "4033602": {
     "AchievementID": 4033602,
     "SeriesID": 3,
     "AchievementTitle": "蕉个朋友!",
-    "AchievementDesc": "蕉？蕉蕉，蕉蕉蕉蕉！<br><div style=\"color:#8790abff;\">※ 第一次见到「睡蕉小猴」</div>",
+    "AchievementDesc": "蕉？蕉蕉，蕉蕉蕉蕉！<br><div style=\"color:#8790abff;\">※第一次见到「睡蕉小猴」</div>",
     "ParamList": [],
     "Priority": 947,
     "Rarity": "Mid",
+    "ShowType": "HiddenDesc",
     "Version": "2.6"
   },
   "4033603": {
@@ -991,6 +1163,7 @@
     "ParamList": [],
     "Priority": 941,
     "Rarity": "Mid",
+    "ShowType": "HiddenDesc",
     "Version": "2.6"
   },
   "4033609": {
@@ -1001,6 +1174,7 @@
     "ParamList": [],
     "Priority": 940,
     "Rarity": "Mid",
+    "ShowType": "HiddenDesc",
     "Version": "2.6"
   },
   "4033610": {
@@ -1011,6 +1185,7 @@
     "ParamList": [],
     "Priority": 939,
     "Rarity": "Mid",
+    "ShowType": "HiddenDesc",
     "Version": "2.6"
   },
   "4033611": {
@@ -1054,6 +1229,7 @@
     "ParamList": [],
     "Priority": 935,
     "Rarity": "Mid",
+    "ShowType": "HiddenDesc",
     "Version": "2.7"
   },
   "4033702": {
@@ -1064,6 +1240,7 @@
     "ParamList": [],
     "Priority": 934,
     "Rarity": "Mid",
+    "ShowType": "HiddenDesc",
     "Version": "2.7"
   },
   "4033703": {
@@ -1074,6 +1251,7 @@
     "ParamList": [],
     "Priority": 933,
     "Rarity": "Mid",
+    "ShowType": "HiddenDesc",
     "Version": "2.7"
   },
   "4033704": {
@@ -1084,6 +1262,7 @@
     "ParamList": [],
     "Priority": 932,
     "Rarity": "Mid",
+    "ShowType": "HiddenDesc",
     "Version": "2.7"
   },
   "4033705": {
@@ -1094,6 +1273,7 @@
     "ParamList": [],
     "Priority": 931,
     "Rarity": "Mid",
+    "ShowType": "HiddenDesc",
     "Version": "2.7"
   },
   "4033706": {
@@ -1104,14 +1284,118 @@
     "ParamList": [],
     "Priority": 930,
     "Rarity": "Mid",
+    "ShowType": "HiddenDesc",
     "Version": "2.7"
+  },
+  "4034001": {
+    "AchievementID": 4034001,
+    "SeriesID": 3,
+    "AchievementTitle": "面涂黄金的婴孩",
+    "AchievementDesc": "这一次，你们的所作所为将令阿基维利感到骄傲<br><div style=\"color:#8790abff;\">※在翁法罗斯插下第一支界域定锚</div>",
+    "ParamList": [],
+    "Priority": 929,
+    "Rarity": "Mid",
+    "ShowType": "HiddenDesc",
+    "Version": "3.0"
+  },
+  "4034002": {
+    "AchievementID": 4034002,
+    "SeriesID": 3,
+    "AchievementTitle": "吾好梦中缠人",
+    "AchievementDesc": "信任，是开拓最好的伙伴<br><div style=\"color:#8790abff;\">※于阿格莱雅的拷问下生还</div>",
+    "ParamList": [],
+    "Priority": 928,
+    "Rarity": "Mid",
+    "ShowType": "HiddenDesc",
+    "Version": "3.0"
+  },
+  "4034003": {
+    "AchievementID": 4034003,
+    "SeriesID": 3,
+    "AchievementTitle": "300",
+    "AchievementDesc": "以一千道伤痕和一百条性命，换取最荣耀的死亡<br><div style=\"color:#8790abff;\">※见证「天谴之矛」的不死之躯</div>",
+    "ParamList": [],
+    "Priority": 927,
+    "Rarity": "Mid",
+    "ShowType": "HiddenDesc",
+    "Version": "3.0"
+  },
+  "4034004": {
+    "AchievementID": 4034004,
+    "SeriesID": 3,
+    "AchievementTitle": "瓶中萤火",
+    "AchievementDesc": "再见，我那未曾发生过的记忆<br><div style=\"color:#8790abff;\">※于不存在的记忆中同流萤告别</div>",
+    "ParamList": [],
+    "Priority": 926,
+    "Rarity": "Mid",
+    "ShowType": "ShowAfterFinish",
+    "Version": "3.0"
+  },
+  "4034005": {
+    "AchievementID": 4034005,
+    "SeriesID": 3,
+    "AchievementTitle": "蛛丝浮沉",
+    "AchievementDesc": "再见，我那未曾发生过的记忆<br><div style=\"color:#8790abff;\">※于不存在的记忆中同卡芙卡告别</div>",
+    "ParamList": [],
+    "Priority": 925,
+    "Rarity": "Mid",
+    "ShowType": "ShowAfterFinish",
+    "Version": "3.0"
+  },
+  "4034006": {
+    "AchievementID": 4034006,
+    "SeriesID": 3,
+    "AchievementTitle": "回来吧，旧日的幻影！",
+    "AchievementDesc": "伴随战鼓，破碎的记忆再度浮现于世<br><div style=\"color:#8790abff;\">※回到全盛时期的悬锋城</div>",
+    "ParamList": [],
+    "Priority": 924,
+    "Rarity": "Mid",
+    "ShowType": "HiddenDesc",
+    "Version": "3.0"
+  },
+  "4034007": {
+    "AchievementID": 4034007,
+    "SeriesID": 3,
+    "AchievementTitle": "三度迎来日落",
+    "AchievementDesc": "追随理性的呼唤，掐灭神性的光芒<br><div style=\"color:#8790abff;\">※回收「天谴之矛」的火种</div>",
+    "ParamList": [],
+    "Priority": 923,
+    "Rarity": "Mid",
+    "ShowType": "HiddenDesc",
+    "Version": "3.0"
+  },
+  "4034008": {
+    "AchievementID": 4034008,
+    "SeriesID": 3,
+    "AchievementTitle": "世代如落叶",
+    "AchievementDesc": "开启你在翁法罗斯的英雄史诗<br><div style=\"color:#8790abff;\">※归还「纷争」的火种，等待白厄归来</div>",
+    "ParamList": [],
+    "Priority": 922,
+    "Rarity": "Mid",
+    "ShowType": "HiddenDesc",
+    "Version": "3.0"
+  },
+  "4034009": {
+    "AchievementID": 4034009,
+    "SeriesID": 3,
+    "AchievementTitle": "活死人黎明",
+    "AchievementDesc": "回到翁法罗斯「开拓」的起点<br><div style=\"color:#8790abff;\">※回到列车坠毁的地方看看</div>",
+    "ParamList": [],
+    "Priority": 921,
+    "Rarity": "Mid",
+    "ShowType": "HiddenDesc",
+    "Version": "3.0"
   },
   "4040101": {
     "AchievementID": 4040101,
     "SeriesID": 4,
     "AchievementTitle": "角色扮演游戏里合法",
     "AchievementDesc": "开启30次空间站「黑塔」战利品",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 30
+      }
+    ],
     "Priority": 996,
     "Rarity": "High",
     "Version": "1.0"
@@ -1121,7 +1405,11 @@
     "SeriesID": 4,
     "AchievementTitle": "那么代价是什么？",
     "AchievementDesc": "开启110次贝洛伯格战利品",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 110
+      }
+    ],
     "Priority": 995,
     "Rarity": "High",
     "Version": "1.0"
@@ -1131,7 +1419,11 @@
     "SeriesID": 4,
     "AchievementTitle": "直到光芒把我们带走",
     "AchievementDesc": "激活空间站「黑塔」5个界域定锚",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 5
+      }
+    ],
     "Priority": 1000,
     "Rarity": "Low",
     "Version": "1.0"
@@ -1141,7 +1433,11 @@
     "SeriesID": 4,
     "AchievementTitle": "不开放世界",
     "AchievementDesc": "激活贝洛伯格14个界域定锚",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 14
+      }
+    ],
     "Priority": 999,
     "Rarity": "Low",
     "Version": "1.0"
@@ -1151,7 +1447,11 @@
     "SeriesID": 4,
     "AchievementTitle": "毁灭的冲动",
     "AchievementDesc": "击碎100个可破坏物",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 100
+      }
+    ],
     "Priority": 992,
     "Rarity": "Low",
     "Version": "1.0"
@@ -1161,7 +1461,11 @@
     "SeriesID": 4,
     "AchievementTitle": "自由毁灭意志",
     "AchievementDesc": "击碎1000个可破坏物",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 1000
+      }
+    ],
     "Priority": 991,
     "Rarity": "Mid",
     "Version": "1.0"
@@ -1171,7 +1475,11 @@
     "SeriesID": 4,
     "AchievementTitle": "矿山的西绪福斯",
     "AchievementDesc": "完成最终的矿车工测试",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 9
+      }
+    ],
     "Priority": 970,
     "Rarity": "Low",
     "Version": "1.0"
@@ -1181,7 +1489,11 @@
     "SeriesID": 4,
     "AchievementTitle": "不世之材",
     "AchievementDesc": "发现所有不世之材战利品",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 7
+      }
+    ],
     "Priority": 973,
     "Rarity": "Low",
     "Version": "1.0"
@@ -1191,7 +1503,11 @@
     "SeriesID": 4,
     "AchievementTitle": "七桥问题",
     "AchievementDesc": "发现所有斥力桥战利品",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 2
+      }
+    ],
     "Priority": 972,
     "Rarity": "Low",
     "Version": "1.0"
@@ -1201,7 +1517,11 @@
     "SeriesID": 4,
     "AchievementTitle": "鼹鼠的故事",
     "AchievementDesc": "集齐所有的《冒险鼹鼠队》",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 4
+      }
+    ],
     "Priority": 969,
     "Rarity": "Low",
     "Version": "1.0"
@@ -1211,7 +1531,11 @@
     "SeriesID": 4,
     "AchievementTitle": "红名警告",
     "AchievementDesc": "完成5次强敌挑战",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 5
+      }
+    ],
     "Priority": 980,
     "Rarity": "Low",
     "Version": "1.0"
@@ -1221,7 +1545,11 @@
     "SeriesID": 4,
     "AchievementTitle": "等级碾压",
     "AchievementDesc": "完成15次强敌挑战",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 15
+      }
+    ],
     "Priority": 979,
     "Rarity": "Low",
     "Version": "1.0"
@@ -1231,7 +1559,11 @@
     "SeriesID": 4,
     "AchievementTitle": "悲剧的诞生",
     "AchievementDesc": "发现所有愚者之箱战利品",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 5
+      }
+    ],
     "Priority": 971,
     "Rarity": "Low",
     "Version": "1.0"
@@ -1241,7 +1573,11 @@
     "SeriesID": 4,
     "AchievementTitle": "红的连红的，白的连白的",
     "AchievementDesc": "完成10次磁流解阈",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 10
+      }
+    ],
     "Priority": 968,
     "Rarity": "Low",
     "Version": "1.0"
@@ -1251,7 +1587,11 @@
     "SeriesID": 4,
     "AchievementTitle": "洞穴之喻",
     "AchievementDesc": "完成30次枘凿六合",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 30
+      }
+    ],
     "Priority": 965,
     "Rarity": "Low",
     "Version": "1.0"
@@ -1261,7 +1601,11 @@
     "SeriesID": 4,
     "AchievementTitle": "西北偏北",
     "AchievementDesc": "完成20次引航罗盘",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 20
+      }
+    ],
     "Priority": 964,
     "Rarity": "Low",
     "Version": "1.0"
@@ -1271,7 +1615,11 @@
     "SeriesID": 4,
     "AchievementTitle": "间域漫游",
     "AchievementDesc": "完成1次历战探游",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 1
+      }
+    ],
     "Priority": 978,
     "Rarity": "Low",
     "Version": "1.0"
@@ -1281,7 +1629,11 @@
     "SeriesID": 4,
     "AchievementTitle": "没成就就想打副本？",
     "AchievementDesc": "完成9次历战探游",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 9
+      }
+    ],
     "Priority": 977,
     "Rarity": "Low",
     "Version": "1.0"
@@ -1291,7 +1643,11 @@
     "SeriesID": 4,
     "AchievementTitle": "攻其不备",
     "AchievementDesc": "使用对应属性的攻击进入战斗100次",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 100
+      }
+    ],
     "Priority": 990,
     "Rarity": "Low",
     "Version": "1.0"
@@ -1312,7 +1668,11 @@
     "SeriesID": 4,
     "AchievementTitle": "第三个技能",
     "AchievementDesc": "施放50次秘技",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 50
+      }
+    ],
     "Priority": 988,
     "Rarity": "Low",
     "Version": "1.0"
@@ -1322,7 +1682,11 @@
     "SeriesID": 4,
     "AchievementTitle": "第三个维度",
     "AchievementDesc": "施放300次秘技",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 300
+      }
+    ],
     "Priority": 987,
     "Rarity": "Mid",
     "Version": "1.0"
@@ -1332,7 +1696,11 @@
     "SeriesID": 4,
     "AchievementTitle": "廷达罗斯猪崽",
     "AchievementDesc": "捕捉次元扑满1次",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 1
+      }
+    ],
     "Priority": 976,
     "Rarity": "Low",
     "Version": "1.0"
@@ -1342,7 +1710,11 @@
     "SeriesID": 4,
     "AchievementTitle": "相位提款机",
     "AchievementDesc": "捕捉次元扑满10次",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 10
+      }
+    ],
     "Priority": 975,
     "Rarity": "Low",
     "Version": "1.0"
@@ -1363,7 +1735,11 @@
     "SeriesID": 4,
     "AchievementTitle": "仙路去何通",
     "AchievementDesc": "激活仙舟「罗浮」10个界域定锚",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 10
+      }
+    ],
     "Priority": 998,
     "Rarity": "Low",
     "Version": "1.0"
@@ -1373,7 +1749,11 @@
     "SeriesID": 4,
     "AchievementTitle": "浮财小事",
     "AchievementDesc": "开启100次仙舟「罗浮」战利品",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 100
+      }
+    ],
     "Priority": 994,
     "Rarity": "Low",
     "Version": "1.0"
@@ -1383,7 +1763,11 @@
     "SeriesID": 4,
     "AchievementTitle": "自投罗网",
     "AchievementDesc": "累计在战斗中捕捉迷路的扑满1次",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 1
+      }
+    ],
     "Priority": 956,
     "Rarity": "Low",
     "ShowType": "ShowAfterFinish",
@@ -1394,7 +1778,11 @@
     "SeriesID": 4,
     "AchievementTitle": "到此一飞：穹仪",
     "AchievementDesc": "控制机巧鸟飞行到穹仪附近",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 1
+      }
+    ],
     "Priority": 963,
     "Rarity": "Low",
     "ShowType": "ShowAfterFinish",
@@ -1405,7 +1793,11 @@
     "SeriesID": 4,
     "AchievementTitle": "到此一飞：穷观阵",
     "AchievementDesc": "控制机巧鸟飞行到穷观阵中间",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 1
+      }
+    ],
     "Priority": 962,
     "Rarity": "Low",
     "ShowType": "ShowAfterFinish",
@@ -1416,7 +1808,11 @@
     "SeriesID": 4,
     "AchievementTitle": "到此一飞：太真丹室",
     "AchievementDesc": "控制机巧鸟飞行到太真丹室附近",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 1
+      }
+    ],
     "Priority": 961,
     "Rarity": "Low",
     "ShowType": "ShowAfterFinish",
@@ -1427,7 +1823,11 @@
     "SeriesID": 4,
     "AchievementTitle": "悠着点，伊卡洛斯",
     "AchievementDesc": "尝试控制机巧鸟挑战遥控范围的极限",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 1
+      }
+    ],
     "Priority": 960,
     "Rarity": "Low",
     "ShowType": "ShowAfterFinish",
@@ -1438,7 +1838,11 @@
     "SeriesID": 4,
     "AchievementTitle": "开箱评测",
     "AchievementDesc": "没有比你更靠谱的快递安检工作者了",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 1
+      }
+    ],
     "Priority": 959,
     "Rarity": "Low",
     "Version": "1.2"
@@ -1448,7 +1852,11 @@
     "SeriesID": 4,
     "AchievementTitle": "游踪遐远",
     "AchievementDesc": "在仙舟「罗浮」激活20次界域定锚",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 20
+      }
+    ],
     "Priority": 997,
     "Rarity": "Low",
     "ShowType": "ShowAfterFinish",
@@ -1459,7 +1867,11 @@
     "SeriesID": 4,
     "AchievementTitle": "财星临照",
     "AchievementDesc": "开启170次仙舟「罗浮」战利品",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 170
+      }
+    ],
     "Priority": 993,
     "Rarity": "Mid",
     "Version": "1.2"
@@ -1479,7 +1891,11 @@
     "SeriesID": 4,
     "AchievementTitle": "泥人哥连出世记",
     "AchievementDesc": "在绥园，累计获得9次「寻径指津」奖励",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 9
+      }
+    ],
     "Priority": 958,
     "Rarity": "Low",
     "Version": "1.5"
@@ -1489,7 +1905,11 @@
     "SeriesID": 4,
     "AchievementTitle": "天堂的这一边",
     "AchievementDesc": "在匹诺康尼激活15次界域定锚",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 15
+      }
+    ],
     "Priority": 955,
     "Rarity": "Low",
     "Version": "2.0"
@@ -1499,7 +1919,11 @@
     "SeriesID": 4,
     "AchievementTitle": "匹诺康尼梦",
     "AchievementDesc": "开启120次匹诺康尼战利品",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 120
+      }
+    ],
     "Priority": 954,
     "Rarity": "Mid",
     "Version": "2.0"
@@ -1520,7 +1944,11 @@
     "SeriesID": 4,
     "AchievementTitle": "啾？",
     "AchievementDesc": "帮助1只折纸小鸟回到「大树」",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 1
+      }
+    ],
     "Priority": 952,
     "Rarity": "Low",
     "Version": "2.0"
@@ -1530,7 +1958,11 @@
     "SeriesID": 4,
     "AchievementTitle": "啾啾啾！",
     "AchievementDesc": "帮助60只折纸小鸟回到「大树」",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 60
+      }
+    ],
     "Priority": 951,
     "Rarity": "Low",
     "Version": "2.0"
@@ -1540,7 +1972,11 @@
     "SeriesID": 4,
     "AchievementTitle": "永远与时间同步",
     "AchievementDesc": "修复15个梦境迷钟",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 15
+      }
+    ],
     "Priority": 950,
     "Rarity": "Low",
     "Version": "2.0"
@@ -1571,7 +2007,11 @@
     "SeriesID": 4,
     "AchievementTitle": "画中世界",
     "AchievementDesc": "通过筑梦拼图获得10次奖励",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 10
+      }
+    ],
     "Priority": 947,
     "Rarity": "Low",
     "Version": "2.0"
@@ -1678,7 +2118,11 @@
     "SeriesID": 4,
     "AchievementTitle": "抵达逃逸速度",
     "AchievementDesc": "在《小小哈努行动》中的火箭传送时间超过4秒",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 4
+      }
+    ],
     "Priority": 937,
     "Rarity": "Low",
     "ShowType": "ShowAfterFinish",
@@ -1700,7 +2144,11 @@
     "SeriesID": 4,
     "AchievementTitle": "睡眠学习法",
     "AchievementDesc": "收集15件来自匹诺康尼的阅读物",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 15
+      }
+    ],
     "Priority": 935,
     "Rarity": "Low",
     "Version": "2.0"
@@ -1752,7 +2200,11 @@
     "SeriesID": 4,
     "AchievementTitle": "非标准赛车线",
     "AchievementDesc": "在《钟表小子》外传的任意模式中，持续停留在轨道中间10秒",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 10
+      }
+    ],
     "Priority": 930,
     "Rarity": "Low",
     "ShowType": "ShowAfterFinish",
@@ -1773,7 +2225,11 @@
     "SeriesID": 4,
     "AchievementTitle": "DRS最大受益者",
     "AchievementDesc": "在《钟表小子》外传的《速度与坚果》中，连续完成10次「极限超车」，中间没有失误中断",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 10
+      }
+    ],
     "Priority": 928,
     "Rarity": "Low",
     "Version": "2.1"
@@ -1898,7 +2354,11 @@
     "SeriesID": 4,
     "AchievementTitle": "新匹诺康尼梦",
     "AchievementDesc": "开启300次匹诺康尼战利品",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 300
+      }
+    ],
     "Priority": 915,
     "Rarity": "Mid",
     "Version": "2.2"
@@ -1918,7 +2378,11 @@
     "SeriesID": 4,
     "AchievementTitle": "啾…不动了",
     "AchievementDesc": "帮助100只折纸小鸟回到「大树」",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 100
+      }
+    ],
     "Priority": 913,
     "Rarity": "Low",
     "ShowType": "ShowAfterFinish",
@@ -1939,7 +2403,11 @@
     "SeriesID": 4,
     "AchievementTitle": "传奇海选王",
     "AchievementDesc": "成功触发共6个「海选特快」的隐藏挑战",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 6
+      }
+    ],
     "Priority": 911,
     "Rarity": "Low",
     "ShowType": "ShowAfterFinish",
@@ -2024,7 +2492,11 @@
     "SeriesID": 4,
     "AchievementTitle": "穿甲弹",
     "AchievementDesc": "在「哈努战线」中一枪命中7个靶子",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 7
+      }
+    ],
     "Priority": 903,
     "Rarity": "Low",
     "ShowType": "ShowAfterFinish",
@@ -2078,7 +2550,11 @@
     "SeriesID": 4,
     "AchievementTitle": "给我停止吧！",
     "AchievementDesc": "在「哈努战线」中通过「钟表时间」命中20个靶子",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 20
+      }
+    ],
     "Priority": 898,
     "Rarity": "Low",
     "ShowType": "ShowAfterFinish",
@@ -2089,7 +2565,11 @@
     "SeriesID": 4,
     "AchievementTitle": "饱和式轰炸",
     "AchievementDesc": "在一次《小小哈努行动》中一次性击败5个石头老板的爪牙",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 5
+      }
+    ],
     "Priority": 896,
     "Rarity": "Low",
     "Version": "2.2"
@@ -2171,7 +2651,11 @@
     "SeriesID": 4,
     "AchievementTitle": "神之一手",
     "AchievementDesc": "在竞锋舰，累计获得15次「寻径指津」奖励",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 15
+      }
+    ],
     "Priority": 888,
     "Rarity": "Low",
     "Version": "2.5"
@@ -2208,6 +2692,410 @@
     "Rarity": "Mid",
     "ShowType": "ShowAfterFinish",
     "Version": "2.6"
+  },
+  "4044001": {
+    "AchievementID": 4044001,
+    "SeriesID": 4,
+    "AchievementTitle": "翁法罗斯掌管宝箱的半神",
+    "AchievementDesc": "开启120次翁法罗斯战利品",
+    "ParamList": [
+      {
+        "Value": 120
+      }
+    ],
+    "Priority": 884,
+    "Rarity": "Mid",
+    "Version": "3.0"
+  },
+  "4044002": {
+    "AchievementID": 4044002,
+    "SeriesID": 4,
+    "AchievementTitle": "顺着这光柱走去",
+    "AchievementDesc": "第一次走入「奇迹宝珠」的照射范围",
+    "ParamList": [],
+    "Priority": 883,
+    "Rarity": "Low",
+    "Version": "3.0"
+  },
+  "4044003": {
+    "AchievementID": 4044003,
+    "SeriesID": 4,
+    "AchievementTitle": "虫鸣秘闻：黄金征途",
+    "AchievementDesc": "蝴蝶们要去向何方？<br><div style=\"color:#8790abff;\">※解开「永恒圣城」奥赫玛的预言谜题</div>",
+    "ParamList": [],
+    "Priority": 882,
+    "Rarity": "Low",
+    "ShowType": "HiddenDesc",
+    "Version": "3.0"
+  },
+  "4044004": {
+    "AchievementID": 4044004,
+    "SeriesID": 4,
+    "AchievementTitle": "虫鸣秘闻：捷足悖论",
+    "AchievementDesc": "战士总是在奔跑吗？<br><div style=\"color:#8790abff;\">※解开「纷争荒墟」悬锋城的预言谜题</div>",
+    "ParamList": [],
+    "Priority": 881,
+    "Rarity": "Low",
+    "ShowType": "HiddenDesc",
+    "Version": "3.0"
+  },
+  "4044005": {
+    "AchievementID": 4044005,
+    "SeriesID": 4,
+    "AchievementTitle": "虫鸣秘闻：光之瑕玷",
+    "AchievementDesc": "阳光能普照所有角落吗？<br><div style=\"color:#8790abff;\">※解开「浴血战端」悬锋城的预言谜题</div>",
+    "ParamList": [],
+    "Priority": 880,
+    "Rarity": "Low",
+    "ShowType": "HiddenDesc",
+    "Version": "3.0"
+  },
+  "4044006": {
+    "AchievementID": 4044006,
+    "SeriesID": 4,
+    "AchievementTitle": "虫鸣秘闻：多重面相",
+    "AchievementDesc": "命运能仅凭一人解读吗？<br><div style=\"color:#8790abff;\">※解开「命运重渊」雅努萨波利斯的预言谜题</div>",
+    "ParamList": [],
+    "Priority": 879,
+    "Rarity": "Low",
+    "ShowType": "HiddenDesc",
+    "Version": "3.0"
+  },
+  "4044007": {
+    "AchievementID": 4044007,
+    "SeriesID": 4,
+    "AchievementTitle": "蝴蝶与灵魂",
+    "AchievementDesc": "与泰坦的织者初识<br><div style=\"color:#8790abff;\">※搜集1只创生若虫的赐福</div>",
+    "ParamList": [
+      {
+        "Value": 1
+      }
+    ],
+    "Priority": 878,
+    "Rarity": "Low",
+    "ShowType": "HiddenDesc",
+    "Version": "3.0"
+  },
+  "4044008": {
+    "AchievementID": 4044008,
+    "SeriesID": 4,
+    "AchievementTitle": "盒子里的美",
+    "AchievementDesc": "为织者们建立一座小型乐园<br><div style=\"color:#8790abff;\">※搜集70只创生若虫的赐福</div>",
+    "ParamList": [
+      {
+        "Value": 70
+      }
+    ],
+    "Priority": 877,
+    "Rarity": "Low",
+    "ShowType": "HiddenDesc",
+    "Version": "3.0"
+  },
+  "4044009": {
+    "AchievementID": 4044009,
+    "SeriesID": 4,
+    "AchievementTitle": "天气预报",
+    "AchievementDesc": "使用「预言算碑」让悬锋城铁链上的「落雷」消散",
+    "ParamList": [],
+    "Priority": 876,
+    "Rarity": "Low",
+    "Version": "3.0"
+  },
+  "4044010": {
+    "AchievementID": 4044010,
+    "SeriesID": 4,
+    "AchievementTitle": "反戴的荆棘冠冕",
+    "AchievementDesc": "有人头戴荆棘的冠冕。但也有人……<br><div style=\"color:#8790abff;\">※在「黄金替罪羊」中，失足跌落在荆棘上</div>",
+    "ParamList": [],
+    "Priority": 875,
+    "Rarity": "Low",
+    "ShowType": "HiddenDesc",
+    "Version": "3.0"
+  },
+  "4044011": {
+    "AchievementID": 4044011,
+    "SeriesID": 4,
+    "AchievementTitle": "并非盗取的火焰",
+    "AchievementDesc": "即使走着荒诞的道路，物质奖励也同样重要<br><div style=\"color:#8790abff;\">※在「黄金替罪羊」中，领取一次胜利后的奖励宝箱</div>",
+    "ParamList": [],
+    "Priority": 874,
+    "Rarity": "Low",
+    "ShowType": "HiddenDesc",
+    "Version": "3.0"
+  },
+  "4044012": {
+    "AchievementID": 4044012,
+    "SeriesID": 4,
+    "AchievementTitle": "已成词句的血肉",
+    "AchievementDesc": "或许，在遥远的过去，也曾有人推石上山<br><div style=\"color:#8790abff;\">※在「黄金替罪羊」中，集齐所有「黄金替罪羊的呓语」</div>",
+    "ParamList": [],
+    "Priority": 873,
+    "Rarity": "Low",
+    "ShowType": "HiddenDesc",
+    "Version": "3.0"
+  },
+  "4044013": {
+    "AchievementID": 4044013,
+    "SeriesID": 4,
+    "AchievementTitle": "踏入岁月的河流",
+    "AchievementDesc": "学会「欧洛尼斯祷言」",
+    "ParamList": [],
+    "Priority": 872,
+    "Rarity": "Low",
+    "Version": "3.0"
+  },
+  "4044014": {
+    "AchievementID": 4044014,
+    "SeriesID": 4,
+    "AchievementTitle": "不在场证明",
+    "AchievementDesc": "利用场景中残留有记忆的物件击败敌人",
+    "ParamList": [],
+    "Priority": 871,
+    "Rarity": "Low",
+    "Version": "3.0"
+  },
+  "4044015": {
+    "AchievementID": 4044015,
+    "SeriesID": 4,
+    "AchievementTitle": "完美的不在场证明",
+    "AchievementDesc": "利用场景中残留有记忆的物件，同时击倒敌人跟你自己",
+    "ParamList": [],
+    "Priority": 870,
+    "Rarity": "Low",
+    "ShowType": "ShowAfterFinish",
+    "Version": "3.0"
+  },
+  "4044016": {
+    "AchievementID": 4044016,
+    "SeriesID": 4,
+    "AchievementTitle": "烫手山芋",
+    "AchievementDesc": "念错祷言可以重念，但总要有个限度……<br><div style=\"color:#8790abff;\">※使用欧洛尼斯祷言让一个物件维持在回溯过程中的状态超过30秒</div>",
+    "ParamList": [
+      {
+        "Value": 30
+      }
+    ],
+    "Priority": 869,
+    "Rarity": "Low",
+    "ShowType": "HiddenDesc",
+    "Version": "3.0"
+  },
+  "4044017": {
+    "AchievementID": 4044017,
+    "SeriesID": 4,
+    "AchievementTitle": "刹那永远",
+    "AchievementDesc": "当时间逆流撞上时间凝滞，会发生什么？<br><div style=\"color:#8790abff;\">※利用暂停时间的能力凝固回溯中的物件</div>",
+    "ParamList": [],
+    "Priority": 868,
+    "Rarity": "Low",
+    "ShowType": "HiddenDesc",
+    "Version": "3.0"
+  },
+  "4044018": {
+    "AchievementID": 4044018,
+    "SeriesID": 4,
+    "AchievementTitle": "时空悍将",
+    "AchievementDesc": "将悬锋斗技场（夜）的所有战魂塑像全部回溯",
+    "ParamList": [],
+    "Priority": 867,
+    "Rarity": "Low",
+    "ShowType": "ShowAfterFinish",
+    "Version": "3.0"
+  },
+  "4044019": {
+    "AchievementID": 4044019,
+    "SeriesID": 4,
+    "AchievementTitle": "毁灭雕像的权利",
+    "AchievementDesc": "将奥赫玛城内的所有雕塑全部打坏",
+    "ParamList": [],
+    "Priority": 866,
+    "Rarity": "Low",
+    "ShowType": "ShowAfterFinish",
+    "Version": "3.0"
+  },
+  "4044020": {
+    "AchievementID": 4044020,
+    "SeriesID": 4,
+    "AchievementTitle": "日光节约时制",
+    "AchievementDesc": "将奥赫玛城内所有残留有记忆的物件全部回溯完好",
+    "ParamList": [],
+    "Priority": 865,
+    "Rarity": "Low",
+    "ShowType": "ShowAfterFinish",
+    "Version": "3.0"
+  },
+  "4044021": {
+    "AchievementID": 4044021,
+    "SeriesID": 4,
+    "AchievementTitle": "投石入湖",
+    "AchievementDesc": "在发动「欧洛尼斯祷言」的过程中，被另一个残留有记忆的的物件砸中",
+    "ParamList": [],
+    "Priority": 864,
+    "Rarity": "Low",
+    "ShowType": "ShowAfterFinish",
+    "Version": "3.0"
+  },
+  "4044022": {
+    "AchievementID": 4044022,
+    "SeriesID": 4,
+    "AchievementTitle": "夏虫不可忆冰",
+    "AchievementDesc": "使若虫被残留有记忆的物件砸中",
+    "ParamList": [],
+    "Priority": 863,
+    "Rarity": "Low",
+    "ShowType": "ShowAfterFinish",
+    "Version": "3.0"
+  },
+  "4044023": {
+    "AchievementID": 4044023,
+    "SeriesID": 4,
+    "AchievementTitle": "同步鸟瞰点",
+    "AchievementDesc": "抵达云石市集的最高处",
+    "ParamList": [],
+    "Priority": 862,
+    "Rarity": "Low",
+    "Version": "3.0"
+  },
+  "4044024": {
+    "AchievementID": 4044024,
+    "SeriesID": 4,
+    "AchievementTitle": "奔河停流，山峦趋步",
+    "AchievementDesc": "驻足聆听水漫琴的琴声",
+    "ParamList": [],
+    "Priority": 861,
+    "Rarity": "Low",
+    "Version": "3.0"
+  },
+  "4044025": {
+    "AchievementID": 4044025,
+    "SeriesID": 4,
+    "AchievementTitle": "高空折返跑",
+    "AchievementDesc": "通过悬锋城的浮空锁链",
+    "ParamList": [],
+    "Priority": 860,
+    "Rarity": "Low",
+    "Version": "3.0"
+  },
+  "4044026": {
+    "AchievementID": 4044026,
+    "SeriesID": 4,
+    "AchievementTitle": "权衡中",
+    "AchievementDesc": "通过「命运重渊」雅努萨波利斯中塔兰顿的审判来到第三层区域",
+    "ParamList": [],
+    "Priority": 859,
+    "Rarity": "Low",
+    "ShowType": "ShowAfterFinish",
+    "Version": "3.0"
+  },
+  "4044027": {
+    "AchievementID": 4044027,
+    "SeriesID": 4,
+    "AchievementTitle": "雕刻灾难",
+    "AchievementDesc": "通过「浴血战端」悬锋城中纷争正殿的机关，前往地下的铸魂区",
+    "ParamList": [],
+    "Priority": 858,
+    "Rarity": "Low",
+    "ShowType": "ShowAfterFinish",
+    "Version": "3.0"
+  },
+  "4044028": {
+    "AchievementID": 4044028,
+    "SeriesID": 4,
+    "AchievementTitle": "懦弱之人，绝不姑息",
+    "AchievementDesc": "使用「扎格列斯之手」的冲拳动作击败掘石场角落的泰坦眷属",
+    "ParamList": [],
+    "Priority": 857,
+    "Rarity": "Low",
+    "ShowType": "ShowAfterFinish",
+    "Version": "3.0"
+  },
+  "4044029": {
+    "AchievementID": 4044029,
+    "SeriesID": 4,
+    "AchievementTitle": "自我批评",
+    "AchievementDesc": "使用「扎格列斯之手」的冲拳动作攻击自己",
+    "ParamList": [],
+    "Priority": 856,
+    "Rarity": "Low",
+    "ShowType": "ShowAfterFinish",
+    "Version": "3.0"
+  },
+  "4044030": {
+    "AchievementID": 4044030,
+    "SeriesID": 4,
+    "AchievementTitle": "诺维科夫自恰性原则",
+    "AchievementDesc": "使用「扎格列斯之手」时进入「奇迹宝珠」的照射范围，并停留一段时间",
+    "ParamList": [],
+    "Priority": 855,
+    "Rarity": "Low",
+    "ShowType": "ShowAfterFinish",
+    "Version": "3.0"
+  },
+  "4044031": {
+    "AchievementID": 4044031,
+    "SeriesID": 4,
+    "AchievementTitle": "碎盾一拳",
+    "AchievementDesc": "使用「扎格列斯之手」的冲拳动作破坏场景中的小型盾构",
+    "ParamList": [],
+    "Priority": 854,
+    "Rarity": "Low",
+    "ShowType": "ShowAfterFinish",
+    "Version": "3.0"
+  },
+  "4044032": {
+    "AchievementID": 4044032,
+    "SeriesID": 4,
+    "AchievementTitle": "秋名山之手",
+    "AchievementDesc": "在「地宫迷踪」活动的「扎格列斯之手」房间中，通关时撞墙不超过3次",
+    "ParamList": [
+      {
+        "Value": 3
+      }
+    ],
+    "Priority": 853,
+    "Rarity": "Low",
+    "ShowType": "ShowAfterFinish",
+    "Version": "3.0"
+  },
+  "4044033": {
+    "AchievementID": 4044033,
+    "SeriesID": 4,
+    "AchievementTitle": "禁飞区",
+    "AchievementDesc": "击碎1个飞天坛递",
+    "ParamList": [
+      {
+        "Value": 1
+      }
+    ],
+    "Priority": 852,
+    "Rarity": "Low",
+    "Version": "3.0"
+  },
+  "4044034": {
+    "AchievementID": 4044034,
+    "SeriesID": 4,
+    "AchievementTitle": "爆裂坛递",
+    "AchievementDesc": "在「浴血战端」悬锋城击碎超速运行的飞天坛递",
+    "ParamList": [],
+    "Priority": 851,
+    "Rarity": "Low",
+    "ShowType": "ShowAfterFinish",
+    "Version": "3.0"
+  },
+  "4044035": {
+    "AchievementID": 4044035,
+    "SeriesID": 4,
+    "AchievementTitle": "雅努斯的馈赠",
+    "AchievementDesc": "在黄金短矛的指引下获得1个战利品",
+    "ParamList": [
+      {
+        "Value": 1
+      }
+    ],
+    "Priority": 850,
+    "Rarity": "Low",
+    "ShowType": "ShowAfterFinish",
+    "Version": "3.0"
   },
   "4051001": {
     "AchievementID": 4051001,
@@ -2405,7 +3293,11 @@
     "SeriesID": 5,
     "AchievementTitle": "滴——下班卡！",
     "AchievementDesc": "将空间站的小机器人关机6次",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 6
+      }
+    ],
     "Priority": 970,
     "Rarity": "Low",
     "ShowType": "ShowAfterFinish",
@@ -2460,7 +3352,11 @@
     "SeriesID": 5,
     "AchievementTitle": "亮亮的，滑滑的",
     "AchievementDesc": "获得3枚古老的钱币",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 3
+      }
+    ],
     "Priority": 961,
     "Rarity": "Low",
     "ShowType": "ShowAfterFinish",
@@ -2724,7 +3620,11 @@
     "SeriesID": 5,
     "AchievementTitle": "魔方人滚出仙舟",
     "AchievementDesc": "完成魔方秘社的15个「枘凿六合」挑战",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 15
+      }
+    ],
     "Priority": 900,
     "Rarity": "Low",
     "ShowType": "ShowAfterFinish",
@@ -2735,7 +3635,11 @@
     "SeriesID": 5,
     "AchievementTitle": "拿这个考我啊",
     "AchievementDesc": "完成魔方秘社的15个新版本的「枘凿六合」挑战",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 15
+      }
+    ],
     "Priority": 899,
     "Rarity": "Low",
     "ShowType": "ShowAfterFinish",
@@ -2746,7 +3650,11 @@
     "SeriesID": 5,
     "AchievementTitle": "劳形案牍",
     "AchievementDesc": "在神策府中，查看3个不同的档案柜",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 3
+      }
+    ],
     "Priority": 898,
     "Rarity": "Low",
     "ShowType": "ShowAfterFinish",
@@ -2889,7 +3797,11 @@
     "SeriesID": 5,
     "AchievementTitle": "何枝可依",
     "AchievementDesc": "在任务「譬如朝露」中，向梁沐透露魔阴身怪物的身份",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 1
+      }
+    ],
     "Priority": 909,
     "Rarity": "Low",
     "ShowType": "ShowAfterFinish",
@@ -2900,7 +3812,11 @@
     "SeriesID": 5,
     "AchievementTitle": "心念旧恩",
     "AchievementDesc": "在任务「譬如朝露」中，向梁沐隐瞒魔阴身怪物的身份",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 1
+      }
+    ],
     "Priority": 908,
     "Rarity": "Low",
     "ShowType": "ShowAfterFinish",
@@ -2911,9 +3827,14 @@
     "SeriesID": 5,
     "AchievementTitle": "棺材舞者",
     "AchievementDesc": "见证罗刹的不为人知的一面<br><div style=\"color:#8790abff;\">※查看修复后的影像，听到罗刹的独白</div>",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 1
+      }
+    ],
     "Priority": 991,
     "Rarity": "Low",
+    "ShowType": "HiddenDesc",
     "Version": "1.1"
   },
   "4052404": {
@@ -2921,7 +3842,11 @@
     "SeriesID": 5,
     "AchievementTitle": "今日免费开放",
     "AchievementDesc": "开启贝洛伯格历史文化博物馆的综合展区",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 1
+      }
+    ],
     "Priority": 932,
     "Rarity": "Low",
     "ShowType": "ShowAfterFinish",
@@ -2932,7 +3857,11 @@
     "SeriesID": 5,
     "AchievementTitle": "猫鼠游戏",
     "AchievementDesc": "开启贝洛伯格历史文化博物馆的三个展区",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 1
+      }
+    ],
     "Priority": 931,
     "Rarity": "Low",
     "ShowType": "ShowAfterFinish",
@@ -2943,7 +3872,11 @@
     "SeriesID": 5,
     "AchievementTitle": "你应该待在博物馆里！",
     "AchievementDesc": "收集贝洛伯格历史文化博物馆的全部展品",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 1
+      }
+    ],
     "Priority": 930,
     "Rarity": "Mid",
     "ShowType": "ShowAfterFinish",
@@ -2954,7 +3887,11 @@
     "SeriesID": 5,
     "AchievementTitle": "完美无缺的名侦探",
     "AchievementDesc": "完成同行任务「异邦骑士」",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 1
+      }
+    ],
     "Priority": 994,
     "Rarity": "Low",
     "ShowType": "ShowAfterFinish",
@@ -2965,7 +3902,11 @@
     "SeriesID": 5,
     "AchievementTitle": "剑中魁首",
     "AchievementDesc": "完成同行任务「霜刃一试」",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 1
+      }
+    ],
     "Priority": 993,
     "Rarity": "Low",
     "ShowType": "ShowAfterFinish",
@@ -2976,7 +3917,11 @@
     "SeriesID": 5,
     "AchievementTitle": "再见，朋克洛德！",
     "AchievementDesc": "完成同行任务「朋克洛德精神」",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 1
+      }
+    ],
     "Priority": 992,
     "Rarity": "Low",
     "ShowType": "ShowAfterFinish",
@@ -2987,7 +3932,11 @@
     "SeriesID": 5,
     "AchievementTitle": "愿者不上钩",
     "AchievementDesc": "发现工造司两位钓鱼者之间关联",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 1
+      }
+    ],
     "Priority": 886,
     "Rarity": "Low",
     "ShowType": "ShowAfterFinish",
@@ -2998,7 +3947,11 @@
     "SeriesID": 5,
     "AchievementTitle": "我如何学会停止恐惧",
     "AchievementDesc": "成功处理中子弹危机",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 1
+      }
+    ],
     "Priority": 885,
     "Rarity": "Low",
     "ShowType": "ShowAfterFinish",
@@ -3009,7 +3962,11 @@
     "SeriesID": 5,
     "AchievementTitle": "环波月古海",
     "AchievementDesc": "参与1次金人驾驶员测试",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 1
+      }
+    ],
     "Priority": 884,
     "Rarity": "Low",
     "ShowType": "ShowAfterFinish",
@@ -3020,7 +3977,11 @@
     "SeriesID": 5,
     "AchievementTitle": "文采斐然",
     "AchievementDesc": "在格律诗人的挑战中，获得它的认可",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 1
+      }
+    ],
     "Priority": 883,
     "Rarity": "Low",
     "ShowType": "ShowAfterFinish",
@@ -3031,7 +3992,11 @@
     "SeriesID": 5,
     "AchievementTitle": "略输文采",
     "AchievementDesc": "在格律诗人的挑战中，未能获得它的认可",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 1
+      }
+    ],
     "Priority": 882,
     "Rarity": "Low",
     "ShowType": "ShowAfterFinish",
@@ -3042,7 +4007,11 @@
     "SeriesID": 5,
     "AchievementTitle": "折翼纸鸢与高飞的鸟",
     "AchievementDesc": "完成同行任务「因为我已触碰过天空」",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 1
+      }
+    ],
     "Priority": 990,
     "Rarity": "Low",
     "ShowType": "ShowAfterFinish",
@@ -3053,7 +4022,11 @@
     "SeriesID": 5,
     "AchievementTitle": "自由意志",
     "AchievementDesc": "完成同行任务「陌生女人的来信」<br><div style=\"color:#8790abff;\">※你选择了帮助卡芙卡</div>",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 1
+      }
+    ],
     "Priority": 989,
     "Rarity": "Low",
     "ShowType": "ShowAfterFinish",
@@ -3064,7 +4037,11 @@
     "SeriesID": 5,
     "AchievementTitle": "论心不论迹",
     "AchievementDesc": "与「放生帮」共同完成1次成功的放生",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 1
+      }
+    ],
     "Priority": 881,
     "Rarity": "Low",
     "ShowType": "ShowAfterFinish",
@@ -3075,7 +4052,11 @@
     "SeriesID": 5,
     "AchievementTitle": "论迹不论心",
     "AchievementDesc": "见证「放生帮」的结局",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 1
+      }
+    ],
     "Priority": 880,
     "Rarity": "Low",
     "ShowType": "ShowAfterFinish",
@@ -3086,7 +4067,11 @@
     "SeriesID": 5,
     "AchievementTitle": "云骑之友",
     "AchievementDesc": "心无旁骛地完成将军的托付",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 1
+      }
+    ],
     "Priority": 915,
     "Rarity": "Mid",
     "ShowType": "ShowAfterFinish",
@@ -3097,7 +4082,11 @@
     "SeriesID": 5,
     "AchievementTitle": "真正的自由意志",
     "AchievementDesc": "完成同行任务「陌生女人的来信」<br><div style=\"color:#8790abff;\">※你选择了离开卡芙卡，很少有人会这么做，但这就是你拥有自由意志的明证</div>",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 1
+      }
+    ],
     "Priority": 988,
     "Rarity": "Low",
     "ShowType": "ShowAfterFinish",
@@ -3119,7 +4108,11 @@
     "SeriesID": 5,
     "AchievementTitle": "安逸的晚间七点",
     "AchievementDesc": "完整收听1期《星际和平播报》",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 1
+      }
+    ],
     "Priority": 978,
     "Rarity": "Low",
     "Version": "1.3"
@@ -3129,7 +4122,11 @@
     "SeriesID": 5,
     "AchievementTitle": "草槎借箭",
     "AchievementDesc": "「金人旧巷市廛喧」中，在货运星槎上码放6个金人司阍",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 6
+      }
+    ],
     "Priority": 863,
     "Rarity": "Low",
     "ShowType": "ShowAfterFinish",
@@ -3140,7 +4137,11 @@
     "SeriesID": 5,
     "AchievementTitle": "降维打击",
     "AchievementDesc": "「金人旧巷市廛喧」中，在物流规划的界面里点击24艘货运星槎",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 24
+      }
+    ],
     "Priority": 862,
     "Rarity": "Mid",
     "ShowType": "ShowAfterFinish",
@@ -3151,7 +4152,11 @@
     "SeriesID": 5,
     "AchievementTitle": "聚宝盆",
     "AchievementDesc": "「金人旧巷市廛喧」中，为金人巷商会赚取1000000商会储值金",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 1000000
+      }
+    ],
     "Priority": 861,
     "Rarity": "Low",
     "Version": "1.3"
@@ -3191,7 +4196,11 @@
     "SeriesID": 5,
     "AchievementTitle": "千金散尽还复来",
     "AchievementDesc": "「金人旧巷市廛喧」中，消费1280000商会储值金",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 1280000
+      }
+    ],
     "Priority": 857,
     "Rarity": "Low",
     "ShowType": "ShowAfterFinish",
@@ -3202,7 +4211,11 @@
     "SeriesID": 5,
     "AchievementTitle": "危险荷载",
     "AchievementDesc": "「金人旧巷市廛喧」中，在一艘货运星槎上码放货物达到81",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 81
+      }
+    ],
     "Priority": 856,
     "Rarity": "Low",
     "ShowType": "ShowAfterFinish",
@@ -3213,7 +4226,11 @@
     "SeriesID": 5,
     "AchievementTitle": "夜市：天际线",
     "AchievementDesc": "「金人旧巷市廛喧」中，任意一家商铺的航线规划分数达到81",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 81
+      }
+    ],
     "Priority": 855,
     "Rarity": "Low",
     "ShowType": "ShowAfterFinish",
@@ -3505,6 +4522,7 @@
     "ParamList": [],
     "Priority": 943,
     "Rarity": "Low",
+    "ShowType": "HiddenDesc",
     "Version": "1.4"
   },
   "4052721": {
@@ -3641,8 +4659,12 @@
     "AchievementID": 4052803,
     "SeriesID": 5,
     "AchievementTitle": "你好，新世界！",
-    "AchievementDesc": "在「罗浮杂俎」网站上收获[m=1000000]粉丝",
-    "ParamList": [],
+    "AchievementDesc": "在「罗浮杂俎」网站上收获100.0万粉丝",
+    "ParamList": [
+      {
+        "Value": 1000000
+      }
+    ],
     "Priority": 849,
     "Rarity": "Mid",
     "Version": "1.5"
@@ -3716,7 +4738,11 @@
     "SeriesID": 5,
     "AchievementTitle": "「给我点赞吧！」",
     "AchievementDesc": "在「罗浮杂俎」网站上累计为15个帖子点赞",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 15
+      }
+    ],
     "Priority": 842,
     "Rarity": "Low",
     "Version": "1.5"
@@ -3726,7 +4752,11 @@
     "SeriesID": 5,
     "AchievementTitle": "密码在手中",
     "AchievementDesc": "在「罗浮杂俎」网站上累计回复数超过10个",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 10
+      }
+    ],
     "Priority": 841,
     "Rarity": "Low",
     "Version": "1.5"
@@ -3736,7 +4766,11 @@
     "SeriesID": 5,
     "AchievementTitle": "聚是一团火，散是满天星",
     "AchievementDesc": "使用「降魔机巧鸟」收集了24个逸散岁阳",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 24
+      }
+    ],
     "Priority": 840,
     "Rarity": "Low",
     "ShowType": "ShowAfterFinish",
@@ -3747,7 +4781,11 @@
     "SeriesID": 5,
     "AchievementTitle": "鬼哈哈！",
     "AchievementDesc": "从绥园小鬼处获得900个谜题的奖励",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 900
+      }
+    ],
     "Priority": 876,
     "Rarity": "Low",
     "ShowType": "ShowAfterFinish",
@@ -4009,7 +5047,11 @@
     "SeriesID": 5,
     "AchievementTitle": "三缺一",
     "AchievementDesc": "将3个「幸运点心」摆放在同一区域",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 3
+      }
+    ],
     "Priority": 827,
     "Rarity": "Low",
     "ShowType": "ShowAfterFinish",
@@ -4020,7 +5062,11 @@
     "SeriesID": 5,
     "AchievementTitle": "午夜的孩子",
     "AchievementDesc": "将3个「垃圾糕」摆放在同一区域",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 3
+      }
+    ],
     "Priority": 826,
     "Rarity": "Low",
     "ShowType": "ShowAfterFinish",
@@ -4156,7 +5202,11 @@
     "SeriesID": 5,
     "AchievementTitle": "虚构动物学家",
     "AchievementDesc": "驱散5座猎犬雕像",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 5
+      }
+    ],
     "Priority": 813,
     "Rarity": "Low",
     "ShowType": "ShowAfterFinish",
@@ -4200,9 +5250,14 @@
     "SeriesID": 5,
     "AchievementTitle": "品味感觉",
     "AchievementDesc": "「钟表把戏」能带来什么？<br><div style=\"color:#8790abff;\">※在梦中引导1个人的情绪</div>",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 1
+      }
+    ],
     "Priority": 809,
     "Rarity": "Low",
+    "ShowType": "HiddenDesc",
     "Version": "2.0"
   },
   "4053014": {
@@ -4210,9 +5265,14 @@
     "SeriesID": 5,
     "AchievementTitle": "感到一阵温暖",
     "AchievementDesc": "「钟表把戏」能帮人找回真正的自我<br><div style=\"color:#8790abff;\">※解决1次钟表把戏的突发事件</div>",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 1
+      }
+    ],
     "Priority": 807,
     "Rarity": "Low",
+    "ShowType": "HiddenDesc",
     "Version": "2.0"
   },
   "4053015": {
@@ -4220,9 +5280,14 @@
     "SeriesID": 5,
     "AchievementTitle": "心脏怦怦直跳",
     "AchievementDesc": "在梦里，就连情绪都有实体<br><div style=\"color:#8790abff;\">※收集1个情绪齿轮</div>",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 1
+      }
+    ],
     "Priority": 806,
     "Rarity": "Low",
+    "ShowType": "HiddenDesc",
     "Version": "2.0"
   },
   "4053016": {
@@ -4230,9 +5295,14 @@
     "SeriesID": 5,
     "AchievementTitle": "我懂你的心",
     "AchievementDesc": "你能抵御心理辅导的诱惑吗？<br><div style=\"color:#8790abff;\">※在梦中引导至少5个人的情绪</div>",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 5
+      }
+    ],
     "Priority": 805,
     "Rarity": "Low",
+    "ShowType": "HiddenDesc",
     "Version": "2.0"
   },
   "4053017": {
@@ -4265,6 +5335,7 @@
     "ParamList": [],
     "Priority": 802,
     "Rarity": "Low",
+    "ShowType": "HiddenDesc",
     "Version": "2.0"
   },
   "4053020": {
@@ -4308,6 +5379,7 @@
     "ParamList": [],
     "Priority": 798,
     "Rarity": "Low",
+    "ShowType": "HiddenDesc",
     "Version": "2.0"
   },
   "4053024": {
@@ -4351,6 +5423,7 @@
     "ParamList": [],
     "Priority": 794,
     "Rarity": "Low",
+    "ShowType": "HiddenDesc",
     "Version": "2.0"
   },
   "4053028": {
@@ -4361,6 +5434,7 @@
     "ParamList": [],
     "Priority": 793,
     "Rarity": "Low",
+    "ShowType": "HiddenDesc",
     "Version": "2.0"
   },
   "4053029": {
@@ -4371,6 +5445,7 @@
     "ParamList": [],
     "Priority": 792,
     "Rarity": "Low",
+    "ShowType": "HiddenDesc",
     "Version": "2.0"
   },
   "4053030": {
@@ -4381,6 +5456,7 @@
     "ParamList": [],
     "Priority": 791,
     "Rarity": "Low",
+    "ShowType": "HiddenDesc",
     "Version": "2.0"
   },
   "4053031": {
@@ -4388,7 +5464,11 @@
     "SeriesID": 5,
     "AchievementTitle": "梦的解析",
     "AchievementDesc": "通过窥梦电话探视7个人的梦境",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 7
+      }
+    ],
     "Priority": 790,
     "Rarity": "Low",
     "ShowType": "ShowAfterFinish",
@@ -4413,6 +5493,7 @@
     "ParamList": [],
     "Priority": 788,
     "Rarity": "Low",
+    "ShowType": "HiddenDesc",
     "Version": "2.0"
   },
   "4053034": {
@@ -4445,6 +5526,7 @@
     "ParamList": [],
     "Priority": 785,
     "Rarity": "Low",
+    "ShowType": "HiddenDesc",
     "Version": "2.0"
   },
   "4053037": {
@@ -4455,6 +5537,7 @@
     "ParamList": [],
     "Priority": 784,
     "Rarity": "Low",
+    "ShowType": "HiddenDesc",
     "Version": "2.0"
   },
   "4053038": {
@@ -4473,7 +5556,11 @@
     "SeriesID": 5,
     "AchievementTitle": "幸运条纹人",
     "AchievementDesc": "累积获得超过77个艾迪恩代币",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 77
+      }
+    ],
     "Priority": 782,
     "Rarity": "Low",
     "ShowType": "ShowAfterFinish",
@@ -4509,6 +5596,7 @@
     "ParamList": [],
     "Priority": 779,
     "Rarity": "Low",
+    "ShowType": "HiddenDesc",
     "Version": "2.0"
   },
   "4053043": {
@@ -4541,6 +5629,7 @@
     "ParamList": [],
     "Priority": 776,
     "Rarity": "Low",
+    "ShowType": "HiddenDesc",
     "Version": "2.0"
   },
   "4053046": {
@@ -4562,6 +5651,7 @@
     "ParamList": [],
     "Priority": 774,
     "Rarity": "Low",
+    "ShowType": "HiddenDesc",
     "Version": "2.0"
   },
   "4053048": {
@@ -4572,6 +5662,7 @@
     "ParamList": [],
     "Priority": 773,
     "Rarity": "Low",
+    "ShowType": "HiddenDesc",
     "Version": "2.0"
   },
   "4053049": {
@@ -4582,6 +5673,7 @@
     "ParamList": [],
     "Priority": 772,
     "Rarity": "Low",
+    "ShowType": "HiddenDesc",
     "Version": "2.0"
   },
   "4053050": {
@@ -4592,6 +5684,7 @@
     "ParamList": [],
     "Priority": 771,
     "Rarity": "Low",
+    "ShowType": "HiddenDesc",
     "Version": "2.0"
   },
   "4053051": {
@@ -4602,6 +5695,7 @@
     "ParamList": [],
     "Priority": 770,
     "Rarity": "Low",
+    "ShowType": "HiddenDesc",
     "Version": "2.0"
   },
   "4053052": {
@@ -4623,6 +5717,7 @@
     "ParamList": [],
     "Priority": 768,
     "Rarity": "Low",
+    "ShowType": "HiddenDesc",
     "Version": "2.0"
   },
   "4053054": {
@@ -4652,7 +5747,11 @@
     "SeriesID": 5,
     "AchievementTitle": "谷多益善",
     "AchievementDesc": "获得全部4款钟表小子周边",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 4
+      }
+    ],
     "Priority": 765,
     "Rarity": "Low",
     "ShowType": "ShowAfterFinish",
@@ -4662,7 +5761,7 @@
     "AchievementID": 4053057,
     "SeriesID": 5,
     "AchievementTitle": "林中小屋",
-    "AchievementDesc": "在克劳克影视乐园的某处见证五人组的的离奇经历",
+    "AchievementDesc": "在克劳克影视乐园的某处见证五人组的离奇经历",
     "ParamList": [],
     "Priority": 764,
     "Rarity": "Low",
@@ -4760,7 +5859,11 @@
     "SeriesID": 5,
     "AchievementTitle": "各饮所需",
     "AchievementDesc": "为顾客提供正确饮品的次数达到10次",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 10
+      }
+    ],
     "Priority": 755,
     "Rarity": "Low",
     "ShowType": "ShowAfterFinish",
@@ -4771,7 +5874,11 @@
     "SeriesID": 5,
     "AchievementTitle": "Omakase",
     "AchievementDesc": "为顾客提供错误饮品的次数达到5次",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 5
+      }
+    ],
     "Priority": 754,
     "Rarity": "Low",
     "Version": "2.1"
@@ -5041,7 +6148,11 @@
     "SeriesID": 5,
     "AchievementTitle": "梦境TOP100",
     "AchievementDesc": "在《美梦往事》中总集篇中观众评分达到2000分",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 2000
+      }
+    ],
     "Priority": 728,
     "Rarity": "Low",
     "Version": "2.2"
@@ -5051,7 +6162,11 @@
     "SeriesID": 5,
     "AchievementTitle": "溢出镜头的情感",
     "AchievementDesc": "在《美梦往事》中三种观众情绪同时高于50",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 50
+      }
+    ],
     "Priority": 727,
     "Rarity": "Low",
     "Version": "2.2"
@@ -5071,7 +6186,14 @@
     "SeriesID": 5,
     "AchievementTitle": "高成本影片",
     "AchievementDesc": "在《美梦往事》中同一回合至少获得3个及以上的时间骰子6",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 3
+      },
+      {
+        "Value": 6
+      }
+    ],
     "Priority": 725,
     "Rarity": "Low",
     "ShowType": "ShowAfterFinish",
@@ -5107,6 +6229,7 @@
     "ParamList": [],
     "Priority": 722,
     "Rarity": "Low",
+    "ShowType": "HiddenDesc",
     "Version": "2.2"
   },
   "4053229": {
@@ -5221,7 +6344,11 @@
     "SeriesID": 5,
     "AchievementTitle": "根本难不倒它",
     "AchievementDesc": "「折纸小鸟对对碰」活动中，单局对战内触发30次小鸟技能",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 30
+      }
+    ],
     "Priority": 709,
     "Rarity": "Low",
     "ShowType": "ShowAfterFinish",
@@ -5232,7 +6359,11 @@
     "SeriesID": 5,
     "AchievementTitle": "愤怒的折纸小鸟",
     "AchievementDesc": "「折纸小鸟对对碰」活动中，单局对战内手动触发15次炸弹组合",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 15
+      }
+    ],
     "Priority": 708,
     "Rarity": "Low",
     "ShowType": "ShowAfterFinish",
@@ -5243,7 +6374,11 @@
     "SeriesID": 5,
     "AchievementTitle": "鸟！鸟！鸟！",
     "AchievementDesc": "「折纸小鸟对对碰」活动中，单局对战内小鸟最高战斗力达到300",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 300
+      }
+    ],
     "Priority": 707,
     "Rarity": "Low",
     "ShowType": "ShowAfterFinish",
@@ -5364,7 +6499,11 @@
     "SeriesID": 8,
     "AchievementTitle": "客随主便",
     "AchievementDesc": "在获得{TEXTJOIN#87}所有权之前，在泳池中冲刺玩水并遭到训斥",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 10
+      }
+    ],
     "Priority": 923,
     "Rarity": "Low",
     "ShowType": "ShowAfterFinish",
@@ -5503,7 +6642,14 @@
     "SeriesID": 5,
     "AchievementTitle": "明明超强却过分慎重",
     "AchievementDesc": "在「初花习剑录」中，三月七的4项训练属性达到1000以上",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 4
+      },
+      {
+        "Value": 1000
+      }
+    ],
     "Priority": 682,
     "Rarity": "Low",
     "Version": "2.4"
@@ -5513,7 +6659,11 @@
     "SeriesID": 5,
     "AchievementTitle": "飞越平台期",
     "AchievementDesc": "在「初花习剑录」中，单回合内提升训练属性达到300点",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 300
+      }
+    ],
     "Priority": 680,
     "Rarity": "Low",
     "Version": "2.4"
@@ -5533,7 +6683,11 @@
     "SeriesID": 5,
     "AchievementTitle": "只学习不玩耍，聪明三月也变傻",
     "AchievementDesc": "在「初花习剑录」中，一直训练到三月七的心情为0",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 0
+      }
+    ],
     "Priority": 678,
     "Rarity": "Low",
     "Version": "2.4"
@@ -5620,7 +6774,11 @@
     "SeriesID": 5,
     "AchievementTitle": "囚室巡访",
     "AchievementDesc": "启动机巧鸟，并以访客身份调查3处高层的囚室",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 3
+      }
+    ],
     "Priority": 670,
     "Rarity": "Low",
     "ShowType": "ShowAfterFinish",
@@ -5663,10 +6821,11 @@
     "AchievementID": 4053501,
     "SeriesID": 5,
     "AchievementTitle": "不要熄灭熏燃的火焰",
-    "AchievementDesc": "即使喝彩停息，无声者的声音也不会消逝<br><div style=\"color:#8790abff;\">※ 协助卢卡走上竞锋守擂的舞台</div>",
+    "AchievementDesc": "即使喝彩停息，无声者的声音也不会消逝<br><div style=\"color:#8790abff;\">※协助卢卡走上竞锋守擂的舞台</div>",
     "ParamList": [],
     "Priority": 665,
     "Rarity": "Mid",
+    "ShowType": "HiddenDesc",
     "Version": "2.5"
   },
   "4053502": {
@@ -5683,10 +6842,11 @@
     "AchievementID": 4053503,
     "SeriesID": 5,
     "AchievementTitle": "拳愿非天",
-    "AchievementDesc": "以往你总是亲自上阵战斗，也该试试做「幕后黑手」了<br><div style=\"color:#8790abff;\">※ 成为卢卡的教练</div>",
+    "AchievementDesc": "以往你总是亲自上阵战斗，也该试试做「幕后黑手」了<br><div style=\"color:#8790abff;\">※成为卢卡的教练</div>",
     "ParamList": [],
     "Priority": 663,
     "Rarity": "Low",
+    "ShowType": "HiddenDesc",
     "Version": "2.5"
   },
   "4053504": {
@@ -5733,30 +6893,33 @@
     "AchievementID": 4053508,
     "SeriesID": 5,
     "AchievementTitle": "今日方知我是我",
-    "AchievementDesc": "见证有情生命最伟大的力量——选择「善」的力量<br><div style=\"color:#8790abff;\">※ 在演武仪典遇到丹轮寺的僧侣</div>",
+    "AchievementDesc": "见证有情生命最伟大的力量——选择「善」的力量<br><div style=\"color:#8790abff;\">※在演武仪典遇到丹轮寺的僧侣</div>",
     "ParamList": [],
     "Priority": 658,
     "Rarity": "Low",
+    "ShowType": "HiddenDesc",
     "Version": "2.5"
   },
   "4053509": {
     "AchievementID": 4053509,
     "SeriesID": 5,
     "AchievementTitle": "后真相时代",
-    "AchievementDesc": "在演武仪典的擂台下，直面一场舆论风波<br><div style=\"color:#8790abff;\">※ 协助卢卡战胜铄金的「盘外招」</div>",
+    "AchievementDesc": "在演武仪典的擂台下，直面一场舆论风波<br><div style=\"color:#8790abff;\">※协助卢卡战胜铄金的「盘外招」</div>",
     "ParamList": [],
     "Priority": 657,
     "Rarity": "Low",
+    "ShowType": "HiddenDesc",
     "Version": "2.5"
   },
   "4053510": {
     "AchievementID": 4053510,
     "SeriesID": 5,
     "AchievementTitle": "终不似，少年游",
-    "AchievementDesc": "在贝洛伯格历史博物馆，见证一段来自仙舟的旧忆<br><div style=\"color:#8790abff;\">※ 人生自古谁无死？留取丹心照汗青。</div>",
+    "AchievementDesc": "在贝洛伯格历史博物馆，见证一段来自仙舟的旧忆<br><div style=\"color:#8790abff;\">※人生自古谁无死？留取丹心照汗青。</div>",
     "ParamList": [],
     "Priority": 656,
     "Rarity": "Low",
+    "ShowType": "HiddenDesc",
     "Version": "2.5"
   },
   "4053511": {
@@ -5786,7 +6949,11 @@
     "SeriesID": 5,
     "AchievementTitle": "一根藤上七朵花",
     "AchievementDesc": "在竞锋舰上，见证7个身怀绝技的孙辈营救老者",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 7
+      }
+    ],
     "Priority": 653,
     "Rarity": "Low",
     "ShowType": "ShowAfterFinish",
@@ -5904,7 +7071,11 @@
     "SeriesID": 5,
     "AchievementTitle": "欢迎来到学术自由主义教室",
     "AchievementDesc": "在折纸大学旁听3堂专业课",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 3
+      }
+    ],
     "Priority": 642,
     "Rarity": "Low",
     "ShowType": "ShowAfterFinish",
@@ -6080,7 +7251,11 @@
     "SeriesID": 5,
     "AchievementTitle": "Factory Library",
     "AchievementDesc": "在「音律狩猎忍法帖」中，累计收集3个作曲灵感",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 3
+      }
+    ],
     "Priority": 624,
     "Rarity": "Low",
     "Version": "2.6"
@@ -6090,7 +7265,11 @@
     "SeriesID": 5,
     "AchievementTitle": "右右右右右右右",
     "AchievementDesc": "在「音律狩猎忍法帖」中，任意困难难度的音乐挑战里获得3颗星",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 3
+      }
+    ],
     "Priority": 622,
     "Rarity": "Low",
     "Version": "2.6"
@@ -6194,7 +7373,11 @@
     "SeriesID": 5,
     "AchievementTitle": "沐浴之王",
     "AchievementDesc": "在使用浴缸泡澡时，尝试过3种入浴剂",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 3
+      }
+    ],
     "Priority": 612,
     "Rarity": "Low",
     "ShowType": "ShowAfterFinish",
@@ -6248,7 +7431,11 @@
     "SeriesID": 5,
     "AchievementTitle": "靠得住的老实电脑",
     "AchievementDesc": "完成「超智能病毒」的3个遗愿",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 3
+      }
+    ],
     "Priority": 607,
     "Rarity": "Low",
     "ShowType": "ShowAfterFinish",
@@ -6269,40 +7456,48 @@
     "AchievementID": 4053710,
     "SeriesID": 5,
     "AchievementTitle": "今夜无事发生",
-    "AchievementDesc": "在属于你的房间，度过悠然无事的夜晚<br><div style=\"color:#8790abff;\">※ 完成活动「宇宙家装指南」</div>",
+    "AchievementDesc": "在属于你的房间，度过悠然无事的夜晚<br><div style=\"color:#8790abff;\">※完成活动「宇宙家装指南」</div>",
     "ParamList": [],
     "Priority": 605,
     "Rarity": "Low",
+    "ShowType": "HiddenDesc",
     "Version": "2.7"
   },
   "4053711": {
     "AchievementID": 4053711,
     "SeriesID": 5,
     "AchievementTitle": "Mini绿野仙踪",
-    "AchievementDesc": "你理解了吗？花导、炒饭机器人、猫糕、佩佩，恰好对应桃乐丝、铁皮人…不对，我为什么在解释笑话？<br><div style=\"color:#8790abff;\">※ 在活动「宇宙家装指南」中邂逅全部4位值日帮手</div>",
-    "ParamList": [],
+    "AchievementDesc": "你理解了吗？花导、炒饭机器人、猫糕、佩佩，恰好对应桃乐丝、铁皮人…不对，我为什么在解释笑话？<br><div style=\"color:#8790abff;\">※在活动「宇宙家装指南」中邂逅全部4位值日帮手</div>",
+    "ParamList": [
+      {
+        "Value": 4
+      }
+    ],
     "Priority": 604,
     "Rarity": "Low",
+    "ShowType": "HiddenDesc",
     "Version": "2.7"
   },
   "4053712": {
     "AchievementID": 4053712,
     "SeriesID": 5,
     "AchievementTitle": "逝去时光的海洋",
-    "AchievementDesc": "听杨叔讲讲过去的故事<br><div style=\"color:#8790abff;\">※ 成为无名客，意味着你要暂别熟悉的生活，前往未知的世界展开冒险</div>",
+    "AchievementDesc": "听杨叔讲讲过去的故事<br><div style=\"color:#8790abff;\">※成为无名客，意味着你要暂别熟悉的生活，前往未知的世界展开冒险</div>",
     "ParamList": [],
     "Priority": 603,
     "Rarity": "Low",
+    "ShowType": "HiddenDesc",
     "Version": "2.7"
   },
   "4053713": {
     "AchievementID": 4053713,
     "SeriesID": 5,
     "AchievementTitle": "冷钢锻造",
-    "AchievementDesc": "您理解了吗？因为我的身体由钢铁制成，而钢铁冰冷坚硬，所以我的笑话很冷<br><div style=\"color:#8790abff;\">※ 听「闭嘴」讲冷笑话，令人忍俊不禁</div>",
+    "AchievementDesc": "您理解了吗？因为我的身体由钢铁制成，而钢铁冰冷坚硬，所以我的笑话很冷<br><div style=\"color:#8790abff;\">※听「闭嘴」讲冷笑话，令人忍俊不禁</div>",
     "ParamList": [],
     "Priority": 602,
     "Rarity": "Low",
+    "ShowType": "HiddenDesc",
     "Version": "2.7"
   },
   "4053714": {
@@ -6310,7 +7505,11 @@
     "SeriesID": 5,
     "AchievementTitle": "我爱我家",
     "AchievementDesc": "在「宇宙家装指南」中，任意角色的工作贡献达到99",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 99
+      }
+    ],
     "Priority": 601,
     "Rarity": "Low",
     "Version": "2.7"
@@ -6320,7 +7519,11 @@
     "SeriesID": 5,
     "AchievementTitle": "会议不能停",
     "AchievementDesc": "在「宇宙家装指南」中，单次会议的帕姆评分达到30000",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 30000
+      }
+    ],
     "Priority": 600,
     "Rarity": "Low",
     "Version": "2.7"
@@ -6340,18 +7543,802 @@
     "SeriesID": 5,
     "AchievementTitle": "灾难始终快我一步",
     "AchievementDesc": "在「宇宙家装指南」中，累积进入3次厄运格",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 3
+      }
+    ],
     "Priority": 598,
     "Rarity": "Low",
     "ShowType": "ShowAfterFinish",
     "Version": "2.7"
+  },
+  "4054001": {
+    "AchievementID": 4054001,
+    "SeriesID": 5,
+    "AchievementTitle": "招手停",
+    "AchievementDesc": "通过摇铃召唤大地兽5次",
+    "ParamList": [
+      {
+        "Value": 5
+      }
+    ],
+    "Priority": 597,
+    "Rarity": "Low",
+    "ShowType": "ShowAfterFinish",
+    "Version": "3.0"
+  },
+  "4054002": {
+    "AchievementID": 4054002,
+    "SeriesID": 5,
+    "AchievementTitle": "我呼唤永恒的黎明",
+    "AchievementDesc": "阅读「永恒圣城」奥赫玛所有启目集",
+    "ParamList": [],
+    "Priority": 596,
+    "Rarity": "Low",
+    "ShowType": "ShowAfterFinish",
+    "Version": "3.0"
+  },
+  "4054003": {
+    "AchievementID": 4054003,
+    "SeriesID": 5,
+    "AchievementTitle": "我呼唤新王的君临",
+    "AchievementDesc": "阅读「纷争荒墟」悬锋城所有启目集",
+    "ParamList": [],
+    "Priority": 595,
+    "Rarity": "Low",
+    "ShowType": "ShowAfterFinish",
+    "Version": "3.0"
+  },
+  "4054004": {
+    "AchievementID": 4054004,
+    "SeriesID": 5,
+    "AchievementTitle": "我呼唤丰盛的和平",
+    "AchievementDesc": "阅读「浴血战端」悬锋城所有启目集",
+    "ParamList": [],
+    "Priority": 594,
+    "Rarity": "Low",
+    "ShowType": "ShowAfterFinish",
+    "Version": "3.0"
+  },
+  "4054005": {
+    "AchievementID": 4054005,
+    "SeriesID": 5,
+    "AchievementTitle": "我呼唤远古的黑夜",
+    "AchievementDesc": "阅读「命运重渊」雅努萨波利斯所有启目集",
+    "ParamList": [],
+    "Priority": 593,
+    "Rarity": "Low",
+    "ShowType": "ShowAfterFinish",
+    "Version": "3.0"
+  },
+  "4054006": {
+    "AchievementID": 4054006,
+    "SeriesID": 5,
+    "AchievementTitle": "大城轶事",
+    "AchievementDesc": "窥探「永恒圣城」奥赫玛全部的追忆残像",
+    "ParamList": [],
+    "Priority": 592,
+    "Rarity": "Low",
+    "ShowType": "ShowAfterFinish",
+    "Version": "3.0"
+  },
+  "4054007": {
+    "AchievementID": 4054007,
+    "SeriesID": 5,
+    "AchievementTitle": "纷争余夜",
+    "AchievementDesc": "窥探「纷争荒墟」悬锋城全部的追忆残像",
+    "ParamList": [],
+    "Priority": 591,
+    "Rarity": "Low",
+    "ShowType": "ShowAfterFinish",
+    "Version": "3.0"
+  },
+  "4054008": {
+    "AchievementID": 4054008,
+    "SeriesID": 5,
+    "AchievementTitle": "战争的黎明",
+    "AchievementDesc": "窥探「浴血战端」悬锋城全部的追忆残像",
+    "ParamList": [],
+    "Priority": 590,
+    "Rarity": "Low",
+    "ShowType": "ShowAfterFinish",
+    "Version": "3.0"
+  },
+  "4054009": {
+    "AchievementID": 4054009,
+    "SeriesID": 5,
+    "AchievementTitle": "圣鹿之死",
+    "AchievementDesc": "窥探「命运重渊」雅努萨波利斯全部的追忆残像",
+    "ParamList": [],
+    "Priority": 589,
+    "Rarity": "Low",
+    "ShowType": "ShowAfterFinish",
+    "Version": "3.0"
+  },
+  "4054010": {
+    "AchievementID": 4054010,
+    "SeriesID": 5,
+    "AchievementTitle": "与浪花和兽相戏",
+    "AchievementDesc": "获取声音记录《神性的回响：海洋》",
+    "ParamList": [],
+    "Priority": 588,
+    "Rarity": "Low",
+    "ShowType": "ShowAfterFinish",
+    "Version": "3.0"
+  },
+  "4054011": {
+    "AchievementID": 4054011,
+    "SeriesID": 5,
+    "AchievementTitle": "停歇疯狂的不和",
+    "AchievementDesc": "获取声音记录《神性的回响：纷争》",
+    "ParamList": [],
+    "Priority": 587,
+    "Rarity": "Low",
+    "ShowType": "ShowAfterFinish",
+    "Version": "3.0"
+  },
+  "4054012": {
+    "AchievementID": 4054012,
+    "SeriesID": 5,
+    "AchievementTitle": "驱赶光明至地下",
+    "AchievementDesc": "获取声音记录《神性的回响：岁月》",
+    "ParamList": [],
+    "Priority": 586,
+    "Rarity": "Low",
+    "ShowType": "ShowAfterFinish",
+    "Version": "3.0"
+  },
+  "4054013": {
+    "AchievementID": 4054013,
+    "SeriesID": 5,
+    "AchievementTitle": "平凡的世界",
+    "AchievementDesc": "回首来路，你或许已经在许多人的生活里泛起了不小的涟漪<br><div style=\"color:#8790abff;\">※看看那些接受过星穹列车帮助的普通人现在过得如何</div>",
+    "ParamList": [],
+    "Priority": 585,
+    "Rarity": "Low",
+    "ShowType": "HiddenDesc",
+    "Version": "3.0"
+  },
+  "4054014": {
+    "AchievementID": 4054014,
+    "SeriesID": 5,
+    "AchievementTitle": "大宇宙，小人间",
+    "AchievementDesc": "在完成「寻人记」任务后，与星穹列车上的小机器人对话",
+    "ParamList": [],
+    "Priority": 584,
+    "Rarity": "Low",
+    "Version": "3.0"
+  },
+  "4054015": {
+    "AchievementID": 4054015,
+    "SeriesID": 5,
+    "AchievementTitle": "黑潮时期的爱情",
+    "AchievementDesc": "见证厄琉斯与宁芙的结局",
+    "ParamList": [],
+    "Priority": 583,
+    "Rarity": "Low",
+    "ShowType": "ShowAfterFinish",
+    "Version": "3.0"
+  },
+  "4054016": {
+    "AchievementID": 4054016,
+    "SeriesID": 5,
+    "AchievementTitle": "无果之树",
+    "AchievementDesc": "在奥赫玛完成神秘仪式交互事件",
+    "ParamList": [],
+    "Priority": 582,
+    "Rarity": "Low",
+    "ShowType": "ShowAfterFinish",
+    "Version": "3.0"
+  },
+  "4054017": {
+    "AchievementID": 4054017,
+    "SeriesID": 5,
+    "AchievementTitle": "{NICKNAME}悖论",
+    "AchievementDesc": "见证「最强之盾」与「最强之矛」的结局",
+    "ParamList": [],
+    "Priority": 581,
+    "Rarity": "Low",
+    "ShowType": "ShowAfterFinish",
+    "Version": "3.0"
+  },
+  "4054018": {
+    "AchievementID": 4054018,
+    "SeriesID": 5,
+    "AchievementTitle": "明天又是新的一天",
+    "AchievementDesc": "找回你在奥赫玛丢失的东西…<br><div style=\"color:#8790abff;\">※并见证一个孩子的转变</div>",
+    "ParamList": [],
+    "Priority": 580,
+    "Rarity": "Low",
+    "ShowType": "ShowAfterFinish",
+    "Version": "3.0"
+  },
+  "4054019": {
+    "AchievementID": 4054019,
+    "SeriesID": 5,
+    "AchievementTitle": "宿命论",
+    "AchievementDesc": "帮助德墨忒尔调查女儿失踪的线索并阐述自己的推论",
+    "ParamList": [],
+    "Priority": 579,
+    "Rarity": "Low",
+    "ShowType": "ShowAfterFinish",
+    "Version": "3.0"
+  },
+  "4054020": {
+    "AchievementID": 4054020,
+    "SeriesID": 5,
+    "AchievementTitle": "偶像的黄昏",
+    "AchievementDesc": "在修辞学论辩中，为希诺的观点辩护",
+    "ParamList": [],
+    "Priority": 578,
+    "Rarity": "Low",
+    "ShowType": "ShowAfterFinish",
+    "Version": "3.0"
+  },
+  "4054021": {
+    "AchievementID": 4054021,
+    "SeriesID": 5,
+    "AchievementTitle": "一切皆一",
+    "AchievementDesc": "在修辞学论辩中，为帕门弥德的观点辩护",
+    "ParamList": [],
+    "Priority": 577,
+    "Rarity": "Low",
+    "ShowType": "ShowAfterFinish",
+    "Version": "3.0"
+  },
+  "4054022": {
+    "AchievementID": 4054022,
+    "SeriesID": 5,
+    "AchievementTitle": "形而上的坏死",
+    "AchievementDesc": "仅借智慧所创造的一切，都是虚假之物<br><div style=\"color:#8790abff;\">※获得第一枚翻飞之币</div>",
+    "ParamList": [],
+    "Priority": 576,
+    "Rarity": "Low",
+    "ShowType": "HiddenDesc",
+    "Version": "3.0"
+  },
+  "4054023": {
+    "AchievementID": 4054023,
+    "SeriesID": 5,
+    "AchievementTitle": "未选择的路",
+    "AchievementDesc": "调查位于「纷争荒墟」悬锋城的雅努斯之驹",
+    "ParamList": [],
+    "Priority": 575,
+    "Rarity": "Low",
+    "ShowType": "ShowAfterFinish",
+    "Version": "3.0"
+  },
+  "4054024": {
+    "AchievementID": 4054024,
+    "SeriesID": 5,
+    "AchievementTitle": "成神之日",
+    "AchievementDesc": "调查位于「浴血战端」悬锋城的雅努斯之驹",
+    "ParamList": [],
+    "Priority": 574,
+    "Rarity": "Low",
+    "ShowType": "ShowAfterFinish",
+    "Version": "3.0"
+  },
+  "4054025": {
+    "AchievementID": 4054025,
+    "SeriesID": 5,
+    "AchievementTitle": "手拘飞羽",
+    "AchievementDesc": "调查位于「命运重渊」雅努萨波利斯的雅努斯之驹",
+    "ParamList": [],
+    "Priority": 573,
+    "Rarity": "Low",
+    "ShowType": "ShowAfterFinish",
+    "Version": "3.0"
+  },
+  "4054026": {
+    "AchievementID": 4054026,
+    "SeriesID": 5,
+    "AchievementTitle": "尚未揭示的秘密",
+    "AchievementDesc": "在「永恒圣城」奥赫玛、「纷争荒墟」悬锋城、「浴血战端」悬锋城、「命运重渊」雅努萨波利斯阻止「贼灵」的所有盗窃行为。",
+    "ParamList": [],
+    "Priority": 572,
+    "Rarity": "Low",
+    "ShowType": "ShowAfterFinish",
+    "Version": "3.0"
+  },
+  "4054027": {
+    "AchievementID": 4054027,
+    "SeriesID": 5,
+    "AchievementTitle": "火已渐熄",
+    "AchievementDesc": "完成「黄金替罪羊」任务",
+    "ParamList": [],
+    "Priority": 571,
+    "Rarity": "Low",
+    "ShowType": "ShowAfterFinish",
+    "Version": "3.0"
+  },
+  "4054029": {
+    "AchievementID": 4054029,
+    "SeriesID": 5,
+    "AchievementTitle": "哲学士",
+    "AchievementDesc": "找到奥赫玛中所有的吉奥里亚活火",
+    "ParamList": [],
+    "Priority": 569,
+    "Rarity": "Low",
+    "ShowType": "ShowAfterFinish",
+    "Version": "3.0"
+  },
+  "4054030": {
+    "AchievementID": 4054030,
+    "SeriesID": 5,
+    "AchievementTitle": "哲学王",
+    "AchievementDesc": "找到奥赫玛中4个真言狮口并回答它们的提问",
+    "ParamList": [
+      {
+        "Value": 4
+      }
+    ],
+    "Priority": 568,
+    "Rarity": "Low",
+    "ShowType": "ShowAfterFinish",
+    "Version": "3.0"
+  },
+  "4054031": {
+    "AchievementID": 4054031,
+    "SeriesID": 5,
+    "AchievementTitle": "光明行者",
+    "AchievementDesc": "找到奥赫玛中8个真言狮口并回答它们的提问",
+    "ParamList": [
+      {
+        "Value": 8
+      }
+    ],
+    "Priority": 567,
+    "Rarity": "Low",
+    "ShowType": "ShowAfterFinish",
+    "Version": "3.0"
+  },
+  "4054032": {
+    "AchievementID": 4054032,
+    "SeriesID": 5,
+    "AchievementTitle": "寄居蟹",
+    "AchievementDesc": "找到奥赫玛中所有的圣烛并激活互动",
+    "ParamList": [],
+    "Priority": 566,
+    "Rarity": "Low",
+    "ShowType": "ShowAfterFinish",
+    "Version": "3.0"
+  },
+  "4054033": {
+    "AchievementID": 4054033,
+    "SeriesID": 5,
+    "AchievementTitle": "绝对客观记忆",
+    "AchievementDesc": "调查位于「永恒圣城」奥赫玛的雅努斯之驹",
+    "ParamList": [],
+    "Priority": 565,
+    "Rarity": "Low",
+    "ShowType": "ShowAfterFinish",
+    "Version": "3.0"
+  },
+  "4054034": {
+    "AchievementID": 4054034,
+    "SeriesID": 5,
+    "AchievementTitle": "重塑雕像的权利",
+    "AchievementDesc": "收集第一个记忆碎片",
+    "ParamList": [],
+    "Priority": 564,
+    "Rarity": "Low",
+    "Version": "3.0"
+  },
+  "4054035": {
+    "AchievementID": 4054035,
+    "SeriesID": 5,
+    "AchievementTitle": "伪币制造者",
+    "AchievementDesc": "累积修复奥赫玛城内的3座雕像",
+    "ParamList": [
+      {
+        "Value": 3
+      }
+    ],
+    "Priority": 563,
+    "Rarity": "Low",
+    "Version": "3.0"
+  },
+  "4054036": {
+    "AchievementID": 4054036,
+    "SeriesID": 5,
+    "AchievementTitle": "众神与人",
+    "AchievementDesc": "揭露更多藏于星宿中的秘密<br><div style=\"color:#8790abff;\">※查阅创世涡心的泰坦星宿图鉴</div>",
+    "ParamList": [],
+    "Priority": 562,
+    "Rarity": "Low",
+    "ShowType": "HiddenDesc",
+    "Version": "3.0"
+  },
+  "4054037": {
+    "AchievementID": 4054037,
+    "SeriesID": 5,
+    "AchievementTitle": "为何欢乐的喧闹哑默？",
+    "AchievementDesc": "世界的起点曾是海洋<br><div style=\"color:#8790abff;\">※聆听创世涡心中潮汐的声音</div>",
+    "ParamList": [],
+    "Priority": 561,
+    "Rarity": "Low",
+    "ShowType": "HiddenDesc",
+    "Version": "3.0"
+  },
+  "4054038": {
+    "AchievementID": 4054038,
+    "SeriesID": 5,
+    "AchievementTitle": "山峦·铁匠·老主顾",
+    "AchievementDesc": "大顾客，谢谢<br><div style=\"color:#8790abff;\">※购买哈托努斯打造的全部种类的武器</div>",
+    "ParamList": [],
+    "Priority": 560,
+    "Rarity": "Low",
+    "ShowType": "HiddenDesc",
+    "Version": "3.0"
+  },
+  "4054039": {
+    "AchievementID": 4054039,
+    "SeriesID": 5,
+    "AchievementTitle": "我们席地而坐",
+    "AchievementDesc": "向巴克斯购买秘酿，并触发特定迷醉事件<br><div style=\"color:#8790abff;\">※向巴克斯购买秘酿，并触发一次大地兽相关迷醉事件</div>",
+    "ParamList": [],
+    "Priority": 559,
+    "Rarity": "Low",
+    "ShowType": "HiddenDesc",
+    "Version": "3.0"
+  },
+  "4054040": {
+    "AchievementID": 4054040,
+    "SeriesID": 5,
+    "AchievementTitle": "睡在上铺的兄弟",
+    "AchievementDesc": "向巴克斯购买秘酿，并触发特定迷醉事件<br><div style=\"color:#8790abff;\">※向巴克斯购买秘酿，并触发一次丹恒相关迷醉事件</div>",
+    "ParamList": [],
+    "Priority": 558,
+    "Rarity": "Low",
+    "ShowType": "HiddenDesc",
+    "Version": "3.0"
+  },
+  "4054041": {
+    "AchievementID": 4054041,
+    "SeriesID": 5,
+    "AchievementTitle": "瓶中花月",
+    "AchievementDesc": "向巴克斯购买秘酿，并触发所有迷醉事件",
+    "ParamList": [],
+    "Priority": 557,
+    "Rarity": "Low",
+    "ShowType": "ShowAfterFinish",
+    "Version": "3.0"
+  },
+  "4054042": {
+    "AchievementID": 4054042,
+    "SeriesID": 5,
+    "AchievementTitle": "漂浮曲与凝固音符",
+    "AchievementDesc": "天外回音可绕梁<br><div style=\"color:#8790abff;\">※在帕西提亚出重温过往的天外之音</div>",
+    "ParamList": [],
+    "Priority": 556,
+    "Rarity": "Low",
+    "ShowType": "HiddenDesc",
+    "Version": "3.0"
+  },
+  "4054043": {
+    "AchievementID": 4054043,
+    "SeriesID": 5,
+    "AchievementTitle": "月桂捎来讯息…",
+    "AchievementDesc": "可窥命运，但切莫盲信<br><div style=\"color:#8790abff;\">※让帕西提亚给你算一次命</div>",
+    "ParamList": [],
+    "Priority": 555,
+    "Rarity": "Low",
+    "ShowType": "HiddenDesc",
+    "Version": "3.0"
+  },
+  "4054044": {
+    "AchievementID": 4054044,
+    "SeriesID": 5,
+    "AchievementTitle": "皮袋装满的声音",
+    "AchievementDesc": "阿克蒙的消息向来明码标价，绝对不坑朋友~<br><div style=\"color:#8790abff;\">※买光阿克蒙的打折纸条</div>",
+    "ParamList": [],
+    "Priority": 554,
+    "Rarity": "Low",
+    "ShowType": "HiddenDesc",
+    "Version": "3.0"
+  },
+  "4054045": {
+    "AchievementID": 4054045,
+    "SeriesID": 5,
+    "AchievementTitle": "善良的种类",
+    "AchievementDesc": "师傅，你是做什么工作的？<br><div style=\"color:#8790abff;\">※打扰浴场侍者的工作，让达罗跟你聊了聊</div>",
+    "ParamList": [],
+    "Priority": 553,
+    "Rarity": "Low",
+    "ShowType": "HiddenDesc",
+    "Version": "3.0"
+  },
+  "4054046": {
+    "AchievementID": 4054046,
+    "SeriesID": 5,
+    "AchievementTitle": "土装在另一个胃里",
+    "AchievementDesc": "能吃，但不建议<br><div style=\"color:#8790abff;\">※在与克特西的交谈中，亲自尝试他做给大地兽的「菜色」</div>",
+    "ParamList": [],
+    "Priority": 552,
+    "Rarity": "Low",
+    "ShowType": "HiddenDesc",
+    "Version": "3.0"
+  },
+  "4054047": {
+    "AchievementID": 4054047,
+    "SeriesID": 5,
+    "AchievementTitle": "理性动物之理性",
+    "AchievementDesc": "寻找一个可能和你有着类似爱好的人…<br><div style=\"color:#8790abff;\">※找到住在桶里的第欧根娜</div>",
+    "ParamList": [],
+    "Priority": 551,
+    "Rarity": "Low",
+    "ShowType": "HiddenDesc",
+    "Version": "3.0"
+  },
+  "4054049": {
+    "AchievementID": 4054049,
+    "SeriesID": 5,
+    "AchievementTitle": "磐岩式社交",
+    "AchievementDesc": "有时候，人们只是害羞<br><div style=\"color:#8790abff;\">※锲而不舍地与佩特拉对话，并成功引起他的注意</div>",
+    "ParamList": [],
+    "Priority": 549,
+    "Rarity": "Low",
+    "ShowType": "HiddenDesc",
+    "Version": "3.0"
+  },
+  "4054050": {
+    "AchievementID": 4054050,
+    "SeriesID": 5,
+    "AchievementTitle": "小哥，要苹果吗？",
+    "AchievementDesc": "造访奥赫玛城中所有商贩",
+    "ParamList": [],
+    "Priority": 548,
+    "Rarity": "Low",
+    "ShowType": "ShowAfterFinish",
+    "Version": "3.0"
+  },
+  "4054051": {
+    "AchievementID": 4054051,
+    "SeriesID": 5,
+    "AchievementTitle": "打捞过往之河",
+    "AchievementDesc": "你的私人浴宫里多出了什么？<br><div style=\"color:#8790abff;\">※获得记忆的力量后，发现奇怪的晶体</div>",
+    "ParamList": [],
+    "Priority": 547,
+    "Rarity": "Low",
+    "ShowType": "HiddenDesc",
+    "Version": "3.0"
+  },
+  "4054052": {
+    "AchievementID": 4054052,
+    "SeriesID": 5,
+    "AchievementTitle": "大地在波动",
+    "AchievementDesc": "新的生命正在孕育<br><div style=\"color:#8790abff;\">※触摸大地兽工坊内奇怪的蛋</div>",
+    "ParamList": [],
+    "Priority": 546,
+    "Rarity": "Low",
+    "ShowType": "HiddenDesc",
+    "Version": "3.0"
+  },
+  "4054053": {
+    "AchievementID": 4054053,
+    "SeriesID": 5,
+    "AchievementTitle": "旅行家的虚荣",
+    "AchievementDesc": "猜猜谁是奥赫玛最爱大地兽的人？<br><div style=\"color:#8790abff;\">※拦下大地兽商队「阿尔戈」，并与伊阿宋完成一次对话</div>",
+    "ParamList": [],
+    "Priority": 545,
+    "Rarity": "Low",
+    "ShowType": "HiddenDesc",
+    "Version": "3.0"
+  },
+  "4054054": {
+    "AchievementID": 4054054,
+    "SeriesID": 5,
+    "AchievementTitle": "背上的事诗",
+    "AchievementDesc": "拦下大地兽背上的吟游诗人，与他聊聊",
+    "ParamList": [],
+    "Priority": 544,
+    "Rarity": "Low",
+    "ShowType": "ShowAfterFinish",
+    "Version": "3.0"
+  },
+  "4054055": {
+    "AchievementID": 4054055,
+    "SeriesID": 5,
+    "AchievementTitle": "爱宠机密",
+    "AchievementDesc": "在「永恒圣城」奥赫玛的雅努斯之驹处购买小奇美拉",
+    "ParamList": [],
+    "Priority": 543,
+    "Rarity": "Low",
+    "ShowType": "ShowAfterFinish",
+    "Version": "3.0"
+  },
+  "4054056": {
+    "AchievementID": 4054056,
+    "SeriesID": 5,
+    "AchievementTitle": "时光之尘",
+    "AchievementDesc": "第一次获得记忆残晶",
+    "ParamList": [],
+    "Priority": 542,
+    "Rarity": "Low",
+    "ShowType": "ShowAfterFinish",
+    "Version": "3.0"
+  },
+  "4054057": {
+    "AchievementID": 4054057,
+    "SeriesID": 5,
+    "AchievementTitle": "哭泣的昨日草原",
+    "AchievementDesc": "累积获得100个记忆残晶",
+    "ParamList": [
+      {
+        "Value": 100
+      }
+    ],
+    "Priority": 541,
+    "Rarity": "Low",
+    "ShowType": "ShowAfterFinish",
+    "Version": "3.0"
+  },
+  "4054059": {
+    "AchievementID": 4054059,
+    "SeriesID": 5,
+    "AchievementTitle": "温暖的长屋在何方？",
+    "AchievementDesc": "见证奥赫玛的社会难题<br><div style=\"color:#8790abff;\">※我们该去往何方？面对这一永恒之问，你选择以仁慈作答</div>",
+    "ParamList": [],
+    "Priority": 539,
+    "Rarity": "Low",
+    "ShowType": "ShowAfterFinish",
+    "Version": "3.0"
+  },
+  "4054060": {
+    "AchievementID": 4054060,
+    "SeriesID": 5,
+    "AchievementTitle": "火与铁剑在何方？",
+    "AchievementDesc": "见证奥赫玛的社会难题<br><div style=\"color:#8790abff;\">※我们该去往何方？面对这一永恒之问，你选择以强硬作答</div>",
+    "ParamList": [],
+    "Priority": 538,
+    "Rarity": "Low",
+    "ShowType": "ShowAfterFinish",
+    "Version": "3.0"
+  },
+  "4054061": {
+    "AchievementID": 4054061,
+    "SeriesID": 5,
+    "AchievementTitle": "然旧岁之雪又在何方？",
+    "AchievementDesc": "见证奥赫玛的社会难题<br><div style=\"color:#8790abff;\">※我们该去往何方？面对这一永恒之问，你选择以沉默作答</div>",
+    "ParamList": [],
+    "Priority": 537,
+    "Rarity": "Low",
+    "ShowType": "ShowAfterFinish",
+    "Version": "3.0"
+  },
+  "4054062": {
+    "AchievementID": 4054062,
+    "SeriesID": 5,
+    "AchievementTitle": "忧郁的扼杀",
+    "AchievementDesc": "他首先爱着水，其次是爱着他自己所缺少的那部分<br><div style=\"color:#8790abff;\">※得知阿卡迪亚的真相</div>",
+    "ParamList": [],
+    "Priority": 536,
+    "Rarity": "Low",
+    "ShowType": "HiddenDesc",
+    "Version": "3.0"
+  },
+  "4054063": {
+    "AchievementID": 4054063,
+    "SeriesID": 5,
+    "AchievementTitle": "不再喧嚣",
+    "AchievementDesc": "即使命运冰冷无情，也总有些事情会发生改变<br><div style=\"color:#8790abff;\">※找寻在梦中呼唤帕西提亚的幽灵</div>",
+    "ParamList": [],
+    "Priority": 535,
+    "Rarity": "Low",
+    "ShowType": "HiddenDesc",
+    "Version": "3.0"
+  },
+  "4054064": {
+    "AchievementID": 4054064,
+    "SeriesID": 5,
+    "AchievementTitle": "书中自有……",
+    "AchievementDesc": "好粉的书中精灵！<br><div style=\"color:#8790abff;\">※发现书中的精灵</div>",
+    "ParamList": [],
+    "Priority": 534,
+    "Rarity": "Low",
+    "ShowType": "HiddenDesc",
+    "Version": "3.0"
+  },
+  "4054065": {
+    "AchievementID": 4054065,
+    "SeriesID": 5,
+    "AchievementTitle": "虚构集或永恒史",
+    "AchievementDesc": "那是何人写下的故事？<br><div style=\"color:#8790abff;\">※读完最初的7段故事后，你陷入凝思</div>",
+    "ParamList": [
+      {
+        "Value": 7
+      }
+    ],
+    "Priority": 533,
+    "Rarity": "Low",
+    "ShowType": "HiddenDesc",
+    "Version": "3.0"
+  },
+  "4054066": {
+    "AchievementID": 4054066,
+    "SeriesID": 5,
+    "AchievementTitle": "翁法罗斯公民",
+    "AchievementDesc": "在翁法罗斯旁听过人们的对话",
+    "ParamList": [],
+    "Priority": 532,
+    "Rarity": "Low",
+    "ShowType": "ShowAfterFinish",
+    "Version": "3.0"
+  },
+  "4054067": {
+    "AchievementID": 4054067,
+    "SeriesID": 5,
+    "AchievementTitle": "翁法罗斯包打听",
+    "AchievementDesc": "在翁法罗斯旁听人们的对话10次",
+    "ParamList": [
+      {
+        "Value": 10
+      }
+    ],
+    "Priority": 531,
+    "Rarity": "Low",
+    "ShowType": "ShowAfterFinish",
+    "Version": "3.0"
+  },
+  "4054069": {
+    "AchievementID": 4054069,
+    "SeriesID": 5,
+    "AchievementTitle": "新的传火者",
+    "AchievementDesc": "修复任意一个吉奥里亚活火并满足它的要求",
+    "ParamList": [],
+    "Priority": 570,
+    "Rarity": "Low",
+    "ShowType": "ShowAfterFinish",
+    "Version": "3.0"
+  },
+  "4054070": {
+    "AchievementID": 4054070,
+    "SeriesID": 5,
+    "AchievementTitle": "浴露均沾",
+    "AchievementDesc": "尝试过云石天宫里的高温浴池、低温浴池与试温池",
+    "ParamList": [],
+    "Priority": 550,
+    "Rarity": "Low",
+    "Version": "3.0"
+  },
+  "4054071": {
+    "AchievementID": 4054071,
+    "SeriesID": 5,
+    "AchievementTitle": "朋友，好",
+    "AchievementDesc": "与奥赫玛的山之民们结识",
+    "ParamList": [],
+    "Priority": 540,
+    "Rarity": "Low",
+    "ShowType": "ShowAfterFinish",
+    "Version": "3.0"
+  },
+  "4054072": {
+    "AchievementID": 4054072,
+    "SeriesID": 5,
+    "AchievementTitle": "翁法罗斯万事通",
+    "AchievementDesc": "在翁法罗斯旁听人们的对话30次",
+    "ParamList": [
+      {
+        "Value": 30
+      }
+    ],
+    "Priority": 530,
+    "Rarity": "Low",
+    "ShowType": "ShowAfterFinish",
+    "Version": "3.0"
   },
   "4060101": {
     "AchievementID": 4060101,
     "SeriesID": 6,
     "AchievementTitle": "影逝百度（一）",
     "AchievementDesc": "击败100次凝滞虚影",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 100
+      }
+    ],
     "Priority": 1000,
     "Rarity": "Low",
     "Version": "1.0"
@@ -6361,7 +8348,11 @@
     "SeriesID": 6,
     "AchievementTitle": "影逝百度（四）",
     "AchievementDesc": "击败400次凝滞虚影",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 400
+      }
+    ],
     "Priority": 999,
     "Rarity": "Low",
     "Version": "1.0"
@@ -6371,7 +8362,11 @@
     "SeriesID": 6,
     "AchievementTitle": "影逝百度（八）",
     "AchievementDesc": "击败800次凝滞虚影",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 800
+      }
+    ],
     "Priority": 998,
     "Rarity": "Mid",
     "Version": "1.0"
@@ -6381,7 +8376,11 @@
     "SeriesID": 6,
     "AchievementTitle": "天外魔花（一）",
     "AchievementDesc": "击败100次拟造花萼",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 100
+      }
+    ],
     "Priority": 997,
     "Rarity": "Low",
     "Version": "1.0"
@@ -6391,7 +8390,11 @@
     "SeriesID": 6,
     "AchievementTitle": "天外魔花（二）",
     "AchievementDesc": "击败500次拟造花萼",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 500
+      }
+    ],
     "Priority": 996,
     "Rarity": "Low",
     "Version": "1.0"
@@ -6401,7 +8404,11 @@
     "SeriesID": 6,
     "AchievementTitle": "天外魔花（三）",
     "AchievementDesc": "击败1000次拟造花萼",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 1000
+      }
+    ],
     "Priority": 995,
     "Rarity": "Mid",
     "Version": "1.0"
@@ -6411,7 +8418,11 @@
     "SeriesID": 6,
     "AchievementTitle": "隧洞幽影（一）",
     "AchievementDesc": "通关100次侵蚀隧洞",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 100
+      }
+    ],
     "Priority": 994,
     "Rarity": "Low",
     "Version": "1.0"
@@ -6421,7 +8432,11 @@
     "SeriesID": 6,
     "AchievementTitle": "隧洞幽影（二）",
     "AchievementDesc": "通关400次侵蚀隧洞",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 400
+      }
+    ],
     "Priority": 993,
     "Rarity": "Low",
     "Version": "1.0"
@@ -6431,7 +8446,11 @@
     "SeriesID": 6,
     "AchievementTitle": "隧洞幽影（三）",
     "AchievementDesc": "通关800次侵蚀隧洞",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 800
+      }
+    ],
     "Priority": 992,
     "Rarity": "Mid",
     "Version": "1.0"
@@ -6441,7 +8460,11 @@
     "SeriesID": 6,
     "AchievementTitle": "历战余响（一）",
     "AchievementDesc": "通关1次历战余响",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 1
+      }
+    ],
     "Priority": 991,
     "Rarity": "Low",
     "Version": "1.0"
@@ -6451,7 +8474,11 @@
     "SeriesID": 6,
     "AchievementTitle": "历战余响（二）",
     "AchievementDesc": "通关10次历战余响",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 10
+      }
+    ],
     "Priority": 990,
     "Rarity": "Low",
     "Version": "1.0"
@@ -6461,7 +8488,11 @@
     "SeriesID": 6,
     "AchievementTitle": "重天渡尽",
     "AchievementDesc": "通关「忘却之庭•仙舟回忆其六」",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 1
+      }
+    ],
     "Priority": 989,
     "Rarity": "Mid",
     "Version": "1.2"
@@ -6471,7 +8502,11 @@
     "SeriesID": 7,
     "AchievementTitle": "势不可挡",
     "AchievementDesc": "连续施放4次终结技",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 4
+      }
+    ],
     "Priority": 1000,
     "Rarity": "Low",
     "Version": "1.0"
@@ -6481,7 +8516,14 @@
     "SeriesID": 7,
     "AchievementTitle": "破防致4",
     "AchievementDesc": "单场战斗中对同一敌人造成4次弱点击破",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 1
+      },
+      {
+        "Value": 4
+      }
+    ],
     "Priority": 999,
     "Rarity": "Low",
     "Version": "1.0"
@@ -6491,7 +8533,11 @@
     "SeriesID": 7,
     "AchievementTitle": "认真殴打",
     "AchievementDesc": "造成大于等于1000点单次伤害",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 1000
+      }
+    ],
     "Priority": 998,
     "Rarity": "Low",
     "Version": "1.0"
@@ -6501,7 +8547,11 @@
     "SeriesID": 7,
     "AchievementTitle": "寸劲•开天",
     "AchievementDesc": "造成大于等于20000点单次伤害",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 20000
+      }
+    ],
     "Priority": 997,
     "Rarity": "Mid",
     "Version": "1.0"
@@ -6511,7 +8561,11 @@
     "SeriesID": 7,
     "AchievementTitle": "全数抹煞",
     "AchievementDesc": "造成大于等于150000点单次伤害",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 150000
+      }
+    ],
     "Priority": 996,
     "Rarity": "Mid",
     "Version": "1.0"
@@ -6521,7 +8575,11 @@
     "SeriesID": 7,
     "AchievementTitle": "连续普通拳",
     "AchievementDesc": "单次攻击造成2000点伤害",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 2000
+      }
+    ],
     "Priority": 995,
     "Rarity": "Low",
     "Version": "1.0"
@@ -6531,7 +8589,11 @@
     "SeriesID": 7,
     "AchievementTitle": "太虚剑神",
     "AchievementDesc": "单次攻击造成40000点伤害",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 40000
+      }
+    ],
     "Priority": 994,
     "Rarity": "Mid",
     "Version": "1.0"
@@ -6541,7 +8603,11 @@
     "SeriesID": 7,
     "AchievementTitle": "毁世震荡",
     "AchievementDesc": "单次攻击造成300000点伤害",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 300000
+      }
+    ],
     "Priority": 993,
     "Rarity": "Mid",
     "Version": "1.0"
@@ -6551,7 +8617,11 @@
     "SeriesID": 7,
     "AchievementTitle": "创伤小组白金套餐",
     "AchievementDesc": "我方角色单次提供的治疗量超过8000点",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 8000
+      }
+    ],
     "Priority": 992,
     "Rarity": "Low",
     "Version": "1.0"
@@ -6561,7 +8631,11 @@
     "SeriesID": 7,
     "AchievementTitle": "壁垒",
     "AchievementDesc": "单个角色同时持有的护盾量超过5000点",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 5000
+      }
+    ],
     "Priority": 991,
     "Rarity": "Low",
     "Version": "1.0"
@@ -6571,7 +8645,11 @@
     "SeriesID": 7,
     "AchievementTitle": "冰与火之歌",
     "AchievementDesc": "使1名敌人同时处于冻结和灼烧状态",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 1
+      }
+    ],
     "Priority": 990,
     "Rarity": "Low",
     "Version": "1.0"
@@ -6581,7 +8659,14 @@
     "SeriesID": 7,
     "AchievementTitle": "回忆、悲伤与荆棘",
     "AchievementDesc": "使1名敌人同时处于4个持续伤害状态",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 1
+      },
+      {
+        "Value": 4
+      }
+    ],
     "Priority": 989,
     "Rarity": "Low",
     "Version": "1.0"
@@ -6591,7 +8676,11 @@
     "SeriesID": 7,
     "AchievementTitle": "电子梦",
     "AchievementDesc": "单场战斗中使用雷属性击破伤害消灭3名敌人",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 3
+      }
+    ],
     "Priority": 988,
     "Rarity": "Low",
     "Version": "1.0"
@@ -6601,7 +8690,11 @@
     "SeriesID": 7,
     "AchievementTitle": "华氏451°",
     "AchievementDesc": "单场战斗中使用火属性击破伤害消灭3名敌人",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 3
+      }
+    ],
     "Priority": 987,
     "Rarity": "Low",
     "Version": "1.0"
@@ -6611,7 +8704,11 @@
     "SeriesID": 7,
     "AchievementTitle": "太阳风",
     "AchievementDesc": "单场战斗中使用风属性击破伤害消灭3名敌人",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 3
+      }
+    ],
     "Priority": 986,
     "Rarity": "Low",
     "Version": "1.0"
@@ -6621,7 +8718,11 @@
     "SeriesID": 7,
     "AchievementTitle": "被毁灭的人",
     "AchievementDesc": "单场战斗中使用物理属性击破伤害消灭3名敌人",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 3
+      }
+    ],
     "Priority": 985,
     "Rarity": "Low",
     "Version": "1.0"
@@ -6631,7 +8732,11 @@
     "SeriesID": 7,
     "AchievementTitle": "雷破阵（一）",
     "AchievementDesc": "累计使用雷属性击破伤害消灭20名敌人",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 20
+      }
+    ],
     "Priority": 984,
     "Rarity": "Low",
     "Version": "1.0"
@@ -6641,7 +8746,11 @@
     "SeriesID": 7,
     "AchievementTitle": "雷破阵（二）",
     "AchievementDesc": "累计使用雷属性击破伤害消灭60名敌人",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 60
+      }
+    ],
     "Priority": 983,
     "Rarity": "Low",
     "Version": "1.0"
@@ -6651,7 +8760,11 @@
     "SeriesID": 7,
     "AchievementTitle": "火破阵（一）",
     "AchievementDesc": "累计使用火属性击破伤害消灭20名敌人",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 20
+      }
+    ],
     "Priority": 982,
     "Rarity": "Low",
     "Version": "1.0"
@@ -6661,7 +8774,11 @@
     "SeriesID": 7,
     "AchievementTitle": "火破阵（二）",
     "AchievementDesc": "累计使用火属性击破伤害消灭60名敌人",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 60
+      }
+    ],
     "Priority": 981,
     "Rarity": "Low",
     "Version": "1.0"
@@ -6671,7 +8788,11 @@
     "SeriesID": 7,
     "AchievementTitle": "风破阵（一）",
     "AchievementDesc": "累计使用风属性击破伤害消灭20名敌人",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 20
+      }
+    ],
     "Priority": 980,
     "Rarity": "Low",
     "Version": "1.0"
@@ -6681,7 +8802,11 @@
     "SeriesID": 7,
     "AchievementTitle": "风破阵（二）",
     "AchievementDesc": "累计使用风属性击破伤害消灭60名敌人",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 60
+      }
+    ],
     "Priority": 979,
     "Rarity": "Low",
     "Version": "1.0"
@@ -6691,7 +8816,11 @@
     "SeriesID": 7,
     "AchievementTitle": "物理破阵（一）",
     "AchievementDesc": "累计使用物理属性击破伤害消灭20名敌人",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 20
+      }
+    ],
     "Priority": 978,
     "Rarity": "Low",
     "Version": "1.0"
@@ -6701,7 +8830,11 @@
     "SeriesID": 7,
     "AchievementTitle": "物理破阵（二）",
     "AchievementDesc": "累计使用物理属性击破伤害消灭60名敌人",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 60
+      }
+    ],
     "Priority": 977,
     "Rarity": "Low",
     "Version": "1.0"
@@ -6711,7 +8844,11 @@
     "SeriesID": 7,
     "AchievementTitle": "遇事不决，量子力学",
     "AchievementDesc": "单场战斗中造成5次量子属性的弱点击破",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 5
+      }
+    ],
     "Priority": 976,
     "Rarity": "Low",
     "Version": "1.0"
@@ -6721,7 +8858,11 @@
     "SeriesID": 7,
     "AchievementTitle": "冷酷的方程式",
     "AchievementDesc": "单场战斗中造成5次冰属性的弱点击破",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 5
+      }
+    ],
     "Priority": 975,
     "Rarity": "Low",
     "Version": "1.0"
@@ -6731,7 +8872,11 @@
     "SeriesID": 7,
     "AchievementTitle": "虚数不能解释一切",
     "AchievementDesc": "单场战斗中造成5次虚数属性的弱点击破",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 5
+      }
+    ],
     "Priority": 974,
     "Rarity": "Low",
     "Version": "1.0"
@@ -6741,7 +8886,11 @@
     "SeriesID": 7,
     "AchievementTitle": "量子破阵（一）",
     "AchievementDesc": "累计触发100次量子属性击破效果",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 100
+      }
+    ],
     "Priority": 973,
     "Rarity": "Low",
     "Version": "1.0"
@@ -6751,7 +8900,11 @@
     "SeriesID": 7,
     "AchievementTitle": "量子破阵（二）",
     "AchievementDesc": "累计触发300次量子属性击破效果",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 300
+      }
+    ],
     "Priority": 972,
     "Rarity": "Low",
     "Version": "1.0"
@@ -6761,7 +8914,11 @@
     "SeriesID": 7,
     "AchievementTitle": "冰破阵（一）",
     "AchievementDesc": "累计触发100次冰属性击破效果",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 100
+      }
+    ],
     "Priority": 971,
     "Rarity": "Low",
     "Version": "1.0"
@@ -6771,7 +8928,11 @@
     "SeriesID": 7,
     "AchievementTitle": "冰破阵（二）",
     "AchievementDesc": "累计触发300次冰属性击破效果",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 300
+      }
+    ],
     "Priority": 970,
     "Rarity": "Low",
     "Version": "1.0"
@@ -6781,7 +8942,11 @@
     "SeriesID": 7,
     "AchievementTitle": "虚数破阵（一）",
     "AchievementDesc": "累计触发100次虚数属性击破效果",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 100
+      }
+    ],
     "Priority": 969,
     "Rarity": "Low",
     "Version": "1.0"
@@ -6791,7 +8956,11 @@
     "SeriesID": 7,
     "AchievementTitle": "虚数破阵（二）",
     "AchievementDesc": "累计触发300次虚数属性击破效果",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 300
+      }
+    ],
     "Priority": 968,
     "Rarity": "Low",
     "Version": "1.0"
@@ -6801,7 +8970,11 @@
     "SeriesID": 7,
     "AchievementTitle": "先发制人",
     "AchievementDesc": "使用秘技伤害消灭1名敌人",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 1
+      }
+    ],
     "Priority": 967,
     "Rarity": "Low",
     "Version": "1.0"
@@ -6811,7 +8984,11 @@
     "SeriesID": 7,
     "AchievementTitle": "秘技破阵（一）",
     "AchievementDesc": "累计使用秘技伤害消灭10名敌人",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 10
+      }
+    ],
     "Priority": 966,
     "Rarity": "Low",
     "Version": "1.0"
@@ -6821,7 +8998,11 @@
     "SeriesID": 7,
     "AchievementTitle": "莫桑比克射击法",
     "AchievementDesc": "单场战斗中通过追加攻击消灭3个敌人",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 3
+      }
+    ],
     "Priority": 965,
     "Rarity": "Low",
     "Version": "1.0"
@@ -6831,7 +9012,11 @@
     "SeriesID": 7,
     "AchievementTitle": "追击破阵（一）",
     "AchievementDesc": "累计使用追加攻击消灭80名敌人",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 80
+      }
+    ],
     "Priority": 964,
     "Rarity": "Low",
     "Version": "1.0"
@@ -6841,7 +9026,11 @@
     "SeriesID": 7,
     "AchievementTitle": "追击破阵（二）",
     "AchievementDesc": "累计使用追加攻击消灭240名敌人",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 240
+      }
+    ],
     "Priority": 963,
     "Rarity": "Low",
     "Version": "1.0"
@@ -6851,7 +9040,11 @@
     "SeriesID": 7,
     "AchievementTitle": "一把小刀…",
     "AchievementDesc": "单场战斗中通过持续伤害消灭3名敌人",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 3
+      }
+    ],
     "Priority": 962,
     "Rarity": "Low",
     "Version": "1.0"
@@ -6861,7 +9054,11 @@
     "SeriesID": 7,
     "AchievementTitle": "持伤破阵（一）",
     "AchievementDesc": "累计使用持续伤害消灭80名敌人",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 80
+      }
+    ],
     "Priority": 961,
     "Rarity": "Low",
     "Version": "1.0"
@@ -6871,7 +9068,11 @@
     "SeriesID": 7,
     "AchievementTitle": "持伤破阵（二）",
     "AchievementDesc": "累计使用持续伤害消灭240名敌人",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 240
+      }
+    ],
     "Priority": 960,
     "Rarity": "Low",
     "Version": "1.0"
@@ -6881,7 +9082,11 @@
     "SeriesID": 7,
     "AchievementTitle": "无意冒犯",
     "AchievementDesc": "单场战斗中，累计解除敌方目标5次增益效果",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 5
+      }
+    ],
     "Priority": 959,
     "Rarity": "Low",
     "Version": "1.0"
@@ -6891,7 +9096,11 @@
     "SeriesID": 7,
     "AchievementTitle": "驱魔人",
     "AchievementDesc": "单场战斗中，累计解除我方目标5次负面效果",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 5
+      }
+    ],
     "Priority": 958,
     "Rarity": "Low",
     "Version": "1.0"
@@ -6901,7 +9110,11 @@
     "SeriesID": 8,
     "AchievementTitle": "三人成行",
     "AchievementDesc": "在队伍中有3个相同命途角色的情况下获得战斗胜利",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 3
+      }
+    ],
     "Priority": 992,
     "Rarity": "Low",
     "Version": "1.0"
@@ -6911,7 +9124,11 @@
     "SeriesID": 8,
     "AchievementTitle": "消消乐",
     "AchievementDesc": "在队伍中有3个相同属性角色的情况下获得战斗胜利",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 3
+      }
+    ],
     "Priority": 990,
     "Rarity": "Low",
     "Version": "1.0"
@@ -6921,7 +9138,11 @@
     "SeriesID": 8,
     "AchievementTitle": "独狼",
     "AchievementDesc": "队伍中仅有单个角色的情况下获得10场胜利",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 10
+      }
+    ],
     "Priority": 981,
     "Rarity": "Low",
     "ShowType": "ShowAfterFinish",
@@ -6932,7 +9153,14 @@
     "SeriesID": 8,
     "AchievementTitle": "敬琥珀王",
     "AchievementDesc": "队伍中有4名「存护」命途角色的情况下获得10场胜利",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 4
+      },
+      {
+        "Value": 10
+      }
+    ],
     "Priority": 980,
     "Rarity": "Low",
     "ShowType": "ShowAfterFinish",
@@ -6943,7 +9171,14 @@
     "SeriesID": 8,
     "AchievementTitle": "受命净空诸界",
     "AchievementDesc": "队伍中有4名「毁灭」命途角色的情况下获得10场胜利",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 4
+      },
+      {
+        "Value": 10
+      }
+    ],
     "Priority": 979,
     "Rarity": "Low",
     "ShowType": "ShowAfterFinish",
@@ -6954,7 +9189,14 @@
     "SeriesID": 8,
     "AchievementTitle": "仙舟联盟",
     "AchievementDesc": "队伍中有4名「巡猎」命途角色的情况下获得10场胜利",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 4
+      },
+      {
+        "Value": 10
+      }
+    ],
     "Priority": 978,
     "Rarity": "Low",
     "ShowType": "ShowAfterFinish",
@@ -6965,7 +9207,14 @@
     "SeriesID": 8,
     "AchievementTitle": "无意义的成就",
     "AchievementDesc": "队伍中有4名「虚无」命途角色的情况下获得10场胜利",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 4
+      },
+      {
+        "Value": 10
+      }
+    ],
     "Priority": 977,
     "Rarity": "Low",
     "ShowType": "ShowAfterFinish",
@@ -6976,7 +9225,14 @@
     "SeriesID": 8,
     "AchievementTitle": "大和谐",
     "AchievementDesc": "队伍中有4名「同谐」命途角色的情况下获得10场胜利",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 4
+      },
+      {
+        "Value": 10
+      }
+    ],
     "Priority": 976,
     "Rarity": "Low",
     "ShowType": "ShowAfterFinish",
@@ -6987,7 +9243,14 @@
     "SeriesID": 8,
     "AchievementTitle": "知识就是力量",
     "AchievementDesc": "队伍中有4名「智识」命途角色的情况下获得10场胜利",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 4
+      },
+      {
+        "Value": 10
+      }
+    ],
     "Priority": 975,
     "Rarity": "Low",
     "ShowType": "ShowAfterFinish",
@@ -6998,7 +9261,14 @@
     "SeriesID": 8,
     "AchievementTitle": "药师奇迹",
     "AchievementDesc": "队伍中有4名「丰饶」命途角色的情况下获得10场胜利",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 4
+      },
+      {
+        "Value": 10
+      }
+    ],
     "Priority": 974,
     "Rarity": "Low",
     "ShowType": "ShowAfterFinish",
@@ -7009,7 +9279,14 @@
     "SeriesID": 8,
     "AchievementTitle": "狂风臣服",
     "AchievementDesc": "队伍中有4名「风」属性角色的情况下获得10场胜利",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 4
+      },
+      {
+        "Value": 10
+      }
+    ],
     "Priority": 973,
     "Rarity": "Low",
     "ShowType": "ShowAfterFinish",
@@ -7020,7 +9297,14 @@
     "SeriesID": 8,
     "AchievementTitle": "雷电招来",
     "AchievementDesc": "队伍中有4名「雷」属性角色的情况下获得10场胜利",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 4
+      },
+      {
+        "Value": 10
+      }
+    ],
     "Priority": 972,
     "Rarity": "Low",
     "ShowType": "ShowAfterFinish",
@@ -7031,7 +9315,14 @@
     "SeriesID": 8,
     "AchievementTitle": "烈焰焚尽",
     "AchievementDesc": "队伍中有4名「火」属性角色的情况下获得10场胜利",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 4
+      },
+      {
+        "Value": 10
+      }
+    ],
     "Priority": 971,
     "Rarity": "Low",
     "ShowType": "ShowAfterFinish",
@@ -7042,7 +9333,14 @@
     "SeriesID": 8,
     "AchievementTitle": "冰霜主人",
     "AchievementDesc": "队伍中有4名「冰」属性角色的情况下获得10场胜利",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 4
+      },
+      {
+        "Value": 10
+      }
+    ],
     "Priority": 970,
     "Rarity": "Low",
     "ShowType": "ShowAfterFinish",
@@ -7053,7 +9351,14 @@
     "SeriesID": 8,
     "AchievementTitle": "量子测试",
     "AchievementDesc": "队伍中有4名「量子」属性角色的情况下获得10场胜利",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 4
+      },
+      {
+        "Value": 10
+      }
+    ],
     "Priority": 969,
     "Rarity": "Low",
     "ShowType": "ShowAfterFinish",
@@ -7064,7 +9369,14 @@
     "SeriesID": 8,
     "AchievementTitle": "虚数法则",
     "AchievementDesc": "队伍中有4名「虚数」属性角色的情况下获得10场胜利",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 4
+      },
+      {
+        "Value": 10
+      }
+    ],
     "Priority": 968,
     "Rarity": "Low",
     "ShowType": "ShowAfterFinish",
@@ -7075,7 +9387,14 @@
     "SeriesID": 8,
     "AchievementTitle": "拳头说话",
     "AchievementDesc": "队伍中有4名「物理」属性角色的情况下获得10场胜利",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 4
+      },
+      {
+        "Value": 10
+      }
+    ],
     "Priority": 967,
     "Rarity": "Low",
     "ShowType": "ShowAfterFinish",
@@ -7086,7 +9405,14 @@
     "SeriesID": 7,
     "AchievementTitle": "永冻机",
     "AchievementDesc": "连续冻结1名敌人3回合",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 1
+      },
+      {
+        "Value": 3
+      }
+    ],
     "Priority": 957,
     "Rarity": "Low",
     "Version": "1.0"
@@ -7106,7 +9432,14 @@
     "SeriesID": 7,
     "AchievementTitle": "让我单挑",
     "AchievementDesc": "4名角色进入战斗，在战斗胜利时仅有1名角色尚能战斗",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 4
+      },
+      {
+        "Value": 1
+      }
+    ],
     "Priority": 955,
     "Rarity": "Low",
     "Version": "1.0"
@@ -7126,7 +9459,11 @@
     "SeriesID": 7,
     "AchievementTitle": "能量葛朗台",
     "AchievementDesc": "任意角色连续4个回合开始时，能量保持为100%",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 4
+      }
+    ],
     "Priority": 953,
     "Rarity": "Low",
     "Version": "1.0"
@@ -7136,7 +9473,11 @@
     "SeriesID": 7,
     "AchievementTitle": "似花过亡城",
     "AchievementDesc": "单场战斗中，使2名陷入无法战斗状态角色回复至可战斗状态",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 2
+      }
+    ],
     "Priority": 952,
     "Rarity": "Low",
     "Version": "1.0"
@@ -7146,7 +9487,11 @@
     "SeriesID": 7,
     "AchievementTitle": "落井下石",
     "AchievementDesc": "单场战斗中对陷入弱点击破的敌人累计造成20000伤害",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 20000
+      }
+    ],
     "Priority": 951,
     "Rarity": "Low",
     "Version": "1.0"
@@ -7156,7 +9501,11 @@
     "SeriesID": 7,
     "AchievementTitle": "甲胄之殇",
     "AchievementDesc": "单场战斗，1名角色累计受到10000点伤害",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 10000
+      }
+    ],
     "Priority": 950,
     "Rarity": "Low",
     "Version": "1.0"
@@ -7166,7 +9515,11 @@
     "SeriesID": 7,
     "AchievementTitle": "各个击破",
     "AchievementDesc": "单次行动中造成4名敌方目标弱点击破",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 4
+      }
+    ],
     "Priority": 949,
     "Rarity": "Low",
     "Version": "1.0"
@@ -7186,7 +9539,11 @@
     "SeriesID": 7,
     "AchievementTitle": "不打无准备之仗",
     "AchievementDesc": "任意角色回合开始时，同时拥有大于等于5种增益效果",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 5
+      }
+    ],
     "Priority": 947,
     "Rarity": "Low",
     "Version": "1.0"
@@ -7196,7 +9553,11 @@
     "SeriesID": 7,
     "AchievementTitle": "高速之星",
     "AchievementDesc": "我方全体在单场战斗中累计行动100次",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 100
+      }
+    ],
     "Priority": 946,
     "Rarity": "Low",
     "Version": "1.0"
@@ -7206,7 +9567,11 @@
     "SeriesID": 7,
     "AchievementTitle": "极限求生",
     "AchievementDesc": "当队伍中4名角色生命值百分比同时小于等于5%的情况下获得战斗胜利",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 0.05
+      }
+    ],
     "Priority": 945,
     "Rarity": "Mid",
     "Version": "1.0"
@@ -7216,7 +9581,11 @@
     "SeriesID": 7,
     "AchievementTitle": "子弹时间",
     "AchievementDesc": "在我方单位行动10次期间，敌方单位未行动",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 10
+      }
+    ],
     "Priority": 944,
     "Rarity": "Low",
     "Version": "1.0"
@@ -7237,7 +9606,14 @@
     "SeriesID": 7,
     "AchievementTitle": "大炮打蚊子",
     "AchievementDesc": "单次攻击对当前生命值百分比小于等于1%的敌方目标造成大于等于20000点伤害",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 0.01
+      },
+      {
+        "Value": 20000
+      }
+    ],
     "Priority": 942,
     "Rarity": "Low",
     "ShowType": "ShowAfterFinish",
@@ -7248,7 +9624,11 @@
     "SeriesID": 7,
     "AchievementTitle": "主角的特权",
     "AchievementDesc": "单场战斗中，使用「毁灭」命途开拓者对敌人造成3次弱点击破",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 3
+      }
+    ],
     "Priority": 941,
     "Rarity": "Mid",
     "ShowType": "ShowAfterFinish",
@@ -7259,7 +9639,11 @@
     "SeriesID": 7,
     "AchievementTitle": "转体四周半",
     "AchievementDesc": "我方目标造成单次攻击后，黑塔触发天赋旋转5圈",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 5
+      }
+    ],
     "Priority": 940,
     "Rarity": "Mid",
     "ShowType": "ShowAfterFinish",
@@ -7270,7 +9654,11 @@
     "SeriesID": 7,
     "AchievementTitle": "滔天牌浪",
     "AchievementDesc": "使用青雀连续3回合开始时处于「暗杠」状态",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 3
+      }
+    ],
     "Priority": 939,
     "Rarity": "Mid",
     "ShowType": "ShowAfterFinish",
@@ -7281,7 +9669,11 @@
     "SeriesID": 7,
     "AchievementTitle": "我的回合",
     "AchievementDesc": "在下一个我方角色行动前，使希儿连续行动5次",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 5
+      }
+    ],
     "Priority": 938,
     "Rarity": "Mid",
     "ShowType": "ShowAfterFinish",
@@ -7306,6 +9698,7 @@
     "ParamList": [],
     "Priority": 936,
     "Rarity": "Mid",
+    "ShowType": "HiddenDesc",
     "Version": "1.0"
   },
   "4071506": {
@@ -7313,7 +9706,11 @@
     "SeriesID": 7,
     "AchievementTitle": "过度防卫",
     "AchievementDesc": "我方角色杰帕德施加的护盾没有遭到任何损耗的情况下获得1场战斗胜利",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 1
+      }
+    ],
     "Priority": 935,
     "Rarity": "Mid",
     "ShowType": "ShowAfterFinish",
@@ -7324,7 +9721,11 @@
     "SeriesID": 8,
     "AchievementTitle": "相亲相爱一家人",
     "AchievementDesc": "使用姬子、瓦尔特、丹恒、三月七的4人队伍配置取得1场战斗的胜利",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 1
+      }
+    ],
     "Priority": 989,
     "Rarity": "Low",
     "ShowType": "ShowAfterFinish",
@@ -7335,7 +9736,11 @@
     "SeriesID": 8,
     "AchievementTitle": "筑城者（与前筑城者）",
     "AchievementDesc": "使用布洛妮娅、杰帕德、佩拉、希露瓦的4人队伍配置取得1场战斗的胜利",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 1
+      }
+    ],
     "Priority": 987,
     "Rarity": "Low",
     "ShowType": "ShowAfterFinish",
@@ -7346,7 +9751,11 @@
     "SeriesID": 7,
     "AchievementTitle": "当家国之歌响起",
     "AchievementDesc": "使用我方角色布洛妮娅在对战杰帕德、可可利亚和布洛妮娅时分别施放1次「贝洛伯格进行曲」",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 1
+      }
+    ],
     "Priority": 934,
     "Rarity": "Low",
     "ShowType": "ShowAfterFinish",
@@ -7401,7 +9810,11 @@
     "SeriesID": 7,
     "AchievementTitle": "不讲武德",
     "AchievementDesc": "队伍中4名角色都激怒守护者之影",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 4
+      }
+    ],
     "Priority": 929,
     "Rarity": "Mid",
     "ShowType": "ShowAfterFinish",
@@ -7422,7 +9835,11 @@
     "SeriesID": 7,
     "AchievementTitle": "强攻！不计代价！",
     "AchievementDesc": "触发4次以上银鬃尉官「盾反」并将其击败",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 4
+      }
+    ],
     "Priority": 927,
     "Rarity": "Low",
     "Version": "1.0"
@@ -7532,7 +9949,11 @@
     "SeriesID": 7,
     "AchievementTitle": "左膀右臂与右臂与右臂",
     "AchievementDesc": "消灭4个辅助机械臂单元的情况下击败史瓦罗",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 4
+      }
+    ],
     "Priority": 916,
     "Rarity": "Mid",
     "Version": "1.0"
@@ -7542,7 +9963,11 @@
     "SeriesID": 7,
     "AchievementTitle": "自制碎碎冰",
     "AchievementDesc": "消灭可可利亚召唤出的冰锋4次",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 4
+      }
+    ],
     "Priority": 915,
     "Rarity": "Low",
     "Version": "1.0"
@@ -7623,7 +10048,11 @@
     "SeriesID": 8,
     "AchievementTitle": "百搭鬼牌",
     "AchievementDesc": "使用累计20位角色与桑博组队并取得至少1场战斗的胜利",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 20
+      }
+    ],
     "Priority": 991,
     "Rarity": "Low",
     "ShowType": "ShowAfterFinish",
@@ -7634,7 +10063,11 @@
     "SeriesID": 7,
     "AchievementTitle": "脆弱之身",
     "AchievementDesc": "单场战斗中，使用我方角色银狼为同一敌方单体累计添加3次不同属性的弱点",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 3
+      }
+    ],
     "Priority": 907,
     "Rarity": "Mid",
     "ShowType": "ShowAfterFinish",
@@ -7645,7 +10078,11 @@
     "SeriesID": 7,
     "AchievementTitle": "猎手何苦为难猎手",
     "AchievementDesc": "使用我方角色银狼在对战卡芙卡时，单场战斗中累计为卡芙卡添加2个弱点",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 2
+      }
+    ],
     "Priority": 906,
     "Rarity": "Low",
     "ShowType": "ShowAfterFinish",
@@ -7656,7 +10093,11 @@
     "SeriesID": 7,
     "AchievementTitle": "印堂发黑",
     "AchievementDesc": "与幻胧的单场战斗中，累计解除「噬命」状态5次",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 5
+      }
+    ],
     "Priority": 905,
     "Rarity": "Low",
     "Version": "1.2"
@@ -7666,7 +10107,11 @@
     "SeriesID": 7,
     "AchievementTitle": "园艺达人",
     "AchievementDesc": "不消灭丰饶玄莲的情况下击败幻胧",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 1
+      }
+    ],
     "Priority": 904,
     "Rarity": "Mid",
     "ShowType": "ShowAfterFinish",
@@ -7677,7 +10122,11 @@
     "SeriesID": 7,
     "AchievementTitle": "BOOM～",
     "AchievementDesc": "单场战斗中，使用卡芙卡单次施放「月光摩挲连绵」触发4个不同的持续伤害的效果",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 1
+      }
+    ],
     "Priority": 903,
     "Rarity": "Low",
     "ShowType": "ShowAfterFinish",
@@ -7688,9 +10137,17 @@
     "SeriesID": 7,
     "AchievementTitle": "求不得",
     "AchievementDesc": "多事<br><div style=\"color:#8790abff;\">※单场战斗中，使用我方角色刃在单次攻击中从血量小于等于5%恢复至大于等于30%2次</div>",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 0.05
+      },
+      {
+        "Value": 2
+      }
+    ],
     "Priority": 902,
     "Rarity": "Low",
+    "ShowType": "HiddenDesc",
     "Version": "1.2"
   },
   "4072505": {
@@ -7698,7 +10155,11 @@
     "SeriesID": 7,
     "AchievementTitle": "去吧，阿刃",
     "AchievementDesc": "使用我方角色刃对战卡芙卡并陷入「支配」状态",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 1
+      }
+    ],
     "Priority": 901,
     "Rarity": "Low",
     "ShowType": "ShowAfterFinish",
@@ -7709,7 +10170,11 @@
     "SeriesID": 7,
     "AchievementTitle": "点数取胜",
     "AchievementDesc": "单场战斗中，使用卢卡累计施放4次「直冲碎天拳」",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 4
+      }
+    ],
     "Priority": 900,
     "Rarity": "Low",
     "ShowType": "ShowAfterFinish",
@@ -7720,7 +10185,11 @@
     "SeriesID": 7,
     "AchievementTitle": "自我暗示",
     "AchievementDesc": "使用我方角色卡芙卡对战卡芙卡并陷入「支配」状态",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 1
+      }
+    ],
     "Priority": 899,
     "Rarity": "Low",
     "ShowType": "ShowAfterFinish",
@@ -7797,7 +10266,11 @@
     "SeriesID": 7,
     "AchievementTitle": "只是虫子",
     "AchievementDesc": "单次攻击中同时消灭2只虫群•真蛰虫",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 2
+      }
+    ],
     "Priority": 890,
     "Rarity": "Low",
     "ShowType": "ShowAfterFinish",
@@ -7830,7 +10303,11 @@
     "SeriesID": 7,
     "AchievementTitle": "三龙出海",
     "AchievementDesc": "单场战斗中连续3次在丹恒•饮月的回合施放「盘拏耀跃」",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 3
+      }
+    ],
     "Priority": 888,
     "Rarity": "Low",
     "Version": "1.3"
@@ -7840,7 +10317,11 @@
     "SeriesID": 7,
     "AchievementTitle": "求生、求生、求生",
     "AchievementDesc": "单场战斗使用玲可提高3次友方生命上限",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 3
+      }
+    ],
     "Priority": 887,
     "Rarity": "Low",
     "Version": "1.3"
@@ -7850,7 +10331,11 @@
     "SeriesID": 7,
     "AchievementTitle": "呵，银河大乐透？",
     "AchievementDesc": "单场战斗中，符玄累计触发4次天赋「乾清坤夷，否极泰来」的生命回复效果",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 4
+      }
+    ],
     "Priority": 886,
     "Rarity": "Low",
     "ShowType": "ShowAfterFinish",
@@ -7904,7 +10389,11 @@
     "SeriesID": 7,
     "AchievementTitle": "全体集合！解散——",
     "AchievementDesc": "使用藿藿秘技「凶煞•劾压鬼物」，同时让6个及以上目标逃跑",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 6
+      }
+    ],
     "Priority": 879,
     "Rarity": "Low",
     "Version": "1.5"
@@ -7914,7 +10403,11 @@
     "SeriesID": 7,
     "AchievementTitle": "燚",
     "AchievementDesc": "在「幻障迷境•浮烟」挑战中，场上同时存在4只「炎华造物」",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 4
+      }
+    ],
     "Priority": 880,
     "Rarity": "Low",
     "ShowType": "ShowAfterFinish",
@@ -7925,7 +10418,11 @@
     "SeriesID": 7,
     "AchievementTitle": "五雷轰顶",
     "AchievementDesc": "同时触发3个及以上的「五雷镇邪」并结束战斗",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 3
+      }
+    ],
     "Priority": 881,
     "Rarity": "Low",
     "ShowType": "ShowAfterFinish",
@@ -7958,7 +10455,11 @@
     "SeriesID": 7,
     "AchievementTitle": "地主家也没有余粮啊",
     "AchievementDesc": "拥有「窃据」异状的敌方单位攻击时偷取战技点失败5次",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 5
+      }
+    ],
     "Priority": 884,
     "Rarity": "Low",
     "ShowType": "ShowAfterFinish",
@@ -8002,7 +10503,11 @@
     "SeriesID": 7,
     "AchievementTitle": "冥狱无常",
     "AchievementDesc": "使用同时包含寒鸦、雪衣的队伍获得1场战斗的胜利",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 1
+      }
+    ],
     "Priority": 880,
     "Rarity": "Low",
     "Version": "1.6"
@@ -8015,6 +10520,7 @@
     "ParamList": [],
     "Priority": 879,
     "Rarity": "Low",
+    "ShowType": "HiddenDesc",
     "Version": "1.6"
   },
   "4072906": {
@@ -8022,7 +10528,11 @@
     "SeriesID": 7,
     "AchievementTitle": "舌战群儒",
     "AchievementDesc": "使用真理医生的秘技「偶像塑造」一次性嘲讽6个及以上的敌方目标",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 6
+      }
+    ],
     "Priority": 878,
     "Rarity": "Low",
     "ShowType": "ShowAfterFinish",
@@ -8033,7 +10543,11 @@
     "SeriesID": 7,
     "AchievementTitle": "毁人不倦",
     "AchievementDesc": "单场战斗中，使用真理医生连续4个回合触发天赋「我思故我在」的追加攻击效果",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 4
+      }
+    ],
     "Priority": 877,
     "Rarity": "Low",
     "Version": "1.6"
@@ -8053,7 +10567,11 @@
     "SeriesID": 7,
     "AchievementTitle": "全民欢乐秀",
     "AchievementDesc": "单次战斗中，使3个连续的惊梦剧团的圆幕先生都进入「惊喜频道」状态",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 3
+      }
+    ],
     "Priority": 875,
     "Rarity": "Low",
     "Version": "2.0"
@@ -8063,7 +10581,11 @@
     "SeriesID": 7,
     "AchievementTitle": "有害垃圾",
     "AchievementDesc": "战斗中1名我方角色被王下一桶击败",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 1
+      }
+    ],
     "Priority": 874,
     "Rarity": "Low",
     "Version": "2.0"
@@ -8073,7 +10595,11 @@
     "SeriesID": 7,
     "AchievementTitle": "万般皆注定",
     "AchievementDesc": "黑天鹅施放秘技「取此真相，弃舍表征」进入战斗时，累计使敌方目标陷入大于等于20层「奥迹」",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 20
+      }
+    ],
     "Priority": 873,
     "Rarity": "Low",
     "ShowType": "ShowAfterFinish",
@@ -8084,7 +10610,11 @@
     "SeriesID": 7,
     "AchievementTitle": "对、对、对、对不起",
     "AchievementDesc": "米沙施放终结技「要…要迟到了！」时，单次攻击同时使至少4个不同的敌人陷入冻结状态",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 4
+      }
+    ],
     "Priority": 872,
     "Rarity": "Low",
     "ShowType": "ShowAfterFinish",
@@ -8095,7 +10625,11 @@
     "SeriesID": 7,
     "AchievementTitle": "打上花火",
     "AchievementDesc": "单场战斗中，使用花火的终结技「一人千役」共计获得20个战技点",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 20
+      }
+    ],
     "Priority": 871,
     "Rarity": "Low",
     "ShowType": "ShowAfterFinish",
@@ -8106,7 +10640,11 @@
     "SeriesID": 7,
     "AchievementTitle": "持续断糖",
     "AchievementDesc": "单次战斗中，使用护盾反弹同一惊梦剧团的甜猿泰山扔出的10个汽水瓶",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 10
+      }
+    ],
     "Priority": 870,
     "Rarity": "Low",
     "Version": "2.0"
@@ -8136,7 +10674,14 @@
     "SeriesID": 7,
     "AchievementTitle": "燃我心火，焚尽其身",
     "AchievementDesc": "在和「星核猎手」萨姆的战斗中，使用燃烧的战技点使我方1名角色的生命值低于5%",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 1
+      },
+      {
+        "Value": 5
+      }
+    ],
     "Priority": 867,
     "Rarity": "Low",
     "Version": "2.0"
@@ -8146,7 +10691,14 @@
     "SeriesID": 7,
     "AchievementTitle": "双六",
     "AchievementDesc": "在和「石心十人」诡弈砂金的战斗中，单次攻击使至少2个「所有或一无所有」同时掷出6点",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 2
+      },
+      {
+        "Value": 6
+      }
+    ],
     "Priority": 866,
     "Rarity": "Low",
     "Version": "2.1"
@@ -8156,7 +10708,11 @@
     "SeriesID": 7,
     "AchievementTitle": "All my people, all my people…",
     "AchievementDesc": "在和「石心十人」诡弈砂金的战斗中，队伍中4名角色在同一次赌局中全部获胜",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 4
+      }
+    ],
     "Priority": 865,
     "Rarity": "Low",
     "Version": "2.1"
@@ -8177,7 +10733,14 @@
     "SeriesID": 7,
     "AchievementTitle": "偷盲注",
     "AchievementDesc": "单场战斗中，「盲注」为0时，使用砂金的终结技「轮盘勋爵」获得7点「盲注」",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 0
+      },
+      {
+        "Value": 7
+      }
+    ],
     "Priority": 863,
     "Rarity": "Low",
     "ShowType": "ShowAfterFinish",
@@ -8229,7 +10792,11 @@
     "SeriesID": 7,
     "AchievementTitle": "肥皂剧",
     "AchievementDesc": "在与「同音共律的来日」战斗时，4名角色均进入过睡眠状态",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 4
+      }
+    ],
     "Priority": 857,
     "Rarity": "Low",
     "Version": "2.2"
@@ -8249,7 +10816,11 @@
     "SeriesID": 7,
     "AchievementTitle": "群像剧",
     "AchievementDesc": "在「昔在、今在、永在的剧目」第一阶段时，让3名敌人轮流成为一次【司律】",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 3
+      }
+    ],
     "Priority": 855,
     "Rarity": "Low",
     "Version": "2.2"
@@ -8279,9 +10850,14 @@
     "SeriesID": 7,
     "AchievementTitle": "一首歌的时间",
     "AchievementDesc": "聆听知更鸟的歌声<br><div style=\"color:#8790abff;\">※战斗中，施放知更鸟的终结技「千音迭奏，群星赋格」后，在战斗实况观看知更鸟10秒以上</div>",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 10
+      }
+    ],
     "Priority": 852,
     "Rarity": "Low",
+    "ShowType": "HiddenDesc",
     "Version": "2.2"
   },
   "4073208": {
@@ -8289,7 +10865,11 @@
     "SeriesID": 7,
     "AchievementTitle": "哈梅尔的吹笛手",
     "AchievementDesc": "探索中使用知更鸟秘技「酣醉序曲」后，吸引6个及以上的敌方跟随",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 6
+      }
+    ],
     "Priority": 851,
     "Rarity": "Low",
     "ShowType": "ShowAfterFinish",
@@ -8310,7 +10890,11 @@
     "SeriesID": 7,
     "AchievementTitle": "赌命大赛",
     "AchievementDesc": "战斗中，我方角色波提欧在一回合内累计获得3层【优势口袋】",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 3
+      }
+    ],
     "Priority": 849,
     "Rarity": "Low",
     "ShowType": "ShowAfterFinish",
@@ -8342,7 +10926,11 @@
     "SeriesID": 7,
     "AchievementTitle": "盛会之星专项组",
     "AchievementDesc": "使用同时包含托帕&账账、真理医生、砂金、翡翠的队伍获得1场战斗的胜利",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 1
+      }
+    ],
     "Priority": 846,
     "Rarity": "Low",
     "ShowType": "ShowAfterFinish",
@@ -8353,7 +10941,11 @@
     "SeriesID": 7,
     "AchievementTitle": "《救猫咪》",
     "AchievementDesc": "使用同时包含银狼、刃、卡芙卡、流萤的队伍获得1场战斗的胜利",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 1
+      }
+    ],
     "Priority": 845,
     "Rarity": "Low",
     "ShowType": "ShowAfterFinish",
@@ -8364,7 +10956,11 @@
     "SeriesID": 7,
     "AchievementTitle": "致命契约",
     "AchievementDesc": "单场战斗中，当友方持有翡翠战技【收债人】效果时，将当前生命值消耗至1",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 1
+      }
+    ],
     "Priority": 844,
     "Rarity": "Low",
     "ShowType": "ShowAfterFinish",
@@ -8375,7 +10971,11 @@
     "SeriesID": 7,
     "AchievementTitle": "去吧，阿…萨姆",
     "AchievementDesc": "使用我方角色流萤对战卡芙卡并陷入「支配」状态",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 1
+      }
+    ],
     "Priority": 843,
     "Rarity": "Low",
     "ShowType": "ShowAfterFinish",
@@ -8386,7 +10986,11 @@
     "SeriesID": 7,
     "AchievementTitle": "我将，点燃大海！",
     "AchievementDesc": "单场战斗中，使用装甲「萨姆」在「完全燃烧」状态结束前施放4次【火萤Ⅳ型-死星过载】",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 4
+      }
+    ],
     "Priority": 842,
     "Rarity": "Low",
     "ShowType": "ShowAfterFinish",
@@ -8397,7 +11001,11 @@
     "SeriesID": 7,
     "AchievementTitle": "见过夏天",
     "AchievementDesc": "使用同时包含流萤、{NICKNAME}的队伍获得1场战斗的胜利",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 1
+      }
+    ],
     "Priority": 841,
     "Rarity": "Low",
     "ShowType": "ShowAfterFinish",
@@ -8408,7 +11016,11 @@
     "SeriesID": 7,
     "AchievementTitle": "寻剑",
     "AchievementDesc": "使用包含云璃的队伍获得1场对王下一桶的战斗的胜利",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 1
+      }
+    ],
     "Priority": 840,
     "Rarity": "Low",
     "ShowType": "ShowAfterFinish",
@@ -8460,7 +11072,11 @@
     "SeriesID": 7,
     "AchievementTitle": "十万个冷知识",
     "AchievementDesc": "使用三月七•巡猎对20个不同的角色施放战技「师父，请喝茶！」",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 20
+      }
+    ],
     "Priority": 835,
     "Rarity": "Low",
     "ShowType": "ShowAfterFinish",
@@ -8481,7 +11097,11 @@
     "SeriesID": 7,
     "AchievementTitle": "蜜三刀",
     "AchievementDesc": "单场战斗中，使用云璃触发3次「勘破·灭」",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 3
+      }
+    ],
     "Priority": 833,
     "Rarity": "Low",
     "ShowType": "ShowAfterFinish",
@@ -8523,7 +11143,11 @@
     "SeriesID": 7,
     "AchievementTitle": "青丘行军",
     "AchievementDesc": "使用同时包含飞霄、椒丘、貊泽的队伍获得1场战斗的胜利",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 1
+      }
+    ],
     "Priority": 829,
     "Rarity": "Low",
     "ShowType": "ShowAfterFinish",
@@ -8565,7 +11189,11 @@
     "SeriesID": 7,
     "AchievementTitle": "全兵戈狂潮！",
     "AchievementDesc": "单场战斗中，使用飞霄施放终结技，发动第6次【闪裂刃舞】或【钺贯天冲】时，使目标生命值降低至0",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 6
+      }
+    ],
     "Priority": 825,
     "Rarity": "Low",
     "ShowType": "ShowAfterFinish",
@@ -8598,7 +11226,14 @@
     "SeriesID": 7,
     "AchievementTitle": "我即风暴",
     "AchievementDesc": "使用飞霄秘技，连续吸引5个及以上的敌人超过30秒以上",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 5
+      },
+      {
+        "Value": 30
+      }
+    ],
     "Priority": 822,
     "Rarity": "Low",
     "ShowType": "ShowAfterFinish",
@@ -8629,7 +11264,11 @@
     "SeriesID": 7,
     "AchievementTitle": "缭乱·忍法·破！",
     "AchievementDesc": "单场战斗中，使用乱破对敌人造成10次弱点击破",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 10
+      }
+    ],
     "Priority": 819,
     "Rarity": "Low",
     "ShowType": "ShowAfterFinish",
@@ -8673,18 +11312,262 @@
     "SeriesID": 7,
     "AchievementTitle": "一起飞向天空",
     "AchievementDesc": "使用同时包含知更鸟、星期日的队伍获得1场战斗的胜利",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 1
+      }
+    ],
     "Priority": 815,
     "Rarity": "Low",
     "ShowType": "ShowAfterFinish",
     "Version": "2.7"
+  },
+  "4074001": {
+    "AchievementID": 4074001,
+    "SeriesID": 7,
+    "AchievementTitle": "潘克拉辛的真意",
+    "AchievementDesc": "单次攻击中破坏至少4名敌人的【战甲】",
+    "ParamList": [
+      {
+        "Value": 4
+      }
+    ],
+    "Priority": 814,
+    "Rarity": "Low",
+    "Version": "3.0"
+  },
+  "4074002": {
+    "AchievementID": 4074002,
+    "SeriesID": 7,
+    "AchievementTitle": "永恒极枪",
+    "AchievementDesc": "在和「天谴先锋」的战斗中，在破坏其【战甲】时完成制胜一击",
+    "ParamList": [],
+    "Priority": 813,
+    "Rarity": "Low",
+    "Version": "3.0"
+  },
+  "4074003": {
+    "AchievementID": 4074003,
+    "SeriesID": 7,
+    "AchievementTitle": "斜行战术",
+    "AchievementDesc": "在和「天谴先锋」的战斗中，至少5名我方目标参与分摊【在滔滔血海中沉溺】的伤害，且分摊伤害后没有我方目标被击败",
+    "ParamList": [
+      {
+        "Value": 5
+      }
+    ],
+    "Priority": 812,
+    "Rarity": "Low",
+    "Version": "3.0"
+  },
+  "4074004": {
+    "AchievementID": 4074004,
+    "SeriesID": 7,
+    "AchievementTitle": "无上荣光",
+    "AchievementDesc": "在和「蛮神，疯王，纷争的化身」的单场战斗中，所有我方角色的【荣耀】达到2层上限",
+    "ParamList": [
+      {
+        "Value": 2
+      }
+    ],
+    "Priority": 811,
+    "Rarity": "Low",
+    "Version": "3.0"
+  },
+  "4074005": {
+    "AchievementID": 4074005,
+    "SeriesID": 7,
+    "AchievementTitle": "止战之殇",
+    "AchievementDesc": "在和「蛮神，疯王，纷争的化身」的单场战斗中，破坏其【战甲】和【泰坦神躯】",
+    "ParamList": [],
+    "Priority": 810,
+    "Rarity": "Low",
+    "Version": "3.0"
+  },
+  "4074006": {
+    "AchievementID": 4074006,
+    "SeriesID": 7,
+    "AchievementTitle": "折旌的战场",
+    "AchievementDesc": "在和「颁赐者，千军首，天谴之矛」的战斗中，令其施放【畏怖溃军皆成铠仗】时没有吸收到「征服或被征服」",
+    "ParamList": [],
+    "Priority": 809,
+    "Rarity": "Low",
+    "Version": "3.0"
+  },
+  "4074007": {
+    "AchievementID": 4074007,
+    "SeriesID": 7,
+    "AchievementTitle": "征服王",
+    "AchievementDesc": "在「颁赐者，千军首，天谴之矛」施放【受征伐者皆见灾殃】后，用同一个角色消灭所有的「征服或被征服」",
+    "ParamList": [],
+    "Priority": 808,
+    "Rarity": "Low",
+    "Version": "3.0"
+  },
+  "4074008": {
+    "AchievementID": 4074008,
+    "SeriesID": 7,
+    "AchievementTitle": "伙伴，约定！",
+    "AchievementDesc": "使用「记忆」命途开拓者召唤迷迷",
+    "ParamList": [],
+    "Priority": 807,
+    "Rarity": "Low",
+    "Version": "3.0"
+  },
+  "4074009": {
+    "AchievementID": 4074009,
+    "SeriesID": 7,
+    "AchievementTitle": "一起，着迷！",
+    "AchievementDesc": "单场战斗中，使我方至少4名角色同时持有【迷迷的声援】",
+    "ParamList": [
+      {
+        "Value": 4
+      }
+    ],
+    "Priority": 806,
+    "Rarity": "Low",
+    "ShowType": "ShowAfterFinish",
+    "Version": "3.0"
+  },
+  "4074011": {
+    "AchievementID": 4074011,
+    "SeriesID": 7,
+    "AchievementTitle": "金线降神",
+    "AchievementDesc": "单场战斗中，使用我方角色阿格莱雅召唤1次「衣匠」",
+    "ParamList": [
+      {
+        "Value": 1
+      }
+    ],
+    "Priority": 804,
+    "Rarity": "Low",
+    "ShowType": "ShowAfterFinish",
+    "Version": "3.0"
+  },
+  "4074012": {
+    "AchievementID": 4074012,
+    "SeriesID": 7,
+    "AchievementTitle": "热狂圆舞",
+    "AchievementDesc": "单场战斗中，使用我方角色阿格莱雅在【至高之姿】状态下累计施放5次【孤锋千吻】",
+    "ParamList": [
+      {
+        "Value": 5
+      }
+    ],
+    "Priority": 803,
+    "Rarity": "Low",
+    "ShowType": "ShowAfterFinish",
+    "Version": "3.0"
+  },
+  "4074013": {
+    "AchievementID": 4074013,
+    "SeriesID": 7,
+    "AchievementTitle": "天衣无缝",
+    "AchievementDesc": "单场战斗中，仅使用我方角色阿格莱雅的「衣匠」消灭敌方所有目标并获得战斗胜利",
+    "ParamList": [],
+    "Priority": 802,
+    "Rarity": "Low",
+    "ShowType": "ShowAfterFinish",
+    "Version": "3.0"
+  },
+  "4074014": {
+    "AchievementID": 4074014,
+    "SeriesID": 7,
+    "AchievementTitle": "回忆突然攻击我",
+    "AchievementDesc": "使用记忆命途角色对战卡芙卡，其操控的忆灵陷入「支配」状态并攻击忆师本人",
+    "ParamList": [],
+    "Priority": 801,
+    "Rarity": "Low",
+    "ShowType": "ShowAfterFinish",
+    "Version": "3.0"
+  },
+  "4074017": {
+    "AchievementID": 4074017,
+    "SeriesID": 7,
+    "AchievementTitle": "擢升的渴慕",
+    "AchievementDesc": "单次战斗中，使用我方角色星期日使任意一名忆师和忆灵的行动提前5次",
+    "ParamList": [
+      {
+        "Value": 5
+      }
+    ],
+    "Priority": 800,
+    "Rarity": "Low",
+    "ShowType": "ShowAfterFinish",
+    "Version": "3.0"
+  },
+  "4074018": {
+    "AchievementID": 4074018,
+    "SeriesID": 7,
+    "AchievementTitle": "往日之惩",
+    "AchievementDesc": "累计使用忆灵技伤害消灭30名敌人",
+    "ParamList": [
+      {
+        "Value": 30
+      }
+    ],
+    "Priority": 799,
+    "Rarity": "Low",
+    "Version": "3.0"
+  },
+  "4074019": {
+    "AchievementID": 4074019,
+    "SeriesID": 7,
+    "AchievementTitle": "代理人战争",
+    "AchievementDesc": "单场战斗中，场上同时存在4名及以上我方召唤物",
+    "ParamList": [
+      {
+        "Value": 4
+      }
+    ],
+    "Priority": 798,
+    "Rarity": "Low",
+    "ShowType": "ShowAfterFinish",
+    "Version": "3.0"
+  },
+  "4074020": {
+    "AchievementID": 4074020,
+    "SeriesID": 7,
+    "AchievementTitle": "真实是永远的必杀技",
+    "AchievementDesc": "累计使用真实伤害消灭10名敌人",
+    "ParamList": [
+      {
+        "Value": 10
+      }
+    ],
+    "Priority": 797,
+    "Rarity": "Low",
+    "ShowType": "ShowAfterFinish",
+    "Version": "3.0"
+  },
+  "4074021": {
+    "AchievementID": 4074021,
+    "SeriesID": 7,
+    "AchievementTitle": "阅读理解",
+    "AchievementDesc": "单次战斗中，使用我方角色大黑塔累计5次叠加出42层的【解读】",
+    "ParamList": [
+      {
+        "Value": 5
+      },
+      {
+        "Value": 42
+      }
+    ],
+    "Priority": 796,
+    "Rarity": "Low",
+    "ShowType": "ShowAfterFinish",
+    "Version": "3.0"
   },
   "4080101": {
     "AchievementID": 4080101,
     "SeriesID": 8,
     "AchievementTitle": "地球周",
     "AchievementDesc": "连续登录7天",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 7
+      }
+    ],
     "Priority": 1000,
     "Rarity": "Low",
     "Version": "1.0"
@@ -8694,7 +11577,11 @@
     "SeriesID": 1,
     "AchievementTitle": "知难而上（一）",
     "AchievementDesc": "均衡等级达到1级",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 1
+      }
+    ],
     "Priority": 991,
     "Rarity": "Low",
     "Version": "1.0"
@@ -8704,7 +11591,11 @@
     "SeriesID": 1,
     "AchievementTitle": "知难而上（二）",
     "AchievementDesc": "均衡等级达到3级",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 3
+      }
+    ],
     "Priority": 990,
     "Rarity": "Mid",
     "Version": "1.0"
@@ -8714,7 +11605,11 @@
     "SeriesID": 1,
     "AchievementTitle": "知难而上（三）",
     "AchievementDesc": "均衡等级达到6级",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 6
+      }
+    ],
     "Priority": 989,
     "Rarity": "High",
     "Version": "1.0"
@@ -8727,6 +11622,7 @@
     "ParamList": [],
     "Priority": 997,
     "Rarity": "Low",
+    "ShowType": "HiddenDesc",
     "Version": "1.0"
   },
   "4080302": {
@@ -8734,9 +11630,14 @@
     "SeriesID": 8,
     "AchievementTitle": "不能满足",
     "AchievementDesc": "有的时候太满足也不是好事…<br><div style=\"color:#8790abff;\">※使用1次「催吐剂」</div>",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 1
+      }
+    ],
     "Priority": 996,
     "Rarity": "Low",
+    "ShowType": "HiddenDesc",
     "Version": "1.0"
   },
   "4080303": {
@@ -8747,6 +11648,7 @@
     "ParamList": [],
     "Priority": 995,
     "Rarity": "Low",
+    "ShowType": "HiddenDesc",
     "Version": "1.0"
   },
   "4080304": {
@@ -8757,6 +11659,7 @@
     "ParamList": [],
     "Priority": 994,
     "Rarity": "Low",
+    "ShowType": "HiddenDesc",
     "Version": "1.0"
   },
   "4080305": {
@@ -8764,9 +11667,14 @@
     "SeriesID": 8,
     "AchievementTitle": "圣人",
     "AchievementDesc": "让居住在我们心中的崇高存在对你竖起大拇指<br><div style=\"color:#8790abff;\">※累计获得20次「崇高道德的赞许」</div>",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 20
+      }
+    ],
     "Priority": 993,
     "Rarity": "Low",
+    "ShowType": "HiddenDesc",
     "Version": "1.0"
   },
   "4080401": {
@@ -8774,7 +11682,11 @@
     "SeriesID": 4,
     "AchievementTitle": "开题报告",
     "AchievementDesc": "收集10本来自空间站「黑塔」的阅读物",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 10
+      }
+    ],
     "Priority": 986,
     "Rarity": "Low",
     "Version": "1.0"
@@ -8784,7 +11696,11 @@
     "SeriesID": 4,
     "AchievementTitle": "文献综述",
     "AchievementDesc": "收集50本来自空间站「黑塔」的阅读物",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 50
+      }
+    ],
     "Priority": 985,
     "Rarity": "Low",
     "Version": "1.0"
@@ -8794,7 +11710,11 @@
     "SeriesID": 4,
     "AchievementTitle": "并非垃圾文学",
     "AchievementDesc": "收集20本来自贝洛伯格的阅读物",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 20
+      }
+    ],
     "Priority": 984,
     "Rarity": "Low",
     "Version": "1.0"
@@ -8804,7 +11724,11 @@
     "SeriesID": 4,
     "AchievementTitle": "冬城史学家",
     "AchievementDesc": "收集80本来自贝洛伯格的阅读物",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 80
+      }
+    ],
     "Priority": 983,
     "Rarity": "Low",
     "Version": "1.0"
@@ -8814,7 +11738,11 @@
     "SeriesID": 8,
     "AchievementTitle": "热血开拓者",
     "AchievementDesc": "在对话中选择热血选项5次",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 5
+      }
+    ],
     "Priority": 988,
     "Rarity": "Low",
     "ShowType": "ShowAfterFinish",
@@ -8825,7 +11753,11 @@
     "SeriesID": 8,
     "AchievementTitle": "悲观开拓者",
     "AchievementDesc": "在对话中选择悲观选项5次",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 5
+      }
+    ],
     "Priority": 986,
     "Rarity": "Low",
     "ShowType": "ShowAfterFinish",
@@ -8836,7 +11768,11 @@
     "SeriesID": 8,
     "AchievementTitle": "抱歉开拓者",
     "AchievementDesc": "在对话中选择道歉选项5次",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 5
+      }
+    ],
     "Priority": 985,
     "Rarity": "Low",
     "ShowType": "ShowAfterFinish",
@@ -8847,7 +11783,11 @@
     "SeriesID": 8,
     "AchievementTitle": "沉默开拓者",
     "AchievementDesc": "在对话中选择沉默选项5次",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 5
+      }
+    ],
     "Priority": 984,
     "Rarity": "Low",
     "ShowType": "ShowAfterFinish",
@@ -8858,7 +11798,11 @@
     "SeriesID": 8,
     "AchievementTitle": "复读机",
     "AchievementDesc": "在对话中选择复读选项3次",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 3
+      }
+    ],
     "Priority": 983,
     "Rarity": "Low",
     "ShowType": "ShowAfterFinish",
@@ -8869,7 +11813,11 @@
     "SeriesID": 8,
     "AchievementTitle": "选择的意义",
     "AchievementDesc": "在对话中选择性别专属选项3次",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 3
+      }
+    ],
     "Priority": 982,
     "Rarity": "Low",
     "ShowType": "ShowAfterFinish",
@@ -8945,8 +11893,12 @@
     "AchievementID": 4082301,
     "SeriesID": 8,
     "AchievementTitle": "地球年",
-    "AchievementDesc": "累计登录365天 ",
-    "ParamList": [],
+    "AchievementDesc": "累计登录365天",
+    "ParamList": [
+      {
+        "Value": 365
+      }
+    ],
     "Priority": 998,
     "Rarity": "High",
     "ShowType": "ShowAfterFinish",
@@ -8957,7 +11909,11 @@
     "SeriesID": 8,
     "AchievementTitle": "地球月",
     "AchievementDesc": "累计登录30天",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 30
+      }
+    ],
     "Priority": 999,
     "Rarity": "Low",
     "Version": "1.0"
@@ -8967,7 +11923,11 @@
     "SeriesID": 8,
     "AchievementTitle": "尘世百态",
     "AchievementDesc": "使用我方角色罗刹提供治疗时，触发10句不同的回复生命语音",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 10
+      }
+    ],
     "Priority": 966,
     "Rarity": "Low",
     "ShowType": "ShowAfterFinish",
@@ -8978,7 +11938,11 @@
     "SeriesID": 8,
     "AchievementTitle": "星穹折剑",
     "AchievementDesc": "使用同时包含罗刹、素裳、彦卿的队伍配置取得1场战斗的胜利",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 1
+      }
+    ],
     "Priority": 965,
     "Rarity": "Low",
     "ShowType": "ShowAfterFinish",
@@ -8989,7 +11953,11 @@
     "SeriesID": 8,
     "AchievementTitle": "地下守护者",
     "AchievementDesc": "使用同时包含娜塔莎、希儿、卢卡的队伍获得1场战斗的胜利",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 1
+      }
+    ],
     "Priority": 964,
     "Rarity": "Low",
     "ShowType": "ShowAfterFinish",
@@ -9000,7 +11968,11 @@
     "SeriesID": 8,
     "AchievementTitle": "先别急",
     "AchievementDesc": "在被敌方追击状态下坚持15秒不进入战斗",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 15
+      }
+    ],
     "Priority": 963,
     "Rarity": "Low",
     "ShowType": "ShowAfterFinish",
@@ -9011,7 +11983,11 @@
     "SeriesID": 8,
     "AchievementTitle": "茶浓于水",
     "AchievementDesc": "连续3天每天饮用「仙人快乐茶」",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 3
+      }
+    ],
     "Priority": 962,
     "Rarity": "Low",
     "ShowType": "ShowAfterFinish",
@@ -9022,7 +11998,11 @@
     "SeriesID": 8,
     "AchievementTitle": "罗浮老饕",
     "AchievementDesc": "连续3天每天饮用「苏打豆汁儿」",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 3
+      }
+    ],
     "Priority": 961,
     "Rarity": "Low",
     "ShowType": "ShowAfterFinish",
@@ -9055,7 +12035,11 @@
     "SeriesID": 8,
     "AchievementTitle": "帕姆总冠军！",
     "AchievementDesc": "累计对5个好友发送帕姆的表情图片",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 5
+      }
+    ],
     "Priority": 958,
     "Rarity": "Low",
     "ShowType": "ShowAfterFinish",
@@ -9066,7 +12050,11 @@
     "SeriesID": 8,
     "AchievementTitle": "尽在不言中",
     "AchievementDesc": "累计发送20张星穹列车成员的表情图片",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 20
+      }
+    ],
     "Priority": 957,
     "Rarity": "Low",
     "ShowType": "ShowAfterFinish",
@@ -9087,10 +12075,11 @@
     "AchievementID": 4082701,
     "SeriesID": 8,
     "AchievementTitle": "好…好方",
-    "AchievementDesc": "大量投喂扑满<br><div style=\"color:#8790abff;\">※使用「次元扑满」聊天对话框，发送大量文本内容</div>",
+    "AchievementDesc": "大量投喂扑满<br><div style=\"color:#8790abff;\">※使用「{TEXTJOIN#54}」聊天对话框，发送大量文本内容</div>",
     "ParamList": [],
     "Priority": 953,
     "Rarity": "Low",
+    "ShowType": "HiddenDesc",
     "Version": "1.4"
   },
   "4082702": {
@@ -9119,7 +12108,11 @@
     "SeriesID": 8,
     "AchievementTitle": "过程大于结果",
     "AchievementDesc": "从流云渡的茂贞手中购买1个逾期未取的贵重邮包",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 1
+      }
+    ],
     "Priority": 950,
     "Rarity": "Low",
     "ShowType": "ShowAfterFinish",
@@ -9172,7 +12165,11 @@
     "SeriesID": 8,
     "AchievementTitle": "木人：星穹铁道",
     "AchievementDesc": "使用「自动木人桩」代为完成3场战斗",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 3
+      }
+    ],
     "Priority": 945,
     "Rarity": "Low",
     "ShowType": "ShowAfterFinish",
@@ -9183,7 +12180,11 @@
     "SeriesID": 8,
     "AchievementTitle": "在世界中心呼唤我",
     "AchievementDesc": "触发10句不同的队伍编成•{NICKNAME}语音",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 10
+      }
+    ],
     "Priority": 939,
     "Rarity": "Low",
     "ShowType": "ShowAfterFinish",
@@ -9194,7 +12195,11 @@
     "SeriesID": 8,
     "AchievementTitle": "银河枪骑队",
     "AchievementDesc": "使用同时包含银枝、{NICKNAME}的队伍获得1场战斗的胜利",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 1
+      }
+    ],
     "Priority": 940,
     "Rarity": "Low",
     "ShowType": "ShowAfterFinish",
@@ -9216,7 +12221,11 @@
     "SeriesID": 8,
     "AchievementTitle": "捉鬼敢死队",
     "AchievementDesc": "使用同时包含藿藿、素裳、桂乃芬、{NICKNAME}的队伍获得1场战斗的胜利",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 1
+      }
+    ],
     "Priority": 942,
     "Rarity": "Low",
     "ShowType": "ShowAfterFinish",
@@ -9249,7 +12258,11 @@
     "SeriesID": 8,
     "AchievementTitle": "摩擦，摩擦",
     "AchievementDesc": "通过梦客漫步能力在同一条梦泡桥梁上来回通过多次",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 5
+      }
+    ],
     "Priority": 938,
     "Rarity": "Low",
     "ShowType": "ShowAfterFinish",
@@ -9260,7 +12273,14 @@
     "SeriesID": 8,
     "AchievementTitle": "视差怪",
     "AchievementDesc": "在2分钟内与筑梦遥眼装置交互5次以上",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 2
+      },
+      {
+        "Value": 5
+      }
+    ],
     "Priority": 937,
     "Rarity": "Low",
     "ShowType": "ShowAfterFinish",
@@ -9271,7 +12291,14 @@
     "SeriesID": 8,
     "AchievementTitle": "鸟为什么会飞？",
     "AchievementDesc": "在1分钟内与控制筑梦模块的鸟型装置交互5次以上",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 1
+      },
+      {
+        "Value": 5
+      }
+    ],
     "Priority": 936,
     "Rarity": "Low",
     "ShowType": "ShowAfterFinish",
@@ -9315,7 +12342,11 @@
     "SeriesID": 8,
     "AchievementTitle": "一切真理须如货币般流通",
     "AchievementDesc": "在支援助战中使用真理医生参与1场战斗",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 1
+      }
+    ],
     "Priority": 929,
     "Rarity": "Low",
     "ShowType": "ShowAfterFinish",
@@ -9326,7 +12357,11 @@
     "SeriesID": 7,
     "AchievementTitle": "天斩无斩",
     "AchievementDesc": "在探索中，使用黄泉秘技「四相断我」连续消灭5个敌人",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 5
+      }
+    ],
     "Priority": 859,
     "Rarity": "Low",
     "ShowType": "ShowAfterFinish",
@@ -9369,7 +12404,11 @@
     "SeriesID": 8,
     "AchievementTitle": "主随客便",
     "AchievementDesc": "在获得{TEXTJOIN#87}所有权后，在泳池中冲刺玩水",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 10
+      }
+    ],
     "Priority": 922,
     "Rarity": "Low",
     "ShowType": "ShowAfterFinish",
@@ -9386,12 +12425,93 @@
     "ShowType": "ShowAfterFinish",
     "Version": "2.5"
   },
+  "4084001": {
+    "AchievementID": 4084001,
+    "SeriesID": 8,
+    "AchievementTitle": "回到未未未未来",
+    "AchievementDesc": "在短时间内连续使用「奇迹典籍」切换时空5次",
+    "ParamList": [
+      {
+        "Value": 5
+      }
+    ],
+    "Priority": 919,
+    "Rarity": "Low",
+    "ShowType": "ShowAfterFinish",
+    "Version": "3.0"
+  },
+  "4084002": {
+    "AchievementID": 4084002,
+    "SeriesID": 8,
+    "AchievementTitle": "神圣车行",
+    "AchievementDesc": "连续开关「奇迹宝珠」5次",
+    "ParamList": [
+      {
+        "Value": 5
+      }
+    ],
+    "Priority": 918,
+    "Rarity": "Low",
+    "ShowType": "ShowAfterFinish",
+    "Version": "3.0"
+  },
+  "4084003": {
+    "AchievementID": 4084003,
+    "SeriesID": 8,
+    "AchievementTitle": "柱倒啦—",
+    "AchievementDesc": "感受「真理」的重量<br><div style=\"color:#8790abff;\">※在翁法罗斯探索过程中，被残留有记忆的柱子砸中</div>",
+    "ParamList": [],
+    "Priority": 917,
+    "Rarity": "Low",
+    "ShowType": "HiddenDesc",
+    "Version": "3.0"
+  },
+  "4084004": {
+    "AchievementID": 4084004,
+    "SeriesID": 8,
+    "AchievementTitle": "美丽的淑女",
+    "AchievementDesc": "桥塌啦？还好你不在桥上——在桥下？<br><div style=\"color:#8790abff;\">※在翁法罗斯探索过程中，被不稳定的桥砸中</div>",
+    "ParamList": [],
+    "Priority": 916,
+    "Rarity": "Low",
+    "ShowType": "HiddenDesc",
+    "Version": "3.0"
+  },
+  "4084005": {
+    "AchievementID": 4084005,
+    "SeriesID": 8,
+    "AchievementTitle": "无罪者能先拿起石头",
+    "AchievementDesc": "来玩保龄球，我当球瓶<br><div style=\"color:#8790abff;\">※在翁法罗斯探索过程中，被石球砸中</div>",
+    "ParamList": [],
+    "Priority": 915,
+    "Rarity": "Low",
+    "ShowType": "HiddenDesc",
+    "Version": "3.0"
+  },
+  "4084007": {
+    "AchievementID": 4084007,
+    "SeriesID": 8,
+    "AchievementTitle": "动啊，为什么不动？",
+    "AchievementDesc": "神龛？什么神龛？<br><div style=\"color:#8790abff;\">※在翁法罗斯探索过程中，回溯残留有记忆的某个物件时，因超过能力限度而失败五次</div>",
+    "ParamList": [],
+    "Priority": 913,
+    "Rarity": "Low",
+    "ShowType": "HiddenDesc",
+    "Version": "3.0"
+  },
   "4090201": {
     "AchievementID": 4090201,
     "SeriesID": 9,
     "AchievementTitle": "最初和最终的自由",
     "AchievementDesc": "「模拟宇宙」内，进入战斗时我方4名角色当前生命值百分比均小于等于1%",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 4
+      },
+      {
+        "Value": 0.01
+      }
+    ],
     "Priority": 1000,
     "Rarity": "Low",
     "Version": "1.0"
@@ -9401,7 +12521,11 @@
     "SeriesID": 9,
     "AchievementTitle": "爱的艺术",
     "AchievementDesc": "「模拟宇宙」战斗内，我方所有角色累计获得护盾次数达到50",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 50
+      }
+    ],
     "Priority": 999,
     "Rarity": "Low",
     "Version": "1.0"
@@ -9411,7 +12535,11 @@
     "SeriesID": 9,
     "AchievementTitle": "不许动！",
     "AchievementDesc": "「模拟宇宙」战斗内，任意单个敌人处于冻结状态下累计达到10个回合",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 10
+      }
+    ],
     "Priority": 998,
     "Rarity": "Low",
     "Version": "1.0"
@@ -9421,7 +12549,11 @@
     "SeriesID": 9,
     "AchievementTitle": "元素反应机制",
     "AchievementDesc": "「模拟宇宙」战斗内，单次攻击对敌人造成大于等于5种属性伤害",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 5
+      }
+    ],
     "Priority": 997,
     "Rarity": "Low",
     "Version": "1.0"
@@ -9431,7 +12563,11 @@
     "SeriesID": 9,
     "AchievementTitle": "您的对手网络不佳",
     "AchievementDesc": "「模拟宇宙」战斗内，我方所有角色连续行动累计达到20次",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 20
+      }
+    ],
     "Priority": 996,
     "Rarity": "Low",
     "Version": "1.0"
@@ -9441,7 +12577,11 @@
     "SeriesID": 9,
     "AchievementTitle": "二十四首情诗与一首绝望的歌",
     "AchievementDesc": "「模拟宇宙」战斗胜利时，我方所有角色当前生命值百分比小于等于5%",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 0.05
+      }
+    ],
     "Priority": 995,
     "Rarity": "Low",
     "Version": "1.0"
@@ -9451,7 +12591,11 @@
     "SeriesID": 9,
     "AchievementTitle": "黑暗中跳舞的心脏叫月亮",
     "AchievementDesc": "「模拟宇宙」战斗内，至少使3名敌人同时处于触电、灼烧、裂伤、风化4种负面状态",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 3
+      }
+    ],
     "Priority": 994,
     "Rarity": "Low",
     "Version": "1.0"
@@ -9461,7 +12605,11 @@
     "SeriesID": 9,
     "AchievementTitle": "晚安，我的朋友",
     "AchievementDesc": "「模拟宇宙」内，累计消灭15个敌人",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 15
+      }
+    ],
     "Priority": 993,
     "Rarity": "Low",
     "Version": "1.0"
@@ -9471,7 +12619,11 @@
     "SeriesID": 9,
     "AchievementTitle": "头号玩家",
     "AchievementDesc": "「模拟宇宙」内，累计消灭1000个敌人",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 1000
+      }
+    ],
     "Priority": 992,
     "Rarity": "Mid",
     "Version": "1.0"
@@ -9481,7 +12633,11 @@
     "SeriesID": 9,
     "AchievementTitle": "消费主义心理学",
     "AchievementDesc": "累计获得500宇宙碎片",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 500
+      }
+    ],
     "Priority": 991,
     "Rarity": "Low",
     "Version": "1.0"
@@ -9491,7 +12647,11 @@
     "SeriesID": 9,
     "AchievementTitle": "了不起的商业大亨",
     "AchievementDesc": "累计获得20000宇宙碎片",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 20000
+      }
+    ],
     "Priority": 990,
     "Rarity": "Mid",
     "Version": "1.0"
@@ -9501,7 +12661,11 @@
     "SeriesID": 9,
     "AchievementTitle": "特殊体验",
     "AchievementDesc": "「模拟宇宙」内，累计遭遇10次特殊事件",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 10
+      }
+    ],
     "Priority": 989,
     "Rarity": "Low",
     "Version": "1.0"
@@ -9511,7 +12675,11 @@
     "SeriesID": 9,
     "AchievementTitle": "不太特殊的体验",
     "AchievementDesc": "「模拟宇宙」内，累计遭遇100次特殊事件",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 100
+      }
+    ],
     "Priority": 988,
     "Rarity": "Mid",
     "Version": "1.0"
@@ -9551,7 +12719,11 @@
     "SeriesID": 9,
     "AchievementTitle": "狂热打击",
     "AchievementDesc": "「模拟宇宙」内，累计击碎20次可破坏物",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 20
+      }
+    ],
     "Priority": 984,
     "Rarity": "Low",
     "Version": "1.0"
@@ -9561,7 +12733,11 @@
     "SeriesID": 9,
     "AchievementTitle": "玫瑰花蕾",
     "AchievementDesc": "「模拟宇宙」内，累计击碎400次可破坏物",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 400
+      }
+    ],
     "Priority": 983,
     "Rarity": "Mid",
     "Version": "1.0"
@@ -9571,7 +12747,11 @@
     "SeriesID": 9,
     "AchievementTitle": "肾上腺素",
     "AchievementDesc": "「模拟宇宙」内，累计主动强化10次祝福",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 10
+      }
+    ],
     "Priority": 982,
     "Rarity": "Low",
     "Version": "1.0"
@@ -9581,7 +12761,11 @@
     "SeriesID": 9,
     "AchievementTitle": "好运会传染",
     "AchievementDesc": "「模拟宇宙」内，累计主动强化200次祝福",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 200
+      }
+    ],
     "Priority": 981,
     "Rarity": "Mid",
     "Version": "1.0"
@@ -9591,7 +12775,11 @@
     "SeriesID": 9,
     "AchievementTitle": "仿生蜗牛会梦到电子树吗",
     "AchievementDesc": "在技能树中，累计激活技能2次",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 2
+      }
+    ],
     "Priority": 980,
     "Rarity": "Low",
     "Version": "1.0"
@@ -9601,7 +12789,11 @@
     "SeriesID": 9,
     "AchievementTitle": "爬树高手",
     "AchievementDesc": "在技能树中，累计激活技能26次",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 26
+      }
+    ],
     "Priority": 979,
     "Rarity": "Low",
     "Version": "1.0"
@@ -9611,7 +12803,11 @@
     "SeriesID": 9,
     "AchievementTitle": "我的百变口袋",
     "AchievementDesc": "「模拟宇宙」内，累计解锁3个奇物",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 3
+      }
+    ],
     "Priority": 978,
     "Rarity": "Low",
     "Version": "1.0"
@@ -9621,7 +12817,11 @@
     "SeriesID": 9,
     "AchievementTitle": "千星寰宇，一场游戏",
     "AchievementDesc": "「模拟宇宙」内，累计解锁40个奇物",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 40
+      }
+    ],
     "Priority": 977,
     "Rarity": "Mid",
     "Version": "1.0"
@@ -9631,7 +12831,11 @@
     "SeriesID": 9,
     "AchievementTitle": "我的精灵球呢？",
     "AchievementDesc": "「模拟宇宙」内，捕捉扑满1次",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 1
+      }
+    ],
     "Priority": 976,
     "Rarity": "Low",
     "Version": "1.0"
@@ -9641,7 +12845,11 @@
     "SeriesID": 9,
     "AchievementTitle": "猪猪足球队",
     "AchievementDesc": "「模拟宇宙」内，捕捉扑满66次",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 66
+      }
+    ],
     "Priority": 975,
     "Rarity": "Mid",
     "Version": "1.0"
@@ -9651,7 +12859,11 @@
     "SeriesID": 9,
     "AchievementTitle": "别让它跑了！",
     "AchievementDesc": "「模拟宇宙」内，放跑扑满1次",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 1
+      }
+    ],
     "Priority": 974,
     "Rarity": "Low",
     "ShowType": "ShowAfterFinish",
@@ -9662,7 +12874,11 @@
     "SeriesID": 9,
     "AchievementTitle": "存在先于本质",
     "AchievementDesc": "「模拟宇宙」内，累计解锁12个「存护」命途的祝福",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 12
+      }
+    ],
     "Priority": 973,
     "Rarity": "Low",
     "Version": "1.0"
@@ -9672,7 +12888,11 @@
     "SeriesID": 9,
     "AchievementTitle": "记忆看见我",
     "AchievementDesc": "「模拟宇宙」内，累计解锁12个「记忆」命途的祝福",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 12
+      }
+    ],
     "Priority": 972,
     "Rarity": "Low",
     "Version": "1.0"
@@ -9682,7 +12902,11 @@
     "SeriesID": 9,
     "AchievementTitle": "制造美妙混乱",
     "AchievementDesc": "「模拟宇宙」内，累计解锁12个「欢愉」命途的祝福",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 12
+      }
+    ],
     "Priority": 971,
     "Rarity": "Low",
     "Version": "1.0"
@@ -9692,7 +12916,11 @@
     "SeriesID": 9,
     "AchievementTitle": "宇宙膨胀的速度",
     "AchievementDesc": "「模拟宇宙」内，累计解锁12个「巡猎」命途的祝福",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 12
+      }
+    ],
     "Priority": 970,
     "Rarity": "Low",
     "Version": "1.0"
@@ -9702,7 +12930,11 @@
     "SeriesID": 9,
     "AchievementTitle": "无敌破坏王",
     "AchievementDesc": "「模拟宇宙」内，累计解锁12个「毁灭」命途的祝福",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 12
+      }
+    ],
     "Priority": 969,
     "Rarity": "Low",
     "Version": "1.0"
@@ -9712,7 +12944,11 @@
     "SeriesID": 9,
     "AchievementTitle": "诺斯替",
     "AchievementDesc": "「模拟宇宙」内，累计解锁12个「虚无」命途的祝福",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 12
+      }
+    ],
     "Priority": 968,
     "Rarity": "Low",
     "Version": "1.0"
@@ -9722,7 +12958,11 @@
     "SeriesID": 9,
     "AchievementTitle": "呼吸",
     "AchievementDesc": "「模拟宇宙」内，累计解锁12个「丰饶」命途的祝福",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 12
+      }
+    ],
     "Priority": 967,
     "Rarity": "Low",
     "Version": "1.0"
@@ -9732,7 +12972,11 @@
     "SeriesID": 9,
     "AchievementTitle": "琥珀里的千年虫",
     "AchievementDesc": "通关「模拟宇宙」时，携带「存护」命途的祝福数量大于等于10",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 10
+      }
+    ],
     "Priority": 966,
     "Rarity": "Low",
     "Version": "1.0"
@@ -9742,7 +12986,11 @@
     "SeriesID": 9,
     "AchievementTitle": "你看见记忆",
     "AchievementDesc": "通关「模拟宇宙」时，携带「记忆」命途的祝福数量大于等于10",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 10
+      }
+    ],
     "Priority": 965,
     "Rarity": "Low",
     "Version": "1.0"
@@ -9752,7 +13000,11 @@
     "SeriesID": 9,
     "AchievementTitle": "图个好玩，不必在意",
     "AchievementDesc": "通关「模拟宇宙」时，携带「欢愉」命途的祝福数量大于等于10",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 10
+      }
+    ],
     "Priority": 964,
     "Rarity": "Low",
     "Version": "1.0"
@@ -9762,7 +13014,11 @@
     "SeriesID": 9,
     "AchievementTitle": "思考传递的速度",
     "AchievementDesc": "通关「模拟宇宙」时，携带「巡猎」命途的祝福数量大于等于10",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 10
+      }
+    ],
     "Priority": 963,
     "Rarity": "Low",
     "Version": "1.0"
@@ -9772,7 +13028,11 @@
     "SeriesID": 9,
     "AchievementTitle": "不要回头看爆炸",
     "AchievementDesc": "通关「模拟宇宙」时，携带「毁灭」命途的祝福数量大于等于10",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 10
+      }
+    ],
     "Priority": 962,
     "Rarity": "Low",
     "Version": "1.0"
@@ -9782,7 +13042,11 @@
     "SeriesID": 9,
     "AchievementTitle": "幻想的瘟疫",
     "AchievementDesc": "通关「模拟宇宙」时，携带「虚无」命途的祝福数量大于等于10",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 10
+      }
+    ],
     "Priority": 961,
     "Rarity": "Low",
     "Version": "1.0"
@@ -9792,7 +13056,11 @@
     "SeriesID": 9,
     "AchievementTitle": "大天使的呼吸",
     "AchievementDesc": "通关「模拟宇宙」时，携带「丰饶」命途的祝福数量大于等于10",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 10
+      }
+    ],
     "Priority": 960,
     "Rarity": "Low",
     "Version": "1.0"
@@ -9802,7 +13070,11 @@
     "SeriesID": 9,
     "AchievementTitle": "心猿意马的你",
     "AchievementDesc": "通关「模拟宇宙」时，携带祝福所来自的命途数量大于等于6",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 6
+      }
+    ],
     "Priority": 959,
     "Rarity": "Mid",
     "Version": "1.0"
@@ -9812,7 +13084,11 @@
     "SeriesID": 9,
     "AchievementTitle": "孤狼舞台",
     "AchievementDesc": "通关「模拟宇宙」时，携带祝福总数小于等于6（难度2及以上）",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 6
+      }
+    ],
     "Priority": 958,
     "Rarity": "Mid",
     "Version": "1.0"
@@ -9822,7 +13098,11 @@
     "SeriesID": 9,
     "AchievementTitle": "私人收藏家",
     "AchievementDesc": "通关「模拟宇宙」时，携带祝福总数大于等于22",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 22
+      }
+    ],
     "Priority": 957,
     "Rarity": "Mid",
     "Version": "1.0"
@@ -9832,7 +13112,11 @@
     "SeriesID": 9,
     "AchievementTitle": "三角战略",
     "AchievementDesc": "「模拟宇宙」内，在单次尼尔迪斯牌事件中翻牌达到3次",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 3
+      }
+    ],
     "Priority": 956,
     "Rarity": "Low",
     "Version": "1.0"
@@ -9842,7 +13126,11 @@
     "SeriesID": 9,
     "AchievementTitle": "大师球",
     "AchievementDesc": "通关「模拟宇宙」时，携带奇物数量大于等于8",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 8
+      }
+    ],
     "Priority": 955,
     "Rarity": "Mid",
     "Version": "1.0"
@@ -9852,7 +13140,11 @@
     "SeriesID": 9,
     "AchievementTitle": "四星级的白日梦",
     "AchievementDesc": "通关「模拟宇宙」时，拥有的宇宙碎片数量小于等于0",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 0
+      }
+    ],
     "Priority": 954,
     "Rarity": "Low",
     "Version": "1.0"
@@ -9862,7 +13154,11 @@
     "SeriesID": 9,
     "AchievementTitle": "有钱真好！",
     "AchievementDesc": "通关「模拟宇宙」时，拥有的宇宙碎片数量大于等于1024",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 1024
+      }
+    ],
     "Priority": 953,
     "Rarity": "Low",
     "Version": "1.0"
@@ -9938,7 +13234,11 @@
     "SeriesID": 9,
     "AchievementTitle": "布达佩斯大饭店",
     "AchievementDesc": "通关「模拟宇宙」时（难度2及以上），累计施放25次秘技",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 25
+      }
+    ],
     "Priority": 946,
     "Rarity": "Low",
     "Version": "1.0"
@@ -9959,7 +13259,11 @@
     "SeriesID": 9,
     "AchievementTitle": "彗星来的那一夜",
     "AchievementDesc": "通关「模拟宇宙」时（难度2及以上），使用4名相同命途的角色出战",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 4
+      }
+    ],
     "Priority": 944,
     "Rarity": "Mid",
     "Version": "1.0"
@@ -9979,7 +13283,11 @@
     "SeriesID": 9,
     "AchievementTitle": "《菲雅尔塔的春天》",
     "AchievementDesc": "使用「欢愉」命途通关「模拟宇宙：寰宇蝗灾」时，累计获得12种不同的「快乐」",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 12
+      }
+    ],
     "Priority": 938,
     "Rarity": "Low",
     "ShowType": "ShowAfterFinish",
@@ -9990,7 +13298,11 @@
     "SeriesID": 9,
     "AchievementTitle": "秋狝冬狩",
     "AchievementDesc": "「模拟宇宙：寰宇蝗灾」内，使用「巡猎」命途在单一位面通过战斗捕捉8只以上扑满",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 8
+      }
+    ],
     "Priority": 937,
     "Rarity": "Low",
     "ShowType": "ShowAfterFinish",
@@ -10001,7 +13313,11 @@
     "SeriesID": 9,
     "AchievementTitle": "心房客",
     "AchievementDesc": "「模拟宇宙：寰宇蝗灾」内，使用「记忆」命途连续6次复制【奖励】区域",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 6
+      }
+    ],
     "Priority": 936,
     "Rarity": "Low",
     "ShowType": "ShowAfterFinish",
@@ -10012,7 +13328,11 @@
     "SeriesID": 9,
     "AchievementTitle": "铁血战士",
     "AchievementDesc": "使用「毁灭」命途通关「模拟宇宙：寰宇蝗灾」时，获得40场战斗胜利",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 40
+      }
+    ],
     "Priority": 935,
     "Rarity": "Low",
     "ShowType": "ShowAfterFinish",
@@ -10023,7 +13343,11 @@
     "SeriesID": 9,
     "AchievementTitle": "象征交换与死亡",
     "AchievementDesc": "使用「虚无」命途通关「模拟宇宙：寰宇蝗灾」时，进入15个【空白】区域",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 15
+      }
+    ],
     "Priority": 934,
     "Rarity": "Low",
     "ShowType": "ShowAfterFinish",
@@ -10034,7 +13358,11 @@
     "SeriesID": 9,
     "AchievementTitle": "模拟宇宙不是一天建成的",
     "AchievementDesc": "使用「存护」命途通关「模拟宇宙：寰宇蝗灾」时，为8种不同类型的区域附加【基石】",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 8
+      }
+    ],
     "Priority": 933,
     "Rarity": "Low",
     "ShowType": "ShowAfterFinish",
@@ -10045,7 +13373,11 @@
     "SeriesID": 9,
     "AchievementTitle": "弹指一挥",
     "AchievementDesc": "使用「丰饶」命途通关「模拟宇宙：寰宇蝗灾」时，倒计时大于等于80",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 80
+      }
+    ],
     "Priority": 932,
     "Rarity": "Low",
     "ShowType": "ShowAfterFinish",
@@ -10056,7 +13388,11 @@
     "SeriesID": 9,
     "AchievementTitle": "重返克兰达夫",
     "AchievementDesc": "使用「繁育」命途通关「模拟宇宙：寰宇蝗灾」时，进入15次【战斗•虫群】、【事件•虫群】或【首领•虫群】区域",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 15
+      }
+    ],
     "Priority": 931,
     "Rarity": "Low",
     "ShowType": "ShowAfterFinish",
@@ -10067,7 +13403,11 @@
     "SeriesID": 9,
     "AchievementTitle": "《欢迎来到猴子展厅》",
     "AchievementDesc": "「模拟宇宙：寰宇蝗灾」内，累计投掷觐见之骰•欢愉100次",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 100
+      }
+    ],
     "Priority": 930,
     "Rarity": "Low",
     "Version": "1.3"
@@ -10077,7 +13417,11 @@
     "SeriesID": 9,
     "AchievementTitle": "飞砾雨散，刚瘅必毙",
     "AchievementDesc": "「模拟宇宙：寰宇蝗灾」内，累计投掷觐见之骰•巡猎100次",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 100
+      }
+    ],
     "Priority": 929,
     "Rarity": "Low",
     "Version": "1.3"
@@ -10087,7 +13431,11 @@
     "SeriesID": 9,
     "AchievementTitle": "永恒和一日",
     "AchievementDesc": "「模拟宇宙：寰宇蝗灾」内，累计投掷觐见之骰•记忆100次",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 100
+      }
+    ],
     "Priority": 928,
     "Rarity": "Low",
     "Version": "1.3"
@@ -10097,7 +13445,11 @@
     "SeriesID": 9,
     "AchievementTitle": "作为表象的世界",
     "AchievementDesc": "「模拟宇宙：寰宇蝗灾」内，累计投掷觐见之骰•虚无100次",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 100
+      }
+    ],
     "Priority": 927,
     "Rarity": "Low",
     "Version": "1.3"
@@ -10107,7 +13459,11 @@
     "SeriesID": 9,
     "AchievementTitle": "焦土政策",
     "AchievementDesc": "「模拟宇宙：寰宇蝗灾」内，累计投掷觐见之骰•毁灭100次",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 100
+      }
+    ],
     "Priority": 926,
     "Rarity": "Low",
     "Version": "1.3"
@@ -10117,7 +13473,11 @@
     "SeriesID": 9,
     "AchievementTitle": "声闻缘觉",
     "AchievementDesc": "「模拟宇宙：寰宇蝗灾」内，累计投掷觐见之骰•丰饶100次",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 100
+      }
+    ],
     "Priority": 925,
     "Rarity": "Low",
     "Version": "1.3"
@@ -10127,7 +13487,11 @@
     "SeriesID": 9,
     "AchievementTitle": "均匀成核",
     "AchievementDesc": "「模拟宇宙：寰宇蝗灾」内，累计投掷觐见之骰•存护100次",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 100
+      }
+    ],
     "Priority": 924,
     "Rarity": "Low",
     "Version": "1.3"
@@ -10137,7 +13501,11 @@
     "SeriesID": 9,
     "AchievementTitle": "玛士撒拉之子",
     "AchievementDesc": "「模拟宇宙：寰宇蝗灾」内，累计投掷觐见之骰•繁育100次",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 100
+      }
+    ],
     "Priority": 923,
     "Rarity": "Low",
     "Version": "1.3"
@@ -10147,7 +13515,11 @@
     "SeriesID": 9,
     "AchievementTitle": "智库长",
     "AchievementDesc": "通关「模拟宇宙：寰宇蝗灾」时，拥有的宇宙碎片数量大于等于9999",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 9999
+      }
+    ],
     "Priority": 922,
     "Rarity": "Mid",
     "ShowType": "ShowAfterFinish",
@@ -10191,7 +13563,11 @@
     "SeriesID": 9,
     "AchievementTitle": "无敌破坏王Ⅱ",
     "AchievementDesc": "在一次「模拟宇宙：寰宇蝗灾」中，本次挑战累计击破可破坏物数量大于等于100",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 100
+      }
+    ],
     "Priority": 918,
     "Rarity": "Low",
     "ShowType": "ShowAfterFinish",
@@ -10202,7 +13578,11 @@
     "SeriesID": 9,
     "AchievementTitle": "牧场物语",
     "AchievementDesc": "在「模拟宇宙：寰宇蝗灾」的一个【冒险】区域内捕捉扑满数量大于等于16",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 16
+      }
+    ],
     "Priority": 917,
     "Rarity": "Low",
     "ShowType": "ShowAfterFinish",
@@ -10213,7 +13593,11 @@
     "SeriesID": 9,
     "AchievementTitle": "不同命途的房间",
     "AchievementDesc": "在「模拟宇宙：寰宇蝗灾」中，点亮1个隐藏的【行者之道】",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 1
+      }
+    ],
     "Priority": 916,
     "Rarity": "Low",
     "Version": "1.3"
@@ -10223,7 +13607,11 @@
     "SeriesID": 9,
     "AchievementTitle": "独唱团",
     "AchievementDesc": "在一次「模拟宇宙：寰宇蝗灾」中，发生2次回响交错",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 2
+      }
+    ],
     "Priority": 915,
     "Rarity": "Low",
     "Version": "1.3"
@@ -10233,7 +13621,11 @@
     "SeriesID": 9,
     "AchievementTitle": "存护还是毁灭？",
     "AchievementDesc": "在「模拟宇宙：寰宇蝗灾」的【事件】区域中，完成1次命途的抉择",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 1
+      }
+    ],
     "Priority": 914,
     "Rarity": "Low",
     "Version": "1.3"
@@ -10253,7 +13645,11 @@
     "SeriesID": 9,
     "AchievementTitle": "笃定发生",
     "AchievementDesc": "在「模拟宇宙：寰宇蝗灾」中，累计使用10次作弊",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 10
+      }
+    ],
     "Priority": 912,
     "Rarity": "Low",
     "Version": "1.3"
@@ -10263,7 +13659,11 @@
     "SeriesID": 9,
     "AchievementTitle": "回到未来",
     "AchievementDesc": "在「模拟宇宙：寰宇蝗灾」中，累计使用50次重投",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 50
+      }
+    ],
     "Priority": 911,
     "Rarity": "Low",
     "Version": "1.3"
@@ -10293,7 +13693,11 @@
     "SeriesID": 9,
     "AchievementTitle": "维兰德汤谷调查员",
     "AchievementDesc": "在「模拟宇宙：寰宇蝗灾」中，使用「繁育」以外的命途累计进入15次【战斗•虫群】、【事件•虫群】或【首领•虫群】区域",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 15
+      }
+    ],
     "Priority": 908,
     "Rarity": "Low",
     "Version": "1.3"
@@ -10303,7 +13707,11 @@
     "SeriesID": 9,
     "AchievementTitle": "质量中继器",
     "AchievementDesc": "在「模拟宇宙：寰宇蝗灾」通关时，使【位面紊乱！】的【扰动等级】大于等于20级",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 20
+      }
+    ],
     "Priority": 907,
     "Rarity": "Low",
     "Version": "1.3"
@@ -10313,7 +13721,11 @@
     "SeriesID": 9,
     "AchievementTitle": "虫巢意志",
     "AchievementDesc": "「模拟宇宙」内，累计解锁1个「繁育」命途的祝福",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 1
+      }
+    ],
     "Priority": 942,
     "Rarity": "Low",
     "Version": "1.3"
@@ -10323,7 +13735,11 @@
     "SeriesID": 9,
     "AchievementTitle": "第四阶段",
     "AchievementDesc": "通关「模拟宇宙」时，携带「繁育」命途的祝福数量大于等于10",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 10
+      }
+    ],
     "Priority": 940,
     "Rarity": "Low",
     "Version": "1.3"
@@ -10333,7 +13749,11 @@
     "SeriesID": 9,
     "AchievementTitle": "四百击",
     "AchievementDesc": "「模拟宇宙」内，单场战斗中累计使用至少40次普攻并获胜",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 40
+      }
+    ],
     "Priority": 941,
     "Rarity": "Low",
     "Version": "1.3"
@@ -10414,7 +13834,11 @@
     "SeriesID": 9,
     "AchievementTitle": "拜谒神机",
     "AchievementDesc": "「模拟宇宙」内，累计解锁1个「智识」命途的祝福",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 1
+      }
+    ],
     "Priority": 900,
     "Rarity": "Low",
     "Version": "1.6"
@@ -10424,7 +13848,11 @@
     "SeriesID": 9,
     "AchievementTitle": "欧姆弥赛亚",
     "AchievementDesc": "通关「模拟宇宙」时，携带「智识」命途的祝福数量大于等于10",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 10
+      }
+    ],
     "Priority": 899,
     "Rarity": "Low",
     "Version": "1.6"
@@ -10434,7 +13862,11 @@
     "SeriesID": 9,
     "AchievementTitle": "四色问题",
     "AchievementDesc": "在「模拟宇宙：黄金与机械」中，累计为200个区域附加【知识】效果",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 200
+      }
+    ],
     "Priority": 898,
     "Rarity": "Low",
     "Version": "1.6"
@@ -10444,7 +13876,11 @@
     "SeriesID": 9,
     "AchievementTitle": "世界旦夕之间",
     "AchievementDesc": "在「模拟宇宙：黄金与机械」中, 累计观看10次推荐剧情",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 10
+      }
+    ],
     "Priority": 897,
     "Rarity": "Low",
     "ShowType": "ShowAfterFinish",
@@ -10455,7 +13891,11 @@
     "SeriesID": 9,
     "AchievementTitle": "逐渐理解一切",
     "AchievementDesc": "在「模拟宇宙：黄金与机械」中，自我认知达到40",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 40
+      }
+    ],
     "Priority": 896,
     "Rarity": "Low",
     "ShowType": "ShowAfterFinish",
@@ -10466,7 +13906,11 @@
     "SeriesID": 9,
     "AchievementTitle": "精神灰域",
     "AchievementDesc": "在「模拟宇宙：黄金与机械」中，自我认知达到-40",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 40
+      }
+    ],
     "Priority": 895,
     "Rarity": "Low",
     "ShowType": "ShowAfterFinish",
@@ -10477,7 +13921,11 @@
     "SeriesID": 9,
     "AchievementTitle": "集群意识",
     "AchievementDesc": "在「模拟宇宙：黄金与机械」中，累计完成50次自我认知的改变",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 50
+      }
+    ],
     "Priority": 894,
     "Rarity": "Low",
     "ShowType": "ShowAfterFinish",
@@ -10510,7 +13958,11 @@
     "SeriesID": 9,
     "AchievementTitle": "D级人员",
     "AchievementDesc": "在「模拟宇宙：黄金与机械」中，在「星际和平机械分部商城（其二）」事件中升级1次奇物",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 1
+      }
+    ],
     "Priority": 891,
     "Rarity": "Low",
     "ShowType": "ShowAfterFinish",
@@ -10521,7 +13973,11 @@
     "SeriesID": 9,
     "AchievementTitle": "莱博维茨的丧钟",
     "AchievementDesc": "通关「模拟宇宙：黄金与机械」时，使用自定义骰「战斗推演」，获得25次及以上战斗胜利",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 25
+      }
+    ],
     "Priority": 890,
     "Rarity": "Low",
     "Version": "1.6"
@@ -10531,7 +13987,11 @@
     "SeriesID": 9,
     "AchievementTitle": "宇宙过河卒",
     "AchievementDesc": "通关「模拟宇宙：黄金与机械」时，使用自定义骰「事件推演」，完成20次及以上事件交互",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 20
+      }
+    ],
     "Priority": 889,
     "Rarity": "Low",
     "Version": "1.6"
@@ -10541,7 +14001,11 @@
     "SeriesID": 9,
     "AchievementTitle": "变化的位面",
     "AchievementDesc": "在「模拟宇宙：黄金与机械」中，使用自定义骰「追猎」，连续进入5个及以上不相邻的区域",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 5
+      }
+    ],
     "Priority": 888,
     "Rarity": "Low",
     "Version": "1.6"
@@ -10551,7 +14015,11 @@
     "SeriesID": 9,
     "AchievementTitle": "杀猪盘",
     "AchievementDesc": "通关「模拟宇宙：黄金与机械」时，使用自定义骰「扑满推演」，在战斗中击败15个及以上扑满",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 15
+      }
+    ],
     "Priority": 887,
     "Rarity": "Low",
     "Version": "1.6"
@@ -10561,7 +14029,11 @@
     "SeriesID": 9,
     "AchievementTitle": "星港管制员",
     "AchievementDesc": "通关「模拟宇宙：黄金与机械」时，使用自定义骰「行者共生」，进入15个及以上带有信标的区域",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 15
+      }
+    ],
     "Priority": 886,
     "Rarity": "Low",
     "Version": "1.6"
@@ -10581,7 +14053,11 @@
     "SeriesID": 9,
     "AchievementTitle": "出卖月亮的人",
     "AchievementDesc": "通关「模拟宇宙：黄金与机械」时，使用自定义骰「投资出售」，拥有的宇宙碎片大于等于2048",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 2048
+      }
+    ],
     "Priority": 884,
     "Rarity": "Low",
     "Version": "1.6"
@@ -10591,7 +14067,11 @@
     "SeriesID": 9,
     "AchievementTitle": "翠鸟董事会专员",
     "AchievementDesc": "通关「模拟宇宙：黄金与机械」时，使用自定义骰「琥珀障壁」，为30个及以上的区域附加【知识】效果",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 30
+      }
+    ],
     "Priority": 883,
     "Rarity": "Low",
     "Version": "1.6"
@@ -10601,7 +14081,11 @@
     "SeriesID": 9,
     "AchievementTitle": "时间足够你玩",
     "AchievementDesc": "通关「模拟宇宙：黄金与机械」时，使用自定义骰「倒计时」，倒计时大于等于30点",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 30
+      }
+    ],
     "Priority": 882,
     "Rarity": "Low",
     "Version": "1.6"
@@ -10611,7 +14095,11 @@
     "SeriesID": 9,
     "AchievementTitle": "月亮头的奇迹商店",
     "AchievementDesc": "通关「模拟宇宙：黄金与机械」时，使用自定义骰「公司时刻」，在【祝福商店】、【奇物商店】或【强化商店】购买过20件及以上商品",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 20
+      }
+    ],
     "Priority": 881,
     "Rarity": "Low",
     "Version": "1.6"
@@ -10621,7 +14109,11 @@
     "SeriesID": 9,
     "AchievementTitle": "商人与炼金术士之门",
     "AchievementDesc": "通关「模拟宇宙：黄金与机械」时，使用自定义骰「数据膨胀」，使用25次及以上重投或作弊",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 25
+      }
+    ],
     "Priority": 880,
     "Rarity": "Low",
     "Version": "1.6"
@@ -10631,7 +14123,11 @@
     "SeriesID": 9,
     "AchievementTitle": "黑塔的宝藏",
     "AchievementDesc": "通关「模拟宇宙：黄金与机械」时，使用自定义骰「奇物推演」，拥有30个及以上的奇物",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 30
+      }
+    ],
     "Priority": 879,
     "Rarity": "Low",
     "Version": "1.6"
@@ -10663,7 +14159,11 @@
     "SeriesID": 9,
     "AchievementTitle": "六十面骰",
     "AchievementDesc": "在「模拟宇宙：黄金与机械」中，解锁60个骰面",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 60
+      }
+    ],
     "Priority": 876,
     "Rarity": "Low",
     "ShowType": "ShowAfterFinish",
@@ -10674,7 +14174,11 @@
     "SeriesID": 9,
     "AchievementTitle": "转动命运",
     "AchievementDesc": "在「模拟宇宙：黄金与机械」中，解锁全部12个自定义骰",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 12
+      }
+    ],
     "Priority": 875,
     "Rarity": "Low",
     "ShowType": "ShowAfterFinish",
@@ -10696,7 +14200,11 @@
     "SeriesID": 9,
     "AchievementTitle": "机械飞升",
     "AchievementDesc": "在「模拟宇宙：黄金与机械」的神经网络中激活第1个神经",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 1
+      }
+    ],
     "Priority": 873,
     "Rarity": "Low",
     "ShowType": "ShowAfterFinish",
@@ -10707,7 +14215,11 @@
     "SeriesID": 9,
     "AchievementTitle": "巨人：福宾计划",
     "AchievementDesc": "在折磨难度，属性难题等级大于等于6时，通关「模拟宇宙：黄金与机械」",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 6
+      }
+    ],
     "Priority": 872,
     "Rarity": "Low",
     "ShowType": "ShowAfterFinish",
@@ -10718,7 +14230,11 @@
     "SeriesID": 9,
     "AchievementTitle": "泡泡糖危机",
     "AchievementDesc": "在折磨难度，追加难题等级大于等于6时，通关「模拟宇宙：黄金与机械」",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 6
+      }
+    ],
     "Priority": 871,
     "Rarity": "Low",
     "ShowType": "ShowAfterFinish",
@@ -10729,7 +14245,11 @@
     "SeriesID": 9,
     "AchievementTitle": "铁锈之海",
     "AchievementDesc": "在折磨难度，难题等级大于等于12时，通关「模拟宇宙：黄金与机械」",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 12
+      }
+    ],
     "Priority": 870,
     "Rarity": "Mid",
     "ShowType": "ShowAfterFinish",
@@ -10740,7 +14260,11 @@
     "SeriesID": 9,
     "AchievementTitle": "古旧空间的钥匙",
     "AchievementDesc": "在「模拟宇宙：黄金与机械」通关时，使【位面紊乱！】的【扰动等级】大于等于20级",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 20
+      }
+    ],
     "Priority": 869,
     "Rarity": "Low",
     "ShowType": "ShowAfterFinish",
@@ -10751,7 +14275,11 @@
     "SeriesID": 9,
     "AchievementTitle": "诅咒之王",
     "AchievementDesc": "通关「模拟宇宙：黄金与机械」时，拥有10个及以上的负面奇物",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 10
+      }
+    ],
     "Priority": 868,
     "Rarity": "Low",
     "ShowType": "ShowAfterFinish",
@@ -10762,7 +14290,11 @@
     "SeriesID": 9,
     "AchievementTitle": "正态分布",
     "AchievementDesc": "在「模拟宇宙：黄金与机械」中，在同一觐见装置上，连续投出6个不同的骰面",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 6
+      }
+    ],
     "Priority": 867,
     "Rarity": "Low",
     "ShowType": "ShowAfterFinish",
@@ -10773,7 +14305,11 @@
     "SeriesID": 9,
     "AchievementTitle": "忧郁蓝调",
     "AchievementDesc": "通关「模拟宇宙：黄金与机械」时，装备6个蓝色品质的骰面（难度三及以上）",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 6
+      }
+    ],
     "Priority": 866,
     "Rarity": "Low",
     "ShowType": "ShowAfterFinish",
@@ -10784,7 +14320,11 @@
     "SeriesID": 9,
     "AchievementTitle": "所有一切都被仁慈的机器守护",
     "AchievementDesc": "在「模拟宇宙：黄金与机械」中，一场战斗中遭遇10次及以上【回响推演】",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 10
+      }
+    ],
     "Priority": 865,
     "Rarity": "Low",
     "ShowType": "ShowAfterFinish",
@@ -10795,7 +14335,11 @@
     "SeriesID": 9,
     "AchievementTitle": "命运轮盘",
     "AchievementDesc": "在「模拟宇宙：黄金与机械」中，在「幸运罗盘挑战」中达成1次头等奖",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 1
+      }
+    ],
     "Priority": 864,
     "Rarity": "Low",
     "ShowType": "ShowAfterFinish",
@@ -10806,7 +14350,11 @@
     "SeriesID": 9,
     "AchievementTitle": "反射闪避",
     "AchievementDesc": "在「模拟宇宙：黄金与机械」中，在「躲避射线挑战」中连续成功躲避6轮",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 6
+      }
+    ],
     "Priority": 863,
     "Rarity": "Low",
     "ShowType": "ShowAfterFinish",
@@ -10817,7 +14365,11 @@
     "SeriesID": 9,
     "AchievementTitle": "灭绝令",
     "AchievementDesc": "在「模拟宇宙：黄金与机械」中，连续施放10次终结技",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 10
+      }
+    ],
     "Priority": 862,
     "Rarity": "Low",
     "ShowType": "ShowAfterFinish",
@@ -10831,6 +14383,7 @@
     "ParamList": [],
     "Priority": 861,
     "Rarity": "Low",
+    "ShowType": "HiddenDesc",
     "Version": "2.6"
   },
   "4093602": {
@@ -10841,6 +14394,7 @@
     "ParamList": [],
     "Priority": 860,
     "Rarity": "Low",
+    "ShowType": "HiddenDesc",
     "Version": "2.6"
   },
   "4093603": {
@@ -10881,7 +14435,11 @@
     "SeriesID": 9,
     "AchievementTitle": "加入光荣的进化",
     "AchievementDesc": "通关「模拟宇宙：不可知域」时，权杖完成5次及以上改装",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 5
+      }
+    ],
     "Priority": 854,
     "Rarity": "Low",
     "ShowType": "ShowAfterFinish",
@@ -10892,7 +14450,11 @@
     "SeriesID": 9,
     "AchievementTitle": "钢铁朝阳",
     "AchievementDesc": "通关「模拟宇宙：不可知域」时，拥有20个以上组件",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 20
+      }
+    ],
     "Priority": 853,
     "Rarity": "Low",
     "ShowType": "ShowAfterFinish",
@@ -10903,7 +14465,11 @@
     "SeriesID": 9,
     "AchievementTitle": "学习成为「我」",
     "AchievementDesc": "通关「模拟宇宙：不可知域」时，完成30次以上组件覆写",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 30
+      }
+    ],
     "Priority": 852,
     "Rarity": "Low",
     "ShowType": "ShowAfterFinish",
@@ -10914,7 +14480,11 @@
     "SeriesID": 9,
     "AchievementTitle": "帝国炼金师",
     "AchievementDesc": "通关「模拟宇宙：不可知域」时，在造物调试台中完成4次以上组件合成",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 4
+      }
+    ],
     "Priority": 851,
     "Rarity": "Low",
     "ShowType": "ShowAfterFinish",
@@ -10925,7 +14495,11 @@
     "SeriesID": 9,
     "AchievementTitle": "冲出概率泥沼",
     "AchievementDesc": "在难题等级为6的情况下，通关「模拟宇宙：不可知域」",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 6
+      }
+    ],
     "Priority": 847,
     "Rarity": "Low",
     "ShowType": "ShowAfterFinish",
@@ -10936,7 +14510,11 @@
     "SeriesID": 9,
     "AchievementTitle": "卡尔达肖夫-III",
     "AchievementDesc": "在「模拟宇宙：不可知域」中获取3星组件",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 3
+      }
+    ],
     "Priority": 846,
     "Rarity": "Low",
     "ShowType": "ShowAfterFinish",
@@ -10947,7 +14525,11 @@
     "SeriesID": 9,
     "AchievementTitle": "超越认知",
     "AchievementDesc": "在「模拟宇宙：不可知域」中获取3星权杖",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 3
+      }
+    ],
     "Priority": 845,
     "Rarity": "Low",
     "ShowType": "ShowAfterFinish",

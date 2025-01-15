@@ -33,7 +33,7 @@ export const useAchievementStore = defineStore('achievement', () => {
         constructor(achievement) {
             this.AchievementID = achievement.AchievementID
             this.SeriesID = achievement.SeriesID
-            this.AchievementTitle = achievement.AchievementTitle
+            this.AchievementSrcTitle = achievement.AchievementTitle
             this.AchievementSrcDesc = achievement.AchievementDesc
             this.ParamList = achievement.ParamList
             this.Priority = achievement.Priority
@@ -45,6 +45,12 @@ export const useAchievementStore = defineStore('achievement', () => {
 
         get isHidden(){
             return this.ShowType === "ShowAfterFinish"
+        }
+
+        get AchievementTitle(){
+            let result = this.AchievementSrcTitle.replace(pattern1, currentUserInfo.value.name)
+            
+            return result
         }
 
         get AchievementDesc(){
