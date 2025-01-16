@@ -7,6 +7,12 @@ const { isMobile } = storeToRefs(isMobileStore)
 
 const updateLogInfo = [
     {
+        version: '3.0.1', 
+        date: '2025-01-16', 
+        title: '移除阿格莱雅相关战斗成就的暂不可获得状态',
+        changes: '<ul style="padding-left: 10px;"><li>移除阿格莱雅相关战斗成就的暂不可获得状态</li></ul>' 
+    },
+    {
         version: '3.0.0', 
         date: '2025-01-15', 
         title: '更新 3.0 版本成就相关数据，更新 3.0 版本角色相关数据',
