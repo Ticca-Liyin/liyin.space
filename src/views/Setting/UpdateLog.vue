@@ -7,6 +7,12 @@ const { isMobile } = storeToRefs(isMobileStore)
 
 const updateLogInfo = [
     {
+        version: '3.0.2', 
+        date: '2025-01-23', 
+        title: 'stardb 导入识别兼容新版 stardb-exporter 提取的数据',
+        changes: '<ul style="padding-left: 10px;"><li>stardb 导入识别兼容新版 stardb-exporter 提取的数据</li></ul>' 
+    },
+    {
         version: '3.0.1', 
         date: '2025-01-16', 
         title: '移除阿格莱雅相关战斗成就的暂不可获得状态',

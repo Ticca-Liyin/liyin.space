@@ -24,11 +24,11 @@ const identifyData = () => {
         const data = JSON.parse(importData.value);
 
         // 进一步检查解析后的数据是否符合预期
-        if (typeof data === 'object' && data !== null && !Array.isArray(data) && 'achievements' in data && Array.isArray(data.achievements)) {
+        if (typeof data === 'object' && data !== null && !Array.isArray(data) && 'hsr_achievements' in data && Array.isArray(data.hsr_achievements)) {
             const AchievementIDs = []
             achievements.value.forEach(achievement => AchievementIDs.push(achievement.AchievementID))
 
-            for(const id of data.achievements){
+            for(const id of data.hsr_achievements){
                 if(AchievementIDs.includes(id) && !importAchievementList.value.includes(id)){
                     importAchievementList.value.push(id)
                 }
@@ -89,9 +89,9 @@ defineExpose({ reset })
             <p>stardb-exporter 程序获取方式：</p>
             <a class="stardb-import-link" href="https://github.com/juliuskreutz/stardb-exporter" target="_blank">github 源文件</a>
             &nbsp; | &nbsp;
-            <a class="stardb-import-link" href="https://github.com/Ticca-Liyin/stardb-exporter" target="_blank">github 汉化版</a>
-            &nbsp; | &nbsp;
-            <a class="stardb-import-link" href="https://liyinresources.lanzout.com/iFidB229jvih" target="_blank">蓝奏云下载</a>
+            <!-- <a class="stardb-import-link" href="" target="_blank">github 汉化版</a>
+            &nbsp; | &nbsp; -->
+            <a class="stardb-import-link" href="https://liyinresources.lanzout.com/iiaXJ2lnzesj" target="_blank">蓝奏云下载</a>
             <br/><br/>
             <p>教程视频：<a class="stardb-import-link" href="https://www.bilibili.com/video/BV1rE421N7b5/" target="_blank">点这里</a></p><br/>
             
