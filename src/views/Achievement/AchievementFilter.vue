@@ -3,7 +3,7 @@ import { ArrowDown, ArrowUp, Filter } from '@element-plus/icons-vue'
 import { ElMessageBox } from 'element-plus'
 import { useAchievementStore } from '@/stores/achievement';
 import { useIsMobileStore } from '@/stores/isMobile'
-import { useSettingStore } from '@/stores/achievementSetting'
+import { useAchievementSettingStore } from '@/stores/achievementSetting'
 import { ref, onMounted, watch } from 'vue';
 import { storeToRefs } from 'pinia';
 
@@ -14,7 +14,7 @@ const { selectHiddenList, selectRewardList, selectCompletedList, selectAvailable
 const isMobileStore = useIsMobileStore()
 const { isMobile } = storeToRefs(isMobileStore)
 
-const settingStore = useSettingStore()
+const settingStore = useAchievementSettingStore()
 const { achievementSelectAllSecondConfirmation } = storeToRefs(settingStore)
 
 const confirmSelectAll = (event) => {

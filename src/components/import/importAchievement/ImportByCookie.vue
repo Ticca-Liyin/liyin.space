@@ -1,179 +1,68 @@
 <script setup>
+import { CopyDocument } from '@element-plus/icons-vue'
 import { ref } from 'vue';
-import { useAchievementStore } from '@/stores/achievement';
-import { useAchievementCustomNotAchievedStore } from '@/stores/achievementCustomNotAchieved'
+import { useIsMobileStore } from '@/stores/isMobile'
+import { useAchievementImportByCookieStore } from '@/stores/achievementImportByCookie'
+import { useAchievementImportStore } from '@/stores/achievementImport'
+import { CookieServerCode } from '@/types/requesrResult'
 import { storeToRefs } from 'pinia';
 
-const achievementStore = useAchievementStore()
-const { achievements } = storeToRefs(achievementStore)
-const { handleUserAchievementList, handleAchevementStatus, saveUserAchievement } = achievementStore
+const achievementImport = useAchievementImportStore()
+const { isImporting } = storeToRefs(achievementImport)
+const { importAchievementsByCookie } = achievementImport
 
-const achievementCustomNotAchievedStore = useAchievementCustomNotAchievedStore()
-const { initUserCustomNotAchievedList } = achievementCustomNotAchievedStore
+const isMobileStore = useIsMobileStore()
+const { isMobile } = storeToRefs(isMobileStore)
 
-const importCookie = ref('')
-const errorStr = ref('')
-const importAchievementList = ref([])
+const importByCookieStore = useAchievementImportByCookieStore()
+const { findUserImportByCookieConfig, handleUserImportByCookieConfig } = importByCookieStore
 
-// const identifyData = () => {
-//     errorStr.value = ''
-//     importAchievementList.value = []
+const cookieConfig = findUserImportByCookieConfig();
+const importCookie = ref(cookieConfig?.cookie ?? '');
+const openAutoUpate = ref(cookieConfig?.autoUpdateAchevements ?? false);
 
-//     try {
-//         // 尝试将用户输入的 JSON 字符串解析为 JavaScript 对象
-//         const data = JSON.parse(importData.value);
+const copyCode = () => {
+    const code = "var cookie = document.cookie;\nif (cookie.includes('e_hkrpg_token=')){\n    copy(cookie);\n    console.log('cookie 已粘贴至剪切板');\n} else {\n    console.error('cookie 获取失败，可能你还未登录');\n}"
 
-//         // 进一步检查解析后的数据是否符合预期
-//         if (typeof data === 'object' && data !== null && !Array.isArray(data) && 'achievements' in data && Array.isArray(data.achievements)) {
-//             const AchievementIDs = []
-//             achievements.value.forEach(achievement => AchievementIDs.push(achievement.AchievementID))
-
-//             for(const id of data.achievements){
-//                 if(AchievementIDs.includes(id) && !importAchievementList.value.includes(id)){
-//                     importAchievementList.value.push(id)
-//                 }
-//             }
-//         }
-//         else {
-//             errorStr.value = '无法正确识别导入数据'
-//         }
-//     } catch (error) {
-//         errorStr.value = '无法正确识别导入数据'
-//     }
-// }
+    navigator.clipboard.writeText(code)
+    .then(() => {
+        ElMessage({
+            showClose: true,
+            message: "代码已复制到剪切板",
+            type: 'success',
+        })
+    })
+    .catch(err => {
+        ElMessage({
+            showClose: true,
+            message: "复制到剪切板失败: " + err.message,
+            type: 'error',
+        })
+    });
+}
 
 const emit = defineEmits(['import-achievements']);
 
-// 从cookie字符串中提取指定字段的值
-const extractCookieValue = (cookies, key) => {
-    // 将cookie字符串分割成键值对
-    const cookiePairs = cookies.split('; ');
-    for (const pair of cookiePairs) {
-        // 每个键值对进一步分割成键和值
-        if (pair.includes('=')) {
-            const [k, v] = pair.split('=', 2);
-            // 如果找到了匹配的键，则返回对应的值
-            if (k === key) {
-                return v;
-            }
-        }
-    }
-    // 如果没有找到匹配的键，则返回null
-    return null;
-}
-
 const importAchievements = () => {
     const cookie = importCookie.value;
-    const device_id = extractCookieValue(cookie, '_MHYUUID');
+    const autoUpate = openAutoUpate.value;
 
-    if (!device_id) {
-        ElMessage({
-            showClose: true,
-            message: '解析 cookie 失败，请确认 cookie 是否正确！',
-            type: 'error',
-        })
-        return;
-    }
-
-    const url = extractCookieValue(cookie, 'HYV_LOGIN_PLATFORM_LIFECYCLE_ID') !== null ? '/hoyolab-api/event/rpgcultivate/achievement/list' : '/mohoyo-api/event/rpgcultivate/achievement/list'
-
-    // 请求参数
-    const params = new URLSearchParams({
-        show_hide: "true",
-        need_all: "true"
-    });
-
-    // 请求头
-    const headers = new Headers({
-        'cookie': cookie,
-        'x-rpc-device_id': device_id,
-        'host': 'api-takumi.mihoyo.com',
-        'origin': 'https://act.mihoyo.com',
-        'referer': 'https://act.mihoyo.com/',
-    });
-
-    // 发送GET请求
-    fetch(`${url}?${params.toString()}`, {
-        method: 'GET',
-        headers: headers
-    })
-    .then(response => {
-        if (response.ok) {
-            return response.json();
-        } else {
-            throw new Error(`请求失败，状态码: ${response.status}`);
+    importAchievementsByCookie(cookie)
+    .then((res) => {
+        if (res?.code === CookieServerCode.SUCCESS) {
+            handleUserImportByCookieConfig(cookie, autoUpate)
+            emit('import-achievements')
         }
     })
-    .then(data => {
-        console.log(data);
-
-        if (data.retcode !== 0) {
-            ElMessage({
-                showClose: true,
-                message: '请求失败，未知异常！',
-                type: 'error',
-            })
-            return;
-        }
-
-        const achievements = data.data.achievement_list;
-        console.log(achievements);
-
-        // 假设 get_achievement 是一个处理成就的函数
-        // for (const achievement of achievements) {
-        //     get_achievement(achievement);
-        // }
-
-        // 打印成就列表
-        console.log(achievements);
-        console.log(`已完成成就个数：${achievements.length}`);
-
-        // 将JSON数据复制到剪切板
-        navigator.clipboard.writeText(JSON.stringify(achievements, null, 2))
-            .then(() => {
-                console.log("成就数据已复制到剪切板");
-                alert("成就数据已复制到剪切板");
-            })
-            .catch(err => {
-                console.error("无法复制到剪切板: ", err);
-                alert("无法复制到剪切板: " + err.message);
-            });
+    .catch((err) => {
+        
     })
-    .catch(error => {
-        console.error(error.message);
-        ElMessage({
-            showClose: true,
-            message: error.message,
-            type: 'error',
-        })
-        return;
-    });
-    // // 初始化所有成就状态为未完成
-    // achievements.value.forEach(achievement => {
-    //     achievement.Status = 1
-    //     achievement.CustomNotAchieved = false
-    //     handleUserAchievementList(achievement.AchievementID, achievement.Status, false)
-    // })        
-    // initUserCustomNotAchievedList()
-
-    // // 修改已完成状态, 同一多选已成就后识别的覆盖先识别到的
-    // for(const id of importAchievementList.value){
-    //     const ach_ = achievements.value.find(achievement => id === achievement.AchievementID)
-
-    //     if (!ach_) continue
-    //     ach_.Status = 1
-    //     handleAchevementStatus(ach_, false)
-    // }
-
-    // saveUserAchievement()
-
-    emit('import-achievements')
 }
 
 const reset = () => {
-    errorStr.value = ''
-    importCookie.value = ''
-    importAchievementList.value = []
+    const cookieConfig = findUserImportByCookieConfig();
+    importCookie.value = cookieConfig?.cookie ?? ''
+    openAutoUpate.value = cookieConfig?.autoUpdateAchevements ?? false
 }
 
 defineExpose({ reset })
@@ -197,6 +86,12 @@ defineExpose({ reset })
             <p>3) 按 <code>F12</code> 或右键菜单选择 <code>检查</code> 打开开发者工具</p><br/>
             <p>4) 切换到 <code>控制台</code> 或 <code>Console</code> 标签页</p><br/>
             <p>5) 将下面的代码粘贴至控制台中，并按下 <code>Enter</code> 键</p>
+            <div class="cookie-import-code">
+                <el-button title="复制代码" class="cookie-import-copy-button" :disabled="isMobile" @click="copyCode">
+                    <el-icon>
+                        <copy-document />
+                    </el-icon>                    
+                </el-button>
 <pre>
 <span>var cookie = document.cookie;</span>
 <span>if (cookie.includes('e_hkrpg_token=')){</span>
@@ -206,23 +101,29 @@ defineExpose({ reset })
 <span>    console.error('cookie 获取失败，可能你还未登录');</span>
 <span>}</span>
 </pre>
+            </div>
             <p>6) 将获取到的 Cookie 粘贴至文本框中</p><br/>
             <p>7) 点击 <code>导入</code> 按钮完成导入</p><br/>
             
             <!-- <p>教程视频：<a class="cookie-import-link" href="" target="_blank">点这里</a></p><br/> -->    
+
+            <p style="color: #e6a23c;">导入的成就会覆盖现在所选账号原有的所有成就信息，请谨慎导入</p><br/>
         </div>
         <div class="cookie-import-data">
             <div class="cookie-import-data-title">Cookie：</div>
             <el-input v-model="importCookie" class="cookie-import-data-textarea" :rows="3" resize="none" type="textarea" 
             placeholder="请输入你的 Cookie"/> 
         </div>
+        <div class="auto-update-checkbox">
+            <el-checkbox v-model="openAutoUpate" label="每次登录网页时自动使用 cookie 导入更新成就数据" :size="isMobile ? 'small' : 'default'"/>
+        </div>
     </div>
     <div class="cookie-import-footer">
-        <!-- <div v-if="errorStr" class="cookie-import-footer-error">{{ errorStr }}</div>
-        <div v-else-if="!importAchievementList.length" class="cookie-import-footer-tip">未识别到可导入的内容</div>
-        <div v-else class="cookie-import-footer-tip">识别到已完成成就 {{ importAchievementList.length }} 个</div> -->
         <div class="cookie-import-footer-tip"></div>
-        <el-button type="primary" plain @click="importAchievements" :disabled="!importCookie.trim()">
+        <el-button type="primary" plain 
+            v-loading.fullscreen.lock="isImporting" element-loading-text="正在通过 cookie 获取成就数据..." 
+            element-loading-background="rgba(0, 0, 0, 0.7)"
+            @click="importAchievements" :disabled="!importCookie.trim()">
         导入
         </el-button>
     </div>
@@ -235,6 +136,7 @@ defineExpose({ reset })
     border-radius: 5px;
     max-height: 350px;
     overflow-y: auto;
+    overflow-x: hidden;
 }
 .cookie-import-main::-webkit-scrollbar,
 .cookie-import-tip pre::-webkit-scrollbar,
@@ -275,6 +177,26 @@ defineExpose({ reset })
     transition: color .25s, background-color .5s;
 }
 
+.cookie-import-code {
+    position: relative;
+}
+
+.cookie-import-copy-button {
+    position: absolute;
+    font-size: 16px;
+    top: 15px;
+    right: 20px;
+    z-index: 2;
+    width: 30px;
+    height: 30px;
+    padding: 5px;
+    opacity: 0;
+}
+
+.cookie-import-code:hover .cookie-import-copy-button {
+    opacity: 1;
+}
+
 .cookie-import-tip pre{
     position: relative;
     z-index: 1;
@@ -308,6 +230,16 @@ defineExpose({ reset })
     margin-bottom: 10px;
 }
 
+.auto-update-checkbox {
+    padding: 0 20px;
+    margin-top: -6px;
+    margin-bottom: 5px;
+}
+
+.auto-update-checkbox .el-checkbox {
+    align-items: start;
+}
+
 .cookie-import-footer{
     display: flex; 
     align-items: center;
@@ -334,8 +266,24 @@ defineExpose({ reset })
         line-height: 15px;   
     }
 
+    .cookie-import-copy-button {
+        opacity: 0;
+    }
+
+    .cookie-import-code:hover .cookie-import-copy-button {
+        opacity: 0;
+    }
+
     .cookie-import-data{
-        font-size: 14px;
+        font-size: 12px;
+    }
+
+    .cookie-import-data-textarea {
+        font-size: 12px;
+    }
+
+    .auto-update-checkbox {
+        margin-top: -7px;
     }
 
     .cookie-import-footer-error{
@@ -345,4 +293,14 @@ defineExpose({ reset })
         font-size: 12px;
     }
 }
+</style>
+
+<style>
+.auto-update-checkbox .el-checkbox .el-checkbox__input {
+    padding-left: 2px;
+}
+.auto-update-checkbox .el-checkbox .el-checkbox__label {
+  white-space: normal !important;
+  word-break: break-all;
+} 
 </style>

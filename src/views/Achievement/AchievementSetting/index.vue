@@ -1,6 +1,7 @@
 <script setup>
 import AchievementSelectAll from '@/views/Achievement/AchievementSetting/AchievementSelectAllSecondConfirmation.vue'
 import AchievementFilterCache from '@/views/Achievement/AchievementSetting/AchievementFelterCache.vue'
+import ImportByCookieSecondComfirmation from '@/views/Achievement/AchievementSetting/ImportByCookieSecondComfirmation.vue';
 import TextjoinSetting from '@/views/Achievement/AchievementSetting/TextjoinSetting.vue'
 import { ref, computed } from 'vue';
 import { storeToRefs } from 'pinia'
@@ -40,6 +41,8 @@ defineExpose({ handleOpen, handleClose })
                     <AchievementSelectAll />
 
                     <AchievementFilterCache />
+
+                    <ImportByCookieSecondComfirmation />
                 </el-tab-pane>
                 <el-tab-pane label="特殊文本" name="textjoin">
                     <TextjoinSetting />

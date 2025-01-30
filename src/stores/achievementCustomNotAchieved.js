@@ -70,11 +70,11 @@ export const useAchievementCustomNotAchievedStore = defineStore('achievementCust
         }
         if(save) saveUserCustomNotAchieved()
         return 
-    }   
-    // 该函数需要移动至 achievement.js 中
+    }
     
+    getUserCustomNotAchieved()
+
     return {
-        getUserCustomNotAchieved,
         saveUserCustomNotAchieved,
         findUserCustomNotAchievedList,
         initUserCustomNotAchievedList,

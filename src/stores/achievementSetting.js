@@ -1,7 +1,8 @@
 import {ref, watchEffect, computed } from 'vue'
 import { defineStore } from 'pinia'
 
-export const useSettingStore = defineStore('achievementSetting', () => { 
+export const useAchievementSettingStore = defineStore('achievementSetting', () => { 
+    //#region  成就全选二次确认
     const ACHIEVEMENT_SELECT_ALL_SECOND_CONFIRMATION_KEY = 'achievement-select-all-second-confirmation'
 
     const achievementSelectAllSecondConfirmation = ref(JSON.parse(localStorage.getItem(ACHIEVEMENT_SELECT_ALL_SECOND_CONFIRMATION_KEY) ?? true))
@@ -20,7 +21,9 @@ export const useSettingStore = defineStore('achievementSetting', () => {
     watchEffect(() => {
         localStorage.setItem(ACHIEVEMENT_SELECT_ALL_SECOND_CONFIRMATION_KEY, JSON.stringify(achievementSelectAllSecondConfirmation.value))
     })
+    //#endregion
 
+    //#region  成就筛选配置缓存
     const ACHIEVEMENT_FILTER_CACHE_CONFIG_KEY = 'achievement-filter-cache-config'
 
     const achievementFilterCacheConfig = ref(JSON.parse(localStorage.getItem(ACHIEVEMENT_FILTER_CACHE_CONFIG_KEY) ?? false))
@@ -39,11 +42,35 @@ export const useSettingStore = defineStore('achievementSetting', () => {
     watchEffect(() => {
         localStorage.setItem(ACHIEVEMENT_FILTER_CACHE_CONFIG_KEY, JSON.stringify(achievementFilterCacheConfig.value))
     })
+    //#endregion
+
+    //#region  Cookie 导入二次确认
+    const IMPORT_BY_COOKIE_SECOND_CONFIRMATION_KEY = 'import-by-cookie-second-confirmation'
+
+    const importByCookieSecondConfirmation = ref(JSON.parse(localStorage.getItem(IMPORT_BY_COOKIE_SECOND_CONFIRMATION_KEY) ?? true))
+
+    const importByCookieSecondConfirmationList = [
+        {
+            label: '开启',
+            value: true
+        },
+        {
+            label: '关闭',
+            value: false
+        }
+    ]
+
+    watchEffect(() => {
+        localStorage.setItem(IMPORT_BY_COOKIE_SECOND_CONFIRMATION_KEY, JSON.stringify(importByCookieSecondConfirmation.value))
+    })
+    //#endregion
 
     return {
         achievementSelectAllSecondConfirmation,
         secondConfirmationList,
         achievementFilterCacheConfig,
-        filterCacheConfigList
+        filterCacheConfigList,
+        importByCookieSecondConfirmation,
+        importByCookieSecondConfirmationList
     }
 })

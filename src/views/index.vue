@@ -13,7 +13,7 @@ const route = useRoute()
 
 const userInfoStore = useUserInfoStore()
 const { userInfoList, currentUserInfo } = storeToRefs(userInfoStore)
-const { getUserInfo, handleCurrentTokenID } = userInfoStore
+const { handleCurrentTokenID } = userInfoStore
 
 const authorStore = useAuthorStore()
 const { initialAuthorsInfo } = authorStore
@@ -42,10 +42,8 @@ const navList = [
     }
 ]
 
-onMounted(() => {
-    getUserInfo()
-    initialAuthorsInfo()
-    initialCharactersInfo()
+onMounted(async () => {
+    const results = await Promise.allSettled([initialAuthorsInfo(), initialCharactersInfo()]);
 })
 
 </script>

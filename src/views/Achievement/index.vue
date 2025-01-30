@@ -10,25 +10,57 @@ import ExportAchievement from '@/components/export/ExportAchievement.vue';
 import ImportAchievement from '@/components/import/importAchievement/index.vue';
 import { DynamicScroller, DynamicScrollerItem } from 'vue-virtual-scroller'
 import 'vue-virtual-scroller/dist/vue-virtual-scroller.css'
-import { onMounted } from 'vue';
+import { onMounted, watch } from 'vue';
+import { storeToRefs } from 'pinia'
 import { useAchievementStore } from '@/stores/achievement';
-import { useTextjoinStore } from '@/stores/textjoin.js'
+import { useUserInfoStore } from '@/stores/userInfo';
+import { useAchievementImportStore } from '@/stores/achievementImport'
 
 const achievementStore = useAchievementStore()
-const textjoinStore = useTextjoinStore();
+const { initialAchievementsInfo, initialAchievementsStatus, initialNotAvailable, initialAchievementsCustomNotAchievedStatus } = achievementStore
+
+const userInfoStore = useUserInfoStore()
+const { currentUserInfo } = storeToRefs(userInfoStore)
+
+const achievementImport = useAchievementImportStore()
+const { isImporting } = storeToRefs(achievementImport)
+const { autoImportAchievementsByCookie } = achievementImport
 
 const AchievementSettingRef = ref(null)
 
-onMounted(() => {
-   textjoinStore.getUserTextjoin()
-   achievementStore.initialAchievementsInfo() 
-   achievementStore.getAchievementFilterConfig()
+onMounted(async () => {
+    try {
+        await initialAchievementsInfo();
+        await autoImportAchievementsByCookie();
+
+    } catch (error) {
+
+    }
+})
+
+// 当前用户更改时，将对应数据切换至更改后的用户
+watch(currentUserInfo, async () => {
+    initialAchievementsStatus()
+    // 对 暂时无法获得但因特殊情况状态时已获得的进行修正 由于会重复赋值 已赋值的 timestamp 若出现性能问题可进行优化
+    initialNotAvailable()
+    
+    initialAchievementsCustomNotAchievedStatus()
+
+    try {
+        await autoImportAchievementsByCookie();
+    } catch (error) {
+        
+    }
 })
 
 </script>
 
 <template>
-    <div class="achievement">
+    <div class="achievement"
+        v-loading.fullscreen.lock="isImporting"
+        element-loading-text="正在通过 cookie 获取成就数据..."
+        element-loading-background="rgba(0, 0, 0, 0.7)"
+    >
         <header class="achievement-header">
             <div class="achievement-setting-button" @click="AchievementSettingRef.handleOpen">
                 设置

@@ -112,9 +112,10 @@ export const useTextjoinStore = defineStore('textjoin', () => {
         saveUserTextjoin()
     }
 
+    getUserTextjoin()
+
     return {
         textjoinSelectList,
-        getUserTextjoin,
         getUserTextjoinList,
         getUserTextjoinValue,
         updateUserTextjoinValue,

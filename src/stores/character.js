@@ -95,13 +95,17 @@ export const useCharacterStore = defineStore('character', () => {
     const characterDefaultAvatar = '/src/images/icon/characterIcon.png'
     const characterDefaultName = '角色'
 
-    const initialCharactersInfo = () => {
-        fetch(`/src/jsons/CharacterInfo.json?v=${characterInfoVersion}`).then(response => response.json())
+    const initialCharactersInfo = async () => {
+        return fetch(`/src/jsons/CharacterInfo.json?v=${characterInfoVersion}`).then(response => response.json())
         .then(characterInfo => {
             characters.value = characterInfo
-            // console.log(characters.value)
+            
+            return characterInfo
         })
-        .catch(error => console.error(error))
+        .catch(error => {
+            console.error(error)
+            throw error
+        })
     }
 
     const charactersUniqueTotal = (characters) => {

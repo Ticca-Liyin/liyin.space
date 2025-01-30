@@ -2,15 +2,6 @@
 import CharacterSetting from './CharacterSetting.vue';
 import CharacterContainer from './CharacterContainer.vue';
 import ShowCharacterFloatingWindow from './ShowCharacterFloatingWindow.vue'
-import { useCharacterSettingStore } from '@/stores/characterSetting';
-import { onMounted} from 'vue';
-
-const characterSettingStore = useCharacterSettingStore()
-const { getCharacterSettingConfig } = characterSettingStore
-
-onMounted(() => {
-    getCharacterSettingConfig()
-})
 
 </script>
 

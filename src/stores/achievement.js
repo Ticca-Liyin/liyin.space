@@ -1,9 +1,11 @@
+import { Achievement, pattern2 } from '@/types/achievement'
+import { AchievementSeries } from '@/types/achievementSeries'
 import { nextTick, watch, computed, ref } from 'vue'
 import { defineStore, storeToRefs } from 'pinia'
 import { useAuthorStore } from '@/stores/author'
 import { useUserInfoStore } from '@/stores/userInfo'
 import { useTextjoinStore } from '@/stores/textjoin'
-import { useSettingStore } from '@/stores/achievementSetting'
+import { useAchievementSettingStore } from '@/stores/achievementSetting'
 import { useAchievementCustomNotAchievedStore } from '@/stores/achievementCustomNotAchieved'
 import { achievementInfoVersion, achievementSeriesVersion, multipleChoiceVersion,
      notAvailableAchievementVersion, achievementStrategyVersion, strategyInfoVersion } 
@@ -13,204 +15,19 @@ const authorStore = useAuthorStore()
 const { authors } = storeToRefs(authorStore)
 
 const textjoinStore = useTextjoinStore();
-const { textjoinSelectList, getUserTextjoinValue } = textjoinStore;
+const { textjoinSelectList } = textjoinStore;
 
 const userInfoStore = useUserInfoStore()
 const { currentUserInfo } = storeToRefs(userInfoStore)
 
-const settingStore = useSettingStore()
+const settingStore = useAchievementSettingStore()
 const { achievementFilterCacheConfig } = storeToRefs(settingStore)
 
 const achievementCustomNotAchievedStore = useAchievementCustomNotAchievedStore()
-const { getUserCustomNotAchieved, findUserCustomNotAchievedList, handleUserCustomNotAchievedList } = achievementCustomNotAchievedStore
-
-const pattern1 = /{NICKNAME}/g;
-const pattern2 = /{TEXTJOIN#(\d+)}/g;
+const { findUserCustomNotAchievedList, handleUserCustomNotAchievedList } = achievementCustomNotAchievedStore
 
 export const useAchievementStore = defineStore('achievement', () => {
-    //#region 成就类定义
-    class Achievement {
-        constructor(achievement) {
-            this.AchievementID = achievement.AchievementID
-            this.SeriesID = achievement.SeriesID
-            this.AchievementSrcTitle = achievement.AchievementTitle
-            this.AchievementSrcDesc = achievement.AchievementDesc
-            this.ParamList = achievement.ParamList
-            this.Priority = achievement.Priority
-            this.Rarity = achievement.Rarity
-            this.ShowType = achievement.ShowType
-            this.Version = achievement.Version
-            this.Status = 1
-        }
-
-        get isHidden(){
-            return this.ShowType === "ShowAfterFinish"
-        }
-
-        get AchievementTitle(){
-            let result = this.AchievementSrcTitle.replace(pattern1, currentUserInfo.value.name)
-            
-            return result
-        }
-
-        get AchievementDesc(){
-            let result = this.AchievementSrcDesc.replace(pattern1, currentUserInfo.value.name)
-            
-            result = result.replace(pattern2, (match, id) => {
-                const textjoinId = 'TEXTJOIN#' + id;
-                return getUserTextjoinValue(currentUserInfo.value.tokenID.toString(), textjoinId) ?? match;
-            })
-
-            return result
-        }
-
-        get StellarJadeNum(){
-            if (this.Rarity === "High") return 20
-            if (this.Rarity === "Mid") return 10
-            if (this.Rarity === "Low") return 5
-            return 0
-        }
-
-        get isNotAvailable(){
-            if(!this?.timestamp) return false
-
-            const currentTimestamp = Date.now();
-
-            return this.timestamp > currentTimestamp;
-        }
-
-        get StatusDesc(){
-            if(this.CustomNotAchieved) return "自定义暂不可获得"
-            if(this.isNotAvailable) return "暂不可获得"
-            if(this.Status === 1) return "未完成"
-            if(this.Status === 2) return "已选其他"
-            if(this.Status === 3) return "已完成"
-            return "未知状态"
-        }
-    }
-
-    class AchievementSeries {
-        constructor(achievementSeries, achievements) {
-            this.SeriesID = achievementSeries.SeriesID
-            this.SeriesTitle = achievementSeries.SeriesTitle
-            this.imagePath = achievementSeries.imagePath
-            this.imageDarkPath = achievementSeries.imageDarkPath
-            this.Priority = achievementSeries.Priority
-            this.Achievements = achievements
-        }
-        //系列相关成就数
-        get AchievementsLength(){
-            const selectedMultipleIDs = []; // 记录已选择的多选一成就类型
-            let totalAchievements = 0; // 记录总共可获得的成就数
-
-            for (const achievement of this.Achievements) {
-                if (achievement.isNotAvailable) continue
-
-                const MultipleID = achievement?.MultipleID
-                if(!MultipleID){
-                    totalAchievements++
-                    continue
-                } 
-                if (selectedMultipleIDs.includes(MultipleID)){
-                    continue
-                }
-                totalAchievements++
-                selectedMultipleIDs.push(MultipleID)
-            }
-            return totalAchievements
-        }
-        //系列相关成就可获得星琼总数
-        get StellarJadeTotal(){
-            const selectedMultipleIDs = []; // 记录已选择的多选一成就类型
-            let total = 0; // 记录总共可获得的成就数
-
-            for (const achievement of this.Achievements) {
-                if (achievement.isNotAvailable) continue
-
-                const MultipleID = achievement?.MultipleID
-                if(!MultipleID){
-                    total+= achievement.StellarJadeNum
-                    continue
-                } 
-                if (selectedMultipleIDs.includes(MultipleID)){
-                    continue
-                }
-                total+= achievement.StellarJadeNum
-                selectedMultipleIDs.push(MultipleID)
-            }
-            return total
-        }
-        //系列相关成就已完成数
-        get completedAchievementsLength(){
-            let count = 0
-            // console.log(this.Achievements)
-            this.Achievements.forEach(achievement => {
-                if (achievement.Status == 3) count++
-            })
-            return count
-        }
-        //系列相关成就已获得星琼总数
-        get completedStellarJadeTotal(){
-            let total = 0
-            // console.log(this.Achievements)
-            this.Achievements.forEach(achievement => {
-                if (achievement.Status == 3) total += achievement.StellarJadeNum
-            })
-            return total
-        }
-        //系列成就完成进度
-        get completedPercentage(){
-            if (this.AchievementsLength === 0) return 0 + '%'
-            return Math.min(Math.round(this.completedAchievementsLength / this.AchievementsLength * 100), 100) + '%'
-        }
-
-        get completedStellarJadePercentage(){
-            if (this.StellarJadeTotal === 0) return 0
-            return Math.min(Math.round(this.completedStellarJadeTotal / this.StellarJadeTotal * 100), 100)
-        }
-
-        get completedStellarJadePercentageString(){
-            return this.completedStellarJadePercentage.toFixed(2) + "%"
-        }
-        //系列相关暂不可完成成就数
-        get notAvailableAchievementsLengeh(){
-            const selectedMultipleIDs = []; // 记录已选择的多选一成就类型
-            let totalAchievements = 0; // 记录总共可获得的成就数
-
-            for (const achievement of this.Achievements) {
-                if (!achievement.isNotAvailable) continue
-
-                const MultipleID = achievement?.MultipleID
-                if(!MultipleID){
-                    totalAchievements++
-                    continue
-                } 
-                if (selectedMultipleIDs.includes(MultipleID)){
-                    continue
-                }
-                totalAchievements++
-                selectedMultipleIDs.push(MultipleID)
-            }
-            return totalAchievements
-        }
-
-        updateAchievements(achievements) {
-            this.Achievements = achievements
-        }
-    }
-    //#endregion
-
     const StellarJadeImg= "https://webstatic.mihoyo.com/upload/event/2023/03/28/77cb5426637574ba524ac458fa963da0_8938800417123864478.png"
-    // const userInfo = { uid: "100000000", name: "开拓者", tokenID: 1}
-
-    // 当前用户更改时，将对应数据切换至更改后的用户
-    watch(currentUserInfo, () => {
-        initialAchievementsStatus()
-        // 对 暂时无法获得但因特殊情况状态时已获得的进行修正 由于会重复赋值 已赋值的 timestamp 若出现性能问题可进行优化
-        initialNotAvailable()
-        // console.log("userInfoStore", newValue)
-        initialAchievementsCustomNotAchievedStatus()
-    })
 
     //#region 成就状态列表相关操作
     //用户成就状态列表
@@ -431,8 +248,8 @@ export const useAchievementStore = defineStore('achievement', () => {
     const achievements = ref([])
     const achievementSeries = ref([])
 
-    const initialAchievementsInfo = () => {
-        Promise.all([
+    const initialAchievementsInfo = async () => {
+        return Promise.all([
             fetch(`/src/jsons/AchievementInfo.json?v=${achievementInfoVersion}`).then(response => response.json()),
             fetch(`/src/jsons/AchievementSeries.json?v=${achievementSeriesVersion}`).then(response => response.json()),
             fetch(`/src/jsons/MultipleChoice.json?v=${multipleChoiceVersion}`).then(response => response.json()),
@@ -484,8 +301,7 @@ export const useAchievementStore = defineStore('achievement', () => {
             }
 
 
-            getUserAchievement()            
-            getUserCustomNotAchieved()
+            getUserAchievement()
             initialMultipleChoice()
             initialAchievementsStatus()
             initialNotAvailable()
@@ -517,10 +333,13 @@ export const useAchievementStore = defineStore('achievement', () => {
             achievementSeries.value.sort((a, b) => {
                 return b.Priority - a.Priority 
             })
+
+            return Promise.resolve();
         })
         .catch(error => {
             // 处理加载或转换错误
             console.error(error);
+            return Promise.reject(error);
         });
     }
 
@@ -927,6 +746,8 @@ export const useAchievementStore = defineStore('achievement', () => {
         else return [achievement.AchievementTitle]
     }
 
+    getAchievementFilterConfig();
+
     return {  
         StellarJadeImg, 
         achievements,
@@ -955,13 +776,14 @@ export const useAchievementStore = defineStore('achievement', () => {
         saveUserAchievement,
         changeShowSeriesID,
         showStrategyDialog,
-        // isShowAchievement,
+        initialAchievementsStatus,
+        initialNotAvailable,
+        initialAchievementsCustomNotAchievedStatus,
         initialAchievementsInfo,
         handleAchevementStatus,
         handleSelectAll,
         findUserAchievementList,
         handleUserAchievementList,
-        getAchievementFilterConfig,
         AchievementToCustomNotAchieved,
         AchievementCancelCustomNotAchieved,
         getMultipleIDAchievemnetTitles

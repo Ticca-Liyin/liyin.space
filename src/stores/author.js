@@ -6,13 +6,17 @@ export const useAuthorStore = defineStore('author', () => {
     
     const authors = ref({})
 
-    const initialAuthorsInfo = () => {
-        fetch(`/src/jsons/AuthorInfo.json?v=${authorInfoVersion}`).then(response => response.json())
+    const initialAuthorsInfo = async () => {
+        return fetch(`/src/jsons/AuthorInfo.json?v=${authorInfoVersion}`).then(response => response.json())
         .then(authorInfo => {
             authors.value = authorInfo
-            // console.log(authorInfo)
+            
+            return authorInfo
         })
-        .catch(error => console.error(error))
+        .catch(error => {
+            console.error(error)
+            throw error
+        })
     }
 
     return {  

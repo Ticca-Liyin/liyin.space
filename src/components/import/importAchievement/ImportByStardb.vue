@@ -1,15 +1,14 @@
 <script setup>
 import { ref } from 'vue';
 import { useAchievementStore } from '@/stores/achievement';
-import { useAchievementCustomNotAchievedStore } from '@/stores/achievementCustomNotAchieved'
+import { useAchievementImportStore } from '@/stores/achievementImport'
 import { storeToRefs } from 'pinia';
 
 const achievementStore = useAchievementStore()
 const { achievements } = storeToRefs(achievementStore)
-const { handleUserAchievementList, handleAchevementStatus, saveUserAchievement } = achievementStore
 
-const achievementCustomNotAchievedStore = useAchievementCustomNotAchievedStore()
-const { initUserCustomNotAchievedList } = achievementCustomNotAchievedStore
+const achievementImport = useAchievementImportStore()
+const { importAchievementsByIds } = achievementImport
 
 const importData = ref('')
 const errorStr = ref('')
@@ -45,24 +44,7 @@ const identifyData = () => {
 const emit = defineEmits(['import-achievements']);
 
 const importAchievements = () => {
-    // 初始化所有成就状态为未完成
-    achievements.value.forEach(achievement => {
-        achievement.Status = 1
-        achievement.CustomNotAchieved = false
-        handleUserAchievementList(achievement.AchievementID, achievement.Status, false)
-    })        
-    initUserCustomNotAchievedList()
-
-    // 修改已完成状态, 同一多选已成就后识别的覆盖先识别到的
-    for(const id of importAchievementList.value){
-        const ach_ = achievements.value.find(achievement => id === achievement.AchievementID)
-
-        if (!ach_) continue
-        ach_.Status = 1
-        handleAchevementStatus(ach_, false)
-    }
-
-    saveUserAchievement()
+    importAchievementsByIds(importAchievementList.value)
 
     emit('import-achievements')
 }
@@ -85,7 +67,7 @@ defineExpose({ reset })
         <div class="stardb-import-tip">
             <p>将 stardb-exporter 程序导出的数据复制到文本框中进行导入（仅支持 PC 端）</p><br/>
             <p>stardb-exporter 程序主要是通过爬取游戏的网络数据包实现的，目前不清楚该方法是否涉及违规，<span style="color: red;">担心封号的请谨慎使用</span></p><br/>
-            <p>导入的成就会覆盖现在所选账号原有的所有成就信息，请谨慎导入</p><br/>
+            <p style="color: #e6a23c;">导入的成就会覆盖现在所选账号原有的所有成就信息，请谨慎导入</p><br/>
             <p>stardb-exporter 程序获取方式：</p>
             <a class="stardb-import-link" href="https://github.com/juliuskreutz/stardb-exporter" target="_blank">github 源文件</a>
             &nbsp; | &nbsp;

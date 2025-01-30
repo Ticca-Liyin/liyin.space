@@ -266,6 +266,8 @@ export const useCharacterSettingStore = defineStore('characterSetting', () => {
         return charactersUniqueTotal(showCharacters.value)
     })
 
+    getCharacterSettingConfig()
+
     return {
         WebsiteNameList,
         toWebsiteName,
@@ -275,7 +277,6 @@ export const useCharacterSettingStore = defineStore('characterSetting', () => {
         scaleBaseIncrement,
         scaleMax,
         scaleMin,
-        getCharacterSettingConfig,
         showStarList,
         selectStarList,
         showWarpList,

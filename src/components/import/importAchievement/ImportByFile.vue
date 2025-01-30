@@ -1,15 +1,14 @@
 <script setup>
 import { ref } from 'vue';
 import { useAchievementStore } from '@/stores/achievement';
-import { useAchievementCustomNotAchievedStore } from '@/stores/achievementCustomNotAchieved'
+import { useAchievementImportStore } from '@/stores/achievementImport'
 import { storeToRefs } from 'pinia';
 
 const achievementStore = useAchievementStore()
 const { achievements } = storeToRefs(achievementStore)
-const { handleUserAchievementList, handleAchevementStatus, saveUserAchievement } = achievementStore
 
-const achievementCustomNotAchievedStore = useAchievementCustomNotAchievedStore()
-const { initUserCustomNotAchievedList } = achievementCustomNotAchievedStore
+const achievementImport = useAchievementImportStore()
+const { importAchievementsByIds } = achievementImport
 
 const inputImportFile = ref(null)
 const identifyFileName = ref('')
@@ -156,40 +155,11 @@ const readFile = (files) => {
 const emit = defineEmits(['import-achievements']);
 
 const importAchievements = () => {
-    // 初始化所有成就状态为未完成
-    achievements.value.forEach(achievement => {
-        achievement.Status = 1
-        achievement.CustomNotAchieved = false
-        handleUserAchievementList(achievement.AchievementID, achievement.Status, false)
-    })    
-    initUserCustomNotAchievedList()
-    // 修改已完成状态, 同一多选已成就后识别的覆盖先识别到的
-    for(const ach of importAchievementList.value){
-        if (ach.status !== 3) continue
+    const importAchievementIds = importAchievementList.value.filter(achievement => achievement.status === 3).map(achievement => achievement.id);
 
-        const ach_ = achievements.value.find(achievement => ach.id === achievement.AchievementID)
-
-        if (!ach_) continue
-        ach_.Status = 1
-        handleAchevementStatus(ach_, false)
-    }
-    // 旧版导入逻辑
-    // for(const ach of achievements.value){
-    //     if (ach.isNotAvailable) continue
-
-    //     // 更新成就状态
-    //     const ach_ = importAchievementList.value.find(achievement => ach.AchievementID === achievement.id)
-
-    //     if (!ach_) ach.Status = 1
-    //     else ach.Status = ach_.status
-
-    //     handleUserAchievementList(ach.AchievementID, ach.Status, false)
-    // }
-
-    saveUserAchievement()
+    importAchievementsByIds(importAchievementIds);
 
     emit('import-achievements')
-    // handleCloseImportDialog()
 }
 
 const reset = () => {
@@ -211,7 +181,7 @@ defineExpose({ reset })
     >
         <div class="dialog-import-tip">
             <p>点击右下方 "选择文件" 按钮选择文件，或将文件拖拽入虚线框内进行导入</p><br/>
-            <p>导入的成就会覆盖现在所选账号原有的所有成就信息，请谨慎导入</p><br/>
+            <p style="color: #e6a23c;">导入的成就会覆盖现在所选账号原有的所有成就信息，请谨慎导入</p><br/>
             <p>目前仅支持的导入 json 文件</p><br/>
             <p>支持导入的项目如下：</p>
             <p>-&nbsp;&nbsp;liyin&nbsp;&nbsp;&nbsp;JSON</p>

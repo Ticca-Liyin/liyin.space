@@ -6,16 +6,16 @@ const settingStore = useAchievementSettingStore()
 </script>
 
 <template>
-    <div class="setting-title"> 成就全选二次确认： </div>
+    <div class="setting-title"> Cookie 导入二次确认： </div>
     <div class="setting-view">
         <el-select
-            v-model="settingStore.achievementSelectAllSecondConfirmation"
+            v-model="settingStore.importByCookieSecondConfirmation"
             placeholder="请选择操作状态"
             size="large"
             style="width: 240px"
         >
             <el-option
-                v-for="item in settingStore.secondConfirmationList"
+                v-for="item in settingStore.importByCookieSecondConfirmationList"
                 :key="item.value"
                 :label="item.label"
                 :value="item.value"
