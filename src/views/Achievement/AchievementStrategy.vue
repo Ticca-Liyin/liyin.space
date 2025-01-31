@@ -1,5 +1,5 @@
 <script setup>
-import { useAchievementStrategyDialogStore } from '@/stores/achievementStrategyDialog';
+import { useAchievementStrategyDialogStore } from '@/stores/achievement/strategy/achievementStrategyDialog';
 import { useAuthorStore } from '@/stores/author';
 import { storeToRefs } from 'pinia';
 import formatTimestamp from './formatTimestamp';

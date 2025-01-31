@@ -1,6 +1,6 @@
 <script setup>
 import FloatingWindow from '@/components/FloatingWindow.vue';
-import { useShowAchievementsStore } from '@/stores/showAchievements';
+import { useShowAchievementsStore } from '@/stores/achievement/showAchievements';
 import { useIsMobileStore } from '@/stores/isMobile'
 import { useThemeStore } from '@/stores/theme'
 import { storeToRefs } from 'pinia';

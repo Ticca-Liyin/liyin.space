@@ -1,10 +1,10 @@
 import { ref, watch } from 'vue'
 import { defineStore, storeToRefs } from 'pinia'
-import { useAchievementStore } from '@/stores/achievement';
-import { useUserAchievementStore } from '@/stores/userAchievement'
-import { useAchievementSettingStore } from '@/stores/achievementSetting'
-import { useAchievementCustomNotAchievedStore } from '@/stores/achievementCustomNotAchieved'
-import { useAchievementImportByCookieStore } from '@/stores/achievementImportByCookie'
+import { useAchievementStore } from '@/stores/achievement/achievement';
+import { useUserAchievementStore } from '@/stores/achievement/userConfig/userAchievement'
+import { useAchievementSettingStore } from '@/stores/achievement/setting/achievementSetting'
+import { useAchievementCustomNotAchievedStore } from '@/stores/achievement/userConfig/achievementCustomNotAchieved'
+import { useAchievementImportByCookieStore } from '@/stores/achievement/import/achievementImportByCookie'
 import { getAchievements } from '@/services/cookieService';
 import { CookieServerCode, RequesrResult } from '@/types/requesrResult'
 

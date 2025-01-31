@@ -1,7 +1,7 @@
 <script setup>
 import { ref } from 'vue';
-import { useAchievementStore } from '@/stores/achievement';
-import { useAchievementImportStore } from '@/stores/achievementImport'
+import { useAchievementStore } from '@/stores/achievement/achievement';
+import { useAchievementImportStore } from '@/stores/achievement/import/achievementImport'
 import { storeToRefs } from 'pinia';
 
 const achievementStore = useAchievementStore()

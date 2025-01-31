@@ -1,6 +1,6 @@
 <script setup>
 import FloatingWindow from '@/components/FloatingWindow.vue';
-import { useShowCharactersStore } from '@/stores/showCharacters';
+import { useShowCharactersStore } from '@/stores/character/showCharacters';
 import { useIsMobileStore } from '@/stores/isMobile'
 import { useThemeStore } from '@/stores/theme'
 import { storeToRefs } from 'pinia';

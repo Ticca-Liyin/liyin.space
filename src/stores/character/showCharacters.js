@@ -1,7 +1,7 @@
 import { computed, watch, ref } from 'vue'
 import { defineStore, storeToRefs } from 'pinia'
-import { useCharacterStore } from '@/stores/character';
-import { useCharacterSettingStore } from '@/stores/characterSetting';
+import { useCharacterStore } from '@/stores/character/character';
+import { useCharacterSettingStore } from '@/stores/character/characterSetting';
 
 export const useShowCharactersStore = defineStore('showCharacters', () => {
     const characterStore = useCharacterStore()

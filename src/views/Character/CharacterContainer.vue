@@ -1,8 +1,8 @@
 <script setup>
 import CharacterShowBox from './CharacterShowBox.vue';
-import { useCharacterStore } from '@/stores/character';
-import { useCharacterSettingStore } from '@/stores/characterSetting';
-import { useShowCharactersStore } from '@/stores/showCharacters';
+import { useCharacterStore } from '@/stores/character/character';
+import { useCharacterSettingStore } from '@/stores/character/characterSetting';
+import { useShowCharactersStore } from '@/stores/character/showCharacters';
 import { useThemeStore } from '@/stores/theme'
 import { computed, ref } from 'vue';
 import { storeToRefs } from 'pinia';

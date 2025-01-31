@@ -1,9 +1,9 @@
 import { computed, ref } from 'vue'
 import { defineStore, storeToRefs } from 'pinia'
 import { useAuthorStore } from '@/stores/author'
-import { useAchievementStore } from '@/stores/achievement'
-import { useAchievementMultipleChoiceStore } from '@/stores/achievementMultipleChoice'
-import { useAchievementStrategyStore } from '@/stores/achievementStrategy'
+import { useAchievementStore } from '@/stores/achievement/achievement'
+import { useAchievementMultipleChoiceStore } from '@/stores/achievement/initial/achievementMultipleChoice'
+import { useAchievementStrategyStore } from '@/stores/achievement/strategy/achievementStrategy'
 
 export const useAchievementStrategyDialogStore = defineStore('achievementStrategyDialog', () => {
     const authorStore = useAuthorStore()

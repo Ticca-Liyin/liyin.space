@@ -1,6 +1,6 @@
 <script setup>
 import { ArrowDown, ArrowUp } from '@element-plus/icons-vue'
-import { useCharacterSettingStore } from '@/stores/characterSetting';
+import { useCharacterSettingStore } from '@/stores/character/characterSetting';
 import { useIsMobileStore } from '@/stores/isMobile'
 import { ref, onMounted, watch } from 'vue';
 import { storeToRefs } from 'pinia';

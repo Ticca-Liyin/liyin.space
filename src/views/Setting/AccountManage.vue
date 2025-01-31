@@ -1,5 +1,5 @@
 <script setup>
-import { useCharacterStore } from '@/stores/character';
+import { useCharacterStore } from '@/stores/character/character';
 import { useUserInfoStore } from '@/stores/userInfo'
 import { ref } from 'vue'
 import { storeToRefs } from 'pinia'

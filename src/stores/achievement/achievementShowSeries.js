@@ -1,6 +1,6 @@
 import { nextTick, computed, ref } from 'vue'
 import { defineStore, storeToRefs } from 'pinia'
-import { useAchievementStore } from '@/stores/achievement'
+import { useAchievementStore } from '@/stores/achievement/achievement'
 
 export const useAchievementShowSeriesStore = defineStore('achievementShowSeries', () => {
     const achievementStore = useAchievementStore();

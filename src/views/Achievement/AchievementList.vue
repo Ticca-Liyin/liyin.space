@@ -1,7 +1,7 @@
 <script setup>
 import { Check, Close } from '@element-plus/icons-vue'
-import { useAchievementStore } from '@/stores/achievement'
-import { useAchievementStrategyDialogStore } from '@/stores/achievementStrategyDialog';
+import { useAchievementStore } from '@/stores/achievement/achievement'
+import { useAchievementStrategyDialogStore } from '@/stores/achievement/strategy/achievementStrategyDialog';
 
 const achievementStore = useAchievementStore()
 const achievementStrategyDialogStore = useAchievementStrategyDialogStore()

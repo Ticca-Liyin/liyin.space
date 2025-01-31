@@ -1,7 +1,7 @@
 <script setup>
 import { computed } from 'vue';
-import { useCharacterStore } from '@/stores/character'
-import { useCharacterSettingStore } from '@/stores/characterSetting';
+import { useCharacterStore } from '@/stores/character/character'
+import { useCharacterSettingStore } from '@/stores/character/characterSetting';
 import { useThemeStore } from '@/stores/theme'
 import { storeToRefs } from 'pinia';
 

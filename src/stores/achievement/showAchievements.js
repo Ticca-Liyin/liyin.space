@@ -1,7 +1,7 @@
 import { computed, watch, ref } from 'vue'
 import { defineStore, storeToRefs } from 'pinia'
-import { useAchievementFelterStore } from '@/stores/achievementFelter'
-import { useAchievementShowSeriesStore } from '@/stores/achievementShowSeries'
+import { useAchievementFelterStore } from '@/stores/achievement/felter/achievementFelter'
+import { useAchievementShowSeriesStore } from '@/stores/achievement/achievementShowSeries'
 import { AchievementSeries } from '@/types/achievementSeries'
 
 export const useShowAchievementsStore = defineStore('showAchievements', () => {

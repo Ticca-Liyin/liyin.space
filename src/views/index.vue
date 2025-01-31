@@ -2,7 +2,7 @@
 import { ArrowDown } from '@element-plus/icons-vue'
 import { useUserInfoStore } from '@/stores/userInfo'
 import { useAuthorStore } from '@/stores/author'
-import { useCharacterStore } from '@/stores/character'
+import { useCharacterStore } from '@/stores/character/character'
 import { useIsMobileStore } from '@/stores/isMobile'
 import { useThemeStore } from '@/stores/theme'
 import { onMounted } from 'vue'

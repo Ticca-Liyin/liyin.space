@@ -12,10 +12,10 @@ import { DynamicScroller, DynamicScrollerItem } from 'vue-virtual-scroller'
 import 'vue-virtual-scroller/dist/vue-virtual-scroller.css'
 import { onMounted, watch } from 'vue';
 import { storeToRefs } from 'pinia'
-import { useAchievementStore } from '@/stores/achievement';
-import { useShowAchievementsStore } from '@/stores/showAchievements';
+import { useAchievementStore } from '@/stores/achievement/achievement';
+import { useShowAchievementsStore } from '@/stores/achievement/showAchievements';
 import { useUserInfoStore } from '@/stores/userInfo';
-import { useAchievementImportStore } from '@/stores/achievementImport'
+import { useAchievementImportStore } from '@/stores/achievement/import/achievementImport'
 
 const achievementStore = useAchievementStore()
 const { initialAchievementsInfo, initialAchievementsStatus, initialNotAvailable, initialAchievementsCustomNotAchievedStatus } = achievementStore

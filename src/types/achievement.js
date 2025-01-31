@@ -1,6 +1,6 @@
 import { storeToRefs } from 'pinia'
 import { useUserInfoStore } from '@/stores/userInfo'
-import { useTextjoinStore } from '@/stores/textjoin'
+import { useTextjoinStore } from '@/stores/achievement/setting/textjoin'
 
 const textjoinStore = useTextjoinStore();
 const { getUserTextjoinValue } = textjoinStore;

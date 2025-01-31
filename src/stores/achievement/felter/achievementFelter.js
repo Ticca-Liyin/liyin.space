@@ -1,8 +1,8 @@
 import { computed, watch, ref } from 'vue'
 import { defineStore, storeToRefs } from 'pinia'
-import { useAchievementSelectVersionListStore } from '@/stores/achievementSelectVersionList'
-import { useAchievementShowSeriesStore } from '@/stores/achievementShowSeries'
-import { useAchievementSettingStore } from '@/stores/achievementSetting'
+import { useAchievementSelectVersionListStore } from '@/stores/achievement/felter/achievementSelectVersionList'
+import { useAchievementShowSeriesStore } from '@/stores/achievement/achievementShowSeries'
+import { useAchievementSettingStore } from '@/stores/achievement/setting/achievementSetting'
 
 export const useAchievementFelterStore = defineStore('achievementFelter', () => {
     const achievementSelectVersionListStore = useAchievementSelectVersionListStore()

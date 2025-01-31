@@ -1,7 +1,7 @@
 <script setup>
 import { ref, computed } from 'vue';
 import { storeToRefs } from 'pinia'
-import { useTextjoinStore } from '@/stores/textjoin.js'
+import { useTextjoinStore } from '@/stores/achievement/setting/textjoin.js'
 import { useUserInfoStore } from '@/stores/userInfo'
 
 const textjoinStore = useTextjoinStore();

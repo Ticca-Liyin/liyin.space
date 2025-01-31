@@ -2,8 +2,8 @@
 import { CopyDocument } from '@element-plus/icons-vue'
 import { ref } from 'vue';
 import { useIsMobileStore } from '@/stores/isMobile'
-import { useAchievementImportByCookieStore } from '@/stores/achievementImportByCookie'
-import { useAchievementImportStore } from '@/stores/achievementImport'
+import { useAchievementImportByCookieStore } from '@/stores/achievement/import/achievementImportByCookie'
+import { useAchievementImportStore } from '@/stores/achievement/import/achievementImport'
 import { CookieServerCode } from '@/types/requesrResult'
 import { storeToRefs } from 'pinia';
 

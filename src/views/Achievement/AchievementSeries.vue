@@ -2,8 +2,8 @@
 import { ArrowDown, ArrowUp } from '@element-plus/icons-vue'
 import { onMounted, ref, watch } from 'vue';
 import { storeToRefs } from 'pinia';
-import { useAchievementStore } from '@/stores/achievement';
-import { useAchievementShowSeriesStore } from '@/stores/achievementShowSeries'
+import { useAchievementStore } from '@/stores/achievement/achievement';
+import { useAchievementShowSeriesStore } from '@/stores/achievement/achievementShowSeries'
 import { useThemeStore } from '@/stores/theme'
 import { useRoute, onBeforeRouteUpdate } from 'vue-router';
 
