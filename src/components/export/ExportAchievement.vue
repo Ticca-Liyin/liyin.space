@@ -1,6 +1,7 @@
 <script setup>
 import { ArrowDown } from '@element-plus/icons-vue'
 import { useAchievementStore } from '@/stores/achievement';
+import { useUserAchievementStore } from '@/stores/userAchievement'
 import { useIsMobileStore } from '@/stores/isMobile'
 import { storeToRefs } from 'pinia';
 import saveJson from './saveJson';
@@ -11,7 +12,9 @@ const { isMobile } = storeToRefs(isMobileStore)
 
 const achievementStore = useAchievementStore()
 const { achievementSeries } = storeToRefs(achievementStore);
-const { findUserAchievementList } = achievementStore
+
+const userAchievementStore = useUserAchievementStore()
+const { findUserAchievementList } = userAchievementStore
 
 const doExport = (typeString) => {
     if(typeString === 'liyin'){

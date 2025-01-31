@@ -1,97 +1,53 @@
 import { Achievement, pattern2 } from '@/types/achievement'
 import { AchievementSeries } from '@/types/achievementSeries'
-import { nextTick, watch, computed, ref } from 'vue'
+import { ref } from 'vue'
 import { defineStore, storeToRefs } from 'pinia'
-import { useAuthorStore } from '@/stores/author'
-import { useUserInfoStore } from '@/stores/userInfo'
+import { useUserAchievementStore } from '@/stores/userAchievement'
 import { useTextjoinStore } from '@/stores/textjoin'
-import { useAchievementSettingStore } from '@/stores/achievementSetting'
+import { useAchievementSelectVersionListStore } from '@/stores/achievementSelectVersionList'
 import { useAchievementCustomNotAchievedStore } from '@/stores/achievementCustomNotAchieved'
-import { achievementInfoVersion, achievementSeriesVersion, multipleChoiceVersion,
-     notAvailableAchievementVersion, achievementStrategyVersion, strategyInfoVersion } 
-     from '@/utils/version.js'
+import { useAchievementInfoStore } from '@/stores/achievementInfo'
+import { useAchievementSeriesInfoStore } from '@/stores/achievementSeriesInfo'
+import { useAchievementMultipleChoiceStore } from '@/stores/achievementMultipleChoice'
+import { useAchievementNotAvailableStore } from '@/stores/achievementNotAvailable'
+import { useAchievementStrategyStore } from '@/stores/achievementStrategy'
 
-const authorStore = useAuthorStore()
-const { authors } = storeToRefs(authorStore)
+const userAchievementStore = useUserAchievementStore()
+const { findUserAchievementList, handleUserAchievementList } = userAchievementStore
 
 const textjoinStore = useTextjoinStore();
 const { textjoinSelectList } = textjoinStore;
 
-const userInfoStore = useUserInfoStore()
-const { currentUserInfo } = storeToRefs(userInfoStore)
-
-const settingStore = useAchievementSettingStore()
-const { achievementFilterCacheConfig } = storeToRefs(settingStore)
+const achievementSelectVersionListStore = useAchievementSelectVersionListStore()
+const { handleSelectVersionList } = achievementSelectVersionListStore
 
 const achievementCustomNotAchievedStore = useAchievementCustomNotAchievedStore()
 const { findUserCustomNotAchievedList, handleUserCustomNotAchievedList } = achievementCustomNotAchievedStore
 
+const achievementInfoStore = useAchievementInfoStore()
+const { initialAchievementInfo } = achievementInfoStore
+
+const achievementSeriesInfoStore = useAchievementSeriesInfoStore()
+const { initialAchievementSeriesInfo } = achievementSeriesInfoStore
+
+const achievementMultipleChoiceStore = useAchievementMultipleChoiceStore()
+const { multipleChoice } = storeToRefs(achievementMultipleChoiceStore)
+const { initialAchievementMultipleChoice } = achievementMultipleChoiceStore
+
+const achievementNotAvailableStore = useAchievementNotAvailableStore()
+const { notAvailable } = storeToRefs(achievementNotAvailableStore)
+const { initialAchievementNotAvailable } = achievementNotAvailableStore
+
+const achievementStrategyStore = useAchievementStrategyStore()
+const { initialAchievementStrategy, initialStrategyInfo } = achievementStrategyStore;
+
 export const useAchievementStore = defineStore('achievement', () => {
     const StellarJadeImg= "https://webstatic.mihoyo.com/upload/event/2023/03/28/77cb5426637574ba524ac458fa963da0_8938800417123864478.png"
 
-    //#region 成就状态列表相关操作
-    //用户成就状态列表
-    let userAchievement = {}
-    //获取缓存
-    const getUserAchievement = () => {
-        // 从缓存中读取名为 "userAchievement" 的数据
-        const tempUserAchievement = localStorage.getItem("userAchievement")
-
-        // 检查是否存在名为 "userAchievement" 的数据
-        if (tempUserAchievement !== null) {
-            // 数据存在，将其从字符串转换为对象
-            userAchievement = JSON.parse(tempUserAchievement)
-        } else {
-            // 数据不存在，执行相应的操作
-            userAchievement = {}
-        }
-    }
-    //保存缓存
-    const saveUserAchievement = () => {
-        // 将对象转换为字符串，并将其存储在缓存中
-        localStorage.setItem("userAchievement", JSON.stringify(userAchievement))
-    }
-    const findUserAchievementList = () => {
-        // 查找用户成就列表
-        return userAchievement[currentUserInfo?.value.tokenID]
-    }  
-    const handleUserAchievementList = (achievementID, status, save = true) => {
-        if(!achievementID || !status) throw new Error("数据不能为空")
-        if(status !== 1 && status !== 2 && status !== 3) throw new Error("参数status不能为非1、2或3的值")
-        // 修改用户成就列表
-        const userAchievementList = findUserAchievementList()
-
-        if (!userAchievementList) {
-            // 用户成就列表不存在，创建新的用户成就列表
-            userAchievement[currentUserInfo.value.tokenID] = {
-                tokenID: currentUserInfo.value.tokenID,
-                list: {
-                    [achievementID]: {
-                        id: achievementID,
-                        status: status
-                    }
-                }
-            }
-            if(save) saveUserAchievement()
-            return 
-        }
-        // 用户成就列表存在，修改成就状态
-        userAchievementList.list[achievementID] = {
-            id: achievementID,
-            status: status
-        }
-        if(save) saveUserAchievement()
-        return 
-    }   
+    //初始化成就状态列表
     const initialAchievementsStatus = () => {
         const userAchievementList = findUserAchievementList()?.list ?? []
-        // console.log(userAchievementList)
-        // Object.values(userAchievementList).forEach(achievement => {
-        //     const ach_ = achievements.value.find(ach => ach.AchievementID === achievement.id)
-        //     if(!ach_) return
-        //     ach_.Status = achievement.status
-        //     // console.log(ach_)
-        // })
+        
         achievements.value.forEach(achievement => {
             const userAch_ = userAchievementList[achievement.AchievementID]
             // console.log(userAch_)
@@ -102,7 +58,8 @@ export const useAchievementStore = defineStore('achievement', () => {
             }
             else if(userAch_.status === 3 && achievement?.MultipleID) {
                 achievement.Status = userAch_.status
-                multipleChoice[achievement.MultipleID].forEach(AchievementID => {
+                
+                multipleChoice.value[achievement.MultipleID].forEach(AchievementID => {
                     if(AchievementID !== achievement.AchievementID){
                         const ach_ = achievements.value.find(ach => ach.AchievementID === AchievementID)
                         if(ach_ && ach_.Status !== 2){
@@ -115,24 +72,22 @@ export const useAchievementStore = defineStore('achievement', () => {
             else achievement.Status = userAch_.status
         })
     }
-    //#endregion
 
-    //多选一成就列表
-    let multipleChoice = {}
+    //初始化多选一成就列表
     const initialMultipleChoice = () => {
-        for(const [multipleID, achievementIDs] of Object.entries(multipleChoice))
+        for(const [multipleID, achievementIDs] of Object.entries(multipleChoice.value)){
             for(const achievementID of achievementIDs) {
                 const ach_ = achievements.value.find(ach => ach.AchievementID === achievementID)
                 if(!ach_) continue
                 ach_.MultipleID = multipleID
                 // console.log(ach_)
-            }       
+            }
+        }
     }
 
-    //暂时无法获得成就列表
-    let notAvailable = {} 
+    //初始化暂时无法获得成就列表
     const initialNotAvailable = () => {
-        for(const notAvailableAchievement of Object.values(notAvailable)){
+        for(const notAvailableAchievement of Object.values(notAvailable.value)){
             const ach_ = achievements.value.find(ach => ach.AchievementID === notAvailableAchievement.AchievementID)
             if(!ach_) continue
             // 添加暂不可获得时间戳
@@ -172,7 +127,7 @@ export const useAchievementStore = defineStore('achievement', () => {
                     handleUserAchievementList(achievement.AchievementID, achievement.Status)
                 }
 
-                multipleChoice[achievement.MultipleID].forEach(AchievementID => {
+                multipleChoice.value[achievement.MultipleID].forEach(AchievementID => {
                     if(AchievementID === achievement.AchievementID) return
 
                     const ach_ = achievements.value.find(ach => ach.AchievementID === AchievementID)
@@ -206,64 +161,21 @@ export const useAchievementStore = defineStore('achievement', () => {
         })
     }
 
-    //#region  成就攻略窗口
-    const dialogVisible = ref(false)
-    const dialogAchievement = ref(null)
-    const dialogMultipleChoiceList = computed(() =>{
-        const achievement = dialogAchievement.value
-        const tempMultipleChoiceList = []
-        if(achievement?.MultipleID){
-            multipleChoice[achievement.MultipleID].forEach(AchievementID => {
-                if(AchievementID !== achievement.AchievementID){
-                    const ach_ = achievements.value.find(ach => ach.AchievementID === AchievementID)
-                    tempMultipleChoiceList.push(ach_)
-                }
-            })
-        }
-        return tempMultipleChoiceList
-    })
-    const showStrategyDialog = (achievement) =>{
-        dialogVisible.value = true
-        dialogAchievement.value = achievement
-    } 
-    
-    //成就攻略 url 数据
-    let achievementStrategy = {}
-    let strategyInfo = {}
-    const showStrategyList = computed(() => {
-        const strategies = achievementStrategy[dialogAchievement?.value.AchievementID] ?? []
-        const showStrategyList = []
-        for(const index in strategies){
-            const strategy = strategyInfo[strategies[index]]
-
-            if(!Object.keys(authors.value).includes(String(strategy.author))) continue
-
-            showStrategyList.push(strategy) 
-            
-        }
-        return showStrategyList 
-    })
-    //#endregion
-
     const achievements = ref([])
     const achievementSeries = ref([])
 
     const initialAchievementsInfo = async () => {
         return Promise.all([
-            fetch(`/src/jsons/AchievementInfo.json?v=${achievementInfoVersion}`).then(response => response.json()),
-            fetch(`/src/jsons/AchievementSeries.json?v=${achievementSeriesVersion}`).then(response => response.json()),
-            fetch(`/src/jsons/MultipleChoice.json?v=${multipleChoiceVersion}`).then(response => response.json()),
-            fetch(`/src/jsons/NotAvailableAchievement.json?v=${notAvailableAchievementVersion}`).then(response => response.json()),
-            fetch(`/src/jsons/AchievementStrategy.json?v=${achievementStrategyVersion}`).then(response => response.json()),
-            fetch(`/src/jsons/StrategyInfo.json?v=${strategyInfoVersion}`).then(response => response.json()),
+            initialAchievementInfo(),
+            initialAchievementSeriesInfo(),
+            initialAchievementMultipleChoice(),
+            initialAchievementNotAvailable(),
+            initialAchievementStrategy(),
+            initialStrategyInfo()
         ])
         .then(([achievementInfo, achievementseries, multiplechoice, notavailable, achievementsteategy, strategyinfo]) => {
             achievements.value = []
             achievementSeries.value = []
-            multipleChoice = multiplechoice
-            notAvailable = notavailable
-            achievementStrategy = achievementsteategy
-            strategyInfo = strategyinfo
 
             // 打印转换后的数据
             // console.log(achievementInfo, achievementSeries)
@@ -300,8 +212,6 @@ export const useAchievementStore = defineStore('achievement', () => {
                 } 
             }
 
-
-            getUserAchievement()
             initialMultipleChoice()
             initialAchievementsStatus()
             initialNotAvailable()
@@ -343,296 +253,7 @@ export const useAchievementStore = defineStore('achievement', () => {
         });
     }
 
-    const showSeriesId = ref(0)
-    const changeShowSeriesID = (seriesID) =>{
-        // console.log(seriesID)
-        if(seriesID < 0 || seriesID > 9 || isNaN(seriesID))
-            seriesID = 0 
-        showSeriesId.value = seriesID
-        const achievementMain = document.getElementById('achievement-main-scroller')
-        // console.log(achievementMain)
-        nextTick(() => {
-            achievementMain.scrollTop = 0
-        })
-    }
-
-    //#region 成就筛选相关逻辑
-    //显示版本列表
-    const showVersionList = ref([])
-    //可选择列表缓存
-    const selectVersionListCache = ref({})
-    const handleSelectVersionList = (seriesID, achs) => {   
-        const VersionSet = new Set()
-        achs.forEach(achievement => {
-            VersionSet.add(achievement.Version)
-        })
-
-        const format = { value: '', label: '' };
-        const result = Array.from(VersionSet).map(value => ({ ...format, value, label: value }))
-        result.sort((a, b) => b.value - a.value)
-
-        //添加对应系列版本信息缓存
-        selectVersionListCache.value[seriesID] = result
-    }
-    //可选择列表
-    const selectVersionList = computed(() => {
-        return selectVersionListCache.value[showSeriesId.value]
-    })
-    //搜索文本
-    const searchContent = ref("")
-    //隐藏类成就筛选
-    const showHiddenType = ref('all')
-    const selectHiddenList = [
-        {
-            value: 'all',
-            label: '全部'
-        },
-        {
-            value: 'hidden',
-            label: '隐藏'
-        },
-        {
-            value: 'unhidden',
-            label: '非隐藏'
-        }
-    ]
-    //奖励类成就筛选
-    const showRewardType = ref('all')
-    const selectRewardList = [
-        {
-            value: 'all',
-            label: '全部'
-        },
-        {
-            value: 'gold',
-            label: '金'
-        },
-        {
-            value: 'silver',
-            label: '银'
-        },
-        {
-            value: 'copper',
-            label: '铜'
-        }
-    ]
-    //完成程度类成就筛选
-    const showCompletedType = ref('all')
-    const selectCompletedList = [
-        {
-            value: 'all',
-            label: '全部'
-        },
-        {
-            value: 'completed',
-            label: '已完成'
-        },
-        {
-            value: 'uncompleted',
-            label: '未完成'
-        }
-    ]
-    //获取状态类成就筛选
-    const showAvailableType = ref('all')
-    const selectAvailableList = [
-        {
-            value: 'all',
-            label: '全部'
-        },
-        {
-            value: 'available',
-            label: '可获取'
-        },
-        {
-            value: 'not-available',
-            label: '暂不可获取'
-        }
-    ]
-
-    // 是否启用筛选功能
-    const hadFilter = computed(() => {
-        return showHiddenType.value !== 'all' || showRewardType.value !== 'all' || showCompletedType.value !== 'all' || showAvailableType.value !== 'all'
-    })
-
-    //未完成优先
-    const incompletePriority = ref(false)
-
-    const showAchievements = computed(() => {
-        const temp_series = achievementSeries.value.find(series => series.SeriesID === showSeriesId.value)
-        //找不到对应系列返回全部
-        let temp_showAchievements = []
-        if(!temp_series) temp_showAchievements = achievements.value
-        else temp_showAchievements = temp_series.Achievements
-
-        temp_showAchievements = temp_showAchievements.filter(achievement =>{
-            // 隐藏类成就筛选
-            if(showHiddenType.value !== 'all') {
-                if(showHiddenType.value === 'hidden'){
-                    if(!achievement.isHidden)
-                        return false
-                }
-                else if(showHiddenType.value === 'unhidden'){
-                    if(achievement.isHidden)
-                        return false                    
-                }
-            }
-
-            // 奖励类成就筛选
-            if(showRewardType.value !== 'all') {
-                if(showRewardType.value === 'gold'){
-                    if(achievement.Rarity !== "High")
-                        return false
-                }
-                else if(showRewardType.value === 'silver'){
-                    if(achievement.Rarity !== "Mid")
-                        return false                    
-                }
-                else if(showRewardType.value === 'copper'){
-                    if(achievement.Rarity !== "Low")
-                        return false                    
-                }
-            }
-
-            // 完成程度类成就筛选
-            if(showCompletedType.value !== 'all') {
-                if(showCompletedType.value === 'completed'){
-                    if(achievement.Status === 1)
-                        return false
-                }
-                else if(showCompletedType.value === 'uncompleted'){
-                    if(achievement.Status !== 1)
-                        return false
-                }
-            }
-
-            // 获取状态类成就筛选
-            if(showAvailableType.value !== 'all') {
-                if(showAvailableType.value === 'available'){
-                    if(achievement.CustomNotAchieved || achievement.isNotAvailable)
-                        return false
-                }
-                else if(showAvailableType.value === 'not-available'){
-                    if(!achievement.CustomNotAchieved && !achievement.isNotAvailable)
-                        return false
-                }
-            }
-
-            //版本筛选
-            if(showVersionList.value.length > 0)
-                if(!showVersionList.value.includes(achievement.Version))
-                    return false
-                
-            //搜索框筛选
-            if(!achievement.AchievementTitle.includes(searchContent.value) && 
-            !achievement.AchievementDesc.replace(/<br>/g, '').replace(/<div style="color:#8790abff;">/g,'').replace(/<\/div>/g, '').includes(searchContent.value))
-                return false
-
-            return true
-        })
-
-        //未完成成就优先
-        if(incompletePriority.value)
-            temp_showAchievements.sort((a, b) => {
-                if(a.Status === 1 && b.Status !== 1) return -1
-                if(a.Status !== 1 && b.Status === 1) return 1
-                return 0
-            })
-        return temp_showAchievements
-    })
-
-    const showAchievementSeries = ref(
-        new AchievementSeries({
-            SeriesID: 99,
-            SeriesTitle: "本页成就",
-            imagePath: "/src/images/series/achievement.png",
-            imageDarkPath: "/src/images/series-dark/achievement.png",
-            Priority: -1
-        }, showAchievements.value)
-    )
-
-    watch(showAchievements, () => showAchievementSeries.value.updateAchievements(showAchievements.value))
-
-    //获取成就界面筛选设置缓存
-    const getAchievementFilterConfig = () => {
-        if(!achievementFilterCacheConfig.value) return
-
-        // 从缓存中读取名为 "AchievementFilterConfig" 的数据
-        const tempAchievementFilter = localStorage.getItem("AchievementFilterConfig")
-
-        // 检查是否存在名为 "AchievementFilterConfig" 的数据
-        if (tempAchievementFilter !== null) {
-            // 数据存在，将其从字符串转换为对象
-            const data = JSON.parse(tempAchievementFilter)
-
-            showHiddenType.value = data?.showHiddenType ?? "all"
-            showRewardType.value = data?.showRewardType ?? "all"
-            showCompletedType.value = data?.showCompletedType ?? "all"
-            showAvailableType.value = data?.showAvailableType ?? "all"
-            incompletePriority.value = data?.incompletePriority ?? false
-        } else {
-            // 数据不存在，执行相应的操作
-            showHiddenType.value = "all"
-            showRewardType.value = "all"
-            showCompletedType.value = "all"
-            showAvailableType.value = "all"
-            incompletePriority.value = false
-        }
-    }
-    //保存成就界面筛选设置缓存
-    const saveAchievementFilterConfig = () => {
-        if(!achievementFilterCacheConfig.value) return
-
-        // 将对象转换为字符串，并将其存储在缓存中
-        localStorage.setItem("AchievementFilterConfig", JSON.stringify({
-            showHiddenType: showHiddenType.value,
-            showRewardType: showRewardType.value,
-            showCompletedType: showCompletedType.value,
-            showAvailableType: showAvailableType.value,
-            incompletePriority: incompletePriority.value
-        }))
-    }
-
-    watch([showHiddenType, showRewardType, showCompletedType, showAvailableType, incompletePriority, achievementFilterCacheConfig], saveAchievementFilterConfig)
-    //#endregion
-
     //#region 成就选中相关逻辑
-    //全选本页
-    const selectAll = computed(() => {
-        // return true
-         return showAchievements.value.every(achievement => {
-            if (achievement?.MultipleID) return true
-            if (achievement.CustomNotAchieved) return true
-            if (achievement.isNotAvailable) return true
-            return achievement.Status !== 1
-        })
-    })
-    const handleSelectAll = () => {
-        if (selectAll.value) {
-            showAchievements.value.forEach(achievement => {
-                if (achievement?.MultipleID) return
-                if (achievement.CustomNotAchieved) return
-                if (achievement.isNotAvailable) return
-                if (achievement.Status === 1) return
-
-                achievement.Status = 1
-                handleUserAchievementList(achievement.AchievementID, achievement.Status, false)
-            })
-        }
-        else{
-            showAchievements.value.forEach(achievement => {
-                if (achievement?.MultipleID) return
-                if (achievement.CustomNotAchieved) return
-                if (achievement.isNotAvailable) return
-                if (achievement.Status === 3) return
-
-                achievement.Status = 3
-                handleUserAchievementList(achievement.AchievementID, achievement.Status, false)
-            })
-        }
-
-        saveUserAchievement()
-    }
-
     const handleAchevementStatus = (achievement, save = true) => {
         if(!(achievement instanceof Achievement)){
             throw new Error("传入achievement不是Achievement类型")
@@ -645,7 +266,7 @@ export const useAchievementStore = defineStore('achievement', () => {
             handleUserAchievementList(achievement.AchievementID, achievement.Status, save)
             if(achievement?.MultipleID){
                 // 修改成就状态为无法完成
-                multipleChoice[achievement.MultipleID].forEach(AchievementID => {
+                multipleChoice.value[achievement.MultipleID].forEach(AchievementID => {
                     if(AchievementID !== achievement.AchievementID){
                         const ach_ = achievements.value.find(ach => ach.AchievementID === AchievementID)
                         if(ach_){
@@ -663,7 +284,7 @@ export const useAchievementStore = defineStore('achievement', () => {
             handleUserAchievementList(achievement.AchievementID, achievement.Status, save)
             if(achievement?.MultipleID){
                 // 修改成就状态为未完成
-                multipleChoice[achievement.MultipleID].forEach(AchievementID => {
+                multipleChoice.value[achievement.MultipleID].forEach(AchievementID => {
                     if(AchievementID !== achievement.AchievementID){
                         const ach_ = achievements.value.find(ach => ach.AchievementID === AchievementID)
                         if(ach_){
@@ -689,7 +310,7 @@ export const useAchievementStore = defineStore('achievement', () => {
         handleUserCustomNotAchievedList(achievement.AchievementID, achievement.CustomNotAchieved)
 
         if(achievement?.MultipleID){
-            multipleChoice[achievement.MultipleID].forEach(AchievementID => {
+            multipleChoice.value[achievement.MultipleID].forEach(AchievementID => {
                 if(AchievementID !== achievement.AchievementID){
                     const ach_ = achievements.value.find(ach => ach.AchievementID === AchievementID)
                     if(ach_){
@@ -716,7 +337,7 @@ export const useAchievementStore = defineStore('achievement', () => {
         handleUserCustomNotAchievedList(achievement.AchievementID, achievement.CustomNotAchieved)
 
         if(achievement?.MultipleID){
-            multipleChoice[achievement.MultipleID].forEach(AchievementID => {
+            multipleChoice.value[achievement.MultipleID].forEach(AchievementID => {
                 if(AchievementID !== achievement.AchievementID){
                     const ach_ = achievements.value.find(ach => ach.AchievementID === AchievementID)
                     if(ach_){
@@ -736,7 +357,7 @@ export const useAchievementStore = defineStore('achievement', () => {
 
     const getMultipleIDAchievemnetTitles = (achievement) => {
         if(achievement?.MultipleID){
-            return multipleChoice[achievement.MultipleID].map(AchievementID => {
+            return multipleChoice.value[achievement.MultipleID].map(AchievementID => {
                 const ach_ = achievements.value.find(ach => ach.AchievementID === AchievementID)
                 if(ach_){
                     return ach_.AchievementTitle
@@ -746,44 +367,15 @@ export const useAchievementStore = defineStore('achievement', () => {
         else return [achievement.AchievementTitle]
     }
 
-    getAchievementFilterConfig();
-
     return {  
         StellarJadeImg, 
         achievements,
         achievementSeries,
-        showStrategyList,
-        dialogVisible,
-        dialogAchievement,
-        dialogMultipleChoiceList,
-        showSeriesId, 
-        showAchievements,
-        showAchievementSeries, 
-        showVersionList,
-        selectVersionList,
-        searchContent,
-        showHiddenType,
-        selectHiddenList,
-        showRewardType,
-        selectRewardList,
-        showCompletedType,
-        selectCompletedList,
-        showAvailableType,
-        selectAvailableList,
-        hadFilter,
-        incompletePriority,
-        selectAll,
-        saveUserAchievement,
-        changeShowSeriesID,
-        showStrategyDialog,
         initialAchievementsStatus,
         initialNotAvailable,
         initialAchievementsCustomNotAchievedStatus,
         initialAchievementsInfo,
         handleAchevementStatus,
-        handleSelectAll,
-        findUserAchievementList,
-        handleUserAchievementList,
         AchievementToCustomNotAchieved,
         AchievementCancelCustomNotAchieved,
         getMultipleIDAchievemnetTitles

@@ -3,6 +3,7 @@ import { ArrowDown, ArrowUp } from '@element-plus/icons-vue'
 import { onMounted, ref, watch } from 'vue';
 import { storeToRefs } from 'pinia';
 import { useAchievementStore } from '@/stores/achievement';
+import { useAchievementShowSeriesStore } from '@/stores/achievementShowSeries'
 import { useThemeStore } from '@/stores/theme'
 import { useRoute, onBeforeRouteUpdate } from 'vue-router';
 
@@ -21,15 +22,20 @@ const handleScroll = (event) => {
     container.scrollLeft += delta * 100; // 根据需要调整滚动速度
 }
 
-const achievementStore = useAchievementStore();
-const { showSeriesId } = storeToRefs(achievementStore)
+const achievementStore = useAchievementStore()
+const { achievementSeries } = storeToRefs(achievementStore)
+const { StellarJadeImg } = achievementStore
+
+const achievementShowSeriesStore = useAchievementShowSeriesStore()
+const { showSeriesId } = storeToRefs(achievementShowSeriesStore)
+const { changeShowSeriesID } = achievementShowSeriesStore
 
 const themeStore = useThemeStore()
 const { isDark } = storeToRefs(themeStore)
 
-onMounted(() => achievementStore.changeShowSeriesID(+route.params.id))
+onMounted(() => changeShowSeriesID(+route.params.id))
 
-onBeforeRouteUpdate((to) => achievementStore.changeShowSeriesID(+to.params.id))
+onBeforeRouteUpdate((to) => changeShowSeriesID(+to.params.id))
 
 // 设置行相关折叠功能
 const hadFold = ref(false)
@@ -90,7 +96,7 @@ const endSeriesDrag = () => {
     <div class="achievement-series-fold">
         <div class="achievement-series" id="achievement-series" @wheel="handleScroll" >
             <!-- @mousedown="startSeriesDrag" @mousemove="handleSeriesDrag" @mouseup="endSeriesDrag" @mouseleave="endSeriesDrag" -->
-            <div class="series-navigation" :class="{'series-fold': hadFold}" v-for="series in achievementStore.achievementSeries" :key="series.SeriesID">
+            <div class="series-navigation" :class="{'series-fold': hadFold}" v-for="series in achievementSeries" :key="series.SeriesID">
                 <RouterLink :to="`/achievement/${series.SeriesID}`" :class="{'selected': showSeriesId === series.SeriesID}" v-preventDragStart="true">
                     <div class="series" :class="{'series-fold': hadFold}">
                         <div class="series-title">
@@ -103,7 +109,7 @@ const endSeriesDrag = () => {
                         </div>
                         <div class="series-StellarJade" v-if="!hadFold">
                             {{series.completedStellarJadeTotal}} / {{series.StellarJadeTotal}}
-                            <img :src="achievementStore.StellarJadeImg" alt="星琼">
+                            <img :src="StellarJadeImg" alt="星琼">
                         </div>
                     </div>
                     <div class="series-bg-image">

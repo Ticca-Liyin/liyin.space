@@ -1,15 +1,24 @@
 <script setup>
-import { ArrowDown, ArrowUp, Filter } from '@element-plus/icons-vue'
+import { ArrowDown, ArrowUp, Filter, Search } from '@element-plus/icons-vue'
 import { ElMessageBox } from 'element-plus'
-import { useAchievementStore } from '@/stores/achievement';
+import { useAchievementSelectAllStore } from '@/stores/achievementSelectAll';
+import { useAchievementShowSeriesStore } from '@/stores/achievementShowSeries'
+import { useAchievementFelterStore } from '@/stores/achievementFelter';
 import { useIsMobileStore } from '@/stores/isMobile'
 import { useAchievementSettingStore } from '@/stores/achievementSetting'
 import { ref, onMounted, watch } from 'vue';
 import { storeToRefs } from 'pinia';
 
-const achievementStore = useAchievementStore();
-const { showHiddenType, showRewardType, showCompletedType, showAvailableType, hadFilter } = storeToRefs(achievementStore);
-const { selectHiddenList, selectRewardList, selectCompletedList, selectAvailableList } = achievementStore
+const achievementSelectAllStore = useAchievementSelectAllStore();
+const { selectAll } = storeToRefs(achievementSelectAllStore);
+const { handleSelectAll } = achievementSelectAllStore;
+
+const achievementShowSeriesStore = useAchievementShowSeriesStore()
+const { showSeriesId } = storeToRefs(achievementShowSeriesStore)
+
+const achievementFelterStore = useAchievementFelterStore();
+const { showHiddenType, showRewardType, showCompletedType, showAvailableType, showVersionList, selectVersionList, hadFilter, searchContent, incompletePriority, } = storeToRefs(achievementFelterStore);
+const { selectHiddenList, selectRewardList, selectCompletedList, selectAvailableList } = achievementFelterStore
 
 const isMobileStore = useIsMobileStore()
 const { isMobile } = storeToRefs(isMobileStore)
@@ -23,7 +32,7 @@ const confirmSelectAll = (event) => {
     event.stopPropagation();
 
     if(achievementSelectAllSecondConfirmation.value) {
-        const operation = achievementStore.selectAll ? '取消全选' : '全选';
+        const operation = selectAll ? '取消全选' : '全选';
 
         ElMessageBox.confirm(
             `确认进行 <strong>${operation}</strong> 本页成就?`,
@@ -35,7 +44,7 @@ const confirmSelectAll = (event) => {
             }
         )
         .then(() => {
-            achievementStore.handleSelectAll();
+            handleSelectAll();
         })
         .catch(() => {
 
@@ -43,7 +52,7 @@ const confirmSelectAll = (event) => {
     }
 
     else {
-        achievementStore.handleSelectAll();
+        handleSelectAll();
     }
 }
 
@@ -150,15 +159,16 @@ const hadFilterClicked = ref(false)
                 </el-popover>
                 <div class="achievement-filter-search-input" :class="{'achievement-filter-flex': !hadFold}">
                     <el-input
-                        v-model="achievementStore.searchContent"
+                        v-model="searchContent"
                         class="achievement-filter-search-el-input"
                         size= "default"
                         placeholder="搜索成就名、成就描述"
+                        :prefix-icon="Search"
                     />
                 </div>
                 <div class="achievement-filter-select-input" :class="{'achievement-filter-flex achievement-filter-version': !hadFold}">
                     <el-select
-                    v-model="achievementStore.showVersionList"
+                    v-model="showVersionList"
                     multiple
                     collapse-tags
                     collapse-tags-tooltip
@@ -167,7 +177,7 @@ const hadFilterClicked = ref(false)
                     size= "default"
                     >
                         <el-option
-                            v-for="item in achievementStore.selectVersionList"
+                            v-for="item in selectVersionList"
                             :key="item.value"
                             :label="item.label"
                             :value="item.value"
@@ -177,10 +187,10 @@ const hadFilterClicked = ref(false)
             </div>
             <div class="achievement-filter-checkbox">
                 <div class="achievement-filter-checkbox-input" :class="{'achievement-filter-flex': !hadFold}">
-                    <el-checkbox v-model="achievementStore.incompletePriority" label="未完成成就优先" :size= 'isMobile ? "default" : "large"' />   
+                    <el-checkbox v-model="incompletePriority" label="未完成成就优先" :size= 'isMobile ? "default" : "large"' />   
                 </div>
                 <div class="achievement-filter-checkbox-input" :class="{'achievement-filter-flex': !hadFold}">
-                    <el-checkbox v-model="achievementStore.selectAll" :label="[0, 3, 5].includes(achievementStore.showSeriesId) ? '全选本页(多选一成就除外)' : '全选本页'" :size= 'isMobile ? "default" : "large"'  @click="confirmSelectAll"/>
+                    <el-checkbox v-model="selectAll" :label="[0, 3, 5].includes(showSeriesId) ? '全选本页(多选一成就除外)' : '全选本页'" :size= 'isMobile ? "default" : "large"'  @click="confirmSelectAll"/>
                     <div style="flex:1 0 0"></div>
                     <div class="achievement-filter-fold-up" v-if="!hadFold" @click="hadFold = true">
                         <el-icon class="el-icon--right">
@@ -240,12 +250,13 @@ const hadFilterClicked = ref(false)
     flex: 1 0 0;
     margin-right: 5px;
 }
-.achievement-filter-search-el-input .el-input__inner {
-    padding-left: 25px;
-    background-image: url('@/images/search.png');
-    background-position: left center;
-    background-repeat: no-repeat;
-    background-size: 14px 14px;
+.achievement-filter-search-el-input .el-input__prefix .el-input__icon {
+    width: 16px;
+    height: 16px;
+}
+.achievement-filter-search-el-input .el-input__prefix .el-input__icon svg {
+    width: 16px;
+    height: 16px;
 }
 .achievement-filter-icon{
     width: 30px;

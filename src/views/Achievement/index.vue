@@ -13,11 +13,15 @@ import 'vue-virtual-scroller/dist/vue-virtual-scroller.css'
 import { onMounted, watch } from 'vue';
 import { storeToRefs } from 'pinia'
 import { useAchievementStore } from '@/stores/achievement';
+import { useShowAchievementsStore } from '@/stores/showAchievements';
 import { useUserInfoStore } from '@/stores/userInfo';
 import { useAchievementImportStore } from '@/stores/achievementImport'
 
 const achievementStore = useAchievementStore()
 const { initialAchievementsInfo, initialAchievementsStatus, initialNotAvailable, initialAchievementsCustomNotAchievedStatus } = achievementStore
+
+const showAchievementsStore = useShowAchievementsStore();
+const { showAchievements } = storeToRefs(showAchievementsStore);
 
 const userInfoStore = useUserInfoStore()
 const { currentUserInfo } = storeToRefs(userInfoStore)
@@ -74,7 +78,7 @@ watch(currentUserInfo, async () => {
         <AchievementSeries/>
 
         <DynamicScroller
-            :items="achievementStore.showAchievements"
+            :items="showAchievements"
             :min-item-size="60"
             :keyField="'AchievementID'"
             class="scroller"

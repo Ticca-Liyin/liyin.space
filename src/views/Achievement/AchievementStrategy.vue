@@ -1,11 +1,11 @@
 <script setup>
-import { useAchievementStore } from '@/stores/achievement';
+import { useAchievementStrategyDialogStore } from '@/stores/achievementStrategyDialog';
 import { useAuthorStore } from '@/stores/author';
 import { storeToRefs } from 'pinia';
 import formatTimestamp from './formatTimestamp';
 
-const achievementStore = useAchievementStore()
-const { dialogVisible, dialogAchievement, dialogMultipleChoiceList, showStrategyList} = storeToRefs(achievementStore);
+const achievementStrategyDialogStore = useAchievementStrategyDialogStore()
+const { dialogVisible, dialogAchievement, dialogMultipleChoiceList, showStrategyList} = storeToRefs(achievementStrategyDialogStore);
 
 const authorStore = useAuthorStore()
 const { authors } = storeToRefs(authorStore)
@@ -106,15 +106,16 @@ const { authors } = storeToRefs(authorStore)
     max-height: 65%;
     overflow: hidden;
     overflow-y: auto;
+    padding: 0;
 }
 .dialog-achievement .el-dialog__header{
-    margin: 0;
+    padding: 15px 20px;
 }
 .dialog-achievement .el-dialog__body{
-    padding: 10px 20px 15px 20px;
+    padding: 0 20px 15px 20px;
 }
 .dialog-achievement .el-dialog__footer{
-    padding: 0px 20px 15px 20px;
+    padding: 0 20px 15px 20px;
 }
 
 .dialog-header{

@@ -1,6 +1,7 @@
 import { ref, watch } from 'vue'
 import { defineStore, storeToRefs } from 'pinia'
 import { useAchievementStore } from '@/stores/achievement';
+import { useUserAchievementStore } from '@/stores/userAchievement'
 import { useAchievementSettingStore } from '@/stores/achievementSetting'
 import { useAchievementCustomNotAchievedStore } from '@/stores/achievementCustomNotAchieved'
 import { useAchievementImportByCookieStore } from '@/stores/achievementImportByCookie'
@@ -10,7 +11,10 @@ import { CookieServerCode, RequesrResult } from '@/types/requesrResult'
 export const useAchievementImportStore = defineStore('achievementImport', () => { 
     const achievementStore = useAchievementStore()
     const { achievements } = storeToRefs(achievementStore)
-    const { handleUserAchievementList, handleAchevementStatus, saveUserAchievement } = achievementStore
+    const { handleAchevementStatus } = achievementStore
+
+    const userAchievementStore = useUserAchievementStore()
+    const { handleUserAchievementList, saveUserAchievement } = userAchievementStore
 
     const achievementCustomNotAchievedStore = useAchievementCustomNotAchievedStore()
     const { initUserCustomNotAchievedList } = achievementCustomNotAchievedStore

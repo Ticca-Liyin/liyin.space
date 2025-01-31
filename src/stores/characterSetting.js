@@ -6,7 +6,6 @@ import { storeToRefs } from 'pinia';
 
 const characterStore = useCharacterStore()
 const { characters } = storeToRefs(characterStore)
-const { charactersUniqueTotal} = characterStore
 
 const isMobileStore = useIsMobileStore()
 const { isMobile } = storeToRefs(isMobileStore)
@@ -218,54 +217,8 @@ export const useCharacterSettingStore = defineStore('characterSetting', () => {
         
         return result
     })
-
-    const showCharacters = computed(() => {
-        return Object.values(characters.value).filter(character =>{
-            // 显示角色的星数
-            if(showStarList.value.length > 0)
-                if(!showStarList.value.includes(character.star))
-                    return false
-
-            // 显示角色的限定程度
-            if(showWarpList.value.length > 0)
-                if(!showWarpList.value.includes(character.warp))
-                    return false
-
-            // 显示角色的限定程度
-            // if(showWarpList.value.includes('limited')){
-            //     if(character.star <= 4) return false
-            //     if(character.version === 1 && !['希儿', '景元'].includes(character.name)) return false
-            //     if(character.name.startsWith('开拓者')) return false
-            // }
-
-            // 显示角色的版本
-            if(showVersionList.value.length > 0)
-                if(!showVersionList.value.includes(character.version))
-                    return false
-
-            // 显示角色的阵营
-            if(showFactionList.value.length > 0){
-                if(Array.isArray(character.faction)){
-                    if(character.faction.every(faction => !showFactionList.value.includes(faction)))
-                        return false
-                }else {
-                    return false
-                }
-            }
-
-            return true
-        })
-    })
     //#endregion
     
-    const showCharactersTotal = computed(() => {
-        return showCharacters.value.length
-    })
-
-    const showCharactersUniqueTotal = computed(() => {
-        return charactersUniqueTotal(showCharacters.value)
-    })
-
     getCharacterSettingConfig()
 
     return {
@@ -285,8 +238,5 @@ export const useCharacterSettingStore = defineStore('characterSetting', () => {
         selectVersionList,
         showFactionList,
         selectFactionList,
-        showCharacters,
-        showCharactersTotal,
-        showCharactersUniqueTotal
     }
 })

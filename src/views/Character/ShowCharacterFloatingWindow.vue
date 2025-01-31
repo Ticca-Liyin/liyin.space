@@ -1,12 +1,12 @@
 <script setup>
 import FloatingWindow from '@/components/FloatingWindow.vue';
-import { useCharacterSettingStore } from '@/stores/characterSetting';
+import { useShowCharactersStore } from '@/stores/showCharacters';
 import { useIsMobileStore } from '@/stores/isMobile'
 import { useThemeStore } from '@/stores/theme'
 import { storeToRefs } from 'pinia';
 
-const characterSettingStore = useCharacterSettingStore()
-const { showCharactersTotal, showCharactersUniqueTotal } = storeToRefs(characterSettingStore)
+const showCharactersStore = useShowCharactersStore()
+const { showCharactersTotal, showCharactersUniqueTotal } = storeToRefs(showCharactersStore)
 
 const isMobileStore = useIsMobileStore()
 const { isMobile } = storeToRefs(isMobileStore)

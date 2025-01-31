@@ -2,6 +2,7 @@
 import CharacterShowBox from './CharacterShowBox.vue';
 import { useCharacterStore } from '@/stores/character';
 import { useCharacterSettingStore } from '@/stores/characterSetting';
+import { useShowCharactersStore } from '@/stores/showCharacters';
 import { useThemeStore } from '@/stores/theme'
 import { computed, ref } from 'vue';
 import { storeToRefs } from 'pinia';
@@ -10,8 +11,11 @@ const characterStore = useCharacterStore()
 const { getPathAvatar, getDarkPathAvatar, getCombatTypeAvatar} = characterStore
 
 const characterSettingStore = useCharacterSettingStore()
-const { scale, useWheelEvent, showCharacters } = storeToRefs(characterSettingStore)
+const { scale, useWheelEvent } = storeToRefs(characterSettingStore)
 const { scaleBaseIncrement, scaleMin, scaleMax} = characterSettingStore
+
+const showCharactersStore = useShowCharactersStore()
+const { showCharacters } = storeToRefs(showCharactersStore)
 
 const themeStore = useThemeStore()
 const { isDark } = storeToRefs(themeStore)
