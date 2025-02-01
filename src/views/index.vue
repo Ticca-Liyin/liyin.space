@@ -5,15 +5,16 @@ import { useAuthorStore } from '@/stores/author'
 import { useCharacterStore } from '@/stores/character/character'
 import { useIsMobileStore } from '@/stores/isMobile'
 import { useThemeStore } from '@/stores/theme'
+import { useAchievementImportStore } from '@/stores/achievement/import/achievementImport'
 import { onMounted } from 'vue'
 import { storeToRefs } from 'pinia'
 import { useRoute } from 'vue-router';
+import { handleCurrentTokenWithoutImport } from '@/utils/handleCurrentTokenWithoutImport'
 
 const route = useRoute()
 
 const userInfoStore = useUserInfoStore()
 const { userInfoList, currentUserInfo } = storeToRefs(userInfoStore)
-const { handleCurrentTokenID } = userInfoStore
 
 const authorStore = useAuthorStore()
 const { initialAuthorsInfo } = authorStore
@@ -26,6 +27,9 @@ const { isMobile } = storeToRefs(isMobileStore)
 
 const themeStore = useThemeStore()
 const { isDark } = storeToRefs(themeStore)
+
+const achievementImport = useAchievementImportStore()
+const { isImporting } = storeToRefs(achievementImport)
 
 const navList = [
     {
@@ -72,9 +76,9 @@ onMounted(async () => {
                     </el-icon>
                 </div>
                 <template #dropdown>
-                    <el-dropdown-menu>
+                    <el-dropdown-menu v-if="!isImporting">
                         <div class="user-info" v-for="userInfo in userInfoList.list" :key="userInfo.tokenID"
-                        @click="handleCurrentTokenID(userInfo.tokenID)">
+                        @click="handleCurrentTokenWithoutImport(userInfo.tokenID)">
                             <div class="user-avatar">
                                 <img :src='getCharacterAvatar(userInfo?.avatar)' 
                                     :alt="getCharacterAvatarName(userInfo?.avatar)">
@@ -89,6 +93,11 @@ onMounted(async () => {
                                 账号管理
                             </el-dropdown-item>
                         </RouterLink>
+                    </el-dropdown-menu>
+                    <el-dropdown-menu v-else>
+                        <el-dropdown-item disabled>
+                            暂不可切换账号
+                        </el-dropdown-item>
                     </el-dropdown-menu>
                 </template>
             </el-dropdown> 

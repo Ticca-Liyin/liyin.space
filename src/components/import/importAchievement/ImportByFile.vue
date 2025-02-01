@@ -181,7 +181,7 @@ defineExpose({ reset })
     >
         <div class="dialog-import-tip">
             <p>点击右下方 "选择文件" 按钮选择文件，或将文件拖拽入虚线框内进行导入</p><br/>
-            <p style="color: #e6a23c;">导入的成就会覆盖现在所选账号原有的所有成就信息，请谨慎导入</p><br/>
+            <p style="color: #e6a23c;">导入的成就会覆盖当前所选账号原有的所有成就信息，请谨慎导入</p><br/>
             <p>目前仅支持的导入 json 文件</p><br/>
             <p>支持导入的项目如下：</p>
             <p>-&nbsp;&nbsp;liyin&nbsp;&nbsp;&nbsp;JSON</p>

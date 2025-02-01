@@ -1,10 +1,15 @@
 <script setup>
+import { storeToRefs } from 'pinia';
 import { Check, Close } from '@element-plus/icons-vue'
 import { useAchievementStore } from '@/stores/achievement/achievement'
 import { useAchievementStrategyDialogStore } from '@/stores/achievement/strategy/achievementStrategyDialog';
+import { useAchievementImportStore } from '@/stores/achievement/import/achievementImport'
 
 const achievementStore = useAchievementStore()
 const achievementStrategyDialogStore = useAchievementStrategyDialogStore()
+
+const achievementImport = useAchievementImportStore()
+const { isImporting } = storeToRefs(achievementImport)
 
 defineProps({
     info: Object
@@ -21,6 +26,15 @@ let startTime = 0
 const longPressTime = 500  // 长按时间阈值
 
 const handleAchevementStatusStart = (event, info) => {
+    if (isImporting.value){
+        ElMessage({
+            showClose: true,
+            message: "正在导入成就数据中，请稍后...",
+            type: 'error',
+        })
+        return
+    }
+
     if (event.type === 'mousedown' && event.button !== 0) return; // 只处理左键点击
     startTime = Date.now()
     longPressTimeout = setTimeout(() => {

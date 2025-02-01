@@ -67,7 +67,7 @@ defineExpose({ reset })
         <div class="stardb-import-tip">
             <p>将 stardb-exporter 程序导出的数据复制到文本框中进行导入（仅支持 PC 端）</p><br/>
             <p>stardb-exporter 程序主要是通过爬取游戏的网络数据包实现的，目前不清楚该方法是否涉及违规，<span style="color: red;">担心封号的请谨慎使用</span></p><br/>
-            <p style="color: #e6a23c;">导入的成就会覆盖现在所选账号原有的所有成就信息，请谨慎导入</p><br/>
+            <p style="color: #e6a23c;">导入的成就会覆盖当前所选账号原有的所有成就信息，请谨慎导入</p><br/>
             <p>stardb-exporter 程序获取方式：</p>
             <a class="stardb-import-link" href="https://github.com/juliuskreutz/stardb-exporter" target="_blank">github 源文件</a>
             &nbsp; | &nbsp;

@@ -52,6 +52,8 @@ export const useAchievementImportStore = defineStore('achievementImport', () => 
         isImporting.value = true;
     
         return getAchievements(cookie).then( async (data) => {
+            isImporting.value = false;
+
             if (data.code !== 0) {
                 ElMessage({
                     showClose: true,
@@ -59,7 +61,6 @@ export const useAchievementImportStore = defineStore('achievementImport', () => 
                     type: 'error'
                 })
 
-                isImporting.value = false;
                 return data;
             }
     
@@ -76,12 +77,13 @@ export const useAchievementImportStore = defineStore('achievementImport', () => 
                             confirmButtonText: '确认',
                             cancelButtonText: '取消',
                             showClose: false,
+                            closeOnClickModal: false,
+                            closeOnPressEscape: false,
                         }
                     )
                     
                     importAchievementsByIds(achievementIds)
                 } catch {
-                    isImporting.value = false;
                     return new RequesrResult(-200, '用户取消导入');
                 }
             }
@@ -89,7 +91,6 @@ export const useAchievementImportStore = defineStore('achievementImport', () => 
                 importAchievementsByIds(achievementIds)
             }
             
-            isImporting.value = false;
             return new RequesrResult(CookieServerCode.SUCCESS, 'success', true);
         })
         .catch(error => {

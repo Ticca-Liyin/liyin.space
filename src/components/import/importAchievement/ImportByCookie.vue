@@ -75,23 +75,24 @@ defineExpose({ reset })
     @drop="handleDrop"
     >
         <div class="cookie-import-tip">
-            <p>使用教程：</p><br/>
-            <p>1) 使用 PC 设备打开官方的游戏工具网页：</p>
-            <p>&nbsp;&nbsp;&nbsp;
-                <a class="cookie-import-link" href="https://act.mihoyo.com/sr/event/cultivation-tool/index.html" target="_blank">米游社游戏工具</a> 
-                &nbsp; | &nbsp;
-                <a class="cookie-import-link" href="https://act.hoyolab.com/sr/event/cultivation-tool/index.html" target="_blank">hoyolab 游戏工具</a> 
-            </p><br/>
-            <p>2) 登录你的游戏账号</p><br/>
-            <p>3) 按 <code>F12</code> 或右键菜单选择 <code>检查</code> 打开开发者工具</p><br/>
-            <p>4) 切换到 <code>控制台</code> 或 <code>Console</code> 标签页</p><br/>
-            <p>5) 将下面的代码粘贴至控制台中，并按下 <code>Enter</code> 键</p>
-            <div class="cookie-import-code">
-                <el-button title="复制代码" class="cookie-import-copy-button" :disabled="isMobile" @click="copyCode">
-                    <el-icon>
-                        <copy-document />
-                    </el-icon>                    
-                </el-button>
+            <el-collapse v-model="activeNames">
+                <el-collapse-item title="PC端使用教程" name="PC">
+                    <p>1) 使用 PC 设备打开官方的游戏工具网页：</p>
+                    <p>&nbsp;&nbsp;&nbsp;
+                        <a class="cookie-import-link" href="https://act.mihoyo.com/sr/event/cultivation-tool/index.html" target="_blank">米游社游戏工具</a> 
+                        &nbsp; | &nbsp;
+                        <a class="cookie-import-link" href="https://act.hoyolab.com/sr/event/cultivation-tool/index.html" target="_blank">hoyolab 游戏工具</a> 
+                    </p><br/>
+                    <p>2) 登录你的游戏账号</p><br/>
+                    <p>3) 按 <code>F12</code> 或右键菜单选择 <code>检查</code> 打开开发者工具</p><br/>
+                    <p>4) 切换到 <code>控制台</code> 或 <code>Console</code> 标签页</p><br/>
+                    <p>5) 将下面的代码粘贴至控制台中，并按下 <code>Enter</code> 键</p>
+                    <div class="cookie-import-code">
+                        <el-button title="复制代码" class="cookie-import-copy-button" :disabled="isMobile" @click="copyCode">
+                            <el-icon>
+                                <copy-document />
+                            </el-icon>                    
+                        </el-button>
 <pre>
 <span>var cookie = document.cookie;</span>
 <span>if (cookie.includes('e_hkrpg_token=')){</span>
@@ -101,13 +102,46 @@ defineExpose({ reset })
 <span>    console.error('cookie 获取失败，可能你还未登录');</span>
 <span>}</span>
 </pre>
-            </div>
-            <p>6) 将获取到的 Cookie 粘贴至文本框中</p><br/>
-            <p>7) 点击 <code>导入</code> 按钮完成导入</p><br/>
-            
-            <!-- <p>教程视频：<a class="cookie-import-link" href="" target="_blank">点这里</a></p><br/> -->    
-
-            <p style="color: #e6a23c;">导入的成就会覆盖现在所选账号原有的所有成就信息，请谨慎导入</p><br/>
+                    </div>
+                    <p>6) 将获取到的 Cookie 粘贴至下方文本框中</p><br/>
+                    <p>7) 点击 <code>导入</code> 按钮完成导入</p>
+                    <!-- <br/>
+                    <p>教程视频：<a class="cookie-import-link" href="" target="_blank">点这里</a></p><br/> -->  
+                </el-collapse-item>
+                <el-collapse-item title="移动端使用教程" name="Mobile">
+                    <p>1) 使用移动端设备打开官方的游戏工具网页：</p>
+                    <p>&nbsp;&nbsp;&nbsp;
+                        <a class="cookie-import-link" href="https://act.mihoyo.com/sr/event/cultivation-tool/index.html" target="_blank">米游社游戏工具</a> 
+                        &nbsp; | &nbsp;
+                        <a class="cookie-import-link" href="https://act.hoyolab.com/sr/event/cultivation-tool/index.html" target="_blank">hoyolab 游戏工具</a> 
+                    </p><br/>
+                    <p>2) 登录你的游戏账号</p><br/>
+                    <p>3) 打开浏览器开发者工具的控制台<i>（由于不同移动端浏览器操作流程不一样，且有些移动端浏览器不支持开发者模式，此过程需自行上网查找方法）</i></p><br/>
+                    <p>4) 将下面的代码粘贴至控制台中，并按下 <code>回车键</code> 触发获取 </p>
+                    <div class="cookie-import-code">
+                        <el-button title="复制代码" class="cookie-import-copy-button" :disabled="isMobile" @click="copyCode">
+                            <el-icon>
+                                <copy-document />
+                            </el-icon>                    
+                        </el-button>
+<pre>
+<span>var cookie = document.cookie;</span>
+<span>if (cookie.includes('e_hkrpg_token=')){</span>
+<span>    copy(cookie);</span>
+<span>    console.log('cookie 已粘贴至剪切板');</span>
+<span>} else {</span>
+<span>    console.error('cookie 获取失败，可能你还未登录');</span>
+<span>}</span>
+</pre>
+                    </div>
+                    <p>5) 将获取到的 Cookie 粘贴至下方文本框中</p><br/>
+                    <p>6) 点击 <code>导入</code> 按钮完成导入</p><br/>
+                    <p style="color: #aaa;">若你使用的浏览器无法打开开发者模式，你可以先使用PC端完成获取 cookie 流程后将 cookie 发送给你的移动端设备，再粘贴至下方文本框中</p>
+                    <!-- <br/>
+                    <p>教程视频：<a class="cookie-import-link" href="" target="_blank">点这里</a></p><br/> -->    
+                </el-collapse-item>
+            </el-collapse>
+            <br/><p style="color: #e6a23c;">导入的成就会覆盖当前所选账号原有的所有成就信息，请谨慎导入</p><br/>
         </div>
         <div class="cookie-import-data">
             <div class="cookie-import-data-title">Cookie：</div>
@@ -115,7 +149,7 @@ defineExpose({ reset })
             placeholder="请输入你的 Cookie"/> 
         </div>
         <div class="auto-update-checkbox">
-            <el-checkbox v-model="openAutoUpate" label="每次登录网页时自动使用 cookie 导入更新成就数据" :size="isMobile ? 'small' : 'default'"/>
+            <el-checkbox v-model="openAutoUpate" label="每次登录账号时自动使用 cookie 导入更新成就数据" :size="isMobile ? 'small' : 'default'"/>
         </div>
     </div>
     <div class="cookie-import-footer">
@@ -296,6 +330,24 @@ defineExpose({ reset })
 </style>
 
 <style>
+.cookie-import-tip .el-collapse-item__content {
+    color: var(--liyin-text-color);
+    font-size: 15px;
+}
+
+@media (max-width: 768px){
+    .cookie-import-tip .el-collapse-item__header {
+        font-size: 12px;
+        line-height: 15px;
+        height: 40px;
+    }
+    .cookie-import-tip .el-collapse-item__content {
+        font-size: 12px;
+        line-height: 15px; 
+        padding-bottom: 15px;
+    }
+}
+
 .auto-update-checkbox .el-checkbox .el-checkbox__input {
     padding-left: 2px;
 }

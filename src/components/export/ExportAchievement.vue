@@ -6,6 +6,7 @@ import { useIsMobileStore } from '@/stores/isMobile'
 import { storeToRefs } from 'pinia';
 import saveJson from './saveJson';
 import { utils, writeFile } from 'xlsx';
+import { useAchievementImportStore } from '@/stores/achievement/import/achievementImport'
 
 const isMobileStore = useIsMobileStore()
 const { isMobile } = storeToRefs(isMobileStore)
@@ -16,7 +17,19 @@ const { achievementSeries } = storeToRefs(achievementStore);
 const userAchievementStore = useUserAchievementStore()
 const { findUserAchievementList } = userAchievementStore
 
+const achievementImport = useAchievementImportStore()
+const { isImporting } = storeToRefs(achievementImport)
+
 const doExport = (typeString) => {
+    if (isImporting.value){
+        ElMessage({
+            showClose: true,
+            message: "正在导入成就数据中，请稍后...",
+            type: 'error',
+        })
+        return
+    }
+
     if(typeString === 'liyin'){
         exportLiyin()
     }
@@ -93,12 +106,10 @@ const formatDate = (date) => {
     const seconds = date.getSeconds().toString().padStart(2, '0');
     return `${year}${month}${day}${hours}${minutes}${seconds}`;
 }
-
-// const isMobile = window.matchMedia('(max-width: 768px)').matches
 </script>
 
 <template>
-    <el-dropdown class="el-dropdown-main"  :trigger="isMobile ? 'click' : 'hover'">
+    <el-dropdown class="el-dropdown-main" :trigger="isMobile ? 'click' : 'hover'">
         <div class="export-button">
             导出
             <el-icon class="el-icon--right export-arrow">
@@ -138,6 +149,7 @@ const formatDate = (date) => {
     border: 1px solid var(--el-color-primary);
     color:  var(--el-color-primary);
 }
+
 @media (max-width: 768px){
     .export-button {
         font-size: 14px;

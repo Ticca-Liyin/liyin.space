@@ -1,10 +1,29 @@
 <script setup>
 import { ref } from 'vue';
+import { storeToRefs } from 'pinia';
 import ImportByFile from './ImportByFile.vue'
 import ImportByStardb from './ImportByStardb.vue'
 import ImportByCookie from './ImportByCookie.vue'
+import { useAchievementImportStore } from '@/stores/achievement/import/achievementImport'
+
+const achievementImport = useAchievementImportStore()
+const { isImporting } = storeToRefs(achievementImport)
 
 const showImportDialog = ref(false)
+
+const handleOpenImportDialog = () => {
+    if (isImporting.value){
+        ElMessage({
+            showClose: true,
+            message: "正在导入成就数据中，请稍后...",
+            type: 'error',
+        })
+        return
+    }
+
+    showImportDialog.value = true
+}
+
 const activeName = ref('importByFile')
 
 const importByFileRef = ref(null);
@@ -30,7 +49,7 @@ const handleCloseImportDialog = () => {
 </script>
 
 <template>
-    <div class="import-button" @click="showImportDialog = true">
+    <div class="import-button" @click="handleOpenImportDialog">
         导入
     </div>
     <el-dialog

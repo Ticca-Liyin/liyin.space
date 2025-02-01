@@ -7,6 +7,12 @@ const { isMobile } = storeToRefs(isMobileStore)
 
 const updateLogInfo = [
     {
+        version: '3.0.3', 
+        date: '2025-02-xx', 
+        title: '新增 cookie 导入成就功能及自动 cookie 导入成就功能',
+        changes: '<ul style="padding-left: 10px;"><li>新增 cookie 导入成就功能</li><li>新增自动 cookie 导入成就功能</li><li>成就设置新增设置 cookie 导入二次确认功能</li></ul>' 
+    },
+    {
         version: '3.0.2', 
         date: '2025-01-23', 
         title: 'stardb 导入识别兼容新版 stardb-exporter 提取的数据',

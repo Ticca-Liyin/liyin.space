@@ -1,9 +1,11 @@
 <script setup>
 import { useCharacterStore } from '@/stores/character/character';
 import { useUserInfoStore } from '@/stores/userInfo'
+import { useAchievementImportStore } from '@/stores/achievement/import/achievementImport'
 import { ref } from 'vue'
 import { storeToRefs } from 'pinia'
 import { Edit, Delete, Plus } from '@element-plus/icons-vue'
+import { handleCurrentTokenWithoutImport } from '@/utils/handleCurrentTokenWithoutImport'
 
 const characterStore = useCharacterStore()
 const { characters } = storeToRefs(characterStore)
@@ -11,7 +13,10 @@ const { characterDefaultAvatar, characterDefaultName, getCharacterAvatar, getCha
 
 const userInfoStore = useUserInfoStore()
 const { userInfoList, currentUserInfo } = storeToRefs(userInfoStore)
-const { handleCurrentTokenID, addUserInfo, editUserInfo, deleteUserInfo } = userInfoStore
+const { addUserInfo, editUserInfo, deleteUserInfo } = userInfoStore
+
+const achievementImport = useAchievementImportStore()
+const { isImporting } = storeToRefs(achievementImport)
 
 const addDialog = ref(false)
 const editDialog = ref(false)
@@ -110,7 +115,7 @@ const handleCloseEditDialog = (done) => {
     <div class="setting-title">账号管理：</div>
     <div class="setting-user-view">
         <div class="setting-user-info" v-for="userInfo in userInfoList.list" :key="userInfo.tokenID"
-        :class="{'selected': currentUserInfo.tokenID === userInfo.tokenID }" @click="handleCurrentTokenID(userInfo.tokenID)">
+        :class="{'selected': currentUserInfo.tokenID === userInfo.tokenID }" @click="handleCurrentTokenWithoutImport(userInfo.tokenID)">
             <div class="setting-user-left">
                 <div class="setting-user-avatar">
                     <img :src='getCharacterAvatar(userInfo?.avatar)' 
@@ -124,7 +129,7 @@ const handleCloseEditDialog = (done) => {
             <div class="setting-user-right">
                 <el-button type="primary" :icon="Edit" plain @click.stop="showEditDialog(userInfo)"/>
                 <el-button type="danger" :icon="Delete" plain @click.stop="deleteUserInfo(userInfo.tokenID)"
-                :disabled="Object.values(userInfoList.list ?? {}).length <= 1"/>
+                :disabled="Object.values(userInfoList.list ?? {}).length <= 1 || isImporting"/>
             </div>
         </div>
         <div class="setting-user-add">
