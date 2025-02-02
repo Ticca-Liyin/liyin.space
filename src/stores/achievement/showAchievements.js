@@ -9,7 +9,7 @@ export const useShowAchievementsStore = defineStore('showAchievements', () => {
     const { showSeriesAllAchievements } = storeToRefs(achievementShowSeriesStore)
 
     const achievementFelterStore = useAchievementFelterStore();
-    const { showHiddenType, showRewardType, showCompletedType, showAvailableType, showVersionList, searchContent, incompletePriority, } = storeToRefs(achievementFelterStore);
+    const { showHiddenType, showRewardType, showCompletedType, showBranchType, showAvailableType, showVersionList, searchContent, incompletePriority, } = storeToRefs(achievementFelterStore);
 
     const showAchievements = computed(() => {
         let temp_showAchievements = showSeriesAllAchievements.value.filter(achievement =>{
@@ -49,6 +49,18 @@ export const useShowAchievementsStore = defineStore('showAchievements', () => {
                 }
                 else if(showCompletedType.value === 'uncompleted'){
                     if(achievement.Status !== 1)
+                        return false
+                }
+            }
+
+            // 分支类成就筛选
+            if(showBranchType.value !== 'all') {
+                if(showBranchType.value === 'single'){
+                    if(achievement.MultipleID)
+                        return false
+                }
+                else if(showBranchType.value === 'multiple'){
+                    if(!achievement.MultipleID)
                         return false
                 }
             }

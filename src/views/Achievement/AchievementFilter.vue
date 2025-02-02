@@ -17,8 +17,8 @@ const achievementShowSeriesStore = useAchievementShowSeriesStore()
 const { showSeriesId } = storeToRefs(achievementShowSeriesStore)
 
 const achievementFelterStore = useAchievementFelterStore();
-const { showHiddenType, showRewardType, showCompletedType, showAvailableType, showVersionList, selectVersionList, hadFilter, searchContent, incompletePriority, } = storeToRefs(achievementFelterStore);
-const { selectHiddenList, selectRewardList, selectCompletedList, selectAvailableList } = achievementFelterStore
+const { showHiddenType, showRewardType, showCompletedType, showBranchType, showAvailableType, showVersionList, selectVersionList, hadFilter, searchContent, incompletePriority, } = storeToRefs(achievementFelterStore);
+const { selectHiddenList, selectRewardList, selectCompletedList, selectBranchList, selectAvailableList } = achievementFelterStore
 
 const isMobileStore = useIsMobileStore()
 const { isMobile } = storeToRefs(isMobileStore)
@@ -153,6 +153,10 @@ const hadFilterClicked = ref(false)
                         <el-segmented v-model="showCompletedType" :options="selectCompletedList" black :size="isMobile ? 'small' : 'default'" :style="`font-size: ${isMobile ? 13 : 14}px;`"></el-segmented>
                     </div>
                     <div class="achievement-filter-segmented">
+                        <div>显示分支类型：</div>
+                        <el-segmented v-model="showBranchType" :options="selectBranchList" black :size="isMobile ? 'small' : 'default'" :style="`font-size: ${isMobile ? 13 : 14}px;`"></el-segmented>
+                    </div>
+                    <div class="achievement-filter-segmented">
                         <div>显示获取类型：</div>
                         <el-segmented v-model="showAvailableType" :options="selectAvailableList" black :size="isMobile ? 'small' : 'default'" :style="`font-size: ${isMobile ? 13 : 14}px;`"></el-segmented>
                     </div>
@@ -190,7 +194,7 @@ const hadFilterClicked = ref(false)
                     <el-checkbox v-model="incompletePriority" label="未完成成就优先" :size= 'isMobile ? "default" : "large"' />   
                 </div>
                 <div class="achievement-filter-checkbox-input" :class="{'achievement-filter-flex': !hadFold}">
-                    <el-checkbox v-model="selectAll" :label="[0, 3, 5].includes(showSeriesId) ? '全选本页(多选一成就除外)' : '全选本页'" :size= 'isMobile ? "default" : "large"'  @click="confirmSelectAll"/>
+                    <el-checkbox v-model="selectAll" :label="[0, 3, 5, 8].includes(showSeriesId) ? '全选本页(多选一成就除外)' : '全选本页'" :size= 'isMobile ? "default" : "large"'  @click="confirmSelectAll"/>
                     <div style="flex:1 0 0"></div>
                     <div class="achievement-filter-fold-up" v-if="!hadFold" @click="hadFold = true">
                         <el-icon class="el-icon--right">
