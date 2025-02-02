@@ -1,6 +1,6 @@
 import { computed } from 'vue'
 import { defineStore, storeToRefs } from 'pinia'
-import { useUserAchievementStore } from '@/stores/achievement/userConfig/userAchievement'
+import { useUserAchievementStore } from '@/stores/achievement/userAchievement'
 import { useShowAchievementsStore } from '@/stores/achievement/showAchievements';
 
 export const useAchievementSelectAllStore = defineStore('achievementSelectAll', () => {

@@ -27,6 +27,9 @@
     --liyin-button-border-color: #DCDFE6;
     --liyin-dashed-border-color: #606266;
 
+    --liyin-info-tip-color: #DCDFE6;
+    --liyin-info-tip-hover-color: #C0C4CC;
+
     --liyin-userinfo-hover-bg-color: #ECF5FF;
 
     --liyin-ach-item-bg-color: #fff;
@@ -112,6 +115,9 @@ html.dark{
     --liyin-main-border-color: #4C4D4F;
     --liyin-button-border-color: #4C4D4F;
     --liyin-dashed-border-color: #4C4D4F;
+
+    --liyin-info-tip-color: #4C4D4F;
+    --liyin-info-tip-hover-color: #6C6E72;
 
     --liyin-userinfo-hover-bg-color: #2e2a21;
 

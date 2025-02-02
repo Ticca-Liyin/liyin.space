@@ -1,21 +1,23 @@
 <script setup>
-import { useAchievementSettingStore } from '@/stores/achievement/setting/achievementSetting.js'
+import { storeToRefs } from 'pinia'
+import { useImportByCookieSettingStore } from '@/stores/achievement/setting/importByCookieSetting'
 
-const settingStore = useAchievementSettingStore()
-
+const importByCookiesettingStore = useImportByCookieSettingStore()
+const { importByCookieSecondConfirmation } = storeToRefs(importByCookiesettingStore)
+const { importByCookieSecondConfirmationList } = importByCookiesettingStore
 </script>
 
 <template>
     <div class="setting-title"> Cookie 导入二次确认： </div>
     <div class="setting-view">
         <el-select
-            v-model="settingStore.importByCookieSecondConfirmation"
+            v-model="importByCookieSecondConfirmation"
             placeholder="请选择操作状态"
             size="large"
             style="width: 240px"
         >
             <el-option
-                v-for="item in settingStore.importByCookieSecondConfirmationList"
+                v-for="item in importByCookieSecondConfirmationList"
                 :key="item.value"
                 :label="item.label"
                 :value="item.value"

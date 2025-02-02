@@ -55,7 +55,6 @@ export const useAchievementImportByCookieStore = defineStore('achievementImportB
 
         saveAchievementImportByCookieConfig()
     }
-
     const handleUserImportByCookieConfig = (cookie, autoUpdate) => {
         if(typeof cookie !== 'string') throw new Error("参数cookie必须为字符串类型")
         if(typeof autoUpdate !== 'boolean') throw new Error("参数status不能为非 true 或 false 的值")

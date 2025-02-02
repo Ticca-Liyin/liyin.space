@@ -1,9 +1,9 @@
 import { ref, watch } from 'vue'
 import { defineStore, storeToRefs } from 'pinia'
 import { useAchievementStore } from '@/stores/achievement/achievement';
-import { useUserAchievementStore } from '@/stores/achievement/userConfig/userAchievement'
-import { useAchievementSettingStore } from '@/stores/achievement/setting/achievementSetting'
-import { useAchievementCustomNotAchievedStore } from '@/stores/achievement/userConfig/achievementCustomNotAchieved'
+import { useUserAchievementStore } from '@/stores/achievement/userAchievement'
+import { useImportByCookieSettingStore } from '@/stores/achievement/setting/importByCookieSetting'
+import { useAchievementCustomNotAchievedStore } from '@/stores/achievement/achievementCustomNotAchieved'
 import { useAchievementImportByCookieStore } from '@/stores/achievement/import/achievementImportByCookie'
 import { getAchievements } from '@/services/cookieService';
 import { CookieServerCode, RequesrResult } from '@/types/requesrResult'
@@ -19,8 +19,8 @@ export const useAchievementImportStore = defineStore('achievementImport', () => 
     const achievementCustomNotAchievedStore = useAchievementCustomNotAchievedStore()
     const { initUserCustomNotAchievedList } = achievementCustomNotAchievedStore
 
-    const settingStore = useAchievementSettingStore()
-    const { importByCookieSecondConfirmation } = storeToRefs(settingStore)
+    const importByCookiesettingStore = useImportByCookieSettingStore()
+    const { importByCookieSecondConfirmation } = storeToRefs(importByCookiesettingStore)
 
     const importByCookieStore = useAchievementImportByCookieStore()
     const { findUserImportByCookieConfig, initUserImportByCookieConfig } = importByCookieStore

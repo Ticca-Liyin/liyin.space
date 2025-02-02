@@ -1,7 +1,7 @@
 <script setup>
 import { ArrowDown } from '@element-plus/icons-vue'
 import { useAchievementStore } from '@/stores/achievement/achievement';
-import { useUserAchievementStore } from '@/stores/achievement/userConfig/userAchievement'
+import { useUserAchievementStore } from '@/stores/achievement/userAchievement'
 import { useIsMobileStore } from '@/stores/isMobile'
 import { storeToRefs } from 'pinia';
 import saveJson from './saveJson';

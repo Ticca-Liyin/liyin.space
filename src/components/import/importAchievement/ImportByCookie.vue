@@ -65,6 +65,8 @@ const reset = () => {
     openAutoUpate.value = cookieConfig?.autoUpdateAchevements ?? false
 }
 
+const activeNames = ref([])
+
 defineExpose({ reset })
 </script>
 
@@ -144,7 +146,10 @@ defineExpose({ reset })
             <br/><p style="color: #e6a23c;">导入的成就会覆盖当前所选账号原有的所有成就信息，请谨慎导入</p><br/>
         </div>
         <div class="cookie-import-data">
-            <div class="cookie-import-data-title">Cookie：</div>
+            <div class="cookie-import-data-title">
+                Cookie：
+                <span style="color: var(--liyin-text-color);">(cookie 的有效期大致为 1 天，请及时更新)</span>
+            </div>
             <el-input v-model="importCookie" class="cookie-import-data-textarea" :rows="3" resize="none" type="textarea" 
             placeholder="请输入你的 Cookie"/> 
         </div>
