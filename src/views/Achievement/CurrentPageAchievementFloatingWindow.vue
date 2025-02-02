@@ -2,6 +2,7 @@
 import FloatingWindow from '@/components/FloatingWindow.vue';
 import { useAchievementStore } from '@/stores/achievement/achievement'
 import { useShowAchievementsStore } from '@/stores/achievement/showAchievements';
+import { useAchievementSettingStore } from '@/stores/achievement/setting/achievementSetting.js'
 import { useIsMobileStore } from '@/stores/isMobile'
 import { useThemeStore } from '@/stores/theme'
 import { storeToRefs } from 'pinia';
@@ -11,6 +12,9 @@ const achievementStore = useAchievementStore()
 const showAchievementsStore = useShowAchievementsStore();
 const { showAchievementSeries } = storeToRefs(showAchievementsStore);
 
+const settingStore = useAchievementSettingStore()
+const { currentPageAchievementWindowDisplay } = storeToRefs(settingStore)
+
 const isMobileStore = useIsMobileStore()
 const { isMobile } = storeToRefs(isMobileStore)
 
@@ -19,7 +23,7 @@ const { isDark } = storeToRefs(themeStore)
 </script>
 
 <template>
-  <FloatingWindow :displayPosition="isMobile ? 'left' : 'right'">
+  <FloatingWindow v-show="currentPageAchievementWindowDisplay" :displayPosition="isMobile ? 'left' : 'right'">
     <div class="series-container">
       <div class="series">
         <div class="series-title">

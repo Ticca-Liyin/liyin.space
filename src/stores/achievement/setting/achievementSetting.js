@@ -44,10 +44,33 @@ export const useAchievementSettingStore = defineStore('achievementSetting', () =
     })
     //#endregion
 
+    //#region  本页成就隐藏配置 CurrentPageAchievementFloatingWindow
+    const CURRENT_PAGE_ACHIEVEMENT_WINDOW_DISPLAY_KEY = 'current-page-achievement-window-display'
+
+    const currentPageAchievementWindowDisplay = ref(JSON.parse(localStorage.getItem(CURRENT_PAGE_ACHIEVEMENT_WINDOW_DISPLAY_KEY) ?? true))
+
+    const currentPageAchievementWindowDiaplayList = [
+        {
+            label: '显示',
+            value: true
+        },
+        {
+            label: '隐藏',
+            value: false
+        }
+    ]
+
+    watchEffect(() => {
+        localStorage.setItem(CURRENT_PAGE_ACHIEVEMENT_WINDOW_DISPLAY_KEY, JSON.stringify(currentPageAchievementWindowDisplay.value))
+    })
+    //#endregion
+
     return {
         achievementSelectAllSecondConfirmation,
         secondConfirmationList,
         achievementFilterCacheConfig,
         filterCacheConfigList,
+        currentPageAchievementWindowDisplay,
+        currentPageAchievementWindowDiaplayList
     }
 })

@@ -1,6 +1,7 @@
 <script setup>
 import AchievementSelectAll from '@/views/Achievement/AchievementSetting/basicsSetting/AchievementSelectAllSecondConfirmation.vue'
 import AchievementFilterCache from '@/views/Achievement/AchievementSetting/basicsSetting/AchievementFelterCache.vue'
+import CurrentPageAchievementFloatingWindowDisplay from '@/views/Achievement/AchievementSetting/basicsSetting/CurrentPageAchievementFloatingWindowDisplay.vue';
 import ImportByCookieSetting from '@/views/Achievement/AchievementSetting/importByCookieSetting/index.vue';
 import TextjoinSetting from '@/views/Achievement/AchievementSetting/TextjoinSetting.vue'
 import { ref, computed } from 'vue';
@@ -41,6 +42,8 @@ defineExpose({ handleOpen, handleClose })
                     <AchievementSelectAll />
 
                     <AchievementFilterCache />
+
+                    <CurrentPageAchievementFloatingWindowDisplay />
                 </el-tab-pane>
                 <el-tab-pane label="特殊文本" name="textjoin">
                     <TextjoinSetting />

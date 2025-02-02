@@ -2,7 +2,7 @@
 import { useAchievementStrategyDialogStore } from '@/stores/achievement/strategy/achievementStrategyDialog';
 import { useAuthorStore } from '@/stores/author';
 import { storeToRefs } from 'pinia';
-import formatTimestamp from './formatTimestamp';
+import formatTimestamp from '../../utils/formatTimestamp';
 
 const achievementStrategyDialogStore = useAchievementStrategyDialogStore()
 const { dialogVisible, dialogAchievement, dialogMultipleChoiceList, showStrategyList} = storeToRefs(achievementStrategyDialogStore);
