@@ -149,12 +149,12 @@ const hadFilterClicked = ref(false)
                         <el-segmented v-model="showHiddenType" :options="selectHiddenList" black :size="isMobile ? 'small' : 'default'" :style="`font-size: ${isMobile ? 13 : 14}px;`"></el-segmented>
                     </div>
                     <div class="achievement-filter-segmented">
-                        <div>显示完成类型：</div>
-                        <el-segmented v-model="showCompletedType" :options="selectCompletedList" black :size="isMobile ? 'small' : 'default'" :style="`font-size: ${isMobile ? 13 : 14}px;`"></el-segmented>
-                    </div>
-                    <div class="achievement-filter-segmented">
                         <div>显示分支类型：</div>
                         <el-segmented v-model="showBranchType" :options="selectBranchList" black :size="isMobile ? 'small' : 'default'" :style="`font-size: ${isMobile ? 13 : 14}px;`"></el-segmented>
+                    </div>
+                    <div class="achievement-filter-segmented">
+                        <div>显示完成类型：</div>
+                        <el-segmented v-model="showCompletedType" :options="selectCompletedList" black :size="isMobile ? 'small' : 'default'" :style="`font-size: ${isMobile ? 13 : 14}px;`"></el-segmented>
                     </div>
                     <div class="achievement-filter-segmented">
                         <div>显示获取类型：</div>
