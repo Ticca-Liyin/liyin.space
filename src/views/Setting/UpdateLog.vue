@@ -50,4 +50,14 @@ const { isMobile } = storeToRefs(isMobileStore)
 .update-log-changes li {
     margin: 5px 0;
 }
+
+.update-log .el-alert__content {
+    width: calc(100% - 24px);
+}
+
+.update-log .el-alert__content .el-alert__title {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
 </style>

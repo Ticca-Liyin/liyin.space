@@ -5,6 +5,7 @@
         align-center
         class="update-log-dialog"
         :before-close="handleClose"
+        :z-index="11111"
     >
         <div class="update-log-view">
             <div v-for="item in updateLogInfo" :key="item.version" class="update-log-content">

@@ -1386,6 +1386,83 @@
     "ShowType": "HiddenDesc",
     "Version": "3.0"
   },
+  "4034101": {
+    "AchievementID": 4034101,
+    "SeriesID": 3,
+    "AchievementTitle": "女神啊，歌唱他的愤怒",
+    "AchievementDesc": "年轻的英雄终于从「纷争」中崛起…<br><div style=\"color:#8790abff;\">※…并没有，但他至少得救了</div>",
+    "ParamList": [],
+    "Priority": 920,
+    "Rarity": "Mid",
+    "ShowType": "HiddenDesc",
+    "Version": "3.1"
+  },
+  "4034102": {
+    "AchievementID": 4034102,
+    "SeriesID": 3,
+    "AchievementTitle": "无形之神乃最显之物",
+    "AchievementDesc": "拾花为薪，理性的火种再度燎燃<br><div style=\"color:#8790abff;\">※与泰坦一同击退无名剑士</div>",
+    "ParamList": [],
+    "Priority": 919,
+    "Rarity": "Mid",
+    "ShowType": "HiddenDesc",
+    "Version": "3.1"
+  },
+  "4034103": {
+    "AchievementID": 4034103,
+    "SeriesID": 3,
+    "AchievementTitle": "置身不死的神明中",
+    "AchievementDesc": "塞纳托斯呵，请恩赐她一夜安眠<br><div style=\"color:#8790abff;\">※在噩梦中尝试重拾缇宝的过去…</div>",
+    "ParamList": [],
+    "Priority": 918,
+    "Rarity": "Mid",
+    "ShowType": "HiddenDesc",
+    "Version": "3.1"
+  },
+  "4034104": {
+    "AchievementID": 4034104,
+    "SeriesID": 3,
+    "AchievementTitle": "战勇啊，何必质问其家世？",
+    "AchievementDesc": "君王遗告身后：「朕的王朝，给最强者。」<br><div style=\"color:#8790abff;\">※与「纷争」新神一同在角争中胜出</div>",
+    "ParamList": [],
+    "Priority": 917,
+    "Rarity": "Mid",
+    "ShowType": "HiddenDesc",
+    "Version": "3.1"
+  },
+  "4034105": {
+    "AchievementID": 4034105,
+    "SeriesID": 3,
+    "AchievementTitle": "人世正如木叶枯荣",
+    "AchievementDesc": "雄狮远离故土，抵达他流徙的终点<br><div style=\"color:#8790abff;\">※见证悬锋继业者归乡的末路</div>",
+    "ParamList": [],
+    "Priority": 916,
+    "Rarity": "Mid",
+    "ShowType": "HiddenDesc",
+    "Version": "3.1"
+  },
+  "4034106": {
+    "AchievementID": 4034106,
+    "SeriesID": 3,
+    "AchievementTitle": "旧叶落地，然新木萌发",
+    "AchievementDesc": "当黎明用玫瑰色的手指送来曙光<br><div style=\"color:#8790abff;\">※见证缇安展翅飞向注定的明天</div>",
+    "ParamList": [],
+    "Priority": 915,
+    "Rarity": "Mid",
+    "ShowType": "HiddenDesc",
+    "Version": "3.1"
+  },
+  "4034107": {
+    "AchievementID": 4034107,
+    "SeriesID": 3,
+    "AchievementTitle": "人世正如此：一代出生，一代凋零",
+    "AchievementDesc": "启封岁月自过去送向未来的信<br><div style=\"color:#8790abff;\">※见证缇里西庇俄丝与逐火的起点</div>",
+    "ParamList": [],
+    "Priority": 914,
+    "Rarity": "Mid",
+    "ShowType": "HiddenDesc",
+    "Version": "3.1"
+  },
   "4040101": {
     "AchievementID": 4040101,
     "SeriesID": 4,
@@ -3096,6 +3173,181 @@
     "Rarity": "Low",
     "ShowType": "ShowAfterFinish",
     "Version": "3.0"
+  },
+  "4044101": {
+    "AchievementID": 4044101,
+    "SeriesID": 4,
+    "AchievementTitle": "教科书般的设计",
+    "AchievementDesc": "为求学者敞开知识的大门",
+    "ParamList": [],
+    "Priority": 849,
+    "Rarity": "Low",
+    "ShowType": "ShowAfterFinish",
+    "Version": "3.1"
+  },
+  "4044102": {
+    "AchievementID": 4044102,
+    "SeriesID": 4,
+    "AchievementTitle": "瑟希斯不完备定理",
+    "AchievementDesc": "2次阻止贼灵从瑟希斯眼皮底下偷走东西",
+    "ParamList": [
+      {
+        "Value": 2
+      }
+    ],
+    "Priority": 848,
+    "Rarity": "Low",
+    "Version": "3.1"
+  },
+  "4044103": {
+    "AchievementID": 4044103,
+    "SeriesID": 4,
+    "AchievementTitle": "学海拾遗",
+    "AchievementDesc": "获得「呓语密林」神悟树庭中深埋水下的战利品",
+    "ParamList": [],
+    "Priority": 847,
+    "Rarity": "Low",
+    "Version": "3.1"
+  },
+  "4044104": {
+    "AchievementID": 4044104,
+    "SeriesID": 4,
+    "AchievementTitle": "阿多尼斯电梯",
+    "AchievementDesc": "在「呓语密林」神悟树庭探索时，第一次站到了识之花上面",
+    "ParamList": [],
+    "Priority": 846,
+    "Rarity": "Low",
+    "Version": "3.1"
+  },
+  "4044105": {
+    "AchievementID": 4044105,
+    "SeriesID": 4,
+    "AchievementTitle": "捉蝇术",
+    "AchievementDesc": "别以为躲到树上就安全了……<br><div style=\"color:#8790abff;\">※使用扎格列斯之手的冲拳动作，击败神悟树庭某棵树木上的敌人</div>",
+    "ParamList": [],
+    "Priority": 845,
+    "Rarity": "Low",
+    "ShowType": "HiddenDesc",
+    "Version": "3.1"
+  },
+  "4044107": {
+    "AchievementID": 4044107,
+    "SeriesID": 4,
+    "AchievementTitle": "悸动的心",
+    "AchievementDesc": "将深爱般的誓言献上<br><div style=\"color:#8790abff;\">※使聚露植心再次活化</div>",
+    "ParamList": [],
+    "Priority": 843,
+    "Rarity": "Low",
+    "ShowType": "HiddenDesc",
+    "Version": "3.1"
+  },
+  "4044108": {
+    "AchievementID": 4044108,
+    "SeriesID": 4,
+    "AchievementTitle": "种子的信仰",
+    "AchievementDesc": "在「呓语密林」神悟树庭的逐星天井中探索时，借助识之种砸碎底部的货箱",
+    "ParamList": [],
+    "Priority": 842,
+    "Rarity": "Low",
+    "Version": "3.1"
+  },
+  "4044109": {
+    "AchievementID": 4044109,
+    "SeriesID": 4,
+    "AchievementTitle": "蝶恋花",
+    "AchievementDesc": "金丝与树叶交织成一纸恋曲<br><div style=\"color:#8790abff;\">※通过神识之蝶的考验</div>",
+    "ParamList": [],
+    "Priority": 841,
+    "Rarity": "Low",
+    "ShowType": "HiddenDesc",
+    "Version": "3.1"
+  },
+  "4044110": {
+    "AchievementID": 4044110,
+    "SeriesID": 4,
+    "AchievementTitle": "虫鸣秘闻：智慧绾结",
+    "AchievementDesc": "几人的塑像丢失了面庞？<br><div style=\"color:#8790abff;\">※解开「呓语密林」神悟树庭的预言谜题</div>",
+    "ParamList": [],
+    "Priority": 840,
+    "Rarity": "Low",
+    "ShowType": "HiddenDesc",
+    "Version": "3.1"
+  },
+  "4044111": {
+    "AchievementID": 4044111,
+    "SeriesID": 4,
+    "AchievementTitle": "虫鸣秘闻：门径律法",
+    "AchievementDesc": "她曾走过怎样的路？<br><div style=\"color:#8790abff;\">※解开「神谕圣地」雅努萨波利斯的预言谜题</div>",
+    "ParamList": [],
+    "Priority": 839,
+    "Rarity": "Low",
+    "ShowType": "HiddenDesc",
+    "Version": "3.1"
+  },
+  "4044112": {
+    "AchievementID": 4044112,
+    "SeriesID": 4,
+    "AchievementTitle": "万径之起始",
+    "AchievementDesc": "发现缇里西庇俄丝的逃生密道",
+    "ParamList": [],
+    "Priority": 838,
+    "Rarity": "Low",
+    "ShowType": "ShowAfterFinish",
+    "Version": "3.1"
+  },
+  "4044113": {
+    "AchievementID": 4044113,
+    "SeriesID": 4,
+    "AchievementTitle": "彩虹的尽头",
+    "AchievementDesc": "门径，请指引我<br><div style=\"color:#8790abff;\">※完成「雅努斯迷津」的简单、中等、困难难度谜题</div>",
+    "ParamList": [],
+    "Priority": 837,
+    "Rarity": "Low",
+    "ShowType": "HiddenDesc",
+    "Version": "3.1"
+  },
+  "4044114": {
+    "AchievementID": 4044114,
+    "SeriesID": 4,
+    "AchievementTitle": "我们仍在路上",
+    "AchievementDesc": "门径，请指引我们<br><div style=\"color:#8790abff;\">※完成「雅努斯迷津」的最高难度谜题</div>",
+    "ParamList": [],
+    "Priority": 836,
+    "Rarity": "Low",
+    "ShowType": "HiddenDesc",
+    "Version": "3.1"
+  },
+  "4044115": {
+    "AchievementID": 4044115,
+    "SeriesID": 4,
+    "AchievementTitle": "新手入门",
+    "AchievementDesc": "操控扎格列斯之手，击打「神谕圣地」雅努萨波利斯的万径之门",
+    "ParamList": [],
+    "Priority": 835,
+    "Rarity": "Low",
+    "Version": "3.1"
+  },
+  "4044116": {
+    "AchievementID": 4044116,
+    "SeriesID": 4,
+    "AchievementTitle": "所有命运已被标价",
+    "AchievementDesc": "在「神谕圣地」雅努萨波利斯，借助命运泰坦的权能完成挑战，并获取战利品。",
+    "ParamList": [],
+    "Priority": 834,
+    "Rarity": "Low",
+    "ShowType": "ShowAfterFinish",
+    "Version": "3.1"
+  },
+  "4044117": {
+    "AchievementID": 4044117,
+    "SeriesID": 4,
+    "AchievementTitle": "地下拳击手",
+    "AchievementDesc": "使用扎格列斯之手的冲拳动作，击败藏在「神谕圣地」雅努萨波利斯大桥下方的敌人",
+    "ParamList": [],
+    "Priority": 833,
+    "Rarity": "Low",
+    "ShowType": "ShowAfterFinish",
+    "Version": "3.1"
   },
   "4051001": {
     "AchievementID": 4051001,
@@ -8010,7 +8262,7 @@
     "AchievementID": 4054042,
     "SeriesID": 5,
     "AchievementTitle": "漂浮曲与凝固音符",
-    "AchievementDesc": "天外回音可绕梁<br><div style=\"color:#8790abff;\">※在帕西提亚出重温过往的天外之音</div>",
+    "AchievementDesc": "天外回音可绕梁<br><div style=\"color:#8790abff;\">※在帕西提亚处重温过往的天外之音</div>",
     "ParamList": [],
     "Priority": 556,
     "Rarity": "Low",
@@ -8328,6 +8580,316 @@
     "Rarity": "Low",
     "ShowType": "ShowAfterFinish",
     "Version": "3.0"
+  },
+  "4054101": {
+    "AchievementID": 4054101,
+    "SeriesID": 5,
+    "AchievementTitle": "恶老板",
+    "AchievementDesc": "在「嗷呜嗷呜事务所」中，加班模式达到30评价",
+    "ParamList": [
+      {
+        "Value": 30
+      }
+    ],
+    "Priority": 529,
+    "Rarity": "Mid",
+    "Version": "3.1"
+  },
+  "4054102": {
+    "AchievementID": 4054102,
+    "SeriesID": 5,
+    "AchievementTitle": "大企业",
+    "AchievementDesc": "在「嗷呜嗷呜事务所」中，安排队伍中的奇美拉累计获得60块嗷呜饼干",
+    "ParamList": [
+      {
+        "Value": 60
+      }
+    ],
+    "Priority": 528,
+    "Rarity": "Low",
+    "Version": "3.1"
+  },
+  "4054103": {
+    "AchievementID": 4054103,
+    "SeriesID": 5,
+    "AchievementTitle": "四保一",
+    "AchievementDesc": "在「嗷呜嗷呜事务所」中，单只奇美拉的效率达到30",
+    "ParamList": [
+      {
+        "Value": 30
+      }
+    ],
+    "Priority": 527,
+    "Rarity": "Low",
+    "Version": "3.1"
+  },
+  "4054104": {
+    "AchievementID": 4054104,
+    "SeriesID": 5,
+    "AchievementTitle": "…你是对面的吧？",
+    "AchievementDesc": "在「嗷呜嗷呜事务所」中，单只奇美拉的效率达到-10",
+    "ParamList": [
+      {
+        "Value": -10
+      }
+    ],
+    "Priority": 526,
+    "Rarity": "Low",
+    "Version": "3.1"
+  },
+  "4054105": {
+    "AchievementID": 4054105,
+    "SeriesID": 5,
+    "AchievementTitle": "大亨游戏",
+    "AchievementDesc": "在「嗷呜嗷呜事务所」中，将贵族打扮的男性的奇美拉招致麾下",
+    "ParamList": [],
+    "Priority": 525,
+    "Rarity": "Low",
+    "Version": "3.1"
+  },
+  "4054106": {
+    "AchievementID": 4054106,
+    "SeriesID": 5,
+    "AchievementTitle": "小公司大老板",
+    "AchievementDesc": "在「嗷呜嗷呜事务所」中，拥有属于你的队伍名称",
+    "ParamList": [],
+    "Priority": 524,
+    "Rarity": "Low",
+    "Version": "3.1"
+  },
+  "4054107": {
+    "AchievementID": 4054107,
+    "SeriesID": 5,
+    "AchievementTitle": "独角兽企业",
+    "AchievementDesc": "在「嗷呜嗷呜事务所」中，击败其余所有队伍，获得最终的冠军头衔",
+    "ParamList": [],
+    "Priority": 523,
+    "Rarity": "Low",
+    "Version": "3.1"
+  },
+  "4054108": {
+    "AchievementID": 4054108,
+    "SeriesID": 5,
+    "AchievementTitle": "凶手来自局外",
+    "AchievementDesc": "协助珀里法斯查明朋友们的结局",
+    "ParamList": [],
+    "Priority": 522,
+    "Rarity": "Low",
+    "ShowType": "ShowAfterFinish",
+    "Version": "3.1"
+  },
+  "4054111": {
+    "AchievementID": 4054111,
+    "SeriesID": 5,
+    "AchievementTitle": "生者常怀安",
+    "AchievementDesc": "探访树庭殉难者的亲属，并完成其心愿",
+    "ParamList": [],
+    "Priority": 519,
+    "Rarity": "Low",
+    "ShowType": "ShowAfterFinish",
+    "Version": "3.1"
+  },
+  "4054112": {
+    "AchievementID": 4054112,
+    "SeriesID": 5,
+    "AchievementTitle": "命运噤声的圣所",
+    "AchievementDesc": "窥探「神谕圣地」雅努萨波利斯全部的追忆残像",
+    "ParamList": [],
+    "Priority": 518,
+    "Rarity": "Low",
+    "ShowType": "ShowAfterFinish",
+    "Version": "3.1"
+  },
+  "4054113": {
+    "AchievementID": 4054113,
+    "SeriesID": 5,
+    "AchievementTitle": "荫下微光",
+    "AchievementDesc": "窥探「呓语密林」神悟树庭全部的追忆残像",
+    "ParamList": [],
+    "Priority": 517,
+    "Rarity": "Low",
+    "ShowType": "ShowAfterFinish",
+    "Version": "3.1"
+  },
+  "4054114": {
+    "AchievementID": 4054114,
+    "SeriesID": 5,
+    "AchievementTitle": "别的船只却安然过海",
+    "AchievementDesc": "调查位于「神谕圣地」雅努萨波利斯的雅努斯之驹",
+    "ParamList": [],
+    "Priority": 516,
+    "Rarity": "Low",
+    "ShowType": "ShowAfterFinish",
+    "Version": "3.1"
+  },
+  "4054115": {
+    "AchievementID": 4054115,
+    "SeriesID": 5,
+    "AchievementTitle": "灵魂的肖像",
+    "AchievementDesc": "调查位于「呓语密林」神悟树庭的雅努斯之驹",
+    "ParamList": [],
+    "Priority": 515,
+    "Rarity": "Low",
+    "ShowType": "ShowAfterFinish",
+    "Version": "3.1"
+  },
+  "4054116": {
+    "AchievementID": 4054116,
+    "SeriesID": 5,
+    "AchievementTitle": "翁法罗斯定位系统",
+    "AchievementDesc": "在「神谕圣地」雅努萨波利斯完成「雅努斯迷津」的所有谜题",
+    "ParamList": [],
+    "Priority": 514,
+    "Rarity": "Low",
+    "ShowType": "ShowAfterFinish",
+    "Version": "3.1"
+  },
+  "4054117": {
+    "AchievementID": 4054117,
+    "SeriesID": 5,
+    "AchievementTitle": "给我变！",
+    "AchievementDesc": "听懂私人浴场中的奇美拉的话语",
+    "ParamList": [],
+    "Priority": 513,
+    "Rarity": "Low",
+    "ShowType": "ShowAfterFinish",
+    "Version": "3.1"
+  },
+  "4054118": {
+    "AchievementID": 4054118,
+    "SeriesID": 5,
+    "AchievementTitle": "无尽的花与圣叶",
+    "AchievementDesc": "获取声音记录《神性的回响：理性》",
+    "ParamList": [],
+    "Priority": 512,
+    "Rarity": "Low",
+    "Version": "3.1"
+  },
+  "4054119": {
+    "AchievementID": 4054119,
+    "SeriesID": 5,
+    "AchievementTitle": "爱夜的漫长游祭",
+    "AchievementDesc": "获取声音记录《神性的回响：浪漫》",
+    "ParamList": [],
+    "Priority": 511,
+    "Rarity": "Low",
+    "Version": "3.1"
+  },
+  "4054120": {
+    "AchievementID": 4054120,
+    "SeriesID": 5,
+    "AchievementTitle": "显赫行止的道路",
+    "AchievementDesc": "获取声音记录《神性的回响：门径》",
+    "ParamList": [],
+    "Priority": 510,
+    "Rarity": "Low",
+    "Version": "3.1"
+  },
+  "4054121": {
+    "AchievementID": 4054121,
+    "SeriesID": 5,
+    "AchievementTitle": "洞穴外的世界",
+    "AchievementDesc": "在创世涡心整理思绪<br><div style=\"color:#8790abff;\">※开拓翁法罗斯的过程中，你确实经历了许多…</div>",
+    "ParamList": [],
+    "Priority": 509,
+    "Rarity": "Low",
+    "ShowType": "HiddenDesc",
+    "Version": "3.1"
+  },
+  "4054122": {
+    "AchievementID": 4054122,
+    "SeriesID": 5,
+    "AchievementTitle": "天…天外先锋？！",
+    "AchievementDesc": "使用缇宝调查圣女房间内的黑板",
+    "ParamList": [],
+    "Priority": 508,
+    "Rarity": "Low",
+    "ShowType": "ShowAfterFinish",
+    "Version": "3.1"
+  },
+  "4054123": {
+    "AchievementID": 4054123,
+    "SeriesID": 5,
+    "AchievementTitle": "遥望众神的宫殿",
+    "AchievementDesc": "何人不曾听说？<br><div style=\"color:#8790abff;\">※在「神谕圣地」雅努萨波利斯，与所有和圣女相关的人们对话</div>",
+    "ParamList": [],
+    "Priority": 507,
+    "Rarity": "Low",
+    "ShowType": "HiddenDesc",
+    "Version": "3.1"
+  },
+  "4054124": {
+    "AchievementID": 4054124,
+    "SeriesID": 5,
+    "AchievementTitle": "我呼唤理性的奇迹",
+    "AchievementDesc": "阅读「呓语密林」神悟树庭所有启目集",
+    "ParamList": [],
+    "Priority": 506,
+    "Rarity": "Low",
+    "ShowType": "ShowAfterFinish",
+    "Version": "3.1"
+  },
+  "4054125": {
+    "AchievementID": 4054125,
+    "SeriesID": 5,
+    "AchievementTitle": "我呼唤最后的破晓",
+    "AchievementDesc": "阅读「神谕圣地」雅努萨波利斯所有启目集",
+    "ParamList": [],
+    "Priority": 505,
+    "Rarity": "Low",
+    "ShowType": "ShowAfterFinish",
+    "Version": "3.1"
+  },
+  "4054126": {
+    "AchievementID": 4054126,
+    "SeriesID": 5,
+    "AchievementTitle": "异乡人的颂歌",
+    "AchievementDesc": "聆听诗人利波为你创作的第二首诗歌。",
+    "ParamList": [],
+    "Priority": 504,
+    "Rarity": "Low",
+    "Version": "3.1"
+  },
+  "4054127": {
+    "AchievementID": 4054127,
+    "SeriesID": 5,
+    "AchievementTitle": "母亲啊，我已还乡",
+    "AchievementDesc": "阅读万敌之母，歌耳戈的命运之末",
+    "ParamList": [],
+    "Priority": 503,
+    "Rarity": "Low",
+    "Version": "3.1"
+  },
+  "4054128": {
+    "AchievementID": 4054128,
+    "SeriesID": 5,
+    "AchievementTitle": "我已建立自己的城",
+    "AchievementDesc": "找到悬锋王朝最后的记录",
+    "ParamList": [],
+    "Priority": 502,
+    "Rarity": "Low",
+    "Version": "3.1"
+  },
+  "4054129": {
+    "AchievementID": 4054129,
+    "SeriesID": 5,
+    "AchievementTitle": "种太阳",
+    "AchievementDesc": "在「呓语密林」神悟树庭中解决树庭学者的委托。",
+    "ParamList": [],
+    "Priority": 501,
+    "Rarity": "Low",
+    "ShowType": "ShowAfterFinish",
+    "Version": "3.1"
+  },
+  "4054130": {
+    "AchievementID": 4054130,
+    "SeriesID": 5,
+    "AchievementTitle": "林地君主",
+    "AchievementDesc": "坐上「呓语密林」神悟树庭的王座",
+    "ParamList": [],
+    "Priority": 500,
+    "Rarity": "Low",
+    "Version": "3.1"
   },
   "4060101": {
     "AchievementID": 4060101,
@@ -11514,7 +12076,7 @@
     "AchievementID": 4074019,
     "SeriesID": 7,
     "AchievementTitle": "代理人战争",
-    "AchievementDesc": "单场战斗中，场上同时存在4名及以上我方召唤物",
+    "AchievementDesc": "单场战斗中，场上同时存在4名及以上我方忆灵",
     "ParamList": [
       {
         "Value": 4
@@ -11557,6 +12119,131 @@
     "Rarity": "Low",
     "ShowType": "ShowAfterFinish",
     "Version": "3.0"
+  },
+  "4074101": {
+    "AchievementID": 4074101,
+    "SeriesID": 7,
+    "AchievementTitle": "消逝的光芒",
+    "AchievementDesc": "单场战斗中，通过消灭敌方目标消除3个【艾格勒印记】",
+    "ParamList": [
+      {
+        "Value": 3
+      }
+    ],
+    "Priority": 795,
+    "Rarity": "Low",
+    "Version": "3.1"
+  },
+  "4074102": {
+    "AchievementID": 4074102,
+    "SeriesID": 7,
+    "AchievementTitle": "无月之夜",
+    "AchievementDesc": "单场战斗中，通过释放终结技消除2个【欧洛尼斯印记】",
+    "ParamList": [
+      {
+        "Value": 2
+      }
+    ],
+    "Priority": 794,
+    "Rarity": "Low",
+    "Version": "3.1"
+  },
+  "4074103": {
+    "AchievementID": 4074103,
+    "SeriesID": 7,
+    "AchievementTitle": "风暴戛然而止",
+    "AchievementDesc": "使处于【风行】状态的敌人进入弱点击破状态",
+    "ParamList": [],
+    "Priority": 793,
+    "Rarity": "Low",
+    "Version": "3.1"
+  },
+  "4074104": {
+    "AchievementID": 4074104,
+    "SeriesID": 7,
+    "AchievementTitle": "失去影子的人",
+    "AchievementDesc": "使「至黑之剑，盗火行者」在一阶段连续2次施放【幽冥的悼念】时，没有「残破容器」可以触发协同",
+    "ParamList": [
+      {
+        "Value": 2
+      }
+    ],
+    "Priority": 792,
+    "Rarity": "Low",
+    "Version": "3.1"
+  },
+  "4074105": {
+    "AchievementID": 4074105,
+    "SeriesID": 7,
+    "AchievementTitle": "没有影子的人",
+    "AchievementDesc": "在「至黑之剑，盗火行者」施放【沉默的悲叹】期间，击败所有「残破容器」",
+    "ParamList": [],
+    "Priority": 791,
+    "Rarity": "Low",
+    "Version": "3.1"
+  },
+  "4074106": {
+    "AchievementID": 4074106,
+    "SeriesID": 7,
+    "AchievementTitle": "火之门，无尽军势",
+    "AchievementDesc": "单场战斗中，我方角色万敌在1次【血仇】状态下，施放5次【弑王成王】或【弑神登神】",
+    "ParamList": [
+      {
+        "Value": 1
+      },
+      {
+        "Value": 5
+      }
+    ],
+    "Priority": 790,
+    "Rarity": "Low",
+    "ShowType": "ShowAfterFinish",
+    "Version": "3.1"
+  },
+  "4074107": {
+    "AchievementID": 4074107,
+    "SeriesID": 7,
+    "AchievementTitle": "Tribbie kill",
+    "AchievementDesc": "单场战斗中，我方角色缇宝使用单次「普攻」同时消灭3个敌人",
+    "ParamList": [
+      {
+        "Value": 3
+      }
+    ],
+    "Priority": 789,
+    "Rarity": "Low",
+    "ShowType": "ShowAfterFinish",
+    "Version": "3.1"
+  },
+  "4074108": {
+    "AchievementID": 4074108,
+    "SeriesID": 7,
+    "AchievementTitle": "饱和火力覆盖",
+    "AchievementDesc": "单场战斗中，使用我方角色缇宝累计触发10次天赋的追加攻击",
+    "ParamList": [
+      {
+        "Value": 10
+      }
+    ],
+    "Priority": 788,
+    "Rarity": "Low",
+    "ShowType": "ShowAfterFinish",
+    "Version": "3.1"
+  },
+  "4074109": {
+    "AchievementID": 4074109,
+    "SeriesID": 7,
+    "AchievementTitle": "以一人，敌万人",
+    "AchievementDesc": "单场战斗中，在我方队伍仅存活万敌的情况下击败1个精英敌人并获得战斗胜利",
+    "ParamList": [
+      {
+        "Value": 1
+      }
+    ],
+    "Priority": 787,
+    "Rarity": "Low",
+    "ShowType": "ShowAfterFinish",
+    "Version": "3.1"
   },
   "4080101": {
     "AchievementID": 4080101,
@@ -12498,6 +13185,17 @@
     "Rarity": "Low",
     "ShowType": "HiddenDesc",
     "Version": "3.0"
+  },
+  "4084102": {
+    "AchievementID": 4084102,
+    "SeriesID": 8,
+    "AchievementTitle": "奥赫玛不相信眼泪",
+    "AchievementDesc": "它不会攻击，但却能用另一种方式伤害你…<br><div style=\"color:#8790abff;\">※在翁法罗斯探索过程中，被人形塑像砸中</div>",
+    "ParamList": [],
+    "Priority": 911,
+    "Rarity": "Low",
+    "ShowType": "ShowAfterFinish",
+    "Version": "3.1"
   },
   "4090201": {
     "AchievementID": 4090201,

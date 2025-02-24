@@ -36,7 +36,7 @@ export const useAchievementImportStore = defineStore('achievementImport', () => 
         })        
         initUserCustomNotAchievedList()
     
-        // 修改已完成状态, 同一多选已成就后识别的覆盖先识别到的
+        // 修改已完成状态, 同一多选一成就后识别的覆盖先识别到的
         for(const id of importAchievementList){
             const ach_ = achievements.value.find(achievement => id === achievement.AchievementID)
     
