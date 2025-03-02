@@ -4,6 +4,12 @@ import { defineStore } from 'pinia'
 export const useUpdateLogStore = defineStore('updateLog', () => {
     const updateLogInfo = [
         {
+            version: '3.1.1', 
+            date: '2025-03-xx', 
+            title: '更新 3.1 版本角色相关数据',
+            changes: '<ul><li>更新 3.1 版本角色相关数据 </li></ul>' 
+        },
+        {
             version: '3.1.0', 
             date: '2025-02-24', 
             title: '更新 3.1 版本成就相关数据，新增更新日志弹窗',
@@ -144,8 +150,8 @@ export const useUpdateLogStore = defineStore('updateLog', () => {
         { 
             version: '2.2.5', 
             date: '2024-06-09', 
-            title: '新增角色总数悬浮窗, 新增显示对应阵营角色设置，新增 2.4 前置角色信息',
-            changes: '<ul><li>新增角色总数悬浮窗，方便各位了解筛选后的角色数据，其中去重是指切换角色只计入一次（如开拓者、三月七等）</li><li>新增角色界面显示对应阵营角色设置</li><li>新增 2.4 前置角色信息，具体角色为：云璃、椒丘、三月七-巡猎</li></ul>' 
+            title: '新增角色总数悬浮窗, 新增显示对应阵营角色设置，新增 2.4 前瞻角色信息',
+            changes: '<ul><li>新增角色总数悬浮窗，方便各位了解筛选后的角色数据，其中去重是指切换角色只计入一次（如开拓者、三月七等）</li><li>新增角色界面显示对应阵营角色设置</li><li>新增 2.4 前瞻角色信息，具体角色为：云璃、椒丘、三月七•巡猎</li></ul>' 
         },
         { 
             version: '2.2.4', 

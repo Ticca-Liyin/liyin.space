@@ -55,10 +55,6 @@ export const useCharacterSettingStore = defineStore('characterSetting', () => {
     const toBiliWiki = (charId) => {
         let name = characters.value[charId].name
 
-        if(name.startsWith('开拓者') || name.startsWith('三月七')) {
-            name = name.replace('-', '•')
-        }
-
         window.open('https://wiki.biligame.com/sr/' + name, '_blank');
     }
 

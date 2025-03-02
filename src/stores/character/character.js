@@ -150,7 +150,7 @@ export const useCharacterStore = defineStore('character', () => {
         if (char.version < 1.6 && char.name !== "藿藿") 
             prefix = 'https://upload-static.hoyoverse.com/'
 
-        else if (["加拉赫", "花火", "砂金", "开拓者-同谐"].includes(char.name))
+        else if (["加拉赫", "花火", "砂金", "开拓者•同谐"].includes(char.name))
             prefix = 'https://act-webstatic.hoyoverse.com/'
 
         else
