@@ -5,7 +5,7 @@ export const CookieServerCode = {
     UNKNOWN_ERROR: 401,
 }
 
-export class RequesrResult {
+export class RequestResult {
     constructor(code, message, data = null) {
         this.code = code;
         this.message = message;

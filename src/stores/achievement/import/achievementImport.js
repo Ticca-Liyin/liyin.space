@@ -6,7 +6,7 @@ import { useImportByCookieSettingStore } from '@/stores/achievement/setting/impo
 import { useAchievementCustomNotAchievedStore } from '@/stores/achievement/achievementCustomNotAchieved'
 import { useAchievementImportByCookieStore } from '@/stores/achievement/import/achievementImportByCookie'
 import { getAchievements } from '@/services/cookieService';
-import { CookieServerCode, RequesrResult } from '@/types/requesrResult'
+import { CookieServerCode, RequestResult } from '@/types/requestResult'
 
 export const useAchievementImportStore = defineStore('achievementImport', () => { 
     const achievementStore = useAchievementStore()
@@ -84,14 +84,14 @@ export const useAchievementImportStore = defineStore('achievementImport', () => 
                     
                     importAchievementsByIds(achievementIds)
                 } catch {
-                    return new RequesrResult(-200, '用户取消导入');
+                    return new RequestResult(-200, '用户取消导入');
                 }
             }
             else {
                 importAchievementsByIds(achievementIds)
             }
             
-            return new RequesrResult(CookieServerCode.SUCCESS, 'success', true);
+            return new RequestResult(CookieServerCode.SUCCESS, 'success', true);
         })
         .catch(error => {
             ElMessage({
@@ -101,7 +101,7 @@ export const useAchievementImportStore = defineStore('achievementImport', () => 
             })
 
             isImporting.value = false;
-            throw new RequesrResult(CookieServerCode.UNKNOWN_ERROR, error.message);
+            throw new RequestResult(CookieServerCode.UNKNOWN_ERROR, error.message);
         });
     }
     
