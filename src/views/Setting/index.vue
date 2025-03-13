@@ -2,32 +2,43 @@
 import UpdateLog from '@/views/Setting/UpdateLog.vue'
 import AccountManage from '@/views/Setting/AccountManage.vue'
 import ThemeSetting from '@/views/Setting/ThemeSetting.vue'
+import CloudSync from '@/views/Setting/CloudSync.vue';
+import { ref } from 'vue'
+
+const activeName = ref('basic')
 </script>
 
 <template>
     <div class="setting">
-        <UpdateLog />
+        <el-tabs v-model="activeName" class="setting-tabs">
+            <el-tab-pane label="基础" name="basic">
+                <UpdateLog />
 
-        <ThemeSetting />
-        
-        <AccountManage />
+                <ThemeSetting />
+                
+                <AccountManage />
 
-        <!-- <div class="setting-title">关于：</div> -->
-        <div class="setting-title">如果你有什么好的想法和建议，或者是发现网页中的bug，可以通过以下方式联系我：</div>
-        <div class="setting-title">- QQ: 1765931937 </div>
-        <div class="video">
-            教程视频：
-            <a href="https://space.bilibili.com/2079439802/channel/collectiondetail?sid=3040945" target="_blank" class="video-link">功能介绍合集</a>
-        </div>
-        <div class="afadian">
-            赞助页面：
-            <a href="https://afdian.com/a/ticca" target="_blank" class="afadian-link">爱发电</a>
-        </div>
-        <div class="github">
-            开源地址：
-            <a href="https://github.com/Ticca-Liyin/liyin.space" target="_blank" class="github-link">GitHub</a>
-        </div>
-    </div>
+                <!-- <div class="setting-title">关于：</div> -->
+                <div class="setting-title">如果你有什么好的想法和建议，或者是发现网页中的bug，可以通过以下方式联系我：</div>
+                <div class="setting-title">- QQ: 1765931937 </div>
+                <div class="video">
+                    教程视频：
+                    <a href="https://space.bilibili.com/2079439802/channel/collectiondetail?sid=3040945" target="_blank" class="video-link">功能介绍合集</a>
+                </div>
+                <div class="afadian">
+                    赞助页面：
+                    <a href="https://afdian.com/a/ticca" target="_blank" class="afadian-link">爱发电</a>
+                </div>
+                <div class="github">
+                    开源地址：
+                    <a href="https://github.com/Ticca-Liyin/liyin.space" target="_blank" class="github-link">GitHub</a>
+                </div>
+            </el-tab-pane>
+            <el-tab-pane label="数据云同步" name="sync">
+                <CloudSync />
+            </el-tab-pane>
+        </el-tabs>
+    </div>    
 </template>
 
 <style scoped>
@@ -51,11 +62,15 @@ import ThemeSetting from '@/views/Setting/ThemeSetting.vue'
     overflow: hidden;
     overflow-y: auto;
     background-color: var(--liyin-setting-bg-color);
+    /* padding: 10px 20px; */
+}
+.setting-tabs {
+    margin: 10px 20px;
 }
 .setting-title {
     color: var(--liyin-text-color);
     font-size: 16px;
-    margin: 10px 10px;
+    margin: 10px 0;
 }
 
 </style>

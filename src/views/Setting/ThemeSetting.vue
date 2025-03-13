@@ -28,10 +28,7 @@ const themeStore = useThemeStore()
 .setting-title {
     color: var(--liyin-text-color);
     font-size: 16px;
-    margin: 10px 10px;
-}
-.setting-theme-view{
-    margin: 0 10px;
+    margin: 10px 0;
 }
 
 </style>

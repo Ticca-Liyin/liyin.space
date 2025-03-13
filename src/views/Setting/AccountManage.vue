@@ -249,10 +249,9 @@ const handleCloseEditDialog = (done) => {
 .setting-title {
     color: var(--liyin-text-color);
     font-size: 16px;
-    margin: 10px 10px;
+    margin: 10px 0;
 }
 .setting-user-view{
-    margin: 0 10px;
     border: 1px solid var(--liyin-main-border-color);
     border-radius: 5px;
 }

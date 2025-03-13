@@ -37,7 +37,7 @@ const { isMobile } = storeToRefs(isMobileStore)
 
 <style>
 .update-log {
-    margin: 10px 10px 0 10px;
+    margin: 0;
 }
 .update-log-changes {
     margin: 5px 15px;

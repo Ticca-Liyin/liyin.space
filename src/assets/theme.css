@@ -82,6 +82,10 @@
 
     --liyin-pre-bg-color: #F6F6F7;
     --liyin-pre-color: rgba(60, 60, 67, .78);
+
+    /* 行为验证样式配置 */
+    --liyin-captcha-slider-track-bg-color: #89d2ff;
+    --liyin-captcha-slider-track-border-color: #0298f8;
 }
 
 html:root {
@@ -164,6 +168,10 @@ html.dark{
 
     --liyin-pre-bg-color: #1b1b1c;
     --liyin-pre-color: rgba(235, 235, 245, .6);
+
+    /* 行为验证样式配置 */
+    --liyin-captcha-slider-track-bg-color: #ecdbb7;
+    --liyin-captcha-slider-track-border-color: #d6b471;
 }
 
 html:root.dark {

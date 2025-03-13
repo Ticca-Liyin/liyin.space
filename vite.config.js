@@ -36,6 +36,9 @@ export default defineConfig({
         }
       },
       manualChunks(id){
+        if (id.includes('src/assets/captcha/tac')) {
+          return 'captcha-tac';
+        }
         if(id.includes('node_modules')){
           return 'vendor'
         }
