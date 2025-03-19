@@ -38,7 +38,7 @@ npm install
 
 2. 启动服务
 ```
-npm server.js
+node server.js
 ```
 
 看到 `Server is running at http://localhost:20025` 即表示服务启动成功。

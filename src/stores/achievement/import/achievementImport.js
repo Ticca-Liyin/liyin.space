@@ -5,7 +5,7 @@ import { useUserAchievementStore } from '@/stores/achievement/userAchievement'
 import { useImportByCookieSettingStore } from '@/stores/achievement/setting/importByCookieSetting'
 import { useAchievementCustomNotAchievedStore } from '@/stores/achievement/achievementCustomNotAchieved'
 import { useAchievementImportByCookieStore } from '@/stores/achievement/import/achievementImportByCookie'
-import { getAchievements } from '@/services/cookieService';
+import { getAchievementsService } from '@/services/cookieService';
 import { CookieServerCode, RequestResult } from '@/types/requestResult'
 
 export const useAchievementImportStore = defineStore('achievementImport', () => { 
@@ -51,7 +51,7 @@ export const useAchievementImportStore = defineStore('achievementImport', () => 
     const importAchievementsByCookie = async (cookie) => {
         isImporting.value = true;
     
-        return getAchievements(cookie).then( async (data) => {
+        return getAchievementsService(cookie).then( async (data) => {
             isImporting.value = false;
 
             if (data.code !== 0) {

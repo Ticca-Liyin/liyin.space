@@ -27,7 +27,7 @@ api.interceptors.response.use(
 );
 
 // 导出通用的请求方法
-export const getAchievements = async (cookie) => api.get('/cookie/getAchievements', {
+export const getAchievementsService = async (cookie) => api.get('/cookie/getAchievements', {
     headers: {
         'user-cookie': cookie,
     }

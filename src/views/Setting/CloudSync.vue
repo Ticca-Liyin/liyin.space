@@ -19,27 +19,33 @@
     <el-button @click="add">添加</el-button>
     <!-- 行为验证弹窗 -->
     <el-dialog
-      v-model="showTACDialog" :show-close="false" :modal="false"
+      v-model="showTacDialog" :show-close="false" :modal="false"
       width="auto" top="0" align-center class="tac-dialog"
       :close-on-click-modal="false" :close-on-press-escape="false" 
       @opened="loadingTAC"
     >
       <template #header></template>
-      <div id="captcha-div"></div>
+      <div :id="tacBindId"></div>
     </el-dialog>
   </div>
 </template>
 
 <script setup>
-import { TAC } from '@/assets/captcha/tac/js/tac.min.js'
-import { ref } from 'vue'
-import axios from 'axios';
+import { TAC } from '@/assets/captcha/tac/js/tac.min.js';
+import { ref } from 'vue';
+import { useTokenStore } from '@/stores/token';
+import { verifyEmailService } from '@/services/cloudSync/lumine';
 
-const email = ref('')
-const verifyCode = ref('')
+const tokenStore = useTokenStore();
+const { setToken } = tokenStore;
 
-const showTACDialog = ref(false)
-const TACBindEl = "#captcha-div"
+const email = ref('');
+const verifyCode = ref('');
+
+const showTacDialog = ref(false);
+const tacBindId = "captcha-div";
+const tacBindEl = "#" + tacBindId;
+const reg = /^[\w]+@[\w]+((\.[\w]+)+)$/;
 
 const login = () => {
   // 判断邮箱是否非空
@@ -51,8 +57,8 @@ const login = () => {
     })
     return
   }
-  // 判断邮箱格式是否正确[\w]+(\.[\w]+)*@[\w]+(\.[\w])+
-  if (!/^[\w]+@[\w]+((\.[\w]+)+)$/.test(email.value)) {
+  // 判断邮箱格式是否正确
+  if (!reg.test(email.value)) {
     ElMessage({
       showClose: true,
       message: '请输入正确的邮箱',
@@ -62,9 +68,9 @@ const login = () => {
   }
 
   // 显示验证码弹窗
-  hideLoading(TACBindEl); 
+  hideLoading(tacBindEl); 
 
-  showTACDialog.value = true;
+  showTacDialog.value = true;
 }
 
 const add = () => {
@@ -77,8 +83,8 @@ const add = () => {
     })
     return
   }
-  // 判断邮箱格式是否正确[\w]+(\.[\w]+)*@[\w]+(\.[\w])+
-  if (!/^[\w]+@[\w]+((\.[\w]+)+)$/.test(email.value)) {
+  // 判断邮箱格式是否正确
+  if (!reg.test(email.value)) {
     ElMessage({
       showClose: true,
       message: '请输入正确的邮箱',
@@ -106,29 +112,48 @@ const add = () => {
   }
   
   // TODO: 完成云同步登录操作
-  axios.post('http://localhost:10027/lumine/verify', {
-    email: email.value,
-    code: verifyCode.value
+  verifyEmailService(email.value, verifyCode.value).then((res) => {
+    if (res.code === 0) {
+      ElMessage({
+        showClose: true,
+        message: '登录成功',
+        type: 'success',
+      })
+      setToken(res.data)
+    } else {
+      ElMessage({
+        showClose: true,
+        message: res.message,
+        type: 'error',
+      })
+    }
   })
+  .catch(error => {
+    ElMessage({
+        showClose: true,
+        message: error.message,
+        type: 'error',
+    })
+  });
 }
 
 const captchaConfig = {
   // 请求验证码接口
-  requestCaptchaDataUrl: "http://localhost:10027/lumine/genCaptcha",
+  requestCaptchaDataUrl: "/cloudsync/lumine/genCaptcha",
   // 验证验证码接口
-  validCaptchaUrl: "http://localhost:10027/lumine/sendCode",
+  validCaptchaUrl: "/cloudsync/lumine/sendCode",
   // 绑定的div
-  bindEl: TACBindEl,
+  bindEl: tacBindEl,
   // 验证成功回调函数
   validSuccess: (res, c, t) => {
     // 销毁验证码
     t.destroyWindow();
     
-    showTACDialog.value = false
+    showTacDialog.value = false
   },
   btnCloseFun: (el, tac) => {
     tac.destroyWindow();
-    showTACDialog.value = false
+    showTacDialog.value = false
   }
 }
 
@@ -161,7 +186,7 @@ const loadingTAC = () => {
             type: 'error',
           })
           setTimeout(() => {
-            showTACDialog.value = false;            
+            showTacDialog.value = false;            
           }, 300);
           if (type === "requestCaptchaData") {
             throw new Error("验证码获取失败:" + res.message);

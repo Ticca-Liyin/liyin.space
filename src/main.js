@@ -4,6 +4,7 @@ import '@/assets/theme.css'
 
 import { createApp } from 'vue'
 import { createPinia } from 'pinia'
+import { createPersistedState } from 'pinia-plugin-persistedstate'
 
 import App from './App.vue'
 import router from './router'
@@ -23,7 +24,11 @@ const preventDragStart = {
 
 app.directive('preventDragStart', preventDragStart);
 
-app.use(createPinia())
+const pinia = createPinia()
+const persist = createPersistedState()
+pinia.use(persist)
+
+app.use(pinia)
 app.use(router)
 
 app.mount('#app')
