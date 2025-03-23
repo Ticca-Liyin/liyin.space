@@ -20,6 +20,21 @@ export const useAchievementCustomNotAchievedStore = defineStore('achievementCust
         if (tempUserCustomNotAchieved !== null) {
             // 数据存在，将其从字符串转换为对象
             userCustomNotAchieved = JSON.parse(tempUserCustomNotAchieved)
+
+            // #region lastUpdateTime 属性缺失补充
+            if (userCustomNotAchieved !== null && typeof userCustomNotAchieved === "object" && !Array.isArray(userCustomNotAchieved)) {
+                let valid = true
+                for(const tokenID in userCustomNotAchieved){
+                    // 判断 lastUpdateTime 是否存在且是否为数字
+                    if(userCustomNotAchieved[tokenID].lastUpdateTime === undefined || typeof userCustomNotAchieved[tokenID].lastUpdateTime !== "number"){
+                        // 数据不合法，重置为默认值
+                        userCustomNotAchieved[tokenID].lastUpdateTime = new Date().getTime()
+                        valid = false
+                    }
+                }
+                if (!valid) saveUserCustomNotAchieved()
+            }
+            // #endregion
         } else {
             // 数据不存在，执行相应的操作
             userCustomNotAchieved = {}
@@ -38,7 +53,8 @@ export const useAchievementCustomNotAchievedStore = defineStore('achievementCust
         // 初始化自定义暂不可获取列表
         userCustomNotAchieved[currentUserInfo?.value.tokenID] = {
             tokenID: currentUserInfo.value.tokenID,
-            list: {}
+            list: {},
+            lastUpdateTime: new Date().getTime()
         }
 
         saveUserCustomNotAchieved()
@@ -58,7 +74,8 @@ export const useAchievementCustomNotAchievedStore = defineStore('achievementCust
                         id: achievementID,
                         status: status
                     }
-                }
+                },
+                lastUpdateTime: new Date().getTime()
             }
             if(save) saveUserCustomNotAchieved()
             return 
@@ -68,6 +85,7 @@ export const useAchievementCustomNotAchievedStore = defineStore('achievementCust
             id: achievementID,
             status: status
         }
+        userCustomNotAchievedList.lastUpdateTime = new Date().getTime()
         if(save) saveUserCustomNotAchieved()
         return 
     }

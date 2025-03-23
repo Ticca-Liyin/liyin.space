@@ -23,7 +23,39 @@ export const useTextjoinStore = defineStore('textjoin', () => {
                 userTextjoin.value = {}
             }
             else {
+                let valid = true
+                for(const tokenID in tempUserTextjoin){
+                    if(typeof tempUserTextjoin[tokenID] !== "object" || Array.isArray(tempUserTextjoin[tokenID])) {
+                        tempUserTextjoin[tokenID] = {
+                            data: {},
+                            lastUpdateTime: new Date().getTime()
+                        }
+                        valid = false
+                        continue
+                    }
+                    const keys = Object.keys(tempUserTextjoin[tokenID]);
+                    const data = tempUserTextjoin[tokenID]
+                    if (!keys.includes('data') && !keys.includes('lastUpdateTime')) {
+                        tempUserTextjoin[tokenID] = {
+                            data: data,
+                            lastUpdateTime: new Date().getTime()
+                        }
+                        valid = false
+                    }
+                    else if (keys.includes('data') && !keys.includes('lastUpdateTime')) {
+                        tempUserTextjoin[tokenID].lastUpdateTime = new Date().getTime()
+                        valid = false
+                    }
+                    else if (!keys.includes('data') && keys.includes('lastUpdateTime')) {
+                        delete data.lastUpdateTime
+                        tempUserTextjoin[tokenID].data = data
+                        valid = false
+                    }
+                }
+
                 userTextjoin.value = tempUserTextjoin
+
+                if (!valid) saveUserTextjoin()
             }
         } else {
             // 数据不存在，执行相应的操作
@@ -37,7 +69,7 @@ export const useTextjoinStore = defineStore('textjoin', () => {
     }
 
     const getUserTextjoinList = (tokenID) => {
-        const textjoinList = userTextjoin.value[tokenID]
+        const textjoinList = userTextjoin.value[tokenID]?.data
 
         if(typeof textjoinList !== "object" || Array.isArray(textjoinList)) {
             return {}   
@@ -65,12 +97,16 @@ export const useTextjoinStore = defineStore('textjoin', () => {
         if(!textjoinIDs.includes(textjoinId)) {
             return undefined
         }
-        
+
         if(typeof userTextjoin.value[tokenID] !== "object" || Array.isArray(userTextjoin.value[tokenID])) {
             return textjoinSelectList[textjoinId][0]
         }
+        
+        if(typeof userTextjoin.value[tokenID]?.data !== "object" || Array.isArray(userTextjoin.value[tokenID]?.data)) {
+            return textjoinSelectList[textjoinId][0]
+        }
 
-        return userTextjoin.value[tokenID][textjoinId] ?? textjoinSelectList[textjoinId][0]
+        return userTextjoin.value[tokenID].data[textjoinId] ?? textjoinSelectList[textjoinId][0]
     }
 
     const updateUserTextjoinValue = (tokenID, textjoinId, value) => {
@@ -107,7 +143,12 @@ export const useTextjoinStore = defineStore('textjoin', () => {
             userTextjoin.value[tokenID] = {}
         }
 
-        userTextjoin.value[tokenID][textjoinId] = value
+        if(typeof userTextjoin.value[tokenID]?.data !== "object" || Array.isArray(userTextjoin.value[tokenID]?.data)) {
+            userTextjoin.value[tokenID].data = {}
+        }
+
+        userTextjoin.value[tokenID].data[textjoinId] = value
+        userTextjoin.value[tokenID].lastUpdateTime = new Date().getTime()
 
         saveUserTextjoin()
     }

@@ -26,6 +26,7 @@ export const useUserInfoStore = defineStore('userInfo', () => {
                             avatar: 1001,
                             uid: 100000000, 
                             name: "开拓者", 
+                            lastUpdateTime: new Date().getTime()
                         }
                     }
                 }
@@ -42,10 +43,23 @@ export const useUserInfoStore = defineStore('userInfo', () => {
                         avatar: 1001,
                         uid: 100000000, 
                         name: "开拓者", 
+                        lastUpdateTime: new Date().getTime()
                     }
                 }
                 valid = false
             }
+            // #region lastUpdateTime 属性缺失补充
+            else {
+                for(const tokenID in userInfoList.value.list){
+                    // 判断 lastUpdateTime 是否存在且是否为数字
+                    if(userInfoList.value.list[tokenID].lastUpdateTime === undefined || typeof userInfoList.value.list[tokenID].lastUpdateTime !== "number"){
+                        // 数据不合法，重置为默认值
+                        userInfoList.value.list[tokenID].lastUpdateTime = new Date().getTime()
+                        valid = false
+                    }
+                }
+            }
+            // #endregion
 
             // 判断 currentTokenID 是否存在且是否在 list 中
             if(userInfoList.value.currentTokenID === undefined || userInfoList.value.list[userInfoList.value.currentTokenID] === undefined){
@@ -68,6 +82,7 @@ export const useUserInfoStore = defineStore('userInfo', () => {
                         avatar: 1001,
                         uid: 100000000, 
                         name: "开拓者", 
+                        lastUpdateTime: new Date().getTime()
                     }
                 }
             }
@@ -112,11 +127,13 @@ export const useUserInfoStore = defineStore('userInfo', () => {
                 maxTokenID = tokenid
             }
         }
+        if (maxTokenID < 1) maxTokenID = 1
         userInfoList.value.list[maxTokenID + 1] = {
             tokenID: maxTokenID + 1,
             avatar,
             uid,
             name,
+            lastUpdateTime: new Date().getTime()
         }
 
         saveUserInfo()
@@ -145,6 +162,7 @@ export const useUserInfoStore = defineStore('userInfo', () => {
         userInfoList.value.list[tokenid].name = name
         userInfoList.value.list[tokenid].uid = uid
         userInfoList.value.list[tokenid].avatar = avatar
+        userInfoList.value.list[tokenid].lastUpdateTime = new Date().getTime()
         saveUserInfo()
     }
 
@@ -190,7 +208,7 @@ export const useUserInfoStore = defineStore('userInfo', () => {
     }
 
     //更新（删除）STORAGE_KEY_LIST 中不存在userInfo 的 tokenID 中的数据
-    const STORAGE_KEY_LIST = ["userAchievement", "userTextjoin"]
+    const STORAGE_KEY_LIST = ["userAchievement", "userTextjoin", "userCustomNotAchieved", "AchievementImportByCookieConfig"]
 
     const updateKeyStorage = () => {
         for (const key of STORAGE_KEY_LIST) {

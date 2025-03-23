@@ -16,6 +16,21 @@ export const useUserAchievementStore = defineStore('userAchievement', () => {
         if (tempUserAchievement !== null) {
             // 数据存在，将其从字符串转换为对象
             userAchievement = JSON.parse(tempUserAchievement)
+
+            // #region lastUpdateTime 属性缺失补充
+            if (userAchievement !== null && typeof userAchievement === "object" && !Array.isArray(userAchievement)) {
+                let valid = true
+                for(const tokenID in userAchievement){
+                    // 判断 lastUpdateTime 是否存在且是否为数字
+                    if(userAchievement[tokenID].lastUpdateTime === undefined || typeof userAchievement[tokenID].lastUpdateTime !== "number"){
+                        // 数据不合法，重置为默认值
+                        userAchievement[tokenID].lastUpdateTime = new Date().getTime()
+                        valid = false
+                    }
+                }
+                if (!valid) saveUserAchievement()
+            }
+            // #endregion
         } else {
             // 数据不存在，执行相应的操作
             userAchievement = {}
@@ -45,7 +60,8 @@ export const useUserAchievementStore = defineStore('userAchievement', () => {
                         id: achievementID,
                         status: status
                     }
-                }
+                },
+                lastUpdateTime: new Date().getTime()
             }
             if(save) saveUserAchievement()
             return 
@@ -55,6 +71,7 @@ export const useUserAchievementStore = defineStore('userAchievement', () => {
             id: achievementID,
             status: status
         }
+        userAchievementList.lastUpdateTime = new Date().getTime()
         if(save) saveUserAchievement()
         return 
     }   
