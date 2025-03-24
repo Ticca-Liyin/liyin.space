@@ -1,5 +1,5 @@
 import axios from 'axios';
-import { useTokenStore } from '@/stores/token';
+import { useTokenStore } from '@/stores/cloudSync/token';
 
 const tokenStore = useTokenStore();
 const url = '/cloudsync';

@@ -187,7 +187,7 @@ const handleCloseEditDialog = (done) => {
         <template #footer>
             <div class="footer-flex">
                 <div class="error">{{ error }}</div>
-                <el-button type="primary" @click="addSubmit">
+                <el-button type="primary" plain @click="addSubmit">
                 添加
                 </el-button>
             </div>
@@ -237,7 +237,7 @@ const handleCloseEditDialog = (done) => {
         <template #footer>
             <div class="footer-flex">
                 <div class="error">{{ error }}</div>
-                <el-button type="primary" @click="editSubmit">
+                <el-button type="primary" plain @click="editSubmit">
                 保存
                 </el-button>
             </div>
@@ -245,7 +245,7 @@ const handleCloseEditDialog = (done) => {
     </el-dialog>
 </template>
 
-<style>
+<style scoped>
 .setting-title {
     color: var(--liyin-text-color);
     font-size: 16px;
@@ -324,12 +324,6 @@ const handleCloseEditDialog = (done) => {
     color: var(--liyin-text-color);
     font-size: 14px;
 }
-.dialog-userInfo{
-    width: 40%;
-}
-.dialog-userInfo .el-dialog__body{
-    padding: 10px 20px 0px 20px;
-}
 .footer-flex{
     display: flex;
     justify-content: space-between;
@@ -372,6 +366,15 @@ const handleCloseEditDialog = (done) => {
 }
 .character-avatar-select:hover .s-character-name{
     color: var(--el-color-primary);
+}
+
+</style>
+<style>
+.dialog-userInfo{
+    width: 40%;
+}
+.dialog-userInfo .el-dialog__footer{
+    padding-top: 0;
 }
 @media (max-width: 768px){
     .dialog-userInfo{

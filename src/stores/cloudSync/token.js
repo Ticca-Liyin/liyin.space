@@ -1,4 +1,4 @@
-import { ref } from 'vue'
+import { ref, computed } from 'vue'
 import { defineStore } from 'pinia'
 
 export const useTokenStore = defineStore('token', () => {
@@ -15,10 +15,14 @@ export const useTokenStore = defineStore('token', () => {
         token.value = '';
     }
 
+    //判断是否用户登录
+    const isLogin = computed(() => token.value !== '')
+
     return {
         token,
         setToken,
-        removeToken
+        removeToken,
+        isLogin
     }
 }, 
 {

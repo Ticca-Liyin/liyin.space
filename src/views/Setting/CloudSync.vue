@@ -1,81 +1,121 @@
 <template>
-  <div>
+  <div class="setting-title">云同步管理：</div>
+  <div class="setting-account-view">
+    <div class="setting-account-info">
+      <div class="setting-account-left">
+        <div class="setting-account-avatar">
+          <img src='@/images/icon/characterIcon.png' alt="头像">
+        </div>
+        <div class="setting-account-content">
+          <div class="setting-account-name"> {{ isLogin ? (account.identifier ?? "未知") : "未登录" }} </div>
+          <div class="setting-account-type"> {{ isLogin ? (account.type ?? "uknow") : "请先登录" }}</div>
+        </div>
+      </div>
+      <div class="setting-account-right">
+        <el-button v-if="!isLogin" type="primary" plain style="padding: 8px 10px;" @click="gotoLoginDialog"> 
+          <el-icon style="padding-right: 10px;"><Login /></el-icon>云端登录
+        </el-button>
+        <template v-else>
+          <el-button type="primary" plain :icon="UploadFilled"  @click.stop="manualSync"/>
+          <el-button type="danger" plain :icon="Logout" @click.stop="logout"/>          
+        </template>
+      </div>
+    </div>
+  </div>
+  <el-dialog
+    v-model="showLoginDialog"
+    title="云端登录"
+    align-center
+    class="login-dialog"
+  >
     <el-form label-width="auto">
       <el-form-item label="邮箱">
         <el-input
           v-model="email"
           placeholder="请输入邮箱"
           clearable
-        >
-          <template #append>
-            <el-button  @click="login">获取验证码</el-button>
-          </template>
-        </el-input>
+        ></el-input>
       </el-form-item>
       <el-form-item label="验证码">
-          <el-input v-model="verifyCode" placeholder="请输入验证码" clearable maxlength="6"/>
+          <el-input v-model="verifyCode" placeholder="请输入验证码" clearable maxlength="6">
+            <template #append>
+              <el-button plain @click="getVerifyCode" :disabled="!email.trim() || countdown > 0" style="width: 100px;">{{ countdown > 0 ? `${countdown}秒后重试` : '获取验证码' }}</el-button>
+            </template>
+          </el-input>
       </el-form-item>
     </el-form>
-    <el-button @click="add">添加</el-button>
+    <template #footer>
+      <el-button type="primary" plain @click="login">登录</el-button>
+    </template>
     <!-- 行为验证弹窗 -->
     <el-dialog
       v-model="showTacDialog" :show-close="false" :modal="false"
       width="auto" top="0" align-center class="tac-dialog"
       :close-on-click-modal="false" :close-on-press-escape="false" 
-      @opened="loadingTAC"
+      @opened="loadingTAC" append-to-body
     >
       <template #header></template>
       <div :id="tacBindId"></div>
     </el-dialog>
-  </div>
+  </el-dialog>
 </template>
 
 <script setup>
 import { TAC } from '@/assets/captcha/tac/js/tac.min.js';
-import { ref } from 'vue';
-import { useTokenStore } from '@/stores/token';
+import UploadFilled from '@/components/icon/UploadFilled.vue';
+import Login from '@/components/icon/Login.vue';
+import Logout from '@/components/icon/Logout.vue';
+import { ref, onBeforeUnmount } from 'vue';
+import { storeToRefs } from 'pinia'
+import { useTokenStore } from '@/stores/cloudSync/token';
+import { useAccountStore } from '@/stores/cloudSync/account';
 import { verifyEmailService } from '@/services/cloudSync/lumine';
 
 const tokenStore = useTokenStore();
-const { setToken } = tokenStore;
+const { isLogin } = storeToRefs(tokenStore);
+const { setToken, removeToken } = tokenStore;
 
+const accountStore = useAccountStore();
+const { account } = storeToRefs(accountStore);
+const { setAccountByService, removeAccount } = accountStore;
+
+const showLoginDialog = ref(false);
 const email = ref('');
 const verifyCode = ref('');
+const countdown = ref(0);
+let timer = null;
 
 const showTacDialog = ref(false);
 const tacBindId = "captcha-div";
 const tacBindEl = "#" + tacBindId;
 const reg = /^[\w]+@[\w]+((\.[\w]+)+)$/;
 
-const login = () => {
-  // 判断邮箱是否非空
-  if (!email.value) {
+// 已登录状态下，进行登录操作时的错误提示
+const hadLoginError = () => {
+  if (isLogin.value) {
     ElMessage({
       showClose: true,
-      message: '请输入邮箱',
+      message: '云端账号已登录，请先退出',
       type: 'error',
     })
-    return
+    return true
   }
-  // 判断邮箱格式是否正确
-  if (!reg.test(email.value)) {
-    ElMessage({
-      showClose: true,
-      message: '请输入正确的邮箱',
-      type: 'error',
-    })
-    return
-  }
-
-  // 显示验证码弹窗
-  hideLoading(tacBindEl); 
-
-  showTacDialog.value = true;
+  return false
 }
 
-const add = () => {
-   // 判断邮箱是否非空
-  if (!email.value) {
+const gotoLoginDialog = () => {
+  if(hadLoginError()) return
+
+  showLoginDialog.value = true
+}
+
+const getVerifyCode = () => {
+  if(hadLoginError()) return
+
+  if(countdown.value > 0) return
+
+  // 判断邮箱是否非空
+  if (!email.value.trim()) {
     ElMessage({
       showClose: true,
       message: '请输入邮箱',
@@ -92,49 +132,11 @@ const add = () => {
     })
     return
   }
-  // 判断验证码是否非空
-  if (!verifyCode.value) {
-    ElMessage({
-      showClose: true,
-      message: '请输入验证码',
-      type: 'error',
-    })
-    return
-  }
-  // 判断验证码是否为6位
-  if (verifyCode.value.length !== 6) {
-    ElMessage({
-      showClose: true,
-      message: '请输入6位验证码',
-      type: 'error',
-    })
-    return
-  }
-  
-  // TODO: 完成云同步登录操作
-  verifyEmailService(email.value, verifyCode.value).then((res) => {
-    if (res.code === 0) {
-      ElMessage({
-        showClose: true,
-        message: '登录成功',
-        type: 'success',
-      })
-      setToken(res.data)
-    } else {
-      ElMessage({
-        showClose: true,
-        message: res.message,
-        type: 'error',
-      })
-    }
-  })
-  .catch(error => {
-    ElMessage({
-        showClose: true,
-        message: error.message,
-        type: 'error',
-    })
-  });
+
+  // 清除上一次验证码区域内容，防止内容重复显示
+  hideLoading(tacBindEl); 
+  // 显示验证码弹窗
+  showTacDialog.value = true;
 }
 
 const captchaConfig = {
@@ -149,6 +151,16 @@ const captchaConfig = {
     // 销毁验证码
     t.destroyWindow();
     
+    // 开始倒计时
+    countdown.value = 60;
+    timer = setInterval(() => {
+      countdown.value--;
+      if (countdown.value <= 0) {
+        clearInterval(timer);
+        timer = null;
+      }
+    }, 1000);
+
     showTacDialog.value = false
   },
   btnCloseFun: (el, tac) => {
@@ -182,7 +194,7 @@ const loadingTAC = () => {
         if (res.code !== 0 && res.code !== 60001) {
           ElMessage({
             showClose: true,
-            message: res.message,
+            message: res.message ?? "网络异常",
             type: 'error',
           })
           setTimeout(() => {
@@ -203,9 +215,168 @@ const loadingTAC = () => {
   })
   tac.init()    
 }
+
+onBeforeUnmount(() => {
+  if (timer) {
+    clearInterval(timer);
+    timer = null;
+  }
+});
+
+const login = () => {
+  if(hadLoginError()) return
+
+  let errorMsg = '';
+  if (!email.value.trim()) errorMsg = '请输入邮箱';
+  else if (!reg.test(email.value)) errorMsg = '请输入正确的邮箱';
+  else if (!verifyCode.value.trim()) errorMsg = '请输入验证码';
+  else if (verifyCode.value.length !== 6) errorMsg = '请输入6位验证码';
+
+  if (errorMsg) {
+    ElMessage({
+      showClose: true,
+      message: errorMsg,
+      type: 'error'
+    });
+    return;
+  }
+  
+  verifyEmailService(email.value, verifyCode.value).then((res) => {
+    if (res.code === 0) {
+      ElMessage({
+        showClose: true,
+        message: '登录成功',
+        type: 'success',
+      })
+      
+      showLoginDialog.value = false;
+
+      setToken(res.data);
+      setAccountByService();
+
+      // TODO: 完成云同步登录操作
+
+      
+    } else {
+      ElMessage({
+        showClose: true,
+        message: res.message,
+        type: 'error',
+      })
+    }
+  })
+  .catch(error => {
+    ElMessage({
+        showClose: true,
+        message: error.message,
+        type: 'error',
+    })
+  });
+}
+
+// 已退出状态下，进行退出操作时的错误提示
+const hadLogoutError = () => {
+  if (!isLogin.value) {
+    ElMessage({
+      showClose: true,
+      message: '请先登录云端账号',
+      type: 'error',
+    })
+    return true
+  }
+  return false
+}
+
+const logout = () => {
+  if (hadLogoutError()) return;
+
+  removeToken();
+  removeAccount();
+}
+
+const manualSync = () => {
+  if (hadLogoutError()) return;
+
+  // TODO: 完成手动云同步操作
+}
 </script>
 
+<style scoped>
+.setting-title {
+    color: var(--liyin-text-color);
+    font-size: 16px;
+    margin: 10px 0;
+}
+.setting-account-view{
+    border: 1px solid var(--liyin-main-border-color);
+    border-radius: 5px;
+}
+.setting-account-info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 60px;
+    padding: 0 15px;
+    border-bottom: 1px solid var(--liyin-main-border-color);
+    user-select: none;
+}
+.setting-account-left{
+    display: flex;
+    align-items: center;
+    height: 100%;
+    overflow: hidden;
+}
+.setting-account-right{
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+.setting-account-avatar{
+    width: 40px;
+    height: 40px;
+    min-width: 40px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 10px;
+    border: 2px solid var(--liyin-char-avatar-border-color);
+    background-color: var(--liyin-char-avatar-bg-color);
+}
+.setting-account-avatar img{
+    width: 100%;
+    height: 100%;
+}
+.setting-account-content{
+    margin-right: 10px;
+    overflow: hidden; 
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.setting-account-name{
+    font-size: 15px;
+    color: var(--liyin-text-main-color);
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.setting-account-type{
+    color: var(--liyin-text-color);
+    font-size: 12px;
+}
+</style>
 <style>
+.login-dialog {
+    width: 40%;
+}
+.login-dialog .el-dialog__footer{
+    padding-top: 0;
+}
+
+@media (max-width: 768px){
+  .login-dialog{
+    width: 80%;
+  }
+}
+
 .tac-dialog.el-dialog {
   padding: 0;
 }
@@ -214,22 +385,22 @@ const loadingTAC = () => {
 }
 
 /* 行为验证样式配置 */
-#tianai-captcha-parent {
+#captcha-div #tianai-captcha-parent {
   box-shadow: none;
 }
-#tianai-captcha-parent #tianai-captcha-bg-img {
+#captcha-div #tianai-captcha-parent #tianai-captcha-bg-img {
   background-color: var(--el-bg-color);
 }
-#tianai-captcha-parent #tianai-captcha-box .loading .nb-spinner {
+#captcha-div #tianai-captcha-parent #tianai-captcha-box .loading .nb-spinner {
   border-top: 4px solid var(--el-color-primary);
 }
-#tianai-captcha.tianai-captcha-slider .slider-tip {
+#captcha-div #tianai-captcha.tianai-captcha-slider .slider-tip {
   color: var(--el-text-color-primary);
 }
-#tianai-captcha.tianai-captcha-slider .slider-move {
+#captcha-div #tianai-captcha.tianai-captcha-slider .slider-move {
   filter: opacity(1);
 }
-#tianai-captcha.tianai-captcha-slider .slider-move .slider-move-btn {
+#captcha-div #tianai-captcha.tianai-captcha-slider .slider-move .slider-move-btn {
   border:1px solid rgba(206, 206, 206, 0.74)
 }
 </style>

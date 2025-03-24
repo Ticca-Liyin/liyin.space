@@ -7,6 +7,7 @@ import { useCharacterStore } from '@/stores/character/character'
 import { useIsMobileStore } from '@/stores/isMobile'
 import { useThemeStore } from '@/stores/theme'
 import { useAchievementImportStore } from '@/stores/achievement/import/achievementImport'
+import { useAccountStore } from '@/stores/cloudSync/account'
 import { onMounted } from 'vue'
 import { storeToRefs } from 'pinia'
 import { useRoute } from 'vue-router';
@@ -32,6 +33,9 @@ const { isDark } = storeToRefs(themeStore)
 const achievementImport = useAchievementImportStore()
 const { isImporting } = storeToRefs(achievementImport)
 
+const accountStore = useAccountStore();
+const { setAccountByService } = accountStore;
+
 const navList = [
     {
         name: '成就',
@@ -48,7 +52,9 @@ const navList = [
 ]
 
 onMounted(async () => {
-    const results = await Promise.allSettled([initialAuthorsInfo(), initialCharactersInfo()]);
+    let promises = [initialAuthorsInfo(), initialCharactersInfo(), 
+                    setAccountByService() /* 云账号信息获取 */];
+    const results = await Promise.allSettled(promises);
 })
 
 </script>
