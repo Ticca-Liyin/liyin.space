@@ -1,12 +1,7 @@
-import { ref } from 'vue'
-import { defineStore, storeToRefs } from 'pinia'
-import { useTokenStore } from '@/stores/cloudSync/token';
-import { getAccountInfoService } from '@/services/cloudSync/account';
+import { ref, computed } from 'vue'
+import { defineStore } from 'pinia'
 
 export const useAccountStore = defineStore('account', () => {
-    const tokenStore = useTokenStore();
-    const { isLogin } = storeToRefs(tokenStore);
-
     //定义状态的内容
     const account = ref({});
 
@@ -19,39 +14,17 @@ export const useAccountStore = defineStore('account', () => {
     const removeAccount =()=>{
         account.value = {};
     }
-
-    const setAccountByService = async () => {
-        if (!isLogin.value) {
-            return;
-        }
-
-        try {
-            const res = await getAccountInfoService();
-            if (res.code === 0) {
-                setAccount(res.data);
-                }
-            else {
-                ElMessage({
-                    showClose: true,
-                    message: res.message,
-                    type: 'error',
-                })
-                setAccount({})
-            }
-        } catch (error) {
-            ElMessage({
-                showClose: true,
-                message: error.message,
-                type: 'error',
-            })
-            setAccount({})
-        }
-    }
+    
+    //判断是否用户登录
+    const isLogin = computed(() => {
+        const accountInfo = account.value;
+        return accountInfo?.identifier && accountInfo?.type;
+    });
 
     return {
         account,
         setAccount,
         removeAccount,
-        setAccountByService
+        isLogin
     }
 });

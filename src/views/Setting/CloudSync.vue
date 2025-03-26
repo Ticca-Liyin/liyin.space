@@ -16,7 +16,7 @@
           <el-icon style="padding-right: 10px;"><Login /></el-icon>云端登录
         </el-button>
         <template v-else>
-          <el-button type="primary" plain :icon="UploadFilled"  @click.stop="manualSync"/>
+          <el-button type="primary" plain :icon="UploadFilled" @click.stop="manualSync"/>
           <el-button type="danger" plain :icon="Logout" @click.stop="logout"/>          
         </template>
       </div>
@@ -70,14 +70,14 @@ import { storeToRefs } from 'pinia'
 import { useTokenStore } from '@/stores/cloudSync/token';
 import { useAccountStore } from '@/stores/cloudSync/account';
 import { verifyEmailService } from '@/services/cloudSync/lumine';
+import { setAccountByService } from '@/utils/setAccountByService';
 
 const tokenStore = useTokenStore();
-const { isLogin } = storeToRefs(tokenStore);
 const { setToken, removeToken } = tokenStore;
 
 const accountStore = useAccountStore();
-const { account } = storeToRefs(accountStore);
-const { setAccountByService, removeAccount } = accountStore;
+const { account, isLogin } = storeToRefs(accountStore);
+const { removeAccount } = accountStore;
 
 const showLoginDialog = ref(false);
 const email = ref('');
@@ -268,7 +268,7 @@ const login = () => {
   .catch(error => {
     ElMessage({
         showClose: true,
-        message: error.message,
+        message: error,
         type: 'error',
     })
   });
@@ -317,7 +317,6 @@ const manualSync = () => {
     justify-content: space-between;
     height: 60px;
     padding: 0 15px;
-    border-bottom: 1px solid var(--liyin-main-border-color);
     user-select: none;
 }
 .setting-account-left{

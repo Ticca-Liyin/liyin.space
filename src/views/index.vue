@@ -7,11 +7,11 @@ import { useCharacterStore } from '@/stores/character/character'
 import { useIsMobileStore } from '@/stores/isMobile'
 import { useThemeStore } from '@/stores/theme'
 import { useAchievementImportStore } from '@/stores/achievement/import/achievementImport'
-import { useAccountStore } from '@/stores/cloudSync/account'
 import { onMounted } from 'vue'
 import { storeToRefs } from 'pinia'
 import { useRoute } from 'vue-router';
 import { handleCurrentTokenWithoutImport } from '@/utils/handleCurrentTokenWithoutImport'
+import { setAccountByService } from '@/utils/setAccountByService'
 
 const route = useRoute()
 
@@ -32,9 +32,6 @@ const { isDark } = storeToRefs(themeStore)
 
 const achievementImport = useAchievementImportStore()
 const { isImporting } = storeToRefs(achievementImport)
-
-const accountStore = useAccountStore();
-const { setAccountByService } = accountStore;
 
 const navList = [
     {
