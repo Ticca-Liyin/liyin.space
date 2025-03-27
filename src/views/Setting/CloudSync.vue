@@ -45,7 +45,7 @@
       </el-form-item>
     </el-form>
     <template #footer>
-      <el-button type="primary" plain @click="login">登录</el-button>
+      <el-button type="primary" plain @click="login" :loading="logining">登录</el-button>
     </template>
     <!-- 行为验证弹窗 -->
     <el-dialog
@@ -71,6 +71,7 @@ import { useTokenStore } from '@/stores/cloudSync/token';
 import { useAccountStore } from '@/stores/cloudSync/account';
 import { verifyEmailService } from '@/services/cloudSync/lumine';
 import { setAccountByService } from '@/utils/setAccountByService';
+import { throttleDebounce } from '@/utils/throttleDebounce';
 
 const tokenStore = useTokenStore();
 const { setToken, removeToken } = tokenStore;
@@ -84,6 +85,7 @@ const email = ref('');
 const verifyCode = ref('');
 const countdown = ref(0);
 let timer = null;
+const logining = ref(false);
 
 const showTacDialog = ref(false);
 const tacBindId = "captcha-div";
@@ -106,6 +108,8 @@ const hadLoginError = () => {
 const gotoLoginDialog = () => {
   if(hadLoginError()) return
 
+  email.value = '';
+  verifyCode.value = '';
   showLoginDialog.value = true
 }
 
@@ -163,6 +167,15 @@ const captchaConfig = {
 
     showTacDialog.value = false
   },
+  btnRefreshFun: throttleDebounce((el, tac) => {
+    tac.reloadCaptcha();
+  }, 2000, 800, () => {
+    ElMessage({
+      showClose: true,
+      message: '操作频繁，请稍后再试！',
+      type: 'error',
+    })
+  }, 2500),
   btnCloseFun: (el, tac) => {
     tac.destroyWindow();
     showTacDialog.value = false
@@ -241,6 +254,8 @@ const login = () => {
     return;
   }
   
+  logining.value = true;
+  
   verifyEmailService(email.value, verifyCode.value).then((res) => {
     if (res.code === 0) {
       ElMessage({
@@ -271,7 +286,10 @@ const login = () => {
         message: error,
         type: 'error',
     })
-  });
+  })
+  .finally(() => {
+    logining.value = false;
+  })
 }
 
 // 已退出状态下，进行退出操作时的错误提示
