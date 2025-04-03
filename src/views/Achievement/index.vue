@@ -18,7 +18,7 @@ import { useUserInfoStore } from '@/stores/userInfo';
 import { useAchievementImportStore } from '@/stores/achievement/import/achievementImport'
 
 const achievementStore = useAchievementStore()
-const { initialAchievementsInfo, initialAchievementsStatus, initialNotAvailable, initialAchievementsCustomNotAchievedStatus } = achievementStore
+const { initialAchievementsInfo, resetAchievementsInfo } = achievementStore
 
 const showAchievementsStore = useShowAchievementsStore();
 const { showAchievements } = storeToRefs(showAchievementsStore);
@@ -44,11 +44,7 @@ onMounted(async () => {
 
 // 当前用户更改时，将对应数据切换至更改后的用户
 watch(currentUserInfo, async () => {
-    initialAchievementsStatus()
-    // 对 暂时无法获得但因特殊情况状态时已获得的进行修正 由于会重复赋值 已赋值的 timestamp 若出现性能问题可进行优化
-    initialNotAvailable()
-    
-    initialAchievementsCustomNotAchievedStatus()
+    resetAchievementsInfo();
 
     try {
         await autoImportAchievementsByCookie();

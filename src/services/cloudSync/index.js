@@ -1,9 +1,11 @@
 import axios from 'axios';
 import { useTokenStore } from '@/stores/cloudSync/token';
 import { useAccountStore } from '@/stores/cloudSync/account';
+import { useSyncStatusStore } from '@/stores/cloudSync/syncStatus';
 
 const tokenStore = useTokenStore();
 const accountStore = useAccountStore();
+const syncStatusStore = useSyncStatusStore();
 const url = '/cloudsync';
 
 // 创建 Axios 实例
@@ -32,12 +34,14 @@ cloudSyncService.interceptors.response.use(
             // 如果返回的状态码是 10002 或 10202，说明登录失效，需要重新登录
             if (response.data.code === 10002 || response.data.code === 10202) {
                 accountStore.removeAccount();
+                syncStatusStore.resetStatus();
                 tokenStore.removeToken();
                 return Promise.reject("登录失效，请重新登录");
             }
             return response.data;
         } else if (response.status === 401) { // 401 为 JWT Token 失效
             accountStore.removeAccount();
+            syncStatusStore.resetStatus();
             tokenStore.removeToken();
             return Promise.reject("登录失效，请重新登录");
         } else {

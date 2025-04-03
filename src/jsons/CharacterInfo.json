@@ -855,6 +855,34 @@
     "faction": ["翁法罗斯"],
     "deploymentDate": 1745985600000
   },
+  "1406": {
+    "id": 1406,
+    "MiYoSheId": 5109,
+    "HoYoWikiId": 3691,
+    "name": "赛飞儿",
+    "avatar": "event-ugc-hoyowiki/2025/03/26/11038150/00bb11cc99c63928cdcef66b4989bf1c_6979206964938717913.png",
+    "path": "虚无",
+    "combattype": "量子",
+    "star": 5,
+    "warp": "limited",
+    "version": 3.3,
+    "faction": ["翁法罗斯"],
+    "deploymentDate": 1749614400000
+  },
+  "1409": {
+    "id": 1409,
+    "MiYoSheId": 5108,
+    "HoYoWikiId": 3688,
+    "name": "风堇",
+    "avatar": "event-ugc-hoyowiki/2025/03/26/11038150/b4703589604c36e55e15fa2432e70e9a_624934765943736500.png",
+    "path": "记忆",
+    "combattype": "风",
+    "star": 5,
+    "warp": "limited",
+    "version": 3.3,
+    "faction": ["翁法罗斯"],
+    "deploymentDate": 1747792800000
+  },
   "1407": {
     "id": 1407,
     "MiYoSheId": 4916,

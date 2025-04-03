@@ -1,14 +1,17 @@
 import { storeToRefs } from 'pinia'
 import { useTokenStore } from '@/stores/cloudSync/token';
 import { useAccountStore } from '@/stores/cloudSync/account';
+import { useSyncStatusStore } from '@/stores/cloudSync/syncStatus';
 import { getAccountInfoService } from '@/services/cloudSync/account';
 
 const tokenStore = useTokenStore();
 const { token } = storeToRefs(tokenStore);
-const { removeToken } = tokenStore;
 
 const accountStore = useAccountStore();
 const { setAccount, removeAccount } = accountStore;
+
+const syncStatusStore = useSyncStatusStore();
+const { resetStatus } = syncStatusStore
 
 export const setAccountByService = async () => {
     if (!token.value?.trim()) {
@@ -27,7 +30,7 @@ export const setAccountByService = async () => {
                 type: 'error',
             })
             removeAccount();
-            removeToken();
+            resetStatus();
         }
     } catch (error) {
         ElMessage({
@@ -36,6 +39,6 @@ export const setAccountByService = async () => {
             type: 'error',
         })
         removeAccount();
-        removeToken();
+        resetStatus();
     }
 }

@@ -86,6 +86,8 @@
     /* 行为验证样式配置 */
     --liyin-captcha-slider-track-bg-color: #89d2ff;
     --liyin-captcha-slider-track-border-color: #0298f8;
+
+    --liyin-sync-bg-color: #F5F5F5;
 }
 
 html:root {
@@ -172,6 +174,8 @@ html.dark{
     /* 行为验证样式配置 */
     --liyin-captcha-slider-track-bg-color: #ecdbb7;
     --liyin-captcha-slider-track-border-color: #d6b471;
+
+    --liyin-sync-bg-color: #323232;
 }
 
 html:root.dark {

@@ -5,9 +5,9 @@ export const useUpdateLogStore = defineStore('updateLog', () => {
     const updateLogInfo = [
         {
             version: '3.1.1', 
-            date: '2025-03-xx', 
-            title: '更新 3.1 版本角色相关数据',
-            changes: '<ul><li>更新 3.1 版本角色相关数据 </li></ul>' 
+            date: '2025-04-xx', 
+            title: '新增云数据同步功能，更新 3.1、3.2 版本角色相关数据',
+            changes: '<ul><li>新增云数据同步功能</li><li>更新 3.1、3.2 版本角色相关数据</li></ul>' 
         },
         {
             version: '3.1.0', 

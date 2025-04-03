@@ -1,6 +1,7 @@
 import {ref, watchEffect, computed } from 'vue'
 import { defineStore, storeToRefs } from 'pinia'
 import { useUserInfoStore } from '@/stores/userInfo'
+import { uploadeCustomNotAchievedToCloud } from '@/utils/achievementCloudSync';
 
 export const useAchievementCustomNotAchievedStore = defineStore('achievementCustomNotAchieved', () => { 
     const userInfoStore = useUserInfoStore()
@@ -44,11 +45,32 @@ export const useAchievementCustomNotAchievedStore = defineStore('achievementCust
     const saveUserCustomNotAchieved = () => {
         // 将对象转换为字符串，并将其存储在缓存中
         localStorage.setItem(User_Custom_Not_Achieved_KEY, JSON.stringify(userCustomNotAchieved))
+        saveUserCustomNotAchievedToCloud()
+    }
+    const resetUserCustomNotAchieved = (newData) => {
+        localStorage.setItem(User_Custom_Not_Achieved_KEY, JSON.stringify(newData));
+        getUserCustomNotAchieved();
+    }
+    const saveUserCustomNotAchievedToCloud = () => {
+        const currentTokenId = currentUserInfo?.value.tokenID
+        const customNotAchievedList = userCustomNotAchieved[currentTokenId]
+        uploadeCustomNotAchievedToCloud(currentTokenId, {
+            data: customNotAchievedList.list,
+            updateTime: customNotAchievedList.lastUpdateTime
+        })
     }
     const findUserCustomNotAchievedList = () => {
         // 查找自定义暂不可获取列表
         return userCustomNotAchieved[currentUserInfo?.value.tokenID]
     }  
+    const getUserCustomNotAchievedList = (tokenID) => {
+        const customNotAchievedList = userCustomNotAchieved[tokenID]
+
+        if(typeof customNotAchievedList !== "object" || Array.isArray(customNotAchievedList)) {
+            return {}   
+        }
+        return JSON.parse(JSON.stringify(customNotAchievedList))
+    }
     const initUserCustomNotAchievedList = () => {
         // 初始化自定义暂不可获取列表
         userCustomNotAchieved[currentUserInfo?.value.tokenID] = {
@@ -95,7 +117,9 @@ export const useAchievementCustomNotAchievedStore = defineStore('achievementCust
     return {
         saveUserCustomNotAchieved,
         findUserCustomNotAchievedList,
+        getUserCustomNotAchievedList,
         initUserCustomNotAchievedList,
-        handleUserCustomNotAchievedList
+        handleUserCustomNotAchievedList,
+        resetUserCustomNotAchieved,
     }
 })

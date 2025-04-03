@@ -62,9 +62,12 @@ export const useAchievementStore = defineStore('achievement', () => {
                 multipleChoice.value[achievement.MultipleID].forEach(AchievementID => {
                     if(AchievementID !== achievement.AchievementID){
                         const ach_ = achievements.value.find(ach => ach.AchievementID === AchievementID)
+                        const userach_ = userAchievementList[ach_.AchievementID]
                         if(ach_ && ach_.Status !== 2){
                             ach_.Status = 2
-                            handleUserAchievementList(ach_.AchievementID, ach_.Status)
+                            if (userach_.status !== 2) {
+                                handleUserAchievementList(ach_.AchievementID, ach_.Status)
+                            }
                         } 
                     }
                 })
@@ -253,6 +256,14 @@ export const useAchievementStore = defineStore('achievement', () => {
         });
     }
 
+    const resetAchievementsInfo = () => {
+        initialAchievementsStatus()
+        // 对 暂时无法获得但因特殊情况状态时已获得的进行修正 由于会重复赋值 已赋值的 timestamp 若出现性能问题可进行优化
+        initialNotAvailable()
+        
+        initialAchievementsCustomNotAchievedStatus()
+    }
+
     //#region 成就选中相关逻辑
     const handleAchevementStatus = (achievement, save = true) => {
         if(!(achievement instanceof Achievement)){
@@ -375,6 +386,7 @@ export const useAchievementStore = defineStore('achievement', () => {
         initialNotAvailable,
         initialAchievementsCustomNotAchievedStatus,
         initialAchievementsInfo,
+        resetAchievementsInfo,
         handleAchevementStatus,
         AchievementToCustomNotAchieved,
         AchievementCancelCustomNotAchieved,

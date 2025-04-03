@@ -16,7 +16,7 @@
           <el-icon style="padding-right: 10px;"><Login /></el-icon>云端登录
         </el-button>
         <template v-else>
-          <el-button type="primary" plain :icon="UploadFilled" @click.stop="manualSync"/>
+          <el-button type="primary" plain :icon="UploadFilled" @click.stop="manualSync" :loading="manualSyncing"/>
           <el-button type="danger" plain :icon="Logout" @click.stop="logout"/>          
         </template>
       </div>
@@ -69,9 +69,14 @@ import { ref, onBeforeUnmount } from 'vue';
 import { storeToRefs } from 'pinia'
 import { useTokenStore } from '@/stores/cloudSync/token';
 import { useAccountStore } from '@/stores/cloudSync/account';
+import { useSyncStatusStore } from '@/stores/cloudSync/syncStatus';
 import { verifyEmailService } from '@/services/cloudSync/lumine';
 import { setAccountByService } from '@/utils/setAccountByService';
 import { throttleDebounce } from '@/utils/throttleDebounce';
+import { uploadAllAcountDataToCloud } from '@/utils/achievementCloudSync';
+import { handleDataSync } from '@/utils/handleDataSync';
+import { SyncStatusCode } from '@/types/syncStatusCode'
+
 
 const tokenStore = useTokenStore();
 const { setToken, removeToken } = tokenStore;
@@ -79,6 +84,10 @@ const { setToken, removeToken } = tokenStore;
 const accountStore = useAccountStore();
 const { account, isLogin } = storeToRefs(accountStore);
 const { removeAccount } = accountStore;
+
+const syncStatusStore = useSyncStatusStore();
+const { syncStatus } = storeToRefs(syncStatusStore);
+const { resetStatus } = syncStatusStore;
 
 const showLoginDialog = ref(false);
 const email = ref('');
@@ -255,8 +264,8 @@ const login = () => {
   }
   
   logining.value = true;
-  
-  verifyEmailService(email.value, verifyCode.value).then((res) => {
+
+  verifyEmailService(email.value, verifyCode.value).then(async (res) => {
     if (res.code === 0) {
       ElMessage({
         showClose: true,
@@ -267,11 +276,9 @@ const login = () => {
       showLoginDialog.value = false;
 
       setToken(res.data);
-      setAccountByService();
+      await setAccountByService();
 
-      // TODO: 完成云同步登录操作
-
-      
+      await handleDataSync();
     } else {
       ElMessage({
         showClose: true,
@@ -305,17 +312,74 @@ const hadLogoutError = () => {
   return false
 }
 
-const logout = () => {
+const logout = async () => {
   if (hadLogoutError()) return;
+
+  if (syncStatus.value !== SyncStatusCode.SUCCESS) {
+    try {
+      const res = await ElMessageBox.confirm(
+          `部分本地数据未成功同步至云端，退出将导致云端数据与本地数据不一致！！！确认退出？`, 
+          '提示', 
+          {
+              confirmButtonText: '确认',
+              cancelButtonText: '取消',
+          }
+      )
+    } catch (error) {
+      return;      
+    }
+  }
 
   removeToken();
   removeAccount();
+  resetStatus();
 }
 
-const manualSync = () => {
+const manualSyncing = ref(false)
+const manualSync = async () => {
   if (hadLogoutError()) return;
 
-  // TODO: 完成手动云同步操作
+  try {
+    const res = await ElMessageBox.confirm(
+      `确认强制同步本地数据至云端？<br/><i style="color: var(--el-color-danger); ">这将强制覆盖云端数据且不可撤回！！！</i>`, 
+      '警告', 
+      {
+        dangerouslyUseHTMLString: true,
+        confirmButtonText: '确认',
+        cancelButtonText: '取消',
+      }
+    )
+  } catch (error) {
+    return;      
+  }
+
+  manualSyncing.value = true;
+  uploadAllAcountDataToCloud().then((res)=> {
+    if (res.code === 0) {
+      ElMessage({
+        showClose: true,
+        message: '同步成功',
+        type: 'success',
+      })
+      resetStatus();
+    } else {
+      ElMessage({
+        showClose: true,
+        message: '同步异常',
+        type: 'error',
+      })
+    }
+  })
+  .catch((error) => {
+    ElMessage({
+      showClose: true,
+      message: error,
+      type: 'error',
+    })
+  })
+  .finally(() => {
+    manualSyncing.value = false;
+  })
 }
 </script>
 

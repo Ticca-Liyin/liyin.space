@@ -1,5 +1,6 @@
 import { defineStore, storeToRefs } from 'pinia'
 import { useUserInfoStore } from '@/stores/userInfo'
+import { uploadeAchievementsToCloud } from '@/utils/achievementCloudSync';
 
 export const useUserAchievementStore = defineStore('userAchievement', () => {
     const userInfoStore = useUserInfoStore()
@@ -40,11 +41,34 @@ export const useUserAchievementStore = defineStore('userAchievement', () => {
     const saveUserAchievement = () => {
         // 将对象转换为字符串，并将其存储在缓存中
         localStorage.setItem("userAchievement", JSON.stringify(userAchievement))
+        saveUserAchievementsToCloud()
+    }
+
+    const resetUserAchievement = (newUserAchievement) => {
+        localStorage.setItem("userAchievement", JSON.stringify(newUserAchievement));
+        getUserAchievement();
+    }
+
+    const saveUserAchievementsToCloud = () => {
+        const currentTokenId = currentUserInfo?.value.tokenID
+        const achievementList = userAchievement[currentTokenId]
+        uploadeAchievementsToCloud(currentTokenId, {
+            data: achievementList.list,
+            updateTime: achievementList.lastUpdateTime
+        })
     }
     const findUserAchievementList = () => {
         // 查找用户成就列表
         return userAchievement[currentUserInfo?.value.tokenID]
-    }  
+    }
+    const getUserAchievementList = (tokenID) => {
+        const achievementList = userAchievement[tokenID]
+
+        if(typeof achievementList !== "object" || Array.isArray(achievementList)) {
+            return {}   
+        }
+        return JSON.parse(JSON.stringify(achievementList))
+    }
     const handleUserAchievementList = (achievementID, status, save = true) => {
         if(!achievementID || !status) throw new Error("数据不能为空")
         if(status !== 1 && status !== 2 && status !== 3) throw new Error("参数status不能为非1、2或3的值")
@@ -81,6 +105,8 @@ export const useUserAchievementStore = defineStore('userAchievement', () => {
     return {
         saveUserAchievement,
         findUserAchievementList,
+        getUserAchievementList,
         handleUserAchievementList,
+        resetUserAchievement,
     }
 })

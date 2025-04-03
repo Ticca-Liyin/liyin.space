@@ -1,7 +1,7 @@
 import {ref, watchEffect, computed } from 'vue'
 import { defineStore, storeToRefs } from 'pinia'
 import { useUserInfoStore } from '@/stores/userInfo'
-
+import { uploadeTextjoinsToCloud } from '@/utils/achievementCloudSync';
 
 export const useTextjoinStore = defineStore('textjoin', () => {
     //用户成就状态列表
@@ -66,6 +66,20 @@ export const useTextjoinStore = defineStore('textjoin', () => {
     const saveUserTextjoin = () => {
         // 将对象转换为字符串，并将其存储在缓存中
         localStorage.setItem(TEXTJOIN_KEY, JSON.stringify(userTextjoin.value))
+        saveUserTextjoinsToCloud()
+    }
+    const resetUserTextjoin = (newUserTextjoin) => {
+        localStorage.setItem(TEXTJOIN_KEY, JSON.stringify(newUserTextjoin));
+        getUserTextjoin();
+    }
+
+    const saveUserTextjoinsToCloud = () => {
+        const currentTokenId = userInfoList.value?.currentTokenID
+        const textjoinList = userTextjoin.value[currentTokenId]
+        uploadeTextjoinsToCloud(currentTokenId, {
+            data: textjoinList.data,
+            updateTime: textjoinList.lastUpdateTime
+        })
     }
 
     const getUserTextjoinList = (tokenID) => {
@@ -75,6 +89,10 @@ export const useTextjoinStore = defineStore('textjoin', () => {
             return {}   
         }
         return JSON.parse(JSON.stringify(textjoinList))
+    }
+
+    const getUserTextjoinLastUpdateTime = (tokenID) => {
+        return userTextjoin.value[tokenID]?.lastUpdateTime
     }
 
     const textjoinSelectList = {
@@ -159,6 +177,8 @@ export const useTextjoinStore = defineStore('textjoin', () => {
         textjoinSelectList,
         getUserTextjoinList,
         getUserTextjoinValue,
+        getUserTextjoinLastUpdateTime,
         updateUserTextjoinValue,
+        resetUserTextjoin,
     }
 })
