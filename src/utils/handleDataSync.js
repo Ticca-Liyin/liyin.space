@@ -122,7 +122,7 @@ const updateCloudAcountDataToLocal = (cloudData) => {
         uid: users.data.uid,
         name: users.data.name,
         avatar: users.data.avatar,
-        lastUpdateTime: userEntry.lastUpdateTime
+        lastUpdateTime: users.lastUpdateTime
       };
   
       const achs = userEntry.achievements
