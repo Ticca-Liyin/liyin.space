@@ -1,3 +1,4 @@
+import { storeToRefs } from 'pinia'
 import { useAccountStore } from '@/stores/cloudSync/account';
 import { useSyncStatusStore } from '@/stores/cloudSync/syncStatus';
 import { useUserInfoStore } from '@/stores/userInfo';
@@ -7,7 +8,7 @@ import { useAchievementCustomNotAchievedStore } from '@/stores/achievement/achie
 import { useTextjoinStore } from '@/stores/achievement/setting/textjoin.js'
 import { getAllUserData } from '@/utils/getAllAchievementData';
 import { getAllAchievementDataService } from '@/services/cloudSync/achievement';
-import { uploadAllAcountDataToCloud } from '@/utils/achievementCloudSync';
+import { uploadCurrentAccountToCloud, uploadAllAcountDataToCloud } from '@/utils/achievementCloudSync';
 import { showSelectSyncDataDialog } from '@/views/CloudSync/selectSyncData/index.js'
 
 const accountStore = useAccountStore();
@@ -99,10 +100,13 @@ const updateLocalAcountDataToCloud = async (localData) => {
 }
 // 辅助方法：将所有云端数据更新至本地并完成状态管理
 const updateCloudAcountDataToLocal = (cloudData) => {
+    const userInfoStore = useUserInfoStore();
+    const { userInfoList } = storeToRefs(userInfoStore);
+
     const userInfoData = {
       list: {},
-      currentTokenID: cloudData.currentTokenID.tokenID,
-      currentTokenIDLastUpdateTime: cloudData.currentTokenID.lastUpdateTime
+      currentTokenID: cloudData.currentTokenID?.tokenID ?? Object.keys(userInfoList.value.list)[0],
+      currentTokenIDLastUpdateTime: cloudData.currentTokenID?.lastUpdateTime ?? new Date().getTime()
     };
   
     const userAchievementData = {} 
@@ -145,10 +149,15 @@ const updateCloudAcountDataToLocal = (cloudData) => {
         lastUpdateTime: tjs.lastUpdateTime
       } 
     });
-  
-    const userInfoStore = useUserInfoStore();
+
     const { resetUserInfo } = userInfoStore;
     resetUserInfo(userInfoData);
+    if (cloudData.currentTokenID === null) {
+      uploadCurrentAccountToCloud({ 
+        tokenId: userInfoData.currentTokenID, 
+        updateTime: userInfoData.currentTokenIDLastUpdateTime
+      })
+    }
   
     const userAchievementStore = useUserAchievementStore();
     const { resetUserAchievement } = userAchievementStore;

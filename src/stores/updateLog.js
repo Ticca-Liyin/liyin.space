@@ -4,6 +4,12 @@ import { defineStore } from 'pinia'
 export const useUpdateLogStore = defineStore('updateLog', () => {
     const updateLogInfo = [
         {
+            version: '3.2.1', 
+            date: '2025-04-13', 
+            title: '修复部分情况下登录数据云同步账号后异常卡死的问题',
+            changes: '<ul><li>修复部分情况下登录数据云同步账号后异常卡死的问题</li></ul>' 
+        },
+        {
             version: '3.2.0', 
             date: '2025-04-07', 
             title: '更新 3.2 版本成就相关数据',

@@ -103,9 +103,8 @@ const countFinishedAchievemts = (data) => {
 }
 
 const getLastUpdateTime = (data) => {
-    console.log(data)
     return Object.values(data || {}).reduce((maxTime, item) => 
-        Math.max(maxTime, item.lastUpdateTime || 0), 0);
+        Math.max(maxTime, item?.lastUpdateTime || 0), 0);
 }
 
 const handleConfirm = async () => {
