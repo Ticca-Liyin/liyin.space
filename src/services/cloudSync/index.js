@@ -11,7 +11,7 @@ const url = '/cloudsync';
 // 创建 Axios 实例
 const cloudSyncService = axios.create({
     baseURL: url,
-    timeout: 10000,
+    timeout: 60000,
 });
 
 // 请求拦截器
@@ -49,6 +49,12 @@ cloudSyncService.interceptors.response.use(
         }
     },
     error => {
+        if (error.response && error.response.status === 500) {
+            return Promise.reject('服务器请求异常，请稍后再试');
+        }
+        if (error.code === 'ECONNABORTED' || error.message.includes('timeout')) {
+            return Promise.reject('网络请求超时');
+        }
         return Promise.reject(error);
     }
 );

@@ -99,7 +99,7 @@ const logining = ref(false);
 const showTacDialog = ref(false);
 const tacBindId = "captcha-div";
 const tacBindEl = "#" + tacBindId;
-const reg = /^[\w]+@[\w]+((\.[\w]+)+)$/;
+const reg = /^[._%+-\w]+@[\w]+((\.[\w]{2,})+)$/;
 
 // 已登录状态下，进行登录操作时的错误提示
 const hadLoginError = () => {
