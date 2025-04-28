@@ -39,18 +39,22 @@ cloudSyncService.interceptors.response.use(
                 return Promise.reject("登录失效，请重新登录");
             }
             return response.data;
-        } else if (response.status === 401) { // 401 为 JWT Token 失效
-            accountStore.removeAccount();
-            syncStatusStore.resetStatus();
-            tokenStore.removeToken();
-            return Promise.reject("登录失效，请重新登录");
         } else {
             return Promise.reject(`请求失败，状态码: ${response.status}`);
         }
     },
     error => {
-        if (error.response && error.response.status === 500) {
-            return Promise.reject('服务器请求异常，请稍后再试');
+        if (error.response) {
+            const { status } = error.response;
+            if (status === 401) { // 401 为 JWT Token 失效
+                accountStore.removeAccount();
+                syncStatusStore.resetStatus();
+                tokenStore.removeToken();
+                return Promise.reject("登录失效，请重新登录");
+            } else if (status === 500) {
+                return Promise.reject('服务器请求异常，请稍后再试');
+            }
+            return Promise.reject(`请求失败，状态码: ${status}`);
         }
         if (error.code === 'ECONNABORTED' || error.message.includes('timeout')) {
             return Promise.reject('网络请求超时');
