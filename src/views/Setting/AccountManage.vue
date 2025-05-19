@@ -153,18 +153,20 @@ const handleCloseEditDialog = (done) => {
         <el-form label-width="auto">
             <el-form-item label="头像">
                 <el-select v-model="avater" filterable placeholder="请选择头像" style="width: 100%;">
-                    <el-option class="character-avatar-select"
-                    v-for="item in Object.values(characters)"
-                    :key="item.id"
-                    :label="item.name"
-                    :value="item.id"
-                    >
-                        <div class="s-character-avatar">
-                            <img :src='getCharacterAvatar(item?.id)' 
-                                :alt="getCharacterAvatarName(item?.id)">
-                        </div>
-                        <div class="s-character-name"> {{ item?.name }} </div>
-                    </el-option>
+                    <template v-for="item in Object.values(characters)"> 
+                        <el-option class="character-avatar-select"
+                        v-if="!item.notOptional"
+                        :key="item.id"
+                        :label="item.name"
+                        :value="item.id"
+                        >
+                            <div class="s-character-avatar">
+                                <img :src='getCharacterAvatar(item?.id)' 
+                                    :alt="getCharacterAvatarName(item?.id)">
+                            </div>
+                            <div class="s-character-name"> {{ item?.name }} </div>
+                        </el-option>
+                    </template>
                     <template #prefix>
                         <div class="character-selected-avatar" >
                             <img :src='getCharacterAvatar(avater)' 
@@ -203,18 +205,20 @@ const handleCloseEditDialog = (done) => {
         <el-form label-width="auto">
             <el-form-item label="头像">
                 <el-select v-model="avater" filterable placeholder="请选择头像" style="width: 100%;">
-                    <el-option class="character-avatar-select"
-                    v-for="item in Object.values(characters)"
-                    :key="item.id"
-                    :label="item.name"
-                    :value="item.id"
-                    >
-                        <div class="s-character-avatar">
-                            <img :src='getCharacterAvatar(item?.id)' 
-                                :alt="getCharacterAvatarName(item?.id)">
-                        </div>
-                        <div class="s-character-name"> {{ item?.name }} </div>
-                    </el-option>
+                    <template v-for="item in Object.values(characters)"> 
+                        <el-option class="character-avatar-select"
+                        v-if="!item.notOptional"
+                        :key="item.id"
+                        :label="item.name"
+                        :value="item.id"
+                        >
+                            <div class="s-character-avatar">
+                                <img :src='getCharacterAvatar(item?.id)' 
+                                    :alt="getCharacterAvatarName(item?.id)">
+                            </div>
+                            <div class="s-character-name"> {{ item?.name }} </div>
+                        </el-option>
+                    </template>
                     <template #prefix>
                         <div class="character-selected-avatar" >
                             <img :src='getCharacterAvatar(avater)' 

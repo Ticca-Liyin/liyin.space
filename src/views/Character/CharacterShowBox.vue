@@ -97,7 +97,8 @@ const showCharacters = computed(() => {
     flex-direction: column;
     justify-content: center; /* 水平居中 */
     align-items: center; /* 垂直居中 */
-    margin: 10px;
+    width: 84px;
+    margin: 10px 0;
     position: relative;
     overflow: hidden;
     transition: transform 0.05s ease;
