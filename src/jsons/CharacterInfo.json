@@ -116,6 +116,35 @@
     "version": 1,
     "faction": ["太空站「黑塔」"]
   },
+  "1014": {
+    "id": 1014,
+    "MiYoSheId": 5339,
+    "HoYoWikiId": 3767,
+    "name": "Saber",
+    "avatar": "event-ugc-hoyowiki/2025/05/04/5308864/e8882076f40bd6e7ae2605c0981e15b9_782058222608291464.png",
+    "path": "毁灭",
+    "combattype": "风",
+    "star": 5,
+    "warp": "limited",
+    "version": 3.4,
+    "faction": [],
+    "deploymentDate": 1752206400000,
+    "notOptional": false
+  },
+  "1015": {
+    "id": 1015,
+    "MiYoSheId": 5338,
+    "HoYoWikiId": 3768,
+    "name": "Archer",
+    "avatar": "event-ugc-hoyowiki/2025/05/04/5308864/7c1189054766edb0fec93062ef8f0098_3756899549536490367.png",
+    "path": "巡猎",
+    "combattype": "量子",
+    "star": 5,
+    "warp": "limited",
+    "version": 3.4,
+    "faction": [],
+    "deploymentDate": 1752206400000
+  },
   "1101": {
     "id": 1101,
     "MiYoSheId": 453,
@@ -910,36 +939,6 @@
     "version": 3.3,
     "faction": ["翁法罗斯"],
     "deploymentDate": 1747792800000
-  },
-  "1420": {
-    "id": 1420,
-    "MiYoSheId": 5338,
-    "HoYoWikiId": 3768,
-    "name": "Archer",
-    "avatar": "event-ugc-hoyowiki/2025/05/04/5308864/7c1189054766edb0fec93062ef8f0098_3756899549536490367.png",
-    "path": "巡猎",
-    "combattype": "量子",
-    "star": 5,
-    "warp": "limited",
-    "version": 3.4,
-    "faction": [],
-    "deploymentDate": 1752206400000,
-    "notOptional": true
-  },
-  "1421": {
-    "id": 1421,
-    "MiYoSheId": 5339,
-    "HoYoWikiId": 3767,
-    "name": "Saber",
-    "avatar": "event-ugc-hoyowiki/2025/05/04/5308864/e8882076f40bd6e7ae2605c0981e15b9_782058222608291464.png",
-    "path": "毁灭",
-    "combattype": "风",
-    "star": 5,
-    "warp": "limited",
-    "version": 3.4,
-    "faction": [],
-    "deploymentDate": 1752206400000,
-    "notOptional": true
   },
   "8002": {
     "id": 8002,

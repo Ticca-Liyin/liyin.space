@@ -1584,6 +1584,138 @@
     "ShowType": "HiddenDesc",
     "Version": "3.3"
   },
+  "4034401": {
+    "AchievementID": 4034401,
+    "SeriesID": 3,
+    "AchievementTitle": "门扉之始，王座之终",
+    "AchievementDesc": "英雄啊，兑现那染血的冀望<br><div style=\"color:#8790abff;\">※完成「再创世」之旅…？</div>",
+    "ParamList": [],
+    "Priority": 902,
+    "Rarity": "Mid",
+    "ShowType": "HiddenDesc",
+    "Version": "3.4"
+  },
+  "4034402": {
+    "AchievementID": 4034402,
+    "SeriesID": 3,
+    "AchievementTitle": "走过安眠地的花丛",
+    "AchievementDesc": "英雄啊，回返那安宁的家乡<br><div style=\"color:#8790abff;\">※在哀丽秘榭见到已故之人</div>",
+    "ParamList": [],
+    "Priority": 901,
+    "Rarity": "Mid",
+    "ShowType": "HiddenDesc",
+    "Version": "3.4"
+  },
+  "4034403": {
+    "AchievementID": 4034403,
+    "SeriesID": 3,
+    "AchievementTitle": "在黎明升起时坠落",
+    "AchievementDesc": "英雄啊，粉碎那悲哀的造像<br><div style=\"color:#8790abff;\">※斩下盗火行者的面具</div>",
+    "ParamList": [],
+    "Priority": 900,
+    "Rarity": "Mid",
+    "ShowType": "HiddenDesc",
+    "Version": "3.4"
+  },
+  "4034404": {
+    "AchievementID": 4034404,
+    "SeriesID": 3,
+    "AchievementTitle": "因为太阳将要毁伤",
+    "AchievementDesc": "英雄啊，点燃那最初的骄阳<br><div style=\"color:#8790abff;\">※接过三千万世的火炬</div>",
+    "ParamList": [],
+    "Priority": 899,
+    "Rarity": "Mid",
+    "ShowType": "HiddenDesc",
+    "Version": "3.4"
+  },
+  "4034405": {
+    "AchievementID": 4034405,
+    "SeriesID": 3,
+    "AchievementTitle": "再创世的凯歌",
+    "AchievementDesc": "英雄啊，将创世的凯歌奏响<br><div style=\"color:#8790abff;\">※踏上最后的「再创世」之旅</div>",
+    "ParamList": [],
+    "Priority": 898,
+    "Rarity": "Mid",
+    "ShowType": "HiddenDesc",
+    "Version": "3.4"
+  },
+  "4034406": {
+    "AchievementID": 4034406,
+    "SeriesID": 3,
+    "AchievementTitle": "",
+    "AchievementDesc": "",
+    "ParamList": [],
+    "Priority": 897,
+    "Rarity": "Mid",
+    "ShowType": "HiddenDesc",
+    "Version": "3.4"
+  },
+  "4034407": {
+    "AchievementID": 4034407,
+    "SeriesID": 3,
+    "AchievementTitle": "",
+    "AchievementDesc": "",
+    "ParamList": [],
+    "Priority": 896,
+    "Rarity": "Mid",
+    "ShowType": "HiddenDesc",
+    "Version": "3.4"
+  },
+  "4034408": {
+    "AchievementID": 4034408,
+    "SeriesID": 3,
+    "AchievementTitle": "",
+    "AchievementDesc": "",
+    "ParamList": [],
+    "Priority": 895,
+    "Rarity": "Mid",
+    "ShowType": "HiddenDesc",
+    "Version": "3.4"
+  },
+  "4034409": {
+    "AchievementID": 4034409,
+    "SeriesID": 3,
+    "AchievementTitle": "",
+    "AchievementDesc": "",
+    "ParamList": [],
+    "Priority": 894,
+    "Rarity": "Mid",
+    "ShowType": "HiddenDesc",
+    "Version": "3.4"
+  },
+  "4034410": {
+    "AchievementID": 4034410,
+    "SeriesID": 3,
+    "AchievementTitle": "",
+    "AchievementDesc": "",
+    "ParamList": [],
+    "Priority": 893,
+    "Rarity": "Mid",
+    "ShowType": "HiddenDesc",
+    "Version": "3.4"
+  },
+  "4034411": {
+    "AchievementID": 4034411,
+    "SeriesID": 3,
+    "AchievementTitle": "",
+    "AchievementDesc": "",
+    "ParamList": [],
+    "Priority": 892,
+    "Rarity": "Mid",
+    "ShowType": "HiddenDesc",
+    "Version": "3.4"
+  },
+  "4034412": {
+    "AchievementID": 4034412,
+    "SeriesID": 3,
+    "AchievementTitle": "",
+    "AchievementDesc": "",
+    "ParamList": [],
+    "Priority": 891,
+    "Rarity": "Mid",
+    "ShowType": "HiddenDesc",
+    "Version": "3.4"
+  },
   "4040101": {
     "AchievementID": 4040101,
     "SeriesID": 4,
@@ -3852,6 +3984,32 @@
     "Rarity": "Low",
     "ShowType": "HiddenDesc",
     "Version": "3.3"
+  },
+  "4044401": {
+    "AchievementID": 4044401,
+    "SeriesID": 4,
+    "AchievementTitle": "虫鸣秘闻：铃中古调",
+    "AchievementDesc": "风铃诉说着怎样的旋律？<br><div style=\"color:#8790abff;\">※解开哀丽秘榭的预言谜题</div>",
+    "ParamList": [],
+    "Priority": 796,
+    "Rarity": "Low",
+    "ShowType": "HiddenDesc",
+    "Version": "3.4"
+  },
+  "4044402": {
+    "AchievementID": 4044402,
+    "SeriesID": 4,
+    "AchievementTitle": "黄金国",
+    "AchievementDesc": "为织者们建立一座大型乐园<br><div style=\"color:#8790abff;\">※搜集190只创生若虫的赐福</div>",
+    "ParamList": [
+      {
+        "Value": 190
+      }
+    ],
+    "Priority": 795,
+    "Rarity": "Low",
+    "ShowType": "HiddenDesc",
+    "Version": "3.4"
   },
   "4051001": {
     "AchievementID": 4051001,
@@ -9707,7 +9865,6 @@
     "ParamList": [],
     "Priority": 468,
     "Rarity": "Low",
-    "ShowType": "HiddenDesc",
     "Version": "3.3"
   },
   "4054302": {
@@ -9944,6 +10101,228 @@
     "Priority": 445,
     "Rarity": "Low",
     "Version": "3.3"
+  },
+  "4054401": {
+    "AchievementID": 4054401,
+    "SeriesID": 5,
+    "AchievementTitle": "妖精森友会",
+    "AchievementDesc": "查阅村长邮箱中所有属于你的信件",
+    "ParamList": [],
+    "Priority": 444,
+    "Rarity": "Low",
+    "ShowType": "ShowAfterFinish",
+    "Version": "3.4"
+  },
+  "4054402": {
+    "AchievementID": 4054402,
+    "SeriesID": 5,
+    "AchievementTitle": "昨日重现",
+    "AchievementDesc": "白厄视角下，与任意一名村民对话",
+    "ParamList": [],
+    "Priority": 443,
+    "Rarity": "Low",
+    "ShowType": "ShowAfterFinish",
+    "Version": "3.4"
+  },
+  "4054403": {
+    "AchievementID": 4054403,
+    "SeriesID": 5,
+    "AchievementTitle": "欢迎加入哀丽秘榭",
+    "AchievementDesc": "打扰妖精的安眠<br><div style=\"color:#8790abff;\">※逼出家里蹲的妖精</div>",
+    "ParamList": [],
+    "Priority": 442,
+    "Rarity": "Low",
+    "ShowType": "HiddenDesc",
+    "Version": "3.4"
+  },
+  "4054404": {
+    "AchievementID": 4054404,
+    "SeriesID": 5,
+    "AchievementTitle": "空谷有足音回响",
+    "AchievementDesc": "送别白厄昔日的笔友",
+    "ParamList": [],
+    "Priority": 441,
+    "Rarity": "Low",
+    "ShowType": "ShowAfterFinish",
+    "Version": "3.4"
+  },
+  "4054405": {
+    "AchievementID": 4054405,
+    "SeriesID": 5,
+    "AchievementTitle": "刻录故事的一页",
+    "AchievementDesc": "与昔涟一同在哀丽秘榭度过一段美好时光",
+    "ParamList": [],
+    "Priority": 440,
+    "Rarity": "Low",
+    "Version": "3.4"
+  },
+  "4054406": {
+    "AchievementID": 4054406,
+    "SeriesID": 5,
+    "AchievementTitle": "全频段共振",
+    "AchievementDesc": "与所有被风铃吸引来的妖精对话",
+    "ParamList": [],
+    "Priority": 439,
+    "Rarity": "Low",
+    "Version": "3.4"
+  },
+  "4054407": {
+    "AchievementID": 4054407,
+    "SeriesID": 5,
+    "AchievementTitle": "绑架代替购买",
+    "AchievementDesc": "与哀丽秘榭的小奇美拉建立缘分",
+    "ParamList": [],
+    "Priority": 438,
+    "Rarity": "Low",
+    "Version": "3.4"
+  },
+  "4054408": {
+    "AchievementID": 4054408,
+    "SeriesID": 5,
+    "AchievementTitle": "侏罗纪花园",
+    "AchievementDesc": "在哀丽秘榭骑乘大地兽",
+    "ParamList": [],
+    "Priority": 437,
+    "Rarity": "Low",
+    "Version": "3.4"
+  },
+  "4054409": {
+    "AchievementID": 4054409,
+    "SeriesID": 5,
+    "AchievementTitle": "红花与六粒种",
+    "AchievementDesc": "在祝祭庭院的花盆中播下种子",
+    "ParamList": [],
+    "Priority": 436,
+    "Rarity": "Low",
+    "Version": "3.4"
+  },
+  "4054410": {
+    "AchievementID": 4054410,
+    "SeriesID": 5,
+    "AchievementTitle": "两只海豹游得快",
+    "AchievementDesc": "为哀丽秘榭的小海豹找个伴",
+    "ParamList": [],
+    "Priority": 435,
+    "Rarity": "Low",
+    "Version": "3.4"
+  },
+  "4054411": {
+    "AchievementID": 4054411,
+    "SeriesID": 5,
+    "AchievementTitle": "铃儿响叮当",
+    "AchievementDesc": "将魔法风铃中的魔力消耗一空",
+    "ParamList": [],
+    "Priority": 434,
+    "Rarity": "Low",
+    "Version": "3.4"
+  },
+  "4054412": {
+    "AchievementID": 4054412,
+    "SeriesID": 5,
+    "AchievementTitle": "仲夏夜之梦",
+    "AchievementDesc": "参加妖精们的舞会",
+    "ParamList": [],
+    "Priority": 433,
+    "Rarity": "Low",
+    "ShowType": "ShowAfterFinish",
+    "Version": "3.4"
+  },
+  "4054413": {
+    "AchievementID": 4054413,
+    "SeriesID": 5,
+    "AchievementTitle": "一杯赏英雄",
+    "AchievementDesc": "见证一位异乡友人的归去",
+    "ParamList": [],
+    "Priority": 432,
+    "Rarity": "Low",
+    "ShowType": "ShowAfterFinish",
+    "Version": "3.4"
+  },
+  "4054414": {
+    "AchievementID": 4054414,
+    "SeriesID": 5,
+    "AchievementTitle": "绿一色",
+    "AchievementDesc": "使用青雀小鸟，并在同一局对战中，累计使用道具14次",
+    "ParamList": [
+      {
+        "Value": 14
+      }
+    ],
+    "Priority": 431,
+    "Rarity": "Low",
+    "Version": "3.4"
+  },
+  "4054415": {
+    "AchievementID": 4054415,
+    "SeriesID": 5,
+    "AchievementTitle": "还是我的回合",
+    "AchievementDesc": "双人对战中，同一回合内，己方连续行动步数达到8",
+    "ParamList": [
+      {
+        "Value": 8
+      }
+    ],
+    "Priority": 430,
+    "Rarity": "Low",
+    "Version": "3.4"
+  },
+  "4054416": {
+    "AchievementID": 4054416,
+    "SeriesID": 5,
+    "AchievementTitle": "波音小鸟777",
+    "AchievementDesc": "双人对战中，己方小鸟最高战力达到777",
+    "ParamList": [
+      {
+        "Value": 777
+      }
+    ],
+    "Priority": 429,
+    "Rarity": "Low",
+    "Version": "3.4"
+  },
+  "4054417": {
+    "AchievementID": 4054417,
+    "SeriesID": 5,
+    "AchievementTitle": "三好学啾",
+    "AchievementDesc": "将所有道具全部强化至3星",
+    "ParamList": [
+      {
+        "Value": 3
+      }
+    ],
+    "Priority": 428,
+    "Rarity": "Low",
+    "Version": "3.4"
+  },
+  "4054418": {
+    "AchievementID": 4054418,
+    "SeriesID": 5,
+    "AchievementTitle": "今天开始做老板",
+    "AchievementDesc": "获得街机店经营权",
+    "ParamList": [],
+    "Priority": 427,
+    "Rarity": "Low",
+    "Version": "3.4"
+  },
+  "4054419": {
+    "AchievementID": 4054419,
+    "SeriesID": 5,
+    "AchievementTitle": "双鸟成行",
+    "AchievementDesc": "目睹波提欧和青雀双双变作折纸小鸟",
+    "ParamList": [],
+    "Priority": 426,
+    "Rarity": "Low",
+    "Version": "3.4"
+  },
+  "4054420": {
+    "AchievementID": 4054420,
+    "SeriesID": 5,
+    "AchievementTitle": "你醒啦，起来打工吧！",
+    "AchievementDesc": "招募幽灵小鸟作为街机店员工",
+    "ParamList": [],
+    "Priority": 425,
+    "Rarity": "Mid",
+    "Version": "3.4"
   },
   "4060101": {
     "AchievementID": 4060101,
@@ -12727,7 +13106,7 @@
     "AchievementID": 4073501,
     "SeriesID": 7,
     "AchievementTitle": "暴风雨停息之时…",
-    "AchievementDesc": "在和「飞霄」之影的战斗中，蚀月心兽的所有部位均未释放过强化行动",
+    "AchievementDesc": "在和「飞霄」之影的战斗中，蚀月心兽的所有部位均未施放过强化行动",
     "ParamList": [],
     "Priority": 832,
     "Rarity": "Low",
@@ -12737,7 +13116,7 @@
     "AchievementID": 4073502,
     "SeriesID": 7,
     "AchievementTitle": "炸毛了嘛？",
-    "AchievementDesc": "在和「飞霄」之影的战斗中，「飞霄」之影释放【风胄雷鞮】，并在【风胄雷鞮】蓄力期间将蚀月心兽所有部位的弱点击破",
+    "AchievementDesc": "在和「飞霄」之影的战斗中，「飞霄」之影施放【风胄雷鞮】，并在【风胄雷鞮】蓄力期间将蚀月心兽所有部位的弱点击破",
     "ParamList": [],
     "Priority": 831,
     "Rarity": "Low",
@@ -12859,7 +13238,7 @@
     "AchievementID": 4073601,
     "SeriesID": 7,
     "AchievementTitle": "「蕉」育高手",
-    "AchievementDesc": "在和「奇想林中的蕉研组」的战斗中，使其一次都没有释放【致博士：蕉学成果汇演】",
+    "AchievementDesc": "在和「奇想林中的蕉研组」的战斗中，使其一次都没有施放【致博士：蕉学成果汇演】",
     "ParamList": [],
     "Priority": 821,
     "Rarity": "Low",
@@ -13192,7 +13571,7 @@
     "AchievementID": 4074102,
     "SeriesID": 7,
     "AchievementTitle": "无月之夜",
-    "AchievementDesc": "单场战斗中，通过释放终结技消除2个【欧洛尼斯印记】",
+    "AchievementDesc": "单场战斗中，通过施放终结技消除2个【欧洛尼斯印记】",
     "ParamList": [
       {
         "Value": 2
@@ -13386,7 +13765,7 @@
     "AchievementID": 4074207,
     "SeriesID": 7,
     "AchievementTitle": "死后自会…也不会长眠",
-    "AchievementDesc": "在「冥魂渡者，死龙残躯，玻吕刻斯」释放【死亡想要更多的死亡】时，我方全体角色未陷入【沉沦于长眠】状态",
+    "AchievementDesc": "在「冥魂渡者，死龙残躯，玻吕刻斯」施放【死亡想要更多的死亡】时，我方全体角色未陷入【沉沦于长眠】状态",
     "ParamList": [],
     "Priority": 780,
     "Rarity": "Low",
@@ -13420,7 +13799,7 @@
     "AchievementID": 4074301,
     "SeriesID": 7,
     "AchievementTitle": "偷天换日",
-    "AchievementDesc": "单场战斗中，我方角色赛飞儿天赋效果记录的伤害值超过9999999点",
+    "AchievementDesc": "单场战斗中，我方角色赛飞儿天赋效果记录的累计值超过9999999点",
     "ParamList": [
       {
         "Value": 9999999
@@ -13530,6 +13909,144 @@
     "Rarity": "Low",
     "ShowType": "ShowAfterFinish",
     "Version": "3.3"
+  },
+  "4074401": {
+    "AchievementID": 4074401,
+    "SeriesID": 7,
+    "AchievementTitle": "诚如刻法勒所述",
+    "AchievementDesc": "单场战斗中，我方角色白厄成为队友6种不同类型技能的施放目标",
+    "ParamList": [
+      {
+        "Value": 6
+      }
+    ],
+    "Priority": 768,
+    "Rarity": "Low",
+    "ShowType": "ShowAfterFinish",
+    "Version": "3.4"
+  },
+  "4074402": {
+    "AchievementID": 4074402,
+    "SeriesID": 7,
+    "AchievementTitle": "天火，出鞘",
+    "AchievementDesc": "我方角色白厄在变身状态下，使用单次攻击同时消灭5个敌人",
+    "ParamList": [
+      {
+        "Value": 5
+      }
+    ],
+    "Priority": 767,
+    "Rarity": "Low",
+    "ShowType": "ShowAfterFinish",
+    "Version": "3.4"
+  },
+  "4074403": {
+    "AchievementID": 4074403,
+    "SeriesID": 7,
+    "AchievementTitle": "是谁得了MVP?",
+    "AchievementDesc": "使用同时包含白厄、万敌的队伍获得一场战斗的胜利，并且白厄消灭的敌人数量超过万敌",
+    "ParamList": [],
+    "Priority": 766,
+    "Rarity": "Low",
+    "ShowType": "ShowAfterFinish",
+    "Version": "3.4"
+  },
+  "4074404": {
+    "AchievementID": 4074404,
+    "SeriesID": 7,
+    "AchievementTitle": "是谁得了MVP?",
+    "AchievementDesc": "使用同时包含白厄、万敌的队伍获得一场战斗的胜利，并且万敌消灭的敌人数量超过白厄",
+    "ParamList": [],
+    "Priority": 765,
+    "Rarity": "Low",
+    "ShowType": "ShowAfterFinish",
+    "Version": "3.4"
+  },
+  "4074405": {
+    "AchievementID": 4074405,
+    "SeriesID": 7,
+    "AchievementTitle": "魔力放出",
+    "AchievementDesc": "我方角色Saber施放【风王铁槌】时，一次性消耗15点【炉心共鸣】恢复能量",
+    "ParamList": [
+      {
+        "Value": 15
+      }
+    ],
+    "Priority": 763,
+    "Rarity": "Low",
+    "ShowType": "ShowAfterFinish",
+    "Version": "3.4"
+  },
+  "4074406": {
+    "AchievementID": 4074406,
+    "SeriesID": 7,
+    "AchievementTitle": "星之剑，王之剑",
+    "AchievementDesc": "单场战斗中，我方角色Saber累计使用10次【誓约胜利之剑】",
+    "ParamList": [
+      {
+        "Value": 10
+      }
+    ],
+    "Priority": 762,
+    "Rarity": "Low",
+    "ShowType": "ShowAfterFinish",
+    "Version": "3.4"
+  },
+  "4074407": {
+    "AchievementID": 4074407,
+    "SeriesID": 7,
+    "AchievementTitle": "Trace on!",
+    "AchievementDesc": "使用我方角色Archer施放【伪•螺旋剑】时，在【回路连接】状态下连续释5次【伪•螺旋剑】",
+    "ParamList": [
+      {
+        "Value": 5
+      }
+    ],
+    "Priority": 761,
+    "Rarity": "Low",
+    "ShowType": "ShowAfterFinish",
+    "Version": "3.4"
+  },
+  "4074408": {
+    "AchievementID": 4074408,
+    "SeriesID": 7,
+    "AchievementTitle": "武器的储备足够吗",
+    "AchievementDesc": "使用我方角色Archer对彦卿施放1次【无限剑制】",
+    "ParamList": [
+      {
+        "Value": 1
+      }
+    ],
+    "Priority": 760,
+    "Rarity": "Low",
+    "ShowType": "ShowAfterFinish",
+    "Version": "3.4"
+  },
+  "4074409": {
+    "AchievementID": 4074409,
+    "SeriesID": 7,
+    "AchievementTitle": "开饭",
+    "AchievementDesc": "使用同时包含Archer、Saber的队伍获得1场战斗的胜利",
+    "ParamList": [
+      {
+        "Value": 1
+      }
+    ],
+    "Priority": 759,
+    "Rarity": "Low",
+    "ShowType": "ShowAfterFinish",
+    "Version": "3.4"
+  },
+  "4074410": {
+    "AchievementID": 4074410,
+    "SeriesID": 7,
+    "AchievementTitle": "是谁得了MVP?",
+    "AchievementDesc": "使用同时包含白厄、万敌的队伍获得一场战斗的胜利，并且白厄和万敌消灭的敌人数量相同",
+    "ParamList": [],
+    "Priority": 764,
+    "Rarity": "Low",
+    "ShowType": "ShowAfterFinish",
+    "Version": "3.4"
   },
   "4080101": {
     "AchievementID": 4080101,

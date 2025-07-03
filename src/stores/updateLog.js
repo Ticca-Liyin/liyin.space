@@ -4,6 +4,18 @@ import { defineStore } from 'pinia'
 export const useUpdateLogStore = defineStore('updateLog', () => {
     const updateLogInfo = [
         {
+            version: '3.4.0', 
+            date: '2025-07-03', 
+            title: '更正 3.3 版本联动角色数据',
+            changes: '<ul><li>更正 3.3 版本联动角色数据</li></ul>' 
+        },
+        {
+            version: '3.3.1', 
+            date: '2025-05-23', 
+            title: '更正 3.3 版本联动角色数据',
+            changes: '<ul><li>更正 3.3 版本联动角色数据</li></ul>' 
+        },
+        {
             version: '3.3.0', 
             date: '2025-05-19', 
             title: '更新 3.3 版本成就相关数据，更新 3.3 版本角色相关数据，调整角色显示列表的排布样式',
