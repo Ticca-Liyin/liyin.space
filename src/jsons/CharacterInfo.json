@@ -940,6 +940,34 @@
     "faction": ["翁法罗斯"],
     "deploymentDate": 1747792800000
   },
+  "1410": {
+    "id": 1410,
+    "MiYoSheId": 5582,
+    "HoYoWikiId": 3885,
+    "name": "海瑟音",
+    "avatar": "event-ugc-hoyowiki/2025/06/17/5308864/5097d678e6a1881e6225d3b4dd8e7786_2641608313471166654.png",
+    "path": "虚无",
+    "combattype": "物理",
+    "star": 5,
+    "warp": "limited",
+    "version": 3.5,
+    "faction": ["翁法罗斯"],
+    "deploymentDate": 1756872000000
+  },
+  "1412": {
+    "id": 1412,
+    "MiYoSheId": 5583,
+    "HoYoWikiId": 3886,
+    "name": "刻律德菈",
+    "avatar": "event-ugc-hoyowiki/2025/06/19/5308864/ffb996b912f85a2be6899347be4813fb_6153136064742548843.png",
+    "path": "同谐",
+    "combattype": "风",
+    "star": 5,
+    "warp": "limited",
+    "version": 3.5,
+    "faction": ["翁法罗斯"],
+    "deploymentDate": 1756872000000
+  },
   "8002": {
     "id": 8002,
     "MiYoSheId": 3128,
