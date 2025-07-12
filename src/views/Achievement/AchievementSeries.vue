@@ -1,10 +1,11 @@
 <script setup>
 import { ArrowDown, ArrowUp } from '@element-plus/icons-vue'
-import { onMounted, ref, watch } from 'vue';
+import { onMounted, ref, watch, computed } from 'vue';
 import { storeToRefs } from 'pinia';
 import { useAchievementStore } from '@/stores/achievement/achievement';
 import { useAchievementShowSeriesStore } from '@/stores/achievement/achievementShowSeries'
 import { useThemeStore } from '@/stores/theme'
+import { useAchievementSettingStore } from '@/stores/achievement/setting/achievementSetting.js'
 import { useRoute, onBeforeRouteUpdate } from 'vue-router';
 
 const route = useRoute();
@@ -33,9 +34,22 @@ const { changeShowSeriesID } = achievementShowSeriesStore
 const themeStore = useThemeStore()
 const { isDark } = storeToRefs(themeStore)
 
+const settingStore = useAchievementSettingStore()
+const { hiddenCompleteAchievementSeries } = storeToRefs(settingStore)
+
 onMounted(() => changeShowSeriesID(+route.params.id))
 
 onBeforeRouteUpdate((to) => changeShowSeriesID(+to.params.id))
+
+const isNavigationFlex = computed(() => {
+    return achievementSeries.value.reduce((count, series) => {
+        if (series.completedAchievementsLength !== series.AchievementsLength) {
+            return ++count;
+        } else {
+            return count;
+        }
+    }, 0) === achievementSeries.value.length
+})
 
 // 设置行相关折叠功能
 const hadFold = ref(false)
@@ -96,27 +110,35 @@ const endSeriesDrag = () => {
     <div class="achievement-series-fold">
         <div class="achievement-series" id="achievement-series" @wheel="handleScroll" >
             <!-- @mousedown="startSeriesDrag" @mousemove="handleSeriesDrag" @mouseup="endSeriesDrag" @mouseleave="endSeriesDrag" -->
-            <div class="series-navigation" :class="{'series-fold': hadFold}" v-for="series in achievementSeries" :key="series.SeriesID">
-                <RouterLink :to="`/achievement/${series.SeriesID}`" :class="{'selected': showSeriesId === series.SeriesID}" v-preventDragStart="true">
-                    <div class="series" :class="{'series-fold': hadFold}">
-                        <div class="series-title">
-                            {{series.SeriesTitle}}
+            <template v-for="(series, index) in achievementSeries" :key="series.SeriesID">
+                <div v-if="!hiddenCompleteAchievementSeries || (series.completedAchievementsLength !== series.AchievementsLength || index === 0)" 
+                    class="series-navigation" 
+                    :class="{
+                        'series-fold': hadFold,
+                        'series-navigation-flex': !hiddenCompleteAchievementSeries || isNavigationFlex
+                    }" 
+                >
+                    <RouterLink :to="`/achievement/${series.SeriesID}`" :class="{'selected': showSeriesId === series.SeriesID}" v-preventDragStart="true">
+                        <div class="series" :class="{'series-fold': hadFold}">
+                            <div class="series-title">
+                                {{series.SeriesTitle}}
+                            </div>
+                            <div class="series-count">
+                                {{series.completedAchievementsLength}} / {{series.AchievementsLength}}
+                                <span v-if="series.notAvailableAchievementsLengeh" class="series-count-not-available">+{{ series.notAvailableAchievementsLengeh }}</span>
+                                ({{series.completedPercentage}})
+                            </div>
+                            <div class="series-StellarJade" v-if="!hadFold">
+                                {{series.completedStellarJadeTotal}} / {{series.StellarJadeTotal}}
+                                <img :src="StellarJadeImg" alt="星琼">
+                            </div>
                         </div>
-                        <div class="series-count">
-                            {{series.completedAchievementsLength}} / {{series.AchievementsLength}}
-                            <span v-if="series.notAvailableAchievementsLengeh" class="series-count-not-available">+{{ series.notAvailableAchievementsLengeh }}</span>
-                            ({{series.completedPercentage}})
+                        <div class="series-bg-image">
+                            <img :src="isDark ? series.imageDarkPath : series.imagePath" :alt="series.SeriesTitle">
                         </div>
-                        <div class="series-StellarJade" v-if="!hadFold">
-                            {{series.completedStellarJadeTotal}} / {{series.StellarJadeTotal}}
-                            <img :src="StellarJadeImg" alt="星琼">
-                        </div>
-                    </div>
-                    <div class="series-bg-image">
-                        <img :src="isDark ? series.imageDarkPath : series.imagePath" :alt="series.SeriesTitle">
-                    </div>
-                </RouterLink>
-            </div>  
+                    </RouterLink>
+                </div>
+            </template>
         </div>
         <div class="achievement-series-fold-down" v-if="hadFold"  @click="hadFold = false">
             <el-icon class="el-icon--right">
@@ -170,8 +192,10 @@ const endSeriesDrag = () => {
     height: 90px;
     margin: 0 5px;
     position: relative;
-    flex: 1;
     flex-basis: auto;
+}
+.series-navigation-flex {
+    flex: 1;
 }
 .series-navigation.series-fold{
     height:60px;

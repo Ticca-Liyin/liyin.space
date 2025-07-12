@@ -44,7 +44,7 @@ export const useAchievementSettingStore = defineStore('achievementSetting', () =
     })
     //#endregion
 
-    //#region  本页成就隐藏配置 CurrentPageAchievementFloatingWindow
+    //#region  本页成就隐藏配置
     const CURRENT_PAGE_ACHIEVEMENT_WINDOW_DISPLAY_KEY = 'current-page-achievement-window-display'
 
     const currentPageAchievementWindowDisplay = ref(JSON.parse(localStorage.getItem(CURRENT_PAGE_ACHIEVEMENT_WINDOW_DISPLAY_KEY) ?? true))
@@ -65,12 +65,35 @@ export const useAchievementSettingStore = defineStore('achievementSetting', () =
     })
     //#endregion
 
+    //#region  隐藏完成成就系列 HiddenCompleteAchievementSeries
+    const HIDDEN_COMPLETE_ACHIEVEMENT_SERIES = 'hidden-complete-achievement-series'
+
+    const hiddenCompleteAchievementSeries = ref(JSON.parse(localStorage.getItem(HIDDEN_COMPLETE_ACHIEVEMENT_SERIES) ?? false))
+
+    const hiddenCompleteAchievementSeriesList = [
+        {
+            label: '显示',
+            value: false
+        },
+        {
+            label: '隐藏',
+            value: true
+        }
+    ]
+
+    watchEffect(() => {
+        localStorage.setItem(HIDDEN_COMPLETE_ACHIEVEMENT_SERIES, JSON.stringify(hiddenCompleteAchievementSeries.value))
+    })
+    //#endregion
+
     return {
         achievementSelectAllSecondConfirmation,
         secondConfirmationList,
         achievementFilterCacheConfig,
         filterCacheConfigList,
         currentPageAchievementWindowDisplay,
-        currentPageAchievementWindowDiaplayList
+        currentPageAchievementWindowDiaplayList,
+        hiddenCompleteAchievementSeries,
+        hiddenCompleteAchievementSeriesList
     }
 })

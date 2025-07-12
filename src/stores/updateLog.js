@@ -4,6 +4,12 @@ import { defineStore } from 'pinia'
 export const useUpdateLogStore = defineStore('updateLog', () => {
     const updateLogInfo = [
         {
+            version: '3.4.4', 
+            date: '2025-07-14', 
+            title: '新增隐藏完成成就系列功能',
+            changes: '<ul><li>新增隐藏完成成就系列功能<br>可在成就界面设置中进行设置<br>用于控制隐藏所有成就已完成的系列</li></ul>' 
+        },
+        {
             version: '3.4.3', 
             date: '2025-07-12', 
             title: '修复特殊情况下成就搜索框无法进行搜索的异常',
