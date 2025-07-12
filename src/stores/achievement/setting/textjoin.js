@@ -120,11 +120,11 @@ export const useTextjoinStore = defineStore('textjoin', () => {
             return textjoinSelectList[textjoinId][0]
         }
         
-        if(typeof userTextjoin.value[tokenID]?.data !== "object" || Array.isArray(userTextjoin.value[tokenID]?.data)) {
+        if(userTextjoin.value[tokenID]?.data === null || typeof userTextjoin.value[tokenID]?.data !== "object" || Array.isArray(userTextjoin.value[tokenID]?.data)) {
             return textjoinSelectList[textjoinId][0]
         }
 
-        return userTextjoin.value[tokenID].data[textjoinId] ?? textjoinSelectList[textjoinId][0]
+        return userTextjoin.value[tokenID]?.data[textjoinId] ?? textjoinSelectList[textjoinId][0]
     }
 
     const updateUserTextjoinValue = (tokenID, textjoinId, value) => {
@@ -161,7 +161,7 @@ export const useTextjoinStore = defineStore('textjoin', () => {
             userTextjoin.value[tokenID] = {}
         }
 
-        if(typeof userTextjoin.value[tokenID]?.data !== "object" || Array.isArray(userTextjoin.value[tokenID]?.data)) {
+        if(userTextjoin.value[tokenID]?.data === null || typeof userTextjoin.value[tokenID]?.data !== "object" || Array.isArray(userTextjoin.value[tokenID]?.data)) {
             userTextjoin.value[tokenID].data = {}
         }
 

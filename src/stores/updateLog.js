@@ -4,6 +4,12 @@ import { defineStore } from 'pinia'
 export const useUpdateLogStore = defineStore('updateLog', () => {
     const updateLogInfo = [
         {
+            version: '3.4.3', 
+            date: '2025-07-12', 
+            title: '修复特殊情况下成就搜索框无法进行搜索的异常',
+            changes: '<ul><li>修复特殊情况下成就搜索框无法进行搜索的异常</li></ul>' 
+        },
+        {
             version: '3.4.2', 
             date: '2025-07-12', 
             title: '更新 3.4 版本成就部分缺失数据',
