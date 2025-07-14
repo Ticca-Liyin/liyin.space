@@ -4,6 +4,12 @@ import { defineStore } from 'pinia'
 export const useUpdateLogStore = defineStore('updateLog', () => {
     const updateLogInfo = [
         {
+            version: '3.4.6', 
+            date: '2025-07-14', 
+            title: '成就攻略界面新增其他攻略跳转引导',
+            changes: '<ul><li>成就攻略界面新增其他攻略跳转引导：包括米游社及bilibili</li></ul>' 
+        },
+        {
             version: '3.4.5', 
             date: '2025-07-14', 
             title: '修复特殊情况下成就系列无法显示的异常',

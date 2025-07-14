@@ -93,6 +93,12 @@ const { authors } = storeToRefs(authorStore)
         </div>
         <template #footer>
             <div class="dialog-footer">
+                <div>
+                    <span>其他攻略:</span>
+                    <a class="dialog-body-stratery-href" :href="`https://www.miyoushe.com/sr/search?keyword=${dialogAchievement.AchievementTitle}`" target="_blank" style="margin: 0 5px;">米游社</a>
+                    <span>|</span>
+                    <a class="dialog-body-stratery-href" :href="`https://search.bilibili.com/all?keyword=星铁成就${dialogAchievement.AchievementTitle}`" target="_blank" style="margin: 0 5px;">bilibili</a>   
+                </div>  
                 <div>点击 橙字内容 跳转至作者主页</div>
                 <div>点击 绿字内容 跳转至攻略页面</div>
             </div>
