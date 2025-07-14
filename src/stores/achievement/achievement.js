@@ -65,7 +65,7 @@ export const useAchievementStore = defineStore('achievement', () => {
                         const userach_ = userAchievementList[ach_.AchievementID]
                         if(ach_ && ach_.Status !== 2){
                             ach_.Status = 2
-                            if (userach_.status !== 2) {
+                            if (userach_?.status !== 2) {
                                 handleUserAchievementList(ach_.AchievementID, ach_.Status)
                             }
                         } 
