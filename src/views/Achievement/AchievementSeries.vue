@@ -111,7 +111,7 @@ const endSeriesDrag = () => {
         <div class="achievement-series" id="achievement-series" @wheel="handleScroll" >
             <!-- @mousedown="startSeriesDrag" @mousemove="handleSeriesDrag" @mouseup="endSeriesDrag" @mouseleave="endSeriesDrag" -->
             <template v-for="(series, index) in achievementSeries" :key="series.SeriesID">
-                <div v-if="!hiddenCompleteAchievementSeries || (series.completedAchievementsLength !== series.AchievementsLength || index === 0)" 
+                <div v-if="!hiddenCompleteAchievementSeries || (series.completedAchievementsLength !== series.AchievementsLength + series.notAvailableAchievementsLength || index === 0)" 
                     class="series-navigation" 
                     :class="{
                         'series-fold': hadFold,
@@ -125,7 +125,7 @@ const endSeriesDrag = () => {
                             </div>
                             <div class="series-count">
                                 {{series.completedAchievementsLength}} / {{series.AchievementsLength}}
-                                <span v-if="series.notAvailableAchievementsLengeh" class="series-count-not-available">+{{ series.notAvailableAchievementsLengeh }}</span>
+                                <span v-if="series.notAvailableAchievementsLength" class="series-count-not-available">+{{ series.notAvailableAchievementsLength }}</span>
                                 ({{series.completedPercentage}})
                             </div>
                             <div class="series-StellarJade" v-if="!hadFold">

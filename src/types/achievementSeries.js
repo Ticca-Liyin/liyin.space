@@ -82,7 +82,7 @@ export class AchievementSeries {
         return this.completedStellarJadePercentage.toFixed(2) + "%"
     }
     //系列相关暂不可完成成就数
-    get notAvailableAchievementsLengeh(){
+    get notAvailableAchievementsLength(){
         const selectedMultipleIDs = []; // 记录已选择的多选一成就类型
         let totalAchievements = 0; // 记录总共可获得的成就数
 
