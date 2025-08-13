@@ -128,8 +128,7 @@
     "warp": "limited",
     "version": 3.4,
     "faction": [],
-    "deploymentDate": 1752206400000,
-    "notOptional": false
+    "deploymentDate": 1752206400000
   },
   "1015": {
     "id": 1015,
@@ -952,7 +951,22 @@
     "warp": "limited",
     "version": 3.5,
     "faction": ["翁法罗斯"],
-    "deploymentDate": 1756872000000
+    "deploymentDate": 1755050400000
+  },
+  "1411": {
+    "id": 1411,
+    "MiYoSheId": 5737,
+    "HoYoWikiId": 3957,
+    "name": "丹恒•腾荒",
+    "avatar": "event-ugc-hoyowiki/2025/08/05/5308864/17b441ad17b19301efa5b0116e17788a_1036774653474588783.png",
+    "path": "存护",
+    "combattype": "物理",
+    "star": 5,
+    "warp": "limited",
+    "version": 3.6,
+    "faction": ["翁法罗斯"],
+    "deploymentDate": 1760500800000,
+    "notOptional": true
   },
   "1412": {
     "id": 1412,
@@ -968,6 +982,21 @@
     "faction": ["翁法罗斯"],
     "deploymentDate": 1756872000000
   },
+  "1413": {
+    "id": 1413,
+    "MiYoSheId": 5736,
+    "HoYoWikiId": 3956,
+    "name": "长夜月",
+    "avatar": "event-ugc-hoyowiki/2025/08/04/5308864/1306615dd73b16ab22968142bc6a2e03_5382438080910031968.png",
+    "path": "记忆",
+    "combattype": "冰",
+    "star": 5,
+    "warp": "limited",
+    "version": 3.6,
+    "faction": ["翁法罗斯"],
+    "deploymentDate": 1758679200000
+  },
+
   "8002": {
     "id": 8002,
     "MiYoSheId": 3128,
