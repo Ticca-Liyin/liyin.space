@@ -1,8 +1,8 @@
-export const achievementInfoVersion = '3.5.0'
+export const achievementInfoVersion = '3.6.0'
 
 export const achievementSeriesVersion = '3.4.3'
 
-export const multipleChoiceVersion = '3.5.1'
+export const multipleChoiceVersion = '3.6.0'
 
 export const notAvailableAchievementVersion = '3.4.3'
 

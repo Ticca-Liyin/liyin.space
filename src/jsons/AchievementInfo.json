@@ -1782,6 +1782,94 @@
     "ShowType": "HiddenDesc",
     "Version": "3.5"
   },
+  "4034601": {
+    "AchievementID": 4034601,
+    "SeriesID": 3,
+    "AchievementTitle": "聆听我，甜蜜的黑暗",
+    "AchievementDesc": "既然这扇门背后就是翁法罗斯……<br><div style=\"color:#8790abff;\">※见证长夜月登上舞台</div>",
+    "ParamList": [],
+    "Priority": 884,
+    "Rarity": "Mid",
+    "ShowType": "HiddenDesc",
+    "Version": "3.6"
+  },
+  "4034602": {
+    "AchievementID": 4034602,
+    "SeriesID": 3,
+    "AchievementTitle": "于是，金色的血流淌而出",
+    "AchievementDesc": "总有些「记忆」是被焚烧的代价<br><div style=\"color:#8790abff;\">※击退金血忆灵，与长夜月直接对话</div>",
+    "ParamList": [],
+    "Priority": 883,
+    "Rarity": "Mid",
+    "ShowType": "HiddenDesc",
+    "Version": "3.6"
+  },
+  "4034603": {
+    "AchievementID": 4034603,
+    "SeriesID": 3,
+    "AchievementTitle": "你永远不会独行",
+    "AchievementDesc": "探索、了解、建立、连结——然后，我们会一起回家<br><div style=\"color:#8790abff;\">※与三月七汇合</div>",
+    "ParamList": [],
+    "Priority": 882,
+    "Rarity": "Mid",
+    "ShowType": "HiddenDesc",
+    "Version": "3.6"
+  },
+  "4034604": {
+    "AchievementID": 4034604,
+    "SeriesID": 3,
+    "AchievementTitle": "命运啼哭之前",
+    "AchievementDesc": "听我说，记住这段话，然后忘掉它<br><div style=\"color:#8790abff;\">※再次唤醒「不存在的记忆」</div>",
+    "ParamList": [],
+    "Priority": 881,
+    "Rarity": "Mid",
+    "ShowType": "HiddenDesc",
+    "Version": "3.6"
+  },
+  "4034605": {
+    "AchievementID": 4034605,
+    "SeriesID": 3,
+    "AchievementTitle": "我站立于此，为万物担责",
+    "AchievementDesc": "向「大地」昭告新神的名字<br><div style=\"color:#8790abff;\">※丹恒得到「大地」的火种</div>",
+    "ParamList": [],
+    "Priority": 880,
+    "Rarity": "Mid",
+    "ShowType": "HiddenDesc",
+    "Version": "3.6"
+  },
+  "4034606": {
+    "AchievementID": 4034606,
+    "SeriesID": 3,
+    "AchievementTitle": "灵魂凭追忆辨认彼此",
+    "AchievementDesc": "以天地为横轴，以时光为纵轴，带你回家<br><div style=\"color:#8790abff;\">※丹恒在忆潮中找到了你</div>",
+    "ParamList": [],
+    "Priority": 879,
+    "Rarity": "Mid",
+    "ShowType": "HiddenDesc",
+    "Version": "3.6"
+  },
+  "4034607": {
+    "AchievementID": 4034607,
+    "SeriesID": 3,
+    "AchievementTitle": "记忆碎片",
+    "AchievementDesc": "相机记忆卡已经存满的元凶……<br><div style=\"color:#8790abff;\">※昔涟找到了真正的三月七</div>",
+    "ParamList": [],
+    "Priority": 878,
+    "Rarity": "Mid",
+    "ShowType": "HiddenDesc",
+    "Version": "3.6"
+  },
+  "4034608": {
+    "AchievementID": 4034608,
+    "SeriesID": 3,
+    "AchievementTitle": "翁法罗斯英雄纪",
+    "AchievementDesc": "与我一同，成为英雄吧<br><div style=\"color:#8790abff;\">※完成最后的「再创世」</div>",
+    "ParamList": [],
+    "Priority": 877,
+    "Rarity": "Mid",
+    "ShowType": "HiddenDesc",
+    "Version": "3.6"
+  },
   "4040101": {
     "AchievementID": 4040101,
     "SeriesID": 4,
@@ -4234,6 +4322,173 @@
     "Priority": 780,
     "Rarity": "Low",
     "Version": "3.5"
+  },
+  "4044601": {
+    "AchievementID": 4044601,
+    "SeriesID": 4,
+    "AchievementTitle": "微光城市",
+    "AchievementDesc": "褪去权杖δ-me13的神话色彩，初入无名泰坦大墓",
+    "ParamList": [],
+    "Priority": 779,
+    "Rarity": "Low",
+    "Version": "3.6"
+  },
+  "4044602": {
+    "AchievementID": 4044602,
+    "SeriesID": 4,
+    "AchievementTitle": "行向至深",
+    "AchievementDesc": "登上大墓中央区渡台，前往世界最深处",
+    "ParamList": [],
+    "Priority": 778,
+    "Rarity": "Low",
+    "Version": "3.6"
+  },
+  "4044603": {
+    "AchievementID": 4044603,
+    "SeriesID": 4,
+    "AchievementTitle": "尤里卡！",
+    "AchievementDesc": "完成「全世矩阵」无名泰坦大墓的终极谜题",
+    "ParamList": [],
+    "Priority": 777,
+    "Rarity": "Low",
+    "Version": "3.6"
+  },
+  "4044604": {
+    "AchievementID": 4044604,
+    "SeriesID": 4,
+    "AchievementTitle": "散热不良",
+    "AchievementDesc": "使用「暂停时间」的方法停住房间内的所有排气扇",
+    "ParamList": [],
+    "Priority": 776,
+    "Rarity": "Low",
+    "Version": "3.6"
+  },
+  "4044605": {
+    "AchievementID": 4044605,
+    "SeriesID": 4,
+    "AchievementTitle": "没料到这手吧",
+    "AchievementDesc": "未使用「暂停时间」的方法通过排气扇并且成功",
+    "ParamList": [],
+    "Priority": 775,
+    "Rarity": "Low",
+    "Version": "3.6"
+  },
+  "4044606": {
+    "AchievementID": 4044606,
+    "SeriesID": 4,
+    "AchievementTitle": "这不是旋转门",
+    "AchievementDesc": "未使用「暂停时间」的方法通过排气扇并且失败",
+    "ParamList": [],
+    "Priority": 774,
+    "Rarity": "Low",
+    "Version": "3.6"
+  },
+  "4044607": {
+    "AchievementID": 4044607,
+    "SeriesID": 4,
+    "AchievementTitle": "食物泡与溶酶体",
+    "AchievementDesc": "使用巴特鲁斯的视角，吞掉一只宝箱",
+    "ParamList": [],
+    "Priority": 773,
+    "Rarity": "Low",
+    "Version": "3.6"
+  },
+  "4044608": {
+    "AchievementID": 4044608,
+    "SeriesID": 4,
+    "AchievementTitle": "扎格列斯的神威",
+    "AchievementDesc": "使用巴特鲁斯的视角，通过攻击消灭一只怪物",
+    "ParamList": [],
+    "Priority": 772,
+    "Rarity": "Low",
+    "Version": "3.6"
+  },
+  "4044609": {
+    "AchievementID": 4044609,
+    "SeriesID": 4,
+    "AchievementTitle": "被偷走的流体力学",
+    "AchievementDesc": "使用巴特鲁斯的视角，在水中游泳5秒以上",
+    "ParamList": [
+      {
+        "Value": 5
+      }
+    ],
+    "Priority": 771,
+    "Rarity": "Low",
+    "Version": "3.6"
+  },
+  "4044610": {
+    "AchievementID": 4044610,
+    "SeriesID": 4,
+    "AchievementTitle": "存钱罐的自我修养",
+    "AchievementDesc": "使用巴特鲁斯的视角，完成隐藏的终极挑战",
+    "ParamList": [],
+    "Priority": 770,
+    "Rarity": "Low",
+    "Version": "3.6"
+  },
+  "4044611": {
+    "AchievementID": 4044611,
+    "SeriesID": 4,
+    "AchievementTitle": "我在树庭修文物",
+    "AchievementDesc": "使用「欧洛尼斯祷言」恢复被震碎的小雕像",
+    "ParamList": [],
+    "Priority": 769,
+    "Rarity": "Low",
+    "Version": "3.6"
+  },
+  "4044612": {
+    "AchievementID": 4044612,
+    "SeriesID": 4,
+    "AchievementTitle": "下勾拳",
+    "AchievementDesc": "别以为躲在外侧扇区就没事了…<br><div style=\"color:#8790abff;\">※使用扎格列斯之手的冲拳动作，击败「全世矩阵」无名泰坦大墓角落处的敌人</div>",
+    "ParamList": [],
+    "Priority": 768,
+    "Rarity": "Low",
+    "ShowType": "HiddenDesc",
+    "Version": "3.6"
+  },
+  "4044613": {
+    "AchievementID": 4044613,
+    "SeriesID": 4,
+    "AchievementTitle": "记忆分类回收",
+    "AchievementDesc": "在「全世矩阵」无名泰坦大墓，发现一只似曾相识的桶",
+    "ParamList": [],
+    "Priority": 767,
+    "Rarity": "Low",
+    "Version": "3.6"
+  },
+  "4044614": {
+    "AchievementID": 4044614,
+    "SeriesID": 4,
+    "AchievementTitle": "猪！猪！猪！",
+    "AchievementDesc": "在「全世矩阵」无名泰坦大墓，发现一个似曾相识的画框",
+    "ParamList": [],
+    "Priority": 766,
+    "Rarity": "Low",
+    "Version": "3.6"
+  },
+  "4044615": {
+    "AchievementID": 4044615,
+    "SeriesID": 4,
+    "AchievementTitle": "虫鸣秘闻：四者之系",
+    "AchievementDesc": "正确的四者是哪四者？<br><div style=\"color:#8790abff;\">※解开「全世矩阵」无名泰坦大墓的预言谜题</div>",
+    "ParamList": [],
+    "Priority": 765,
+    "Rarity": "Low",
+    "ShowType": "HiddenDesc",
+    "Version": "3.6"
+  },
+  "4044616": {
+    "AchievementID": 4044616,
+    "SeriesID": 4,
+    "AchievementTitle": "虫鸣秘闻：囹圄之悟",
+    "AchievementDesc": "如何供奉无限？<br><div style=\"color:#8790abff;\">※解开「辉痕圣林」神悟树庭的预言谜题</div>",
+    "ParamList": [],
+    "Priority": 764,
+    "Rarity": "Low",
+    "ShowType": "HiddenDesc",
+    "Version": "3.6"
   },
   "4051001": {
     "AchievementID": 4051001,
@@ -10466,7 +10721,7 @@
     "AchievementID": 4054414,
     "SeriesID": 5,
     "AchievementTitle": "绿一色",
-    "AchievementDesc": "使用青雀小鸟，并在同一局对战中，累计使用道具14次",
+    "AchievementDesc": "在「折纸小鸟对对碰」活动中使用青雀小鸟，并在同一局对战中，累计使用道具14次",
     "ParamList": [
       {
         "Value": 14
@@ -10480,7 +10735,7 @@
     "AchievementID": 4054415,
     "SeriesID": 5,
     "AchievementTitle": "还是我的回合",
-    "AchievementDesc": "双人对战中，同一回合内，己方连续行动步数达到8",
+    "AchievementDesc": "在「折纸小鸟对对碰」活动的双人对战中，同一回合内，己方连续行动步数达到8",
     "ParamList": [
       {
         "Value": 8
@@ -10494,7 +10749,7 @@
     "AchievementID": 4054416,
     "SeriesID": 5,
     "AchievementTitle": "波音小鸟777",
-    "AchievementDesc": "双人对战中，己方小鸟最高战力达到777",
+    "AchievementDesc": "在「折纸小鸟对对碰」活动的双人对战中，己方小鸟最高战力达到777",
     "ParamList": [
       {
         "Value": 777
@@ -10508,7 +10763,7 @@
     "AchievementID": 4054417,
     "SeriesID": 5,
     "AchievementTitle": "三好学啾",
-    "AchievementDesc": "将所有道具全部强化至3星",
+    "AchievementDesc": "在「折纸小鸟对对碰」活动中，将所有道具全部强化至3星",
     "ParamList": [
       {
         "Value": 3
@@ -10522,7 +10777,7 @@
     "AchievementID": 4054418,
     "SeriesID": 5,
     "AchievementTitle": "今天开始做老板",
-    "AchievementDesc": "获得街机店经营权",
+    "AchievementDesc": "在「折纸小鸟对对碰」活动中，获得街机店经营权",
     "ParamList": [],
     "Priority": 427,
     "Rarity": "Low",
@@ -10532,7 +10787,7 @@
     "AchievementID": 4054419,
     "SeriesID": 5,
     "AchievementTitle": "双鸟成行",
-    "AchievementDesc": "目睹波提欧和青雀双双变作折纸小鸟",
+    "AchievementDesc": "在「折纸小鸟对对碰」活动中，目睹波提欧和青雀双双变作折纸小鸟",
     "ParamList": [],
     "Priority": 426,
     "Rarity": "Low",
@@ -10542,7 +10797,7 @@
     "AchievementID": 4054420,
     "SeriesID": 5,
     "AchievementTitle": "你醒啦，起来打工吧！",
-    "AchievementDesc": "招募幽灵小鸟作为街机店员工",
+    "AchievementDesc": "在「折纸小鸟对对碰」活动中，招募幽灵小鸟作为街机店员工",
     "ParamList": [],
     "Priority": 425,
     "Rarity": "Mid",
@@ -10691,6 +10946,170 @@
     "Priority": 411,
     "Rarity": "Low",
     "Version": "3.5"
+  },
+  "4054601": {
+    "AchievementID": 4054601,
+    "SeriesID": 5,
+    "AchievementTitle": "今已亭亭如盖",
+    "AchievementDesc": "大地的旧神与新神啊，是否还会追怀昔日的友人？<br><div style=\"color:#8790abff;\">※窥探「辉痕圣林」神悟树庭全部的追忆残像</div>",
+    "ParamList": [],
+    "Priority": 410,
+    "Rarity": "Low",
+    "ShowType": "HiddenDesc",
+    "Version": "3.6"
+  },
+  "4054602": {
+    "AchievementID": 4054602,
+    "SeriesID": 5,
+    "AchievementTitle": "无我所忆",
+    "AchievementDesc": "完成与神秘少女的最后一次交谈…真的是最后一次吗？",
+    "ParamList": [],
+    "Priority": 409,
+    "Rarity": "Low",
+    "ShowType": "ShowAfterFinish",
+    "Version": "3.6"
+  },
+  "4054603": {
+    "AchievementID": 4054603,
+    "SeriesID": 5,
+    "AchievementTitle": "如何能静止我的心跳？",
+    "AchievementDesc": "在「辉痕圣林」神悟树庭，哀悼一颗被焚毁的心脏",
+    "ParamList": [],
+    "Priority": 408,
+    "Rarity": "Low",
+    "ShowType": "ShowAfterFinish",
+    "Version": "3.6"
+  },
+  "4054604": {
+    "AchievementID": 4054604,
+    "SeriesID": 5,
+    "AchievementTitle": "善恶的彼岸",
+    "AchievementDesc": "在「辉痕圣林」神悟树庭，长久凝视那无言的空洞",
+    "ParamList": [],
+    "Priority": 407,
+    "Rarity": "Low",
+    "ShowType": "ShowAfterFinish",
+    "Version": "3.6"
+  },
+  "4054605": {
+    "AchievementID": 4054605,
+    "SeriesID": 5,
+    "AchievementTitle": "人性的，太人性的",
+    "AchievementDesc": "在「全世矩阵」无名泰坦大墓的深处，与同伴们下定再次出发的决心",
+    "ParamList": [],
+    "Priority": 406,
+    "Rarity": "Low",
+    "ShowType": "ShowAfterFinish",
+    "Version": "3.6"
+  },
+  "4054606": {
+    "AchievementID": 4054606,
+    "SeriesID": 5,
+    "AchievementTitle": "庞大，渺小，及人类意识",
+    "AchievementDesc": "在「辉痕圣林」神悟树庭，去往封印地室更深处，见证矩阵光点的变化",
+    "ParamList": [],
+    "Priority": 405,
+    "Rarity": "Low",
+    "ShowType": "ShowAfterFinish",
+    "Version": "3.6"
+  },
+  "4054607": {
+    "AchievementID": 4054607,
+    "SeriesID": 5,
+    "AchievementTitle": "超时空大地兽",
+    "AchievementDesc": "在「天气真好，养它！」中，发现这只小大地兽的特殊性",
+    "ParamList": [],
+    "Priority": 404,
+    "Rarity": "Low",
+    "Version": "3.6"
+  },
+  "4054608": {
+    "AchievementID": 4054608,
+    "SeriesID": 5,
+    "AchievementTitle": "大地兽一家",
+    "AchievementDesc": "在「天气真好，养它！」中，陪伴小大地兽顺利成长",
+    "ParamList": [],
+    "Priority": 403,
+    "Rarity": "Mid",
+    "Version": "3.6"
+  },
+  "4054609": {
+    "AchievementID": 4054609,
+    "SeriesID": 5,
+    "AchievementTitle": "雷达图，拜拜",
+    "AchievementDesc": "在「天气真好，养它！」中，让小大地兽的三个属性均成长至最高水平",
+    "ParamList": [],
+    "Priority": 402,
+    "Rarity": "Low",
+    "Version": "3.6"
+  },
+  "4054610": {
+    "AchievementID": 4054610,
+    "SeriesID": 5,
+    "AchievementTitle": "早期教育",
+    "AchievementDesc": "在「天气真好，养它！」中，小大地兽共计获得了25条独特的特质",
+    "ParamList": [
+      {
+        "Value": 25
+      }
+    ],
+    "Priority": 401,
+    "Rarity": "Low",
+    "Version": "3.6"
+  },
+  "4054611": {
+    "AchievementID": 4054611,
+    "SeriesID": 5,
+    "AchievementTitle": "小兽当家",
+    "AchievementDesc": "在「天气真好，养它！」中，由小大地兽自己独立完成一次锻炼活动",
+    "ParamList": [],
+    "Priority": 400,
+    "Rarity": "Low",
+    "Version": "3.6"
+  },
+  "4054612": {
+    "AchievementID": 4054612,
+    "SeriesID": 5,
+    "AchievementTitle": "这不是躲避球",
+    "AchievementDesc": "在「天气真好，养它！」中，和小大地兽嬉戏时不小心用球打到它",
+    "ParamList": [],
+    "Priority": 399,
+    "Rarity": "Low",
+    "Version": "3.6"
+  },
+  "4054613": {
+    "AchievementID": 4054613,
+    "SeriesID": 5,
+    "AchievementTitle": "你不吃我吃",
+    "AchievementDesc": "在「天气真好，养它！」中，被小大地兽抱怨过饭菜的口味问题",
+    "ParamList": [],
+    "Priority": 398,
+    "Rarity": "Low",
+    "Version": "3.6"
+  },
+  "4054614": {
+    "AchievementID": 4054614,
+    "SeriesID": 5,
+    "AchievementTitle": "红土小当家",
+    "AchievementDesc": "在「天气真好，养它！」中，从来没有让小大地兽抱怨过饭菜口味",
+    "ParamList": [],
+    "Priority": 397,
+    "Rarity": "Low",
+    "Version": "3.6"
+  },
+  "4054615": {
+    "AchievementID": 4054615,
+    "SeriesID": 5,
+    "AchievementTitle": "一日为师…",
+    "AchievementDesc": "在「天气真好，养它！」中，收到9封来自小大地兽的感谢",
+    "ParamList": [
+      {
+        "Value": 9
+      }
+    ],
+    "Priority": 396,
+    "Rarity": "Low",
+    "Version": "3.6"
   },
   "4060101": {
     "AchievementID": 4060101,
@@ -14553,6 +14972,96 @@
     "Priority": 754,
     "Rarity": "Low",
     "Version": "3.5"
+  },
+  "4074601": {
+    "AchievementID": 4074601,
+    "SeriesID": 7,
+    "AchievementTitle": "梦渡往昔，露载浮生",
+    "AchievementDesc": "使用我方角色长夜月的长夜，累计施放10次【迷梦，流失，如露】",
+    "ParamList": [
+      {
+        "Value": 10
+      }
+    ],
+    "Priority": 753,
+    "Rarity": "Low",
+    "ShowType": "ShowAfterFinish",
+    "Version": "3.6"
+  },
+  "4074602": {
+    "AchievementID": 4074602,
+    "SeriesID": 7,
+    "AchievementTitle": "特别的祝福",
+    "AchievementDesc": "使用三月七•存护对长夜月施放战技【可爱即是正义】",
+    "ParamList": [],
+    "Priority": 752,
+    "Rarity": "Low",
+    "ShowType": "ShowAfterFinish",
+    "Version": "3.6"
+  },
+  "4074603": {
+    "AchievementID": 4074603,
+    "SeriesID": 7,
+    "AchievementTitle": "你可以完全信任丹恒",
+    "AchievementDesc": "单场战斗中，使用我方角色丹恒•腾荒累计提供100000点护盾",
+    "ParamList": [
+      {
+        "Value": 100000
+      }
+    ],
+    "Priority": 751,
+    "Rarity": "Low",
+    "ShowType": "ShowAfterFinish",
+    "Version": "3.6"
+  },
+  "4074604": {
+    "AchievementID": 4074604,
+    "SeriesID": 7,
+    "AchievementTitle": "有龙则灵",
+    "AchievementDesc": "【龙灵】依附在有召唤物的角色身上累计行动5次",
+    "ParamList": [
+      {
+        "Value": 5
+      }
+    ],
+    "Priority": 750,
+    "Rarity": "Low",
+    "ShowType": "ShowAfterFinish",
+    "Version": "3.6"
+  },
+  "4074605": {
+    "AchievementID": 4074605,
+    "SeriesID": 7,
+    "AchievementTitle": "盾之强者成名记",
+    "AchievementDesc": "【金血忆灵•裁定忘却之形】对锁定目标施放的3次单体攻击全部击中护盾",
+    "ParamList": [
+      {
+        "Value": 3
+      }
+    ],
+    "Priority": 749,
+    "Rarity": "Low",
+    "Version": "3.6"
+  },
+  "4074606": {
+    "AchievementID": 4074606,
+    "SeriesID": 7,
+    "AchievementTitle": "因信称义",
+    "AchievementDesc": "被【指名祸首】选中的我方角色在承受【金血忆灵•裁定忘却之形】的【罪血枭首】攻击后，当前生命值等于生命上限",
+    "ParamList": [],
+    "Priority": 748,
+    "Rarity": "Low",
+    "Version": "3.6"
+  },
+  "4074607": {
+    "AchievementID": 4074607,
+    "SeriesID": 7,
+    "AchievementTitle": "角动量守恒",
+    "AchievementDesc": "在【金血忆灵•翼蛇形】进入蓄力状态后，触发多次【扭矩反打】直至解除其蓄力状态",
+    "ParamList": [],
+    "Priority": 747,
+    "Rarity": "Low",
+    "Version": "3.6"
   },
   "4080101": {
     "AchievementID": 4080101,
