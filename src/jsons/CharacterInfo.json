@@ -996,7 +996,20 @@
     "faction": ["翁法罗斯"],
     "deploymentDate": 1758679200000
   },
-
+  "1415": {
+    "id": 1415,
+    "MiYoSheId": 5851,
+    "HoYoWikiId": 4003,
+    "name": "昔涟",
+    "avatar": "event-ugc-hoyowiki/2025/09/10/130460543/e6aaae48d007972cdea8b532566d7722_1186379690528778586.png",
+    "path": "记忆",
+    "combattype": "冰",
+    "star": 5,
+    "warp": "limited",
+    "version": 3.7,
+    "faction": ["翁法罗斯"],
+    "deploymentDate": 1762308000000
+  },
   "8002": {
     "id": 8002,
     "MiYoSheId": 3128,
