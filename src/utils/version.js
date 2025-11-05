@@ -1,4 +1,4 @@
-export const achievementInfoVersion = '3.6.0'
+export const achievementInfoVersion = '3.7.0'
 
 export const achievementSeriesVersion = '3.4.3'
 
@@ -12,4 +12,4 @@ export const strategyInfoVersion = '3.4.3'
 
 export const authorInfoVersion = '3.4.3'
 
-export const characterInfoVersion = '3.6.1'
+export const characterInfoVersion = '3.7.0'

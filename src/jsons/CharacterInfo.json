@@ -127,7 +127,7 @@
     "star": 5,
     "warp": "limited",
     "version": 3.4,
-    "faction": [],
+    "faction": ["银河"],
     "deploymentDate": 1752206400000
   },
   "1015": {
@@ -141,7 +141,7 @@
     "star": 5,
     "warp": "limited",
     "version": 3.4,
-    "faction": [],
+    "faction": ["银河"],
     "deploymentDate": 1752206400000
   },
   "1101": {
@@ -812,6 +812,20 @@
     "version": 2.6,
     "faction": ["巡海游侠"],
     "deploymentDate": 1729648800000
+  },
+  "1321": {
+    "id": 1321,
+    "MiYoSheId": 6025,
+    "HoYoWikiId": 4060,
+    "name": "大丽花",
+    "avatar": "event-ugc-hoyowiki/2025/10/31/6668036/28d5a54793c76d895cea1ac4aa909a9d_2092518042609337944.png",
+    "path": "虚无",
+    "combattype": "火",
+    "star": 5,
+    "warp": "limited",
+    "version": 3.8,
+    "faction": ["银河"],
+    "deploymentDate": 1765936800000
   },
   "1401": {
     "id": 1401,
