@@ -1887,7 +1887,7 @@
     "AchievementTitle": "月盈，在盛开的樱花下",
     "AchievementDesc": "故事之外，有谁还在？<br><div style=\"color:#8790abff;\">※告别翁法罗斯，窥见下一站的线索</div>",
     "ParamList": [],
-    "Priority": 869,
+    "Priority": 377,
     "Rarity": "Low",
     "ShowType": "HiddenDesc",
     "Version": "3.7"
@@ -1957,6 +1957,72 @@
     "Rarity": "High",
     "ShowType": "HiddenDesc",
     "Version": "3.7"
+  },
+  "4034801": {
+    "AchievementID": 4034801,
+    "SeriesID": 3,
+    "AchievementTitle": "高尚者的墓志铭",
+    "AchievementDesc": "坚持信念的代价，总是迷失返回的路<br><div style=\"color:#8790abff;\">※流萤视角下，与AR-214重逢</div>",
+    "ParamList": [],
+    "Priority": 869,
+    "Rarity": "Mid",
+    "ShowType": "HiddenDesc",
+    "Version": "3.8"
+  },
+  "4034802": {
+    "AchievementID": 4034802,
+    "SeriesID": 3,
+    "AchievementTitle": "过去是未来的倒影",
+    "AchievementDesc": "时间在刀尖上舞蹈，只有光能刺向未来<br><div style=\"color:#8790abff;\">※见证「终末」与「开拓」的交汇</div>",
+    "ParamList": [],
+    "Priority": 868,
+    "Rarity": "Mid",
+    "ShowType": "HiddenDesc",
+    "Version": "3.8"
+  },
+  "4034803": {
+    "AchievementID": 4034803,
+    "SeriesID": 3,
+    "AchievementTitle": "飞翔无需理由",
+    "AchievementDesc": "哪怕一切为时已晚，我们还是能去唱，自己能唱的歌<br><div style=\"color:#8790abff;\">※见证逐梦者的谐乐大典</div>",
+    "ParamList": [],
+    "Priority": 867,
+    "Rarity": "Mid",
+    "ShowType": "HiddenDesc",
+    "Version": "3.8"
+  },
+  "4034804": {
+    "AchievementID": 4034804,
+    "SeriesID": 3,
+    "AchievementTitle": "生是与死擦肩而过",
+    "AchievementDesc": "焚烧众生者是时间，时间又使其熄灭<br><div style=\"color:#8790abff;\">※揭晓关于末王的真相</div>",
+    "ParamList": [],
+    "Priority": 866,
+    "Rarity": "Mid",
+    "ShowType": "HiddenDesc",
+    "Version": "3.8"
+  },
+  "4034805": {
+    "AchievementID": 4034805,
+    "SeriesID": 3,
+    "AchievementTitle": "记忆是梦的开场白",
+    "AchievementDesc": "一个人就能独自上演死亡，而美好需要回应<br><div style=\"color:#8790abff;\">※履行与流萤的约定</div>",
+    "ParamList": [],
+    "Priority": 865,
+    "Rarity": "Mid",
+    "ShowType": "ShowAfterFinish",
+    "Version": "3.8"
+  },
+  "4034806": {
+    "AchievementID": 4034806,
+    "SeriesID": 3,
+    "AchievementTitle": "忘却是梦的谢幕礼",
+    "AchievementDesc": "凡生命皆开启神秘，凡神秘皆蒙着黑暗，凡黑暗皆承载希望，凡希望皆服从生命<br><div style=\"color:#8790abff;\">※找到大丽花留给你的一簇记忆</div>",
+    "ParamList": [],
+    "Priority": 864,
+    "Rarity": "Mid",
+    "ShowType": "ShowAfterFinish",
+    "Version": "3.8"
   },
   "4040101": {
     "AchievementID": 4040101,
@@ -4774,6 +4840,36 @@
     "Rarity": "Low",
     "ShowType": "ShowAfterFinish",
     "Version": "3.7"
+  },
+  "4044801": {
+    "AchievementID": 4044801,
+    "SeriesID": 4,
+    "AchievementTitle": "钟末视界",
+    "AchievementDesc": "修复「橡木鸣蛀之梦」中所有坏掉的梦境迷钟",
+    "ParamList": [],
+    "Priority": 746,
+    "Rarity": "Low",
+    "Version": "3.8"
+  },
+  "4044802": {
+    "AchievementID": 4044802,
+    "SeriesID": 4,
+    "AchievementTitle": "我罪常在我前",
+    "AchievementDesc": "在「橡木鸣蛀之梦」的未走之路中，得到梦主的信件",
+    "ParamList": [],
+    "Priority": 745,
+    "Rarity": "Low",
+    "Version": "3.8"
+  },
+  "4044803": {
+    "AchievementID": 4044803,
+    "SeriesID": 4,
+    "AchievementTitle": "歧路唯余倒影",
+    "AchievementDesc": "在「橡木鸣蛀之梦」的未走之路中，沿着另一条道路前进",
+    "ParamList": [],
+    "Priority": 744,
+    "Rarity": "Low",
+    "Version": "3.8"
   },
   "4051001": {
     "AchievementID": 4051001,
@@ -11527,6 +11623,138 @@
     "Rarity": "Low",
     "Version": "3.7"
   },
+  "4054801": {
+    "AchievementID": 4054801,
+    "SeriesID": 5,
+    "AchievementTitle": "长眠之梦的呓语",
+    "AchievementDesc": "在「橡木鸣蛀之梦」中，重温昔日旧梦",
+    "ParamList": [],
+    "Priority": 383,
+    "Rarity": "Low",
+    "Version": "3.8"
+  },
+  "4054802": {
+    "AchievementID": 4054802,
+    "SeriesID": 5,
+    "AchievementTitle": "大满贯",
+    "AchievementDesc": "在「黄金嗷呜大师赛」中，单场赛事累计获得8次胜利",
+    "ParamList": [
+      {
+        "Value": 8
+      }
+    ],
+    "Priority": 382,
+    "Rarity": "Low",
+    "Version": "3.8"
+  },
+  "4054803": {
+    "AchievementID": 4054803,
+    "SeriesID": 5,
+    "AchievementTitle": "奇美拉大师",
+    "AchievementDesc": "在「黄金嗷呜大师赛」中，赛事段位达到黄金",
+    "ParamList": [],
+    "Priority": 381,
+    "Rarity": "Low",
+    "Version": "3.8"
+  },
+  "4054804": {
+    "AchievementID": 4054804,
+    "SeriesID": 5,
+    "AchievementTitle": "赢在起跑线",
+    "AchievementDesc": "在「黄金嗷呜大师赛」中，完成奇美拉世界锦标赛的定级赛",
+    "ParamList": [],
+    "Priority": 380,
+    "Rarity": "Low",
+    "Version": "3.8"
+  },
+  "4054805": {
+    "AchievementID": 4054805,
+    "SeriesID": 5,
+    "AchievementTitle": "传奇挑战者",
+    "AchievementDesc": "在「黄金嗷呜大师赛」中，与玩家对战获得8场全胜",
+    "ParamList": [
+      {
+        "Value": 8
+      }
+    ],
+    "Priority": 379,
+    "Rarity": "Low",
+    "ShowType": "ShowAfterFinish",
+    "Version": "3.8"
+  },
+  "4054806": {
+    "AchievementID": 4054806,
+    "SeriesID": 5,
+    "AchievementTitle": "奥赫玛地区冠军",
+    "AchievementDesc": "在「黄金嗷呜大师赛」中，击败黄金对决模式中的所有奇美拉训练家",
+    "ParamList": [],
+    "Priority": 378,
+    "Rarity": "Low",
+    "ShowType": "ShowAfterFinish",
+    "Version": "3.8"
+  },
+  "4054807": {
+    "AchievementID": 4054807,
+    "SeriesID": 7,
+    "AchievementTitle": "逆卡巴拉计数器",
+    "AchievementDesc": "在与「巨剑守护」任意难度的战斗中，我方角色累计回复12次【生命计数】",
+    "ParamList": [
+      {
+        "Value": 12
+      }
+    ],
+    "Priority": 736,
+    "Rarity": "Low",
+    "Version": "3.8"
+  },
+  "4054808": {
+    "AchievementID": 4054808,
+    "SeriesID": 7,
+    "AchievementTitle": "超越射击",
+    "AchievementDesc": "在与「狮震八方」任意难度的战斗中，我方目标累计消灭15个【后排目标】",
+    "ParamList": [
+      {
+        "Value": 15
+      }
+    ],
+    "Priority": 735,
+    "Rarity": "Low",
+    "Version": "3.8"
+  },
+  "4054809": {
+    "AchievementID": 4054809,
+    "SeriesID": 7,
+    "AchievementTitle": "疯狂钻石",
+    "AchievementDesc": "在与「蚀心影魔」噩梦难度的战斗中，我方全体角色【负载生命值】均不超过8000并通关",
+    "ParamList": [
+      {
+        "Value": 8000
+      }
+    ],
+    "Priority": 734,
+    "Rarity": "Low",
+    "Version": "3.8"
+  },
+  "4054810": {
+    "AchievementID": 4054810,
+    "SeriesID": 7,
+    "AchievementTitle": "无暇赴死",
+    "AchievementDesc": "在与「戮力双雄」任意难度的战斗中，触发一次敌方首领的【戮力同心】",
+    "ParamList": [],
+    "Priority": 733,
+    "Rarity": "Low",
+    "Version": "3.8"
+  },
+  "4054811": {
+    "AchievementID": 4054811,
+    "SeriesID": 7,
+    "AchievementTitle": "塞壬之泪",
+    "AchievementDesc": "在与「哀歌塞壬」任意难度的战斗中，我方「致幻人鱼」受到一次致命伤害",
+    "ParamList": [],
+    "Priority": 732,
+    "Rarity": "Low",
+    "Version": "3.8"
+  },
   "4060101": {
     "AchievementID": 4060101,
     "SeriesID": 6,
@@ -15576,6 +15804,60 @@
     "Priority": 740,
     "Rarity": "Low",
     "Version": "3.7"
+  },
+  "4074801": {
+    "AchievementID": 4074801,
+    "SeriesID": 7,
+    "AchievementTitle": "弃旧，恋新",
+    "AchievementDesc": "战斗胜利时，大丽花的【共舞者】队友与战斗开始时不为同一人",
+    "ParamList": [],
+    "Priority": 739,
+    "Rarity": "Low",
+    "ShowType": "ShowAfterFinish",
+    "Version": "3.8"
+  },
+  "4074802": {
+    "AchievementID": 4074802,
+    "SeriesID": 7,
+    "AchievementTitle": "你和你的掩体一样可笑",
+    "AchievementDesc": "在敌方目标处于韧性保护状态时，使用超击破伤害将其消灭",
+    "ParamList": [],
+    "Priority": 738,
+    "Rarity": "Low",
+    "Version": "3.8"
+  },
+  "4074803": {
+    "AchievementID": 4074803,
+    "SeriesID": 7,
+    "AchievementTitle": "舞！舞！舞！",
+    "AchievementDesc": "单场战斗中，「同谐」命途开拓者、忘归人和大丽花全部施放过终结技",
+    "ParamList": [],
+    "Priority": 737,
+    "Rarity": "Low",
+    "ShowType": "ShowAfterFinish",
+    "Version": "3.8"
+  },
+  "4074804": {
+    "AchievementID": 4074804,
+    "SeriesID": 7,
+    "AchievementTitle": "乌合之虫",
+    "AchievementDesc": "在与「示死祸源：深魇蝗灾」的战斗中，通过消灭所有「幼蛰虫」使其退出【基因复制】状态",
+    "ParamList": [],
+    "Priority": 731,
+    "Rarity": "Low",
+    "ShowType": "ShowAfterFinish",
+    "Version": "3.8"
+  },
+  "4074805": {
+    "AchievementID": 4074805,
+    "SeriesID": 7,
+    "AchievementTitle": "擒虫先擒蝗",
+    "AchievementDesc": "在与「示死祸源：深魇蝗灾」的战斗中，在尚未消灭所有「幼蛰虫」时击破「示死祸源：深魇蝗灾」，且在未退出【基因复制】状态时恢复韧性",
+    "ParamList": [],
+    "Priority": 730,
+    "Rarity": "Low",
+    "ShowType": "ShowAfterFinish",
+    "Version": "3.8"
   },
   "4080101": {
     "AchievementID": 4080101,
