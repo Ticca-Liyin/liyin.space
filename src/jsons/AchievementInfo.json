@@ -2024,6 +2024,127 @@
     "ShowType": "ShowAfterFinish",
     "Version": "3.8"
   },
+  "4035001": {
+    "AchievementID": 4035001,
+    "SeriesID": 3,
+    "AchievementTitle": "此地是神不在的乐园",
+    "AchievementDesc": "见证阿哈赐福之地的景象<br><div style=\"color:#8790abff;\">※在二维市登陆</div>",
+    "ParamList": [],
+    "Priority": 863,
+    "Rarity": "Mid",
+    "ShowType": "HiddenDesc",
+    "Version": "4.0"
+  },
+  "4035002": {
+    "AchievementID": 4035002,
+    "SeriesID": 3,
+    "AchievementTitle": "银河战力党",
+    "AchievementDesc": "焚风到底能接黄泉几刀啊？<br><div style=\"color:#8790abff;\">※体验卡牌游戏《银河战力党》</div>",
+    "ParamList": [],
+    "Priority": 862,
+    "Rarity": "Mid",
+    "ShowType": "HiddenDesc",
+    "Version": "4.0"
+  },
+  "4035003": {
+    "AchievementID": 4035003,
+    "SeriesID": 3,
+    "AchievementTitle": "对不起青春",
+    "AchievementDesc": "谁能拒绝重温青葱岁月？<br><div style=\"color:#8790abff;\">※在绘世学院度过快乐的学年尾声</div>",
+    "ParamList": [],
+    "Priority": 861,
+    "Rarity": "Mid",
+    "ShowType": "HiddenDesc",
+    "Version": "4.0"
+  },
+  "4035004": {
+    "AchievementID": 4035004,
+    "SeriesID": 3,
+    "AchievementTitle": "变相怪杰",
+    "AchievementDesc": "这个女孩，绝对是个灵魂画手！<br><div style=\"color:#8790abff;\">※得到谒者的面具…虽然工艺很粗糙</div>",
+    "ParamList": [],
+    "Priority": 860,
+    "Rarity": "Mid",
+    "ShowType": "HiddenDesc",
+    "Version": "4.0"
+  },
+  "4035005": {
+    "AchievementID": 4035005,
+    "SeriesID": 3,
+    "AchievementTitle": "编辑部的故事",
+    "AchievementDesc": "八卦与流言，臆想和编派，普罗大众的最爱<br><div style=\"color:#8790abff;\">※接手《狸狸周刊》，成为总编</div>",
+    "ParamList": [],
+    "Priority": 859,
+    "Rarity": "Mid",
+    "ShowType": "HiddenDesc",
+    "Version": "4.0"
+  },
+  "4035006": {
+    "AchievementID": 4035006,
+    "SeriesID": 3,
+    "AchievementTitle": "醉乡路稳宜频到",
+    "AchievementDesc": "此处并非世界尽头，处处皆是世界尽头<br><div style=\"color:#8790abff;\">※来到「世界尽头」酒馆</div>",
+    "ParamList": [],
+    "Priority": 858,
+    "Rarity": "Mid",
+    "ShowType": "HiddenDesc",
+    "Version": "4.0"
+  },
+  "4035007": {
+    "AchievementID": 4035007,
+    "SeriesID": 3,
+    "AchievementTitle": "笑的燃点",
+    "AchievementDesc": "你先看到了一点火花，然后是背后喧闹的黑暗<br><div style=\"color:#8790abff;\">※见证火花诞生的起源</div>",
+    "ParamList": [],
+    "Priority": 857,
+    "Rarity": "Mid",
+    "ShowType": "HiddenDesc",
+    "Version": "4.0"
+  },
+  "4035008": {
+    "AchievementID": 4035008,
+    "SeriesID": 3,
+    "AchievementTitle": "覆面的时刻",
+    "AchievementDesc": "你，已是假面愚者<br><div style=\"color:#8790abff;\">※令「极乐之星」为你敞开</div>",
+    "ParamList": [],
+    "Priority": 856,
+    "Rarity": "Mid",
+    "ShowType": "HiddenDesc",
+    "Version": "4.0"
+  },
+  "4035009": {
+    "AchievementID": 4035009,
+    "SeriesID": 3,
+    "AchievementTitle": "神之果实",
+    "AchievementDesc": "乐园里还有其他水果吗？<br><div style=\"color:#8790abff;\">※这香蕉…我曾见过的。</div>",
+    "ParamList": [],
+    "Priority": 855,
+    "Rarity": "Mid",
+    "ShowType": "HiddenDesc",
+    "Version": "4.0"
+  },
+  "4035010": {
+    "AchievementID": 4035010,
+    "SeriesID": 3,
+    "AchievementTitle": "是退网了，不是落网了！",
+    "AchievementDesc": "本想大闹一场，但留在场上的却不是我…<br><div style=\"color:#8790abff;\">※结束「火花大会」的直播</div>",
+    "ParamList": [],
+    "Priority": 854,
+    "Rarity": "Mid",
+    "ShowType": "HiddenDesc",
+    "Version": "4.0"
+  },
+  "4035011": {
+    "AchievementID": 4035011,
+    "SeriesID": 3,
+    "AchievementTitle": "夏天、花火、某人的尸体",
+    "AchievementDesc": "谒见神明的仪式总要有祭品<br><div style=\"color:#8790abff;\">※见证幻月游戏的残酷开场</div>",
+    "ParamList": [],
+    "Priority": 853,
+    "Rarity": "Mid",
+    "ShowType": "HiddenDesc",
+    "Version": "4.0"
+  },
   "4040101": {
     "AchievementID": 4040101,
     "SeriesID": 4,
@@ -4870,6 +4991,619 @@
     "Priority": 744,
     "Rarity": "Low",
     "Version": "3.8"
+  },
+  "4045001": {
+    "AchievementID": 4045001,
+    "SeriesID": 4,
+    "AchievementTitle": "乐园的纪念品",
+    "AchievementDesc": "开启120次二相乐园战利品",
+    "ParamList": [
+      {
+        "Value": 120
+      }
+    ],
+    "Priority": 743,
+    "Rarity": "Low",
+    "Version": "4.0"
+  },
+  "4045002": {
+    "AchievementID": 4045002,
+    "SeriesID": 4,
+    "AchievementTitle": "欢迎来到二次元",
+    "AchievementDesc": "在「二次元JUMP！」的任意一个小游戏中游玩120秒",
+    "ParamList": [
+      {
+        "Value": 120
+      }
+    ],
+    "Priority": 742,
+    "Rarity": "Low",
+    "Version": "4.0"
+  },
+  "4045003": {
+    "AchievementID": 4045003,
+    "SeriesID": 4,
+    "AchievementTitle": "身外之物",
+    "AchievementDesc": "在「二次元JUMP！」的任意一个小游戏中坚持40秒不获得像素金币",
+    "ParamList": [
+      {
+        "Value": 40
+      }
+    ],
+    "Priority": 741,
+    "Rarity": "Low",
+    "Version": "4.0"
+  },
+  "4045004": {
+    "AchievementID": 4045004,
+    "SeriesID": 4,
+    "AchievementTitle": "二次元发烧友",
+    "AchievementDesc": "在「二次元JUMP！」的三个尘灵小游戏中都获得1500分",
+    "ParamList": [
+      {
+        "Value": 1500
+      }
+    ],
+    "Priority": 740,
+    "Rarity": "Low",
+    "Version": "4.0"
+  },
+  "4045005": {
+    "AchievementID": 4045005,
+    "SeriesID": 4,
+    "AchievementTitle": "妈妈我有膝盖了",
+    "AchievementDesc": "第一次进入「二次元JUMP！」",
+    "ParamList": [],
+    "Priority": 739,
+    "Rarity": "Low",
+    "Version": "4.0"
+  },
+  "4045006": {
+    "AchievementID": 4045006,
+    "SeriesID": 4,
+    "AchievementTitle": "二次元高手",
+    "AchievementDesc": "在「二次元JUMP！」的冰面上连续滑行20秒",
+    "ParamList": [
+      {
+        "Value": 20
+      }
+    ],
+    "Priority": 738,
+    "Rarity": "Low",
+    "Version": "4.0"
+  },
+  "4045007": {
+    "AchievementID": 4045007,
+    "SeriesID": 4,
+    "AchievementTitle": "我已经理解了一切！",
+    "AchievementDesc": "在「二次元JUMP！」中完成训练关的隐藏挑战",
+    "ParamList": [],
+    "Priority": 737,
+    "Rarity": "Low",
+    "Version": "4.0"
+  },
+  "4045008": {
+    "AchievementID": 4045008,
+    "SeriesID": 4,
+    "AchievementTitle": "大地是我的琴键",
+    "AchievementDesc": "在二维市地铁站的「二次元JUMP！」中把所有音乐地砖全部踩一遍",
+    "ParamList": [],
+    "Priority": 736,
+    "Rarity": "Low",
+    "Version": "4.0"
+  },
+  "4045009": {
+    "AchievementID": 4045009,
+    "SeriesID": 4,
+    "AchievementTitle": "左脚踩右脚",
+    "AchievementDesc": "在「二次元JUMP！」中解锁三段跳",
+    "ParamList": [],
+    "Priority": 735,
+    "Rarity": "Low",
+    "Version": "4.0"
+  },
+  "4045010": {
+    "AchievementID": 4045010,
+    "SeriesID": 4,
+    "AchievementTitle": "开拓妖精，进化！",
+    "AchievementDesc": "在「二次元JUMP！」中首次解锁专属能力",
+    "ParamList": [],
+    "Priority": 734,
+    "Rarity": "Low",
+    "Version": "4.0"
+  },
+  "4045011": {
+    "AchievementID": 4045011,
+    "SeriesID": 4,
+    "AchievementTitle": "还说你没开挂？",
+    "AchievementDesc": "在「二次元JUMP！」中使用射击一次性获得6个及以上的像素金币",
+    "ParamList": [
+      {
+        "Value": 6
+      }
+    ],
+    "Priority": 733,
+    "Rarity": "Low",
+    "Version": "4.0"
+  },
+  "4045012": {
+    "AchievementID": 4045012,
+    "SeriesID": 4,
+    "AchievementTitle": "飞翔的开拓者",
+    "AchievementDesc": "在「二次元JUMP！」中操作开拓妖精维持滞空状态8秒以上",
+    "ParamList": [
+      {
+        "Value": 8
+      }
+    ],
+    "Priority": 732,
+    "Rarity": "Low",
+    "Version": "4.0"
+  },
+  "4045013": {
+    "AchievementID": 4045013,
+    "SeriesID": 8,
+    "AchievementTitle": "猫是液体",
+    "AchievementDesc": "在「二次元JUMP！」中被猫形机关挤压导致游戏失败",
+    "ParamList": [],
+    "Priority": 903,
+    "Rarity": "Low",
+    "Version": "4.0"
+  },
+  "4045014": {
+    "AchievementID": 4045014,
+    "SeriesID": 4,
+    "AchievementTitle": "乐园变奏：兔子坡",
+    "AchievementDesc": "演奏奇异乐章，找到藏在二维市的迷之生物",
+    "ParamList": [],
+    "Priority": 730,
+    "Rarity": "Low",
+    "Version": "4.0"
+  },
+  "4045015": {
+    "AchievementID": 4045015,
+    "SeriesID": 4,
+    "AchievementTitle": "乐园变奏：温蒂尼",
+    "AchievementDesc": "演奏奇异乐章，找到藏在绘世学院的迷之生物",
+    "ParamList": [],
+    "Priority": 729,
+    "Rarity": "Low",
+    "Version": "4.0"
+  },
+  "4045016": {
+    "AchievementID": 4045016,
+    "SeriesID": 4,
+    "AchievementTitle": "乐园变奏：刺猬汉斯",
+    "AchievementDesc": "演奏奇异乐章，找到藏在鸽川区的迷之生物",
+    "ParamList": [],
+    "Priority": 728,
+    "Rarity": "Low",
+    "Version": "4.0"
+  },
+  "4045017": {
+    "AchievementID": 4045017,
+    "SeriesID": 4,
+    "AchievementTitle": "乐园变奏：幽灵贡多拉",
+    "AchievementDesc": "演奏奇异乐章，找到藏在「世界尽头」的迷之生物",
+    "ParamList": [],
+    "Priority": 727,
+    "Rarity": "Low",
+    "Version": "4.0"
+  },
+  "4045018": {
+    "AchievementID": 4045018,
+    "SeriesID": 4,
+    "AchievementTitle": "好朋友的秘密基地",
+    "AchievementDesc": "进去玩具琴中的秘密空间",
+    "ParamList": [],
+    "Priority": 726,
+    "Rarity": "Low",
+    "Version": "4.0"
+  },
+  "4045019": {
+    "AchievementID": 4045019,
+    "SeriesID": 4,
+    "AchievementTitle": "铁人模式又如何",
+    "AchievementDesc": "在「星轨之兔」的地狱模式中一次达成三个挑战目标",
+    "ParamList": [],
+    "Priority": 725,
+    "Rarity": "Low",
+    "Version": "4.0"
+  },
+  "4045020": {
+    "AchievementID": 4045020,
+    "SeriesID": 4,
+    "AchievementTitle": "打满模组再开玩",
+    "AchievementDesc": "在「星轨之兔」的作弊模式中一次达成三个挑战目标",
+    "ParamList": [],
+    "Priority": 724,
+    "Rarity": "Low",
+    "Version": "4.0"
+  },
+  "4045021": {
+    "AchievementID": 4045021,
+    "SeriesID": 4,
+    "AchievementTitle": "尝试输入指令",
+    "AchievementDesc": "在「星轨之兔」的游戏首页按出传说中的万能秘笈<br><div style=\"color:#8790abff;\">※在「星轨之兔」的游戏首页按出「上上下下左右左右 返回 确认」</div>",
+    "ParamList": [],
+    "Priority": 723,
+    "Rarity": "Low",
+    "ShowType": "HiddenDesc",
+    "Version": "4.0"
+  },
+  "4045022": {
+    "AchievementID": 4045022,
+    "SeriesID": 4,
+    "AchievementTitle": "金色梦乡",
+    "AchievementDesc": "累计召集60个无名尘灵",
+    "ParamList": [
+      {
+        "Value": 60
+      }
+    ],
+    "Priority": 722,
+    "Rarity": "Low",
+    "Version": "4.0"
+  },
+  "4045023": {
+    "AchievementID": 4045023,
+    "SeriesID": 4,
+    "AchievementTitle": "大地上的灯",
+    "AchievementDesc": "首次完成浮脂溯源",
+    "ParamList": [],
+    "Priority": 721,
+    "Rarity": "Low",
+    "Version": "4.0"
+  },
+  "4045024": {
+    "AchievementID": 4045024,
+    "SeriesID": 4,
+    "AchievementTitle": "诗歌总集",
+    "AchievementDesc": "收集到任意一篇「浮脂记事」",
+    "ParamList": [],
+    "Priority": 720,
+    "Rarity": "Low",
+    "Version": "4.0"
+  },
+  "4045025": {
+    "AchievementID": 4045025,
+    "SeriesID": 4,
+    "AchievementTitle": "我不是徒然呼唤16进制",
+    "AchievementDesc": "在「浮脂记事」的相关玩法中连续向同一方向旋转16下",
+    "ParamList": [
+      {
+        "Value": 16
+      }
+    ],
+    "Priority": 719,
+    "Rarity": "Low",
+    "Version": "4.0"
+  },
+  "4045026": {
+    "AchievementID": 4045026,
+    "SeriesID": 4,
+    "AchievementTitle": "哈托彼亚的风语者",
+    "AchievementDesc": "在「浮脂记事」的相关玩法中于跳起的状态下旋转",
+    "ParamList": [],
+    "Priority": 718,
+    "Rarity": "Low",
+    "Version": "4.0"
+  },
+  "4045027": {
+    "AchievementID": 4045027,
+    "SeriesID": 4,
+    "AchievementTitle": "二相乐园的四次方",
+    "AchievementDesc": "在「浮脂记事」的相关玩法中，连续进行「左右左右左右左右」的方向切换",
+    "ParamList": [],
+    "Priority": 717,
+    "Rarity": "Low",
+    "Version": "4.0"
+  },
+  "4045028": {
+    "AchievementID": 4045028,
+    "SeriesID": 4,
+    "AchievementTitle": "强尼来喽！",
+    "AchievementDesc": "在二相乐园中找到11只不务正业的狸猫",
+    "ParamList": [
+      {
+        "Value": 11
+      }
+    ],
+    "Priority": 716,
+    "Rarity": "Low",
+    "Version": "4.0"
+  },
+  "4045029": {
+    "AchievementID": 4045029,
+    "SeriesID": 4,
+    "AchievementTitle": "你为什么穿着我的衣服？",
+    "AchievementDesc": "在二相乐园第一次和狸猫战斗",
+    "ParamList": [],
+    "Priority": 715,
+    "Rarity": "Low",
+    "Version": "4.0"
+  },
+  "4045030": {
+    "AchievementID": 4045030,
+    "SeriesID": 4,
+    "AchievementTitle": "二相捕手",
+    "AchievementDesc": "在「二次元JUMP」中，第一次捉住狸猫",
+    "ParamList": [],
+    "Priority": 714,
+    "Rarity": "Low",
+    "Version": "4.0"
+  },
+  "4045031": {
+    "AchievementID": 4045031,
+    "SeriesID": 4,
+    "AchievementTitle": "伪装者",
+    "AchievementDesc": "在二相乐园第一次识破狸猫的伪装",
+    "ParamList": [],
+    "Priority": 713,
+    "Rarity": "Low",
+    "Version": "4.0"
+  },
+  "4045032": {
+    "AchievementID": 4045032,
+    "SeriesID": 8,
+    "AchievementTitle": "道路千万条，安全第一条",
+    "AchievementDesc": "在二维市马路中央与汽车亲密接触",
+    "ParamList": [],
+    "Priority": 902,
+    "Rarity": "Low",
+    "ShowType": "ShowAfterFinish",
+    "Version": "4.0"
+  },
+  "4045033": {
+    "AchievementID": 4045033,
+    "SeriesID": 4,
+    "AchievementTitle": "幻月何年初照人",
+    "AchievementDesc": "登上二维市的@门，观赏幻月",
+    "ParamList": [],
+    "Priority": 711,
+    "Rarity": "Low",
+    "ShowType": "ShowAfterFinish",
+    "Version": "4.0"
+  },
+  "4045034": {
+    "AchievementID": 4045034,
+    "SeriesID": 4,
+    "AchievementTitle": "登上开拓之癫",
+    "AchievementDesc": "攀登至二维市的开拓者海报顶端",
+    "ParamList": [],
+    "Priority": 710,
+    "Rarity": "Low",
+    "ShowType": "ShowAfterFinish",
+    "Version": "4.0"
+  },
+  "4045035": {
+    "AchievementID": 4045035,
+    "SeriesID": 4,
+    "AchievementTitle": "凯瑟琳",
+    "AchievementDesc": "被火花抓入二次元后，成功获得新形态，逃出生天",
+    "ParamList": [],
+    "Priority": 709,
+    "Rarity": "Low",
+    "ShowType": "ShowAfterFinish",
+    "Version": "4.0"
+  },
+  "4045036": {
+    "AchievementID": 4045036,
+    "SeriesID": 4,
+    "AchievementTitle": "请扶稳站好，不要看手机",
+    "AchievementDesc": "在二相乐园使用一次电动扶梯",
+    "ParamList": [],
+    "Priority": 708,
+    "Rarity": "Low",
+    "ShowType": "ShowAfterFinish",
+    "Version": "4.0"
+  },
+  "4045037": {
+    "AchievementID": 4045037,
+    "SeriesID": 4,
+    "AchievementTitle": "危险动作，请勿模仿",
+    "AchievementDesc": "逆着扶梯前进10秒以上",
+    "ParamList": [],
+    "Priority": 707,
+    "Rarity": "Low",
+    "ShowType": "ShowAfterFinish",
+    "Version": "4.0"
+  },
+  "4045038": {
+    "AchievementID": 4045038,
+    "SeriesID": 4,
+    "AchievementTitle": "乒乓",
+    "AchievementDesc": "在泊地站「二次元JUMP！」的「Jump时刻」中反复改变重力，让尘灵来回跳动",
+    "ParamList": [],
+    "Priority": 706,
+    "Rarity": "Low",
+    "ShowType": "ShowAfterFinish",
+    "Version": "4.0"
+  },
+  "4045040": {
+    "AchievementID": 4045040,
+    "SeriesID": 4,
+    "AchievementTitle": "秘密储物间",
+    "AchievementDesc": "进入绘世学院室内体育馆的秘密房间",
+    "ParamList": [],
+    "Priority": 704,
+    "Rarity": "Low",
+    "ShowType": "ShowAfterFinish",
+    "Version": "4.0"
+  },
+  "4045041": {
+    "AchievementID": 4045041,
+    "SeriesID": 4,
+    "AchievementTitle": "窗边的小豆豆",
+    "AchievementDesc": "在绘世学院挑战最难获取的奖励<br><div style=\"color:#8790abff;\">※获取窗户上的金币</div>",
+    "ParamList": [],
+    "Priority": 703,
+    "Rarity": "Low",
+    "ShowType": "HiddenDesc",
+    "Version": "4.0"
+  },
+  "4045042": {
+    "AchievementID": 4045042,
+    "SeriesID": 4,
+    "AchievementTitle": "穿越时空的开拓者",
+    "AchievementDesc": "时间旅行，大多数时候是骗局…<br><div style=\"color:#8790abff;\">※揭穿「十五年前旧校舍」的真相</div>",
+    "ParamList": [],
+    "Priority": 702,
+    "Rarity": "Low",
+    "ShowType": "HiddenDesc",
+    "Version": "4.0"
+  },
+  "4045043": {
+    "AchievementID": 4045043,
+    "SeriesID": 4,
+    "AchievementTitle": "别回头，是…",
+    "AchievementDesc": "忘带厕纸的怨念积聚在此，盘桓不散<br><div style=\"color:#8790abff;\">※来到疑似闹鬼的厕所</div>",
+    "ParamList": [],
+    "Priority": 701,
+    "Rarity": "Low",
+    "ShowType": "HiddenDesc",
+    "Version": "4.0"
+  },
+  "4045044": {
+    "AchievementID": 4045044,
+    "SeriesID": 4,
+    "AchievementTitle": "所有桥都孤独",
+    "AchievementDesc": "在二维市鸽川大桥的「二次元JUMP！」中，抵达隐藏位面",
+    "ParamList": [],
+    "Priority": 700,
+    "Rarity": "Low",
+    "ShowType": "ShowAfterFinish",
+    "Version": "4.0"
+  },
+  "4045046": {
+    "AchievementID": 4045046,
+    "SeriesID": 4,
+    "AchievementTitle": "一颗破碎的心",
+    "AchievementDesc": "在鸽川的「二次元JUMP！」中，将拼好的心形图案重新扯开",
+    "ParamList": [],
+    "Priority": 698,
+    "Rarity": "Low",
+    "Version": "4.0"
+  },
+  "4045047": {
+    "AchievementID": 4045047,
+    "SeriesID": 4,
+    "AchievementTitle": "鸽子的视角",
+    "AchievementDesc": "在鸽川的「二次元JUMP！」中，抵达可以俯视街区的高台",
+    "ParamList": [],
+    "Priority": 697,
+    "Rarity": "Low",
+    "Version": "4.0"
+  },
+  "4045048": {
+    "AchievementID": 4045048,
+    "SeriesID": 4,
+    "AchievementTitle": "带刺的假面",
+    "AchievementDesc": "在挑逗酒馆的愚者面具后，成功生存下来",
+    "ParamList": [],
+    "Priority": 696,
+    "Rarity": "Low",
+    "ShowType": "ShowAfterFinish",
+    "Version": "4.0"
+  },
+  "4045049": {
+    "AchievementID": 4045049,
+    "SeriesID": 4,
+    "AchievementTitle": "超级电灯泡",
+    "AchievementDesc": "见证纸鹤的爱情",
+    "ParamList": [],
+    "Priority": 695,
+    "Rarity": "Low",
+    "ShowType": "ShowAfterFinish",
+    "Version": "4.0"
+  },
+  "4045050": {
+    "AchievementID": 4045050,
+    "SeriesID": 4,
+    "AchievementTitle": "你说你惹它干嘛",
+    "AchievementDesc": "击倒在酒馆中奔跑的广告牌",
+    "ParamList": [],
+    "Priority": 694,
+    "Rarity": "Low",
+    "ShowType": "ShowAfterFinish",
+    "Version": "4.0"
+  },
+  "4045051": {
+    "AchievementID": 4045051,
+    "SeriesID": 4,
+    "AchievementTitle": "恶龙曾在此，今不复存焉",
+    "AchievementDesc": "找到藏在「大秘宝」尽头的宝藏",
+    "ParamList": [],
+    "Priority": 693,
+    "Rarity": "Low",
+    "ShowType": "ShowAfterFinish",
+    "Version": "4.0"
+  },
+  "4045052": {
+    "AchievementID": 4045052,
+    "SeriesID": 4,
+    "AchievementTitle": "这儿就别开拓了吧",
+    "AchievementDesc": "打开「黄金告解室」的密室",
+    "ParamList": [],
+    "Priority": 692,
+    "Rarity": "Low",
+    "ShowType": "ShowAfterFinish",
+    "Version": "4.0"
+  },
+  "4045053": {
+    "AchievementID": 4045053,
+    "SeriesID": 4,
+    "AchievementTitle": "发出一声怀念的*啾*",
+    "AchievementDesc": "在酒馆找到一根熟悉的羽毛",
+    "ParamList": [],
+    "Priority": 691,
+    "Rarity": "Low",
+    "ShowType": "ShowAfterFinish",
+    "Version": "4.0"
+  },
+  "4045054": {
+    "AchievementID": 4045054,
+    "SeriesID": 4,
+    "AchievementTitle": "老二次元了",
+    "AchievementDesc": "完成「极乐之星」上的终极二次元挑战",
+    "ParamList": [],
+    "Priority": 690,
+    "Rarity": "Low",
+    "ShowType": "ShowAfterFinish",
+    "Version": "4.0"
+  },
+  "4045055": {
+    "AchievementID": 4045055,
+    "SeriesID": 4,
+    "AchievementTitle": "会转弯的箭",
+    "AchievementDesc": "在「二次元JUMP！」中，射出的箭转弯了",
+    "ParamList": [],
+    "Priority": 689,
+    "Rarity": "Low",
+    "ShowType": "ShowAfterFinish",
+    "Version": "4.0"
+  },
+  "4045056": {
+    "AchievementID": 4045056,
+    "SeriesID": 4,
+    "AchievementTitle": "弹簧腿杰克",
+    "AchievementDesc": "在入门训练的蹦床中来回弹射10次",
+    "ParamList": [],
+    "Priority": 688,
+    "Rarity": "Low",
+    "ShowType": "ShowAfterFinish",
+    "Version": "4.0"
+  },
+  "4045057": {
+    "AchievementID": 4045057,
+    "SeriesID": 4,
+    "AchievementTitle": "去唱卡拉OK吧！",
+    "AchievementDesc": "在二维市或鸽川区的卡拉OK店前，偷听里面传来的美妙歌声",
+    "ParamList": [],
+    "Priority": 687,
+    "Rarity": "Low",
+    "ShowType": "ShowAfterFinish",
+    "Version": "4.0"
   },
   "4051001": {
     "AchievementID": 4051001,
@@ -11755,6 +12489,449 @@
     "Rarity": "Low",
     "Version": "3.8"
   },
+  "4055001": {
+    "AchievementID": 4055001,
+    "SeriesID": 5,
+    "AchievementTitle": "现在是悄悄话时间",
+    "AchievementDesc": "潜入首席执行官的会谈室",
+    "ParamList": [],
+    "Priority": 377,
+    "Rarity": "Low",
+    "ShowType": "ShowAfterFinish",
+    "Version": "4.0"
+  },
+  "4055002": {
+    "AchievementID": 4055002,
+    "SeriesID": 5,
+    "AchievementTitle": "众神静默如谜",
+    "AchievementDesc": "鉴赏酒馆里众神的画像",
+    "ParamList": [],
+    "Priority": 376,
+    "Rarity": "Low",
+    "ShowType": "ShowAfterFinish",
+    "Version": "4.0"
+  },
+  "4055003": {
+    "AchievementID": 4055003,
+    "SeriesID": 5,
+    "AchievementTitle": "愚者与炼金术士之门",
+    "AchievementDesc": "培养一个属于你的元素马桶",
+    "ParamList": [],
+    "Priority": 375,
+    "Rarity": "Low",
+    "ShowType": "ShowAfterFinish",
+    "Version": "4.0"
+  },
+  "4055004": {
+    "AchievementID": 4055004,
+    "SeriesID": 5,
+    "AchievementTitle": "堵住亚空间",
+    "AchievementDesc": "探寻黄金王座的奥秘",
+    "ParamList": [],
+    "Priority": 374,
+    "Rarity": "Low",
+    "ShowType": "ShowAfterFinish",
+    "Version": "4.0"
+  },
+  "4055005": {
+    "AchievementID": 4055005,
+    "SeriesID": 5,
+    "AchievementTitle": "头条在这里…狸！",
+    "AchievementDesc": "成为杂志社老板的第一步：多发头条！<br><div style=\"color:#8790abff;\">※发布第一期《乐园头条》</div>",
+    "ParamList": [],
+    "Priority": 373,
+    "Rarity": "Low",
+    "ShowType": "HiddenDesc",
+    "Version": "4.0"
+  },
+  "4055006": {
+    "AchievementID": 4055006,
+    "SeriesID": 5,
+    "AchievementTitle": "用人之道",
+    "AchievementDesc": "成为杂志社老板的第二步：精通管理！<br><div style=\"color:#8790abff;\">※在杂志社经营中，触发招聘新员工事件</div>",
+    "ParamList": [],
+    "Priority": 372,
+    "Rarity": "Low",
+    "ShowType": "HiddenDesc",
+    "Version": "4.0"
+  },
+  "4055007": {
+    "AchievementID": 4055007,
+    "SeriesID": 5,
+    "AchievementTitle": "美好青春岁月",
+    "AchievementDesc": "一切源于渴求天下之人<br><div style=\"color:#8790abff;\">※完成「上骰了！战力党！」的所有剧情对战</div>",
+    "ParamList": [],
+    "Priority": 371,
+    "Rarity": "Low",
+    "ShowType": "HiddenDesc",
+    "Version": "4.0"
+  },
+  "4055008": {
+    "AchievementID": 4055008,
+    "SeriesID": 5,
+    "AchievementTitle": "她们在过去重逢",
+    "AchievementDesc": "幸福怎会离间我和我的所爱…<br><div style=\"color:#8790abff;\">※见证珀葵最终回到电视机内</div>",
+    "ParamList": [],
+    "Priority": 370,
+    "Rarity": "Low",
+    "ShowType": "ShowAfterFinish",
+    "Version": "4.0"
+  },
+  "4055009": {
+    "AchievementID": 4055009,
+    "SeriesID": 5,
+    "AchievementTitle": "若我能将幸福带给你",
+    "AchievementDesc": "我就完成了自己的使命<br><div style=\"color:#8790abff;\">※见证珀葵与火箭缔结成为家人的约定</div>",
+    "ParamList": [],
+    "Priority": 369,
+    "Rarity": "Low",
+    "ShowType": "ShowAfterFinish",
+    "Version": "4.0"
+  },
+  "4055010": {
+    "AchievementID": 4055010,
+    "SeriesID": 5,
+    "AchievementTitle": "冷硬派侦探",
+    "AchievementDesc": "「侦探」的本质，是对真相脚踏实地的调查，以及对邪恶锲而不舍地追索<br><div style=\"color:#8790abff;\">※与不死途一起，用传统且有效的方式，阻止「千禧杀手」的暴行</div>",
+    "ParamList": [],
+    "Priority": 368,
+    "Rarity": "Low",
+    "ShowType": "ShowAfterFinish",
+    "Version": "4.0"
+  },
+  "4055011": {
+    "AchievementID": 4055011,
+    "SeriesID": 5,
+    "AchievementTitle": "安乐椅侦探",
+    "AchievementDesc": "「侦探」？「调查真相」？「追索邪恶」？我？哈哈，你莫不是在开玩笑吧？<br><div style=\"color:#8790abff;\">※与火花一起，用最新最in的现代化手段，让「千禧杀手」自食其果</div>",
+    "ParamList": [],
+    "Priority": 367,
+    "Rarity": "Low",
+    "ShowType": "ShowAfterFinish",
+    "Version": "4.0"
+  },
+  "4055012": {
+    "AchievementID": 4055012,
+    "SeriesID": 5,
+    "AchievementTitle": "罪名为「爱」",
+    "AchievementDesc": "最终，平静的日常归于平静<br><div style=\"color:#8790abff;\">※让修仁江接受法律的制裁</div>",
+    "ParamList": [],
+    "Priority": 366,
+    "Rarity": "Low",
+    "ShowType": "ShowAfterFinish",
+    "Version": "4.0"
+  },
+  "4055013": {
+    "AchievementID": 4055013,
+    "SeriesID": 5,
+    "AchievementTitle": "蒲公英的审判",
+    "AchievementDesc": "下个银杏季，不会再有蒲公英飘散了<br><div style=\"color:#8790abff;\">※让沙蒲完成她们的夙愿</div>",
+    "ParamList": [],
+    "Priority": 365,
+    "Rarity": "Low",
+    "ShowType": "ShowAfterFinish",
+    "Version": "4.0"
+  },
+  "4055014": {
+    "AchievementID": 4055014,
+    "SeriesID": 5,
+    "AchievementTitle": "未完待续…",
+    "AchievementDesc": "「…哈哈，什么嘛，这结局不是很好吗？」<br><div style=\"color:#8790abff;\">※见证《迷局游戏》的完结</div>",
+    "ParamList": [],
+    "Priority": 364,
+    "Rarity": "Low",
+    "ShowType": "HiddenDesc",
+    "Version": "4.0"
+  },
+  "4055015": {
+    "AchievementID": 4055015,
+    "SeriesID": 5,
+    "AchievementTitle": "站着挣钱",
+    "AchievementDesc": "选择将飞机像素游戏售卖给公司",
+    "ParamList": [],
+    "Priority": 363,
+    "Rarity": "Low",
+    "ShowType": "ShowAfterFinish",
+    "Version": "4.0"
+  },
+  "4055016": {
+    "AchievementID": 4055016,
+    "SeriesID": 5,
+    "AchievementTitle": "与仙人同行",
+    "AchievementDesc": "拒绝公司对飞机像素游戏的收购",
+    "ParamList": [],
+    "Priority": 362,
+    "Rarity": "Low",
+    "ShowType": "ShowAfterFinish",
+    "Version": "4.0"
+  },
+  "4055017": {
+    "AchievementID": 4055017,
+    "SeriesID": 5,
+    "AchievementTitle": "并非兔子洞",
+    "AchievementDesc": "从「黄金告解室」的王座内平安归来<br><div style=\"color:#8790abff;\">※并改变一个帝国的命运</div>",
+    "ParamList": [],
+    "Priority": 361,
+    "Rarity": "Low",
+    "ShowType": "HiddenDesc",
+    "Version": "4.0"
+  },
+  "4055019": {
+    "AchievementID": 4055019,
+    "SeriesID": 5,
+    "AchievementTitle": "落日六号",
+    "AchievementDesc": "实现克拉肯遨游天外的心愿",
+    "ParamList": [],
+    "Priority": 359,
+    "Rarity": "Low",
+    "ShowType": "ShowAfterFinish",
+    "Version": "4.0"
+  },
+  "4055021": {
+    "AchievementID": 4055021,
+    "SeriesID": 5,
+    "AchievementTitle": "顺着电话线来找你了",
+    "AchievementDesc": "接听玛丽电话亭的来电",
+    "ParamList": [],
+    "Priority": 357,
+    "Rarity": "Low",
+    "Version": "4.0"
+  },
+  "4055022": {
+    "AchievementID": 4055022,
+    "SeriesID": 5,
+    "AchievementTitle": "妄想代理人",
+    "AchievementDesc": "通过黑猫拍立得进入妄想剧场",
+    "ParamList": [],
+    "Priority": 356,
+    "Rarity": "Low",
+    "Version": "4.0"
+  },
+  "4055023": {
+    "AchievementID": 4055023,
+    "SeriesID": 5,
+    "AchievementTitle": "精神分析引论",
+    "AchievementDesc": "发现病帘背后的怪奇事件",
+    "ParamList": [],
+    "Priority": 355,
+    "Rarity": "Low",
+    "Version": "4.0"
+  },
+  "4055024": {
+    "AchievementID": 4055024,
+    "SeriesID": 5,
+    "AchievementTitle": "阿——门！",
+    "AchievementDesc": "在酒馆与门匠对话",
+    "ParamList": [],
+    "Priority": 354,
+    "Rarity": "Low",
+    "Version": "4.0"
+  },
+  "4055025": {
+    "AchievementID": 4055025,
+    "SeriesID": 5,
+    "AchievementTitle": "尊敬的大会员",
+    "AchievementDesc": "成为二维市任意一家商店的会员",
+    "ParamList": [],
+    "Priority": 353,
+    "Rarity": "Low",
+    "Version": "4.0"
+  },
+  "4055026": {
+    "AchievementID": 4055026,
+    "SeriesID": 5,
+    "AchievementTitle": "雷打不动",
+    "AchievementDesc": "与盘踞在二维市生态链顶端的存在对话",
+    "ParamList": [],
+    "Priority": 352,
+    "Rarity": "Low",
+    "Version": "4.0"
+  },
+  "4055027": {
+    "AchievementID": 4055027,
+    "SeriesID": 5,
+    "AchievementTitle": "火车火车呜呜响",
+    "AchievementDesc": "与疾锋龙列车对话",
+    "ParamList": [],
+    "Priority": 351,
+    "Rarity": "Low",
+    "Version": "4.0"
+  },
+  "4055028": {
+    "AchievementID": 4055028,
+    "SeriesID": 5,
+    "AchievementTitle": "出仙入画",
+    "AchievementDesc": "与疑似视肉的涂鸦对话",
+    "ParamList": [],
+    "Priority": 350,
+    "Rarity": "Low",
+    "Version": "4.0"
+  },
+  "4055029": {
+    "AchievementID": 4055029,
+    "SeriesID": 5,
+    "AchievementTitle": "个人的一小步",
+    "AchievementDesc": "与啵啵娃老师对话",
+    "ParamList": [],
+    "Priority": 349,
+    "Rarity": "Low",
+    "Version": "4.0"
+  },
+  "4055030": {
+    "AchievementID": 4055030,
+    "SeriesID": 5,
+    "AchievementTitle": "此地仅宜酒留",
+    "AchievementDesc": "在酒馆与钟珊对话",
+    "ParamList": [],
+    "Priority": 348,
+    "Rarity": "Low",
+    "Version": "4.0"
+  },
+  "4055031": {
+    "AchievementID": 4055031,
+    "SeriesID": 5,
+    "AchievementTitle": "天降正义",
+    "AchievementDesc": "在桥上经历过一次雷击",
+    "ParamList": [],
+    "Priority": 347,
+    "Rarity": "Low",
+    "Version": "4.0"
+  },
+  "4055032": {
+    "AchievementID": 4055032,
+    "SeriesID": 5,
+    "AchievementTitle": "回你的二次元去吧",
+    "AchievementDesc": "把酒馆画廊的幻造种重新封印回画中",
+    "ParamList": [],
+    "Priority": 346,
+    "Rarity": "Low",
+    "Version": "4.0"
+  },
+  "4055033": {
+    "AchievementID": 4055033,
+    "SeriesID": 5,
+    "AchievementTitle": "今日说法",
+    "AchievementDesc": "把诈骗取款机及其同伙移交给执法部门",
+    "ParamList": [],
+    "Priority": 345,
+    "Rarity": "Low",
+    "Version": "4.0"
+  },
+  "4055034": {
+    "AchievementID": 4055034,
+    "SeriesID": 5,
+    "AchievementTitle": "转角遇到爱",
+    "AchievementDesc": "在街角见证两位路人命中注定的偶遇",
+    "ParamList": [],
+    "Priority": 344,
+    "Rarity": "Low",
+    "Version": "4.0"
+  },
+  "4055035": {
+    "AchievementID": 4055035,
+    "SeriesID": 5,
+    "AchievementTitle": "骗术大全",
+    "AchievementDesc": "1信用点也没有！<br><div style=\"color:#8790abff;\">※严词拒绝巧舌如簧的灵月大师</div>",
+    "ParamList": [],
+    "Priority": 343,
+    "Rarity": "Low",
+    "ShowType": "ShowAfterFinish",
+    "Version": "4.0"
+  },
+  "4055036": {
+    "AchievementID": 4055036,
+    "SeriesID": 5,
+    "AchievementTitle": "孤注一掷",
+    "AchievementDesc": "我「这么大」个弟子的名分呢？<br><div style=\"color:#8790abff;\">※一掷千金，成为灵月大师座下唯一被骗大弟子</div>",
+    "ParamList": [],
+    "Priority": 342,
+    "Rarity": "Low",
+    "ShowType": "ShowAfterFinish",
+    "Version": "4.0"
+  },
+  "4055037": {
+    "AchievementID": 4055037,
+    "SeriesID": 5,
+    "AchievementTitle": "经济学理性人",
+    "AchievementDesc": "沉没成本不参与重大决策！<br><div style=\"color:#8790abff;\">※面对巧舌如簧的灵月大师及时抽身</div>",
+    "ParamList": [],
+    "Priority": 341,
+    "Rarity": "Low",
+    "ShowType": "ShowAfterFinish",
+    "Version": "4.0"
+  },
+  "4055044": {
+    "AchievementID": 4055044,
+    "SeriesID": 5,
+    "AchievementTitle": "骰骰是道",
+    "AchievementDesc": "在银河战力党玩法中，累计投掷骰子到达20次",
+    "ParamList": [
+      {
+        "Value": 20
+      }
+    ],
+    "Priority": 334,
+    "Rarity": "Low",
+    "Version": "4.0"
+  },
+  "4055045": {
+    "AchievementID": 4055045,
+    "SeriesID": 5,
+    "AchievementTitle": "骰子收藏家",
+    "AchievementDesc": "在银河战力党玩法中，累计收集「基础包」与「扩展包•1」中的19个曜彩骰",
+    "ParamList": [
+      {
+        "Value": 19
+      }
+    ],
+    "Priority": 333,
+    "Rarity": "Low",
+    "Version": "4.0"
+  },
+  "4055046": {
+    "AchievementID": 4055046,
+    "SeriesID": 5,
+    "AchievementTitle": "纳努克与电饭煲",
+    "AchievementDesc": "在银河战力党玩法中，维持满生命值状态击败一名对手",
+    "ParamList": [],
+    "Priority": 332,
+    "Rarity": "Low",
+    "Version": "4.0"
+  },
+  "4055047": {
+    "AchievementID": 4055047,
+    "SeriesID": 5,
+    "AchievementTitle": "干脆开个店吧",
+    "AchievementDesc": "收集26张银河战力党卡牌，并将它们全部镀闪至最高稀有度",
+    "ParamList": [
+      {
+        "Value": 26
+      }
+    ],
+    "Priority": 331,
+    "Rarity": "Low",
+    "Version": "4.0"
+  },
+  "4055048": {
+    "AchievementID": 4055048,
+    "SeriesID": 5,
+    "AchievementTitle": "今天就要以大欺小",
+    "AchievementDesc": "在「上骰了！战力党！」中，击败虎克",
+    "ParamList": [],
+    "Priority": 330,
+    "Rarity": "Low",
+    "Version": "4.0"
+  },
+  "4055049": {
+    "AchievementID": 4055049,
+    "SeriesID": 5,
+    "AchievementTitle": "街骰人",
+    "AchievementDesc": "在「上骰了！战力党！」中，击败「四大天王」",
+    "ParamList": [],
+    "Priority": 329,
+    "Rarity": "Low",
+    "Version": "4.0"
+  },
   "4060101": {
     "AchievementID": 4060101,
     "SeriesID": 6,
@@ -15859,6 +17036,176 @@
     "ShowType": "ShowAfterFinish",
     "Version": "3.8"
   },
+  "4075001": {
+    "AchievementID": 4075001,
+    "SeriesID": 7,
+    "AchievementTitle": "红红火火恍恍惚惚",
+    "AchievementDesc": "单场战斗中，使用我方角色火花发动【互动陷阱】累计获得9个【红红火火】",
+    "ParamList": [
+      {
+        "Value": 9
+      }
+    ],
+    "Priority": 729,
+    "Rarity": "Low",
+    "ShowType": "ShowAfterFinish",
+    "Version": "4.0"
+  },
+  "4075002": {
+    "AchievementID": 4075002,
+    "SeriesID": 7,
+    "AchievementTitle": "连环计",
+    "AchievementDesc": "单次行动中，使用我方角色火花累计发动10次【互动陷阱】",
+    "ParamList": [
+      {
+        "Value": 10
+      }
+    ],
+    "Priority": 728,
+    "Rarity": "Low",
+    "ShowType": "ShowAfterFinish",
+    "Version": "4.0"
+  },
+  "4075003": {
+    "AchievementID": 4075003,
+    "SeriesID": 7,
+    "AchievementTitle": "图个吉利",
+    "AchievementDesc": "单场战斗中，使用我方角色爻光累计触发18次【大吉大利】",
+    "ParamList": [
+      {
+        "Value": 18
+      }
+    ],
+    "Priority": 727,
+    "Rarity": "Low",
+    "ShowType": "ShowAfterFinish",
+    "Version": "4.0"
+  },
+  "4075004": {
+    "AchievementID": 4075004,
+    "SeriesID": 7,
+    "AchievementTitle": "染上你的颜色",
+    "AchievementDesc": "在与「画板孔雀」的战斗中，使其在【无色】状态下收集到4种不同的【颜料】并进入【色彩】状态",
+    "ParamList": [],
+    "Priority": 725,
+    "Rarity": "Low",
+    "Version": "4.0"
+  },
+  "4075005": {
+    "AchievementID": 4075005,
+    "SeriesID": 7,
+    "AchievementTitle": "最上镜一刻",
+    "AchievementDesc": "在与「狸猫记者」的战斗中，在被抓拍照片时获得最高评价",
+    "ParamList": [],
+    "Priority": 724,
+    "Rarity": "Low",
+    "Version": "4.0"
+  },
+  "4075006": {
+    "AchievementID": 4075006,
+    "SeriesID": 7,
+    "AchievementTitle": "敬业记者",
+    "AchievementDesc": "「狸猫记者」在自己的回合开始时被消灭并触发【丑照特写】",
+    "ParamList": [],
+    "Priority": 723,
+    "Rarity": "Low",
+    "Version": "4.0"
+  },
+  "4075007": {
+    "AchievementID": 4075007,
+    "SeriesID": 7,
+    "AchievementTitle": "摇滚已死",
+    "AchievementDesc": "在与「摇滚狂徒」的战斗中，发动阿哈时刻打断其蓄力状态",
+    "ParamList": [],
+    "Priority": 722,
+    "Rarity": "Low",
+    "Version": "4.0"
+  },
+  "4075008": {
+    "AchievementID": 4075008,
+    "SeriesID": 7,
+    "AchievementTitle": "火上浇油",
+    "AchievementDesc": "在与「摇滚狂徒」的战斗中，触发【燥起来吧！】的欢愉效果",
+    "ParamList": [],
+    "Priority": 721,
+    "Rarity": "Low",
+    "Version": "4.0"
+  },
+  "4075009": {
+    "AchievementID": 4075009,
+    "SeriesID": 7,
+    "AchievementTitle": "双赢就是赢两次",
+    "AchievementDesc": "在与「火花大会@Official」的战斗中，在两个阶段的「连麦PK」中都取得胜利",
+    "ParamList": [],
+    "Priority": 720,
+    "Rarity": "Low",
+    "Version": "4.0"
+  },
+  "4075010": {
+    "AchievementID": 4075010,
+    "SeriesID": 7,
+    "AchievementTitle": "耻辱下播",
+    "AchievementDesc": "在与「火花大会@Official」的战斗中，在两个阶段的「连麦PK」中都未曾胜利",
+    "ParamList": [],
+    "Priority": 719,
+    "Rarity": "Low",
+    "Version": "4.0"
+  },
+  "4075011": {
+    "AchievementID": 4075011,
+    "SeriesID": 7,
+    "AchievementTitle": "恭喜发财，红包拿来",
+    "AchievementDesc": "通过爻光的秘技【浮光过隙，百无禁忌】累计获得8个【红包】",
+    "ParamList": [
+      {
+        "Value": 8
+      }
+    ],
+    "Priority": 726,
+    "Rarity": "Low",
+    "ShowType": "ShowAfterFinish",
+    "Version": "4.0"
+  },
+  "4075012": {
+    "AchievementID": 4075012,
+    "SeriesID": 7,
+    "AchievementTitle": "节目效果",
+    "AchievementDesc": "阿哈施放【阿哈时刻】只造成了0点伤害",
+    "ParamList": [
+      {
+        "Value": 0
+      }
+    ],
+    "Priority": 718,
+    "Rarity": "Low",
+    "ShowType": "ShowAfterFinish",
+    "Version": "4.0"
+  },
+  "4075013": {
+    "AchievementID": 4075013,
+    "SeriesID": 7,
+    "AchievementTitle": "找点乐子",
+    "AchievementDesc": "阿哈施放【阿哈时刻】",
+    "ParamList": [],
+    "Priority": 717,
+    "Rarity": "Low",
+    "Version": "4.0"
+  },
+  "4075014": {
+    "AchievementID": 4075014,
+    "SeriesID": 7,
+    "AchievementTitle": "笑啊，怎么不笑了？",
+    "AchievementDesc": "阿哈施放【要有笑声】消灭1名敌人",
+    "ParamList": [
+      {
+        "Value": 1
+      }
+    ],
+    "Priority": 716,
+    "Rarity": "Low",
+    "ShowType": "ShowAfterFinish",
+    "Version": "4.0"
+  },
   "4080101": {
     "AchievementID": 4080101,
     "SeriesID": 8,
@@ -16825,6 +18172,17 @@
     "Rarity": "Low",
     "ShowType": "HiddenDesc",
     "Version": "3.3"
+  },
+  "4085001": {
+    "AchievementID": 4085001,
+    "SeriesID": 8,
+    "AchievementTitle": "去新世界",
+    "AchievementDesc": "在「二次元JUMP！」中遭到水上飞车撞击",
+    "ParamList": [],
+    "Priority": 901,
+    "Rarity": "Low",
+    "ShowType": "ShowAfterFinish",
+    "Version": "4.0"
   },
   "4090201": {
     "AchievementID": 4090201,
