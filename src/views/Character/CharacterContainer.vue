@@ -21,7 +21,7 @@ const themeStore = useThemeStore()
 const { isDark } = storeToRefs(themeStore)
 
 const combattypeList = ["物理", "风", "雷", "火", "冰", "量子", "虚数"]
-const pathsList = ["毁灭", "巡猎", "智识", "同谐", "虚无", "存护", "丰饶", "记忆"]
+const pathsList = ["毁灭", "巡猎", "智识", "同谐", "虚无", "存护", "丰饶", "记忆", "欢愉"]
 
 const characterList = computed(() => {
     const result = []

@@ -967,21 +967,6 @@
     "faction": ["翁法罗斯"],
     "deploymentDate": 1755050400000
   },
-  "1411": {
-    "id": 1411,
-    "MiYoSheId": 5737,
-    "HoYoWikiId": 3957,
-    "name": "丹恒•腾荒",
-    "avatar": "event-ugc-hoyowiki/2025/08/05/5308864/17b441ad17b19301efa5b0116e17788a_1036774653474588783.png",
-    "path": "存护",
-    "combattype": "物理",
-    "star": 5,
-    "warp": "limited",
-    "version": 3.6,
-    "faction": ["翁法罗斯"],
-    "deploymentDate": 1760500800000,
-    "notOptional": true
-  },
   "1412": {
     "id": 1412,
     "MiYoSheId": 5583,
@@ -1010,6 +995,21 @@
     "faction": ["翁法罗斯"],
     "deploymentDate": 1758679200000
   },
+  "1414": {
+    "id": 1414,
+    "MiYoSheId": 5737,
+    "HoYoWikiId": 3957,
+    "name": "丹恒•腾荒",
+    "avatar": "event-ugc-hoyowiki/2025/08/05/5308864/17b441ad17b19301efa5b0116e17788a_1036774653474588783.png",
+    "path": "存护",
+    "combattype": "物理",
+    "star": 5,
+    "warp": "limited",
+    "version": 3.6,
+    "faction": ["翁法罗斯"],
+    "deploymentDate": 1760500800000,
+    "notOptional": true
+  },
   "1415": {
     "id": 1415,
     "MiYoSheId": 5851,
@@ -1023,6 +1023,48 @@
     "version": 3.7,
     "faction": ["翁法罗斯"],
     "deploymentDate": 1762308000000
+  },
+  "1501": {
+    "id": 1501,
+    "MiYoSheId": 6747,
+    "HoYoWikiId": 4737,
+    "name": "火花",
+    "avatar": "event-ugc-hoyowiki/2026/01/06/130460543/c4201295aa59583f7fda49989605c152_2013434392239504077.png",
+    "path": "欢愉",
+    "combattype": "火",
+    "star": 5,
+    "warp": "limited",
+    "version": 4.0,
+    "faction": ["二相乐园"],
+    "deploymentDate": 1772510400000
+  },
+  "1502": {
+    "id": 1502,
+    "MiYoSheId": 6746,
+    "HoYoWikiId": 4736,
+    "name": "爻光",
+    "avatar": "event-ugc-hoyowiki/2026/01/06/130460543/b1ad97e7632b8d30e679651927db26b0_1966722256933128881.png",
+    "path": "欢愉",
+    "combattype": "物理",
+    "star": 5,
+    "warp": "limited",
+    "version": 4.0,
+    "faction": ["二相乐园"],
+    "deploymentDate": 1755050400000
+  },
+  "1504": {
+    "id": 1504,
+    "MiYoSheId": 6814,
+    "HoYoWikiId": 4781,
+    "name": "不死途",
+    "avatar": "event-ugc-hoyowiki/2026/02/10/130460543/e5b1fbf7dbf317574fb4513d1c07e26b_7364368431272959993.png",
+    "path": "巡猎",
+    "combattype": "雷",
+    "star": 5,
+    "warp": "limited",
+    "version": 4.1,
+    "faction": ["二相乐园"],
+    "deploymentDate": 1777082400000
   },
   "8002": {
     "id": 8002,

@@ -150,7 +150,10 @@ const showCharacters = computed(() => {
 }
 
 .character-path {
-    margin: 0 3px;
+    width: 16px;
+    height: 16px;
+    margin: 3px;
+    position: relative;
 }
 
 .character-path-avatar {
@@ -158,6 +161,10 @@ const showCharacters = computed(() => {
     height: 16px; 
     object-fit: cover; 
     opacity: .65;
+    left: 50%; 
+    position: absolute; 
+    top: 50%; 
+    transform: translate(-50%,-50%);
 }
 
 .character-combattype {
@@ -165,13 +172,13 @@ const showCharacters = computed(() => {
     height: 16px;
     border-radius: 100%;
     background-color: var(--liyin-char-combattypt-bg-color);
-    margin: 0 3px; 
+    margin: 3px; 
     position: relative;
 }
 
 .character-combattype-avatar {
-    width: 15px; 
-    height: 15px; 
+    width: 16px; 
+    height: 16px; 
     object-fit: cover; 
     left: 50%; 
     position: absolute; 

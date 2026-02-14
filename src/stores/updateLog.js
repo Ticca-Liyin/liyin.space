@@ -4,6 +4,12 @@ import { defineStore } from 'pinia'
 export const useUpdateLogStore = defineStore('updateLog', () => {
     const updateLogInfo = [
         {
+            version: '4.0.1', 
+            date: '2026-02-14', 
+            title: '更新 4.0 版本角色相关数据',
+            changes: '<ul><li>更新 4.0 版本角色相关数据</li></ul>' 
+        },
+        {
             version: '4.0.0', 
             date: '2026-02-13', 
             title: '更新 4.0 版本成就相关数据',
