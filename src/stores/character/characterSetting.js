@@ -69,11 +69,11 @@ export const useCharacterSettingStore = defineStore('characterSetting', () => {
             label: HoYoWiki,
             jump: toHoYoWiki
         },
-        [YuChengBei]: {
-            value: YuChengBei,
-            label: YuChengBei,
-            jump: toYuChengBei
-        },
+        // [YuChengBei]: {
+        //     value: YuChengBei,
+        //     label: YuChengBei,
+        //     jump: toYuChengBei
+        // },
         [BiliWiki]: {
             value: BiliWiki,
             label: BiliWiki,
@@ -115,6 +115,11 @@ export const useCharacterSettingStore = defineStore('characterSetting', () => {
             toWebsiteName.value = data?.toWebsiteName ?? Object.values(WebsiteNameList)[0].value
             scale.value = data?.scale ?? defaultScale
             useWheelEvent.value = data?.useWheelEvent ?? false
+
+            // 检差跳转网页是否在 WebsiteNameList 中
+            if (!WebsiteNameList[toWebsiteName.value]) {
+                toWebsiteName.value = Object.values(WebsiteNameList)[0].value
+            }
         } else {
             // 数据不存在，执行相应的操作
             toWebsiteName.value = Object.values(WebsiteNameList)[0].value
@@ -185,8 +190,8 @@ export const useCharacterSettingStore = defineStore('characterSetting', () => {
     //显示阵营列表
     const showFactionList = ref([])
     const factionSortList = [
-        "星穹列车", "太空站「黑塔」", "雅利洛-Ⅵ", "仙舟「罗浮」", "仙舟「曜青」", "仙舟「朱明」", "匹诺康尼",
-        "星核猎手", "星际和平公司", "纯美骑士团", "假面愚者", "流光忆庭", "巡海游侠", "自灭者", "博识学会"
+        "星穹列车", "太空站「黑塔」", "雅利洛-Ⅵ", "仙舟「罗浮」", "仙舟「曜青」", "仙舟「朱明」", "仙舟「玉阙」", "匹诺康尼", "翁法罗斯", "二相乐园",
+        "星核猎手", "星际和平公司", "纯美骑士团", "假面愚者", "流光忆庭", "焚化工", "巡海游侠", "自灭者", "天才俱乐部", "博识学会"
     ]
     //可选择列表
     const selectFactionList = computed(() => {

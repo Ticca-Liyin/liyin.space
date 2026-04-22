@@ -644,7 +644,7 @@
     "star": 5,
     "warp": "limited",
     "version": 1.6,
-    "faction": ["太空站「黑塔」"]
+    "faction": ["太空站「黑塔」", "天才俱乐部"]
   },
   "1304": {
     "id": 1304,
@@ -824,7 +824,7 @@
     "star": 5,
     "warp": "limited",
     "version": 3.8,
-    "faction": ["银河"],
+    "faction": ["焚化工"],
     "deploymentDate": 1765936800000
   },
   "1401": {
@@ -838,7 +838,7 @@
     "star": 5,
     "warp": "limited",
     "version": 3,
-    "faction": ["太空站「黑塔」"],
+    "faction": ["太空站「黑塔」", "天才俱乐部"],
     "deploymentDate": 1736906400000
   },
   "1402": {
@@ -1035,7 +1035,7 @@
     "star": 5,
     "warp": "limited",
     "version": 4.0,
-    "faction": ["二相乐园"],
+    "faction": ["二相乐园", "假面愚者"],
     "deploymentDate": 1772510400000
   },
   "1502": {
@@ -1049,7 +1049,7 @@
     "star": 5,
     "warp": "limited",
     "version": 4.0,
-    "faction": ["二相乐园"],
+    "faction": ["二相乐园", "仙舟「玉阙」"],
     "deploymentDate": 1755050400000
   },
   "1504": {
@@ -1063,8 +1063,36 @@
     "star": 5,
     "warp": "limited",
     "version": 4.1,
-    "faction": ["二相乐园"],
+    "faction": ["二相乐园", "巡海游侠"],
     "deploymentDate": 1777082400000
+  },
+  "1505": {
+    "id": 1505,
+    "MiYoSheId": 7045,
+    "HoYoWikiId": 5005,
+    "name": "绯英",
+    "avatar": "event-ugc-hoyowiki/2026/03/19/130460543/d2942f2873092b38ad7213c2b9cb2bbb_4520557626279235528.png",
+    "path": "欢愉",
+    "combattype": "物理",
+    "star": 5,
+    "warp": "limited",
+    "version": 4.2,
+    "faction": ["二相乐园"],
+    "deploymentDate": 1776823200000
+  },
+  "1506": {
+    "id": 1506,
+    "MiYoSheId": 7044,
+    "HoYoWikiId": 4997,
+    "name": "银狼LV.999",
+    "avatar": "event-ugc-hoyowiki/2026/03/19/130460543/0c8a289a19b81a4a62a25c303a53ca6a_4770845794310071341.png",
+    "path": "欢愉",
+    "combattype": "虚数",
+    "star": 5,
+    "warp": "limited",
+    "version": 4.2,
+    "faction": ["二相乐园", "星核猎手"],
+    "deploymentDate": 1778644800000
   },
   "8002": {
     "id": 8002,
@@ -1119,5 +1147,19 @@
     "version": 3,
     "faction": ["星穹列车"],
     "deploymentDate": 1736906400000
+  },
+  "8010": {
+    "id": 8010,
+    "MiYoSheId": 7046,
+    "HoYoWikiId": 5006,
+    "name": "开拓者•欢愉",
+    "avatar": "event-ugc-hoyowiki/2026/03/19/130460543/c43798b6f7684b22ba8c0f2cfe68e556_8020830171101855560.gif",
+    "path": "欢愉",
+    "combattype": "雷",
+    "star": 5,
+    "warp": "not-warp",
+    "version": 4.2,
+    "faction": ["星穹列车"],
+    "deploymentDate": 1776823200000
   }
 }
