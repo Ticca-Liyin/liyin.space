@@ -9,7 +9,7 @@ const url = import.meta.env.VITE_COOKIE_SERVER_PATH ?? 'https://localhost:20025'
 // 创建 Axios 实例
 const api = axios.create({
   baseURL: url,
-  timeout: 10000,
+  timeout: 5 * 60 * 1000,
 });
 
 // 响应拦截器

@@ -1094,6 +1094,20 @@
     "faction": ["二相乐园", "星核猎手"],
     "deploymentDate": 1778644800000
   },
+  "1507": {
+    "id": 1507,
+    "MiYoSheId": 7155,
+    "HoYoWikiId": 5217,
+    "name": "千冶·刃",
+    "avatar": "event-ugc-hoyowiki/2026/05/20/5308864/d429061c443607c580bb519d1c8cbbc0_6026788177036522174.png",
+    "path": "虚无",
+    "combattype": "火",
+    "star": 5,
+    "warp": "limited",
+    "version": 4.3,
+    "faction": ["二相乐园", "星核猎手"],
+    "deploymentDate": 1780279200000
+  },
   "8002": {
     "id": 8002,
     "MiYoSheId": 3128,

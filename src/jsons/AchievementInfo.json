@@ -2321,6 +2321,61 @@
     "ShowType": "HiddenDesc",
     "Version": "4.2"
   },
+  "4035301": {
+    "AchievementID": 4035301,
+    "SeriesID": 3,
+    "AchievementTitle": "禁忌推理",
+    "AchievementDesc": "推理要在碰杯之后<br><div style=\"color:#8790abff;\">※前往「酒馆」调查关于归寂存在的线索</div>",
+    "ParamList": [],
+    "Priority": 837,
+    "Rarity": "Mid",
+    "ShowType": "HiddenDesc",
+    "Version": "4.3 "
+  },
+  "4035302": {
+    "AchievementID": 4035302,
+    "SeriesID": 3,
+    "AchievementTitle": "点亮旧日的灯火",
+    "AchievementDesc": "出来打雪仗哟！<br><div style=\"color:#8790abff;\">※以过去的约定方式唤来绘世</div>",
+    "ParamList": [],
+    "Priority": 836,
+    "Rarity": "Mid",
+    "ShowType": "HiddenDesc",
+    "Version": "4.3 "
+  },
+  "4035303": {
+    "AchievementID": 4035303,
+    "SeriesID": 3,
+    "AchievementTitle": "驻足彼岸一刻",
+    "AchievementDesc": "跳下去吧，融化在那片蓝洞里<br><div style=\"color:#8790abff;\">※目睹刃前往画中世界的尽头</div>",
+    "ParamList": [],
+    "Priority": 835,
+    "Rarity": "Mid",
+    "ShowType": "HiddenDesc",
+    "Version": "4.3 "
+  },
+  "4035304": {
+    "AchievementID": 4035304,
+    "SeriesID": 3,
+    "AchievementTitle": "刃之为物",
+    "AchievementDesc": "何物为刃？何物消磨自身，撕碎敌雠？<br><div style=\"color:#8790abff;\">※刃得到了他的答案</div>",
+    "ParamList": [],
+    "Priority": 834,
+    "Rarity": "Mid",
+    "ShowType": "HiddenDesc",
+    "Version": "4.3 "
+  },
+  "4035305": {
+    "AchievementID": 4035305,
+    "SeriesID": 3,
+    "AchievementTitle": "归于空寂的玩笑",
+    "AchievementDesc": "解释笑话，是最恶劣的行为<br><div style=\"color:#8790abff;\">※目睹归寂揭晓自己的真面目</div>",
+    "ParamList": [],
+    "Priority": 833,
+    "Rarity": "Mid",
+    "ShowType": "HiddenDesc",
+    "Version": "4.3 "
+  },
   "4040101": {
     "AchievementID": 4040101,
     "SeriesID": 4,
@@ -5370,7 +5425,7 @@
     "AchievementID": 4045018,
     "SeriesID": 4,
     "AchievementTitle": "好朋友的秘密基地",
-    "AchievementDesc": "进去玩具琴中的秘密空间",
+    "AchievementDesc": "进入玩具琴中的秘密空间",
     "ParamList": [],
     "Priority": 726,
     "Rarity": "Low",
@@ -5937,10 +5992,10 @@
     "AchievementID": 4045201,
     "SeriesID": 4,
     "AchievementTitle": "余生皆假期",
-    "AchievementDesc": "累计收集120个「星轨之兔」的无名尘灵",
+    "AchievementDesc": "累计收集110个「星轨之兔」的无名尘灵",
     "ParamList": [
       {
-        "Value": 120
+        "Value": 110
       }
     ],
     "Priority": 672,
@@ -6110,6 +6165,76 @@
     "Priority": 656,
     "Rarity": "Low",
     "Version": "4.2"
+  },
+  "4045301": {
+    "AchievementID": 4045301,
+    "SeriesID": 4,
+    "AchievementTitle": "孤高之人",
+    "AchievementDesc": "完成渡画泉隐的「Jump时刻」",
+    "ParamList": [],
+    "Priority": 655,
+    "Rarity": "Low",
+    "Version": "4.3 "
+  },
+  "4045302": {
+    "AchievementID": 4045302,
+    "SeriesID": 4,
+    "AchievementTitle": "躲避刺客",
+    "AchievementDesc": "在不被刺猬灵碰到的情况下通关渡画泉隐的「Jump时刻」",
+    "ParamList": [],
+    "Priority": 654,
+    "Rarity": "Low",
+    "Version": "4.3 "
+  },
+  "4045303": {
+    "AchievementID": 4045303,
+    "SeriesID": 4,
+    "AchievementTitle": "最后的冰霜巨人",
+    "AchievementDesc": "击晕卡斯佩",
+    "ParamList": [],
+    "Priority": 653,
+    "Rarity": "Low",
+    "Version": "4.3 "
+  },
+  "4045304": {
+    "AchievementID": 4045304,
+    "SeriesID": 4,
+    "AchievementTitle": "雪国",
+    "AchievementDesc": "在「二次元JUMP！」和卡斯佩打雪仗时，找到城堡中的隐藏宝箱",
+    "ParamList": [],
+    "Priority": 652,
+    "Rarity": "Low",
+    "Version": "4.3 "
+  },
+  "4045305": {
+    "AchievementID": 4045305,
+    "SeriesID": 4,
+    "AchievementTitle": "欢迎来到蒸汽平台",
+    "AchievementDesc": "在渡画泉隐的雪地温泉里泡澡",
+    "ParamList": [],
+    "Priority": 651,
+    "Rarity": "Low",
+    "Version": "4.3 "
+  },
+  "4045306": {
+    "AchievementID": 4045306,
+    "SeriesID": 4,
+    "AchievementTitle": "无头骑士逸闻录",
+    "AchievementDesc": "踢飞渡画泉隐所有「平平无奇的雪人」的头",
+    "ParamList": [],
+    "Priority": 650,
+    "Rarity": "Low",
+    "Version": "4.3 "
+  },
+  "4045307": {
+    "AchievementID": 4045307,
+    "SeriesID": 4,
+    "AchievementTitle": "乐园变奏：雪孩子",
+    "AchievementDesc": "演奏奇异乐章，找到藏在渡画泉隐的迷之生物",
+    "ParamList": [],
+    "Priority": 649,
+    "Rarity": "Low",
+    "Version": "4.3 "
   },
   "4051001": {
     "AchievementID": 4051001,
@@ -13799,6 +13924,136 @@
     "Rarity": "Low",
     "Version": "4.2"
   },
+  "4055301": {
+    "AchievementID": 4055301,
+    "SeriesID": 5,
+    "AchievementTitle": "出发！星穹巴士！",
+    "AchievementDesc": "向虚照了解《幻月新游戏》的故事",
+    "ParamList": [],
+    "Priority": 293,
+    "Rarity": "Low",
+    "ShowType": "ShowAfterFinish",
+    "Version": "4.3 "
+  },
+  "4055302": {
+    "AchievementID": 4055302,
+    "SeriesID": 5,
+    "AchievementTitle": "无尽传说",
+    "AchievementDesc": "支持《星轨之兔》继续研发",
+    "ParamList": [],
+    "Priority": 292,
+    "Rarity": "Low",
+    "ShowType": "ShowAfterFinish",
+    "Version": "4.3 "
+  },
+  "4055303": {
+    "AchievementID": 4055303,
+    "SeriesID": 5,
+    "AchievementTitle": "从此，它幸福直到永远…",
+    "AchievementDesc": "反对《星轨之兔》继续研发",
+    "ParamList": [],
+    "Priority": 291,
+    "Rarity": "Low",
+    "ShowType": "ShowAfterFinish",
+    "Version": "4.3 "
+  },
+  "4055304": {
+    "AchievementID": 4055304,
+    "SeriesID": 5,
+    "AchievementTitle": "画界的守护者",
+    "AchievementDesc": "在渡画泉隐的法阵中召唤出「绘世」",
+    "ParamList": [],
+    "Priority": 290,
+    "Rarity": "Low",
+    "ShowType": "ShowAfterFinish",
+    "Version": "4.3 "
+  },
+  "4055305": {
+    "AchievementID": 4055305,
+    "SeriesID": 5,
+    "AchievementTitle": "高精力人士",
+    "AchievementDesc": "在鸽川区和渡画泉隐两度遇见暗布雷拉，并与其对话",
+    "ParamList": [],
+    "Priority": 289,
+    "Rarity": "Low",
+    "ShowType": "ShowAfterFinish",
+    "Version": "4.3 "
+  },
+  "4055306": {
+    "AchievementID": 4055306,
+    "SeriesID": 5,
+    "AchievementTitle": "银杏树之恋",
+    "AchievementDesc": "在车站前见证两位路人依依惜别",
+    "ParamList": [],
+    "Priority": 288,
+    "Rarity": "Low",
+    "ShowType": "ShowAfterFinish",
+    "Version": "4.3 "
+  },
+  "4055307": {
+    "AchievementID": 4055307,
+    "SeriesID": 5,
+    "AchievementTitle": "最终决战兵器",
+    "AchievementDesc": "在「像素飞机大乱斗」中，首次将一个核心装备升到三星",
+    "ParamList": [],
+    "Priority": 287,
+    "Rarity": "Low",
+    "Version": "4.3 "
+  },
+  "4055308": {
+    "AchievementID": 4055308,
+    "SeriesID": 5,
+    "AchievementTitle": "续火花之歌",
+    "AchievementDesc": "在「像素飞机大乱斗」中，使用「赛道魔术」击败火花",
+    "ParamList": [],
+    "Priority": 286,
+    "Rarity": "Low",
+    "Version": "4.3 "
+  },
+  "4055309": {
+    "AchievementID": 4055309,
+    "SeriesID": 5,
+    "AchievementTitle": "蓝天之下的约定",
+    "AchievementDesc": "在「像素飞机大乱斗」中，解锁全部像素飞机",
+    "ParamList": [],
+    "Priority": 285,
+    "Rarity": "Low",
+    "Version": "4.3 "
+  },
+  "4055310": {
+    "AchievementID": 4055310,
+    "SeriesID": 5,
+    "AchievementTitle": "王牌空战",
+    "AchievementDesc": "在「像素飞机大乱斗」中，在没有生命损失的情况下赢得巅峰对决",
+    "ParamList": [],
+    "Priority": 284,
+    "Rarity": "Low",
+    "Version": "4.3 "
+  },
+  "4055311": {
+    "AchievementID": 4055311,
+    "SeriesID": 5,
+    "AchievementTitle": "毕业套",
+    "AchievementDesc": "在「像素飞机大乱斗」中，在单局内同时拥有7个三星级装备",
+    "ParamList": [
+      {
+        "Value": 7
+      }
+    ],
+    "Priority": 283,
+    "Rarity": "Low",
+    "Version": "4.3 "
+  },
+  "4055312": {
+    "AchievementID": 4055312,
+    "SeriesID": 5,
+    "AchievementTitle": "全机型制霸",
+    "AchievementDesc": "在「像素飞机大乱斗」中，使用每一架飞机赢得过比赛",
+    "ParamList": [],
+    "Priority": 282,
+    "Rarity": "Low",
+    "Version": "4.3 "
+  },
   "4060101": {
     "AchievementID": 4060101,
     "SeriesID": 6,
@@ -18185,7 +18440,7 @@
     "AchievementID": 4075201,
     "SeriesID": 7,
     "AchievementTitle": "谁都别板着脸",
-    "AchievementDesc": "单场战斗中，使用「欢愉」命途开拓者累计对4名不同队友各施放过一次终结技",
+    "AchievementDesc": "单场战斗中，使用「欢愉」命途开拓者累计对4名不同角色各施放过一次终结技",
     "ParamList": [
       {
         "Value": 4
@@ -18200,7 +18455,7 @@
     "AchievementID": 4075202,
     "SeriesID": 7,
     "AchievementTitle": "感谢打赏",
-    "AchievementDesc": "单次战斗中，使用「欢愉」命途开拓者对火花累计施放5次终结技",
+    "AchievementDesc": "单场战斗中，使用「欢愉」命途开拓者对火花累计施放5次终结技",
     "ParamList": [
       {
         "Value": 5
@@ -18315,6 +18570,71 @@
     "Priority": 697,
     "Rarity": "Low",
     "Version": "4.2"
+  },
+  "4075301": {
+    "AchievementID": 4075301,
+    "SeriesID": 7,
+    "AchievementTitle": "炉火不熄，百炼成兵",
+    "AchievementDesc": "战斗胜利时，千冶•刃的剩余生命值为1",
+    "ParamList": [
+      {
+        "Value": 1
+      }
+    ],
+    "Priority": 696,
+    "Rarity": "Low",
+    "ShowType": "ShowAfterFinish",
+    "Version": "4.3 "
+  },
+  "4075302": {
+    "AchievementID": 4075302,
+    "SeriesID": 7,
+    "AchievementTitle": "刀声剑声打铁声，声声入耳",
+    "AchievementDesc": "单个回合中，使用我方角色千冶•刃施放4次【刃下，归葬】",
+    "ParamList": [
+      {
+        "Value": 4
+      }
+    ],
+    "Priority": 695,
+    "Rarity": "Low",
+    "ShowType": "ShowAfterFinish",
+    "Version": "4.3 "
+  },
+  "4075303": {
+    "AchievementID": 4075303,
+    "SeriesID": 7,
+    "AchievementTitle": "炎炎消防队长",
+    "AchievementDesc": "在与「始作画者，无量塔绘世」的战斗中，在自身生命值较低且灭火成功率最低的情况下选择【扑灭火焰】，并成功解除【怨火灼身】状态",
+    "ParamList": [],
+    "Priority": 693,
+    "Rarity": "Low",
+    "Version": "4.3 "
+  },
+  "4075304": {
+    "AchievementID": 4075304,
+    "SeriesID": 7,
+    "AchievementTitle": "肠胃清道夫",
+    "AchievementDesc": "在与「吞神子嗣」的战斗中，使用我方攻击力最高的角色解除【吞噬】状态并获得额外攻击力加成",
+    "ParamList": [],
+    "Priority": 692,
+    "Rarity": "Low",
+    "Version": "4.3 "
+  },
+  "4075305": {
+    "AchievementID": 4075305,
+    "SeriesID": 7,
+    "AchievementTitle": "万劫不复",
+    "AchievementDesc": "使用我方角色千冶•刃，在单次【无量忿怒】持续期间施放6次【千冶铸一，万劫烬灭】",
+    "ParamList": [
+      {
+        "Value": 6
+      }
+    ],
+    "Priority": 694,
+    "Rarity": "Low",
+    "ShowType": "ShowAfterFinish",
+    "Version": "4.3 "
   },
   "4080101": {
     "AchievementID": 4080101,
@@ -19293,6 +19613,16 @@
     "Rarity": "Low",
     "ShowType": "ShowAfterFinish",
     "Version": "4.0"
+  },
+  "4085301": {
+    "AchievementID": 4085301,
+    "SeriesID": 8,
+    "AchievementTitle": "你想堆雪人吗",
+    "AchievementDesc": "在「二次元JUMP！」中，被冻进冰块里",
+    "ParamList": [],
+    "Priority": 900,
+    "Rarity": "Low",
+    "Version": "4.3 "
   },
   "4090201": {
     "AchievementID": 4090201,
