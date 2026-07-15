@@ -32,7 +32,7 @@ const confirmSelectAll = (event) => {
     event.stopPropagation();
 
     if(achievementSelectAllSecondConfirmation.value) {
-        const operation = selectAll ? '取消全选' : '全选';
+        const operation = selectAll.value ? '取消全选' : '全选';
 
         ElMessageBox.confirm(
             `确认进行 <strong>${operation}</strong> 本页成就?`,
