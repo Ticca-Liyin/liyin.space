@@ -1150,6 +1150,34 @@
     "faction": ["二相乐园", "星穹列车"],
     "deploymentDate": 1784080800000
   },
+  "1511": {
+    "id": 1511,
+    "MiYoSheId": 7726,
+    "HoYoWikiId": 6565,
+    "name": "知更鸟·晴歌",
+    "avatar": "/event-ugc-hoyowiki/2026/06/30/5308864/2841ca0fe316bbe99a3f6edee137f89b_4502603316905311385.png",
+    "path": "记忆",
+    "combattype": "风",
+    "star": 5,
+    "warp": "limited",
+    "version": 4.5,
+    "faction": ["千星城"],
+    "deploymentDate": 1787709600000
+  },
+  "1512": {
+    "id": 1512,
+    "MiYoSheId": 7725,
+    "HoYoWikiId": 6566,
+    "name": "砂金·戏浪",
+    "avatar": "event-ugc-hoyowiki/2026/06/30/5308864/c66c9f622a7384af40d895da8b6c34bc_8806235981309973090.png",
+    "path": "欢愉",
+    "combattype": "量子",
+    "star": 5,
+    "warp": "limited",
+    "version": 4.5,
+    "faction": ["千星城"],
+    "deploymentDate": 1789185600000
+  },
   "8002": {
     "id": 8002,
     "MiYoSheId": 3128,
