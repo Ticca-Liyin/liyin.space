@@ -768,7 +768,7 @@
     "star": 5,
     "warp": "limited",
     "version": 2.7,
-    "faction": ["匹诺康尼"],
+    "faction": ["匹诺康尼", "银河", "星穹列车"],
     "deploymentDate": 1733277600000
   },
   "1314": {
@@ -1155,13 +1155,13 @@
     "MiYoSheId": 7726,
     "HoYoWikiId": 6565,
     "name": "知更鸟·晴歌",
-    "avatar": "/event-ugc-hoyowiki/2026/06/30/5308864/2841ca0fe316bbe99a3f6edee137f89b_4502603316905311385.png",
+    "avatar": "event-ugc-hoyowiki/2026/06/30/5308864/2841ca0fe316bbe99a3f6edee137f89b_4502603316905311385.png",
     "path": "记忆",
     "combattype": "风",
     "star": 5,
     "warp": "limited",
     "version": 4.5,
-    "faction": ["千星城"],
+    "faction": ["千星城", "匹诺康尼"],
     "deploymentDate": 1787709600000
   },
   "1512": {
@@ -1175,7 +1175,7 @@
     "star": 5,
     "warp": "limited",
     "version": 4.5,
-    "faction": ["千星城"],
+    "faction": ["千星城", "星际和平公司"],
     "deploymentDate": 1789185600000
   },
   "8002": {
