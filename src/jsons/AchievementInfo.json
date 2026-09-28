@@ -2524,7 +2524,7 @@
     "AchievementDesc": "先完成一个小目标<br><div style=\"color:#8790abff;\">※人可以在极端愤怒的情况下，一天花掉88亿信用点</div>",
     "ParamList": [],
     "Priority": 8259,
-    "Rarity": "Low",
+    "Rarity": "Mid",
     "ShowType": "HiddenDesc",
     "Version": "4.5"
   },
@@ -2535,7 +2535,7 @@
     "AchievementDesc": "假如你不小心在错误的地方从现实中切出…<br><div style=\"color:#8790abff;\">※坠入审片室——不剪完片子就不许离开的房间</div>",
     "ParamList": [],
     "Priority": 8258,
-    "Rarity": "Low",
+    "Rarity": "Mid",
     "ShowType": "HiddenDesc",
     "Version": "4.5"
   },
@@ -2546,7 +2546,7 @@
     "AchievementDesc": "最后的大逆转机会！<br><div style=\"color:#8790abff;\">※知更鸟接受了挑战，她的对手将是大禽20亿粉丝</div>",
     "ParamList": [],
     "Priority": 8257,
-    "Rarity": "Low",
+    "Rarity": "Mid",
     "ShowType": "HiddenDesc",
     "Version": "4.5"
   },
@@ -2557,7 +2557,7 @@
     "AchievementDesc": "所有人都是冠军，或者所有人都不是冠军<br><div style=\"color:#8790abff;\">※你们赢下了挑战，还给星穹列车买下了天价车险</div>",
     "ParamList": [],
     "Priority": 8256,
-    "Rarity": "Low",
+    "Rarity": "Mid",
     "ShowType": "HiddenDesc",
     "Version": "4.5"
   },
@@ -2568,7 +2568,7 @@
     "AchievementDesc": "星穹列车，启动！<br><div style=\"color:#8790abff;\">※跃迁去往千星城</div>",
     "ParamList": [],
     "Priority": 8255,
-    "Rarity": "Low",
+    "Rarity": "Mid",
     "ShowType": "HiddenDesc",
     "Version": "4.5"
   },
@@ -2579,7 +2579,7 @@
     "AchievementDesc": "在哪儿都别忘了，搞个最佳头条！<br><div style=\"color:#8790abff;\">※于千星城建立《狸狸周刊》分部</div>",
     "ParamList": [],
     "Priority": 8254,
-    "Rarity": "Low",
+    "Rarity": "Mid",
     "ShowType": "HiddenDesc",
     "Version": "4.5"
   },
@@ -2590,7 +2590,7 @@
     "AchievementDesc": "你们所有人都应该庆幸，代理领航员不掷骰子<br><div style=\"color:#8790abff;\">※向所有人展示归寂的骰子，然后仁慈地收起它</div>",
     "ParamList": [],
     "Priority": 8253,
-    "Rarity": "Low",
+    "Rarity": "Mid",
     "ShowType": "HiddenDesc",
     "Version": "4.5"
   },
@@ -2601,7 +2601,7 @@
     "AchievementDesc": "琥珀垂眸，画界重现<br><div style=\"color:#8790abff;\">※时隔千年，二相乐园再度被封存</div>",
     "ParamList": [],
     "Priority": 8252,
-    "Rarity": "Low",
+    "Rarity": "Mid",
     "ShowType": "HiddenDesc",
     "Version": "4.5"
   },
@@ -2612,9 +2612,59 @@
     "AchievementDesc": "所以你这家伙到底是谁啊！<br><div style=\"color:#8790abff;\">※本来想用普通人的身份和你们相处…现在，我摊牌了</div>",
     "ParamList": [],
     "Priority": 8251,
-    "Rarity": "Low",
+    "Rarity": "Mid",
     "ShowType": "HiddenDesc",
     "Version": "4.5"
+  },
+  "4035601": {
+    "AchievementID": 4035601,
+    "SeriesID": 3,
+    "AchievementTitle": "猎鲨记",
+    "AchievementDesc": "除了鱼，钓鱼佬什么都能钓上来吗？<br><div style=\"color:#8790abff;\">※和虚照一起制定作战方案</div>",
+    "ParamList": [],
+    "Priority": 8250,
+    "Rarity": "Mid",
+    "Version": "4.6"
+  },
+  "4035602": {
+    "AchievementID": 4035602,
+    "SeriesID": 3,
+    "AchievementTitle": "不可饶恕的生命",
+    "AchievementDesc": "世上存在着，比野兽更缺乏人性之物<br><div style=\"color:#8790abff;\">※揭开生研院不可告人的内幕</div>",
+    "ParamList": [],
+    "Priority": 8249,
+    "Rarity": "Mid",
+    "Version": "4.6"
+  },
+  "4035603": {
+    "AchievementID": 4035603,
+    "SeriesID": 3,
+    "AchievementTitle": "祝你在地狱一切安好",
+    "AchievementDesc": "恶人终得因果报应，这才是故事该有的结局<br><div style=\"color:#8790abff;\">※时隔十五年，告死魔事件正式结案</div>",
+    "ParamList": [],
+    "Priority": 8248,
+    "Rarity": "Mid",
+    "Version": "4.6"
+  },
+  "4035604": {
+    "AchievementID": 4035604,
+    "SeriesID": 3,
+    "AchievementTitle": "重返乐园1999",
+    "AchievementDesc": "在幻月照耀的树下，迎来结束的开始<br><div style=\"color:#8790abff;\">※乘着珠玉的光华，回到二相乐园</div>",
+    "ParamList": [],
+    "Priority": 8247,
+    "Rarity": "Mid",
+    "Version": "4.6"
+  },
+  "4035605": {
+    "AchievementID": 4035605,
+    "SeriesID": 3,
+    "AchievementTitle": "游戏的人",
+    "AchievementDesc": "后世的谒者啊，祝你们好运<br><div style=\"color:#8790abff;\">※再现八位伶人的神话，重启幻月游戏</div>",
+    "ParamList": [],
+    "Priority": 8246,
+    "Rarity": "Mid",
+    "Version": "4.6"
   },
   "4040101": {
     "AchievementID": 4040101,
@@ -6823,7 +6873,11 @@
     "SeriesID": 4,
     "AchievementTitle": "闪避刺客",
     "AchievementDesc": "在「二次元JUMP！」中，使用冲刺技能打断冲刺球的冲刺，并回到原本的冲刺球",
-    "ParamList": [],
+    "ParamList": [
+      {
+        "Value": 0
+      }
+    ],
     "Priority": 6377,
     "Rarity": "Low",
     "Version": "4.5"
@@ -6847,6 +6901,60 @@
     "Priority": 6375,
     "Rarity": "Low",
     "Version": "4.5"
+  },
+  "4045601": {
+    "AchievementID": 4045601,
+    "SeriesID": 4,
+    "AchievementTitle": "帕姆快跳",
+    "AchievementDesc": "完成生研院的「Jump时刻」",
+    "ParamList": [],
+    "Priority": 6374,
+    "Rarity": "Low",
+    "Version": "4.6"
+  },
+  "4045602": {
+    "AchievementID": 4045602,
+    "SeriesID": 4,
+    "AchievementTitle": "踩点狂魔",
+    "AchievementDesc": "在生研院的「Jump时刻」中，跟着节奏连续成功跳跃30次",
+    "ParamList": [
+      {
+        "Value": 30
+      }
+    ],
+    "Priority": 6373,
+    "Rarity": "Low",
+    "Version": "4.6"
+  },
+  "4045603": {
+    "AchievementID": 4045603,
+    "SeriesID": 4,
+    "AchievementTitle": "乐园变奏：猴子捞月",
+    "AchievementDesc": "演奏奇异乐章，找到藏在生研院的迷之生物",
+    "ParamList": [],
+    "Priority": 6372,
+    "Rarity": "Low",
+    "Version": "4.6"
+  },
+  "4045604": {
+    "AchievementID": 4045604,
+    "SeriesID": 4,
+    "AchievementTitle": "全职猎人",
+    "AchievementDesc": "在生研院的「二次元JUMP！」中，击落所有的气球",
+    "ParamList": [],
+    "Priority": 6371,
+    "Rarity": "Low",
+    "Version": "4.6"
+  },
+  "4045605": {
+    "AchievementID": 4045605,
+    "SeriesID": 4,
+    "AchievementTitle": "The Exit 8",
+    "AchievementDesc": "在生研院走廊的「二次元JUMP！」中，正确地选择每一次的传送门",
+    "ParamList": [],
+    "Priority": 6370,
+    "Rarity": "Low",
+    "Version": "4.6"
   },
   "4051001": {
     "AchievementID": 4051001,
@@ -15059,6 +15167,84 @@
     "Rarity": "Low",
     "Version": "4.5"
   },
+  "4055601": {
+    "AchievementID": 4055601,
+    "SeriesID": 5,
+    "AchievementTitle": "东山再起",
+    "AchievementDesc": "在「爱，幽灵与机器人」中，通过第2次升星考核",
+    "ParamList": [
+      {
+        "Value": 2
+      }
+    ],
+    "Priority": 2710,
+    "Rarity": "Low",
+    "Version": "4.6"
+  },
+  "4055602": {
+    "AchievementID": 4055602,
+    "SeriesID": 5,
+    "AchievementTitle": "超大杯",
+    "AchievementDesc": "在「爱，幽灵与机器人」中，首次将机铠的2项属性同时提升至S级",
+    "ParamList": [
+      {
+        "Value": 2
+      }
+    ],
+    "Priority": 2709,
+    "Rarity": "Low",
+    "Version": "4.6"
+  },
+  "4055603": {
+    "AchievementID": 4055603,
+    "SeriesID": 5,
+    "AchievementTitle": "星辰的鼓动即是爱",
+    "AchievementDesc": "在「爱，幽灵与机器人」中，通过所有的升星考核",
+    "ParamList": [],
+    "Priority": 2708,
+    "Rarity": "Low",
+    "Version": "4.6"
+  },
+  "4055604": {
+    "AchievementID": 4055604,
+    "SeriesID": 5,
+    "AchievementTitle": "口袋里的战士",
+    "AchievementDesc": "在「爱，幽灵与机器人」中，变更一次展览机铠",
+    "ParamList": [],
+    "Priority": 2707,
+    "Rarity": "Low",
+    "Version": "4.6"
+  },
+  "4055605": {
+    "AchievementID": 4055605,
+    "SeriesID": 5,
+    "AchievementTitle": "落叶归根",
+    "AchievementDesc": "帮助被异化的灵魂，踏上回家的道路",
+    "ParamList": [],
+    "Priority": 2706,
+    "Rarity": "Low",
+    "Version": "4.6"
+  },
+  "4055606": {
+    "AchievementID": 4055606,
+    "SeriesID": 5,
+    "AchievementTitle": "达尔文的危险思想",
+    "AchievementDesc": "调查玄奥的生命石碑",
+    "ParamList": [],
+    "Priority": 2705,
+    "Rarity": "Low",
+    "Version": "4.6"
+  },
+  "4055607": {
+    "AchievementID": 4055607,
+    "SeriesID": 5,
+    "AchievementTitle": "被遗忘权",
+    "AchievementDesc": "找到被遗忘在生研院深处的尘灵",
+    "ParamList": [],
+    "Priority": 2704,
+    "Rarity": "Low",
+    "Version": "4.6"
+  },
   "4060101": {
     "AchievementID": 4060101,
     "SeriesID": 6,
@@ -19830,7 +20016,7 @@
     "AchievementID": 4075504,
     "SeriesID": 7,
     "AchievementTitle": "不可战胜的夏天",
-    "AchievementDesc": "单场战斗中，砂金•戏浪在热意达到上限的状态下施放【Allin！敬炽烈一夏】",
+    "AchievementDesc": "单场战斗中，砂金•戏浪在热意达到上限的状态下施放【All in！敬炽烈一夏】",
     "ParamList": [],
     "Priority": 6430,
     "Rarity": "Low",
@@ -19840,11 +20026,151 @@
     "AchievementID": 4075505,
     "SeriesID": 7,
     "AchievementTitle": "POV：派对遇到了对手但不想翻脸",
-    "AchievementDesc": "单场战斗中，砂金•戏浪施放【举杯！敬炽烈一夏】或【Allin！敬炽烈一夏】对「惊梦剧团的气泡锂犬」造成最后一击",
+    "AchievementDesc": "单场战斗中，砂金•戏浪施放【举杯！敬炽烈一夏】或【All in！敬炽烈一夏】对「惊梦剧团的气泡锂犬」造成最后一击",
     "ParamList": [],
     "Priority": 6429,
     "Rarity": "Low",
     "Version": "4.5"
+  },
+  "4075601": {
+    "AchievementID": 4075601,
+    "SeriesID": 7,
+    "AchievementTitle": "凤凰幻魔拳",
+    "AchievementDesc": "在与「堕神之血•亚婆离」的战斗中，角色陷入【幻身】状态后，通过施放技能击杀敌方目标",
+    "ParamList": [],
+    "Priority": 6428,
+    "Rarity": "Low",
+    "Version": "4.6"
+  },
+  "4075602": {
+    "AchievementID": 4075602,
+    "SeriesID": 7,
+    "AchievementTitle": "明镜止水",
+    "AchievementDesc": "在与「堕神之血•亚婆离」的战斗中，没有角色陷入【幻身】状态",
+    "ParamList": [],
+    "Priority": 6427,
+    "Rarity": "Low",
+    "Version": "4.6"
+  },
+  "4075603": {
+    "AchievementID": 4075603,
+    "SeriesID": 7,
+    "AchievementTitle": "不疯魔，不成活",
+    "AchievementDesc": "在一场常规战斗中，战斗胜利时，我方全体处于控制类负面状态",
+    "ParamList": [],
+    "Priority": 6426,
+    "Rarity": "Low",
+    "Version": "4.6"
+  },
+  "4075604": {
+    "AchievementID": 4075604,
+    "SeriesID": 7,
+    "AchievementTitle": "就这？就这？？",
+    "AchievementDesc": "在一场常规战斗中，战斗胜利时，未进入过任意我方目标的回合",
+    "ParamList": [],
+    "Priority": 6425,
+    "Rarity": "Low",
+    "Version": "4.6"
+  },
+  "4075605": {
+    "AchievementID": 4075605,
+    "SeriesID": 7,
+    "AchievementTitle": "混合型战争",
+    "AchievementDesc": "在一场常规战斗中，单次行动期间，除本次造成的技能伤害之外，造成至少5种不同类型的伤害",
+    "ParamList": [
+      {
+        "Value": 5
+      }
+    ],
+    "Priority": 6424,
+    "Rarity": "Low",
+    "Version": "4.6"
+  },
+  "4075606": {
+    "AchievementID": 4075606,
+    "SeriesID": 7,
+    "AchievementTitle": "为什么没有元素反应？",
+    "AchievementDesc": "在一场常规战斗中，单次行动期间，除本次造成的技能伤害之外，造成至少5种不同属性的伤害",
+    "ParamList": [
+      {
+        "Value": 5
+      }
+    ],
+    "Priority": 6423,
+    "Rarity": "Low",
+    "Version": "4.6"
+  },
+  "4075607": {
+    "AchievementID": 4075607,
+    "SeriesID": 7,
+    "AchievementTitle": "提神醒脑",
+    "AchievementDesc": "在一场常规战斗中，单个回合内，在我方战技点个数降低至0后回满战技点",
+    "ParamList": [
+      {
+        "Value": 0
+      }
+    ],
+    "Priority": 6422,
+    "Rarity": "Low",
+    "Version": "4.6"
+  },
+  "4075608": {
+    "AchievementID": 4075608,
+    "SeriesID": 7,
+    "AchievementTitle": "永劫不回归",
+    "AchievementDesc": "在一场常规战斗中，单个回合内，在任意我方单体的能量降低至0点后回满该目标的能量",
+    "ParamList": [
+      {
+        "Value": 0
+      }
+    ],
+    "Priority": 6421,
+    "Rarity": "Low",
+    "Version": "4.6"
+  },
+  "4075609": {
+    "AchievementID": 4075609,
+    "SeriesID": 7,
+    "AchievementTitle": "长生种的秘密",
+    "AchievementDesc": "在一场常规战斗中，单个回合内，在任意我方单体的生命值降低至0点后回满该目标的生命值",
+    "ParamList": [
+      {
+        "Value": 0
+      }
+    ],
+    "Priority": 6420,
+    "Rarity": "Low",
+    "Version": "4.6"
+  },
+  "4075610": {
+    "AchievementID": 4075610,
+    "SeriesID": 7,
+    "AchievementTitle": "直到沙砾蜕变成珠",
+    "AchievementDesc": "单场战斗中，真珠施放过「行笔，幻造星月」和「行笔，绘制末浪」",
+    "ParamList": [],
+    "Priority": 6419,
+    "Rarity": "Low",
+    "Version": "4.6"
+  },
+  "4075611": {
+    "AchievementID": 4075611,
+    "SeriesID": 7,
+    "AchievementTitle": "礼尚往来",
+    "AchievementDesc": "三月七和真珠分别对对方施放「师父，请喝茶！」和「鉴映灵魂的底色」",
+    "ParamList": [],
+    "Priority": 6418,
+    "Rarity": "Low",
+    "Version": "4.6"
+  },
+  "4075612": {
+    "AchievementID": 4075612,
+    "SeriesID": 7,
+    "AchievementTitle": "死喷乱涂",
+    "AchievementDesc": "真珠施放「行笔，幻造星月」或「行笔，绘制末浪」击败处于色彩状态下的画板孔雀",
+    "ParamList": [],
+    "Priority": 6417,
+    "Rarity": "Low",
+    "Version": "4.6"
   },
   "4080101": {
     "AchievementID": 4080101,
